@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
 
 import com.microsoft.hsg.ConnectionFactory;
 import com.microsoft.hsg.methods.jaxb.SimpleRequestTemplate;
-import com.microsoft.hsg.methods.jaxb.getapplicationinfo.request.GetApplicationInfoRequest;
-import com.microsoft.hsg.methods.jaxb.getapplicationinfo.response.GetApplicationInfoResponse;
+import com.microsoft.hsg.methods.jaxb.getapplicationinfo2.request.GetApplicationInfo2Request;
+import com.microsoft.hsg.methods.jaxb.getapplicationinfo2.response.GetApplicationInfo2Response;
 
 @RunWith(JMock.class)
 public class GetApplicationInfoTest {
@@ -38,9 +38,9 @@ public class GetApplicationInfoTest {
     	//requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
     	//requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
     	
-    	GetApplicationInfoResponse response = 
-    		(GetApplicationInfoResponse)requestTemplate.makeRequest(
-    			new GetApplicationInfoRequest());
+    	GetApplicationInfo2Response response = 
+    		(GetApplicationInfo2Response)requestTemplate.makeRequest(
+    			new GetApplicationInfo2Request());
     	
     	Assert.assertNotNull(response);
     }

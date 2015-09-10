@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
 
 import com.microsoft.hsg.ConnectionFactory;
 import com.microsoft.hsg.methods.jaxb.SimpleRequestTemplate;
-import com.microsoft.hsg.methods.jaxb.addapplication.request.AddApplicationRequest;
-import com.microsoft.hsg.methods.jaxb.addapplication.response.AddApplicationResponse;
+import com.microsoft.hsg.methods.jaxb.addapplication2.request.AddApplication2Request;
+import com.microsoft.hsg.methods.jaxb.addapplication2.response.AddApplication2Response;
 import com.microsoft.hsg.methods.jaxb.application.AppLargeLogoInfo;
 import com.microsoft.hsg.methods.jaxb.application.CultureSpecificAppLargeLogo;
 import com.microsoft.hsg.methods.jaxb.application.PublicKeys;
@@ -54,7 +54,7 @@ public class AddApplicationTest {
     		ConnectionFactory.getConnection(
     		    MasterAppId));
     	
-    	AddApplicationRequest request = new AddApplicationRequest();
+    	AddApplication2Request request = new AddApplication2Request();
     	request.getName()
     	    .add(new CultureSpecificString255("My Application"));
     	
@@ -100,8 +100,8 @@ public class AddApplicationTest {
     	
     	request.setLargeLogo(largeLogoInfo);
         
-    	AddApplicationResponse response = 
-    		(AddApplicationResponse)requestTemplate.makeRequest(request);
+    	AddApplication2Response response = 
+    		(AddApplication2Response)requestTemplate.makeRequest(request);
     	
     	Assert.assertNotNull(response);
     }

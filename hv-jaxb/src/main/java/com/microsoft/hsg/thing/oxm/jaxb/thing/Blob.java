@@ -22,27 +22,27 @@ public class Blob
 
 	public BlobPayloadItem addBlob(String key, InputStream  blob_data, String contentType, String personid, String recordid) throws Exception
 	{
-		_EnsureBlobParams(personid, recordid);
+		_InitBlobParams(personid, recordid);
 
 		int data_length = blob_data.available();
 		BlobStreamer streamer = new BlobStreamer(beginPutBlobParams.getBlobRefUrl(), contentType);
 		byte[] buffer = null;
-		int start=0, numbytes, i=0;
+		int offset=0, numbytes, i=0;
 		boolean isUploadComplete;
 		int nchunks =(int)Math.ceil(data_length/ (double)beginPutBlobParams.getBlobChunkSize());
 		byte[][] blockhashes = new byte[nchunks][32];
 		BlobHasher hasher = new BlobHasher();
 		hasher.setBlockSize(beginPutBlobParams.getBlobHashParameters().getBlockSize());
-		while(start<data_length)
+		while(offset<data_length)
 		{
-			numbytes = Math.min(beginPutBlobParams.getBlobChunkSize(), data_length - start);
+			numbytes = Math.min(beginPutBlobParams.getBlobChunkSize(), data_length - offset);
 			buffer = new byte[numbytes];
 			blob_data.read(buffer, 0, numbytes);
 			
-			isUploadComplete = (start+numbytes)>=data_length;
+			isUploadComplete = (offset+numbytes)>=data_length;
 			blockhashes[i++] = hasher.GetHash(buffer);
-			streamer.streamBlobToUrl(buffer, start, numbytes, isUploadComplete);
-			start+= numbytes;
+			streamer.streamBlobToUrl(buffer, offset, numbytes, isUploadComplete);
+			offset+= numbytes;
 		}
 
 		BlobHashInfo hashInfo = GetHashInfo(blockhashes, beginPutBlobParams.getBlobHashParameters());
@@ -50,7 +50,7 @@ public class Blob
 		return GetBlobPayloadItem(blobInfo,beginPutBlobParams.getBlobRefUrl(), data_length);
 	}
 
-	private void _EnsureBlobParams(String personid, String recordid) throws Exception 
+	private void _InitBlobParams(String personid, String recordid) throws Exception 
 	{
 		beginPutBlobParams = GetBeginPutBlobResponse(personid, recordid);
 	}

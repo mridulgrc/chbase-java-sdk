@@ -17,9 +17,6 @@ public class BlobStreamer
 {
 	private String blobRefUrl = null;
 	private String contentType = null;
-	
-	
-	
 
 	public BlobStreamer(String blobRefUrl, String contentType)
 	{
@@ -28,7 +25,7 @@ public class BlobStreamer
 
 	}
 
-	public void streamBlobToUrl(byte[] data,int start, int count, boolean isUploadComplete ) throws IOException
+	public void streamBlobToUrl(byte[] data,int offset, int count, boolean isUploadComplete ) throws IOException
 	{
 		long length = data.length;
 		HttpURLConnection conn = null;
@@ -40,10 +37,9 @@ public class BlobStreamer
 		conn.setDoOutput(true);
 		conn.setUseCaches(false);
 		conn.setRequestMethod("POST");
-		conn.setRequestProperty("Connection", "Keep-Alive");
 		conn.setRequestProperty("Content-Type", this.contentType);
 		conn.setRequestProperty("Content-Length",String.valueOf(length));
-		conn.setRequestProperty("Content-Range","bytes "+start+"-"+ (start + length - 1)+"/*");
+		conn.setRequestProperty("Content-Range","bytes "+offset+"-"+ (offset + length - 1)+"/*");
 		if(isUploadComplete)
 		{
 			conn.setRequestProperty("x-hv-blob-complete","1");
