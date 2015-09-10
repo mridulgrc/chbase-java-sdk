@@ -65,6 +65,7 @@ import com.microsoft.hsg.methods.jaxb.application.StatementInfo;
 import com.microsoft.hsg.methods.jaxb.auth.Auth;
 import com.microsoft.hsg.methods.jaxb.auth.AuthXml;
 import com.microsoft.hsg.methods.jaxb.auth.Rule;
+import com.microsoft.hsg.methods.jaxb.auth.Rules;
 import com.microsoft.hsg.methods.jaxb.auth.Set;
 import com.microsoft.hsg.methods.jaxb.beginputblob.request.BeginPutBlobRequest;
 import com.microsoft.hsg.methods.jaxb.beginputblob.response.BeginPutBlobResponse;
@@ -91,6 +92,7 @@ import com.microsoft.hsg.methods.jaxb.putthings.request.PutThingsRequest;
 import com.microsoft.hsg.methods.jaxb.putthings2.request.PutThings2Request;
 import com.microsoft.hsg.methods.jaxb.querypermissions.request.QueryPermissionsRequest;
 import com.microsoft.hsg.methods.jaxb.querypermissions.response.QueryPermissionsResponse;
+import com.microsoft.hsg.methods.jaxb.removeapplicationrecordauthorization.request.RemoveApplicationRecordAuthorizationRequest;
 import com.microsoft.hsg.thing.oxm.jaxb.base.DisplayValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.LengthValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
@@ -224,8 +226,8 @@ public class WeightPage implements RequestHandler {
 				(GetThings3Response)requestTemplate.makeRequest(info);
 		List things = gtResponse.getGroup().get(0).getThing();
 		//_TestImage();
-		//_testMethods();
-		AddApplication();
+		_testMethods();
+		//AddApplication();
 		request.setAttribute("weights", things);
 	}
 	
@@ -272,8 +274,9 @@ public class WeightPage implements RequestHandler {
 		Set s = new Set();
 		s.getTypeId().add("3b3e6b16-eb69-483c-8d7e-dfe116ae6092");
 		r.getTargetSet().add(s);
-		auth.getRules().getRule().add(r);
-		
+		Rules rule = new Rules();
+		rule.getRule().add(r);
+		auth.setRules(rule);
 		auth_rule.setAuth(auth);
 		add_req.setPersonOnlineBaseAuth(auth_rule);
 		add_req.setPersonOfflineBaseAuth(auth_rule);
@@ -308,6 +311,9 @@ public class WeightPage implements RequestHandler {
 		qp_req.getThingTypeId().add("40750a6a-89b2-455c-bd8d-b420a4cb500b");
 		
 		QueryPermissionsResponse qp_res =(QueryPermissionsResponse)requestTemplate.makeRequest(qp_req);
+		
+		//RemoveApplicationRecordAuthorizationRequest remove_auth_req = new RemoveApplicationRecordAuthorizationRequest();
+		//requestTemplate.makeRequest(remove_auth_req);
 		
 	}
 
@@ -356,7 +362,6 @@ public class WeightPage implements RequestHandler {
 		requestTemplate.makeRequest(ptRequest);
 	}
 
-
 	private byte[] GetFileBytes() throws IOException
 	{
 		String exsistingFileName = "C:\\Users\\rajeev\\Pictures\\image_16A9A542.png";
@@ -366,156 +371,5 @@ public class WeightPage implements RequestHandler {
 		byte[] buffer = new byte[bytesAvailable];
 		fileInputStream.read(buffer, 0, bytesAvailable);
 		return buffer;
-	}
-
-	private BlobPayload doFileUpload(String target_url)
-	{
-		HttpURLConnection conn = null;
-		DataOutputStream dos = null;
-		DataInputStream inStream = null; 
-
-
-		String exsistingFileName = "C:\\Users\\rajeev\\Pictures\\image_16A9A542.png";
-
-		int bytesAvailable;
-
-		byte[] buffer;
-
-		String urlString = target_url;
-		BlobPayload blob=null;
-
-
-		long length = 0;
-		try
-		{
-			File file = new File(exsistingFileName); 
-			FileInputStream fileInputStream = new FileInputStream(file);
-			length = file.length();
-
-			URL url = new URL(urlString);
-			conn = (HttpURLConnection) url.openConnection();
-			conn.setDoInput(true);
-			// Allow Outputs
-			conn.setDoOutput(true);
-			// Don't use a cached copy.
-			conn.setUseCaches(false);
-			// Use a post method.
-			conn.setRequestMethod("POST");
-			conn.setRequestProperty("Connection", "Keep-Alive");
-			conn.setRequestProperty("Content-Type", "image/png;");
-			conn.setRequestProperty("Content-Length",String.valueOf(length));
-			conn.setRequestProperty("Content-Range","bytes 0-"+  (length - 1)+"/*");
-			conn.setRequestProperty("x-hv-blob-complete","1");
-
-			blob = new BlobPayload();
-			List<BlobPayloadItem> item_list = blob.getBlob();
-
-			BlobPayloadItem item = new BlobPayloadItem();
-			item.setBlobRefUrl(target_url);
-			item.setContentLength(length);
-			BlobInfo blob_info = new BlobInfo();
-			blob_info.setContentType("image/png");
-			blob_info.setName("");
-
-			BlobHashInfo blob_hash_info = new BlobHashInfo();
-			blob_hash_info.setAlgorithm("SHA256Block");
-			BlobHashAlgorithmParameters params = new BlobHashAlgorithmParameters();
-			BigInteger block_size = BigInteger.valueOf( 1<<21);
-			params.setBlockSize(block_size);
-
-			blob_hash_info.setParams(params);			
-
-			dos = new DataOutputStream( conn.getOutputStream() );
-			bytesAvailable = fileInputStream.available();
-			buffer = new byte[bytesAvailable];
-			fileInputStream.read(buffer, 0, bytesAvailable);
-			String hash ="";
-
-			try
-			{
-				dos.write(buffer);
-				BlobHasher hasher = new BlobHasher();
-				hasher.setData(buffer);
-				//hash = hasher.GetBase64EncodedHash();
-			}
-			catch (Exception ex)
-			{
-				int i=0;
-			}
-			blob_hash_info.setHash(hash);
-			blob_info.setHashInfo(blob_hash_info);
-			item.setBlobInfo(blob_info);
-			item_list.add(item);
-
-			fileInputStream.close();
-			dos.flush();
-			dos.close();
-
-			inStream = new DataInputStream ( conn.getInputStream() );
-			String str = null;
-			while (( str = inStream.readLine()) != null)
-			{
-
-			}
-			inStream.close();
-
-
-		}
-		catch (MalformedURLException ex)
-		{
-
-		}
-
-		catch (IOException ioe)
-		{
-		}
-
-
-		//------------------ read the SERVER RESPONSE
-
-
-		try {
-			inStream = new DataInputStream ( conn.getInputStream() );
-			String str;
-
-			while (( str = inStream.readLine()) != null)
-			{
-
-			}
-			/*while((str = inStream.readLine()) !=null ){
-
-              }*/
-			inStream.close();
-
-		}
-		catch (IOException ioex){ }
-		return blob;
-	}
-
-	private String GetBlockHash(byte [] data) throws Exception
-	{
-		int offset = 0, count = data.length, _blockSize = 1<<21;
-		int numBlocks = (int)Math.ceil((double)count / _blockSize);
-		List<byte[]> blockHashes = new ArrayList<byte[]>();
-		int currentOffset = offset;
-
-		MessageDigest md = MessageDigest.getInstance("SHA-256");
-		md.update(data);
-		while (currentOffset < offset + count)
-		{
-			int numBytesToHash = Math.min(_blockSize, (offset + count) - currentOffset);
-			byte[] blockHash = new byte[numBytesToHash]; 
-			md.digest(blockHash, currentOffset, numBytesToHash);
-
-			blockHashes.add(blockHash);
-
-			currentOffset = currentOffset + _blockSize;
-		}
-
-		md.update(blockHashes.get(0));
-		byte[] result = md.digest();
-
-		return new String(Base64.encodeBase64(result));
-
 	}
 }
