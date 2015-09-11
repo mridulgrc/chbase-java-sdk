@@ -10,6 +10,7 @@ import java.util.List;
 import com.microsoft.hsg.ApplicationConfig;
 import com.microsoft.hsg.Connection;
 import com.microsoft.hsg.ConnectionFactory;
+import com.microsoft.hsg.Request;
 import com.microsoft.hsg.methods.jaxb.SimpleRequestTemplate;
 import com.microsoft.hsg.methods.jaxb.beginputblob.request.BeginPutBlobRequest;
 import com.microsoft.hsg.methods.jaxb.beginputblob.response.BeginPutBlobResponse;
@@ -20,9 +21,9 @@ public class Blob
 {	
 	private BeginPutBlobResponse beginPutBlobParams = null; 
 
-	public BlobPayloadItem addBlob(String key, InputStream  blob_data, String contentType, String personid, String recordid) throws Exception
+	public BlobPayloadItem addBlob(String key, InputStream  blob_data, String contentType, Request request) throws Exception
 	{
-		_InitBlobParams(personid, recordid);
+		_InitBlobParams(request);
 
 		int data_length = blob_data.available();
 		BlobStreamer streamer = new BlobStreamer(beginPutBlobParams.getBlobRefUrl(), contentType);
@@ -50,17 +51,17 @@ public class Blob
 		return GetBlobPayloadItem(blobInfo,beginPutBlobParams.getBlobRefUrl(), data_length);
 	}
 
-	private void _InitBlobParams(String personid, String recordid) throws Exception 
+	private void _InitBlobParams(Request request) throws Exception 
 	{
-		beginPutBlobParams = GetBeginPutBlobResponse(personid, recordid);
+		beginPutBlobParams = GetBeginPutBlobResponse(request);
 	}
 
-	private BeginPutBlobResponse GetBeginPutBlobResponse(String personid, String recordid) throws Exception 
+	private BeginPutBlobResponse GetBeginPutBlobResponse(Request request) throws Exception 
 	{
 		Connection con = ConnectionFactory.getConnection();
-		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(con, personid, recordid);
+		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(con);
 		BeginPutBlobRequest req = new BeginPutBlobRequest();  
-		BeginPutBlobResponse  resp = (BeginPutBlobResponse )requestTemplate.makeRequest(req);
+		BeginPutBlobResponse  resp = (BeginPutBlobResponse )requestTemplate.makeRequest(request, req);
 		return resp;
 	}
 

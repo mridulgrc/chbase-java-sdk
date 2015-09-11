@@ -8,6 +8,7 @@ import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
 import org.jmock.lib.legacy.ClassImposteriser;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -20,7 +21,7 @@ import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFormatSpec2;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingRequestGroup2;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingSectionSpec2;
 import com.microsoft.hsg.methods.jaxb.getthings3.response.GetThings3Response;
-import com.microsoft.hsg.thing.oxm.jaxb.basic.Basic;
+import com.microsoft.hsg.thing.oxm.jaxb.basicV2.Basic;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
 import com.microsoft.hsg.thing.oxm.jaxb.weight.Weight;
 
@@ -43,10 +44,7 @@ public class GetThingsTest {
     @Test
     public void GetThing() throws Exception
     {
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
-    	requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
+    	SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
     	
     	ThingRequestGroup2 group = new ThingRequestGroup2();
     	
@@ -72,10 +70,7 @@ public class GetThingsTest {
     @Test
     public void GetThingBasic() throws Exception
     {
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
-    	requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
+    	SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
     	
     	ThingRequestGroup2 group = new ThingRequestGroup2();
     	
@@ -101,10 +96,7 @@ public class GetThingsTest {
     @Test
     public void GetThingWithAudit() throws Exception
     {
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
-    	requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
+    	SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
     	
     	ThingRequestGroup2 group = new ThingRequestGroup2();
     	
@@ -130,15 +122,13 @@ public class GetThingsTest {
     }
     
     @Test
+    @Ignore
     public void GetThingToCCR() throws Exception
     {
     	Request request = new Request();
     	request.setFinalXsl("toccr");
     	
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
-    	requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
+    	SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
     	
     	ThingRequestGroup2 group = new ThingRequestGroup2();
     	

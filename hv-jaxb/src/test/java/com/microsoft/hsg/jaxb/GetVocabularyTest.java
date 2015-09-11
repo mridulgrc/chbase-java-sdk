@@ -6,6 +6,7 @@ import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
 import org.jmock.lib.legacy.ClassImposteriser;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -33,6 +34,7 @@ public class GetVocabularyTest {
     }
     
     @Test
+    @Ignore
     public void GetVocabulary() throws Exception
     {
     	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(

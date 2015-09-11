@@ -10,6 +10,7 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathFactory;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -58,13 +59,10 @@ public class PutThingsTest {
         
         Request request = new Request();
         request.setMethodName("PutThings");
+        request.setMethodVersion("2");
         request.setInfo(infoBuilder.toString());
         
-        SimpleRequestTemplate template = new SimpleRequestTemplate(
-            ConnectionFactory.getConnection(),
-            "75ac2c6c-c90e-4f7e-b74d-bb7e81787beb",
-            "8c390004-3d41-4f5c-8f24-4841651579d6"
-        );
+        SimpleRequestTemplate template = TestHelpers.GetRequestTemplate();
         template.makeRequest(request);
     }
     
@@ -85,29 +83,23 @@ public class PutThingsTest {
         
         Request request = new Request();
         request.setMethodName("PutThings");
+        request.setMethodVersion("2");
         request.setInfo(infoBuilder.toString());
         
-        SimpleRequestTemplate template = new SimpleRequestTemplate(
-            ConnectionFactory.getConnection(),
-            "75ac2c6c-c90e-4f7e-b74d-bb7e81787beb",
-            "8c390004-3d41-4f5c-8f24-4841651579d6"
-        );
+        SimpleRequestTemplate template = TestHelpers.GetRequestTemplate();
         template.makeRequest(request);
     }
     
     private ThingId getLatestVersion(String type) {
         Request request = new Request();
         request.setMethodName("GetThings");
+        request.setMethodVersion("3");
         request.setInfo(
             "<info><group max=\"30\">" +
             "<filter><type-id>" + type + "</type-id></filter>" +
             "<format><section>core</section><xml/></format></group></info>");
         
-        SimpleRequestTemplate template = new SimpleRequestTemplate(
-                ConnectionFactory.getConnection(),
-                "75ac2c6c-c90e-4f7e-b74d-bb7e81787beb",
-                "8c390004-3d41-4f5c-8f24-4841651579d6"
-            );
+        SimpleRequestTemplate template = TestHelpers.GetRequestTemplate();
         
         return (ThingId)template.makeRequest(request, new RequestMarshaller() {
             public Object marshal(InputStream istream) throws Exception {
@@ -136,6 +128,7 @@ public class PutThingsTest {
     }
     
     @Test
+    @Ignore
     public void PutCCDTest() throws Exception {
     	InputStream in = getClass().getResourceAsStream("/TestCCD.txt");
     	String rawCCD = streamToString(in);
@@ -149,13 +142,10 @@ public class PutThingsTest {
         
         Request request = new Request();
     	request.setMethodName("PutThings");
+    	request.setMethodVersion("2");
         request.setInfo(infoBuilder.toString());
         
-        SimpleRequestTemplate template = new SimpleRequestTemplate(
-            ConnectionFactory.getConnection(),
-            "75ac2c6c-c90e-4f7e-b74d-bb7e81787beb",
-            "8c390004-3d41-4f5c-8f24-4841651579d6"
-        );
+        SimpleRequestTemplate template = TestHelpers.GetRequestTemplate();
         template.makeRequest(request); 
     }
     

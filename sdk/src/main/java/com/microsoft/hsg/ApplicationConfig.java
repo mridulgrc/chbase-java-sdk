@@ -81,6 +81,11 @@ public class ApplicationConfig
 	
 	public static final int File_Block_Size = 
 			getIntValue("keystore.file_block_size",1<<21);
+	
+	public static final String Test_PersonID = 
+			getValue("tests.personid");
+	public static final String Test_RecordID = 
+			getValue("tests.recordid");
 		
 	/**
 	 * Gets the value.

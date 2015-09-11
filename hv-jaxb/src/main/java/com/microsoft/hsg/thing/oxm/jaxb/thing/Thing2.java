@@ -30,6 +30,7 @@ import javax.xml.transform.dom.DOMResult;
 import org.w3c.dom.Document;
 
 import com.microsoft.hsg.ApplicationConfig;
+import com.microsoft.hsg.Request;
 import com.microsoft.hsg.oxm.jaxb.JaxbContextFactory;
 import com.microsoft.hsg.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
 
@@ -453,8 +454,8 @@ public class Thing2 {
 		thingType.setValue(TypeManager.getTypeForClass(data.getClass()));
 		setTypeId(thingType);
 	}
-	
-	public void addBlob(String key, InputStream blob_data, String contentType,String personid , String recordid) throws Exception
+
+	public void addBlob(String key, InputStream blob_data, String contentType,Request request) throws Exception
 	{
 		if(this.blobPayload != null)
 		{
@@ -473,7 +474,7 @@ public class Thing2 {
 			this.blobPayload = new BlobPayload();
 		}
 		Blob blob = new Blob();
-		BlobPayloadItem payloadItem = blob.addBlob(key, blob_data, contentType, personid, recordid);
+		BlobPayloadItem payloadItem = blob.addBlob(key, blob_data, contentType,request);
 		this.blobPayload.getBlob().add(payloadItem);
 	}
 }

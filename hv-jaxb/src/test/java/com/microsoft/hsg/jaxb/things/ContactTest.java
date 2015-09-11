@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.microsoft.hsg.ConnectionFactory;
+import com.microsoft.hsg.jaxb.TestHelpers;
 import com.microsoft.hsg.methods.jaxb.SimpleRequestTemplate;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.GetThings3Request;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFilterSpec;
@@ -29,10 +30,7 @@ private SimpleRequestTemplate requestTemplate;
 	@Before
 	public void before()
 	{
-		requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
-    	requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
+		requestTemplate = TestHelpers.GetRequestTemplate();
 	}
 	
 	@Test

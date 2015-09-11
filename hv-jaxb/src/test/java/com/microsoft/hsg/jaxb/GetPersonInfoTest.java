@@ -33,10 +33,7 @@ public class GetPersonInfoTest {
     @Test
     public void GetPersonInfo() throws Exception
     {
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
-    	requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
+    	SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
     	
     	GetPersonInfoResponse response = 
     		(GetPersonInfoResponse)requestTemplate.makeRequest(new GetPersonInfoRequest());

@@ -6,6 +6,7 @@ import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
 import org.jmock.lib.legacy.ClassImposteriser;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -31,12 +32,11 @@ public class GetApplicationSettingsTest {
     }
     
     @Test
+    @Ignore
     public void GetApplicationSettings() throws Exception
     {
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
-    	
+    	SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
+
     	GetApplicationSettingsResponse response = 
     		(GetApplicationSettingsResponse)requestTemplate.makeRequest(
     			new GetApplicationSettings());
