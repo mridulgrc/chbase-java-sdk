@@ -70,8 +70,13 @@ import com.microsoft.hsg.methods.jaxb.auth.Rules;
 import com.microsoft.hsg.methods.jaxb.auth.Set;
 import com.microsoft.hsg.methods.jaxb.beginputblob.request.BeginPutBlobRequest;
 import com.microsoft.hsg.methods.jaxb.beginputblob.response.BeginPutBlobResponse;
+import com.microsoft.hsg.methods.jaxb.deletependingconnectpackage.request.DeletePendingConnectPackageRequest;
 import com.microsoft.hsg.methods.jaxb.getapplicationinfo2.request.GetApplicationInfo2Request;
 import com.microsoft.hsg.methods.jaxb.getapplicationinfo2.response.GetApplicationInfo2Response;
+import com.microsoft.hsg.methods.jaxb.getauthorizedrecords.request.GetAuthorizedRecordsRequest;
+import com.microsoft.hsg.methods.jaxb.getauthorizedrecords.response.GetAuthorizedRecordsResponse;
+import com.microsoft.hsg.methods.jaxb.getpeopleforrecord.request.GetPeopleForRecordRequest;
+import com.microsoft.hsg.methods.jaxb.getpeopleforrecord.response.GetPeopleForRecordResponse;
 import com.microsoft.hsg.methods.jaxb.getpersoninfo.request.GetPersonInfoRequest;
 import com.microsoft.hsg.methods.jaxb.getpersoninfo.response.GetPersonInfoResponse;
 import com.microsoft.hsg.methods.jaxb.getservicedefinition2.request.GetServiceDefinition2Request;
@@ -88,6 +93,7 @@ import com.microsoft.hsg.methods.jaxb.putthings2.request.PutThings2Request;
 import com.microsoft.hsg.methods.jaxb.querypermissions.request.QueryPermissionsRequest;
 import com.microsoft.hsg.methods.jaxb.querypermissions.response.QueryPermissionsResponse;
 import com.microsoft.hsg.methods.jaxb.removeapplicationrecordauthorization.request.RemoveApplicationRecordAuthorizationRequest;
+import com.microsoft.hsg.methods.jaxb.updateexternalid.request.UpdateExternalIdRequest;
 import com.microsoft.hsg.thing.oxm.jaxb.base.DisplayValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.LengthValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
@@ -219,67 +225,11 @@ public class WeightPage implements RequestHandler {
 		GetThings3Response gtResponse = 
 				(GetThings3Response)requestTemplate.makeRequest(info);
 		List things = gtResponse.getGroup().get(0).getThing();
-		//_TestImage();
-		//AddApplication();
+
+		GetAuthorizedRecordsRequest req = new GetAuthorizedRecordsRequest();
+		GetAuthorizedRecordsResponse resp = (GetAuthorizedRecordsResponse)requestTemplate.makeRequest(req);
+		requestTemplate.makeRequest(req);
+
 		request.setAttribute("weights", things);
-	}
-
-	private void _TestImage() throws Exception 
-	{
-		OnlineRequestTemplate requestTemplate = new OnlineRequestTemplate();
-		ThingRequestGroup2 group = new ThingRequestGroup2();
-
-		ThingFilterSpec filter = new ThingFilterSpec();
-		filter.getTypeId().add("a5294488-f865-4ce3-92fa-187cd3b58930");
-		group.getFilter().add(filter);
-		group.setMax(BigInteger.valueOf(30));
-
-		ThingFormatSpec2 format = new ThingFormatSpec2();
-		format.getSection().add(ThingSectionSpec2.CORE);
-		format.getXml().add("");
-		group.setFormat(format);    	
-
-		GetThings3Request info = new GetThings3Request();
-		info.getGroup().add(group);
-
-		GetThings3Response gtResponse = 
-				(GetThings3Response)requestTemplate.makeRequest(info);
-		List things = gtResponse.getGroup().get(0).getThing();
-		Thing2 thing2 = (Thing2)things.get(0);
-
-		PersonInfo person_info = RequestCtx.getPersonInfo();
-
-
-		byte[] file_bytes = GetFileBytes();
-		try
-		{
-			thing2.getBlobPayload().getBlob().remove(0);
-		}
-		catch(Exception e)
-		{
-
-		}
-		String exsistingFileName = "Z:\\image_16A9A542.png";
-		File file = new File(exsistingFileName); 
-		FileInputStream fileInputStream = new FileInputStream(file);
-		Request request = new Request();
-		request.setUserAuthToken(person_info.getUserAuthToken());
-		request.setRecordId(person_info.getRecordId());
-		thing2.addBlob("", fileInputStream, "image/png", request);
-
-		//PutThings2Request ptRequest = new PutThings2Request();
-		//ptRequest.getThing().add(thing2);
-		//requestTemplate.makeRequest(ptRequest);
-	}
-
-	private byte[] GetFileBytes() throws IOException
-	{
-		String exsistingFileName = "C:\\Users\\rajeev\\Pictures\\image_16A9A542.png";
-		File file = new File(exsistingFileName); 
-		FileInputStream fileInputStream = new FileInputStream(file);
-		int bytesAvailable = fileInputStream.available();
-		byte[] buffer = new byte[bytesAvailable];
-		fileInputStream.read(buffer, 0, bytesAvailable);
-		return buffer;
 	}
 }

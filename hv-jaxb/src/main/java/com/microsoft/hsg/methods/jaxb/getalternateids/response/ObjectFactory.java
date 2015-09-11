@@ -37,7 +37,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Info }
+     * Create an instance of {@link GetPeopleForRecordRequest }
      * 
      */
     public GetAlternateIdsResponse createInfo() {
@@ -45,7 +45,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Info.AlternateIds }
+     * Create an instance of {@link GetPeopleForRecordRequest.AlternateIds }
      * 
      */
     public GetAlternateIdsResponse.AlternateIds createInfoAlternateIds() {

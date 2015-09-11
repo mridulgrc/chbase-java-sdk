@@ -37,7 +37,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Info }
+     * Create an instance of {@link GetPeopleForRecordRequest }
      * 
      */
     public UpdateEventSubscriptionRequest createInfo() {

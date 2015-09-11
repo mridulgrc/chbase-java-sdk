@@ -16,9 +16,12 @@ import com.microsoft.hsg.ConnectionFactory;
 import com.microsoft.hsg.methods.jaxb.SimpleRequestTemplate;
 import com.microsoft.hsg.methods.jaxb.createconnectrequest.request.CreateConnectRequestRequest;
 import com.microsoft.hsg.methods.jaxb.createconnectrequest.response.CreateConnectRequestResponse;
+import com.microsoft.hsg.methods.jaxb.deletependingconnectpackage.request.DeletePendingConnectPackageRequest;
+import com.microsoft.hsg.methods.jaxb.deletependingconnectrequest.request.DeletePendingConnectRequestRequest;
+import com.microsoft.hsg.methods.jaxb.updateexternalid.request.UpdateExternalIdRequest;
 
 @RunWith(JMock.class)
-public class CreateConnectRequestTest {
+public class ConnectRequestTest {
 	
 
 	private Mockery context = new JUnit4Mockery() {{
@@ -29,7 +32,7 @@ public class CreateConnectRequestTest {
      * Create the test case
      *
      */
-    public CreateConnectRequestTest()
+    public ConnectRequestTest()
     {
     }
     
@@ -38,19 +41,41 @@ public class CreateConnectRequestTest {
     {
     	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
     			ConnectionFactory.getConnection());
-    	//requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
-    	//requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
     	
     	CreateConnectRequestRequest connectRequest = new CreateConnectRequestRequest();
     	connectRequest.setFriendlyName("friendly-name");
     	connectRequest.setQuestion("What is your favorite color");
     	connectRequest.setAnswer("green");
-    	connectRequest.setExternalId(newExternalId());
+    	String externalid=newExternalId();
+    	connectRequest.setExternalId(externalid);
     	
     	CreateConnectRequestResponse response =
     		(CreateConnectRequestResponse)requestTemplate.makeRequest(connectRequest);
-    	
     	Assert.assertNotNull(response);
+    	
+    	externalid=  UpdateExternalIDTest(externalid, response.getIdentityCode());
+    	DeletePendingConnectionrequestsTest(externalid, response.getIdentityCode());
+    }
+    
+    private String UpdateExternalIDTest(String oldExtid, String identity) throws Exception
+    {
+    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
+    			ConnectionFactory.getConnection());
+    	String ext_id = newExternalId();
+    	UpdateExternalIdRequest req = new UpdateExternalIdRequest();
+    	req.setIdentityCode(identity);
+    	req.setNewExternalId(ext_id);
+    	requestTemplate.makeRequest(req);
+    	return ext_id;
+    }
+    
+    private  void DeletePendingConnectionrequestsTest(String extid, String identity) throws Exception
+    {
+    	DeletePendingConnectRequestRequest req = new DeletePendingConnectRequestRequest();
+    	req.setExternalId(extid);
+    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
+    			ConnectionFactory.getConnection());
+    	requestTemplate.makeRequest(req);
     }
     
     private String newExternalId() throws Exception 

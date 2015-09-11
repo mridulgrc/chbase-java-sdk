@@ -16,6 +16,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+import com.microsoft.hsg.methods.jaxb.JaxbRequest;
+
 
 /**
  * 
@@ -54,6 +56,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
+@JaxbRequest(
+		methodName = "GetAuthorizedRecords",
+		methodVersion = "1",
+		responseNS = "urn:com.microsoft.wc.methods.response.GetAuthorizedRecords")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "id"

@@ -37,11 +37,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeletePendingConnectPackageRequest }
+     * Create an instance of {@link DeletePendingConnectRequestRequest }
      * 
      */
-    public DeletePendingConnectPackageRequest createInfo() {
-        return new DeletePendingConnectPackageRequest();
+    public DeletePendingConnectRequestRequest createInfo() {
+        return new DeletePendingConnectRequestRequest();
     }
 
 }

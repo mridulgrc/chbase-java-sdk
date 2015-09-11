@@ -14,6 +14,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+import com.microsoft.hsg.methods.jaxb.JaxbRequest;
+
 
 /**
  * 
@@ -52,12 +54,16 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
+@JaxbRequest(
+		methodName = "DeletePendingConnectRequest",
+		methodVersion = "1",
+		responseNS = "urn:com.microsoft.wc.methods.response.DeletePendingConnectRequest")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "externalId"
 })
 @XmlRootElement(name = "info")
-public class DeletePendingConnectPackageRequest {
+public class DeletePendingConnectRequestRequest {
 
     @XmlElement(name = "external-id", required = true)
     protected String externalId;

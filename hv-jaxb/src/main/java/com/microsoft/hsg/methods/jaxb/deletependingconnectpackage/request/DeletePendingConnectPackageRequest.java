@@ -14,6 +14,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+import com.microsoft.hsg.methods.jaxb.JaxbRequest;
+
 
 /**
  * 
@@ -55,6 +57,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
+@JaxbRequest(
+		methodName = "DeletePendingConnectPackage",
+		methodVersion = "1",
+		responseNS = "urn:com.microsoft.wc.methods.response.DeletePendingConnectPackage")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "identityCode",
