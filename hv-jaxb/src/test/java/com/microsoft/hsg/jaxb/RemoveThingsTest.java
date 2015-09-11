@@ -12,14 +12,14 @@ import org.junit.runner.RunWith;
 
 import com.microsoft.hsg.ConnectionFactory;
 import com.microsoft.hsg.methods.jaxb.SimpleRequestTemplate;
-import com.microsoft.hsg.methods.jaxb.putthings.request.PutThingsRequest;
-import com.microsoft.hsg.methods.jaxb.putthings.response.PutThingsResponse;
+import com.microsoft.hsg.methods.jaxb.putthings2.request.PutThings2Request;
+import com.microsoft.hsg.methods.jaxb.putthings2.response.PutThings2Response;
 import com.microsoft.hsg.methods.jaxb.removethings.request.RemoveThingsRequest;
 import com.microsoft.hsg.thing.oxm.jaxb.base.DisplayValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing;
+import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.ThingKey;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.ThingType;
 import com.microsoft.hsg.thing.oxm.jaxb.weight.Weight;
@@ -61,7 +61,7 @@ public class RemoveThingsTest {
   
     public ThingKey PutNewThing() throws Exception
     {
-    	PutThingsRequest request = new PutThingsRequest();
+    	PutThings2Request request = new PutThings2Request();
     	Weight weight = new Weight();
     	
     	WeightValue wv = new WeightValue();
@@ -84,7 +84,7 @@ public class RemoveThingsTest {
     	dv.setUnitsCode("lb");
     	wv.setDisplay(dv);
     	
-    	Thing thing = new Thing();
+    	Thing2 thing = new Thing2();
     	thing.setData(weight);
     	
     	ThingType thingType = new ThingType();
@@ -93,7 +93,7 @@ public class RemoveThingsTest {
     	
     	request.getThing().add(thing);
     	
-    	PutThingsResponse response = (PutThingsResponse)requestTemplate.makeRequest(request);
+    	PutThings2Response response = (PutThings2Response)requestTemplate.makeRequest(request);
     	return response.getThingId().get(0);
     }
 }

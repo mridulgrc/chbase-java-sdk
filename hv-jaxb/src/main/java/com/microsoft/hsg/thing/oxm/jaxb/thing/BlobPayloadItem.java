@@ -137,18 +137,6 @@ public class BlobPayloadItem {
     }
 
     /**
-     * Sets the value of the base64Data property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setBase64Data(String value) {
-        this.base64Data = value;
-    }
-
-    /**
      * Gets the value of the blobRefUrl property.
      * 
      * @return

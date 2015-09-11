@@ -11,14 +11,14 @@ import org.junit.Test;
 
 import com.microsoft.hsg.ConnectionFactory;
 import com.microsoft.hsg.methods.jaxb.SimpleRequestTemplate;
-import com.microsoft.hsg.methods.jaxb.getthings.request.GetThingsRequest;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingFilterSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingFormatSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingRequestGroup;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingSectionSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.response.GetThingsResponse;
-import com.microsoft.hsg.methods.jaxb.putthings.request.PutThingsRequest;
-import com.microsoft.hsg.methods.jaxb.putthings.response.PutThingsResponse;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFilterSpec;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.GetThings3Request;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFormatSpec2;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingRequestGroup2;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingSectionSpec2;
+import com.microsoft.hsg.methods.jaxb.getthings3.response.GetThings3Response;
+import com.microsoft.hsg.methods.jaxb.putthings2.request.PutThings2Request;
+import com.microsoft.hsg.methods.jaxb.putthings2.response.PutThings2Response;
 import com.microsoft.hsg.oxm.jaxb.JaxbContextFactory;
 import com.microsoft.hsg.thing.oxm.jaxb.allergy.Allergy;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
@@ -28,7 +28,7 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDate;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.StructuredApproxDate;
-import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing;
+import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.TypeManager;
 import com.microsoft.hsg.thing.oxm.jaxb.weight.Weight;
 
@@ -48,31 +48,31 @@ public class AllergyTest {
 	@Test
 	public void testBasicPutGet() throws Exception
 	{
-		Thing thing = new Thing();
+		Thing2 thing = new Thing2();
     	thing.setData(createValidAllergy());
 		
-		PutThingsRequest request = new PutThingsRequest();
+		PutThings2Request request = new PutThings2Request();
     	request.getThing().add(thing);
     	
-    	PutThingsResponse response = (PutThingsResponse)requestTemplate.makeRequest(request);
+    	PutThings2Response response = (PutThings2Response)requestTemplate.makeRequest(request);
     	
-    	ThingRequestGroup group = new ThingRequestGroup();
+    	ThingRequestGroup2 group = new ThingRequestGroup2();
     	
     	ThingFilterSpec filter = new ThingFilterSpec();
     	filter.getTypeId().add(TypeManager.getTypeForClass(Allergy.class));
     	group.getFilter().add(filter);
     	
-    	ThingFormatSpec format = new ThingFormatSpec();
-    	format.getSection().add(ThingSectionSpec.CORE);
+    	ThingFormatSpec2 format = new ThingFormatSpec2();
+    	format.getSection().add(ThingSectionSpec2.CORE);
     	format.getXml().add("");
     	group.setFormat(format);
     	group.setMax(BigInteger.valueOf(30));
     	
-    	GetThingsRequest info = new GetThingsRequest();
+    	GetThings3Request info = new GetThings3Request();
     	info.getGroup().add(group);
     	
-    	GetThingsResponse thingsResponse = 
-    		(GetThingsResponse)requestTemplate.makeRequest(info);
+    	GetThings3Response thingsResponse = 
+    		(GetThings3Response)requestTemplate.makeRequest(info);
     	
     	Allergy result = (Allergy)thingsResponse.getGroup().get(0).getThing().get(0).getData();
 	}

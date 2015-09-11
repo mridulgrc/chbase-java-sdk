@@ -13,13 +13,13 @@ import org.junit.runner.RunWith;
 
 import com.microsoft.hsg.ConnectionFactory;
 import com.microsoft.hsg.methods.jaxb.SimpleRequestTemplate;
-import com.microsoft.hsg.methods.jaxb.putthings.request.PutThingsRequest;
-import com.microsoft.hsg.methods.jaxb.putthings.response.PutThingsResponse;
+import com.microsoft.hsg.methods.jaxb.putthings2.request.PutThings2Request;
+import com.microsoft.hsg.methods.jaxb.putthings2.response.PutThings2Response;
 import com.microsoft.hsg.thing.oxm.jaxb.annotation.Annotation;
 import com.microsoft.hsg.thing.oxm.jaxb.base.DisplayValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing;
+import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
 import com.microsoft.hsg.thing.oxm.jaxb.weight.Weight;
 
 @RunWith(JMock.class)
@@ -61,13 +61,13 @@ public class PutThingsTest {
     	weight.setValue(wv);
     	weight.setWhen(DateTime.fromCalendar(Calendar.getInstance()));
     	
-    	Thing thing = new Thing();
+    	Thing2 thing = new Thing2();
     	thing.setData(weight);
     	
-    	PutThingsRequest request = new PutThingsRequest();
+    	PutThings2Request request = new PutThings2Request();
     	request.getThing().add(thing);
     	
-    	PutThingsResponse response = (PutThingsResponse)requestTemplate.makeRequest(request);
+    	PutThings2Response response = (PutThings2Response)requestTemplate.makeRequest(request);
     	
     	Assert.assertNotNull(response);
     }
@@ -84,12 +84,12 @@ public class PutThingsTest {
     	note.setContent("fred");
     	note.setWhen(DateTime.fromCalendar(Calendar.getInstance()));
     	
-    	Thing thing = new Thing();
+    	Thing2 thing = new Thing2();
     	thing.setData(note);
     	
-    	PutThingsRequest request = new PutThingsRequest();
+    	PutThings2Request request = new PutThings2Request();
     	request.getThing().add(thing);
     	
-    	PutThingsResponse response = (PutThingsResponse)requestTemplate.makeRequest(request);
+    	PutThings2Response response = (PutThings2Response)requestTemplate.makeRequest(request);
     }
 }

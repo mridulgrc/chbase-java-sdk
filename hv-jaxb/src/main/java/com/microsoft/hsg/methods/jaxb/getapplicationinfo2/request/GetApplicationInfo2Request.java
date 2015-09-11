@@ -50,7 +50,7 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
 @JaxbRequest(
 		methodName = "GetApplicationInfo",
 		methodVersion = "2",
-		responseNS = "urn:com.microsoft.wc.methods.response.GetApplicationInfo2")
+		responseNS = "urn:com.microsoft.wc.methods.response.GetApplicationInfo")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "allLanguages",

@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing;
+import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
 
 
 /**
@@ -51,7 +51,7 @@ import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing;
 @XmlRootElement(name = "info")
 public class GetValidGroupMembershipResponse {
 
-    protected List<Thing> thing;
+    protected List<Thing2> thing;
 
     /**
      * Gets the value of the thing property.
@@ -75,9 +75,9 @@ public class GetValidGroupMembershipResponse {
      * 
      * 
      */
-    public List<Thing> getThing() {
+    public List<Thing2> getThing() {
         if (thing == null) {
-            thing = new ArrayList<Thing>();
+            thing = new ArrayList<Thing2>();
         }
         return this.thing;
     }

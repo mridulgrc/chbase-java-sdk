@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.microsoft.hsg.applications.OfflineRequestTemplate;
 import com.microsoft.hsg.applications.OnlineRequestTemplate;
 import com.microsoft.hsg.applications.RequestHandler;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingFilterSpec;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFilterSpec;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.GetThings3Request;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFormatSpec2;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingRequestGroup2;

@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing;
+import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
 
 
 /**
@@ -83,7 +83,7 @@ public class CreateConnectPackageRequest {
     @XmlElement(name = "external-id", required = true)
     protected String externalId;
     @XmlElement(name = "package", required = true)
-    protected Thing _package;
+    protected Thing2 _package;
 
     /**
      * Gets the value of the identityCode property.
@@ -189,7 +189,7 @@ public class CreateConnectPackageRequest {
      *     {@link Thing }
      *     
      */
-    public Thing getPackage() {
+    public Thing2 getPackage() {
         return _package;
     }
 
@@ -201,7 +201,7 @@ public class CreateConnectPackageRequest {
      *     {@link Thing }
      *     
      */
-    public void setPackage(Thing value) {
+    public void setPackage(Thing2 value) {
         this._package = value;
     }
 

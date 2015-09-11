@@ -14,14 +14,14 @@ import org.junit.runner.RunWith;
 import com.microsoft.hsg.ConnectionFactory;
 import com.microsoft.hsg.Request;
 import com.microsoft.hsg.methods.jaxb.SimpleRequestTemplate;
-import com.microsoft.hsg.methods.jaxb.getthings.request.GetThingsRequest;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingFilterSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingFormatSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingRequestGroup;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingSectionSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.response.GetThingsResponse;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFilterSpec;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.GetThings3Request;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFormatSpec2;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingRequestGroup2;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingSectionSpec2;
+import com.microsoft.hsg.methods.jaxb.getthings3.response.GetThings3Response;
 import com.microsoft.hsg.thing.oxm.jaxb.basic.Basic;
-import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing;
+import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
 import com.microsoft.hsg.thing.oxm.jaxb.weight.Weight;
 
 @RunWith(JMock.class)
@@ -48,23 +48,23 @@ public class GetThingsTest {
     	requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
     	requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
     	
-    	ThingRequestGroup group = new ThingRequestGroup();
+    	ThingRequestGroup2 group = new ThingRequestGroup2();
     	
     	ThingFilterSpec filter = new ThingFilterSpec();
     	filter.getTypeId().add("3d34d87e-7fc1-4153-800f-f56592cb0d17");
     	group.getFilter().add(filter);
     	group.setMax(BigInteger.valueOf(30));
     	
-    	ThingFormatSpec format = new ThingFormatSpec();
-    	format.getSection().add(ThingSectionSpec.CORE);
+    	ThingFormatSpec2 format = new ThingFormatSpec2();
+    	format.getSection().add(ThingSectionSpec2.CORE);
     	format.getXml().add("");
     	group.setFormat(format);    	
     	
-    	GetThingsRequest info = new GetThingsRequest();
+    	GetThings3Request info = new GetThings3Request();
     	info.getGroup().add(group);
     	
-    	GetThingsResponse response = 
-    		(GetThingsResponse)requestTemplate.makeRequest(info);
+    	GetThings3Response response = 
+    		(GetThings3Response)requestTemplate.makeRequest(info);
     	
     	Weight weight = (Weight)response.getGroup().get(0).getThing().get(0).getData();
     }
@@ -77,23 +77,23 @@ public class GetThingsTest {
     	requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
     	requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
     	
-    	ThingRequestGroup group = new ThingRequestGroup();
+    	ThingRequestGroup2 group = new ThingRequestGroup2();
     	
     	ThingFilterSpec filter = new ThingFilterSpec();
     	filter.getTypeId().add("3b3e6b16-eb69-483c-8d7e-dfe116ae6092");
     	group.getFilter().add(filter);
     	
-    	ThingFormatSpec format = new ThingFormatSpec();
-    	format.getSection().add(ThingSectionSpec.CORE);
+    	ThingFormatSpec2 format = new ThingFormatSpec2();
+    	format.getSection().add(ThingSectionSpec2.CORE);
     	format.getXml().add("");
     	group.setFormat(format);
     	group.setMax(BigInteger.valueOf(30));
     	
-    	GetThingsRequest info = new GetThingsRequest();
+    	GetThings3Request info = new GetThings3Request();
     	info.getGroup().add(group);
     	
-    	GetThingsResponse response = 
-    		(GetThingsResponse)requestTemplate.makeRequest(info);
+    	GetThings3Response response = 
+    		(GetThings3Response)requestTemplate.makeRequest(info);
     	
     	Basic weight = (Basic)response.getGroup().get(0).getThing().get(0).getData();
     }
@@ -106,26 +106,26 @@ public class GetThingsTest {
     	requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
     	requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
     	
-    	ThingRequestGroup group = new ThingRequestGroup();
+    	ThingRequestGroup2 group = new ThingRequestGroup2();
     	
     	ThingFilterSpec filter = new ThingFilterSpec();
     	filter.getTypeId().add("3d34d87e-7fc1-4153-800f-f56592cb0d17");
     	group.getFilter().add(filter);
     	group.setMax(BigInteger.valueOf(30));
     	
-    	ThingFormatSpec format = new ThingFormatSpec();
-    	format.getSection().add(ThingSectionSpec.CORE);
-    	format.getSection().add(ThingSectionSpec.AUDITS);
+    	ThingFormatSpec2 format = new ThingFormatSpec2();
+    	format.getSection().add(ThingSectionSpec2.CORE);
+    	format.getSection().add(ThingSectionSpec2.AUDITS);
     	format.getXml().add("");
     	group.setFormat(format);    	
     	
-    	GetThingsRequest info = new GetThingsRequest();
+    	GetThings3Request info = new GetThings3Request();
     	info.getGroup().add(group);
     	
-    	GetThingsResponse response = 
-    		(GetThingsResponse)requestTemplate.makeRequest(info);
+    	GetThings3Response response = 
+    		(GetThings3Response)requestTemplate.makeRequest(info);
     	
-    	Thing thing = response.getGroup().get(0).getThing().get(0);
+    	Thing2 thing = response.getGroup().get(0).getThing().get(0);
     	Assert.assertNotNull(thing.getCreated());
     }
     
@@ -140,23 +140,23 @@ public class GetThingsTest {
     	requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
     	requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
     	
-    	ThingRequestGroup group = new ThingRequestGroup();
+    	ThingRequestGroup2 group = new ThingRequestGroup2();
     	
     	ThingFilterSpec filter = new ThingFilterSpec();
     	filter.getTypeId().add("3d34d87e-7fc1-4153-800f-f56592cb0d17");
     	group.getFilter().add(filter);
     	group.setMax(BigInteger.valueOf(30));
     	
-    	ThingFormatSpec format = new ThingFormatSpec();
-    	format.getSection().add(ThingSectionSpec.CORE);
-    	format.getSection().add(ThingSectionSpec.AUDITS);
+    	ThingFormatSpec2 format = new ThingFormatSpec2();
+    	format.getSection().add(ThingSectionSpec2.CORE);
+    	format.getSection().add(ThingSectionSpec2.AUDITS);
     	format.getXml().add("");
     	group.setFormat(format);    	
     	
-    	GetThingsRequest info = new GetThingsRequest();
+    	GetThings3Request info = new GetThings3Request();
     	info.getGroup().add(group);
     	
-    	GetThingsResponse response = 
-    		(GetThingsResponse)requestTemplate.makeRequest(request, info);
+    	GetThings3Response response = 
+    		(GetThings3Response)requestTemplate.makeRequest(request, info);
     }
 }

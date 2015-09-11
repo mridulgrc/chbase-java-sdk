@@ -6,7 +6,7 @@
 //
 
 
-package com.microsoft.hsg.methods.jaxb.getthings.request;
+package com.microsoft.hsg.methods.jaxb.getthings3.request;
 
 import java.util.ArrayList;
 import java.util.List;

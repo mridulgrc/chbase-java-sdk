@@ -115,15 +115,7 @@ public class ObjectFactory {
     public Common createCommon() {
         return new Common();
     }
-
-    /**
-     * Create an instance of {@link Thing }
-     * 
-     */
-    public Thing createThing() {
-        return new Thing();
-    }
-
+    
     /**
      * Create an instance of {@link DataXml }
      * 

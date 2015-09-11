@@ -75,20 +75,14 @@ import com.microsoft.hsg.methods.jaxb.getpersoninfo.request.GetPersonInfoRequest
 import com.microsoft.hsg.methods.jaxb.getpersoninfo.response.GetPersonInfoResponse;
 import com.microsoft.hsg.methods.jaxb.getservicedefinition2.request.GetServiceDefinition2Request;
 import com.microsoft.hsg.methods.jaxb.getservicedefinition2.response.GetServiceDefinition2Response;
-import com.microsoft.hsg.methods.jaxb.getthings.request.GetThingsRequest;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingFilterSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingFormatSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingRequestGroup;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingSectionSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.response.GetThingsResponse;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.GetThings3Request;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFilterSpec;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFormatSpec2;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingRequestGroup2;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingSectionSpec2;
 import com.microsoft.hsg.methods.jaxb.getthings3.response.GetThings3Response;
 import com.microsoft.hsg.methods.jaxb.getthingtype.request.GetThingTypeRequest;
 import com.microsoft.hsg.methods.jaxb.getthingtype.response.GetThingTypeResponse;
-import com.microsoft.hsg.methods.jaxb.putthings.request.PutThingsRequest;
 import com.microsoft.hsg.methods.jaxb.putthings2.request.PutThings2Request;
 import com.microsoft.hsg.methods.jaxb.querypermissions.request.QueryPermissionsRequest;
 import com.microsoft.hsg.methods.jaxb.querypermissions.response.QueryPermissionsResponse;
@@ -106,7 +100,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.thing.BlobHasher;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.BlobInfo;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.BlobPayload;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.BlobPayloadItem;
-import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.ThingType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
@@ -355,11 +348,11 @@ public class WeightPage implements RequestHandler {
 		String exsistingFileName = "Z:\\image_16A9A542.png";
 		File file = new File(exsistingFileName); 
 		FileInputStream fileInputStream = new FileInputStream(file);
-		thing2.addBlob("", fileInputStream, "image/png",person_info.getPersonId(),person_info.getRecordId());
+		//thing2.addBlob("", fileInputStream, "image/png",person_info.getPersonId(),person_info.getRecordId());
 
-		PutThings2Request ptRequest = new PutThings2Request();
-		ptRequest.getThing().add(thing2);
-		requestTemplate.makeRequest(ptRequest);
+		//PutThings2Request ptRequest = new PutThings2Request();
+		//ptRequest.getThing().add(thing2);
+		//requestTemplate.makeRequest(ptRequest);
 	}
 
 	private byte[] GetFileBytes() throws IOException

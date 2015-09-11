@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing;
+import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
 
 
 /**
@@ -70,7 +70,7 @@ import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing;
 public class OverwriteThingsRequest {
 
     @XmlElement(required = true)
-    protected List<Thing> thing;
+    protected List<Thing2> thing;
 
     /**
      * Gets the value of the thing property.
@@ -94,9 +94,9 @@ public class OverwriteThingsRequest {
      * 
      * 
      */
-    public List<Thing> getThing() {
+    public List<Thing2> getThing() {
         if (thing == null) {
-            thing = new ArrayList<Thing>();
+            thing = new ArrayList<Thing2>();
         }
         return this.thing;
     }

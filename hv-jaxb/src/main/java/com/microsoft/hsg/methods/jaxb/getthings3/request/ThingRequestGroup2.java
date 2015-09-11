@@ -18,7 +18,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.ThingKey;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingFilterSpec;
 
 
 /**

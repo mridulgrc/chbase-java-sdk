@@ -17,17 +17,17 @@ import org.junit.runner.RunWith;
 
 import com.microsoft.hsg.ConnectionFactory;
 import com.microsoft.hsg.methods.jaxb.SimpleRequestTemplate;
-import com.microsoft.hsg.methods.jaxb.getthings.request.GetThingsRequest;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingFilterSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingFormatSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingRequestGroup;
-import com.microsoft.hsg.methods.jaxb.getthings.request.ThingSectionSpec;
-import com.microsoft.hsg.methods.jaxb.getthings.response.GetThingsResponse;
-import com.microsoft.hsg.methods.jaxb.putthings.request.PutThingsRequest;
-import com.microsoft.hsg.methods.jaxb.putthings.response.PutThingsResponse;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFilterSpec;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.GetThings3Request;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingFormatSpec2;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingRequestGroup2;
+import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingSectionSpec2;
+import com.microsoft.hsg.methods.jaxb.getthings3.response.GetThings3Response;
+import com.microsoft.hsg.methods.jaxb.putthings2.request.PutThings2Request;
+import com.microsoft.hsg.methods.jaxb.putthings2.response.PutThings2Response;
 import com.microsoft.hsg.methods.jaxb.removethings.request.RemoveThingsRequest;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
-import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing;
+import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
 
 @RunWith(JMock.class)
 public class TypeVersioningTest {
@@ -42,7 +42,7 @@ public class TypeVersioningTest {
     @Test
     public void GetAllVersions() throws Exception
     {
-        List<Thing> t = GetAllMedications();
+        List<Thing2> t = GetAllMedications();
         String [] expected = new String[]{
             medication1Type,
             medication2Type
@@ -65,24 +65,24 @@ public class TypeVersioningTest {
         requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
         requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
         
-        ThingRequestGroup group = new ThingRequestGroup();
+        ThingRequestGroup2 group = new ThingRequestGroup2();
         
         ThingFilterSpec filter = new ThingFilterSpec();
         filter.getTypeId().add(medication2Type);
         filter.getTypeId().add(medication1Type);
         group.getFilter().add(filter);
        
-        ThingFormatSpec format = new ThingFormatSpec();
-        format.getSection().add(ThingSectionSpec.CORE);
+        ThingFormatSpec2 format = new ThingFormatSpec2();
+        format.getSection().add(ThingSectionSpec2.CORE);
         format.getXml().add("");
         format.getTypeVersionFormat().add(medication1Type);
         group.setFormat(format);        
         
-        GetThingsRequest info = new GetThingsRequest();
+        GetThings3Request info = new GetThings3Request();
         info.getGroup().add(group);
         
-        GetThingsResponse response = 
-            (GetThingsResponse)requestTemplate.makeRequest(info);
+        GetThings3Response response = 
+            (GetThings3Response)requestTemplate.makeRequest(info);
         
         String [] expected = new String[]{
                 medication1Type,
@@ -106,24 +106,24 @@ public class TypeVersioningTest {
         requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
         requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
         
-        ThingRequestGroup group = new ThingRequestGroup();
+        ThingRequestGroup2 group = new ThingRequestGroup2();
         
         ThingFilterSpec filter = new ThingFilterSpec();
         filter.getTypeId().add(medication2Type);
         filter.getTypeId().add(medication1Type);
         group.getFilter().add(filter);
        
-        ThingFormatSpec format = new ThingFormatSpec();
-        format.getSection().add(ThingSectionSpec.CORE);
+        ThingFormatSpec2 format = new ThingFormatSpec2();
+        format.getSection().add(ThingSectionSpec2.CORE);
         format.getXml().add("");
         format.getTypeVersionFormat().add(medication2Type);
         group.setFormat(format);        
         
-        GetThingsRequest info = new GetThingsRequest();
+        GetThings3Request info = new GetThings3Request();
         info.getGroup().add(group);
         
-        GetThingsResponse response = 
-            (GetThingsResponse)requestTemplate.makeRequest(info);
+        GetThings3Response response = 
+            (GetThings3Response)requestTemplate.makeRequest(info);
         
         String [] expected = new String[]{
                 medication2Type,
@@ -142,7 +142,7 @@ public class TypeVersioningTest {
     @Before
     public void Cleanup() throws Exception
     {
-        List<Thing> things = GetAllMedications();
+        List<Thing2> things = GetAllMedications();
         RemoveThings(things);
         AddMeds();
     }
@@ -180,30 +180,30 @@ public class TypeVersioningTest {
         PutThings(things);
     }
     
-    private List<Thing> GetAllMedications() throws Exception
+    private List<Thing2> GetAllMedications() throws Exception
     {
         SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
         ConnectionFactory.getConnection());
         requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
         requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
         
-        ThingRequestGroup group = new ThingRequestGroup();
+        ThingRequestGroup2 group = new ThingRequestGroup2();
         
         ThingFilterSpec filter = new ThingFilterSpec();
         filter.getTypeId().add(medication2Type);
         filter.getTypeId().add(medication1Type);
         group.getFilter().add(filter);
        
-        ThingFormatSpec format = new ThingFormatSpec();
-        format.getSection().add(ThingSectionSpec.CORE);
+        ThingFormatSpec2 format = new ThingFormatSpec2();
+        format.getSection().add(ThingSectionSpec2.CORE);
         format.getXml().add("");
         group.setFormat(format);        
         
-        GetThingsRequest info = new GetThingsRequest();
+        GetThings3Request info = new GetThings3Request();
         info.getGroup().add(group);
         
-        GetThingsResponse response = 
-            (GetThingsResponse)requestTemplate.makeRequest(info);
+        GetThings3Response response = 
+            (GetThings3Response)requestTemplate.makeRequest(info);
         
         return response.getGroup().get(0).getThing();
     }
@@ -215,17 +215,17 @@ public class TypeVersioningTest {
         requestTemplate.setPersonId("75ac2c6c-c90e-4f7e-b74d-bb7e81787beb");
         requestTemplate.setRecordId("8c390004-3d41-4f5c-8f24-4841651579d6");
             
-        PutThingsRequest request = new PutThingsRequest();
+        PutThings2Request request = new PutThings2Request();
         for( Object thing : things)
         {
-            Thing t = new Thing();
+            Thing2 t = new Thing2();
             t.setData(thing);
             request.getThing().add(t);
         }
-        PutThingsResponse response = (PutThingsResponse)requestTemplate.makeRequest(request);
+        PutThings2Response response = (PutThings2Response)requestTemplate.makeRequest(request);
     }
     
-    private void RemoveThings(List<Thing> things) throws Exception
+    private void RemoveThings(List<Thing2> things) throws Exception
     {
         if (things.size() == 0) 
         {
@@ -234,7 +234,7 @@ public class TypeVersioningTest {
         
         RemoveThingsRequest removeThings = new RemoveThingsRequest();
         
-        for ( Thing thing : things )
+        for ( Thing2 thing : things )
         {
             removeThings.getThingId().add(thing.getThingId());
         }
