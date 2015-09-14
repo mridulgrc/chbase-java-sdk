@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:19:41 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getauthorizedpeople.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -53,37 +54,32 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "responseResults"
-})
+@XmlType(name = "", propOrder = { "responseResults" })
 @XmlRootElement(name = "info")
 public class GetAuthorizedPeopleResponseWrapper {
 
-    @XmlElement(name = "response-results", required = true)
-    protected GetAuthorizedPeopleResponse responseResults;
+	@XmlElement(name = "response-results", required = true)
+	protected GetAuthorizedPeopleResponse responseResults;
 
-    /**
-     * Gets the value of the responseResults property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GetAuthorizedPeopleResponse }
-     *     
-     */
-    public GetAuthorizedPeopleResponse getResponseResults() {
-        return responseResults;
-    }
+	/**
+	 * Gets the value of the responseResults property.
+	 * 
+	 * @return possible object is {@link GetAuthorizedPeopleResponse }
+	 * 
+	 */
+	public GetAuthorizedPeopleResponse getResponseResults() {
+		return responseResults;
+	}
 
-    /**
-     * Sets the value of the responseResults property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GetAuthorizedPeopleResponse }
-     *     
-     */
-    public void setResponseResults(GetAuthorizedPeopleResponse value) {
-        this.responseResults = value;
-    }
+	/**
+	 * Sets the value of the responseResults property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GetAuthorizedPeopleResponse }
+	 * 
+	 */
+	public void setResponseResults(GetAuthorizedPeopleResponse value) {
+		this.responseResults = value;
+	}
 
 }

@@ -5,14 +5,12 @@
 // Generated on: 2011.03.01 at 07:55:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.subscription;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -35,9 +33,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for HVEventingSharedKey complex type.
+ * <p>
+ * Java class for HVEventingSharedKey complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="HVEventingSharedKey">
@@ -55,63 +56,54 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "HVEventingSharedKey", propOrder = {
-    "notificationKey",
-    "notificationKeyVersionId"
-})
+@XmlType(name = "HVEventingSharedKey", propOrder = { "notificationKey", "notificationKeyVersionId" })
 public class HVEventingSharedKey {
 
-    @XmlElement(name = "notification-key", required = true)
-    protected String notificationKey;
-    @XmlElement(name = "notification-key-version-id", required = true)
-    protected String notificationKeyVersionId;
+	@XmlElement(name = "notification-key", required = true)
+	protected String notificationKey;
+	@XmlElement(name = "notification-key-version-id", required = true)
+	protected String notificationKeyVersionId;
 
-    /**
-     * Gets the value of the notificationKey property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNotificationKey() {
-        return notificationKey;
-    }
+	/**
+	 * Gets the value of the notificationKey property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getNotificationKey() {
+		return notificationKey;
+	}
 
-    /**
-     * Sets the value of the notificationKey property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNotificationKey(String value) {
-        this.notificationKey = value;
-    }
+	/**
+	 * Sets the value of the notificationKey property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setNotificationKey(String value) {
+		this.notificationKey = value;
+	}
 
-    /**
-     * Gets the value of the notificationKeyVersionId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNotificationKeyVersionId() {
-        return notificationKeyVersionId;
-    }
+	/**
+	 * Gets the value of the notificationKeyVersionId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getNotificationKeyVersionId() {
+		return notificationKeyVersionId;
+	}
 
-    /**
-     * Sets the value of the notificationKeyVersionId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNotificationKeyVersionId(String value) {
-        this.notificationKeyVersionId = value;
-    }
+	/**
+	 * Sets the value of the notificationKeyVersionId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setNotificationKeyVersionId(String value) {
+		this.notificationKeyVersionId = value;
+	}
 
 }

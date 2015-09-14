@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,19 +12,23 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     Defines a single sample.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     Defines a single sample.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * 
- * <p>Java class for sample complex type.
+ * <p>
+ * Java class for sample complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="sample">
@@ -44,80 +47,70 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "sample", propOrder = {
-    "timeOffset",
-    "note",
-    "value"
-})
+@XmlType(name = "sample", propOrder = { "timeOffset", "note", "value" })
 public class Sample {
 
-    @XmlElement(name = "time-offset")
-    protected double timeOffset;
-    protected String note;
-    protected String value;
+	@XmlElement(name = "time-offset")
+	protected double timeOffset;
+	protected String note;
+	protected String value;
 
-    /**
-     * Gets the value of the timeOffset property.
-     * 
-     */
-    public double getTimeOffset() {
-        return timeOffset;
-    }
+	/**
+	 * Gets the value of the timeOffset property.
+	 * 
+	 */
+	public double getTimeOffset() {
+		return timeOffset;
+	}
 
-    /**
-     * Sets the value of the timeOffset property.
-     * 
-     */
-    public void setTimeOffset(double value) {
-        this.timeOffset = value;
-    }
+	/**
+	 * Sets the value of the timeOffset property.
+	 * 
+	 */
+	public void setTimeOffset(double value) {
+		this.timeOffset = value;
+	}
 
-    /**
-     * Gets the value of the note property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNote() {
-        return note;
-    }
+	/**
+	 * Gets the value of the note property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getNote() {
+		return note;
+	}
 
-    /**
-     * Sets the value of the note property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNote(String value) {
-        this.note = value;
-    }
+	/**
+	 * Sets the value of the note property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setNote(String value) {
+		this.note = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
 
 }

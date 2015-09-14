@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:38:10 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.aerobic;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.AerobicLapSession;
 import com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSessionSamples;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -37,9 +35,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -59,123 +60,112 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "session",
-    "sessionSamples",
-    "lapSession"
-})
+@XmlType(name = "", propOrder = { "when", "session", "sessionSamples", "lapSession" })
 @XmlRootElement(name = "aerobic-session")
 public class AerobicSession {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    @XmlElement(required = true)
-    protected com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession session;
-    @XmlElement(name = "session-samples")
-    protected AerobicSessionSamples sessionSamples;
-    @XmlElement(name = "lap-session")
-    protected List<AerobicLapSession> lapSession;
+	@XmlElement(required = true)
+	protected DateTime when;
+	@XmlElement(required = true)
+	protected com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession session;
+	@XmlElement(name = "session-samples")
+	protected AerobicSessionSamples sessionSamples;
+	@XmlElement(name = "lap-session")
+	protected List<AerobicLapSession> lapSession;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the session property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession }
-     *     
-     */
-    public com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession getSession() {
-        return session;
-    }
+	/**
+	 * Gets the value of the session property.
+	 * 
+	 * @return possible object is
+	 *         {@link com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession }
+	 * 
+	 */
+	public com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession getSession() {
+		return session;
+	}
 
-    /**
-     * Sets the value of the session property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession }
-     *     
-     */
-    public void setSession(com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession value) {
-        this.session = value;
-    }
+	/**
+	 * Sets the value of the session property.
+	 * 
+	 * @param value
+	 *            allowed object is
+	 *            {@link com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession }
+	 * 
+	 */
+	public void setSession(com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession value) {
+		this.session = value;
+	}
 
-    /**
-     * Gets the value of the sessionSamples property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AerobicSessionSamples }
-     *     
-     */
-    public AerobicSessionSamples getSessionSamples() {
-        return sessionSamples;
-    }
+	/**
+	 * Gets the value of the sessionSamples property.
+	 * 
+	 * @return possible object is {@link AerobicSessionSamples }
+	 * 
+	 */
+	public AerobicSessionSamples getSessionSamples() {
+		return sessionSamples;
+	}
 
-    /**
-     * Sets the value of the sessionSamples property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AerobicSessionSamples }
-     *     
-     */
-    public void setSessionSamples(AerobicSessionSamples value) {
-        this.sessionSamples = value;
-    }
+	/**
+	 * Sets the value of the sessionSamples property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AerobicSessionSamples }
+	 * 
+	 */
+	public void setSessionSamples(AerobicSessionSamples value) {
+		this.sessionSamples = value;
+	}
 
-    /**
-     * Gets the value of the lapSession property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the lapSession property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getLapSession().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link AerobicLapSession }
-     * 
-     * 
-     */
-    public List<AerobicLapSession> getLapSession() {
-        if (lapSession == null) {
-            lapSession = new ArrayList<AerobicLapSession>();
-        }
-        return this.lapSession;
-    }
+	/**
+	 * Gets the value of the lapSession property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the lapSession property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getLapSession().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link AerobicLapSession }
+	 * 
+	 * 
+	 */
+	public List<AerobicLapSession> getLapSession() {
+		if (lapSession == null) {
+			lapSession = new ArrayList<AerobicLapSession>();
+		}
+		return this.lapSession;
+	}
 
 }

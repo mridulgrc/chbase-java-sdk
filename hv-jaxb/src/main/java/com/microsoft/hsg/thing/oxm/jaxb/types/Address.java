@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Address complex type.
+ * <p>
+ * Java class for Address complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Address">
@@ -52,201 +53,175 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Address", propOrder = {
-    "description",
-    "isPrimary",
-    "street",
-    "city",
-    "state",
-    "postcode",
-    "country"
-})
+@XmlType(name = "Address", propOrder = { "description", "isPrimary", "street", "city", "state", "postcode", "country" })
 public class Address {
 
-    protected String description;
-    @XmlElement(name = "is-primary")
-    protected Boolean isPrimary;
-    @XmlElement(required = true)
-    protected List<String> street;
-    @XmlElement(required = true)
-    protected String city;
-    protected String state;
-    @XmlElement(required = true)
-    protected String postcode;
-    @XmlElement(required = true)
-    protected String country;
+	protected String description;
+	@XmlElement(name = "is-primary")
+	protected Boolean isPrimary;
+	@XmlElement(required = true)
+	protected List<String> street;
+	@XmlElement(required = true)
+	protected String city;
+	protected String state;
+	@XmlElement(required = true)
+	protected String postcode;
+	@XmlElement(required = true)
+	protected String country;
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the isPrimary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsPrimary() {
-        return isPrimary;
-    }
+	/**
+	 * Gets the value of the isPrimary property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsPrimary() {
+		return isPrimary;
+	}
 
-    /**
-     * Sets the value of the isPrimary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsPrimary(Boolean value) {
-        this.isPrimary = value;
-    }
+	/**
+	 * Sets the value of the isPrimary property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsPrimary(Boolean value) {
+		this.isPrimary = value;
+	}
 
-    /**
-     * Gets the value of the street property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the street property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getStreet().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getStreet() {
-        if (street == null) {
-            street = new ArrayList<String>();
-        }
-        return this.street;
-    }
+	/**
+	 * Gets the value of the street property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the street property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getStreet().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getStreet() {
+		if (street == null) {
+			street = new ArrayList<String>();
+		}
+		return this.street;
+	}
 
-    /**
-     * Gets the value of the city property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCity() {
-        return city;
-    }
+	/**
+	 * Gets the value of the city property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCity() {
+		return city;
+	}
 
-    /**
-     * Sets the value of the city property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCity(String value) {
-        this.city = value;
-    }
+	/**
+	 * Sets the value of the city property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCity(String value) {
+		this.city = value;
+	}
 
-    /**
-     * Gets the value of the state property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getState() {
-        return state;
-    }
+	/**
+	 * Gets the value of the state property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getState() {
+		return state;
+	}
 
-    /**
-     * Sets the value of the state property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setState(String value) {
-        this.state = value;
-    }
+	/**
+	 * Sets the value of the state property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setState(String value) {
+		this.state = value;
+	}
 
-    /**
-     * Gets the value of the postcode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPostcode() {
-        return postcode;
-    }
+	/**
+	 * Gets the value of the postcode property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPostcode() {
+		return postcode;
+	}
 
-    /**
-     * Sets the value of the postcode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPostcode(String value) {
-        this.postcode = value;
-    }
+	/**
+	 * Sets the value of the postcode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPostcode(String value) {
+		this.postcode = value;
+	}
 
-    /**
-     * Gets the value of the country property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCountry() {
-        return country;
-    }
+	/**
+	 * Gets the value of the country property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCountry() {
+		return country;
+	}
 
-    /**
-     * Sets the value of the country property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCountry(String value) {
-        this.country = value;
-    }
+	/**
+	 * Sets the value of the country property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCountry(String value) {
+		this.country = value;
+	}
 
 }

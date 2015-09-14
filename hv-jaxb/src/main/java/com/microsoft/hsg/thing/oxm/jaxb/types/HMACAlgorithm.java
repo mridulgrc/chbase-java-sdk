@@ -5,14 +5,12 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for HMACAlgorithm complex type.
+ * <p>
+ * Java class for HMACAlgorithm complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="HMACAlgorithm">
@@ -51,36 +52,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "HMACAlgorithm", propOrder = {
-    "hmacAlg"
-})
+@XmlType(name = "HMACAlgorithm", propOrder = { "hmacAlg" })
 public class HMACAlgorithm {
 
-    @XmlElement(name = "hmac-alg", required = true)
-    protected HMACAlgorithmData hmacAlg;
+	@XmlElement(name = "hmac-alg", required = true)
+	protected HMACAlgorithmData hmacAlg;
 
-    /**
-     * Gets the value of the hmacAlg property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link HMACAlgorithmData }
-     *     
-     */
-    public HMACAlgorithmData getHmacAlg() {
-        return hmacAlg;
-    }
+	/**
+	 * Gets the value of the hmacAlg property.
+	 * 
+	 * @return possible object is {@link HMACAlgorithmData }
+	 * 
+	 */
+	public HMACAlgorithmData getHmacAlg() {
+		return hmacAlg;
+	}
 
-    /**
-     * Sets the value of the hmacAlg property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link HMACAlgorithmData }
-     *     
-     */
-    public void setHmacAlg(HMACAlgorithmData value) {
-        this.hmacAlg = value;
-    }
+	/**
+	 * Sets the value of the hmacAlg property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link HMACAlgorithmData }
+	 * 
+	 */
+	public void setHmacAlg(HMACAlgorithmData value) {
+		this.hmacAlg = value;
+	}
 
 }

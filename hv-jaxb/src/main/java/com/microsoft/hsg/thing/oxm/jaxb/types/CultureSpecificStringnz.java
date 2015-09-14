@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import javax.xml.bind.annotation.XmlValue;
  * </pre>
  * 
  * 
- * <p>Java class for CultureSpecificStringnz complex type.
+ * <p>
+ * Java class for CultureSpecificStringnz complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="CultureSpecificStringnz">
@@ -49,115 +50,106 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "CultureSpecificStringnz", propOrder = {
-    "value"
-})
+@XmlType(name = "CultureSpecificStringnz", propOrder = { "value" })
 public class CultureSpecificStringnz {
 
-    @XmlValue
-    protected String value;
-    @XmlAttribute(namespace = "http://www.w3.org/XML/1998/namespace")
-    protected String lang;
-    
-    /**
-     * Instantiates a new culture specific stringnz.
-     */
-    public CultureSpecificStringnz()
-    {
-    }
-    
-    /**
-     * Instantiates a new culture specific stringnz as 
-     * the default.
-     *
-     * @param value the value
-     */
-    public CultureSpecificStringnz(String value)
-    {
-        this.value = value;
-    }
-    
-    /**
-     * Instantiates a new culture specific stringnz.
-     *
-     * @param value the value
-     * @param lang the lang
-     */
-    public CultureSpecificStringnz(String value, String lang)
-    {
-        this.value = value;
-        this.lang = lang;
-    }
+	@XmlValue
+	protected String value;
+	@XmlAttribute(namespace = "http://www.w3.org/XML/1998/namespace")
+	protected String lang;
 
-    /**
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+	/**
+	 * Instantiates a new culture specific stringnz.
+	 */
+	public CultureSpecificStringnz() {
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+	/**
+	 * Instantiates a new culture specific stringnz as the default.
+	 *
+	 * @param value
+	 *            the value
+	 */
+	public CultureSpecificStringnz(String value) {
+		this.value = value;
+	}
 
-    /**
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"&gt;
-     *                                 This represents the language and culture of the data in the
-     *                                 element, such as "en-us" or "fr-ca".
-     *                             &lt;/summary&gt;
-     * </pre>
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"&gt;
-     *                                 In a typical use, an instance of an element with no xml:lang
-     *                                 attribute specified is treated as the default entry. Only one
-     *                                 default entry is typically allowed.
-     *                             &lt;/remarks&gt;
-     * </pre>
-     * 
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLang() {
-        return lang;
-    }
+	/**
+	 * Instantiates a new culture specific stringnz.
+	 *
+	 * @param value
+	 *            the value
+	 * @param lang
+	 *            the lang
+	 */
+	public CultureSpecificStringnz(String value, String lang) {
+		this.value = value;
+		this.lang = lang;
+	}
 
-    /**
-     * Sets the value of the lang property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLang(String value) {
-        this.lang = value;
-    }
+	/**
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValue() {
+		return value;
+	}
+
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+	/**
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"&gt;
+	 *                                 This represents the language and culture of the data in the
+	 *                                 element, such as "en-us" or "fr-ca".
+	 *                             &lt;/summary&gt;
+	 * </pre>
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"&gt;
+	 *                                 In a typical use, an instance of an element with no xml:lang
+	 *                                 attribute specified is treated as the default entry. Only one
+	 *                                 default entry is typically allowed.
+	 *                             &lt;/remarks&gt;
+	 * </pre>
+	 * 
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLang() {
+		return lang;
+	}
+
+	/**
+	 * Sets the value of the lang property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLang(String value) {
+		this.lang = value;
+	}
 
 }

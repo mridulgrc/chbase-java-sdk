@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.util.ArrayList;
@@ -16,11 +15,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for ActorReferenceType complex type.
+ * <p>
+ * Java class for ActorReferenceType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ActorReferenceType">
@@ -38,71 +39,64 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ActorReferenceType", propOrder = {
-    "actorID",
-    "actorRole"
-})
-@XmlSeeAlso({
-    com.microsoft.hsg.thing.oxm.jaxb.ccr.FamilyHistoryType.FamilyMember.class
-})
+@XmlType(name = "ActorReferenceType", propOrder = { "actorID", "actorRole" })
+@XmlSeeAlso({ com.microsoft.hsg.thing.oxm.jaxb.ccr.FamilyHistoryType.FamilyMember.class })
 public class ActorReferenceType {
 
-    @XmlElement(name = "ActorID")
-    protected String actorID;
-    @XmlElement(name = "ActorRole")
-    protected List<CodedDescriptionType> actorRole;
+	@XmlElement(name = "ActorID")
+	protected String actorID;
+	@XmlElement(name = "ActorRole")
+	protected List<CodedDescriptionType> actorRole;
 
-    /**
-     * Gets the value of the actorID property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getActorID() {
-        return actorID;
-    }
+	/**
+	 * Gets the value of the actorID property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getActorID() {
+		return actorID;
+	}
 
-    /**
-     * Sets the value of the actorID property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setActorID(String value) {
-        this.actorID = value;
-    }
+	/**
+	 * Sets the value of the actorID property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setActorID(String value) {
+		this.actorID = value;
+	}
 
-    /**
-     * Gets the value of the actorRole property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the actorRole property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getActorRole().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodedDescriptionType }
-     * 
-     * 
-     */
-    public List<CodedDescriptionType> getActorRole() {
-        if (actorRole == null) {
-            actorRole = new ArrayList<CodedDescriptionType>();
-        }
-        return this.actorRole;
-    }
+	/**
+	 * Gets the value of the actorRole property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the actorRole property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getActorRole().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodedDescriptionType }
+	 * 
+	 * 
+	 */
+	public List<CodedDescriptionType> getActorRole() {
+		if (actorRole == null) {
+			actorRole = new ArrayList<CodedDescriptionType>();
+		}
+		return this.actorRole;
+	}
 
 }

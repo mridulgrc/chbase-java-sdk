@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:20:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getservicedefinition2.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for ShellRedirectToken complex type.
+ * <p>
+ * Java class for ShellRedirectToken complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ShellRedirectToken">
@@ -46,90 +47,77 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ShellRedirectToken", propOrder = {
-    "token",
-    "description",
-    "querystringParameters"
-})
+@XmlType(name = "ShellRedirectToken", propOrder = { "token", "description", "querystringParameters" })
 public class ShellRedirectToken {
 
-    @XmlElement(required = true)
-    protected String token;
-    @XmlElement(required = true)
-    protected String description;
-    @XmlElement(name = "querystring-parameters", required = true)
-    protected String querystringParameters;
+	@XmlElement(required = true)
+	protected String token;
+	@XmlElement(required = true)
+	protected String description;
+	@XmlElement(name = "querystring-parameters", required = true)
+	protected String querystringParameters;
 
-    /**
-     * Gets the value of the token property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getToken() {
-        return token;
-    }
+	/**
+	 * Gets the value of the token property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getToken() {
+		return token;
+	}
 
-    /**
-     * Sets the value of the token property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setToken(String value) {
-        this.token = value;
-    }
+	/**
+	 * Sets the value of the token property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setToken(String value) {
+		this.token = value;
+	}
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the querystringParameters property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getQuerystringParameters() {
-        return querystringParameters;
-    }
+	/**
+	 * Gets the value of the querystringParameters property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getQuerystringParameters() {
+		return querystringParameters;
+	}
 
-    /**
-     * Sets the value of the querystringParameters property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setQuerystringParameters(String value) {
-        this.querystringParameters = value;
-    }
+	/**
+	 * Sets the value of the querystringParameters property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setQuerystringParameters(String value) {
+		this.querystringParameters = value;
+	}
 
 }

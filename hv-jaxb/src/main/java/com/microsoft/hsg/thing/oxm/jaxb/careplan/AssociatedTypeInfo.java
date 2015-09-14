@@ -5,14 +5,12 @@
 // Generated on: 2013.05.07 at 02:19:17 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.careplan;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -23,9 +21,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for associated-type-info complex type.
+ * <p>
+ * Java class for associated-type-info complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="associated-type-info">
@@ -44,90 +45,78 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "associated-type-info", propOrder = {
-    "thingTypeVersionId",
-    "thingTypeValueXpath",
-    "thingTypeDisplayXpath"
-})
+@XmlType(name = "associated-type-info", propOrder = { "thingTypeVersionId", "thingTypeValueXpath",
+		"thingTypeDisplayXpath" })
 public class AssociatedTypeInfo {
 
-    @XmlElement(name = "thing-type-version-id", required = true)
-    protected String thingTypeVersionId;
-    @XmlElement(name = "thing-type-value-xpath")
-    protected String thingTypeValueXpath;
-    @XmlElement(name = "thing-type-display-xpath")
-    protected String thingTypeDisplayXpath;
+	@XmlElement(name = "thing-type-version-id", required = true)
+	protected String thingTypeVersionId;
+	@XmlElement(name = "thing-type-value-xpath")
+	protected String thingTypeValueXpath;
+	@XmlElement(name = "thing-type-display-xpath")
+	protected String thingTypeDisplayXpath;
 
-    /**
-     * Gets the value of the thingTypeVersionId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getThingTypeVersionId() {
-        return thingTypeVersionId;
-    }
+	/**
+	 * Gets the value of the thingTypeVersionId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getThingTypeVersionId() {
+		return thingTypeVersionId;
+	}
 
-    /**
-     * Sets the value of the thingTypeVersionId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setThingTypeVersionId(String value) {
-        this.thingTypeVersionId = value;
-    }
+	/**
+	 * Sets the value of the thingTypeVersionId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setThingTypeVersionId(String value) {
+		this.thingTypeVersionId = value;
+	}
 
-    /**
-     * Gets the value of the thingTypeValueXpath property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getThingTypeValueXpath() {
-        return thingTypeValueXpath;
-    }
+	/**
+	 * Gets the value of the thingTypeValueXpath property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getThingTypeValueXpath() {
+		return thingTypeValueXpath;
+	}
 
-    /**
-     * Sets the value of the thingTypeValueXpath property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setThingTypeValueXpath(String value) {
-        this.thingTypeValueXpath = value;
-    }
+	/**
+	 * Sets the value of the thingTypeValueXpath property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setThingTypeValueXpath(String value) {
+		this.thingTypeValueXpath = value;
+	}
 
-    /**
-     * Gets the value of the thingTypeDisplayXpath property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getThingTypeDisplayXpath() {
-        return thingTypeDisplayXpath;
-    }
+	/**
+	 * Gets the value of the thingTypeDisplayXpath property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getThingTypeDisplayXpath() {
+		return thingTypeDisplayXpath;
+	}
 
-    /**
-     * Sets the value of the thingTypeDisplayXpath property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setThingTypeDisplayXpath(String value) {
-        this.thingTypeDisplayXpath = value;
-    }
+	/**
+	 * Sets the value of the thingTypeDisplayXpath property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setThingTypeDisplayXpath(String value) {
+		this.thingTypeDisplayXpath = value;
+	}
 
 }

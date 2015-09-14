@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,26 +13,33 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     Defines a health or fitness goal.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     Defines a health or fitness goal.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     A goal may be a short-term achievement like losing
- *                     weight or a long-term goal like competing in a marathon.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     A goal may be a short-term achievement like losing
+
+ *                     weight or a long-term goal like competing in a marathon.
+
  *                 &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for goal complex type.
+ * <p>
+ * Java class for goal complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="goal">
@@ -52,89 +58,76 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "goal", propOrder = {
-    "targetDate",
-    "completionDate",
-    "status"
-})
+@XmlType(name = "goal", propOrder = { "targetDate", "completionDate", "status" })
 public class Goal {
 
-    @XmlElement(name = "target-date")
-    protected ApproxDateTime targetDate;
-    @XmlElement(name = "completion-date")
-    protected ApproxDateTime completionDate;
-    protected GoalStatus status;
+	@XmlElement(name = "target-date")
+	protected ApproxDateTime targetDate;
+	@XmlElement(name = "completion-date")
+	protected ApproxDateTime completionDate;
+	protected GoalStatus status;
 
-    /**
-     * Gets the value of the targetDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getTargetDate() {
-        return targetDate;
-    }
+	/**
+	 * Gets the value of the targetDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getTargetDate() {
+		return targetDate;
+	}
 
-    /**
-     * Sets the value of the targetDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setTargetDate(ApproxDateTime value) {
-        this.targetDate = value;
-    }
+	/**
+	 * Sets the value of the targetDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setTargetDate(ApproxDateTime value) {
+		this.targetDate = value;
+	}
 
-    /**
-     * Gets the value of the completionDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getCompletionDate() {
-        return completionDate;
-    }
+	/**
+	 * Gets the value of the completionDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getCompletionDate() {
+		return completionDate;
+	}
 
-    /**
-     * Sets the value of the completionDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setCompletionDate(ApproxDateTime value) {
-        this.completionDate = value;
-    }
+	/**
+	 * Sets the value of the completionDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setCompletionDate(ApproxDateTime value) {
+		this.completionDate = value;
+	}
 
-    /**
-     * Gets the value of the status property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GoalStatus }
-     *     
-     */
-    public GoalStatus getStatus() {
-        return status;
-    }
+	/**
+	 * Gets the value of the status property.
+	 * 
+	 * @return possible object is {@link GoalStatus }
+	 * 
+	 */
+	public GoalStatus getStatus() {
+		return status;
+	}
 
-    /**
-     * Sets the value of the status property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GoalStatus }
-     *     
-     */
-    public void setStatus(GoalStatus value) {
-        this.status = value;
-    }
+	/**
+	 * Sets the value of the status property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GoalStatus }
+	 * 
+	 */
+	public void setStatus(GoalStatus value) {
+		this.status = value;
+	}
 
 }

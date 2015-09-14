@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:17 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.vitalsigns;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 
-
 /**
- * <p>Java class for vital-sign-result-type complex type.
+ * <p>
+ * Java class for vital-sign-result-type complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="vital-sign-result-type">
@@ -41,195 +42,167 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "vital-sign-result-type", propOrder = {
-    "title",
-    "value",
-    "unit",
-    "referenceMinimum",
-    "referenceMaximum",
-    "textValue",
-    "flag"
-})
+@XmlType(name = "vital-sign-result-type", propOrder = { "title", "value", "unit", "referenceMinimum",
+		"referenceMaximum", "textValue", "flag" })
 public class VitalSignResultType {
 
-    @XmlElement(required = true)
-    protected CodableValue title;
-    protected Double value;
-    protected CodableValue unit;
-    @XmlElement(name = "reference-minimum")
-    protected Double referenceMinimum;
-    @XmlElement(name = "reference-maximum")
-    protected Double referenceMaximum;
-    @XmlElement(name = "text-value")
-    protected String textValue;
-    protected CodableValue flag;
+	@XmlElement(required = true)
+	protected CodableValue title;
+	protected Double value;
+	protected CodableValue unit;
+	@XmlElement(name = "reference-minimum")
+	protected Double referenceMinimum;
+	@XmlElement(name = "reference-maximum")
+	protected Double referenceMaximum;
+	@XmlElement(name = "text-value")
+	protected String textValue;
+	protected CodableValue flag;
 
-    /**
-     * Gets the value of the title property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getTitle() {
-        return title;
-    }
+	/**
+	 * Gets the value of the title property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getTitle() {
+		return title;
+	}
 
-    /**
-     * Sets the value of the title property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setTitle(CodableValue value) {
-        this.title = value;
-    }
+	/**
+	 * Sets the value of the title property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setTitle(CodableValue value) {
+		this.title = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setValue(Double value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setValue(Double value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the unit property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getUnit() {
-        return unit;
-    }
+	/**
+	 * Gets the value of the unit property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getUnit() {
+		return unit;
+	}
 
-    /**
-     * Sets the value of the unit property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setUnit(CodableValue value) {
-        this.unit = value;
-    }
+	/**
+	 * Sets the value of the unit property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setUnit(CodableValue value) {
+		this.unit = value;
+	}
 
-    /**
-     * Gets the value of the referenceMinimum property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getReferenceMinimum() {
-        return referenceMinimum;
-    }
+	/**
+	 * Gets the value of the referenceMinimum property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getReferenceMinimum() {
+		return referenceMinimum;
+	}
 
-    /**
-     * Sets the value of the referenceMinimum property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setReferenceMinimum(Double value) {
-        this.referenceMinimum = value;
-    }
+	/**
+	 * Sets the value of the referenceMinimum property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setReferenceMinimum(Double value) {
+		this.referenceMinimum = value;
+	}
 
-    /**
-     * Gets the value of the referenceMaximum property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getReferenceMaximum() {
-        return referenceMaximum;
-    }
+	/**
+	 * Gets the value of the referenceMaximum property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getReferenceMaximum() {
+		return referenceMaximum;
+	}
 
-    /**
-     * Sets the value of the referenceMaximum property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setReferenceMaximum(Double value) {
-        this.referenceMaximum = value;
-    }
+	/**
+	 * Sets the value of the referenceMaximum property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setReferenceMaximum(Double value) {
+		this.referenceMaximum = value;
+	}
 
-    /**
-     * Gets the value of the textValue property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTextValue() {
-        return textValue;
-    }
+	/**
+	 * Gets the value of the textValue property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTextValue() {
+		return textValue;
+	}
 
-    /**
-     * Sets the value of the textValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTextValue(String value) {
-        this.textValue = value;
-    }
+	/**
+	 * Sets the value of the textValue property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTextValue(String value) {
+		this.textValue = value;
+	}
 
-    /**
-     * Gets the value of the flag property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getFlag() {
-        return flag;
-    }
+	/**
+	 * Gets the value of the flag property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getFlag() {
+		return flag;
+	}
 
-    /**
-     * Sets the value of the flag property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setFlag(CodableValue value) {
-        this.flag = value;
-    }
+	/**
+	 * Sets the value of the flag property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setFlag(CodableValue value) {
+		this.flag = value;
+	}
 
 }

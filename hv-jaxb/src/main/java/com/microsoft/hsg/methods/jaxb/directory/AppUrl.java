@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
-
 
 /**
  * 
@@ -28,9 +26,12 @@ import javax.xml.bind.annotation.XmlValue;
  * </pre>
  * 
  * 
- * <p>Java class for AppUrl complex type.
+ * <p>
+ * Java class for AppUrl complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AppUrl">
@@ -44,37 +45,32 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AppUrl", propOrder = {
-    "value"
-})
+@XmlType(name = "AppUrl", propOrder = { "value" })
 public class AppUrl {
 
-    @XmlValue
-    @XmlSchemaType(name = "anyURI")
-    protected String value;
+	@XmlValue
+	@XmlSchemaType(name = "anyURI")
+	protected String value;
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:21:09 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthingtype.response;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -30,9 +28,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Versions complex type.
+ * <p>
+ * Java class for Versions complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Versions">
@@ -50,67 +51,63 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Versions", propOrder = {
-    "versionInfo"
-})
+@XmlType(name = "Versions", propOrder = { "versionInfo" })
 public class Versions {
 
-    @XmlElement(name = "version-info", required = true)
-    protected List<VersionInfo> versionInfo;
-    @XmlAttribute(name = "thing-type-id", required = true)
-    protected String thingTypeId;
+	@XmlElement(name = "version-info", required = true)
+	protected List<VersionInfo> versionInfo;
+	@XmlAttribute(name = "thing-type-id", required = true)
+	protected String thingTypeId;
 
-    /**
-     * Gets the value of the versionInfo property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the versionInfo property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getVersionInfo().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link VersionInfo }
-     * 
-     * 
-     */
-    public List<VersionInfo> getVersionInfo() {
-        if (versionInfo == null) {
-            versionInfo = new ArrayList<VersionInfo>();
-        }
-        return this.versionInfo;
-    }
+	/**
+	 * Gets the value of the versionInfo property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the versionInfo property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getVersionInfo().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link VersionInfo }
+	 * 
+	 * 
+	 */
+	public List<VersionInfo> getVersionInfo() {
+		if (versionInfo == null) {
+			versionInfo = new ArrayList<VersionInfo>();
+		}
+		return this.versionInfo;
+	}
 
-    /**
-     * Gets the value of the thingTypeId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getThingTypeId() {
-        return thingTypeId;
-    }
+	/**
+	 * Gets the value of the thingTypeId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getThingTypeId() {
+		return thingTypeId;
+	}
 
-    /**
-     * Sets the value of the thingTypeId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setThingTypeId(String value) {
-        this.thingTypeId = value;
-    }
+	/**
+	 * Sets the value of the thingTypeId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setThingTypeId(String value) {
+		this.thingTypeId = value;
+	}
 
 }

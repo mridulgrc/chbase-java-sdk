@@ -5,19 +5,21 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for iso639-1.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
+ * Java class for iso639-1.
+ * 
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
+ * <p>
+ * 
  * <pre>
  * &lt;simpleType name="iso639-1">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -166,295 +168,147 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum Iso6391 {
 
-    @XmlEnumValue("aa")
-    AA("aa"),
-    @XmlEnumValue("ab")
-    AB("ab"),
-    @XmlEnumValue("af")
-    AF("af"),
-    @XmlEnumValue("am")
-    AM("am"),
-    @XmlEnumValue("ar")
-    AR("ar"),
-    @XmlEnumValue("as")
-    AS("as"),
-    @XmlEnumValue("ay")
-    AY("ay"),
-    @XmlEnumValue("az")
-    AZ("az"),
-    @XmlEnumValue("ba")
-    BA("ba"),
-    @XmlEnumValue("be")
-    BE("be"),
-    @XmlEnumValue("bg")
-    BG("bg"),
-    @XmlEnumValue("bh")
-    BH("bh"),
-    @XmlEnumValue("bi")
-    BI("bi"),
-    @XmlEnumValue("bn")
-    BN("bn"),
-    @XmlEnumValue("bo")
-    BO("bo"),
-    @XmlEnumValue("br")
-    BR("br"),
-    @XmlEnumValue("ca")
-    CA("ca"),
-    @XmlEnumValue("co")
-    CO("co"),
-    @XmlEnumValue("cs")
-    CS("cs"),
-    @XmlEnumValue("cy")
-    CY("cy"),
-    @XmlEnumValue("da")
-    DA("da"),
-    @XmlEnumValue("de")
-    DE("de"),
-    @XmlEnumValue("dz")
-    DZ("dz"),
-    @XmlEnumValue("el")
-    EL("el"),
-    @XmlEnumValue("en")
-    EN("en"),
-    @XmlEnumValue("eo")
-    EO("eo"),
-    @XmlEnumValue("es")
-    ES("es"),
-    @XmlEnumValue("et")
-    ET("et"),
-    @XmlEnumValue("eu")
-    EU("eu"),
-    @XmlEnumValue("fa")
-    FA("fa"),
-    @XmlEnumValue("fi")
-    FI("fi"),
-    @XmlEnumValue("fj")
-    FJ("fj"),
-    @XmlEnumValue("fo")
-    FO("fo"),
-    @XmlEnumValue("fr")
-    FR("fr"),
-    @XmlEnumValue("fy")
-    FY("fy"),
-    @XmlEnumValue("ga")
-    GA("ga"),
-    @XmlEnumValue("gd")
-    GD("gd"),
-    @XmlEnumValue("gl")
-    GL("gl"),
-    @XmlEnumValue("gn")
-    GN("gn"),
-    @XmlEnumValue("gu")
-    GU("gu"),
-    @XmlEnumValue("ha")
-    HA("ha"),
-    @XmlEnumValue("hi")
-    HI("hi"),
-    @XmlEnumValue("hr")
-    HR("hr"),
-    @XmlEnumValue("hu")
-    HU("hu"),
-    @XmlEnumValue("hy")
-    HY("hy"),
-    @XmlEnumValue("ia")
-    IA("ia"),
-    @XmlEnumValue("ie")
-    IE("ie"),
-    @XmlEnumValue("ik")
-    IK("ik"),
-    @XmlEnumValue("in")
-    IN("in"),
-    @XmlEnumValue("is")
-    IS("is"),
-    @XmlEnumValue("it")
-    IT("it"),
-    @XmlEnumValue("iw")
-    IW("iw"),
-    @XmlEnumValue("ja")
-    JA("ja"),
-    @XmlEnumValue("ji")
-    JI("ji"),
-    @XmlEnumValue("jw")
-    JW("jw"),
-    @XmlEnumValue("ka")
-    KA("ka"),
-    @XmlEnumValue("kk")
-    KK("kk"),
-    @XmlEnumValue("kl")
-    KL("kl"),
-    @XmlEnumValue("km")
-    KM("km"),
-    @XmlEnumValue("kn")
-    KN("kn"),
-    @XmlEnumValue("ko")
-    KO("ko"),
-    @XmlEnumValue("ks")
-    KS("ks"),
-    @XmlEnumValue("ku")
-    KU("ku"),
-    @XmlEnumValue("ky")
-    KY("ky"),
-    @XmlEnumValue("la")
-    LA("la"),
-    @XmlEnumValue("ln")
-    LN("ln"),
-    @XmlEnumValue("lo")
-    LO("lo"),
-    @XmlEnumValue("lt")
-    LT("lt"),
-    @XmlEnumValue("lv")
-    LV("lv"),
-    @XmlEnumValue("mg")
-    MG("mg"),
-    @XmlEnumValue("mi")
-    MI("mi"),
-    @XmlEnumValue("mk")
-    MK("mk"),
-    @XmlEnumValue("ml")
-    ML("ml"),
-    @XmlEnumValue("mn")
-    MN("mn"),
-    @XmlEnumValue("mo")
-    MO("mo"),
-    @XmlEnumValue("mr")
-    MR("mr"),
-    @XmlEnumValue("ms")
-    MS("ms"),
-    @XmlEnumValue("mt")
-    MT("mt"),
-    @XmlEnumValue("my")
-    MY("my"),
-    @XmlEnumValue("na")
-    NA("na"),
-    @XmlEnumValue("ne")
-    NE("ne"),
-    @XmlEnumValue("nl")
-    NL("nl"),
-    @XmlEnumValue("no")
-    NO("no"),
-    @XmlEnumValue("oc")
-    OC("oc"),
-    @XmlEnumValue("om")
-    OM("om"),
-    @XmlEnumValue("or")
-    OR("or"),
-    @XmlEnumValue("pa")
-    PA("pa"),
-    @XmlEnumValue("pl")
-    PL("pl"),
-    @XmlEnumValue("ps")
-    PS("ps"),
-    @XmlEnumValue("pt")
-    PT("pt"),
-    @XmlEnumValue("qu")
-    QU("qu"),
-    @XmlEnumValue("rm")
-    RM("rm"),
-    @XmlEnumValue("rn")
-    RN("rn"),
-    @XmlEnumValue("ro")
-    RO("ro"),
-    @XmlEnumValue("ru")
-    RU("ru"),
-    @XmlEnumValue("rw")
-    RW("rw"),
-    @XmlEnumValue("sa")
-    SA("sa"),
-    @XmlEnumValue("sd")
-    SD("sd"),
-    @XmlEnumValue("sg")
-    SG("sg"),
-    @XmlEnumValue("sh")
-    SH("sh"),
-    @XmlEnumValue("si")
-    SI("si"),
-    @XmlEnumValue("sk")
-    SK("sk"),
-    @XmlEnumValue("sl")
-    SL("sl"),
-    @XmlEnumValue("sm")
-    SM("sm"),
-    @XmlEnumValue("sn")
-    SN("sn"),
-    @XmlEnumValue("so")
-    SO("so"),
-    @XmlEnumValue("sq")
-    SQ("sq"),
-    @XmlEnumValue("sr")
-    SR("sr"),
-    @XmlEnumValue("ss")
-    SS("ss"),
-    @XmlEnumValue("st")
-    ST("st"),
-    @XmlEnumValue("su")
-    SU("su"),
-    @XmlEnumValue("sv")
-    SV("sv"),
-    @XmlEnumValue("sw")
-    SW("sw"),
-    @XmlEnumValue("ta")
-    TA("ta"),
-    @XmlEnumValue("te")
-    TE("te"),
-    @XmlEnumValue("tg")
-    TG("tg"),
-    @XmlEnumValue("th")
-    TH("th"),
-    @XmlEnumValue("ti")
-    TI("ti"),
-    @XmlEnumValue("tk")
-    TK("tk"),
-    @XmlEnumValue("tl")
-    TL("tl"),
-    @XmlEnumValue("tn")
-    TN("tn"),
-    @XmlEnumValue("to")
-    TO("to"),
-    @XmlEnumValue("tr")
-    TR("tr"),
-    @XmlEnumValue("ts")
-    TS("ts"),
-    @XmlEnumValue("tt")
-    TT("tt"),
-    @XmlEnumValue("tw")
-    TW("tw"),
-    @XmlEnumValue("uk")
-    UK("uk"),
-    @XmlEnumValue("ur")
-    UR("ur"),
-    @XmlEnumValue("uz")
-    UZ("uz"),
-    @XmlEnumValue("vi")
-    VI("vi"),
-    @XmlEnumValue("vo")
-    VO("vo"),
-    @XmlEnumValue("wo")
-    WO("wo"),
-    @XmlEnumValue("xh")
-    XH("xh"),
-    @XmlEnumValue("yo")
-    YO("yo"),
-    @XmlEnumValue("zh")
-    ZH("zh"),
-    @XmlEnumValue("zu")
-    ZU("zu");
-    private final String value;
+	@XmlEnumValue("aa") AA("aa"), @XmlEnumValue("ab") AB("ab"), @XmlEnumValue("af") AF("af"), @XmlEnumValue("am") AM(
+			"am"), @XmlEnumValue("ar") AR("ar"), @XmlEnumValue("as") AS("as"), @XmlEnumValue("ay") AY(
+					"ay"), @XmlEnumValue("az") AZ("az"), @XmlEnumValue("ba") BA("ba"), @XmlEnumValue("be") BE(
+							"be"), @XmlEnumValue("bg") BG("bg"), @XmlEnumValue("bh") BH("bh"), @XmlEnumValue("bi") BI(
+									"bi"), @XmlEnumValue("bn") BN("bn"), @XmlEnumValue("bo") BO(
+											"bo"), @XmlEnumValue("br") BR("br"), @XmlEnumValue("ca") CA(
+													"ca"), @XmlEnumValue("co") CO("co"), @XmlEnumValue("cs") CS(
+															"cs"), @XmlEnumValue("cy") CY("cy"), @XmlEnumValue("da") DA(
+																	"da"), @XmlEnumValue("de") DE(
+																			"de"), @XmlEnumValue("dz") DZ(
+																					"dz"), @XmlEnumValue("el") EL(
+																							"el"), @XmlEnumValue("en") EN(
+																									"en"), @XmlEnumValue("eo") EO(
+																											"eo"), @XmlEnumValue("es") ES(
+																													"es"), @XmlEnumValue("et") ET(
+																															"et"), @XmlEnumValue("eu") EU(
+																																	"eu"), @XmlEnumValue("fa") FA(
+																																			"fa"), @XmlEnumValue("fi") FI(
+																																					"fi"), @XmlEnumValue("fj") FJ(
+																																							"fj"), @XmlEnumValue("fo") FO(
+																																									"fo"), @XmlEnumValue("fr") FR(
+																																											"fr"), @XmlEnumValue("fy") FY(
+																																													"fy"), @XmlEnumValue("ga") GA(
+																																															"ga"), @XmlEnumValue("gd") GD(
+																																																	"gd"), @XmlEnumValue("gl") GL(
+																																																			"gl"), @XmlEnumValue("gn") GN(
+																																																					"gn"), @XmlEnumValue("gu") GU(
+																																																							"gu"), @XmlEnumValue("ha") HA(
+																																																									"ha"), @XmlEnumValue("hi") HI(
+																																																											"hi"), @XmlEnumValue("hr") HR(
+																																																													"hr"), @XmlEnumValue("hu") HU(
+																																																															"hu"), @XmlEnumValue("hy") HY(
+																																																																	"hy"), @XmlEnumValue("ia") IA(
+																																																																			"ia"), @XmlEnumValue("ie") IE(
+																																																																					"ie"), @XmlEnumValue("ik") IK(
+																																																																							"ik"), @XmlEnumValue("in") IN(
+																																																																									"in"), @XmlEnumValue("is") IS(
+																																																																											"is"), @XmlEnumValue("it") IT(
+																																																																													"it"), @XmlEnumValue("iw") IW(
+																																																																															"iw"), @XmlEnumValue("ja") JA(
+																																																																																	"ja"), @XmlEnumValue("ji") JI(
+																																																																																			"ji"), @XmlEnumValue("jw") JW(
+																																																																																					"jw"), @XmlEnumValue("ka") KA(
+																																																																																							"ka"), @XmlEnumValue("kk") KK(
+																																																																																									"kk"), @XmlEnumValue("kl") KL(
+																																																																																											"kl"), @XmlEnumValue("km") KM(
+																																																																																													"km"), @XmlEnumValue("kn") KN(
+																																																																																															"kn"), @XmlEnumValue("ko") KO(
+																																																																																																	"ko"), @XmlEnumValue("ks") KS(
+																																																																																																			"ks"), @XmlEnumValue("ku") KU(
+																																																																																																					"ku"), @XmlEnumValue("ky") KY(
+																																																																																																							"ky"), @XmlEnumValue("la") LA(
+																																																																																																									"la"), @XmlEnumValue("ln") LN(
+																																																																																																											"ln"), @XmlEnumValue("lo") LO(
+																																																																																																													"lo"), @XmlEnumValue("lt") LT(
+																																																																																																															"lt"), @XmlEnumValue("lv") LV(
+																																																																																																																	"lv"), @XmlEnumValue("mg") MG(
+																																																																																																																			"mg"), @XmlEnumValue("mi") MI(
+																																																																																																																					"mi"), @XmlEnumValue("mk") MK(
+																																																																																																																							"mk"), @XmlEnumValue("ml") ML(
+																																																																																																																									"ml"), @XmlEnumValue("mn") MN(
+																																																																																																																											"mn"), @XmlEnumValue("mo") MO(
+																																																																																																																													"mo"), @XmlEnumValue("mr") MR(
+																																																																																																																															"mr"), @XmlEnumValue("ms") MS(
+																																																																																																																																	"ms"), @XmlEnumValue("mt") MT(
+																																																																																																																																			"mt"), @XmlEnumValue("my") MY(
+																																																																																																																																					"my"), @XmlEnumValue("na") NA(
+																																																																																																																																							"na"), @XmlEnumValue("ne") NE(
+																																																																																																																																									"ne"), @XmlEnumValue("nl") NL(
+																																																																																																																																											"nl"), @XmlEnumValue("no") NO(
+																																																																																																																																													"no"), @XmlEnumValue("oc") OC(
+																																																																																																																																															"oc"), @XmlEnumValue("om") OM(
+																																																																																																																																																	"om"), @XmlEnumValue("or") OR(
+																																																																																																																																																			"or"), @XmlEnumValue("pa") PA(
+																																																																																																																																																					"pa"), @XmlEnumValue("pl") PL(
+																																																																																																																																																							"pl"), @XmlEnumValue("ps") PS(
+																																																																																																																																																									"ps"), @XmlEnumValue("pt") PT(
+																																																																																																																																																											"pt"), @XmlEnumValue("qu") QU(
+																																																																																																																																																													"qu"), @XmlEnumValue("rm") RM(
+																																																																																																																																																															"rm"), @XmlEnumValue("rn") RN(
+																																																																																																																																																																	"rn"), @XmlEnumValue("ro") RO(
+																																																																																																																																																																			"ro"), @XmlEnumValue("ru") RU(
+																																																																																																																																																																					"ru"), @XmlEnumValue("rw") RW(
+																																																																																																																																																																							"rw"), @XmlEnumValue("sa") SA(
+																																																																																																																																																																									"sa"), @XmlEnumValue("sd") SD(
+																																																																																																																																																																											"sd"), @XmlEnumValue("sg") SG(
+																																																																																																																																																																													"sg"), @XmlEnumValue("sh") SH(
+																																																																																																																																																																															"sh"), @XmlEnumValue("si") SI(
+																																																																																																																																																																																	"si"), @XmlEnumValue("sk") SK(
+																																																																																																																																																																																			"sk"), @XmlEnumValue("sl") SL(
+																																																																																																																																																																																					"sl"), @XmlEnumValue("sm") SM(
+																																																																																																																																																																																							"sm"), @XmlEnumValue("sn") SN(
+																																																																																																																																																																																									"sn"), @XmlEnumValue("so") SO(
+																																																																																																																																																																																											"so"), @XmlEnumValue("sq") SQ(
+																																																																																																																																																																																													"sq"), @XmlEnumValue("sr") SR(
+																																																																																																																																																																																															"sr"), @XmlEnumValue("ss") SS(
+																																																																																																																																																																																																	"ss"), @XmlEnumValue("st") ST(
+																																																																																																																																																																																																			"st"), @XmlEnumValue("su") SU(
+																																																																																																																																																																																																					"su"), @XmlEnumValue("sv") SV(
+																																																																																																																																																																																																							"sv"), @XmlEnumValue("sw") SW(
+																																																																																																																																																																																																									"sw"), @XmlEnumValue("ta") TA(
+																																																																																																																																																																																																											"ta"), @XmlEnumValue("te") TE(
+																																																																																																																																																																																																													"te"), @XmlEnumValue("tg") TG(
+																																																																																																																																																																																																															"tg"), @XmlEnumValue("th") TH(
+																																																																																																																																																																																																																	"th"), @XmlEnumValue("ti") TI(
+																																																																																																																																																																																																																			"ti"), @XmlEnumValue("tk") TK(
+																																																																																																																																																																																																																					"tk"), @XmlEnumValue("tl") TL(
+																																																																																																																																																																																																																							"tl"), @XmlEnumValue("tn") TN(
+																																																																																																																																																																																																																									"tn"), @XmlEnumValue("to") TO(
+																																																																																																																																																																																																																											"to"), @XmlEnumValue("tr") TR(
+																																																																																																																																																																																																																													"tr"), @XmlEnumValue("ts") TS(
+																																																																																																																																																																																																																															"ts"), @XmlEnumValue("tt") TT(
+																																																																																																																																																																																																																																	"tt"), @XmlEnumValue("tw") TW(
+																																																																																																																																																																																																																																			"tw"), @XmlEnumValue("uk") UK(
+																																																																																																																																																																																																																																					"uk"), @XmlEnumValue("ur") UR(
+																																																																																																																																																																																																																																							"ur"), @XmlEnumValue("uz") UZ(
+																																																																																																																																																																																																																																									"uz"), @XmlEnumValue("vi") VI(
+																																																																																																																																																																																																																																											"vi"), @XmlEnumValue("vo") VO(
+																																																																																																																																																																																																																																													"vo"), @XmlEnumValue("wo") WO(
+																																																																																																																																																																																																																																															"wo"), @XmlEnumValue("xh") XH(
+																																																																																																																																																																																																																																																	"xh"), @XmlEnumValue("yo") YO(
+																																																																																																																																																																																																																																																			"yo"), @XmlEnumValue("zh") ZH(
+																																																																																																																																																																																																																																																					"zh"), @XmlEnumValue("zu") ZU(
+																																																																																																																																																																																																																																																							"zu");
+	private final String value;
 
-    Iso6391(String v) {
-        value = v;
-    }
+	Iso6391(String v) {
+		value = v;
+	}
 
-    public String value() {
-        return value;
-    }
+	public String value() {
+		return value;
+	}
 
-    public static Iso6391 fromValue(String v) {
-        for (Iso6391 c: Iso6391 .values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+	public static Iso6391 fromValue(String v) {
+		for (Iso6391 c : Iso6391.values()) {
+			if (c.value.equals(v)) {
+				return c;
+			}
+		}
+		throw new IllegalArgumentException(v);
+	}
 
 }

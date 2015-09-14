@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:38:29 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.application;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
 import org.w3c.dom.Element;
-
 
 /**
  * 
@@ -37,9 +35,12 @@ import org.w3c.dom.Element;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -60,149 +61,131 @@ import org.w3c.dom.Element;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "formatAppid",
-    "formatTag",
-    "when",
-    "summary",
-    "any"
-})
+@XmlType(name = "", propOrder = { "formatAppid", "formatTag", "when", "summary", "any" })
 @XmlRootElement(name = "app-specific")
 public class AppSpecific {
 
-    @XmlElement(name = "format-appid", required = true)
-    protected String formatAppid;
-    @XmlElement(name = "format-tag", required = true)
-    protected String formatTag;
-    protected DateTime when;
-    @XmlElement(required = true)
-    protected String summary;
-    @XmlAnyElement
-    protected List<Element> any;
+	@XmlElement(name = "format-appid", required = true)
+	protected String formatAppid;
+	@XmlElement(name = "format-tag", required = true)
+	protected String formatTag;
+	protected DateTime when;
+	@XmlElement(required = true)
+	protected String summary;
+	@XmlAnyElement
+	protected List<Element> any;
 
-    /**
-     * Gets the value of the formatAppid property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFormatAppid() {
-        return formatAppid;
-    }
+	/**
+	 * Gets the value of the formatAppid property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getFormatAppid() {
+		return formatAppid;
+	}
 
-    /**
-     * Sets the value of the formatAppid property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFormatAppid(String value) {
-        this.formatAppid = value;
-    }
+	/**
+	 * Sets the value of the formatAppid property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setFormatAppid(String value) {
+		this.formatAppid = value;
+	}
 
-    /**
-     * Gets the value of the formatTag property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFormatTag() {
-        return formatTag;
-    }
+	/**
+	 * Gets the value of the formatTag property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getFormatTag() {
+		return formatTag;
+	}
 
-    /**
-     * Sets the value of the formatTag property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFormatTag(String value) {
-        this.formatTag = value;
-    }
+	/**
+	 * Sets the value of the formatTag property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setFormatTag(String value) {
+		this.formatTag = value;
+	}
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the summary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSummary() {
-        return summary;
-    }
+	/**
+	 * Gets the value of the summary property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSummary() {
+		return summary;
+	}
 
-    /**
-     * Sets the value of the summary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSummary(String value) {
-        this.summary = value;
-    }
+	/**
+	 * Sets the value of the summary property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSummary(String value) {
+		this.summary = value;
+	}
 
-    /**
-     * Gets the value of the any property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the any property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAny().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Element }
-     * 
-     * 
-     */
-    public List<Element> getAny() {
-        if (any == null) {
-            any = new ArrayList<Element>();
-        }
-        return this.any;
-    }
+	/**
+	 * Gets the value of the any property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the any property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAny().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Element }
+	 * 
+	 * 
+	 */
+	public List<Element> getAny() {
+		if (any == null) {
+			any = new ArrayList<Element>();
+		}
+		return this.any;
+	}
 
 }

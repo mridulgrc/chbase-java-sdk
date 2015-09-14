@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,27 +12,35 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     One stage of the aerobic session.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     One stage of the aerobic session.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     For example, one circuit of a running track or one length of a swimming pool.
- *                     Usually indicated by the person pressing the stopwatch during exercise.
- *                     This may occur multiple times in a session.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     For example, one circuit of a running track or one length of a swimming pool.
+
+ *                     Usually indicated by the person pressing the stopwatch during exercise.
+
+ *                     This may occur multiple times in a session.
+
  *                 &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for aerobic-lap-session complex type.
+ * <p>
+ * Java class for aerobic-lap-session complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="aerobic-lap-session">
@@ -52,89 +59,76 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "aerobic-lap-session", propOrder = {
-    "name",
-    "secondsIntoSession",
-    "lapSession"
-})
+@XmlType(name = "aerobic-lap-session", propOrder = { "name", "secondsIntoSession", "lapSession" })
 public class AerobicLapSession {
 
-    protected String name;
-    @XmlElement(name = "seconds-into-session")
-    protected Double secondsIntoSession;
-    @XmlElement(name = "lap-session")
-    protected AerobicSession lapSession;
+	protected String name;
+	@XmlElement(name = "seconds-into-session")
+	protected Double secondsIntoSession;
+	@XmlElement(name = "lap-session")
+	protected AerobicSession lapSession;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the secondsIntoSession property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getSecondsIntoSession() {
-        return secondsIntoSession;
-    }
+	/**
+	 * Gets the value of the secondsIntoSession property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getSecondsIntoSession() {
+		return secondsIntoSession;
+	}
 
-    /**
-     * Sets the value of the secondsIntoSession property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setSecondsIntoSession(Double value) {
-        this.secondsIntoSession = value;
-    }
+	/**
+	 * Sets the value of the secondsIntoSession property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setSecondsIntoSession(Double value) {
+		this.secondsIntoSession = value;
+	}
 
-    /**
-     * Gets the value of the lapSession property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AerobicSession }
-     *     
-     */
-    public AerobicSession getLapSession() {
-        return lapSession;
-    }
+	/**
+	 * Gets the value of the lapSession property.
+	 * 
+	 * @return possible object is {@link AerobicSession }
+	 * 
+	 */
+	public AerobicSession getLapSession() {
+		return lapSession;
+	}
 
-    /**
-     * Sets the value of the lapSession property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AerobicSession }
-     *     
-     */
-    public void setLapSession(AerobicSession value) {
-        this.lapSession = value;
-    }
+	/**
+	 * Sets the value of the lapSession property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AerobicSession }
+	 * 
+	 */
+	public void setLapSession(AerobicSession value) {
+		this.lapSession = value;
+	}
 
 }

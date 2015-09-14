@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:44 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.procedure;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -17,7 +16,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
 
-
 /**
  * 
  * <pre>
@@ -27,9 +25,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -50,144 +51,123 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "name",
-    "anatomicLocation",
-    "primaryProvider",
-    "secondaryProvider"
-})
+@XmlType(name = "", propOrder = { "when", "name", "anatomicLocation", "primaryProvider", "secondaryProvider" })
 @XmlRootElement(name = "procedure")
 public class Procedure {
 
-    protected ApproxDateTime when;
-    @XmlElement(required = true)
-    protected CodableValue name;
-    @XmlElement(name = "anatomic-location")
-    protected CodableValue anatomicLocation;
-    @XmlElement(name = "primary-provider")
-    protected Person primaryProvider;
-    @XmlElement(name = "secondary-provider")
-    protected Person secondaryProvider;
+	protected ApproxDateTime when;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	@XmlElement(name = "anatomic-location")
+	protected CodableValue anatomicLocation;
+	@XmlElement(name = "primary-provider")
+	protected Person primaryProvider;
+	@XmlElement(name = "secondary-provider")
+	protected Person secondaryProvider;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setWhen(ApproxDateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setWhen(ApproxDateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the anatomicLocation property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getAnatomicLocation() {
-        return anatomicLocation;
-    }
+	/**
+	 * Gets the value of the anatomicLocation property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getAnatomicLocation() {
+		return anatomicLocation;
+	}
 
-    /**
-     * Sets the value of the anatomicLocation property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setAnatomicLocation(CodableValue value) {
-        this.anatomicLocation = value;
-    }
+	/**
+	 * Sets the value of the anatomicLocation property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setAnatomicLocation(CodableValue value) {
+		this.anatomicLocation = value;
+	}
 
-    /**
-     * Gets the value of the primaryProvider property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getPrimaryProvider() {
-        return primaryProvider;
-    }
+	/**
+	 * Gets the value of the primaryProvider property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getPrimaryProvider() {
+		return primaryProvider;
+	}
 
-    /**
-     * Sets the value of the primaryProvider property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setPrimaryProvider(Person value) {
-        this.primaryProvider = value;
-    }
+	/**
+	 * Sets the value of the primaryProvider property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setPrimaryProvider(Person value) {
+		this.primaryProvider = value;
+	}
 
-    /**
-     * Gets the value of the secondaryProvider property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getSecondaryProvider() {
-        return secondaryProvider;
-    }
+	/**
+	 * Gets the value of the secondaryProvider property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getSecondaryProvider() {
+		return secondaryProvider;
+	}
 
-    /**
-     * Sets the value of the secondaryProvider property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setSecondaryProvider(Person value) {
-        this.secondaryProvider = value;
-    }
+	/**
+	 * Sets the value of the secondaryProvider property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setSecondaryProvider(Person value) {
+		this.secondaryProvider = value;
+	}
 
 }

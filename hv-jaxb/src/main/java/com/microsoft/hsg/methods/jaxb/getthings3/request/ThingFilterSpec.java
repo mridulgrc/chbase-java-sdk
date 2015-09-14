@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:13:46 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthings3.request;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.ThingState;
 
-
 /**
  * 
  * <pre>
@@ -28,9 +26,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.thing.ThingState;
  * </pre>
  * 
  * 
- * <p>Java class for ThingFilterSpec complex type.
+ * <p>
+ * Java class for ThingFilterSpec complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ThingFilterSpec">
@@ -59,375 +60,331 @@ import com.microsoft.hsg.thing.oxm.jaxb.thing.ThingState;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ThingFilterSpec", propOrder = {
-    "typeId",
-    "thingState",
-    "effDateMin",
-    "effDateMax",
-    "createdAppId",
-    "createdPersonId",
-    "updatedAppId",
-    "updatedPersonId",
-    "createdDateMin",
-    "createdDateMax",
-    "updatedDateMin",
-    "updatedDateMax",
-    "xpath"
-})
+@XmlType(name = "ThingFilterSpec", propOrder = { "typeId", "thingState", "effDateMin", "effDateMax", "createdAppId",
+		"createdPersonId", "updatedAppId", "updatedPersonId", "createdDateMin", "createdDateMax", "updatedDateMin",
+		"updatedDateMax", "xpath" })
 public class ThingFilterSpec {
 
-    @XmlElement(name = "type-id")
-    protected List<String> typeId;
-    @XmlElement(name = "thing-state")
-    protected List<ThingState> thingState;
-    @XmlElement(name = "eff-date-min")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar effDateMin;
-    @XmlElement(name = "eff-date-max")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar effDateMax;
-    @XmlElement(name = "created-app-id")
-    protected String createdAppId;
-    @XmlElement(name = "created-person-id")
-    protected String createdPersonId;
-    @XmlElement(name = "updated-app-id")
-    protected String updatedAppId;
-    @XmlElement(name = "updated-person-id")
-    protected String updatedPersonId;
-    @XmlElement(name = "created-date-min")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar createdDateMin;
-    @XmlElement(name = "created-date-max")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar createdDateMax;
-    @XmlElement(name = "updated-date-min")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar updatedDateMin;
-    @XmlElement(name = "updated-date-max")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar updatedDateMax;
-    protected String xpath;
+	@XmlElement(name = "type-id")
+	protected List<String> typeId;
+	@XmlElement(name = "thing-state")
+	protected List<ThingState> thingState;
+	@XmlElement(name = "eff-date-min")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar effDateMin;
+	@XmlElement(name = "eff-date-max")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar effDateMax;
+	@XmlElement(name = "created-app-id")
+	protected String createdAppId;
+	@XmlElement(name = "created-person-id")
+	protected String createdPersonId;
+	@XmlElement(name = "updated-app-id")
+	protected String updatedAppId;
+	@XmlElement(name = "updated-person-id")
+	protected String updatedPersonId;
+	@XmlElement(name = "created-date-min")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar createdDateMin;
+	@XmlElement(name = "created-date-max")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar createdDateMax;
+	@XmlElement(name = "updated-date-min")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar updatedDateMin;
+	@XmlElement(name = "updated-date-max")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar updatedDateMax;
+	protected String xpath;
 
-    /**
-     * Gets the value of the typeId property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the typeId property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTypeId().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getTypeId() {
-        if (typeId == null) {
-            typeId = new ArrayList<String>();
-        }
-        return this.typeId;
-    }
+	/**
+	 * Gets the value of the typeId property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the typeId property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getTypeId().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getTypeId() {
+		if (typeId == null) {
+			typeId = new ArrayList<String>();
+		}
+		return this.typeId;
+	}
 
-    /**
-     * Gets the value of the thingState property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the thingState property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getThingState().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ThingState }
-     * 
-     * 
-     */
-    public List<ThingState> getThingState() {
-        if (thingState == null) {
-            thingState = new ArrayList<ThingState>();
-        }
-        return this.thingState;
-    }
+	/**
+	 * Gets the value of the thingState property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the thingState property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getThingState().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ThingState }
+	 * 
+	 * 
+	 */
+	public List<ThingState> getThingState() {
+		if (thingState == null) {
+			thingState = new ArrayList<ThingState>();
+		}
+		return this.thingState;
+	}
 
-    /**
-     * Gets the value of the effDateMin property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getEffDateMin() {
-        return effDateMin;
-    }
+	/**
+	 * Gets the value of the effDateMin property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getEffDateMin() {
+		return effDateMin;
+	}
 
-    /**
-     * Sets the value of the effDateMin property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setEffDateMin(XMLGregorianCalendar value) {
-        this.effDateMin = value;
-    }
+	/**
+	 * Sets the value of the effDateMin property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setEffDateMin(XMLGregorianCalendar value) {
+		this.effDateMin = value;
+	}
 
-    /**
-     * Gets the value of the effDateMax property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getEffDateMax() {
-        return effDateMax;
-    }
+	/**
+	 * Gets the value of the effDateMax property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getEffDateMax() {
+		return effDateMax;
+	}
 
-    /**
-     * Sets the value of the effDateMax property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setEffDateMax(XMLGregorianCalendar value) {
-        this.effDateMax = value;
-    }
+	/**
+	 * Sets the value of the effDateMax property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setEffDateMax(XMLGregorianCalendar value) {
+		this.effDateMax = value;
+	}
 
-    /**
-     * Gets the value of the createdAppId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCreatedAppId() {
-        return createdAppId;
-    }
+	/**
+	 * Gets the value of the createdAppId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCreatedAppId() {
+		return createdAppId;
+	}
 
-    /**
-     * Sets the value of the createdAppId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCreatedAppId(String value) {
-        this.createdAppId = value;
-    }
+	/**
+	 * Sets the value of the createdAppId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCreatedAppId(String value) {
+		this.createdAppId = value;
+	}
 
-    /**
-     * Gets the value of the createdPersonId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCreatedPersonId() {
-        return createdPersonId;
-    }
+	/**
+	 * Gets the value of the createdPersonId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCreatedPersonId() {
+		return createdPersonId;
+	}
 
-    /**
-     * Sets the value of the createdPersonId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCreatedPersonId(String value) {
-        this.createdPersonId = value;
-    }
+	/**
+	 * Sets the value of the createdPersonId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCreatedPersonId(String value) {
+		this.createdPersonId = value;
+	}
 
-    /**
-     * Gets the value of the updatedAppId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUpdatedAppId() {
-        return updatedAppId;
-    }
+	/**
+	 * Gets the value of the updatedAppId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getUpdatedAppId() {
+		return updatedAppId;
+	}
 
-    /**
-     * Sets the value of the updatedAppId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUpdatedAppId(String value) {
-        this.updatedAppId = value;
-    }
+	/**
+	 * Sets the value of the updatedAppId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setUpdatedAppId(String value) {
+		this.updatedAppId = value;
+	}
 
-    /**
-     * Gets the value of the updatedPersonId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUpdatedPersonId() {
-        return updatedPersonId;
-    }
+	/**
+	 * Gets the value of the updatedPersonId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getUpdatedPersonId() {
+		return updatedPersonId;
+	}
 
-    /**
-     * Sets the value of the updatedPersonId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUpdatedPersonId(String value) {
-        this.updatedPersonId = value;
-    }
+	/**
+	 * Sets the value of the updatedPersonId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setUpdatedPersonId(String value) {
+		this.updatedPersonId = value;
+	}
 
-    /**
-     * Gets the value of the createdDateMin property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getCreatedDateMin() {
-        return createdDateMin;
-    }
+	/**
+	 * Gets the value of the createdDateMin property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getCreatedDateMin() {
+		return createdDateMin;
+	}
 
-    /**
-     * Sets the value of the createdDateMin property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setCreatedDateMin(XMLGregorianCalendar value) {
-        this.createdDateMin = value;
-    }
+	/**
+	 * Sets the value of the createdDateMin property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setCreatedDateMin(XMLGregorianCalendar value) {
+		this.createdDateMin = value;
+	}
 
-    /**
-     * Gets the value of the createdDateMax property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getCreatedDateMax() {
-        return createdDateMax;
-    }
+	/**
+	 * Gets the value of the createdDateMax property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getCreatedDateMax() {
+		return createdDateMax;
+	}
 
-    /**
-     * Sets the value of the createdDateMax property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setCreatedDateMax(XMLGregorianCalendar value) {
-        this.createdDateMax = value;
-    }
+	/**
+	 * Sets the value of the createdDateMax property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setCreatedDateMax(XMLGregorianCalendar value) {
+		this.createdDateMax = value;
+	}
 
-    /**
-     * Gets the value of the updatedDateMin property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getUpdatedDateMin() {
-        return updatedDateMin;
-    }
+	/**
+	 * Gets the value of the updatedDateMin property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getUpdatedDateMin() {
+		return updatedDateMin;
+	}
 
-    /**
-     * Sets the value of the updatedDateMin property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setUpdatedDateMin(XMLGregorianCalendar value) {
-        this.updatedDateMin = value;
-    }
+	/**
+	 * Sets the value of the updatedDateMin property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setUpdatedDateMin(XMLGregorianCalendar value) {
+		this.updatedDateMin = value;
+	}
 
-    /**
-     * Gets the value of the updatedDateMax property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getUpdatedDateMax() {
-        return updatedDateMax;
-    }
+	/**
+	 * Gets the value of the updatedDateMax property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getUpdatedDateMax() {
+		return updatedDateMax;
+	}
 
-    /**
-     * Sets the value of the updatedDateMax property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setUpdatedDateMax(XMLGregorianCalendar value) {
-        this.updatedDateMax = value;
-    }
+	/**
+	 * Sets the value of the updatedDateMax property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setUpdatedDateMax(XMLGregorianCalendar value) {
+		this.updatedDateMax = value;
+	}
 
-    /**
-     * Gets the value of the xpath property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getXpath() {
-        return xpath;
-    }
+	/**
+	 * Gets the value of the xpath property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getXpath() {
+		return xpath;
+	}
 
-    /**
-     * Sets the value of the xpath property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setXpath(String value) {
-        this.xpath = value;
-    }
+	/**
+	 * Sets the value of the xpath property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setXpath(String value) {
+		this.xpath = value;
+	}
 
 }

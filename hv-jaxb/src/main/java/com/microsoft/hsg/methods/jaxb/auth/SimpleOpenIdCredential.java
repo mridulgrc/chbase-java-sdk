@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for SimpleOpenIdCredential complex type.
+ * <p>
+ * Java class for SimpleOpenIdCredential complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="SimpleOpenIdCredential">
@@ -51,36 +52,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SimpleOpenIdCredential", propOrder = {
-    "claimedId"
-})
+@XmlType(name = "SimpleOpenIdCredential", propOrder = { "claimedId" })
 public class SimpleOpenIdCredential {
 
-    @XmlElement(name = "claimed-id", required = true)
-    protected String claimedId;
+	@XmlElement(name = "claimed-id", required = true)
+	protected String claimedId;
 
-    /**
-     * Gets the value of the claimedId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getClaimedId() {
-        return claimedId;
-    }
+	/**
+	 * Gets the value of the claimedId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getClaimedId() {
+		return claimedId;
+	}
 
-    /**
-     * Sets the value of the claimedId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setClaimedId(String value) {
-        this.claimedId = value;
-    }
+	/**
+	 * Sets the value of the claimedId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setClaimedId(String value) {
+		this.claimedId = value;
+	}
 
 }

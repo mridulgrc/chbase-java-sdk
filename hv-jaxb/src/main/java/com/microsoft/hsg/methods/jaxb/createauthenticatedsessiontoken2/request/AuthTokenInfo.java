@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:11:05 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.createauthenticatedsessiontoken2.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.AppInfo;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.AppInfo;
  * </pre>
  * 
  * 
- * <p>Java class for AuthTokenInfo complex type.
+ * <p>
+ * Java class for AuthTokenInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AuthTokenInfo">
@@ -52,63 +53,54 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.AppInfo;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AuthTokenInfo", propOrder = {
-    "appId",
-    "credential"
-})
+@XmlType(name = "AuthTokenInfo", propOrder = { "appId", "credential" })
 public class AuthTokenInfo {
 
-    @XmlElement(name = "app-id", required = true)
-    protected AppInfo appId;
-    @XmlElement(required = true)
-    protected Credential credential;
+	@XmlElement(name = "app-id", required = true)
+	protected AppInfo appId;
+	@XmlElement(required = true)
+	protected Credential credential;
 
-    /**
-     * Gets the value of the appId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AppInfo }
-     *     
-     */
-    public AppInfo getAppId() {
-        return appId;
-    }
+	/**
+	 * Gets the value of the appId property.
+	 * 
+	 * @return possible object is {@link AppInfo }
+	 * 
+	 */
+	public AppInfo getAppId() {
+		return appId;
+	}
 
-    /**
-     * Sets the value of the appId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AppInfo }
-     *     
-     */
-    public void setAppId(AppInfo value) {
-        this.appId = value;
-    }
+	/**
+	 * Sets the value of the appId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AppInfo }
+	 * 
+	 */
+	public void setAppId(AppInfo value) {
+		this.appId = value;
+	}
 
-    /**
-     * Gets the value of the credential property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Credential }
-     *     
-     */
-    public Credential getCredential() {
-        return credential;
-    }
+	/**
+	 * Gets the value of the credential property.
+	 * 
+	 * @return possible object is {@link Credential }
+	 * 
+	 */
+	public Credential getCredential() {
+		return credential;
+	}
 
-    /**
-     * Sets the value of the credential property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Credential }
-     *     
-     */
-    public void setCredential(Credential value) {
-        this.credential = value;
-    }
+	/**
+	 * Sets the value of the credential property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Credential }
+	 * 
+	 */
+	public void setCredential(Credential value) {
+		this.credential = value;
+	}
 
 }

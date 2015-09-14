@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:38:03 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.aerobicprofile;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -35,9 +33,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for HeartrateZone complex type.
+ * <p>
+ * Java class for HeartrateZone complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="HeartrateZone">
@@ -56,89 +57,77 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "HeartrateZone", propOrder = {
-    "lowerBound",
-    "upperBound"
-})
+@XmlType(name = "HeartrateZone", propOrder = { "lowerBound", "upperBound" })
 public class HeartrateZone {
 
-    @XmlElement(name = "lower-bound", required = true)
-    protected ZoneBoundary lowerBound;
-    @XmlElement(name = "upper-bound", required = true)
-    protected ZoneBoundary upperBound;
-    @XmlAttribute
-    protected String name;
+	@XmlElement(name = "lower-bound", required = true)
+	protected ZoneBoundary lowerBound;
+	@XmlElement(name = "upper-bound", required = true)
+	protected ZoneBoundary upperBound;
+	@XmlAttribute
+	protected String name;
 
-    /**
-     * Gets the value of the lowerBound property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZoneBoundary }
-     *     
-     */
-    public ZoneBoundary getLowerBound() {
-        return lowerBound;
-    }
+	/**
+	 * Gets the value of the lowerBound property.
+	 * 
+	 * @return possible object is {@link ZoneBoundary }
+	 * 
+	 */
+	public ZoneBoundary getLowerBound() {
+		return lowerBound;
+	}
 
-    /**
-     * Sets the value of the lowerBound property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZoneBoundary }
-     *     
-     */
-    public void setLowerBound(ZoneBoundary value) {
-        this.lowerBound = value;
-    }
+	/**
+	 * Sets the value of the lowerBound property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ZoneBoundary }
+	 * 
+	 */
+	public void setLowerBound(ZoneBoundary value) {
+		this.lowerBound = value;
+	}
 
-    /**
-     * Gets the value of the upperBound property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZoneBoundary }
-     *     
-     */
-    public ZoneBoundary getUpperBound() {
-        return upperBound;
-    }
+	/**
+	 * Gets the value of the upperBound property.
+	 * 
+	 * @return possible object is {@link ZoneBoundary }
+	 * 
+	 */
+	public ZoneBoundary getUpperBound() {
+		return upperBound;
+	}
 
-    /**
-     * Sets the value of the upperBound property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZoneBoundary }
-     *     
-     */
-    public void setUpperBound(ZoneBoundary value) {
-        this.upperBound = value;
-    }
+	/**
+	 * Sets the value of the upperBound property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ZoneBoundary }
+	 * 
+	 */
+	public void setUpperBound(ZoneBoundary value) {
+		this.upperBound = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
 }

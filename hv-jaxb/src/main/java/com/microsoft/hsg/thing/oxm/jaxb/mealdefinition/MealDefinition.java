@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:22:02 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.mealdefinition;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -47,117 +48,100 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "name",
-    "mealType",
-    "description",
-    "dietaryItems"
-})
+@XmlType(name = "", propOrder = { "name", "mealType", "description", "dietaryItems" })
 @XmlRootElement(name = "meal-definition")
 public class MealDefinition {
 
-    @XmlElement(required = true)
-    protected CodableValue name;
-    @XmlElement(name = "meal-type")
-    protected CodableValue mealType;
-    protected String description;
-    @XmlElement(name = "dietary-items")
-    protected DietaryItems dietaryItems;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	@XmlElement(name = "meal-type")
+	protected CodableValue mealType;
+	protected String description;
+	@XmlElement(name = "dietary-items")
+	protected DietaryItems dietaryItems;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the mealType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getMealType() {
-        return mealType;
-    }
+	/**
+	 * Gets the value of the mealType property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getMealType() {
+		return mealType;
+	}
 
-    /**
-     * Sets the value of the mealType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setMealType(CodableValue value) {
-        this.mealType = value;
-    }
+	/**
+	 * Sets the value of the mealType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setMealType(CodableValue value) {
+		this.mealType = value;
+	}
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the dietaryItems property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DietaryItems }
-     *     
-     */
-    public DietaryItems getDietaryItems() {
-        return dietaryItems;
-    }
+	/**
+	 * Gets the value of the dietaryItems property.
+	 * 
+	 * @return possible object is {@link DietaryItems }
+	 * 
+	 */
+	public DietaryItems getDietaryItems() {
+		return dietaryItems;
+	}
 
-    /**
-     * Sets the value of the dietaryItems property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DietaryItems }
-     *     
-     */
-    public void setDietaryItems(DietaryItems value) {
-        this.dietaryItems = value;
-    }
+	/**
+	 * Sets the value of the dietaryItems property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DietaryItems }
+	 * 
+	 */
+	public void setDietaryItems(DietaryItems value) {
+		this.dietaryItems = value;
+	}
 
 }

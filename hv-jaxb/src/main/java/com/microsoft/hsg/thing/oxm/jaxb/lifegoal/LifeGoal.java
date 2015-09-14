@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:41:32 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.lifegoal;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Goal;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.Goal;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -53,64 +54,55 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.Goal;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "description",
-    "goalInfo"
-})
+@XmlType(name = "", propOrder = { "description", "goalInfo" })
 @XmlRootElement(name = "life-goal")
 public class LifeGoal {
 
-    @XmlElement(required = true)
-    protected String description;
-    @XmlElement(name = "goal-info")
-    protected Goal goalInfo;
+	@XmlElement(required = true)
+	protected String description;
+	@XmlElement(name = "goal-info")
+	protected Goal goalInfo;
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the goalInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Goal }
-     *     
-     */
-    public Goal getGoalInfo() {
-        return goalInfo;
-    }
+	/**
+	 * Gets the value of the goalInfo property.
+	 * 
+	 * @return possible object is {@link Goal }
+	 * 
+	 */
+	public Goal getGoalInfo() {
+		return goalInfo;
+	}
 
-    /**
-     * Sets the value of the goalInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Goal }
-     *     
-     */
-    public void setGoalInfo(Goal value) {
-        this.goalInfo = value;
-    }
+	/**
+	 * Sets the value of the goalInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Goal }
+	 * 
+	 */
+	public void setGoalInfo(Goal value) {
+		this.goalInfo = value;
+	}
 
 }

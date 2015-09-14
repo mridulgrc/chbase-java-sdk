@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:41:10 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.immunization1;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -18,11 +17,13 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDate;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
 
-
 /**
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -49,301 +50,257 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "name",
-    "administrationDate",
-    "administrator",
-    "manufacturer",
-    "lot",
-    "route",
-    "expirationDate",
-    "sequence",
-    "anatomicSurface",
-    "adverseEvent",
-    "consent"
-})
+@XmlType(name = "", propOrder = { "name", "administrationDate", "administrator", "manufacturer", "lot", "route",
+		"expirationDate", "sequence", "anatomicSurface", "adverseEvent", "consent" })
 @XmlRootElement(name = "immunization")
 public class Immunization {
 
-    @XmlElement(required = true)
-    protected CodableValue name;
-    @XmlElement(name = "administration-date", required = true)
-    protected ApproxDateTime administrationDate;
-    protected Person administrator;
-    protected String manufacturer;
-    protected String lot;
-    protected CodableValue route;
-    @XmlElement(name = "expiration-date")
-    protected ApproxDate expirationDate;
-    protected String sequence;
-    @XmlElement(name = "anatomic-surface")
-    protected CodableValue anatomicSurface;
-    @XmlElement(name = "adverse-event")
-    protected String adverseEvent;
-    protected String consent;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	@XmlElement(name = "administration-date", required = true)
+	protected ApproxDateTime administrationDate;
+	protected Person administrator;
+	protected String manufacturer;
+	protected String lot;
+	protected CodableValue route;
+	@XmlElement(name = "expiration-date")
+	protected ApproxDate expirationDate;
+	protected String sequence;
+	@XmlElement(name = "anatomic-surface")
+	protected CodableValue anatomicSurface;
+	@XmlElement(name = "adverse-event")
+	protected String adverseEvent;
+	protected String consent;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the administrationDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getAdministrationDate() {
-        return administrationDate;
-    }
+	/**
+	 * Gets the value of the administrationDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getAdministrationDate() {
+		return administrationDate;
+	}
 
-    /**
-     * Sets the value of the administrationDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setAdministrationDate(ApproxDateTime value) {
-        this.administrationDate = value;
-    }
+	/**
+	 * Sets the value of the administrationDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setAdministrationDate(ApproxDateTime value) {
+		this.administrationDate = value;
+	}
 
-    /**
-     * Gets the value of the administrator property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getAdministrator() {
-        return administrator;
-    }
+	/**
+	 * Gets the value of the administrator property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getAdministrator() {
+		return administrator;
+	}
 
-    /**
-     * Sets the value of the administrator property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setAdministrator(Person value) {
-        this.administrator = value;
-    }
+	/**
+	 * Sets the value of the administrator property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setAdministrator(Person value) {
+		this.administrator = value;
+	}
 
-    /**
-     * Gets the value of the manufacturer property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getManufacturer() {
-        return manufacturer;
-    }
+	/**
+	 * Gets the value of the manufacturer property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getManufacturer() {
+		return manufacturer;
+	}
 
-    /**
-     * Sets the value of the manufacturer property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setManufacturer(String value) {
-        this.manufacturer = value;
-    }
+	/**
+	 * Sets the value of the manufacturer property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setManufacturer(String value) {
+		this.manufacturer = value;
+	}
 
-    /**
-     * Gets the value of the lot property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLot() {
-        return lot;
-    }
+	/**
+	 * Gets the value of the lot property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLot() {
+		return lot;
+	}
 
-    /**
-     * Sets the value of the lot property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLot(String value) {
-        this.lot = value;
-    }
+	/**
+	 * Sets the value of the lot property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLot(String value) {
+		this.lot = value;
+	}
 
-    /**
-     * Gets the value of the route property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getRoute() {
-        return route;
-    }
+	/**
+	 * Gets the value of the route property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getRoute() {
+		return route;
+	}
 
-    /**
-     * Sets the value of the route property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setRoute(CodableValue value) {
-        this.route = value;
-    }
+	/**
+	 * Sets the value of the route property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setRoute(CodableValue value) {
+		this.route = value;
+	}
 
-    /**
-     * Gets the value of the expirationDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public ApproxDate getExpirationDate() {
-        return expirationDate;
-    }
+	/**
+	 * Gets the value of the expirationDate property.
+	 * 
+	 * @return possible object is {@link ApproxDate }
+	 * 
+	 */
+	public ApproxDate getExpirationDate() {
+		return expirationDate;
+	}
 
-    /**
-     * Sets the value of the expirationDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public void setExpirationDate(ApproxDate value) {
-        this.expirationDate = value;
-    }
+	/**
+	 * Sets the value of the expirationDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDate }
+	 * 
+	 */
+	public void setExpirationDate(ApproxDate value) {
+		this.expirationDate = value;
+	}
 
-    /**
-     * Gets the value of the sequence property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSequence() {
-        return sequence;
-    }
+	/**
+	 * Gets the value of the sequence property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSequence() {
+		return sequence;
+	}
 
-    /**
-     * Sets the value of the sequence property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSequence(String value) {
-        this.sequence = value;
-    }
+	/**
+	 * Sets the value of the sequence property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSequence(String value) {
+		this.sequence = value;
+	}
 
-    /**
-     * Gets the value of the anatomicSurface property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getAnatomicSurface() {
-        return anatomicSurface;
-    }
+	/**
+	 * Gets the value of the anatomicSurface property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getAnatomicSurface() {
+		return anatomicSurface;
+	}
 
-    /**
-     * Sets the value of the anatomicSurface property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setAnatomicSurface(CodableValue value) {
-        this.anatomicSurface = value;
-    }
+	/**
+	 * Sets the value of the anatomicSurface property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setAnatomicSurface(CodableValue value) {
+		this.anatomicSurface = value;
+	}
 
-    /**
-     * Gets the value of the adverseEvent property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAdverseEvent() {
-        return adverseEvent;
-    }
+	/**
+	 * Gets the value of the adverseEvent property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAdverseEvent() {
+		return adverseEvent;
+	}
 
-    /**
-     * Sets the value of the adverseEvent property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAdverseEvent(String value) {
-        this.adverseEvent = value;
-    }
+	/**
+	 * Sets the value of the adverseEvent property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAdverseEvent(String value) {
+		this.adverseEvent = value;
+	}
 
-    /**
-     * Gets the value of the consent property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getConsent() {
-        return consent;
-    }
+	/**
+	 * Gets the value of the consent property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getConsent() {
+		return consent;
+	}
 
-    /**
-     * Sets the value of the consent property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setConsent(String value) {
-        this.consent = value;
-    }
+	/**
+	 * Sets the value of the consent property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setConsent(String value) {
+		this.consent = value;
+	}
 
 }

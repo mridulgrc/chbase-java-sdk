@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.thing;
 
 import java.io.InputStream;
@@ -34,7 +33,6 @@ import com.microsoft.hsg.Request;
 import com.microsoft.hsg.oxm.jaxb.JaxbContextFactory;
 import com.microsoft.hsg.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
 
-
 /**
  * 
  * <pre>
@@ -46,9 +44,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
  * </pre>
  * 
  * 
- * <p>Java class for Thing2 complex type.
+ * <p>
+ * Java class for Thing2 complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Thing2">
@@ -76,20 +77,8 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Thing2", propOrder = {
-		"thingId",
-		"typeId",
-		"thingState",
-		"flags",
-		"effDate",
-		"created",
-		"updated",
-		"dataXml",
-		"blobPayload",
-		"effPermissions",
-		"tags",
-		"signatureInfo"
-})
+@XmlType(name = "Thing2", propOrder = { "thingId", "typeId", "thingState", "flags", "effDate", "created", "updated",
+		"dataXml", "blobPayload", "effPermissions", "tags", "signatureInfo" })
 public class Thing2 {
 
 	@XmlElement(name = "thing-id")
@@ -120,10 +109,8 @@ public class Thing2 {
 	/**
 	 * Gets the value of the thingId property.
 	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link ThingKey }
-	 *     
+	 * @return possible object is {@link ThingKey }
+	 * 
 	 */
 	public ThingKey getThingId() {
 		return thingId;
@@ -133,9 +120,8 @@ public class Thing2 {
 	 * Sets the value of the thingId property.
 	 * 
 	 * @param value
-	 *     allowed object is
-	 *     {@link ThingKey }
-	 *     
+	 *            allowed object is {@link ThingKey }
+	 * 
 	 */
 	public void setThingId(ThingKey value) {
 		this.thingId = value;
@@ -144,10 +130,8 @@ public class Thing2 {
 	/**
 	 * Gets the value of the typeId property.
 	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link ThingType }
-	 *     
+	 * @return possible object is {@link ThingType }
+	 * 
 	 */
 	public ThingType getTypeId() {
 		return typeId;
@@ -157,9 +141,8 @@ public class Thing2 {
 	 * Sets the value of the typeId property.
 	 * 
 	 * @param value
-	 *     allowed object is
-	 *     {@link ThingType }
-	 *     
+	 *            allowed object is {@link ThingType }
+	 * 
 	 */
 	public void setTypeId(ThingType value) {
 		this.typeId = value;
@@ -168,10 +151,8 @@ public class Thing2 {
 	/**
 	 * Gets the value of the thingState property.
 	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link ThingState }
-	 *     
+	 * @return possible object is {@link ThingState }
+	 * 
 	 */
 	public ThingState getThingState() {
 		return thingState;
@@ -181,9 +162,8 @@ public class Thing2 {
 	 * Sets the value of the thingState property.
 	 * 
 	 * @param value
-	 *     allowed object is
-	 *     {@link ThingState }
-	 *     
+	 *            allowed object is {@link ThingState }
+	 * 
 	 */
 	public void setThingState(ThingState value) {
 		this.thingState = value;
@@ -192,10 +172,8 @@ public class Thing2 {
 	/**
 	 * Gets the value of the flags property.
 	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link Long }
-	 *     
+	 * @return possible object is {@link Long }
+	 * 
 	 */
 	public Long getFlags() {
 		return flags;
@@ -205,9 +183,8 @@ public class Thing2 {
 	 * Sets the value of the flags property.
 	 * 
 	 * @param value
-	 *     allowed object is
-	 *     {@link Long }
-	 *     
+	 *            allowed object is {@link Long }
+	 * 
 	 */
 	public void setFlags(Long value) {
 		this.flags = value;
@@ -216,10 +193,8 @@ public class Thing2 {
 	/**
 	 * Gets the value of the effDate property.
 	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link XMLGregorianCalendar }
-	 *     
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
 	 */
 	public XMLGregorianCalendar getEffDate() {
 		return effDate;
@@ -229,9 +204,8 @@ public class Thing2 {
 	 * Sets the value of the effDate property.
 	 * 
 	 * @param value
-	 *     allowed object is
-	 *     {@link XMLGregorianCalendar }
-	 *     
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
 	 */
 	public void setEffDate(XMLGregorianCalendar value) {
 		this.effDate = value;
@@ -240,10 +214,8 @@ public class Thing2 {
 	/**
 	 * Gets the value of the created property.
 	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link Audit2 }
-	 *     
+	 * @return possible object is {@link Audit2 }
+	 * 
 	 */
 	public Audit2 getCreated() {
 		return created;
@@ -253,9 +225,8 @@ public class Thing2 {
 	 * Sets the value of the created property.
 	 * 
 	 * @param value
-	 *     allowed object is
-	 *     {@link Audit2 }
-	 *     
+	 *            allowed object is {@link Audit2 }
+	 * 
 	 */
 	public void setCreated(Audit2 value) {
 		this.created = value;
@@ -264,10 +235,8 @@ public class Thing2 {
 	/**
 	 * Gets the value of the updated property.
 	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link Audit2 }
-	 *     
+	 * @return possible object is {@link Audit2 }
+	 * 
 	 */
 	public Audit2 getUpdated() {
 		return updated;
@@ -277,9 +246,8 @@ public class Thing2 {
 	 * Sets the value of the updated property.
 	 * 
 	 * @param value
-	 *     allowed object is
-	 *     {@link Audit2 }
-	 *     
+	 *            allowed object is {@link Audit2 }
+	 * 
 	 */
 	public void setUpdated(Audit2 value) {
 		this.updated = value;
@@ -289,21 +257,21 @@ public class Thing2 {
 	 * Gets the value of the dataXml property.
 	 * 
 	 * <p>
-	 * This accessor method returns a reference to the live list,
-	 * not a snapshot. Therefore any modification you make to the
-	 * returned list will be present inside the JAXB object.
-	 * This is why there is not a <CODE>set</CODE> method for the dataXml property.
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the dataXml property.
 	 * 
 	 * <p>
 	 * For example, to add a new item, do as follows:
+	 * 
 	 * <pre>
-	 *    getDataXml().add(newItem);
+	 * getDataXml().add(newItem);
 	 * </pre>
 	 * 
 	 * 
 	 * <p>
-	 * Objects of the following type(s) are allowed in the list
-	 * {@link DataXml }
+	 * Objects of the following type(s) are allowed in the list {@link DataXml }
 	 * 
 	 * 
 	 */
@@ -317,10 +285,8 @@ public class Thing2 {
 	/**
 	 * Gets the value of the blobPayload property.
 	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link BlobPayload }
-	 *     
+	 * @return possible object is {@link BlobPayload }
+	 * 
 	 */
 	public BlobPayload getBlobPayload() {
 		return blobPayload;
@@ -330,9 +296,8 @@ public class Thing2 {
 	 * Sets the value of the blobPayload property.
 	 * 
 	 * @param value
-	 *     allowed object is
-	 *     {@link BlobPayload }
-	 *     
+	 *            allowed object is {@link BlobPayload }
+	 * 
 	 */
 	public void setBlobPayload(BlobPayload value) {
 		this.blobPayload = value;
@@ -341,10 +306,8 @@ public class Thing2 {
 	/**
 	 * Gets the value of the effPermissions property.
 	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link EffectivePermissions }
-	 *     
+	 * @return possible object is {@link EffectivePermissions }
+	 * 
 	 */
 	public EffectivePermissions getEffPermissions() {
 		return effPermissions;
@@ -354,9 +317,8 @@ public class Thing2 {
 	 * Sets the value of the effPermissions property.
 	 * 
 	 * @param value
-	 *     allowed object is
-	 *     {@link EffectivePermissions }
-	 *     
+	 *            allowed object is {@link EffectivePermissions }
+	 * 
 	 */
 	public void setEffPermissions(EffectivePermissions value) {
 		this.effPermissions = value;
@@ -365,10 +327,8 @@ public class Thing2 {
 	/**
 	 * Gets the value of the tags property.
 	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link String }
-	 *     
+	 * @return possible object is {@link String }
+	 * 
 	 */
 	public String getTags() {
 		return tags;
@@ -378,9 +338,8 @@ public class Thing2 {
 	 * Sets the value of the tags property.
 	 * 
 	 * @param value
-	 *     allowed object is
-	 *     {@link String }
-	 *     
+	 *            allowed object is {@link String }
+	 * 
 	 */
 	public void setTags(String value) {
 		this.tags = value;
@@ -389,10 +348,8 @@ public class Thing2 {
 	/**
 	 * Gets the value of the signatureInfo property.
 	 * 
-	 * @return
-	 *     possible object is
-	 *     {@link SignatureInfo }
-	 *     
+	 * @return possible object is {@link SignatureInfo }
+	 * 
 	 */
 	public SignatureInfo getSignatureInfo() {
 		return signatureInfo;
@@ -402,35 +359,36 @@ public class Thing2 {
 	 * Sets the value of the signatureInfo property.
 	 * 
 	 * @param value
-	 *     allowed object is
-	 *     {@link SignatureInfo }
-	 *     
+	 *            allowed object is {@link SignatureInfo }
+	 * 
 	 */
 	public void setSignatureInfo(SignatureInfo value) {
 		this.signatureInfo = value;
 	}
+
 	/**
 	 * @return
 	 * @throws Exception
 	 */
-	//TODO: refine exception paradigm
-	public Object getData() {    	
+	// TODO: refine exception paradigm
+	public Object getData() {
 		if (data == null && getDataXml().size() > 0) {
-			try
-			{
-				JAXBContext jc = JaxbContextFactory.getContext(
-						getClassForTypeId(typeId.value).getPackage().getName());
+			try {
+				JAXBContext jc = JaxbContextFactory.getContext(getClassForTypeId(typeId.value).getPackage().getName());
 				Unmarshaller u = jc.createUnmarshaller();
 				data = u.unmarshal(getDataXml().get(0).getAny());
-			} catch( Exception e) { e.printStackTrace(); }
-		}    	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 		return data;
 	}
-	private Class getClassForTypeId(String typeId)
-	{
-		return (Class)TypeManager.getClassForType(typeId.toLowerCase());
+
+	private Class getClassForTypeId(String typeId) {
+		return (Class) TypeManager.getClassForType(typeId.toLowerCase());
 	}
-	//TODO: refine exception paradigm...defer til later??
+
+	// TODO: refine exception paradigm...defer til later??
 	public void setData(Object data) throws Exception {
 		JAXBContext jc = JaxbContextFactory.getContext(data.getClass().getPackage().getName());
 		Marshaller m = jc.createMarshaller();
@@ -439,8 +397,7 @@ public class Thing2 {
 
 		DataXml dataXml = null;
 		List<DataXml> dataList = getDataXml();
-		if (dataList.size() == 0)
-		{
+		if (dataList.size() == 0) {
 			dataXml = new DataXml();
 			dataXml.setCommon(dataXml.getCommon());
 			dataXml.setTransform(dataXml.getTransform());
@@ -448,33 +405,27 @@ public class Thing2 {
 		}
 		dataXml = dataList.get(0);
 
-		dataXml.setAny(((Document)result.getNode()).getDocumentElement());
+		dataXml.setAny(((Document) result.getNode()).getDocumentElement());
 
 		ThingType thingType = new ThingType();
 		thingType.setValue(TypeManager.getTypeForClass(data.getClass()));
 		setTypeId(thingType);
 	}
 
-	public void addBlob(String key, InputStream blob_data, String contentType,Request request) throws Exception
-	{
-		if(this.blobPayload != null)
-		{
+	public void addBlob(String key, InputStream blob_data, String contentType, Request request) throws Exception {
+		if (this.blobPayload != null) {
 			List<BlobPayloadItem> items = this.blobPayload.getBlob();
-			for(Iterator<BlobPayloadItem> i = items.iterator();i.hasNext();)
-			{
+			for (Iterator<BlobPayloadItem> i = items.iterator(); i.hasNext();) {
 				BlobPayloadItem current_item = i.next();
-				if(current_item.blobInfo.name.equals(key))
-				{
+				if (current_item.blobInfo.name.equals(key)) {
 					throw new Exception("Blob with same key exists");
 				}
 			}
-		}
-		else
-		{
+		} else {
 			this.blobPayload = new BlobPayload();
 		}
 		Blob blob = new Blob();
-		BlobPayloadItem payloadItem = blob.addBlob(key, blob_data, contentType,request);
+		BlobPayloadItem payloadItem = blob.addBlob(key, blob_data, contentType, request);
 		this.blobPayload.getBlob().add(payloadItem);
 	}
 }

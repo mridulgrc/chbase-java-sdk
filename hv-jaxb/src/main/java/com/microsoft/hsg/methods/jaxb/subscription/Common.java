@@ -5,14 +5,12 @@
 // Generated on: 2011.03.01 at 07:55:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.subscription;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -23,9 +21,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Common complex type.
+ * <p>
+ * Java class for Common complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Common">
@@ -44,89 +45,76 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Common", propOrder = {
-    "id",
-    "notificationAuthenticationInfo",
-    "notificationChannel"
-})
+@XmlType(name = "Common", propOrder = { "id", "notificationAuthenticationInfo", "notificationChannel" })
 public class Common {
 
-    protected String id;
-    @XmlElement(name = "notification-authentication-info", required = true)
-    protected NotificationAuthenticationInfo notificationAuthenticationInfo;
-    @XmlElement(name = "notification-channel", required = true)
-    protected NotificationChannel notificationChannel;
+	protected String id;
+	@XmlElement(name = "notification-authentication-info", required = true)
+	protected NotificationAuthenticationInfo notificationAuthenticationInfo;
+	@XmlElement(name = "notification-channel", required = true)
+	protected NotificationChannel notificationChannel;
 
-    /**
-     * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getId() {
-        return id;
-    }
+	/**
+	 * Gets the value of the id property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getId() {
+		return id;
+	}
 
-    /**
-     * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setId(String value) {
-        this.id = value;
-    }
+	/**
+	 * Sets the value of the id property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setId(String value) {
+		this.id = value;
+	}
 
-    /**
-     * Gets the value of the notificationAuthenticationInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NotificationAuthenticationInfo }
-     *     
-     */
-    public NotificationAuthenticationInfo getNotificationAuthenticationInfo() {
-        return notificationAuthenticationInfo;
-    }
+	/**
+	 * Gets the value of the notificationAuthenticationInfo property.
+	 * 
+	 * @return possible object is {@link NotificationAuthenticationInfo }
+	 * 
+	 */
+	public NotificationAuthenticationInfo getNotificationAuthenticationInfo() {
+		return notificationAuthenticationInfo;
+	}
 
-    /**
-     * Sets the value of the notificationAuthenticationInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NotificationAuthenticationInfo }
-     *     
-     */
-    public void setNotificationAuthenticationInfo(NotificationAuthenticationInfo value) {
-        this.notificationAuthenticationInfo = value;
-    }
+	/**
+	 * Sets the value of the notificationAuthenticationInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link NotificationAuthenticationInfo }
+	 * 
+	 */
+	public void setNotificationAuthenticationInfo(NotificationAuthenticationInfo value) {
+		this.notificationAuthenticationInfo = value;
+	}
 
-    /**
-     * Gets the value of the notificationChannel property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NotificationChannel }
-     *     
-     */
-    public NotificationChannel getNotificationChannel() {
-        return notificationChannel;
-    }
+	/**
+	 * Gets the value of the notificationChannel property.
+	 * 
+	 * @return possible object is {@link NotificationChannel }
+	 * 
+	 */
+	public NotificationChannel getNotificationChannel() {
+		return notificationChannel;
+	}
 
-    /**
-     * Sets the value of the notificationChannel property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NotificationChannel }
-     *     
-     */
-    public void setNotificationChannel(NotificationChannel value) {
-        this.notificationChannel = value;
-    }
+	/**
+	 * Sets the value of the notificationChannel property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link NotificationChannel }
+	 * 
+	 */
+	public void setNotificationChannel(NotificationChannel value) {
+		this.notificationChannel = value;
+	}
 
 }

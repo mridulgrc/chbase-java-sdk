@@ -5,14 +5,12 @@
 // Generated on: 2011.02.07 at 01:41:29 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.labtestresults;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -29,9 +27,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for test-result-range-value complex type.
+ * <p>
+ * Java class for test-result-range-value complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="test-result-range-value">
@@ -49,63 +50,54 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "test-result-range-value", propOrder = {
-    "minimumRange",
-    "maximumRange"
-})
+@XmlType(name = "test-result-range-value", propOrder = { "minimumRange", "maximumRange" })
 public class TestResultRangeValue {
 
-    @XmlElement(name = "minimum-range")
-    protected Double minimumRange;
-    @XmlElement(name = "maximum-range")
-    protected Double maximumRange;
+	@XmlElement(name = "minimum-range")
+	protected Double minimumRange;
+	@XmlElement(name = "maximum-range")
+	protected Double maximumRange;
 
-    /**
-     * Gets the value of the minimumRange property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getMinimumRange() {
-        return minimumRange;
-    }
+	/**
+	 * Gets the value of the minimumRange property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getMinimumRange() {
+		return minimumRange;
+	}
 
-    /**
-     * Sets the value of the minimumRange property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setMinimumRange(Double value) {
-        this.minimumRange = value;
-    }
+	/**
+	 * Sets the value of the minimumRange property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setMinimumRange(Double value) {
+		this.minimumRange = value;
+	}
 
-    /**
-     * Gets the value of the maximumRange property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getMaximumRange() {
-        return maximumRange;
-    }
+	/**
+	 * Gets the value of the maximumRange property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getMaximumRange() {
+		return maximumRange;
+	}
 
-    /**
-     * Sets the value of the maximumRange property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setMaximumRange(Double value) {
-        this.maximumRange = value;
-    }
+	/**
+	 * Sets the value of the maximumRange property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setMaximumRange(Double value) {
+		this.maximumRange = value;
+	}
 
 }

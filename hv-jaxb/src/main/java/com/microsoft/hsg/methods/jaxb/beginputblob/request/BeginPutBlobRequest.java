@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:17:58 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.beginputblob.request;
 
 import java.math.BigInteger;
@@ -23,11 +22,13 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
 import com.microsoft.hsg.methods.jaxb.getthings3.request.ThingRequestGroup2;
 import com.microsoft.hsg.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
 
-
 /**
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -47,19 +48,16 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "BeginPutBlob",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.BeginPutBlob")
+@JaxbRequest(methodName = "BeginPutBlob", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.BeginPutBlob")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder={""})
+@XmlType(name = "", propOrder = { "" })
 @XmlRootElement(name = "info")
 public class BeginPutBlobRequest {
 
 	@XmlElement(name = "blob-ref-url", required = true)
-    protected String blobRefUrl;
-	
-	  public String getBlobRefUrl() {
-	        return blobRefUrl;
-	    }
+	protected String blobRefUrl;
+
+	public String getBlobRefUrl() {
+		return blobRefUrl;
+	}
 }

@@ -5,19 +5,21 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for iso4217.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
+ * Java class for iso4217.
+ * 
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
+ * <p>
+ * 
  * <pre>
  * &lt;simpleType name="iso4217">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -203,369 +205,187 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum Iso4217 {
 
-    @XmlEnumValue("aed")
-    AED("aed"),
-    @XmlEnumValue("afa")
-    AFA("afa"),
-    @XmlEnumValue("all")
-    ALL("all"),
-    @XmlEnumValue("amd")
-    AMD("amd"),
-    @XmlEnumValue("ang")
-    ANG("ang"),
-    @XmlEnumValue("aoa")
-    AOA("aoa"),
-    @XmlEnumValue("ars")
-    ARS("ars"),
-    @XmlEnumValue("aud")
-    AUD("aud"),
-    @XmlEnumValue("awg")
-    AWG("awg"),
-    @XmlEnumValue("azm")
-    AZM("azm"),
-    @XmlEnumValue("bam")
-    BAM("bam"),
-    @XmlEnumValue("bbd")
-    BBD("bbd"),
-    @XmlEnumValue("bdt")
-    BDT("bdt"),
-    @XmlEnumValue("bgn")
-    BGN("bgn"),
-    @XmlEnumValue("bhd")
-    BHD("bhd"),
-    @XmlEnumValue("bif")
-    BIF("bif"),
-    @XmlEnumValue("bmd")
-    BMD("bmd"),
-    @XmlEnumValue("bnd")
-    BND("bnd"),
-    @XmlEnumValue("bob")
-    BOB("bob"),
-    @XmlEnumValue("brl")
-    BRL("brl"),
-    @XmlEnumValue("bsd")
-    BSD("bsd"),
-    @XmlEnumValue("btn")
-    BTN("btn"),
-    @XmlEnumValue("bwp")
-    BWP("bwp"),
-    @XmlEnumValue("byr")
-    BYR("byr"),
-    @XmlEnumValue("bzd")
-    BZD("bzd"),
-    @XmlEnumValue("cad")
-    CAD("cad"),
-    @XmlEnumValue("cdf")
-    CDF("cdf"),
-    @XmlEnumValue("chf")
-    CHF("chf"),
-    @XmlEnumValue("clp")
-    CLP("clp"),
-    @XmlEnumValue("cny")
-    CNY("cny"),
-    @XmlEnumValue("cop")
-    COP("cop"),
-    @XmlEnumValue("crc")
-    CRC("crc"),
-    @XmlEnumValue("csd")
-    CSD("csd"),
-    @XmlEnumValue("cup")
-    CUP("cup"),
-    @XmlEnumValue("cve")
-    CVE("cve"),
-    @XmlEnumValue("cyp")
-    CYP("cyp"),
-    @XmlEnumValue("czk")
-    CZK("czk"),
-    @XmlEnumValue("djf")
-    DJF("djf"),
-    @XmlEnumValue("dkk")
-    DKK("dkk"),
-    @XmlEnumValue("dop")
-    DOP("dop"),
-    @XmlEnumValue("dzd")
-    DZD("dzd"),
-    @XmlEnumValue("eek")
-    EEK("eek"),
-    @XmlEnumValue("egp")
-    EGP("egp"),
-    @XmlEnumValue("ern")
-    ERN("ern"),
-    @XmlEnumValue("etb")
-    ETB("etb"),
-    @XmlEnumValue("eur")
-    EUR("eur"),
-    @XmlEnumValue("fjd")
-    FJD("fjd"),
-    @XmlEnumValue("fkp")
-    FKP("fkp"),
-    @XmlEnumValue("gbp")
-    GBP("gbp"),
-    @XmlEnumValue("gel")
-    GEL("gel"),
-    @XmlEnumValue("ggp")
-    GGP("ggp"),
-    @XmlEnumValue("ghc")
-    GHC("ghc"),
-    @XmlEnumValue("gip")
-    GIP("gip"),
-    @XmlEnumValue("gmd")
-    GMD("gmd"),
-    @XmlEnumValue("gnf")
-    GNF("gnf"),
-    @XmlEnumValue("gtq")
-    GTQ("gtq"),
-    @XmlEnumValue("gyd")
-    GYD("gyd"),
-    @XmlEnumValue("hkd")
-    HKD("hkd"),
-    @XmlEnumValue("hnl")
-    HNL("hnl"),
-    @XmlEnumValue("hrk")
-    HRK("hrk"),
-    @XmlEnumValue("htg")
-    HTG("htg"),
-    @XmlEnumValue("huf")
-    HUF("huf"),
-    @XmlEnumValue("idr")
-    IDR("idr"),
-    @XmlEnumValue("ils")
-    ILS("ils"),
-    @XmlEnumValue("imp")
-    IMP("imp"),
-    @XmlEnumValue("inr")
-    INR("inr"),
-    @XmlEnumValue("iqd")
-    IQD("iqd"),
-    @XmlEnumValue("irr")
-    IRR("irr"),
-    @XmlEnumValue("isk")
-    ISK("isk"),
-    @XmlEnumValue("jep")
-    JEP("jep"),
-    @XmlEnumValue("jmd")
-    JMD("jmd"),
-    @XmlEnumValue("jod")
-    JOD("jod"),
-    @XmlEnumValue("jpy")
-    JPY("jpy"),
-    @XmlEnumValue("kes")
-    KES("kes"),
-    @XmlEnumValue("kgs")
-    KGS("kgs"),
-    @XmlEnumValue("khr")
-    KHR("khr"),
-    @XmlEnumValue("kmf")
-    KMF("kmf"),
-    @XmlEnumValue("kpw")
-    KPW("kpw"),
-    @XmlEnumValue("krw")
-    KRW("krw"),
-    @XmlEnumValue("kwd")
-    KWD("kwd"),
-    @XmlEnumValue("kyd")
-    KYD("kyd"),
-    @XmlEnumValue("kzt")
-    KZT("kzt"),
-    @XmlEnumValue("lak")
-    LAK("lak"),
-    @XmlEnumValue("lbp")
-    LBP("lbp"),
-    @XmlEnumValue("lkr")
-    LKR("lkr"),
-    @XmlEnumValue("lrd")
-    LRD("lrd"),
-    @XmlEnumValue("lsl")
-    LSL("lsl"),
-    @XmlEnumValue("ltl")
-    LTL("ltl"),
-    @XmlEnumValue("lvl")
-    LVL("lvl"),
-    @XmlEnumValue("lyd")
-    LYD("lyd"),
-    @XmlEnumValue("mad")
-    MAD("mad"),
-    @XmlEnumValue("mdl")
-    MDL("mdl"),
-    @XmlEnumValue("mga")
-    MGA("mga"),
-    @XmlEnumValue("mkd")
-    MKD("mkd"),
-    @XmlEnumValue("mmk")
-    MMK("mmk"),
-    @XmlEnumValue("mnt")
-    MNT("mnt"),
-    @XmlEnumValue("mop")
-    MOP("mop"),
-    @XmlEnumValue("mro")
-    MRO("mro"),
-    @XmlEnumValue("mtl")
-    MTL("mtl"),
-    @XmlEnumValue("mur")
-    MUR("mur"),
-    @XmlEnumValue("mvr")
-    MVR("mvr"),
-    @XmlEnumValue("mwk")
-    MWK("mwk"),
-    @XmlEnumValue("mxn")
-    MXN("mxn"),
-    @XmlEnumValue("myr")
-    MYR("myr"),
-    @XmlEnumValue("mzm")
-    MZM("mzm"),
-    @XmlEnumValue("nad")
-    NAD("nad"),
-    @XmlEnumValue("ngn")
-    NGN("ngn"),
-    @XmlEnumValue("nio")
-    NIO("nio"),
-    @XmlEnumValue("nok")
-    NOK("nok"),
-    @XmlEnumValue("npr")
-    NPR("npr"),
-    @XmlEnumValue("nzd")
-    NZD("nzd"),
-    @XmlEnumValue("omr")
-    OMR("omr"),
-    @XmlEnumValue("pab")
-    PAB("pab"),
-    @XmlEnumValue("pen")
-    PEN("pen"),
-    @XmlEnumValue("pgk")
-    PGK("pgk"),
-    @XmlEnumValue("php")
-    PHP("php"),
-    @XmlEnumValue("pkr")
-    PKR("pkr"),
-    @XmlEnumValue("pln")
-    PLN("pln"),
-    @XmlEnumValue("pyg")
-    PYG("pyg"),
-    @XmlEnumValue("qar")
-    QAR("qar"),
-    @XmlEnumValue("rol")
-    ROL("rol"),
-    @XmlEnumValue("rub")
-    RUB("rub"),
-    @XmlEnumValue("rwf")
-    RWF("rwf"),
-    @XmlEnumValue("sar")
-    SAR("sar"),
-    @XmlEnumValue("sbd")
-    SBD("sbd"),
-    @XmlEnumValue("scr")
-    SCR("scr"),
-    @XmlEnumValue("sdd")
-    SDD("sdd"),
-    @XmlEnumValue("sek")
-    SEK("sek"),
-    @XmlEnumValue("sgd")
-    SGD("sgd"),
-    @XmlEnumValue("shp")
-    SHP("shp"),
-    @XmlEnumValue("sit")
-    SIT("sit"),
-    @XmlEnumValue("skk")
-    SKK("skk"),
-    @XmlEnumValue("sll")
-    SLL("sll"),
-    @XmlEnumValue("sos")
-    SOS("sos"),
-    @XmlEnumValue("spl")
-    SPL("spl"),
-    @XmlEnumValue("srd")
-    SRD("srd"),
-    @XmlEnumValue("std")
-    STD("std"),
-    @XmlEnumValue("svc")
-    SVC("svc"),
-    @XmlEnumValue("syp")
-    SYP("syp"),
-    @XmlEnumValue("szl")
-    SZL("szl"),
-    @XmlEnumValue("thb")
-    THB("thb"),
-    @XmlEnumValue("tjs")
-    TJS("tjs"),
-    @XmlEnumValue("tmm")
-    TMM("tmm"),
-    @XmlEnumValue("tnd")
-    TND("tnd"),
-    @XmlEnumValue("top")
-    TOP("top"),
-    @XmlEnumValue("trl")
-    TRL("trl"),
-    @XmlEnumValue("try")
-    TRY("try"),
-    @XmlEnumValue("ttd")
-    TTD("ttd"),
-    @XmlEnumValue("tvd")
-    TVD("tvd"),
-    @XmlEnumValue("twd")
-    TWD("twd"),
-    @XmlEnumValue("tzs")
-    TZS("tzs"),
-    @XmlEnumValue("uah")
-    UAH("uah"),
-    @XmlEnumValue("ugx")
-    UGX("ugx"),
-    @XmlEnumValue("usd")
-    USD("usd"),
-    @XmlEnumValue("uyu")
-    UYU("uyu"),
-    @XmlEnumValue("uzs")
-    UZS("uzs"),
-    @XmlEnumValue("veb")
-    VEB("veb"),
-    @XmlEnumValue("vnd")
-    VND("vnd"),
-    @XmlEnumValue("vuv")
-    VUV("vuv"),
-    @XmlEnumValue("wst")
-    WST("wst"),
-    @XmlEnumValue("xaf")
-    XAF("xaf"),
-    @XmlEnumValue("xag")
-    XAG("xag"),
-    @XmlEnumValue("xau")
-    XAU("xau"),
-    @XmlEnumValue("xcd")
-    XCD("xcd"),
-    @XmlEnumValue("xdr")
-    XDR("xdr"),
-    @XmlEnumValue("xof")
-    XOF("xof"),
-    @XmlEnumValue("xpd")
-    XPD("xpd"),
-    @XmlEnumValue("xpf")
-    XPF("xpf"),
-    @XmlEnumValue("xpt")
-    XPT("xpt"),
-    @XmlEnumValue("yer")
-    YER("yer"),
-    @XmlEnumValue("zar")
-    ZAR("zar"),
-    @XmlEnumValue("zmk")
-    ZMK("zmk"),
-    @XmlEnumValue("zwd")
-    ZWD("zwd");
-    private final String value;
+	@XmlEnumValue("aed") AED("aed"), @XmlEnumValue("afa") AFA("afa"), @XmlEnumValue("all") ALL(
+			"all"), @XmlEnumValue("amd") AMD("amd"), @XmlEnumValue("ang") ANG("ang"), @XmlEnumValue("aoa") AOA(
+					"aoa"), @XmlEnumValue("ars") ARS("ars"), @XmlEnumValue("aud") AUD("aud"), @XmlEnumValue("awg") AWG(
+							"awg"), @XmlEnumValue("azm") AZM("azm"), @XmlEnumValue("bam") BAM(
+									"bam"), @XmlEnumValue("bbd") BBD("bbd"), @XmlEnumValue("bdt") BDT(
+											"bdt"), @XmlEnumValue("bgn") BGN("bgn"), @XmlEnumValue("bhd") BHD(
+													"bhd"), @XmlEnumValue("bif") BIF("bif"), @XmlEnumValue("bmd") BMD(
+															"bmd"), @XmlEnumValue("bnd") BND(
+																	"bnd"), @XmlEnumValue("bob") BOB(
+																			"bob"), @XmlEnumValue("brl") BRL(
+																					"brl"), @XmlEnumValue("bsd") BSD(
+																							"bsd"), @XmlEnumValue("btn") BTN(
+																									"btn"), @XmlEnumValue("bwp") BWP(
+																											"bwp"), @XmlEnumValue("byr") BYR(
+																													"byr"), @XmlEnumValue("bzd") BZD(
+																															"bzd"), @XmlEnumValue("cad") CAD(
+																																	"cad"), @XmlEnumValue("cdf") CDF(
+																																			"cdf"), @XmlEnumValue("chf") CHF(
+																																					"chf"), @XmlEnumValue("clp") CLP(
+																																							"clp"), @XmlEnumValue("cny") CNY(
+																																									"cny"), @XmlEnumValue("cop") COP(
+																																											"cop"), @XmlEnumValue("crc") CRC(
+																																													"crc"), @XmlEnumValue("csd") CSD(
+																																															"csd"), @XmlEnumValue("cup") CUP(
+																																																	"cup"), @XmlEnumValue("cve") CVE(
+																																																			"cve"), @XmlEnumValue("cyp") CYP(
+																																																					"cyp"), @XmlEnumValue("czk") CZK(
+																																																							"czk"), @XmlEnumValue("djf") DJF(
+																																																									"djf"), @XmlEnumValue("dkk") DKK(
+																																																											"dkk"), @XmlEnumValue("dop") DOP(
+																																																													"dop"), @XmlEnumValue("dzd") DZD(
+																																																															"dzd"), @XmlEnumValue("eek") EEK(
+																																																																	"eek"), @XmlEnumValue("egp") EGP(
+																																																																			"egp"), @XmlEnumValue("ern") ERN(
+																																																																					"ern"), @XmlEnumValue("etb") ETB(
+																																																																							"etb"), @XmlEnumValue("eur") EUR(
+																																																																									"eur"), @XmlEnumValue("fjd") FJD(
+																																																																											"fjd"), @XmlEnumValue("fkp") FKP(
+																																																																													"fkp"), @XmlEnumValue("gbp") GBP(
+																																																																															"gbp"), @XmlEnumValue("gel") GEL(
+																																																																																	"gel"), @XmlEnumValue("ggp") GGP(
+																																																																																			"ggp"), @XmlEnumValue("ghc") GHC(
+																																																																																					"ghc"), @XmlEnumValue("gip") GIP(
+																																																																																							"gip"), @XmlEnumValue("gmd") GMD(
+																																																																																									"gmd"), @XmlEnumValue("gnf") GNF(
+																																																																																											"gnf"), @XmlEnumValue("gtq") GTQ(
+																																																																																													"gtq"), @XmlEnumValue("gyd") GYD(
+																																																																																															"gyd"), @XmlEnumValue("hkd") HKD(
+																																																																																																	"hkd"), @XmlEnumValue("hnl") HNL(
+																																																																																																			"hnl"), @XmlEnumValue("hrk") HRK(
+																																																																																																					"hrk"), @XmlEnumValue("htg") HTG(
+																																																																																																							"htg"), @XmlEnumValue("huf") HUF(
+																																																																																																									"huf"), @XmlEnumValue("idr") IDR(
+																																																																																																											"idr"), @XmlEnumValue("ils") ILS(
+																																																																																																													"ils"), @XmlEnumValue("imp") IMP(
+																																																																																																															"imp"), @XmlEnumValue("inr") INR(
+																																																																																																																	"inr"), @XmlEnumValue("iqd") IQD(
+																																																																																																																			"iqd"), @XmlEnumValue("irr") IRR(
+																																																																																																																					"irr"), @XmlEnumValue("isk") ISK(
+																																																																																																																							"isk"), @XmlEnumValue("jep") JEP(
+																																																																																																																									"jep"), @XmlEnumValue("jmd") JMD(
+																																																																																																																											"jmd"), @XmlEnumValue("jod") JOD(
+																																																																																																																													"jod"), @XmlEnumValue("jpy") JPY(
+																																																																																																																															"jpy"), @XmlEnumValue("kes") KES(
+																																																																																																																																	"kes"), @XmlEnumValue("kgs") KGS(
+																																																																																																																																			"kgs"), @XmlEnumValue("khr") KHR(
+																																																																																																																																					"khr"), @XmlEnumValue("kmf") KMF(
+																																																																																																																																							"kmf"), @XmlEnumValue("kpw") KPW(
+																																																																																																																																									"kpw"), @XmlEnumValue("krw") KRW(
+																																																																																																																																											"krw"), @XmlEnumValue("kwd") KWD(
+																																																																																																																																													"kwd"), @XmlEnumValue("kyd") KYD(
+																																																																																																																																															"kyd"), @XmlEnumValue("kzt") KZT(
+																																																																																																																																																	"kzt"), @XmlEnumValue("lak") LAK(
+																																																																																																																																																			"lak"), @XmlEnumValue("lbp") LBP(
+																																																																																																																																																					"lbp"), @XmlEnumValue("lkr") LKR(
+																																																																																																																																																							"lkr"), @XmlEnumValue("lrd") LRD(
+																																																																																																																																																									"lrd"), @XmlEnumValue("lsl") LSL(
+																																																																																																																																																											"lsl"), @XmlEnumValue("ltl") LTL(
+																																																																																																																																																													"ltl"), @XmlEnumValue("lvl") LVL(
+																																																																																																																																																															"lvl"), @XmlEnumValue("lyd") LYD(
+																																																																																																																																																																	"lyd"), @XmlEnumValue("mad") MAD(
+																																																																																																																																																																			"mad"), @XmlEnumValue("mdl") MDL(
+																																																																																																																																																																					"mdl"), @XmlEnumValue("mga") MGA(
+																																																																																																																																																																							"mga"), @XmlEnumValue("mkd") MKD(
+																																																																																																																																																																									"mkd"), @XmlEnumValue("mmk") MMK(
+																																																																																																																																																																											"mmk"), @XmlEnumValue("mnt") MNT(
+																																																																																																																																																																													"mnt"), @XmlEnumValue("mop") MOP(
+																																																																																																																																																																															"mop"), @XmlEnumValue("mro") MRO(
+																																																																																																																																																																																	"mro"), @XmlEnumValue("mtl") MTL(
+																																																																																																																																																																																			"mtl"), @XmlEnumValue("mur") MUR(
+																																																																																																																																																																																					"mur"), @XmlEnumValue("mvr") MVR(
+																																																																																																																																																																																							"mvr"), @XmlEnumValue("mwk") MWK(
+																																																																																																																																																																																									"mwk"), @XmlEnumValue("mxn") MXN(
+																																																																																																																																																																																											"mxn"), @XmlEnumValue("myr") MYR(
+																																																																																																																																																																																													"myr"), @XmlEnumValue("mzm") MZM(
+																																																																																																																																																																																															"mzm"), @XmlEnumValue("nad") NAD(
+																																																																																																																																																																																																	"nad"), @XmlEnumValue("ngn") NGN(
+																																																																																																																																																																																																			"ngn"), @XmlEnumValue("nio") NIO(
+																																																																																																																																																																																																					"nio"), @XmlEnumValue("nok") NOK(
+																																																																																																																																																																																																							"nok"), @XmlEnumValue("npr") NPR(
+																																																																																																																																																																																																									"npr"), @XmlEnumValue("nzd") NZD(
+																																																																																																																																																																																																											"nzd"), @XmlEnumValue("omr") OMR(
+																																																																																																																																																																																																													"omr"), @XmlEnumValue("pab") PAB(
+																																																																																																																																																																																																															"pab"), @XmlEnumValue("pen") PEN(
+																																																																																																																																																																																																																	"pen"), @XmlEnumValue("pgk") PGK(
+																																																																																																																																																																																																																			"pgk"), @XmlEnumValue("php") PHP(
+																																																																																																																																																																																																																					"php"), @XmlEnumValue("pkr") PKR(
+																																																																																																																																																																																																																							"pkr"), @XmlEnumValue("pln") PLN(
+																																																																																																																																																																																																																									"pln"), @XmlEnumValue("pyg") PYG(
+																																																																																																																																																																																																																											"pyg"), @XmlEnumValue("qar") QAR(
+																																																																																																																																																																																																																													"qar"), @XmlEnumValue("rol") ROL(
+																																																																																																																																																																																																																															"rol"), @XmlEnumValue("rub") RUB(
+																																																																																																																																																																																																																																	"rub"), @XmlEnumValue("rwf") RWF(
+																																																																																																																																																																																																																																			"rwf"), @XmlEnumValue("sar") SAR(
+																																																																																																																																																																																																																																					"sar"), @XmlEnumValue("sbd") SBD(
+																																																																																																																																																																																																																																							"sbd"), @XmlEnumValue("scr") SCR(
+																																																																																																																																																																																																																																									"scr"), @XmlEnumValue("sdd") SDD(
+																																																																																																																																																																																																																																											"sdd"), @XmlEnumValue("sek") SEK(
+																																																																																																																																																																																																																																													"sek"), @XmlEnumValue("sgd") SGD(
+																																																																																																																																																																																																																																															"sgd"), @XmlEnumValue("shp") SHP(
+																																																																																																																																																																																																																																																	"shp"), @XmlEnumValue("sit") SIT(
+																																																																																																																																																																																																																																																			"sit"), @XmlEnumValue("skk") SKK(
+																																																																																																																																																																																																																																																					"skk"), @XmlEnumValue("sll") SLL(
+																																																																																																																																																																																																																																																							"sll"), @XmlEnumValue("sos") SOS(
+																																																																																																																																																																																																																																																									"sos"), @XmlEnumValue("spl") SPL(
+																																																																																																																																																																																																																																																											"spl"), @XmlEnumValue("srd") SRD(
+																																																																																																																																																																																																																																																													"srd"), @XmlEnumValue("std") STD(
+																																																																																																																																																																																																																																																															"std"), @XmlEnumValue("svc") SVC(
+																																																																																																																																																																																																																																																																	"svc"), @XmlEnumValue("syp") SYP(
+																																																																																																																																																																																																																																																																			"syp"), @XmlEnumValue("szl") SZL(
+																																																																																																																																																																																																																																																																					"szl"), @XmlEnumValue("thb") THB(
+																																																																																																																																																																																																																																																																							"thb"), @XmlEnumValue("tjs") TJS(
+																																																																																																																																																																																																																																																																									"tjs"), @XmlEnumValue("tmm") TMM(
+																																																																																																																																																																																																																																																																											"tmm"), @XmlEnumValue("tnd") TND(
+																																																																																																																																																																																																																																																																													"tnd"), @XmlEnumValue("top") TOP(
+																																																																																																																																																																																																																																																																															"top"), @XmlEnumValue("trl") TRL(
+																																																																																																																																																																																																																																																																																	"trl"), @XmlEnumValue("try") TRY(
+																																																																																																																																																																																																																																																																																			"try"), @XmlEnumValue("ttd") TTD(
+																																																																																																																																																																																																																																																																																					"ttd"), @XmlEnumValue("tvd") TVD(
+																																																																																																																																																																																																																																																																																							"tvd"), @XmlEnumValue("twd") TWD(
+																																																																																																																																																																																																																																																																																									"twd"), @XmlEnumValue("tzs") TZS(
+																																																																																																																																																																																																																																																																																											"tzs"), @XmlEnumValue("uah") UAH(
+																																																																																																																																																																																																																																																																																													"uah"), @XmlEnumValue("ugx") UGX(
+																																																																																																																																																																																																																																																																																															"ugx"), @XmlEnumValue("usd") USD(
+																																																																																																																																																																																																																																																																																																	"usd"), @XmlEnumValue("uyu") UYU(
+																																																																																																																																																																																																																																																																																																			"uyu"), @XmlEnumValue("uzs") UZS(
+																																																																																																																																																																																																																																																																																																					"uzs"), @XmlEnumValue("veb") VEB(
+																																																																																																																																																																																																																																																																																																							"veb"), @XmlEnumValue("vnd") VND(
+																																																																																																																																																																																																																																																																																																									"vnd"), @XmlEnumValue("vuv") VUV(
+																																																																																																																																																																																																																																																																																																											"vuv"), @XmlEnumValue("wst") WST(
+																																																																																																																																																																																																																																																																																																													"wst"), @XmlEnumValue("xaf") XAF(
+																																																																																																																																																																																																																																																																																																															"xaf"), @XmlEnumValue("xag") XAG(
+																																																																																																																																																																																																																																																																																																																	"xag"), @XmlEnumValue("xau") XAU(
+																																																																																																																																																																																																																																																																																																																			"xau"), @XmlEnumValue("xcd") XCD(
+																																																																																																																																																																																																																																																																																																																					"xcd"), @XmlEnumValue("xdr") XDR(
+																																																																																																																																																																																																																																																																																																																							"xdr"), @XmlEnumValue("xof") XOF(
+																																																																																																																																																																																																																																																																																																																									"xof"), @XmlEnumValue("xpd") XPD(
+																																																																																																																																																																																																																																																																																																																											"xpd"), @XmlEnumValue("xpf") XPF(
+																																																																																																																																																																																																																																																																																																																													"xpf"), @XmlEnumValue("xpt") XPT(
+																																																																																																																																																																																																																																																																																																																															"xpt"), @XmlEnumValue("yer") YER(
+																																																																																																																																																																																																																																																																																																																																	"yer"), @XmlEnumValue("zar") ZAR(
+																																																																																																																																																																																																																																																																																																																																			"zar"), @XmlEnumValue("zmk") ZMK(
+																																																																																																																																																																																																																																																																																																																																					"zmk"), @XmlEnumValue("zwd") ZWD(
+																																																																																																																																																																																																																																																																																																																																							"zwd");
+	private final String value;
 
-    Iso4217(String v) {
-        value = v;
-    }
+	Iso4217(String v) {
+		value = v;
+	}
 
-    public String value() {
-        return value;
-    }
+	public String value() {
+		return value;
+	}
 
-    public static Iso4217 fromValue(String v) {
-        for (Iso4217 c: Iso4217 .values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+	public static Iso4217 fromValue(String v) {
+		for (Iso4217 c : Iso4217.values()) {
+			if (c.value.equals(v)) {
+				return c;
+			}
+		}
+		throw new IllegalArgumentException(v);
+	}
 
 }

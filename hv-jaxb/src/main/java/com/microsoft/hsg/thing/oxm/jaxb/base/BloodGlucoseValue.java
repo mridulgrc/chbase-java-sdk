@@ -5,37 +5,47 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     A blood glucose measurement.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     A blood glucose measurement.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     A blood glucose measurement consists of the value in millimoles per liter (mmol/L),
- *                     which is the base unit of measurement for blood glucose, and
- *                     an optional display value. The display value is used to
- *                     store the blood glucose measurement in the user's preference of
- *                     measurement units. This avoids rounding errors when 
- *                     converting to and back from mmol/L.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     A blood glucose measurement consists of the value in millimoles per liter (mmol/L),
+
+ *                     which is the base unit of measurement for blood glucose, and
+
+ *                     an optional display value. The display value is used to
+
+ *                     store the blood glucose measurement in the user's preference of
+
+ *                     measurement units. This avoids rounding errors when 
+
+ *                     converting to and back from mmol/L.
+
  *                 &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for blood-glucose-value complex type.
+ * <p>
+ * Java class for blood-glucose-value complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="blood-glucose-value">
@@ -53,53 +63,47 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "blood-glucose-value", propOrder = {
-    "mmolPerL",
-    "display"
-})
+@XmlType(name = "blood-glucose-value", propOrder = { "mmolPerL", "display" })
 public class BloodGlucoseValue {
 
-    protected double mmolPerL;
-    protected DisplayValue display;
+	protected double mmolPerL;
+	protected DisplayValue display;
 
-    /**
-     * Gets the value of the mmolPerL property.
-     * 
-     */
-    public double getMmolPerL() {
-        return mmolPerL;
-    }
+	/**
+	 * Gets the value of the mmolPerL property.
+	 * 
+	 */
+	public double getMmolPerL() {
+		return mmolPerL;
+	}
 
-    /**
-     * Sets the value of the mmolPerL property.
-     * 
-     */
-    public void setMmolPerL(double value) {
-        this.mmolPerL = value;
-    }
+	/**
+	 * Sets the value of the mmolPerL property.
+	 * 
+	 */
+	public void setMmolPerL(double value) {
+		this.mmolPerL = value;
+	}
 
-    /**
-     * Gets the value of the display property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public DisplayValue getDisplay() {
-        return display;
-    }
+	/**
+	 * Gets the value of the display property.
+	 * 
+	 * @return possible object is {@link DisplayValue }
+	 * 
+	 */
+	public DisplayValue getDisplay() {
+		return display;
+	}
 
-    /**
-     * Sets the value of the display property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public void setDisplay(DisplayValue value) {
-        this.display = value;
-    }
+	/**
+	 * Sets the value of the display property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DisplayValue }
+	 * 
+	 */
+	public void setDisplay(DisplayValue value) {
+		this.display = value;
+	}
 
 }

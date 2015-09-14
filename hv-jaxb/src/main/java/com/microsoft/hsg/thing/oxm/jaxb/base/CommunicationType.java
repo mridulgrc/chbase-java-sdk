@@ -5,14 +5,12 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for communication-type complex type.
+ * <p>
+ * Java class for communication-type complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="communication-type">
@@ -54,116 +55,99 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "communication-type", propOrder = {
-    "communicationMedium",
-    "priority",
-    "clazz",
-    "value"
-})
+@XmlType(name = "communication-type", propOrder = { "communicationMedium", "priority", "clazz", "value" })
 public class CommunicationType {
 
-    @XmlElement(name = "communication-medium", required = true)
-    protected CodableValue communicationMedium;
-    protected Integer priority;
-    @XmlElement(name = "class")
-    protected CodableValue clazz;
-    @XmlElement(required = true)
-    protected String value;
+	@XmlElement(name = "communication-medium", required = true)
+	protected CodableValue communicationMedium;
+	protected Integer priority;
+	@XmlElement(name = "class")
+	protected CodableValue clazz;
+	@XmlElement(required = true)
+	protected String value;
 
-    /**
-     * Gets the value of the communicationMedium property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getCommunicationMedium() {
-        return communicationMedium;
-    }
+	/**
+	 * Gets the value of the communicationMedium property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getCommunicationMedium() {
+		return communicationMedium;
+	}
 
-    /**
-     * Sets the value of the communicationMedium property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setCommunicationMedium(CodableValue value) {
-        this.communicationMedium = value;
-    }
+	/**
+	 * Sets the value of the communicationMedium property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setCommunicationMedium(CodableValue value) {
+		this.communicationMedium = value;
+	}
 
-    /**
-     * Gets the value of the priority property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getPriority() {
-        return priority;
-    }
+	/**
+	 * Gets the value of the priority property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getPriority() {
+		return priority;
+	}
 
-    /**
-     * Sets the value of the priority property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setPriority(Integer value) {
-        this.priority = value;
-    }
+	/**
+	 * Sets the value of the priority property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setPriority(Integer value) {
+		this.priority = value;
+	}
 
-    /**
-     * Gets the value of the clazz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getClazz() {
-        return clazz;
-    }
+	/**
+	 * Gets the value of the clazz property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getClazz() {
+		return clazz;
+	}
 
-    /**
-     * Sets the value of the clazz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setClazz(CodableValue value) {
-        this.clazz = value;
-    }
+	/**
+	 * Sets the value of the clazz property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setClazz(CodableValue value) {
+		this.clazz = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import java.math.BigInteger;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for BlobHashAlgorithmParameters complex type.
+ * <p>
+ * Java class for BlobHashAlgorithmParameters complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="BlobHashAlgorithmParameters">
@@ -46,37 +47,32 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "BlobHashAlgorithmParameters", propOrder = {
-    "blockSize"
-})
+@XmlType(name = "BlobHashAlgorithmParameters", propOrder = { "blockSize" })
 public class BlobHashAlgorithmParameters {
 
-    @XmlElement(name = "block-size")
-    @XmlSchemaType(name = "positiveInteger")
-    protected BigInteger blockSize;
+	@XmlElement(name = "block-size")
+	@XmlSchemaType(name = "positiveInteger")
+	protected BigInteger blockSize;
 
-    /**
-     * Gets the value of the blockSize property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getBlockSize() {
-        return blockSize;
-    }
+	/**
+	 * Gets the value of the blockSize property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getBlockSize() {
+		return blockSize;
+	}
 
-    /**
-     * Sets the value of the blockSize property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setBlockSize(BigInteger value) {
-        this.blockSize = value;
-    }
+	/**
+	 * Sets the value of the blockSize property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setBlockSize(BigInteger value) {
+		this.blockSize = value;
+	}
 
 }

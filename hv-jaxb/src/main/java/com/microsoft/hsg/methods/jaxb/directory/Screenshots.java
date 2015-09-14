@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Screenshots complex type.
+ * <p>
+ * Java class for Screenshots complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Screenshots">
@@ -44,41 +45,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Screenshots", propOrder = {
-    "screenshot"
-})
+@XmlType(name = "Screenshots", propOrder = { "screenshot" })
 public class Screenshots {
 
-    @XmlElement(required = true)
-    protected List<Screenshot> screenshot;
+	@XmlElement(required = true)
+	protected List<Screenshot> screenshot;
 
-    /**
-     * Gets the value of the screenshot property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the screenshot property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getScreenshot().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Screenshot }
-     * 
-     * 
-     */
-    public List<Screenshot> getScreenshot() {
-        if (screenshot == null) {
-            screenshot = new ArrayList<Screenshot>();
-        }
-        return this.screenshot;
-    }
+	/**
+	 * Gets the value of the screenshot property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the screenshot property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getScreenshot().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link Screenshot }
+	 * 
+	 * 
+	 */
+	public List<Screenshot> getScreenshot() {
+		if (screenshot == null) {
+			screenshot = new ArrayList<Screenshot>();
+		}
+		return this.screenshot;
+	}
 
 }

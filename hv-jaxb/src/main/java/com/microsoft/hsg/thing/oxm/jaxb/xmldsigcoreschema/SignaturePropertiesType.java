@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.xmldsigcoreschema;
 
 import java.util.ArrayList;
@@ -20,11 +19,13 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-
 /**
- * <p>Java class for SignaturePropertiesType complex type.
+ * <p>
+ * Java class for SignaturePropertiesType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="SignaturePropertiesType">
@@ -42,70 +43,66 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SignaturePropertiesType", propOrder = {
-    "signatureProperty"
-})
+@XmlType(name = "SignaturePropertiesType", propOrder = { "signatureProperty" })
 public class SignaturePropertiesType {
 
-    @XmlElement(name = "SignatureProperty", required = true)
-    protected List<SignaturePropertyType> signatureProperty;
-    @XmlAttribute(name = "Id")
-    @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
-    @XmlID
-    @XmlSchemaType(name = "ID")
-    protected String id;
+	@XmlElement(name = "SignatureProperty", required = true)
+	protected List<SignaturePropertyType> signatureProperty;
+	@XmlAttribute(name = "Id")
+	@XmlJavaTypeAdapter(CollapsedStringAdapter.class)
+	@XmlID
+	@XmlSchemaType(name = "ID")
+	protected String id;
 
-    /**
-     * Gets the value of the signatureProperty property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the signatureProperty property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSignatureProperty().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link SignaturePropertyType }
-     * 
-     * 
-     */
-    public List<SignaturePropertyType> getSignatureProperty() {
-        if (signatureProperty == null) {
-            signatureProperty = new ArrayList<SignaturePropertyType>();
-        }
-        return this.signatureProperty;
-    }
+	/**
+	 * Gets the value of the signatureProperty property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the signatureProperty property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getSignatureProperty().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link SignaturePropertyType }
+	 * 
+	 * 
+	 */
+	public List<SignaturePropertyType> getSignatureProperty() {
+		if (signatureProperty == null) {
+			signatureProperty = new ArrayList<SignaturePropertyType>();
+		}
+		return this.signatureProperty;
+	}
 
-    /**
-     * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getId() {
-        return id;
-    }
+	/**
+	 * Gets the value of the id property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getId() {
+		return id;
+	}
 
-    /**
-     * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setId(String value) {
-        this.id = value;
-    }
+	/**
+	 * Sets the value of the id property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setId(String value) {
+		this.id = value;
+	}
 
 }

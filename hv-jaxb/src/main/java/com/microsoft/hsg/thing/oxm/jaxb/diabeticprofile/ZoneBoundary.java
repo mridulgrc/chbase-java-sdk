@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:39:47 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.diabeticprofile;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.BloodGlucoseValue;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.BloodGlucoseValue;
  * </pre>
  * 
  * 
- * <p>Java class for ZoneBoundary complex type.
+ * <p>
+ * Java class for ZoneBoundary complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ZoneBoundary">
@@ -52,63 +53,54 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.BloodGlucoseValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ZoneBoundary", propOrder = {
-    "absoluteGlucose",
-    "percentMaxGlucose"
-})
+@XmlType(name = "ZoneBoundary", propOrder = { "absoluteGlucose", "percentMaxGlucose" })
 public class ZoneBoundary {
 
-    @XmlElement(name = "absolute-glucose")
-    protected BloodGlucoseValue absoluteGlucose;
-    @XmlElement(name = "percent-max-glucose")
-    protected Double percentMaxGlucose;
+	@XmlElement(name = "absolute-glucose")
+	protected BloodGlucoseValue absoluteGlucose;
+	@XmlElement(name = "percent-max-glucose")
+	protected Double percentMaxGlucose;
 
-    /**
-     * Gets the value of the absoluteGlucose property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BloodGlucoseValue }
-     *     
-     */
-    public BloodGlucoseValue getAbsoluteGlucose() {
-        return absoluteGlucose;
-    }
+	/**
+	 * Gets the value of the absoluteGlucose property.
+	 * 
+	 * @return possible object is {@link BloodGlucoseValue }
+	 * 
+	 */
+	public BloodGlucoseValue getAbsoluteGlucose() {
+		return absoluteGlucose;
+	}
 
-    /**
-     * Sets the value of the absoluteGlucose property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BloodGlucoseValue }
-     *     
-     */
-    public void setAbsoluteGlucose(BloodGlucoseValue value) {
-        this.absoluteGlucose = value;
-    }
+	/**
+	 * Sets the value of the absoluteGlucose property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BloodGlucoseValue }
+	 * 
+	 */
+	public void setAbsoluteGlucose(BloodGlucoseValue value) {
+		this.absoluteGlucose = value;
+	}
 
-    /**
-     * Gets the value of the percentMaxGlucose property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getPercentMaxGlucose() {
-        return percentMaxGlucose;
-    }
+	/**
+	 * Gets the value of the percentMaxGlucose property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getPercentMaxGlucose() {
+		return percentMaxGlucose;
+	}
 
-    /**
-     * Sets the value of the percentMaxGlucose property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setPercentMaxGlucose(Double value) {
-        this.percentMaxGlucose = value;
-    }
+	/**
+	 * Sets the value of the percentMaxGlucose property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setPercentMaxGlucose(Double value) {
+		this.percentMaxGlucose = value;
+	}
 
 }

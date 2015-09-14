@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:38:26 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.applicationdatareference;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -40,172 +41,148 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "name",
-    "renderFilename",
-    "publicUrl",
-    "configurationUrl",
-    "openQueryId",
-    "applicationDataUrl"
-})
+@XmlType(name = "", propOrder = { "name", "renderFilename", "publicUrl", "configurationUrl", "openQueryId",
+		"applicationDataUrl" })
 @XmlRootElement(name = "application-data-reference")
 public class ApplicationDataReference {
 
-    @XmlElement(required = true)
-    protected String name;
-    @XmlElement(name = "render-filename")
-    protected String renderFilename;
-    @XmlElement(name = "public-url")
-    protected String publicUrl;
-    @XmlElement(name = "configuration-url")
-    protected String configurationUrl;
-    @XmlElement(name = "open-query-id")
-    protected String openQueryId;
-    @XmlElement(name = "application-data-url")
-    protected String applicationDataUrl;
+	@XmlElement(required = true)
+	protected String name;
+	@XmlElement(name = "render-filename")
+	protected String renderFilename;
+	@XmlElement(name = "public-url")
+	protected String publicUrl;
+	@XmlElement(name = "configuration-url")
+	protected String configurationUrl;
+	@XmlElement(name = "open-query-id")
+	protected String openQueryId;
+	@XmlElement(name = "application-data-url")
+	protected String applicationDataUrl;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the renderFilename property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRenderFilename() {
-        return renderFilename;
-    }
+	/**
+	 * Gets the value of the renderFilename property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getRenderFilename() {
+		return renderFilename;
+	}
 
-    /**
-     * Sets the value of the renderFilename property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRenderFilename(String value) {
-        this.renderFilename = value;
-    }
+	/**
+	 * Sets the value of the renderFilename property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setRenderFilename(String value) {
+		this.renderFilename = value;
+	}
 
-    /**
-     * Gets the value of the publicUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPublicUrl() {
-        return publicUrl;
-    }
+	/**
+	 * Gets the value of the publicUrl property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPublicUrl() {
+		return publicUrl;
+	}
 
-    /**
-     * Sets the value of the publicUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPublicUrl(String value) {
-        this.publicUrl = value;
-    }
+	/**
+	 * Sets the value of the publicUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPublicUrl(String value) {
+		this.publicUrl = value;
+	}
 
-    /**
-     * Gets the value of the configurationUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getConfigurationUrl() {
-        return configurationUrl;
-    }
+	/**
+	 * Gets the value of the configurationUrl property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getConfigurationUrl() {
+		return configurationUrl;
+	}
 
-    /**
-     * Sets the value of the configurationUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setConfigurationUrl(String value) {
-        this.configurationUrl = value;
-    }
+	/**
+	 * Sets the value of the configurationUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setConfigurationUrl(String value) {
+		this.configurationUrl = value;
+	}
 
-    /**
-     * Gets the value of the openQueryId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOpenQueryId() {
-        return openQueryId;
-    }
+	/**
+	 * Gets the value of the openQueryId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getOpenQueryId() {
+		return openQueryId;
+	}
 
-    /**
-     * Sets the value of the openQueryId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOpenQueryId(String value) {
-        this.openQueryId = value;
-    }
+	/**
+	 * Sets the value of the openQueryId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setOpenQueryId(String value) {
+		this.openQueryId = value;
+	}
 
-    /**
-     * Gets the value of the applicationDataUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getApplicationDataUrl() {
-        return applicationDataUrl;
-    }
+	/**
+	 * Gets the value of the applicationDataUrl property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getApplicationDataUrl() {
+		return applicationDataUrl;
+	}
 
-    /**
-     * Sets the value of the applicationDataUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setApplicationDataUrl(String value) {
-        this.applicationDataUrl = value;
-    }
+	/**
+	 * Sets the value of the applicationDataUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setApplicationDataUrl(String value) {
+		this.applicationDataUrl = value;
+	}
 
 }

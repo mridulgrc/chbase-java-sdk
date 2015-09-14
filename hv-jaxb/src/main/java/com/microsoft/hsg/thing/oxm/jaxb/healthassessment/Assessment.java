@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:55 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.healthassessment;
 
 import java.util.ArrayList;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 
-
 /**
  * 
  * <pre>
@@ -26,9 +24,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * </pre>
  * 
  * 
- * <p>Java class for Assessment complex type.
+ * <p>
+ * Java class for Assessment complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Assessment">
@@ -47,94 +48,85 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Assessment", propOrder = {
-    "name",
-    "value",
-    "group"
-})
+@XmlType(name = "Assessment", propOrder = { "name", "value", "group" })
 public class Assessment {
 
-    @XmlElement(required = true)
-    protected CodableValue name;
-    @XmlElement(required = true)
-    protected List<CodableValue> value;
-    protected CodableValue group;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	@XmlElement(required = true)
+	protected List<CodableValue> value;
+	protected CodableValue group;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the value property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getValue().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodableValue }
-     * 
-     * 
-     */
-    public List<CodableValue> getValue() {
-        if (value == null) {
-            value = new ArrayList<CodableValue>();
-        }
-        return this.value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the value property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getValue().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodableValue }
+	 * 
+	 * 
+	 */
+	public List<CodableValue> getValue() {
+		if (value == null) {
+			value = new ArrayList<CodableValue>();
+		}
+		return this.value;
+	}
 
-    /**
-     * Gets the value of the group property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getGroup() {
-        return group;
-    }
+	/**
+	 * Gets the value of the group property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getGroup() {
+		return group;
+	}
 
-    /**
-     * Sets the value of the group property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setGroup(CodableValue value) {
-        this.group = value;
-    }
+	/**
+	 * Sets the value of the group property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setGroup(CodableValue value) {
+		this.group = value;
+	}
 
 }

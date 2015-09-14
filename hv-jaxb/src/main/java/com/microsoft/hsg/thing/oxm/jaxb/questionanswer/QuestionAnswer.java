@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:47 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.questionanswer;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
 
-
 /**
  * 
  * <pre>
@@ -28,9 +26,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -50,127 +51,118 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "question",
-    "answerChoice",
-    "answer"
-})
+@XmlType(name = "", propOrder = { "when", "question", "answerChoice", "answer" })
 @XmlRootElement(name = "question-answer")
 public class QuestionAnswer {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    @XmlElement(required = true)
-    protected CodableValue question;
-    @XmlElement(name = "answer-choice")
-    protected List<CodableValue> answerChoice;
-    protected List<CodableValue> answer;
+	@XmlElement(required = true)
+	protected DateTime when;
+	@XmlElement(required = true)
+	protected CodableValue question;
+	@XmlElement(name = "answer-choice")
+	protected List<CodableValue> answerChoice;
+	protected List<CodableValue> answer;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the question property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getQuestion() {
-        return question;
-    }
+	/**
+	 * Gets the value of the question property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getQuestion() {
+		return question;
+	}
 
-    /**
-     * Sets the value of the question property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setQuestion(CodableValue value) {
-        this.question = value;
-    }
+	/**
+	 * Sets the value of the question property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setQuestion(CodableValue value) {
+		this.question = value;
+	}
 
-    /**
-     * Gets the value of the answerChoice property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the answerChoice property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAnswerChoice().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodableValue }
-     * 
-     * 
-     */
-    public List<CodableValue> getAnswerChoice() {
-        if (answerChoice == null) {
-            answerChoice = new ArrayList<CodableValue>();
-        }
-        return this.answerChoice;
-    }
+	/**
+	 * Gets the value of the answerChoice property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the answerChoice property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAnswerChoice().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodableValue }
+	 * 
+	 * 
+	 */
+	public List<CodableValue> getAnswerChoice() {
+		if (answerChoice == null) {
+			answerChoice = new ArrayList<CodableValue>();
+		}
+		return this.answerChoice;
+	}
 
-    /**
-     * Gets the value of the answer property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the answer property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAnswer().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodableValue }
-     * 
-     * 
-     */
-    public List<CodableValue> getAnswer() {
-        if (answer == null) {
-            answer = new ArrayList<CodableValue>();
-        }
-        return this.answer;
-    }
+	/**
+	 * Gets the value of the answer property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the answer property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAnswer().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodableValue }
+	 * 
+	 * 
+	 */
+	public List<CodableValue> getAnswer() {
+		if (answer == null) {
+			answer = new ArrayList<CodableValue>();
+		}
+		return this.answer;
+	}
 
 }

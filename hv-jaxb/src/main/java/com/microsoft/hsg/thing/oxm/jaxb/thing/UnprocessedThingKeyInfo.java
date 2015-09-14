@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.thing;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,28 +13,37 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
- *                     Specifies the things returned with partial information.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
+
+ *                     Specifies the things returned with partial information.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
- *                     Things will be returned with partial information if the maximum limit for full things have
- *                     been reached.
- *                     To retrieve the things in full form, the thing ids can be specified in the filter group
- *                     of additional GetThing methods requests.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
+
+ *                     Things will be returned with partial information if the maximum limit for full things have
+
+ *                     been reached.
+
+ *                     To retrieve the things in full form, the thing ids can be specified in the filter group
+
+ *                     of additional GetThing methods requests.
+
  *                 &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for UnprocessedThingKeyInfo complex type.
+ * <p>
+ * Java class for UnprocessedThingKeyInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="UnprocessedThingKeyInfo">
@@ -54,90 +62,77 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "UnprocessedThingKeyInfo", propOrder = {
-    "thingId",
-    "typeId",
-    "effDate"
-})
+@XmlType(name = "UnprocessedThingKeyInfo", propOrder = { "thingId", "typeId", "effDate" })
 public class UnprocessedThingKeyInfo {
 
-    @XmlElement(name = "thing-id", required = true)
-    protected ThingKey thingId;
-    @XmlElement(name = "type-id", required = true)
-    protected ThingType typeId;
-    @XmlElement(name = "eff-date", required = true)
-    protected XMLGregorianCalendar effDate;
+	@XmlElement(name = "thing-id", required = true)
+	protected ThingKey thingId;
+	@XmlElement(name = "type-id", required = true)
+	protected ThingType typeId;
+	@XmlElement(name = "eff-date", required = true)
+	protected XMLGregorianCalendar effDate;
 
-    /**
-     * Gets the value of the thingId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ThingKey }
-     *     
-     */
-    public ThingKey getThingId() {
-        return thingId;
-    }
+	/**
+	 * Gets the value of the thingId property.
+	 * 
+	 * @return possible object is {@link ThingKey }
+	 * 
+	 */
+	public ThingKey getThingId() {
+		return thingId;
+	}
 
-    /**
-     * Sets the value of the thingId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ThingKey }
-     *     
-     */
-    public void setThingId(ThingKey value) {
-        this.thingId = value;
-    }
+	/**
+	 * Sets the value of the thingId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ThingKey }
+	 * 
+	 */
+	public void setThingId(ThingKey value) {
+		this.thingId = value;
+	}
 
-    /**
-     * Gets the value of the typeId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ThingType }
-     *     
-     */
-    public ThingType getTypeId() {
-        return typeId;
-    }
+	/**
+	 * Gets the value of the typeId property.
+	 * 
+	 * @return possible object is {@link ThingType }
+	 * 
+	 */
+	public ThingType getTypeId() {
+		return typeId;
+	}
 
-    /**
-     * Sets the value of the typeId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ThingType }
-     *     
-     */
-    public void setTypeId(ThingType value) {
-        this.typeId = value;
-    }
+	/**
+	 * Sets the value of the typeId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ThingType }
+	 * 
+	 */
+	public void setTypeId(ThingType value) {
+		this.typeId = value;
+	}
 
-    /**
-     * Gets the value of the effDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getEffDate() {
-        return effDate;
-    }
+	/**
+	 * Gets the value of the effDate property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getEffDate() {
+		return effDate;
+	}
 
-    /**
-     * Sets the value of the effDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setEffDate(XMLGregorianCalendar value) {
-        this.effDate = value;
-    }
+	/**
+	 * Sets the value of the effDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setEffDate(XMLGregorianCalendar value) {
+		this.effDate = value;
+	}
 
 }

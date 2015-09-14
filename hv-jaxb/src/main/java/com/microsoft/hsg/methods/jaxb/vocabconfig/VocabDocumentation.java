@@ -5,13 +5,11 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocabconfig;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -22,9 +20,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for VocabDocumentation complex type.
+ * <p>
+ * Java class for VocabDocumentation complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="VocabDocumentation">
@@ -42,61 +43,52 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VocabDocumentation", propOrder = {
-    "summary",
-    "remarks"
-})
+@XmlType(name = "VocabDocumentation", propOrder = { "summary", "remarks" })
 public class VocabDocumentation {
 
-    protected String summary;
-    protected String remarks;
+	protected String summary;
+	protected String remarks;
 
-    /**
-     * Gets the value of the summary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSummary() {
-        return summary;
-    }
+	/**
+	 * Gets the value of the summary property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSummary() {
+		return summary;
+	}
 
-    /**
-     * Sets the value of the summary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSummary(String value) {
-        this.summary = value;
-    }
+	/**
+	 * Sets the value of the summary property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSummary(String value) {
+		this.summary = value;
+	}
 
-    /**
-     * Gets the value of the remarks property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRemarks() {
-        return remarks;
-    }
+	/**
+	 * Gets the value of the remarks property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getRemarks() {
+		return remarks;
+	}
 
-    /**
-     * Sets the value of the remarks property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRemarks(String value) {
-        this.remarks = value;
-    }
+	/**
+	 * Sets the value of the remarks property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setRemarks(String value) {
+		this.remarks = value;
+	}
 
 }

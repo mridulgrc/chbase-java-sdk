@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:13:54 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthingtype.request;
 
 import java.util.ArrayList;
@@ -19,7 +18,6 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-
 
 /**
  * 
@@ -40,9 +38,12 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -61,137 +62,127 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "GetThingType",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.GetThingType")
+@JaxbRequest(methodName = "GetThingType", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.GetThingType")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "id",
-    "section",
-    "imageType",
-    "lastClientRefresh"
-})
+@XmlType(name = "", propOrder = { "id", "section", "imageType", "lastClientRefresh" })
 @XmlRootElement(name = "info")
 public class GetThingTypeRequest {
 
-    protected List<String> id;
-    protected List<ThingTypeSectionSpec> section;
-    @XmlElement(name = "image-type")
-    protected List<String> imageType;
-    @XmlElement(name = "last-client-refresh")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar lastClientRefresh;
+	protected List<String> id;
+	protected List<ThingTypeSectionSpec> section;
+	@XmlElement(name = "image-type")
+	protected List<String> imageType;
+	@XmlElement(name = "last-client-refresh")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar lastClientRefresh;
 
-    /**
-     * Gets the value of the id property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the id property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getId().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getId() {
-        if (id == null) {
-            id = new ArrayList<String>();
-        }
-        return this.id;
-    }
+	/**
+	 * Gets the value of the id property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the id property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getId().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getId() {
+		if (id == null) {
+			id = new ArrayList<String>();
+		}
+		return this.id;
+	}
 
-    /**
-     * Gets the value of the section property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the section property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSection().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ThingTypeSectionSpec }
-     * 
-     * 
-     */
-    public List<ThingTypeSectionSpec> getSection() {
-        if (section == null) {
-            section = new ArrayList<ThingTypeSectionSpec>();
-        }
-        return this.section;
-    }
+	/**
+	 * Gets the value of the section property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the section property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getSection().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ThingTypeSectionSpec }
+	 * 
+	 * 
+	 */
+	public List<ThingTypeSectionSpec> getSection() {
+		if (section == null) {
+			section = new ArrayList<ThingTypeSectionSpec>();
+		}
+		return this.section;
+	}
 
-    /**
-     * Gets the value of the imageType property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the imageType property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getImageType().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getImageType() {
-        if (imageType == null) {
-            imageType = new ArrayList<String>();
-        }
-        return this.imageType;
-    }
+	/**
+	 * Gets the value of the imageType property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the imageType property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getImageType().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getImageType() {
+		if (imageType == null) {
+			imageType = new ArrayList<String>();
+		}
+		return this.imageType;
+	}
 
-    /**
-     * Gets the value of the lastClientRefresh property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getLastClientRefresh() {
-        return lastClientRefresh;
-    }
+	/**
+	 * Gets the value of the lastClientRefresh property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getLastClientRefresh() {
+		return lastClientRefresh;
+	}
 
-    /**
-     * Sets the value of the lastClientRefresh property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setLastClientRefresh(XMLGregorianCalendar value) {
-        this.lastClientRefresh = value;
-    }
+	/**
+	 * Sets the value of the lastClientRefresh property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setLastClientRefresh(XMLGregorianCalendar value) {
+		this.lastClientRefresh = value;
+	}
 
 }

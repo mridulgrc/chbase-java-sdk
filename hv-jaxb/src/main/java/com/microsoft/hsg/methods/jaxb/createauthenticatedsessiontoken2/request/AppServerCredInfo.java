@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:11:05 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.createauthenticatedsessiontoken2.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-
 /**
  * 
  * <pre>
@@ -23,9 +21,12 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * </pre>
  * 
  * 
- * <p>Java class for AppServerCredInfo complex type.
+ * <p>
+ * Java class for AppServerCredInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AppServerCredInfo">
@@ -44,91 +45,78 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AppServerCredInfo", propOrder = {
-    "appId",
-    "hmac",
-    "signingTime"
-})
+@XmlType(name = "AppServerCredInfo", propOrder = { "appId", "hmac", "signingTime" })
 public class AppServerCredInfo {
 
-    @XmlElement(name = "app-id", required = true)
-    protected String appId;
-    @XmlElement(required = true)
-    protected Hmac hmac;
-    @XmlElement(name = "signing-time", required = true)
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar signingTime;
+	@XmlElement(name = "app-id", required = true)
+	protected String appId;
+	@XmlElement(required = true)
+	protected Hmac hmac;
+	@XmlElement(name = "signing-time", required = true)
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar signingTime;
 
-    /**
-     * Gets the value of the appId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAppId() {
-        return appId;
-    }
+	/**
+	 * Gets the value of the appId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAppId() {
+		return appId;
+	}
 
-    /**
-     * Sets the value of the appId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAppId(String value) {
-        this.appId = value;
-    }
+	/**
+	 * Sets the value of the appId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAppId(String value) {
+		this.appId = value;
+	}
 
-    /**
-     * Gets the value of the hmac property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Hmac }
-     *     
-     */
-    public Hmac getHmac() {
-        return hmac;
-    }
+	/**
+	 * Gets the value of the hmac property.
+	 * 
+	 * @return possible object is {@link Hmac }
+	 * 
+	 */
+	public Hmac getHmac() {
+		return hmac;
+	}
 
-    /**
-     * Sets the value of the hmac property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Hmac }
-     *     
-     */
-    public void setHmac(Hmac value) {
-        this.hmac = value;
-    }
+	/**
+	 * Sets the value of the hmac property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Hmac }
+	 * 
+	 */
+	public void setHmac(Hmac value) {
+		this.hmac = value;
+	}
 
-    /**
-     * Gets the value of the signingTime property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getSigningTime() {
-        return signingTime;
-    }
+	/**
+	 * Gets the value of the signingTime property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getSigningTime() {
+		return signingTime;
+	}
 
-    /**
-     * Sets the value of the signingTime property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setSigningTime(XMLGregorianCalendar value) {
-        this.signingTime = value;
-    }
+	/**
+	 * Sets the value of the signingTime property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setSigningTime(XMLGregorianCalendar value) {
+		this.signingTime = value;
+	}
 
 }

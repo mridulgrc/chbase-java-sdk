@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
-
 
 /**
  * 
@@ -31,9 +29,12 @@ import javax.xml.bind.annotation.XmlValue;
  * </pre>
  * 
  * 
- * <p>Java class for Token complex type.
+ * <p>
+ * Java class for Token complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Token">
@@ -49,96 +50,85 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Token", propOrder = {
-    "value"
-})
+@XmlType(name = "Token", propOrder = { "value" })
 public class Token {
 
-    @XmlValue
-    protected String value;
-    @XmlAttribute(name = "app-id", required = true)
-    protected String appId;
-    @XmlAttribute(name = "app-record-auth-action", required = true)
-    protected String appRecordAuthAction;
+	@XmlValue
+	protected String value;
+	@XmlAttribute(name = "app-id", required = true)
+	protected String appId;
+	@XmlAttribute(name = "app-record-auth-action", required = true)
+	protected String appRecordAuthAction;
 
-    /**
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+	/**
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the appId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAppId() {
-        return appId;
-    }
+	/**
+	 * Gets the value of the appId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAppId() {
+		return appId;
+	}
 
-    /**
-     * Sets the value of the appId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAppId(String value) {
-        this.appId = value;
-    }
+	/**
+	 * Sets the value of the appId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAppId(String value) {
+		this.appId = value;
+	}
 
-    /**
-     * Gets the value of the appRecordAuthAction property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAppRecordAuthAction() {
-        return appRecordAuthAction;
-    }
+	/**
+	 * Gets the value of the appRecordAuthAction property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAppRecordAuthAction() {
+		return appRecordAuthAction;
+	}
 
-    /**
-     * Sets the value of the appRecordAuthAction property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAppRecordAuthAction(String value) {
-        this.appRecordAuthAction = value;
-    }
+	/**
+	 * Sets the value of the appRecordAuthAction property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAppRecordAuthAction(String value) {
+		this.appRecordAuthAction = value;
+	}
 
 }

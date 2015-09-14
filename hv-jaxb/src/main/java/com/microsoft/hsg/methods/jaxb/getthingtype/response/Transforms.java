@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:21:09 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthingtype.response;
 
 import java.util.ArrayList;
@@ -13,7 +12,6 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -26,9 +24,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Transforms complex type.
+ * <p>
+ * Java class for Transforms complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Transforms">
@@ -45,40 +46,38 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Transforms", propOrder = {
-    "tag"
-})
+@XmlType(name = "Transforms", propOrder = { "tag" })
 public class Transforms {
 
-    protected List<String> tag;
+	protected List<String> tag;
 
-    /**
-     * Gets the value of the tag property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the tag property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTag().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getTag() {
-        if (tag == null) {
-            tag = new ArrayList<String>();
-        }
-        return this.tag;
-    }
+	/**
+	 * Gets the value of the tag property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the tag property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getTag().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getTag() {
+		if (tag == null) {
+			tag = new ArrayList<String>();
+		}
+		return this.tag;
+	}
 
 }

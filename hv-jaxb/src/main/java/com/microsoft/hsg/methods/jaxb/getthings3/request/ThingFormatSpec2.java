@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:13:50 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthings3.request;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for ThingFormatSpec2 complex type.
+ * <p>
+ * Java class for ThingFormatSpec2 complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ThingFormatSpec2">
@@ -54,130 +55,123 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ThingFormatSpec2", propOrder = {
-    "section",
-    "xml",
-    "typeVersionFormat",
-    "blobPayloadRequest"
-})
+@XmlType(name = "ThingFormatSpec2", propOrder = { "section", "xml", "typeVersionFormat", "blobPayloadRequest" })
 public class ThingFormatSpec2 {
 
-    protected List<ThingSectionSpec2> section;
-    protected List<String> xml;
-    @XmlElement(name = "type-version-format")
-    protected List<String> typeVersionFormat;
-    @XmlElement(name = "blob-payload-request")
-    protected BlobPayloadRequest blobPayloadRequest;
+	protected List<ThingSectionSpec2> section;
+	protected List<String> xml;
+	@XmlElement(name = "type-version-format")
+	protected List<String> typeVersionFormat;
+	@XmlElement(name = "blob-payload-request")
+	protected BlobPayloadRequest blobPayloadRequest;
 
-    /**
-     * Gets the value of the section property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the section property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSection().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ThingSectionSpec2 }
-     * 
-     * 
-     */
-    public List<ThingSectionSpec2> getSection() {
-        if (section == null) {
-            section = new ArrayList<ThingSectionSpec2>();
-        }
-        return this.section;
-    }
+	/**
+	 * Gets the value of the section property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the section property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getSection().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ThingSectionSpec2 }
+	 * 
+	 * 
+	 */
+	public List<ThingSectionSpec2> getSection() {
+		if (section == null) {
+			section = new ArrayList<ThingSectionSpec2>();
+		}
+		return this.section;
+	}
 
-    /**
-     * Gets the value of the xml property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the xml property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getXml().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getXml() {
-        if (xml == null) {
-            xml = new ArrayList<String>();
-        }
-        return this.xml;
-    }
+	/**
+	 * Gets the value of the xml property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the xml property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getXml().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getXml() {
+		if (xml == null) {
+			xml = new ArrayList<String>();
+		}
+		return this.xml;
+	}
 
-    /**
-     * Gets the value of the typeVersionFormat property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the typeVersionFormat property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTypeVersionFormat().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getTypeVersionFormat() {
-        if (typeVersionFormat == null) {
-            typeVersionFormat = new ArrayList<String>();
-        }
-        return this.typeVersionFormat;
-    }
+	/**
+	 * Gets the value of the typeVersionFormat property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the typeVersionFormat property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getTypeVersionFormat().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getTypeVersionFormat() {
+		if (typeVersionFormat == null) {
+			typeVersionFormat = new ArrayList<String>();
+		}
+		return this.typeVersionFormat;
+	}
 
-    /**
-     * Gets the value of the blobPayloadRequest property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BlobPayloadRequest }
-     *     
-     */
-    public BlobPayloadRequest getBlobPayloadRequest() {
-        return blobPayloadRequest;
-    }
+	/**
+	 * Gets the value of the blobPayloadRequest property.
+	 * 
+	 * @return possible object is {@link BlobPayloadRequest }
+	 * 
+	 */
+	public BlobPayloadRequest getBlobPayloadRequest() {
+		return blobPayloadRequest;
+	}
 
-    /**
-     * Sets the value of the blobPayloadRequest property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BlobPayloadRequest }
-     *     
-     */
-    public void setBlobPayloadRequest(BlobPayloadRequest value) {
-        this.blobPayloadRequest = value;
-    }
+	/**
+	 * Sets the value of the blobPayloadRequest property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BlobPayloadRequest }
+	 * 
+	 */
+	public void setBlobPayloadRequest(BlobPayloadRequest value) {
+		this.blobPayloadRequest = value;
+	}
 
 }

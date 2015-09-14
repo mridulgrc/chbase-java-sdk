@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:39:47 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.diabeticprofile;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -38,9 +36,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for TargetGlucoseZoneGroup complex type.
+ * <p>
+ * Java class for TargetGlucoseZoneGroup complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="TargetGlucoseZoneGroup">
@@ -58,67 +59,63 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TargetGlucoseZoneGroup", propOrder = {
-    "targetGlucoseZone"
-})
+@XmlType(name = "TargetGlucoseZoneGroup", propOrder = { "targetGlucoseZone" })
 public class TargetGlucoseZoneGroup {
 
-    @XmlElement(name = "target-glucose-zone")
-    protected List<TargetGlucoseZone> targetGlucoseZone;
-    @XmlAttribute
-    protected String name;
+	@XmlElement(name = "target-glucose-zone")
+	protected List<TargetGlucoseZone> targetGlucoseZone;
+	@XmlAttribute
+	protected String name;
 
-    /**
-     * Gets the value of the targetGlucoseZone property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the targetGlucoseZone property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTargetGlucoseZone().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TargetGlucoseZone }
-     * 
-     * 
-     */
-    public List<TargetGlucoseZone> getTargetGlucoseZone() {
-        if (targetGlucoseZone == null) {
-            targetGlucoseZone = new ArrayList<TargetGlucoseZone>();
-        }
-        return this.targetGlucoseZone;
-    }
+	/**
+	 * Gets the value of the targetGlucoseZone property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the targetGlucoseZone property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getTargetGlucoseZone().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link TargetGlucoseZone }
+	 * 
+	 * 
+	 */
+	public List<TargetGlucoseZone> getTargetGlucoseZone() {
+		if (targetGlucoseZone == null) {
+			targetGlucoseZone = new ArrayList<TargetGlucoseZone>();
+		}
+		return this.targetGlucoseZone;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
 }

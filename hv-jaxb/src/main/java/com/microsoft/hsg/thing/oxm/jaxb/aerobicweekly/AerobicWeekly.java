@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:38:07 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.aerobicweekly;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -52,55 +53,49 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.AerobicSession;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "session",
-    "recurrence"
-})
+@XmlType(name = "", propOrder = { "session", "recurrence" })
 @XmlRootElement(name = "aerobic-weekly")
 public class AerobicWeekly {
 
-    @XmlElement(required = true)
-    protected AerobicSession session;
-    protected int recurrence;
+	@XmlElement(required = true)
+	protected AerobicSession session;
+	protected int recurrence;
 
-    /**
-     * Gets the value of the session property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AerobicSession }
-     *     
-     */
-    public AerobicSession getSession() {
-        return session;
-    }
+	/**
+	 * Gets the value of the session property.
+	 * 
+	 * @return possible object is {@link AerobicSession }
+	 * 
+	 */
+	public AerobicSession getSession() {
+		return session;
+	}
 
-    /**
-     * Sets the value of the session property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AerobicSession }
-     *     
-     */
-    public void setSession(AerobicSession value) {
-        this.session = value;
-    }
+	/**
+	 * Sets the value of the session property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AerobicSession }
+	 * 
+	 */
+	public void setSession(AerobicSession value) {
+		this.session = value;
+	}
 
-    /**
-     * Gets the value of the recurrence property.
-     * 
-     */
-    public int getRecurrence() {
-        return recurrence;
-    }
+	/**
+	 * Gets the value of the recurrence property.
+	 * 
+	 */
+	public int getRecurrence() {
+		return recurrence;
+	}
 
-    /**
-     * Sets the value of the recurrence property.
-     * 
-     */
-    public void setRecurrence(int value) {
-        this.recurrence = value;
-    }
+	/**
+	 * Sets the value of the recurrence property.
+	 * 
+	 */
+	public void setRecurrence(int value) {
+		this.recurrence = value;
+	}
 
 }

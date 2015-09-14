@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:01:35 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getservicedefinition2.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for XmlMethodVersion complex type.
+ * <p>
+ * Java class for XmlMethodVersion complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="XmlMethodVersion">
@@ -46,89 +47,77 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "XmlMethodVersion", propOrder = {
-    "requestSchemaUrl",
-    "responseSchemaUrl"
-})
+@XmlType(name = "XmlMethodVersion", propOrder = { "requestSchemaUrl", "responseSchemaUrl" })
 public class XmlMethodVersion {
 
-    @XmlElement(name = "request-schema-url")
-    protected String requestSchemaUrl;
-    @XmlElement(name = "response-schema-url")
-    protected String responseSchemaUrl;
-    @XmlAttribute(name = "number", required = true)
-    protected String number;
+	@XmlElement(name = "request-schema-url")
+	protected String requestSchemaUrl;
+	@XmlElement(name = "response-schema-url")
+	protected String responseSchemaUrl;
+	@XmlAttribute(name = "number", required = true)
+	protected String number;
 
-    /**
-     * Gets the value of the requestSchemaUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRequestSchemaUrl() {
-        return requestSchemaUrl;
-    }
+	/**
+	 * Gets the value of the requestSchemaUrl property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getRequestSchemaUrl() {
+		return requestSchemaUrl;
+	}
 
-    /**
-     * Sets the value of the requestSchemaUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRequestSchemaUrl(String value) {
-        this.requestSchemaUrl = value;
-    }
+	/**
+	 * Sets the value of the requestSchemaUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setRequestSchemaUrl(String value) {
+		this.requestSchemaUrl = value;
+	}
 
-    /**
-     * Gets the value of the responseSchemaUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getResponseSchemaUrl() {
-        return responseSchemaUrl;
-    }
+	/**
+	 * Gets the value of the responseSchemaUrl property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getResponseSchemaUrl() {
+		return responseSchemaUrl;
+	}
 
-    /**
-     * Sets the value of the responseSchemaUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setResponseSchemaUrl(String value) {
-        this.responseSchemaUrl = value;
-    }
+	/**
+	 * Sets the value of the responseSchemaUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setResponseSchemaUrl(String value) {
+		this.responseSchemaUrl = value;
+	}
 
-    /**
-     * Gets the value of the number property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNumber() {
-        return number;
-    }
+	/**
+	 * Gets the value of the number property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getNumber() {
+		return number;
+	}
 
-    /**
-     * Sets the value of the number property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNumber(String value) {
-        this.number = value;
-    }
+	/**
+	 * Sets the value of the number property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setNumber(String value) {
+		this.number = value;
+	}
 
 }

@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:13:50 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthings3.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for BlobPayloadRequest complex type.
+ * <p>
+ * Java class for BlobPayloadRequest complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="BlobPayloadRequest">
@@ -55,118 +56,106 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "BlobPayloadRequest", propOrder = {
-    "blobFilters",
-    "blobFormat"
-})
+@XmlType(name = "BlobPayloadRequest", propOrder = { "blobFilters", "blobFormat" })
 public class BlobPayloadRequest {
 
-    @XmlElement(name = "blob-filters")
-    protected BlobFilters blobFilters;
-    @XmlElement(name = "blob-format", required = true)
-    protected BlobPayloadRequest.BlobFormat blobFormat;
+	@XmlElement(name = "blob-filters")
+	protected BlobFilters blobFilters;
+	@XmlElement(name = "blob-format", required = true)
+	protected BlobPayloadRequest.BlobFormat blobFormat;
 
-    /**
-     * Gets the value of the blobFilters property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BlobFilters }
-     *     
-     */
-    public BlobFilters getBlobFilters() {
-        return blobFilters;
-    }
+	/**
+	 * Gets the value of the blobFilters property.
+	 * 
+	 * @return possible object is {@link BlobFilters }
+	 * 
+	 */
+	public BlobFilters getBlobFilters() {
+		return blobFilters;
+	}
 
-    /**
-     * Sets the value of the blobFilters property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BlobFilters }
-     *     
-     */
-    public void setBlobFilters(BlobFilters value) {
-        this.blobFilters = value;
-    }
+	/**
+	 * Sets the value of the blobFilters property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BlobFilters }
+	 * 
+	 */
+	public void setBlobFilters(BlobFilters value) {
+		this.blobFilters = value;
+	}
 
-    /**
-     * Gets the value of the blobFormat property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BlobPayloadRequest.BlobFormat }
-     *     
-     */
-    public BlobPayloadRequest.BlobFormat getBlobFormat() {
-        return blobFormat;
-    }
+	/**
+	 * Gets the value of the blobFormat property.
+	 * 
+	 * @return possible object is {@link BlobPayloadRequest.BlobFormat }
+	 * 
+	 */
+	public BlobPayloadRequest.BlobFormat getBlobFormat() {
+		return blobFormat;
+	}
 
-    /**
-     * Sets the value of the blobFormat property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BlobPayloadRequest.BlobFormat }
-     *     
-     */
-    public void setBlobFormat(BlobPayloadRequest.BlobFormat value) {
-        this.blobFormat = value;
-    }
+	/**
+	 * Sets the value of the blobFormat property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BlobPayloadRequest.BlobFormat }
+	 * 
+	 */
+	public void setBlobFormat(BlobPayloadRequest.BlobFormat value) {
+		this.blobFormat = value;
+	}
 
+	/**
+	 * <p>
+	 * Java class for anonymous complex type.
+	 * 
+	 * <p>
+	 * The following schema fragment specifies the expected content contained
+	 * within this class.
+	 * 
+	 * <pre>
+	 * &lt;complexType>
+	 *   &lt;complexContent>
+	 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+	 *       &lt;sequence>
+	 *         &lt;element name="blob-format-spec" type="{urn:com.microsoft.wc.methods.GetThings3}BlobFormatSpec"/>
+	 *       &lt;/sequence>
+	 *     &lt;/restriction>
+	 *   &lt;/complexContent>
+	 * &lt;/complexType>
+	 * </pre>
+	 * 
+	 * 
+	 */
+	@XmlAccessorType(XmlAccessType.FIELD)
+	@XmlType(name = "", propOrder = { "blobFormatSpec" })
+	public static class BlobFormat {
 
-    /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="blob-format-spec" type="{urn:com.microsoft.wc.methods.GetThings3}BlobFormatSpec"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "blobFormatSpec"
-    })
-    public static class BlobFormat {
+		@XmlElement(name = "blob-format-spec", required = true)
+		protected BlobFormatSpec blobFormatSpec;
 
-        @XmlElement(name = "blob-format-spec", required = true)
-        protected BlobFormatSpec blobFormatSpec;
+		/**
+		 * Gets the value of the blobFormatSpec property.
+		 * 
+		 * @return possible object is {@link BlobFormatSpec }
+		 * 
+		 */
+		public BlobFormatSpec getBlobFormatSpec() {
+			return blobFormatSpec;
+		}
 
-        /**
-         * Gets the value of the blobFormatSpec property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link BlobFormatSpec }
-         *     
-         */
-        public BlobFormatSpec getBlobFormatSpec() {
-            return blobFormatSpec;
-        }
+		/**
+		 * Sets the value of the blobFormatSpec property.
+		 * 
+		 * @param value
+		 *            allowed object is {@link BlobFormatSpec }
+		 * 
+		 */
+		public void setBlobFormatSpec(BlobFormatSpec value) {
+			this.blobFormatSpec = value;
+		}
 
-        /**
-         * Sets the value of the blobFormatSpec property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link BlobFormatSpec }
-         *     
-         */
-        public void setBlobFormatSpec(BlobFormatSpec value) {
-            this.blobFormatSpec = value;
-        }
-
-    }
+	}
 
 }

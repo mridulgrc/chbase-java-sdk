@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:21:22 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getvocabulary.response;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.methods.jaxb.vocab.VocabularyCodeSet;
 import com.microsoft.hsg.methods.jaxb.vocab.VocabularyKeyInfo;
-
 
 /**
  * 
@@ -38,9 +36,12 @@ import com.microsoft.hsg.methods.jaxb.vocab.VocabularyKeyInfo;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -58,73 +59,72 @@ import com.microsoft.hsg.methods.jaxb.vocab.VocabularyKeyInfo;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "vocabulary",
-    "vocabularyKey"
-})
+@XmlType(name = "", propOrder = { "vocabulary", "vocabularyKey" })
 @XmlRootElement(name = "info")
 public class GetVocabularyResponse {
 
-    protected List<VocabularyCodeSet> vocabulary;
-    @XmlElement(name = "vocabulary-key")
-    protected List<VocabularyKeyInfo> vocabularyKey;
+	protected List<VocabularyCodeSet> vocabulary;
+	@XmlElement(name = "vocabulary-key")
+	protected List<VocabularyKeyInfo> vocabularyKey;
 
-    /**
-     * Gets the value of the vocabulary property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the vocabulary property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getVocabulary().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link VocabularyCodeSet }
-     * 
-     * 
-     */
-    public List<VocabularyCodeSet> getVocabulary() {
-        if (vocabulary == null) {
-            vocabulary = new ArrayList<VocabularyCodeSet>();
-        }
-        return this.vocabulary;
-    }
+	/**
+	 * Gets the value of the vocabulary property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the vocabulary property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getVocabulary().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link VocabularyCodeSet }
+	 * 
+	 * 
+	 */
+	public List<VocabularyCodeSet> getVocabulary() {
+		if (vocabulary == null) {
+			vocabulary = new ArrayList<VocabularyCodeSet>();
+		}
+		return this.vocabulary;
+	}
 
-    /**
-     * Gets the value of the vocabularyKey property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the vocabularyKey property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getVocabularyKey().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link VocabularyKeyInfo }
-     * 
-     * 
-     */
-    public List<VocabularyKeyInfo> getVocabularyKey() {
-        if (vocabularyKey == null) {
-            vocabularyKey = new ArrayList<VocabularyKeyInfo>();
-        }
-        return this.vocabularyKey;
-    }
+	/**
+	 * Gets the value of the vocabularyKey property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the vocabularyKey property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getVocabularyKey().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link VocabularyKeyInfo }
+	 * 
+	 * 
+	 */
+	public List<VocabularyKeyInfo> getVocabularyKey() {
+		if (vocabularyKey == null) {
+			vocabularyKey = new ArrayList<VocabularyKeyInfo>();
+		}
+		return this.vocabularyKey;
+	}
 
 }

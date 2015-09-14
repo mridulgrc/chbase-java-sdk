@@ -5,19 +5,21 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.thing;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for AuditAction.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
+ * Java class for AuditAction.
+ * 
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
+ * <p>
+ * 
  * <pre>
  * &lt;simpleType name="AuditAction">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -33,29 +35,25 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum AuditAction {
 
-    @XmlEnumValue("Created")
-    CREATED("Created"),
-    @XmlEnumValue("Updated")
-    UPDATED("Updated"),
-    @XmlEnumValue("Deleted")
-    DELETED("Deleted");
-    private final String value;
+	@XmlEnumValue("Created") CREATED("Created"), @XmlEnumValue("Updated") UPDATED(
+			"Updated"), @XmlEnumValue("Deleted") DELETED("Deleted");
+	private final String value;
 
-    AuditAction(String v) {
-        value = v;
-    }
+	AuditAction(String v) {
+		value = v;
+	}
 
-    public String value() {
-        return value;
-    }
+	public String value() {
+		return value;
+	}
 
-    public static AuditAction fromValue(String v) {
-        for (AuditAction c: AuditAction.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+	public static AuditAction fromValue(String v) {
+		for (AuditAction c : AuditAction.values()) {
+			if (c.value.equals(v)) {
+				return c;
+			}
+		}
+		throw new IllegalArgumentException(v);
+	}
 
 }

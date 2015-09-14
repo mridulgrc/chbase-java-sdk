@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:21:09 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthingtype.response;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -29,9 +27,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for ThingTypeInfo complex type.
+ * <p>
+ * Java class for ThingTypeInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ThingTypeInfo">
@@ -59,335 +60,294 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ThingTypeInfo", propOrder = {
-    "id",
-    "name",
-    "uncreatable",
-    "immutable",
-    "singleton",
-    "xsd",
-    "columns",
-    "transforms",
-    "transformSource",
-    "image",
-    "versions",
-    "effectiveDateXpath"
-})
+@XmlType(name = "ThingTypeInfo", propOrder = { "id", "name", "uncreatable", "immutable", "singleton", "xsd", "columns",
+		"transforms", "transformSource", "image", "versions", "effectiveDateXpath" })
 public class ThingTypeInfo {
 
-    @XmlElement(required = true)
-    protected String id;
-    @XmlElement(required = true)
-    protected String name;
-    protected Boolean uncreatable;
-    protected Boolean immutable;
-    protected Boolean singleton;
-    protected String xsd;
-    protected Columns columns;
-    protected Transforms transforms;
-    @XmlElement(name = "transform-source")
-    protected List<TransformSource> transformSource;
-    protected List<Image> image;
-    protected Versions versions;
-    @XmlElement(name = "effective-date-xpath")
-    protected String effectiveDateXpath;
+	@XmlElement(required = true)
+	protected String id;
+	@XmlElement(required = true)
+	protected String name;
+	protected Boolean uncreatable;
+	protected Boolean immutable;
+	protected Boolean singleton;
+	protected String xsd;
+	protected Columns columns;
+	protected Transforms transforms;
+	@XmlElement(name = "transform-source")
+	protected List<TransformSource> transformSource;
+	protected List<Image> image;
+	protected Versions versions;
+	@XmlElement(name = "effective-date-xpath")
+	protected String effectiveDateXpath;
 
-    /**
-     * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getId() {
-        return id;
-    }
+	/**
+	 * Gets the value of the id property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getId() {
+		return id;
+	}
 
-    /**
-     * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setId(String value) {
-        this.id = value;
-    }
+	/**
+	 * Sets the value of the id property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setId(String value) {
+		this.id = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the uncreatable property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isUncreatable() {
-        return uncreatable;
-    }
+	/**
+	 * Gets the value of the uncreatable property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isUncreatable() {
+		return uncreatable;
+	}
 
-    /**
-     * Sets the value of the uncreatable property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setUncreatable(Boolean value) {
-        this.uncreatable = value;
-    }
+	/**
+	 * Sets the value of the uncreatable property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setUncreatable(Boolean value) {
+		this.uncreatable = value;
+	}
 
-    /**
-     * Gets the value of the immutable property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isImmutable() {
-        return immutable;
-    }
+	/**
+	 * Gets the value of the immutable property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isImmutable() {
+		return immutable;
+	}
 
-    /**
-     * Sets the value of the immutable property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setImmutable(Boolean value) {
-        this.immutable = value;
-    }
+	/**
+	 * Sets the value of the immutable property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setImmutable(Boolean value) {
+		this.immutable = value;
+	}
 
-    /**
-     * Gets the value of the singleton property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isSingleton() {
-        return singleton;
-    }
+	/**
+	 * Gets the value of the singleton property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isSingleton() {
+		return singleton;
+	}
 
-    /**
-     * Sets the value of the singleton property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setSingleton(Boolean value) {
-        this.singleton = value;
-    }
+	/**
+	 * Sets the value of the singleton property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setSingleton(Boolean value) {
+		this.singleton = value;
+	}
 
-    /**
-     * Gets the value of the xsd property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getXsd() {
-        return xsd;
-    }
+	/**
+	 * Gets the value of the xsd property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getXsd() {
+		return xsd;
+	}
 
-    /**
-     * Sets the value of the xsd property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setXsd(String value) {
-        this.xsd = value;
-    }
+	/**
+	 * Sets the value of the xsd property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setXsd(String value) {
+		this.xsd = value;
+	}
 
-    /**
-     * Gets the value of the columns property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Columns }
-     *     
-     */
-    public Columns getColumns() {
-        return columns;
-    }
+	/**
+	 * Gets the value of the columns property.
+	 * 
+	 * @return possible object is {@link Columns }
+	 * 
+	 */
+	public Columns getColumns() {
+		return columns;
+	}
 
-    /**
-     * Sets the value of the columns property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Columns }
-     *     
-     */
-    public void setColumns(Columns value) {
-        this.columns = value;
-    }
+	/**
+	 * Sets the value of the columns property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Columns }
+	 * 
+	 */
+	public void setColumns(Columns value) {
+		this.columns = value;
+	}
 
-    /**
-     * Gets the value of the transforms property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Transforms }
-     *     
-     */
-    public Transforms getTransforms() {
-        return transforms;
-    }
+	/**
+	 * Gets the value of the transforms property.
+	 * 
+	 * @return possible object is {@link Transforms }
+	 * 
+	 */
+	public Transforms getTransforms() {
+		return transforms;
+	}
 
-    /**
-     * Sets the value of the transforms property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Transforms }
-     *     
-     */
-    public void setTransforms(Transforms value) {
-        this.transforms = value;
-    }
+	/**
+	 * Sets the value of the transforms property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Transforms }
+	 * 
+	 */
+	public void setTransforms(Transforms value) {
+		this.transforms = value;
+	}
 
-    /**
-     * Gets the value of the transformSource property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the transformSource property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTransformSource().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TransformSource }
-     * 
-     * 
-     */
-    public List<TransformSource> getTransformSource() {
-        if (transformSource == null) {
-            transformSource = new ArrayList<TransformSource>();
-        }
-        return this.transformSource;
-    }
+	/**
+	 * Gets the value of the transformSource property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the transformSource property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getTransformSource().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link TransformSource }
+	 * 
+	 * 
+	 */
+	public List<TransformSource> getTransformSource() {
+		if (transformSource == null) {
+			transformSource = new ArrayList<TransformSource>();
+		}
+		return this.transformSource;
+	}
 
-    /**
-     * Gets the value of the image property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the image property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getImage().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Image }
-     * 
-     * 
-     */
-    public List<Image> getImage() {
-        if (image == null) {
-            image = new ArrayList<Image>();
-        }
-        return this.image;
-    }
+	/**
+	 * Gets the value of the image property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the image property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getImage().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Image }
+	 * 
+	 * 
+	 */
+	public List<Image> getImage() {
+		if (image == null) {
+			image = new ArrayList<Image>();
+		}
+		return this.image;
+	}
 
-    /**
-     * Gets the value of the versions property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Versions }
-     *     
-     */
-    public Versions getVersions() {
-        return versions;
-    }
+	/**
+	 * Gets the value of the versions property.
+	 * 
+	 * @return possible object is {@link Versions }
+	 * 
+	 */
+	public Versions getVersions() {
+		return versions;
+	}
 
-    /**
-     * Sets the value of the versions property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Versions }
-     *     
-     */
-    public void setVersions(Versions value) {
-        this.versions = value;
-    }
+	/**
+	 * Sets the value of the versions property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Versions }
+	 * 
+	 */
+	public void setVersions(Versions value) {
+		this.versions = value;
+	}
 
-    /**
-     * Gets the value of the effectiveDateXpath property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getEffectiveDateXpath() {
-        return effectiveDateXpath;
-    }
+	/**
+	 * Gets the value of the effectiveDateXpath property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getEffectiveDateXpath() {
+		return effectiveDateXpath;
+	}
 
-    /**
-     * Sets the value of the effectiveDateXpath property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setEffectiveDateXpath(String value) {
-        this.effectiveDateXpath = value;
-    }
+	/**
+	 * Sets the value of the effectiveDateXpath property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setEffectiveDateXpath(String value) {
+		this.effectiveDateXpath = value;
+	}
 
 }

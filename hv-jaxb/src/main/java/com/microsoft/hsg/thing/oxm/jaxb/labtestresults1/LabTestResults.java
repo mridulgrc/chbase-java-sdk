@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:41:25 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.labtestresults1;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Organization;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
 
-
 /**
  * 
  * <pre>
@@ -28,9 +26,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -49,95 +50,86 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "labGroup",
-    "orderedBy"
-})
+@XmlType(name = "", propOrder = { "when", "labGroup", "orderedBy" })
 @XmlRootElement(name = "lab-test-results")
 public class LabTestResults {
 
-    protected ApproxDateTime when;
-    @XmlElement(name = "lab-group", required = true)
-    protected List<LabTestResultsGroupType> labGroup;
-    @XmlElement(name = "ordered-by")
-    protected Organization orderedBy;
+	protected ApproxDateTime when;
+	@XmlElement(name = "lab-group", required = true)
+	protected List<LabTestResultsGroupType> labGroup;
+	@XmlElement(name = "ordered-by")
+	protected Organization orderedBy;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setWhen(ApproxDateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setWhen(ApproxDateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the labGroup property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the labGroup property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getLabGroup().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link LabTestResultsGroupType }
-     * 
-     * 
-     */
-    public List<LabTestResultsGroupType> getLabGroup() {
-        if (labGroup == null) {
-            labGroup = new ArrayList<LabTestResultsGroupType>();
-        }
-        return this.labGroup;
-    }
+	/**
+	 * Gets the value of the labGroup property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the labGroup property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getLabGroup().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link LabTestResultsGroupType }
+	 * 
+	 * 
+	 */
+	public List<LabTestResultsGroupType> getLabGroup() {
+		if (labGroup == null) {
+			labGroup = new ArrayList<LabTestResultsGroupType>();
+		}
+		return this.labGroup;
+	}
 
-    /**
-     * Gets the value of the orderedBy property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Organization }
-     *     
-     */
-    public Organization getOrderedBy() {
-        return orderedBy;
-    }
+	/**
+	 * Gets the value of the orderedBy property.
+	 * 
+	 * @return possible object is {@link Organization }
+	 * 
+	 */
+	public Organization getOrderedBy() {
+		return orderedBy;
+	}
 
-    /**
-     * Sets the value of the orderedBy property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Organization }
-     *     
-     */
-    public void setOrderedBy(Organization value) {
-        this.orderedBy = value;
-    }
+	/**
+	 * Sets the value of the orderedBy property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Organization }
+	 * 
+	 */
+	public void setOrderedBy(Organization value) {
+		this.orderedBy = value;
+	}
 
 }

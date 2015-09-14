@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for DriverPackages complex type.
+ * <p>
+ * Java class for DriverPackages complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="DriverPackages">
@@ -44,41 +45,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DriverPackages", propOrder = {
-    "_package"
-})
+@XmlType(name = "DriverPackages", propOrder = { "_package" })
 public class DriverPackages {
 
-    @XmlElement(name = "package", required = true)
-    protected List<DriverPackage> _package;
+	@XmlElement(name = "package", required = true)
+	protected List<DriverPackage> _package;
 
-    /**
-     * Gets the value of the package property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the package property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getPackage().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link DriverPackage }
-     * 
-     * 
-     */
-    public List<DriverPackage> getPackage() {
-        if (_package == null) {
-            _package = new ArrayList<DriverPackage>();
-        }
-        return this._package;
-    }
+	/**
+	 * Gets the value of the package property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the package property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getPackage().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link DriverPackage }
+	 * 
+	 * 
+	 */
+	public List<DriverPackage> getPackage() {
+		if (_package == null) {
+			_package = new ArrayList<DriverPackage>();
+		}
+		return this._package;
+	}
 
 }

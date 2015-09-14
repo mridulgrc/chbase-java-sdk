@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:02 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.sleepjournalpm;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.Time;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Time;
  * </pre>
  * 
  * 
- * <p>Java class for Activity complex type.
+ * <p>
+ * Java class for Activity complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Activity">
@@ -45,54 +46,48 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Time;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Activity", propOrder = {
-    "when",
-    "minutes"
-})
+@XmlType(name = "Activity", propOrder = { "when", "minutes" })
 public class Activity {
 
-    @XmlElement(required = true)
-    protected Time when;
-    protected int minutes;
+	@XmlElement(required = true)
+	protected Time when;
+	protected int minutes;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Time }
-     *     
-     */
-    public Time getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link Time }
+	 * 
+	 */
+	public Time getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Time }
-     *     
-     */
-    public void setWhen(Time value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Time }
+	 * 
+	 */
+	public void setWhen(Time value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the minutes property.
-     * 
-     */
-    public int getMinutes() {
-        return minutes;
-    }
+	/**
+	 * Gets the value of the minutes property.
+	 * 
+	 */
+	public int getMinutes() {
+		return minutes;
+	}
 
-    /**
-     * Sets the value of the minutes property.
-     * 
-     */
-    public void setMinutes(int value) {
-        this.minutes = value;
-    }
+	/**
+	 * Sets the value of the minutes property.
+	 * 
+	 */
+	public void setMinutes(int value) {
+		this.minutes = value;
+	}
 
 }

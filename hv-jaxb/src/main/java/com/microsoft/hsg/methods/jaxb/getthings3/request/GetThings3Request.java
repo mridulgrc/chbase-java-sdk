@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:13:50 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthings3.request;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-
 
 /**
  * 
@@ -39,9 +37,12 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -57,47 +58,43 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "GetThings",
-		methodVersion = "3",
-		responseNS = "urn:com.microsoft.wc.methods.response.GetThings3")
+@JaxbRequest(methodName = "GetThings", methodVersion = "3", responseNS = "urn:com.microsoft.wc.methods.response.GetThings3")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "group"
-})
+@XmlType(name = "", propOrder = { "group" })
 @XmlRootElement(name = "info")
 public class GetThings3Request {
 
-    @XmlElement(required = true)
-    protected List<ThingRequestGroup2> group;
+	@XmlElement(required = true)
+	protected List<ThingRequestGroup2> group;
 
-    /**
-     * Gets the value of the group property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the group property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getGroup().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ThingRequestGroup2 }
-     * 
-     * 
-     */
-    public List<ThingRequestGroup2> getGroup() {
-        if (group == null) {
-            group = new ArrayList<ThingRequestGroup2>();
-        }
-        return this.group;
-    }
+	/**
+	 * Gets the value of the group property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the group property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getGroup().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ThingRequestGroup2 }
+	 * 
+	 * 
+	 */
+	public List<ThingRequestGroup2> getGroup() {
+		if (group == null) {
+			group = new ArrayList<ThingRequestGroup2>();
+		}
+		return this.group;
+	}
 
 }

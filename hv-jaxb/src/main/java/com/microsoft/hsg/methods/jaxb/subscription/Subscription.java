@@ -5,14 +5,12 @@
 // Generated on: 2011.03.01 at 07:55:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.subscription;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Subscription complex type.
+ * <p>
+ * Java class for Subscription complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Subscription">
@@ -56,63 +57,54 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Subscription", propOrder = {
-    "common",
-    "recordItemChangedEvent"
-})
+@XmlType(name = "Subscription", propOrder = { "common", "recordItemChangedEvent" })
 public class Subscription {
 
-    @XmlElement(required = true)
-    protected Common common;
-    @XmlElement(name = "record-item-changed-event")
-    protected RecordItemChangedEvent recordItemChangedEvent;
+	@XmlElement(required = true)
+	protected Common common;
+	@XmlElement(name = "record-item-changed-event")
+	protected RecordItemChangedEvent recordItemChangedEvent;
 
-    /**
-     * Gets the value of the common property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Common }
-     *     
-     */
-    public Common getCommon() {
-        return common;
-    }
+	/**
+	 * Gets the value of the common property.
+	 * 
+	 * @return possible object is {@link Common }
+	 * 
+	 */
+	public Common getCommon() {
+		return common;
+	}
 
-    /**
-     * Sets the value of the common property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Common }
-     *     
-     */
-    public void setCommon(Common value) {
-        this.common = value;
-    }
+	/**
+	 * Sets the value of the common property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Common }
+	 * 
+	 */
+	public void setCommon(Common value) {
+		this.common = value;
+	}
 
-    /**
-     * Gets the value of the recordItemChangedEvent property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RecordItemChangedEvent }
-     *     
-     */
-    public RecordItemChangedEvent getRecordItemChangedEvent() {
-        return recordItemChangedEvent;
-    }
+	/**
+	 * Gets the value of the recordItemChangedEvent property.
+	 * 
+	 * @return possible object is {@link RecordItemChangedEvent }
+	 * 
+	 */
+	public RecordItemChangedEvent getRecordItemChangedEvent() {
+		return recordItemChangedEvent;
+	}
 
-    /**
-     * Sets the value of the recordItemChangedEvent property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RecordItemChangedEvent }
-     *     
-     */
-    public void setRecordItemChangedEvent(RecordItemChangedEvent value) {
-        this.recordItemChangedEvent = value;
-    }
+	/**
+	 * Sets the value of the recordItemChangedEvent property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link RecordItemChangedEvent }
+	 * 
+	 */
+	public void setRecordItemChangedEvent(RecordItemChangedEvent value) {
+		this.recordItemChangedEvent = value;
+	}
 
 }

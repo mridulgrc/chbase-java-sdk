@@ -5,14 +5,12 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Phone complex type.
+ * <p>
+ * Java class for Phone complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Phone">
@@ -46,89 +47,76 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Phone", propOrder = {
-    "description",
-    "isPrimary",
-    "number"
-})
+@XmlType(name = "Phone", propOrder = { "description", "isPrimary", "number" })
 public class Phone {
 
-    protected String description;
-    @XmlElement(name = "is-primary")
-    protected Boolean isPrimary;
-    @XmlElement(required = true)
-    protected String number;
+	protected String description;
+	@XmlElement(name = "is-primary")
+	protected Boolean isPrimary;
+	@XmlElement(required = true)
+	protected String number;
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the isPrimary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsPrimary() {
-        return isPrimary;
-    }
+	/**
+	 * Gets the value of the isPrimary property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsPrimary() {
+		return isPrimary;
+	}
 
-    /**
-     * Sets the value of the isPrimary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsPrimary(Boolean value) {
-        this.isPrimary = value;
-    }
+	/**
+	 * Sets the value of the isPrimary property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsPrimary(Boolean value) {
+		this.isPrimary = value;
+	}
 
-    /**
-     * Gets the value of the number property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNumber() {
-        return number;
-    }
+	/**
+	 * Gets the value of the number property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getNumber() {
+		return number;
+	}
 
-    /**
-     * Sets the value of the number property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNumber(String value) {
-        this.number = value;
-    }
+	/**
+	 * Sets the value of the number property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setNumber(String value) {
+		this.number = value;
+	}
 
 }

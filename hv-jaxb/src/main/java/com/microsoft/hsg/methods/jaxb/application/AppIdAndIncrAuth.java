@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.application;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.methods.jaxb.auth.AuthXml;
 
-
 /**
- * <p>Java class for AppIdAndIncrAuth complex type.
+ * <p>
+ * Java class for AppIdAndIncrAuth complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AppIdAndIncrAuth">
@@ -39,144 +40,124 @@ import com.microsoft.hsg.methods.jaxb.auth.AuthXml;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AppIdAndIncrAuth", propOrder = {
-    "id",
-    "incrOnlineAuthXml",
-    "isIncrOnlineAuthReplace",
-    "incrOfflineAuthXml",
-    "isIncrOfflineAuthReplace"
-})
+@XmlType(name = "AppIdAndIncrAuth", propOrder = { "id", "incrOnlineAuthXml", "isIncrOnlineAuthReplace",
+		"incrOfflineAuthXml", "isIncrOfflineAuthReplace" })
 public class AppIdAndIncrAuth {
 
-    @XmlElement(required = true)
-    protected String id;
-    @XmlElement(name = "incr-online-auth-xml")
-    protected AuthXml incrOnlineAuthXml;
-    @XmlElement(name = "is-incr-online-auth-replace")
-    protected Boolean isIncrOnlineAuthReplace;
-    @XmlElement(name = "incr-offline-auth-xml")
-    protected AuthXml incrOfflineAuthXml;
-    @XmlElement(name = "is-incr-offline-auth-replace")
-    protected Boolean isIncrOfflineAuthReplace;
+	@XmlElement(required = true)
+	protected String id;
+	@XmlElement(name = "incr-online-auth-xml")
+	protected AuthXml incrOnlineAuthXml;
+	@XmlElement(name = "is-incr-online-auth-replace")
+	protected Boolean isIncrOnlineAuthReplace;
+	@XmlElement(name = "incr-offline-auth-xml")
+	protected AuthXml incrOfflineAuthXml;
+	@XmlElement(name = "is-incr-offline-auth-replace")
+	protected Boolean isIncrOfflineAuthReplace;
 
-    /**
-     * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getId() {
-        return id;
-    }
+	/**
+	 * Gets the value of the id property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getId() {
+		return id;
+	}
 
-    /**
-     * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setId(String value) {
-        this.id = value;
-    }
+	/**
+	 * Sets the value of the id property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setId(String value) {
+		this.id = value;
+	}
 
-    /**
-     * Gets the value of the incrOnlineAuthXml property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AuthXml }
-     *     
-     */
-    public AuthXml getIncrOnlineAuthXml() {
-        return incrOnlineAuthXml;
-    }
+	/**
+	 * Gets the value of the incrOnlineAuthXml property.
+	 * 
+	 * @return possible object is {@link AuthXml }
+	 * 
+	 */
+	public AuthXml getIncrOnlineAuthXml() {
+		return incrOnlineAuthXml;
+	}
 
-    /**
-     * Sets the value of the incrOnlineAuthXml property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AuthXml }
-     *     
-     */
-    public void setIncrOnlineAuthXml(AuthXml value) {
-        this.incrOnlineAuthXml = value;
-    }
+	/**
+	 * Sets the value of the incrOnlineAuthXml property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AuthXml }
+	 * 
+	 */
+	public void setIncrOnlineAuthXml(AuthXml value) {
+		this.incrOnlineAuthXml = value;
+	}
 
-    /**
-     * Gets the value of the isIncrOnlineAuthReplace property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsIncrOnlineAuthReplace() {
-        return isIncrOnlineAuthReplace;
-    }
+	/**
+	 * Gets the value of the isIncrOnlineAuthReplace property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsIncrOnlineAuthReplace() {
+		return isIncrOnlineAuthReplace;
+	}
 
-    /**
-     * Sets the value of the isIncrOnlineAuthReplace property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsIncrOnlineAuthReplace(Boolean value) {
-        this.isIncrOnlineAuthReplace = value;
-    }
+	/**
+	 * Sets the value of the isIncrOnlineAuthReplace property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsIncrOnlineAuthReplace(Boolean value) {
+		this.isIncrOnlineAuthReplace = value;
+	}
 
-    /**
-     * Gets the value of the incrOfflineAuthXml property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AuthXml }
-     *     
-     */
-    public AuthXml getIncrOfflineAuthXml() {
-        return incrOfflineAuthXml;
-    }
+	/**
+	 * Gets the value of the incrOfflineAuthXml property.
+	 * 
+	 * @return possible object is {@link AuthXml }
+	 * 
+	 */
+	public AuthXml getIncrOfflineAuthXml() {
+		return incrOfflineAuthXml;
+	}
 
-    /**
-     * Sets the value of the incrOfflineAuthXml property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AuthXml }
-     *     
-     */
-    public void setIncrOfflineAuthXml(AuthXml value) {
-        this.incrOfflineAuthXml = value;
-    }
+	/**
+	 * Sets the value of the incrOfflineAuthXml property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AuthXml }
+	 * 
+	 */
+	public void setIncrOfflineAuthXml(AuthXml value) {
+		this.incrOfflineAuthXml = value;
+	}
 
-    /**
-     * Gets the value of the isIncrOfflineAuthReplace property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsIncrOfflineAuthReplace() {
-        return isIncrOfflineAuthReplace;
-    }
+	/**
+	 * Gets the value of the isIncrOfflineAuthReplace property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsIncrOfflineAuthReplace() {
+		return isIncrOfflineAuthReplace;
+	}
 
-    /**
-     * Sets the value of the isIncrOfflineAuthReplace property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsIncrOfflineAuthReplace(Boolean value) {
-        this.isIncrOfflineAuthReplace = value;
-    }
+	/**
+	 * Sets the value of the isIncrOfflineAuthReplace property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsIncrOfflineAuthReplace(Boolean value) {
+		this.isIncrOfflineAuthReplace = value;
+	}
 
 }

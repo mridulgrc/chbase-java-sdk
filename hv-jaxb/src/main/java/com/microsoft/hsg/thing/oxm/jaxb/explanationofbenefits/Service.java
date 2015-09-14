@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:17 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.explanationofbenefits;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.DurationValue;
 
-
 /**
  * 
  * <pre>
@@ -27,9 +25,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.DurationValue;
  * </pre>
  * 
  * 
- * <p>Java class for Service complex type.
+ * <p>
+ * Java class for Service complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Service">
@@ -51,174 +52,153 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.DurationValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Service", propOrder = {
-    "serviceType",
-    "diagnosis",
-    "billingCode",
-    "serviceDates",
-    "claimAmounts",
-    "notes"
-})
+@XmlType(name = "Service", propOrder = { "serviceType", "diagnosis", "billingCode", "serviceDates", "claimAmounts",
+		"notes" })
 public class Service {
 
-    @XmlElement(name = "service-type", required = true)
-    protected CodableValue serviceType;
-    protected CodableValue diagnosis;
-    @XmlElement(name = "billing-code")
-    protected CodableValue billingCode;
-    @XmlElement(name = "service-dates", required = true)
-    protected DurationValue serviceDates;
-    @XmlElement(name = "claim-amounts", required = true)
-    protected ClaimAmounts claimAmounts;
-    protected List<String> notes;
+	@XmlElement(name = "service-type", required = true)
+	protected CodableValue serviceType;
+	protected CodableValue diagnosis;
+	@XmlElement(name = "billing-code")
+	protected CodableValue billingCode;
+	@XmlElement(name = "service-dates", required = true)
+	protected DurationValue serviceDates;
+	@XmlElement(name = "claim-amounts", required = true)
+	protected ClaimAmounts claimAmounts;
+	protected List<String> notes;
 
-    /**
-     * Gets the value of the serviceType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getServiceType() {
-        return serviceType;
-    }
+	/**
+	 * Gets the value of the serviceType property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getServiceType() {
+		return serviceType;
+	}
 
-    /**
-     * Sets the value of the serviceType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setServiceType(CodableValue value) {
-        this.serviceType = value;
-    }
+	/**
+	 * Sets the value of the serviceType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setServiceType(CodableValue value) {
+		this.serviceType = value;
+	}
 
-    /**
-     * Gets the value of the diagnosis property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getDiagnosis() {
-        return diagnosis;
-    }
+	/**
+	 * Gets the value of the diagnosis property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getDiagnosis() {
+		return diagnosis;
+	}
 
-    /**
-     * Sets the value of the diagnosis property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setDiagnosis(CodableValue value) {
-        this.diagnosis = value;
-    }
+	/**
+	 * Sets the value of the diagnosis property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setDiagnosis(CodableValue value) {
+		this.diagnosis = value;
+	}
 
-    /**
-     * Gets the value of the billingCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getBillingCode() {
-        return billingCode;
-    }
+	/**
+	 * Gets the value of the billingCode property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getBillingCode() {
+		return billingCode;
+	}
 
-    /**
-     * Sets the value of the billingCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setBillingCode(CodableValue value) {
-        this.billingCode = value;
-    }
+	/**
+	 * Sets the value of the billingCode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setBillingCode(CodableValue value) {
+		this.billingCode = value;
+	}
 
-    /**
-     * Gets the value of the serviceDates property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DurationValue }
-     *     
-     */
-    public DurationValue getServiceDates() {
-        return serviceDates;
-    }
+	/**
+	 * Gets the value of the serviceDates property.
+	 * 
+	 * @return possible object is {@link DurationValue }
+	 * 
+	 */
+	public DurationValue getServiceDates() {
+		return serviceDates;
+	}
 
-    /**
-     * Sets the value of the serviceDates property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DurationValue }
-     *     
-     */
-    public void setServiceDates(DurationValue value) {
-        this.serviceDates = value;
-    }
+	/**
+	 * Sets the value of the serviceDates property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DurationValue }
+	 * 
+	 */
+	public void setServiceDates(DurationValue value) {
+		this.serviceDates = value;
+	}
 
-    /**
-     * Gets the value of the claimAmounts property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ClaimAmounts }
-     *     
-     */
-    public ClaimAmounts getClaimAmounts() {
-        return claimAmounts;
-    }
+	/**
+	 * Gets the value of the claimAmounts property.
+	 * 
+	 * @return possible object is {@link ClaimAmounts }
+	 * 
+	 */
+	public ClaimAmounts getClaimAmounts() {
+		return claimAmounts;
+	}
 
-    /**
-     * Sets the value of the claimAmounts property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ClaimAmounts }
-     *     
-     */
-    public void setClaimAmounts(ClaimAmounts value) {
-        this.claimAmounts = value;
-    }
+	/**
+	 * Sets the value of the claimAmounts property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ClaimAmounts }
+	 * 
+	 */
+	public void setClaimAmounts(ClaimAmounts value) {
+		this.claimAmounts = value;
+	}
 
-    /**
-     * Gets the value of the notes property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the notes property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getNotes().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getNotes() {
-        if (notes == null) {
-            notes = new ArrayList<String>();
-        }
-        return this.notes;
-    }
+	/**
+	 * Gets the value of the notes property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the notes property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getNotes().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getNotes() {
+		if (notes == null) {
+			notes = new ArrayList<String>();
+		}
+		return this.notes;
+	}
 
 }

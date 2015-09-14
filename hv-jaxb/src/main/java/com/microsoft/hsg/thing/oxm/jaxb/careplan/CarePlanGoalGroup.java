@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:19:17 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.careplan;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
-
 
 /**
  * 
@@ -26,9 +24,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * </pre>
  * 
  * 
- * <p>Java class for care-plan-goal-group complex type.
+ * <p>
+ * Java class for care-plan-goal-group complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="care-plan-goal-group">
@@ -47,89 +48,76 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "care-plan-goal-group", propOrder = {
-    "name",
-    "description",
-    "goals"
-})
+@XmlType(name = "care-plan-goal-group", propOrder = { "name", "description", "goals" })
 public class CarePlanGoalGroup {
 
-    @XmlElement(required = true)
-    protected CodableValue name;
-    protected String description;
-    @XmlElement(required = true)
-    protected CarePlanGoals goals;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	protected String description;
+	@XmlElement(required = true)
+	protected CarePlanGoals goals;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the goals property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CarePlanGoals }
-     *     
-     */
-    public CarePlanGoals getGoals() {
-        return goals;
-    }
+	/**
+	 * Gets the value of the goals property.
+	 * 
+	 * @return possible object is {@link CarePlanGoals }
+	 * 
+	 */
+	public CarePlanGoals getGoals() {
+		return goals;
+	}
 
-    /**
-     * Sets the value of the goals property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CarePlanGoals }
-     *     
-     */
-    public void setGoals(CarePlanGoals value) {
-        this.goals = value;
-    }
+	/**
+	 * Sets the value of the goals property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CarePlanGoals }
+	 * 
+	 */
+	public void setGoals(CarePlanGoals value) {
+		this.goals = value;
+	}
 
 }

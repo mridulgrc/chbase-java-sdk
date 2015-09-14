@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:18:11 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.createauthenticatedsessiontoken2.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.methods.jaxb.auth.Token;
 
-
 /**
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -37,64 +38,55 @@ import com.microsoft.hsg.methods.jaxb.auth.Token;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "token",
-    "sharedSecret"
-})
+@XmlType(name = "", propOrder = { "token", "sharedSecret" })
 @XmlRootElement(name = "info")
 public class CreateAuthenticatedSessionToken2Response {
 
-    @XmlElement(required = true)
-    protected Token token;
-    @XmlElement(name = "shared-secret", required = true)
-    protected String sharedSecret;
+	@XmlElement(required = true)
+	protected Token token;
+	@XmlElement(name = "shared-secret", required = true)
+	protected String sharedSecret;
 
-    /**
-     * Gets the value of the token property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Token }
-     *     
-     */
-    public Token getToken() {
-        return token;
-    }
+	/**
+	 * Gets the value of the token property.
+	 * 
+	 * @return possible object is {@link Token }
+	 * 
+	 */
+	public Token getToken() {
+		return token;
+	}
 
-    /**
-     * Sets the value of the token property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Token }
-     *     
-     */
-    public void setToken(Token value) {
-        this.token = value;
-    }
+	/**
+	 * Sets the value of the token property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Token }
+	 * 
+	 */
+	public void setToken(Token value) {
+		this.token = value;
+	}
 
-    /**
-     * Gets the value of the sharedSecret property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSharedSecret() {
-        return sharedSecret;
-    }
+	/**
+	 * Gets the value of the sharedSecret property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSharedSecret() {
+		return sharedSecret;
+	}
 
-    /**
-     * Sets the value of the sharedSecret property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSharedSecret(String value) {
-        this.sharedSecret = value;
-    }
+	/**
+	 * Sets the value of the sharedSecret property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSharedSecret(String value) {
+		this.sharedSecret = value;
+	}
 
 }

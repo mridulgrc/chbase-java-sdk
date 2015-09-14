@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:55 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.respiratoryprofile;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.FlowValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -56,118 +57,102 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "expiratoryFlowRedZoneUpperBoundary",
-    "expiratoryFlowOrangeZoneUpperBoundary",
-    "expiratoryFlowYellowZoneUpperBoundary"
-})
+@XmlType(name = "", propOrder = { "when", "expiratoryFlowRedZoneUpperBoundary", "expiratoryFlowOrangeZoneUpperBoundary",
+		"expiratoryFlowYellowZoneUpperBoundary" })
 @XmlRootElement(name = "respiratory-profile")
 public class RespiratoryProfile {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    @XmlElement(name = "expiratory-flow-red-zone-upper-boundary")
-    protected FlowValue expiratoryFlowRedZoneUpperBoundary;
-    @XmlElement(name = "expiratory-flow-orange-zone-upper-boundary")
-    protected FlowValue expiratoryFlowOrangeZoneUpperBoundary;
-    @XmlElement(name = "expiratory-flow-yellow-zone-upper-boundary")
-    protected FlowValue expiratoryFlowYellowZoneUpperBoundary;
+	@XmlElement(required = true)
+	protected DateTime when;
+	@XmlElement(name = "expiratory-flow-red-zone-upper-boundary")
+	protected FlowValue expiratoryFlowRedZoneUpperBoundary;
+	@XmlElement(name = "expiratory-flow-orange-zone-upper-boundary")
+	protected FlowValue expiratoryFlowOrangeZoneUpperBoundary;
+	@XmlElement(name = "expiratory-flow-yellow-zone-upper-boundary")
+	protected FlowValue expiratoryFlowYellowZoneUpperBoundary;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the expiratoryFlowRedZoneUpperBoundary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FlowValue }
-     *     
-     */
-    public FlowValue getExpiratoryFlowRedZoneUpperBoundary() {
-        return expiratoryFlowRedZoneUpperBoundary;
-    }
+	/**
+	 * Gets the value of the expiratoryFlowRedZoneUpperBoundary property.
+	 * 
+	 * @return possible object is {@link FlowValue }
+	 * 
+	 */
+	public FlowValue getExpiratoryFlowRedZoneUpperBoundary() {
+		return expiratoryFlowRedZoneUpperBoundary;
+	}
 
-    /**
-     * Sets the value of the expiratoryFlowRedZoneUpperBoundary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FlowValue }
-     *     
-     */
-    public void setExpiratoryFlowRedZoneUpperBoundary(FlowValue value) {
-        this.expiratoryFlowRedZoneUpperBoundary = value;
-    }
+	/**
+	 * Sets the value of the expiratoryFlowRedZoneUpperBoundary property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link FlowValue }
+	 * 
+	 */
+	public void setExpiratoryFlowRedZoneUpperBoundary(FlowValue value) {
+		this.expiratoryFlowRedZoneUpperBoundary = value;
+	}
 
-    /**
-     * Gets the value of the expiratoryFlowOrangeZoneUpperBoundary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FlowValue }
-     *     
-     */
-    public FlowValue getExpiratoryFlowOrangeZoneUpperBoundary() {
-        return expiratoryFlowOrangeZoneUpperBoundary;
-    }
+	/**
+	 * Gets the value of the expiratoryFlowOrangeZoneUpperBoundary property.
+	 * 
+	 * @return possible object is {@link FlowValue }
+	 * 
+	 */
+	public FlowValue getExpiratoryFlowOrangeZoneUpperBoundary() {
+		return expiratoryFlowOrangeZoneUpperBoundary;
+	}
 
-    /**
-     * Sets the value of the expiratoryFlowOrangeZoneUpperBoundary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FlowValue }
-     *     
-     */
-    public void setExpiratoryFlowOrangeZoneUpperBoundary(FlowValue value) {
-        this.expiratoryFlowOrangeZoneUpperBoundary = value;
-    }
+	/**
+	 * Sets the value of the expiratoryFlowOrangeZoneUpperBoundary property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link FlowValue }
+	 * 
+	 */
+	public void setExpiratoryFlowOrangeZoneUpperBoundary(FlowValue value) {
+		this.expiratoryFlowOrangeZoneUpperBoundary = value;
+	}
 
-    /**
-     * Gets the value of the expiratoryFlowYellowZoneUpperBoundary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FlowValue }
-     *     
-     */
-    public FlowValue getExpiratoryFlowYellowZoneUpperBoundary() {
-        return expiratoryFlowYellowZoneUpperBoundary;
-    }
+	/**
+	 * Gets the value of the expiratoryFlowYellowZoneUpperBoundary property.
+	 * 
+	 * @return possible object is {@link FlowValue }
+	 * 
+	 */
+	public FlowValue getExpiratoryFlowYellowZoneUpperBoundary() {
+		return expiratoryFlowYellowZoneUpperBoundary;
+	}
 
-    /**
-     * Sets the value of the expiratoryFlowYellowZoneUpperBoundary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FlowValue }
-     *     
-     */
-    public void setExpiratoryFlowYellowZoneUpperBoundary(FlowValue value) {
-        this.expiratoryFlowYellowZoneUpperBoundary = value;
-    }
+	/**
+	 * Sets the value of the expiratoryFlowYellowZoneUpperBoundary property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link FlowValue }
+	 * 
+	 */
+	public void setExpiratoryFlowYellowZoneUpperBoundary(FlowValue value) {
+		this.expiratoryFlowYellowZoneUpperBoundary = value;
+	}
 
 }

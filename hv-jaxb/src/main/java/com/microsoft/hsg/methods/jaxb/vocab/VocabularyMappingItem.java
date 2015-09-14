@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocab;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodedValue;
-
 
 /**
  * 
@@ -29,9 +27,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodedValue;
  * </pre>
  * 
  * 
- * <p>Java class for vocabulary-mapping-item complex type.
+ * <p>
+ * Java class for vocabulary-mapping-item complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="vocabulary-mapping-item">
@@ -48,36 +49,31 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodedValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "vocabulary-mapping-item", propOrder = {
-    "referenceId"
-})
+@XmlType(name = "vocabulary-mapping-item", propOrder = { "referenceId" })
 public class VocabularyMappingItem {
 
-    @XmlElement(name = "reference-id", required = true)
-    protected CodedValue referenceId;
+	@XmlElement(name = "reference-id", required = true)
+	protected CodedValue referenceId;
 
-    /**
-     * Gets the value of the referenceId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedValue }
-     *     
-     */
-    public CodedValue getReferenceId() {
-        return referenceId;
-    }
+	/**
+	 * Gets the value of the referenceId property.
+	 * 
+	 * @return possible object is {@link CodedValue }
+	 * 
+	 */
+	public CodedValue getReferenceId() {
+		return referenceId;
+	}
 
-    /**
-     * Sets the value of the referenceId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedValue }
-     *     
-     */
-    public void setReferenceId(CodedValue value) {
-        this.referenceId = value;
-    }
+	/**
+	 * Sets the value of the referenceId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedValue }
+	 * 
+	 */
+	public void setReferenceId(CodedValue value) {
+		this.referenceId = value;
+	}
 
 }

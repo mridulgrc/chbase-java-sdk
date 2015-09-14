@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:01:35 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getservicedefinition2.response;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
-
 
 /**
  * 
@@ -38,9 +36,12 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -62,180 +63,162 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "platform",
-    "shell",
-    "xmlMethod",
-    "commonSchema",
-    "instances",
-    "updatedDate"
-})
+@XmlType(name = "", propOrder = { "platform", "shell", "xmlMethod", "commonSchema", "instances", "updatedDate" })
 @XmlRootElement(name = "info")
 public class GetServiceDefinition2Response {
 
-    protected Platform platform;
-    protected Shell shell;
-    @XmlElement(name = "xml-method")
-    protected List<XmlMethod> xmlMethod;
-    @XmlElement(name = "common-schema")
-    protected List<String> commonSchema;
-    protected InstanceList instances;
-    @XmlElement(name = "updated-date")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar updatedDate;
+	protected Platform platform;
+	protected Shell shell;
+	@XmlElement(name = "xml-method")
+	protected List<XmlMethod> xmlMethod;
+	@XmlElement(name = "common-schema")
+	protected List<String> commonSchema;
+	protected InstanceList instances;
+	@XmlElement(name = "updated-date")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar updatedDate;
 
-    /**
-     * Gets the value of the platform property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Platform }
-     *     
-     */
-    public Platform getPlatform() {
-        return platform;
-    }
+	/**
+	 * Gets the value of the platform property.
+	 * 
+	 * @return possible object is {@link Platform }
+	 * 
+	 */
+	public Platform getPlatform() {
+		return platform;
+	}
 
-    /**
-     * Sets the value of the platform property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Platform }
-     *     
-     */
-    public void setPlatform(Platform value) {
-        this.platform = value;
-    }
+	/**
+	 * Sets the value of the platform property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Platform }
+	 * 
+	 */
+	public void setPlatform(Platform value) {
+		this.platform = value;
+	}
 
-    /**
-     * Gets the value of the shell property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Shell }
-     *     
-     */
-    public Shell getShell() {
-        return shell;
-    }
+	/**
+	 * Gets the value of the shell property.
+	 * 
+	 * @return possible object is {@link Shell }
+	 * 
+	 */
+	public Shell getShell() {
+		return shell;
+	}
 
-    /**
-     * Sets the value of the shell property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Shell }
-     *     
-     */
-    public void setShell(Shell value) {
-        this.shell = value;
-    }
+	/**
+	 * Sets the value of the shell property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Shell }
+	 * 
+	 */
+	public void setShell(Shell value) {
+		this.shell = value;
+	}
 
-    /**
-     * Gets the value of the xmlMethod property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the xmlMethod property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getXmlMethod().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link XmlMethod }
-     * 
-     * 
-     */
-    public List<XmlMethod> getXmlMethod() {
-        if (xmlMethod == null) {
-            xmlMethod = new ArrayList<XmlMethod>();
-        }
-        return this.xmlMethod;
-    }
+	/**
+	 * Gets the value of the xmlMethod property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the xmlMethod property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getXmlMethod().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link XmlMethod
+	 * }
+	 * 
+	 * 
+	 */
+	public List<XmlMethod> getXmlMethod() {
+		if (xmlMethod == null) {
+			xmlMethod = new ArrayList<XmlMethod>();
+		}
+		return this.xmlMethod;
+	}
 
-    /**
-     * Gets the value of the commonSchema property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the commonSchema property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCommonSchema().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getCommonSchema() {
-        if (commonSchema == null) {
-            commonSchema = new ArrayList<String>();
-        }
-        return this.commonSchema;
-    }
+	/**
+	 * Gets the value of the commonSchema property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the commonSchema property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getCommonSchema().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getCommonSchema() {
+		if (commonSchema == null) {
+			commonSchema = new ArrayList<String>();
+		}
+		return this.commonSchema;
+	}
 
-    /**
-     * Gets the value of the instances property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link InstanceList }
-     *     
-     */
-    public InstanceList getInstances() {
-        return instances;
-    }
+	/**
+	 * Gets the value of the instances property.
+	 * 
+	 * @return possible object is {@link InstanceList }
+	 * 
+	 */
+	public InstanceList getInstances() {
+		return instances;
+	}
 
-    /**
-     * Sets the value of the instances property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link InstanceList }
-     *     
-     */
-    public void setInstances(InstanceList value) {
-        this.instances = value;
-    }
+	/**
+	 * Sets the value of the instances property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link InstanceList }
+	 * 
+	 */
+	public void setInstances(InstanceList value) {
+		this.instances = value;
+	}
 
-    /**
-     * Gets the value of the updatedDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getUpdatedDate() {
-        return updatedDate;
-    }
+	/**
+	 * Gets the value of the updatedDate property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getUpdatedDate() {
+		return updatedDate;
+	}
 
-    /**
-     * Sets the value of the updatedDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setUpdatedDate(XMLGregorianCalendar value) {
-        this.updatedDate = value;
-    }
+	/**
+	 * Sets the value of the updatedDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setUpdatedDate(XMLGregorianCalendar value) {
+		this.updatedDate = value;
+	}
 
 }

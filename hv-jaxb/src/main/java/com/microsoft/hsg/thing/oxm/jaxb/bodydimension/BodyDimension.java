@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:39:04 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.bodydimension;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.LengthValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -54,91 +55,78 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "measurementName",
-    "value"
-})
+@XmlType(name = "", propOrder = { "when", "measurementName", "value" })
 @XmlRootElement(name = "body-dimension")
 public class BodyDimension {
 
-    @XmlElement(required = true)
-    protected ApproxDateTime when;
-    @XmlElement(name = "measurement-name", required = true)
-    protected CodableValue measurementName;
-    @XmlElement(required = true)
-    protected LengthValue value;
+	@XmlElement(required = true)
+	protected ApproxDateTime when;
+	@XmlElement(name = "measurement-name", required = true)
+	protected CodableValue measurementName;
+	@XmlElement(required = true)
+	protected LengthValue value;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setWhen(ApproxDateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setWhen(ApproxDateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the measurementName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getMeasurementName() {
-        return measurementName;
-    }
+	/**
+	 * Gets the value of the measurementName property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getMeasurementName() {
+		return measurementName;
+	}
 
-    /**
-     * Sets the value of the measurementName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setMeasurementName(CodableValue value) {
-        this.measurementName = value;
-    }
+	/**
+	 * Sets the value of the measurementName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setMeasurementName(CodableValue value) {
+		this.measurementName = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link LengthValue }
-     *     
-     */
-    public LengthValue getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link LengthValue }
+	 * 
+	 */
+	public LengthValue getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link LengthValue }
-     *     
-     */
-    public void setValue(LengthValue value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link LengthValue }
+	 * 
+	 */
+	public void setValue(LengthValue value) {
+		this.value = value;
+	}
 
 }

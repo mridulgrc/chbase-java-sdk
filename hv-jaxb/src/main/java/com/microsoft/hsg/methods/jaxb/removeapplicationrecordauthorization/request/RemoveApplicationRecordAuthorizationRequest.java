@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:13:50 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.removeapplicationrecordauthorization.request;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-
 
 /**
  * 
@@ -39,9 +37,12 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -57,15 +58,10 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "RemoveApplicationRecordAuthorization",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.RemoveApplicationRecordAuthorization")
+@JaxbRequest(methodName = "RemoveApplicationRecordAuthorization", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.RemoveApplicationRecordAuthorization")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-})
+@XmlType(name = "", propOrder = {})
 @XmlRootElement(name = "info")
-public class RemoveApplicationRecordAuthorizationRequest 
-{
+public class RemoveApplicationRecordAuthorizationRequest {
 
 }

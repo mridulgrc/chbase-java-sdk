@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.thing;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,27 +13,35 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
- *                     Represents an audit trail of creations or updates
- *                     or deletes to information in the Health service.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
+
+ *                     Represents an audit trail of creations or updates
+
+ *                     or deletes to information in the Health service.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
- *                     The audit records when the operation happened,
- *                     by which application, and by which person.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
+
+ *                     The audit records when the operation happened,
+
+ *                     by which application, and by which person.
+
  *                 &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for Audit complex type.
+ * <p>
+ * Java class for Audit complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Audit">
@@ -51,171 +58,147 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Audit", propOrder = {
-    "timestamp",
-    "appId",
-    "personId",
-    "impersonatorId",
-    "accessAvenue",
-    "auditAction"
-})
+@XmlType(name = "Audit", propOrder = { "timestamp", "appId", "personId", "impersonatorId", "accessAvenue",
+		"auditAction" })
 public class Audit {
 
-    @XmlElement(required = true)
-    protected XMLGregorianCalendar timestamp;
-    @XmlElement(name = "app-id", required = true)
-    protected GuidAndName appId;
-    @XmlElement(name = "person-id", required = true)
-    protected GuidAndName personId;
-    @XmlElement(name = "impersonator-id")
-    protected GuidAndName impersonatorId;
-    @XmlElement(name = "access-avenue")
-    protected AccessAvenue accessAvenue;
-    @XmlElement(name = "audit-action", required = true)
-    protected AuditAction auditAction;
+	@XmlElement(required = true)
+	protected XMLGregorianCalendar timestamp;
+	@XmlElement(name = "app-id", required = true)
+	protected GuidAndName appId;
+	@XmlElement(name = "person-id", required = true)
+	protected GuidAndName personId;
+	@XmlElement(name = "impersonator-id")
+	protected GuidAndName impersonatorId;
+	@XmlElement(name = "access-avenue")
+	protected AccessAvenue accessAvenue;
+	@XmlElement(name = "audit-action", required = true)
+	protected AuditAction auditAction;
 
-    /**
-     * Gets the value of the timestamp property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getTimestamp() {
-        return timestamp;
-    }
+	/**
+	 * Gets the value of the timestamp property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getTimestamp() {
+		return timestamp;
+	}
 
-    /**
-     * Sets the value of the timestamp property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setTimestamp(XMLGregorianCalendar value) {
-        this.timestamp = value;
-    }
+	/**
+	 * Sets the value of the timestamp property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setTimestamp(XMLGregorianCalendar value) {
+		this.timestamp = value;
+	}
 
-    /**
-     * Gets the value of the appId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GuidAndName }
-     *     
-     */
-    public GuidAndName getAppId() {
-        return appId;
-    }
+	/**
+	 * Gets the value of the appId property.
+	 * 
+	 * @return possible object is {@link GuidAndName }
+	 * 
+	 */
+	public GuidAndName getAppId() {
+		return appId;
+	}
 
-    /**
-     * Sets the value of the appId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GuidAndName }
-     *     
-     */
-    public void setAppId(GuidAndName value) {
-        this.appId = value;
-    }
+	/**
+	 * Sets the value of the appId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GuidAndName }
+	 * 
+	 */
+	public void setAppId(GuidAndName value) {
+		this.appId = value;
+	}
 
-    /**
-     * Gets the value of the personId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GuidAndName }
-     *     
-     */
-    public GuidAndName getPersonId() {
-        return personId;
-    }
+	/**
+	 * Gets the value of the personId property.
+	 * 
+	 * @return possible object is {@link GuidAndName }
+	 * 
+	 */
+	public GuidAndName getPersonId() {
+		return personId;
+	}
 
-    /**
-     * Sets the value of the personId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GuidAndName }
-     *     
-     */
-    public void setPersonId(GuidAndName value) {
-        this.personId = value;
-    }
+	/**
+	 * Sets the value of the personId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GuidAndName }
+	 * 
+	 */
+	public void setPersonId(GuidAndName value) {
+		this.personId = value;
+	}
 
-    /**
-     * Gets the value of the impersonatorId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GuidAndName }
-     *     
-     */
-    public GuidAndName getImpersonatorId() {
-        return impersonatorId;
-    }
+	/**
+	 * Gets the value of the impersonatorId property.
+	 * 
+	 * @return possible object is {@link GuidAndName }
+	 * 
+	 */
+	public GuidAndName getImpersonatorId() {
+		return impersonatorId;
+	}
 
-    /**
-     * Sets the value of the impersonatorId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GuidAndName }
-     *     
-     */
-    public void setImpersonatorId(GuidAndName value) {
-        this.impersonatorId = value;
-    }
+	/**
+	 * Sets the value of the impersonatorId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GuidAndName }
+	 * 
+	 */
+	public void setImpersonatorId(GuidAndName value) {
+		this.impersonatorId = value;
+	}
 
-    /**
-     * Gets the value of the accessAvenue property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AccessAvenue }
-     *     
-     */
-    public AccessAvenue getAccessAvenue() {
-        return accessAvenue;
-    }
+	/**
+	 * Gets the value of the accessAvenue property.
+	 * 
+	 * @return possible object is {@link AccessAvenue }
+	 * 
+	 */
+	public AccessAvenue getAccessAvenue() {
+		return accessAvenue;
+	}
 
-    /**
-     * Sets the value of the accessAvenue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AccessAvenue }
-     *     
-     */
-    public void setAccessAvenue(AccessAvenue value) {
-        this.accessAvenue = value;
-    }
+	/**
+	 * Sets the value of the accessAvenue property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AccessAvenue }
+	 * 
+	 */
+	public void setAccessAvenue(AccessAvenue value) {
+		this.accessAvenue = value;
+	}
 
-    /**
-     * Gets the value of the auditAction property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AuditAction }
-     *     
-     */
-    public AuditAction getAuditAction() {
-        return auditAction;
-    }
+	/**
+	 * Gets the value of the auditAction property.
+	 * 
+	 * @return possible object is {@link AuditAction }
+	 * 
+	 */
+	public AuditAction getAuditAction() {
+		return auditAction;
+	}
 
-    /**
-     * Sets the value of the auditAction property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AuditAction }
-     *     
-     */
-    public void setAuditAction(AuditAction value) {
-        this.auditAction = value;
-    }
+	/**
+	 * Sets the value of the auditAction property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AuditAction }
+	 * 
+	 */
+	public void setAuditAction(AuditAction value) {
+		this.auditAction = value;
+	}
 
 }

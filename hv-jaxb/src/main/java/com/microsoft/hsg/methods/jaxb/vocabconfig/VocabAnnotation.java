@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocabconfig;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -23,9 +21,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for VocabAnnotation complex type.
+ * <p>
+ * Java class for VocabAnnotation complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="VocabAnnotation">
@@ -42,36 +43,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VocabAnnotation", propOrder = {
-    "documentation"
-})
+@XmlType(name = "VocabAnnotation", propOrder = { "documentation" })
 public class VocabAnnotation {
 
-    @XmlElement(required = true)
-    protected VocabDocumentation documentation;
+	@XmlElement(required = true)
+	protected VocabDocumentation documentation;
 
-    /**
-     * Gets the value of the documentation property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VocabDocumentation }
-     *     
-     */
-    public VocabDocumentation getDocumentation() {
-        return documentation;
-    }
+	/**
+	 * Gets the value of the documentation property.
+	 * 
+	 * @return possible object is {@link VocabDocumentation }
+	 * 
+	 */
+	public VocabDocumentation getDocumentation() {
+		return documentation;
+	}
 
-    /**
-     * Sets the value of the documentation property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VocabDocumentation }
-     *     
-     */
-    public void setDocumentation(VocabDocumentation value) {
-        this.documentation = value;
-    }
+	/**
+	 * Sets the value of the documentation property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VocabDocumentation }
+	 * 
+	 */
+	public void setDocumentation(VocabDocumentation value) {
+		this.documentation = value;
+	}
 
 }

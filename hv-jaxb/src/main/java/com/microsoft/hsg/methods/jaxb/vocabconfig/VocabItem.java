@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocabconfig;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -23,9 +21,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for VocabItem complex type.
+ * <p>
+ * Java class for VocabItem complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="VocabItem">
@@ -49,224 +50,192 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VocabItem", propOrder = {
-    "annotation",
-    "scId",
-    "codeVal",
-    "dispTextId",
-    "dispText",
-    "abbrTextId",
-    "abbrText",
-    "freeFormXml"
-})
+@XmlType(name = "VocabItem", propOrder = { "annotation", "scId", "codeVal", "dispTextId", "dispText", "abbrTextId",
+		"abbrText", "freeFormXml" })
 public class VocabItem {
 
-    protected VocabAnnotation annotation;
-    @XmlElement(name = "sc-id", required = true)
-    protected String scId;
-    @XmlElement(name = "code-val", required = true)
-    protected String codeVal;
-    @XmlElement(name = "disp-text-id", required = true)
-    protected String dispTextId;
-    @XmlElement(name = "disp-text", required = true)
-    protected String dispText;
-    @XmlElement(name = "abbr-text-id")
-    protected String abbrTextId;
-    @XmlElement(name = "abbr-text")
-    protected String abbrText;
-    @XmlElement(name = "free-form-xml")
-    protected VocabItemMetadata freeFormXml;
+	protected VocabAnnotation annotation;
+	@XmlElement(name = "sc-id", required = true)
+	protected String scId;
+	@XmlElement(name = "code-val", required = true)
+	protected String codeVal;
+	@XmlElement(name = "disp-text-id", required = true)
+	protected String dispTextId;
+	@XmlElement(name = "disp-text", required = true)
+	protected String dispText;
+	@XmlElement(name = "abbr-text-id")
+	protected String abbrTextId;
+	@XmlElement(name = "abbr-text")
+	protected String abbrText;
+	@XmlElement(name = "free-form-xml")
+	protected VocabItemMetadata freeFormXml;
 
-    /**
-     * Gets the value of the annotation property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VocabAnnotation }
-     *     
-     */
-    public VocabAnnotation getAnnotation() {
-        return annotation;
-    }
+	/**
+	 * Gets the value of the annotation property.
+	 * 
+	 * @return possible object is {@link VocabAnnotation }
+	 * 
+	 */
+	public VocabAnnotation getAnnotation() {
+		return annotation;
+	}
 
-    /**
-     * Sets the value of the annotation property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VocabAnnotation }
-     *     
-     */
-    public void setAnnotation(VocabAnnotation value) {
-        this.annotation = value;
-    }
+	/**
+	 * Sets the value of the annotation property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VocabAnnotation }
+	 * 
+	 */
+	public void setAnnotation(VocabAnnotation value) {
+		this.annotation = value;
+	}
 
-    /**
-     * Gets the value of the scId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getScId() {
-        return scId;
-    }
+	/**
+	 * Gets the value of the scId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getScId() {
+		return scId;
+	}
 
-    /**
-     * Sets the value of the scId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setScId(String value) {
-        this.scId = value;
-    }
+	/**
+	 * Sets the value of the scId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setScId(String value) {
+		this.scId = value;
+	}
 
-    /**
-     * Gets the value of the codeVal property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCodeVal() {
-        return codeVal;
-    }
+	/**
+	 * Gets the value of the codeVal property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCodeVal() {
+		return codeVal;
+	}
 
-    /**
-     * Sets the value of the codeVal property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCodeVal(String value) {
-        this.codeVal = value;
-    }
+	/**
+	 * Sets the value of the codeVal property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCodeVal(String value) {
+		this.codeVal = value;
+	}
 
-    /**
-     * Gets the value of the dispTextId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDispTextId() {
-        return dispTextId;
-    }
+	/**
+	 * Gets the value of the dispTextId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDispTextId() {
+		return dispTextId;
+	}
 
-    /**
-     * Sets the value of the dispTextId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDispTextId(String value) {
-        this.dispTextId = value;
-    }
+	/**
+	 * Sets the value of the dispTextId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDispTextId(String value) {
+		this.dispTextId = value;
+	}
 
-    /**
-     * Gets the value of the dispText property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDispText() {
-        return dispText;
-    }
+	/**
+	 * Gets the value of the dispText property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDispText() {
+		return dispText;
+	}
 
-    /**
-     * Sets the value of the dispText property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDispText(String value) {
-        this.dispText = value;
-    }
+	/**
+	 * Sets the value of the dispText property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDispText(String value) {
+		this.dispText = value;
+	}
 
-    /**
-     * Gets the value of the abbrTextId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAbbrTextId() {
-        return abbrTextId;
-    }
+	/**
+	 * Gets the value of the abbrTextId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAbbrTextId() {
+		return abbrTextId;
+	}
 
-    /**
-     * Sets the value of the abbrTextId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAbbrTextId(String value) {
-        this.abbrTextId = value;
-    }
+	/**
+	 * Sets the value of the abbrTextId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAbbrTextId(String value) {
+		this.abbrTextId = value;
+	}
 
-    /**
-     * Gets the value of the abbrText property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAbbrText() {
-        return abbrText;
-    }
+	/**
+	 * Gets the value of the abbrText property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAbbrText() {
+		return abbrText;
+	}
 
-    /**
-     * Sets the value of the abbrText property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAbbrText(String value) {
-        this.abbrText = value;
-    }
+	/**
+	 * Sets the value of the abbrText property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAbbrText(String value) {
+		this.abbrText = value;
+	}
 
-    /**
-     * Gets the value of the freeFormXml property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VocabItemMetadata }
-     *     
-     */
-    public VocabItemMetadata getFreeFormXml() {
-        return freeFormXml;
-    }
+	/**
+	 * Gets the value of the freeFormXml property.
+	 * 
+	 * @return possible object is {@link VocabItemMetadata }
+	 * 
+	 */
+	public VocabItemMetadata getFreeFormXml() {
+		return freeFormXml;
+	}
 
-    /**
-     * Sets the value of the freeFormXml property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VocabItemMetadata }
-     *     
-     */
-    public void setFreeFormXml(VocabItemMetadata value) {
-        this.freeFormXml = value;
-    }
+	/**
+	 * Sets the value of the freeFormXml property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VocabItemMetadata }
+	 * 
+	 */
+	public void setFreeFormXml(VocabItemMetadata value) {
+		this.freeFormXml = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:20:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getservicedefinition2.response;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for XmlMethod complex type.
+ * <p>
+ * Java class for XmlMethod complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="XmlMethod">
@@ -45,67 +46,62 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "XmlMethod", propOrder = {
-    "name",
-    "version"
-})
+@XmlType(name = "XmlMethod", propOrder = { "name", "version" })
 public class XmlMethod {
 
-    @XmlElement(required = true)
-    protected String name;
-    protected List<XmlMethodVersion> version;
+	@XmlElement(required = true)
+	protected String name;
+	protected List<XmlMethodVersion> version;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the version property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the version property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getVersion().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link XmlMethodVersion }
-     * 
-     * 
-     */
-    public List<XmlMethodVersion> getVersion() {
-        if (version == null) {
-            version = new ArrayList<XmlMethodVersion>();
-        }
-        return this.version;
-    }
+	/**
+	 * Gets the value of the version property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the version property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getVersion().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link XmlMethodVersion }
+	 * 
+	 * 
+	 */
+	public List<XmlMethodVersion> getVersion() {
+		if (version == null) {
+			version = new ArrayList<XmlMethodVersion>();
+		}
+		return this.version;
+	}
 
 }

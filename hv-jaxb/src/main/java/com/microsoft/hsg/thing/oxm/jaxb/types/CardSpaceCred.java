@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import java.util.ArrayList;
@@ -16,27 +15,35 @@ import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlType;
 import org.w3c.dom.Element;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"&gt;
- *                     A SAML-based credential provided by the CardSpace service.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"&gt;
+
+ *                     A SAML-based credential provided by the CardSpace service.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"&gt;
- *                     CardSpace produces a SAML token that is encrypted using
- *                     the SSL public key used when associating a CardSpace 
- *                     credential with a primary credential.  
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"&gt;
+
+ *                     CardSpace produces a SAML token that is encrypted using
+
+ *                     the SSL public key used when associating a CardSpace 
+
+ *                     credential with a primary credential.  
+
  *                 &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for CardSpaceCred complex type.
+ * <p>
+ * Java class for CardSpaceCred complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="CardSpaceCred">
@@ -53,41 +60,39 @@ import org.w3c.dom.Element;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "CardSpaceCred", propOrder = {
-    "any"
-})
+@XmlType(name = "CardSpaceCred", propOrder = { "any" })
 public class CardSpaceCred {
 
-    @XmlAnyElement
-    protected List<Element> any;
+	@XmlAnyElement
+	protected List<Element> any;
 
-    /**
-     * Gets the value of the any property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the any property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAny().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Element }
-     * 
-     * 
-     */
-    public List<Element> getAny() {
-        if (any == null) {
-            any = new ArrayList<Element>();
-        }
-        return this.any;
-    }
+	/**
+	 * Gets the value of the any property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the any property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAny().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Element }
+	 * 
+	 * 
+	 */
+	public List<Element> getAny() {
+		if (any == null) {
+			any = new ArrayList<Element>();
+		}
+		return this.any;
+	}
 
 }

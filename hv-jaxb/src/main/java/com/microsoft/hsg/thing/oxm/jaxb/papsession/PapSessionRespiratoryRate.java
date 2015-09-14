@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:03 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.papsession;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.RespiratoryRateValue;
 
-
 /**
- * <p>Java class for pap-session-respiratory-rate complex type.
+ * <p>
+ * Java class for pap-session-respiratory-rate complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="pap-session-respiratory-rate">
@@ -39,141 +40,121 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.RespiratoryRateValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "pap-session-respiratory-rate", propOrder = {
-    "mean",
-    "median",
-    "maximum",
-    "percentile95Th",
-    "percentile90Th"
-})
+@XmlType(name = "pap-session-respiratory-rate", propOrder = { "mean", "median", "maximum", "percentile95Th",
+		"percentile90Th" })
 public class PapSessionRespiratoryRate {
 
-    protected RespiratoryRateValue mean;
-    protected RespiratoryRateValue median;
-    protected RespiratoryRateValue maximum;
-    @XmlElement(name = "percentile-95th")
-    protected RespiratoryRateValue percentile95Th;
-    @XmlElement(name = "percentile-90th")
-    protected RespiratoryRateValue percentile90Th;
+	protected RespiratoryRateValue mean;
+	protected RespiratoryRateValue median;
+	protected RespiratoryRateValue maximum;
+	@XmlElement(name = "percentile-95th")
+	protected RespiratoryRateValue percentile95Th;
+	@XmlElement(name = "percentile-90th")
+	protected RespiratoryRateValue percentile90Th;
 
-    /**
-     * Gets the value of the mean property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RespiratoryRateValue }
-     *     
-     */
-    public RespiratoryRateValue getMean() {
-        return mean;
-    }
+	/**
+	 * Gets the value of the mean property.
+	 * 
+	 * @return possible object is {@link RespiratoryRateValue }
+	 * 
+	 */
+	public RespiratoryRateValue getMean() {
+		return mean;
+	}
 
-    /**
-     * Sets the value of the mean property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RespiratoryRateValue }
-     *     
-     */
-    public void setMean(RespiratoryRateValue value) {
-        this.mean = value;
-    }
+	/**
+	 * Sets the value of the mean property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link RespiratoryRateValue }
+	 * 
+	 */
+	public void setMean(RespiratoryRateValue value) {
+		this.mean = value;
+	}
 
-    /**
-     * Gets the value of the median property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RespiratoryRateValue }
-     *     
-     */
-    public RespiratoryRateValue getMedian() {
-        return median;
-    }
+	/**
+	 * Gets the value of the median property.
+	 * 
+	 * @return possible object is {@link RespiratoryRateValue }
+	 * 
+	 */
+	public RespiratoryRateValue getMedian() {
+		return median;
+	}
 
-    /**
-     * Sets the value of the median property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RespiratoryRateValue }
-     *     
-     */
-    public void setMedian(RespiratoryRateValue value) {
-        this.median = value;
-    }
+	/**
+	 * Sets the value of the median property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link RespiratoryRateValue }
+	 * 
+	 */
+	public void setMedian(RespiratoryRateValue value) {
+		this.median = value;
+	}
 
-    /**
-     * Gets the value of the maximum property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RespiratoryRateValue }
-     *     
-     */
-    public RespiratoryRateValue getMaximum() {
-        return maximum;
-    }
+	/**
+	 * Gets the value of the maximum property.
+	 * 
+	 * @return possible object is {@link RespiratoryRateValue }
+	 * 
+	 */
+	public RespiratoryRateValue getMaximum() {
+		return maximum;
+	}
 
-    /**
-     * Sets the value of the maximum property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RespiratoryRateValue }
-     *     
-     */
-    public void setMaximum(RespiratoryRateValue value) {
-        this.maximum = value;
-    }
+	/**
+	 * Sets the value of the maximum property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link RespiratoryRateValue }
+	 * 
+	 */
+	public void setMaximum(RespiratoryRateValue value) {
+		this.maximum = value;
+	}
 
-    /**
-     * Gets the value of the percentile95Th property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RespiratoryRateValue }
-     *     
-     */
-    public RespiratoryRateValue getPercentile95Th() {
-        return percentile95Th;
-    }
+	/**
+	 * Gets the value of the percentile95Th property.
+	 * 
+	 * @return possible object is {@link RespiratoryRateValue }
+	 * 
+	 */
+	public RespiratoryRateValue getPercentile95Th() {
+		return percentile95Th;
+	}
 
-    /**
-     * Sets the value of the percentile95Th property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RespiratoryRateValue }
-     *     
-     */
-    public void setPercentile95Th(RespiratoryRateValue value) {
-        this.percentile95Th = value;
-    }
+	/**
+	 * Sets the value of the percentile95Th property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link RespiratoryRateValue }
+	 * 
+	 */
+	public void setPercentile95Th(RespiratoryRateValue value) {
+		this.percentile95Th = value;
+	}
 
-    /**
-     * Gets the value of the percentile90Th property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RespiratoryRateValue }
-     *     
-     */
-    public RespiratoryRateValue getPercentile90Th() {
-        return percentile90Th;
-    }
+	/**
+	 * Gets the value of the percentile90Th property.
+	 * 
+	 * @return possible object is {@link RespiratoryRateValue }
+	 * 
+	 */
+	public RespiratoryRateValue getPercentile90Th() {
+		return percentile90Th;
+	}
 
-    /**
-     * Sets the value of the percentile90Th property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RespiratoryRateValue }
-     *     
-     */
-    public void setPercentile90Th(RespiratoryRateValue value) {
-        this.percentile90Th = value;
-    }
+	/**
+	 * Sets the value of the percentile90Th property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link RespiratoryRateValue }
+	 * 
+	 */
+	public void setPercentile90Th(RespiratoryRateValue value) {
+		this.percentile90Th = value;
+	}
 
 }

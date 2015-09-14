@@ -5,13 +5,11 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -24,9 +22,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for AuthXml complex type.
+ * <p>
+ * Java class for AuthXml complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AuthXml">
@@ -43,35 +44,30 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AuthXml", propOrder = {
-    "auth"
-})
+@XmlType(name = "AuthXml", propOrder = { "auth" })
 public class AuthXml {
 
-    protected Auth auth;
+	protected Auth auth;
 
-    /**
-     * Gets the value of the auth property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Auth }
-     *     
-     */
-    public Auth getAuth() {
-        return auth;
-    }
+	/**
+	 * Gets the value of the auth property.
+	 * 
+	 * @return possible object is {@link Auth }
+	 * 
+	 */
+	public Auth getAuth() {
+		return auth;
+	}
 
-    /**
-     * Sets the value of the auth property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Auth }
-     *     
-     */
-    public void setAuth(Auth value) {
-        this.auth = value;
-    }
+	/**
+	 * Sets the value of the auth property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Auth }
+	 * 
+	 */
+	public void setAuth(Auth value) {
+		this.auth = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:30 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.pregnancy;
 
 import java.util.ArrayList;
@@ -19,7 +18,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDate;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
 
-
 /**
  * 
  * <pre>
@@ -29,9 +27,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -53,176 +54,156 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "dueDate",
-    "lastMenstrualPeriod",
-    "conceptionMethod",
-    "fetusCount",
-    "gestationalAge",
-    "delivery"
-})
+@XmlType(name = "", propOrder = { "dueDate", "lastMenstrualPeriod", "conceptionMethod", "fetusCount", "gestationalAge",
+		"delivery" })
 @XmlRootElement(name = "pregnancy")
 public class Pregnancy {
 
-    @XmlElement(name = "due-date")
-    protected ApproxDate dueDate;
-    @XmlElement(name = "last-menstrual-period")
-    protected Date lastMenstrualPeriod;
-    @XmlElement(name = "conception-method")
-    protected CodableValue conceptionMethod;
-    @XmlElement(name = "fetus-count")
-    protected Integer fetusCount;
-    @XmlElement(name = "gestational-age")
-    protected Integer gestationalAge;
-    protected List<Delivery> delivery;
+	@XmlElement(name = "due-date")
+	protected ApproxDate dueDate;
+	@XmlElement(name = "last-menstrual-period")
+	protected Date lastMenstrualPeriod;
+	@XmlElement(name = "conception-method")
+	protected CodableValue conceptionMethod;
+	@XmlElement(name = "fetus-count")
+	protected Integer fetusCount;
+	@XmlElement(name = "gestational-age")
+	protected Integer gestationalAge;
+	protected List<Delivery> delivery;
 
-    /**
-     * Gets the value of the dueDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public ApproxDate getDueDate() {
-        return dueDate;
-    }
+	/**
+	 * Gets the value of the dueDate property.
+	 * 
+	 * @return possible object is {@link ApproxDate }
+	 * 
+	 */
+	public ApproxDate getDueDate() {
+		return dueDate;
+	}
 
-    /**
-     * Sets the value of the dueDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public void setDueDate(ApproxDate value) {
-        this.dueDate = value;
-    }
+	/**
+	 * Sets the value of the dueDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDate }
+	 * 
+	 */
+	public void setDueDate(ApproxDate value) {
+		this.dueDate = value;
+	}
 
-    /**
-     * Gets the value of the lastMenstrualPeriod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Date }
-     *     
-     */
-    public Date getLastMenstrualPeriod() {
-        return lastMenstrualPeriod;
-    }
+	/**
+	 * Gets the value of the lastMenstrualPeriod property.
+	 * 
+	 * @return possible object is {@link Date }
+	 * 
+	 */
+	public Date getLastMenstrualPeriod() {
+		return lastMenstrualPeriod;
+	}
 
-    /**
-     * Sets the value of the lastMenstrualPeriod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Date }
-     *     
-     */
-    public void setLastMenstrualPeriod(Date value) {
-        this.lastMenstrualPeriod = value;
-    }
+	/**
+	 * Sets the value of the lastMenstrualPeriod property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Date }
+	 * 
+	 */
+	public void setLastMenstrualPeriod(Date value) {
+		this.lastMenstrualPeriod = value;
+	}
 
-    /**
-     * Gets the value of the conceptionMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getConceptionMethod() {
-        return conceptionMethod;
-    }
+	/**
+	 * Gets the value of the conceptionMethod property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getConceptionMethod() {
+		return conceptionMethod;
+	}
 
-    /**
-     * Sets the value of the conceptionMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setConceptionMethod(CodableValue value) {
-        this.conceptionMethod = value;
-    }
+	/**
+	 * Sets the value of the conceptionMethod property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setConceptionMethod(CodableValue value) {
+		this.conceptionMethod = value;
+	}
 
-    /**
-     * Gets the value of the fetusCount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getFetusCount() {
-        return fetusCount;
-    }
+	/**
+	 * Gets the value of the fetusCount property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getFetusCount() {
+		return fetusCount;
+	}
 
-    /**
-     * Sets the value of the fetusCount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setFetusCount(Integer value) {
-        this.fetusCount = value;
-    }
+	/**
+	 * Sets the value of the fetusCount property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setFetusCount(Integer value) {
+		this.fetusCount = value;
+	}
 
-    /**
-     * Gets the value of the gestationalAge property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getGestationalAge() {
-        return gestationalAge;
-    }
+	/**
+	 * Gets the value of the gestationalAge property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getGestationalAge() {
+		return gestationalAge;
+	}
 
-    /**
-     * Sets the value of the gestationalAge property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setGestationalAge(Integer value) {
-        this.gestationalAge = value;
-    }
+	/**
+	 * Sets the value of the gestationalAge property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setGestationalAge(Integer value) {
+		this.gestationalAge = value;
+	}
 
-    /**
-     * Gets the value of the delivery property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the delivery property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDelivery().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Delivery }
-     * 
-     * 
-     */
-    public List<Delivery> getDelivery() {
-        if (delivery == null) {
-            delivery = new ArrayList<Delivery>();
-        }
-        return this.delivery;
-    }
+	/**
+	 * Gets the value of the delivery property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the delivery property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getDelivery().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Delivery
+	 * }
+	 * 
+	 * 
+	 */
+	public List<Delivery> getDelivery() {
+		if (delivery == null) {
+			delivery = new ArrayList<Delivery>();
+		}
+		return this.delivery;
+	}
 
 }

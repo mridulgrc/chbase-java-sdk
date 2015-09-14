@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:41:59 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.microbiologylabresults;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.LabTestType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -35,9 +33,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -61,231 +62,203 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "labTests",
-    "sensitivityAgent",
-    "sensitivityValue",
-    "sensitivityInterpretation",
-    "specimenType",
-    "organismName",
-    "organismComment"
-})
+@XmlType(name = "", propOrder = { "when", "labTests", "sensitivityAgent", "sensitivityValue",
+		"sensitivityInterpretation", "specimenType", "organismName", "organismComment" })
 @XmlRootElement(name = "microbiology-lab-results")
 public class MicrobiologyLabResults {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    @XmlElement(name = "lab-tests")
-    protected List<LabTestType> labTests;
-    @XmlElement(name = "sensitivity-agent")
-    protected CodableValue sensitivityAgent;
-    @XmlElement(name = "sensitivity-value")
-    protected CodableValue sensitivityValue;
-    @XmlElement(name = "sensitivity-interpretation")
-    protected String sensitivityInterpretation;
-    @XmlElement(name = "specimen-type")
-    protected CodableValue specimenType;
-    @XmlElement(name = "organism-name")
-    protected CodableValue organismName;
-    @XmlElement(name = "organism-comment")
-    protected String organismComment;
+	@XmlElement(required = true)
+	protected DateTime when;
+	@XmlElement(name = "lab-tests")
+	protected List<LabTestType> labTests;
+	@XmlElement(name = "sensitivity-agent")
+	protected CodableValue sensitivityAgent;
+	@XmlElement(name = "sensitivity-value")
+	protected CodableValue sensitivityValue;
+	@XmlElement(name = "sensitivity-interpretation")
+	protected String sensitivityInterpretation;
+	@XmlElement(name = "specimen-type")
+	protected CodableValue specimenType;
+	@XmlElement(name = "organism-name")
+	protected CodableValue organismName;
+	@XmlElement(name = "organism-comment")
+	protected String organismComment;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the labTests property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the labTests property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getLabTests().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link LabTestType }
-     * 
-     * 
-     */
-    public List<LabTestType> getLabTests() {
-        if (labTests == null) {
-            labTests = new ArrayList<LabTestType>();
-        }
-        return this.labTests;
-    }
+	/**
+	 * Gets the value of the labTests property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the labTests property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getLabTests().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link LabTestType }
+	 * 
+	 * 
+	 */
+	public List<LabTestType> getLabTests() {
+		if (labTests == null) {
+			labTests = new ArrayList<LabTestType>();
+		}
+		return this.labTests;
+	}
 
-    /**
-     * Gets the value of the sensitivityAgent property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getSensitivityAgent() {
-        return sensitivityAgent;
-    }
+	/**
+	 * Gets the value of the sensitivityAgent property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getSensitivityAgent() {
+		return sensitivityAgent;
+	}
 
-    /**
-     * Sets the value of the sensitivityAgent property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setSensitivityAgent(CodableValue value) {
-        this.sensitivityAgent = value;
-    }
+	/**
+	 * Sets the value of the sensitivityAgent property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setSensitivityAgent(CodableValue value) {
+		this.sensitivityAgent = value;
+	}
 
-    /**
-     * Gets the value of the sensitivityValue property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getSensitivityValue() {
-        return sensitivityValue;
-    }
+	/**
+	 * Gets the value of the sensitivityValue property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getSensitivityValue() {
+		return sensitivityValue;
+	}
 
-    /**
-     * Sets the value of the sensitivityValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setSensitivityValue(CodableValue value) {
-        this.sensitivityValue = value;
-    }
+	/**
+	 * Sets the value of the sensitivityValue property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setSensitivityValue(CodableValue value) {
+		this.sensitivityValue = value;
+	}
 
-    /**
-     * Gets the value of the sensitivityInterpretation property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSensitivityInterpretation() {
-        return sensitivityInterpretation;
-    }
+	/**
+	 * Gets the value of the sensitivityInterpretation property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSensitivityInterpretation() {
+		return sensitivityInterpretation;
+	}
 
-    /**
-     * Sets the value of the sensitivityInterpretation property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSensitivityInterpretation(String value) {
-        this.sensitivityInterpretation = value;
-    }
+	/**
+	 * Sets the value of the sensitivityInterpretation property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSensitivityInterpretation(String value) {
+		this.sensitivityInterpretation = value;
+	}
 
-    /**
-     * Gets the value of the specimenType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getSpecimenType() {
-        return specimenType;
-    }
+	/**
+	 * Gets the value of the specimenType property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getSpecimenType() {
+		return specimenType;
+	}
 
-    /**
-     * Sets the value of the specimenType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setSpecimenType(CodableValue value) {
-        this.specimenType = value;
-    }
+	/**
+	 * Sets the value of the specimenType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setSpecimenType(CodableValue value) {
+		this.specimenType = value;
+	}
 
-    /**
-     * Gets the value of the organismName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getOrganismName() {
-        return organismName;
-    }
+	/**
+	 * Gets the value of the organismName property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getOrganismName() {
+		return organismName;
+	}
 
-    /**
-     * Sets the value of the organismName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setOrganismName(CodableValue value) {
-        this.organismName = value;
-    }
+	/**
+	 * Sets the value of the organismName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setOrganismName(CodableValue value) {
+		this.organismName = value;
+	}
 
-    /**
-     * Gets the value of the organismComment property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOrganismComment() {
-        return organismComment;
-    }
+	/**
+	 * Gets the value of the organismComment property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getOrganismComment() {
+		return organismComment;
+	}
 
-    /**
-     * Sets the value of the organismComment property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOrganismComment(String value) {
-        this.organismComment = value;
-    }
+	/**
+	 * Sets the value of the organismComment property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setOrganismComment(String value) {
+		this.organismComment = value;
+	}
 
 }

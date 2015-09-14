@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import java.util.ArrayList;
@@ -16,19 +15,23 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     Defines a sample set.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     Defines a sample set.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * 
- * <p>Java class for sample-set complex type.
+ * <p>
+ * Java class for sample-set complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="sample-set">
@@ -48,121 +51,107 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "sample-set", propOrder = {
-    "baseTime",
-    "sampleUnit",
-    "sampleUnitCode",
-    "sample"
-})
+@XmlType(name = "sample-set", propOrder = { "baseTime", "sampleUnit", "sampleUnitCode", "sample" })
 public class SampleSet {
 
-    @XmlElement(name = "base-time", required = true)
-    protected DateTime baseTime;
-    @XmlElement(name = "sample-unit", required = true)
-    protected String sampleUnit;
-    @XmlElement(name = "sample-unit-code", required = true)
-    protected CodableValue sampleUnitCode;
-    protected List<Sample> sample;
+	@XmlElement(name = "base-time", required = true)
+	protected DateTime baseTime;
+	@XmlElement(name = "sample-unit", required = true)
+	protected String sampleUnit;
+	@XmlElement(name = "sample-unit-code", required = true)
+	protected CodableValue sampleUnitCode;
+	protected List<Sample> sample;
 
-    /**
-     * Gets the value of the baseTime property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getBaseTime() {
-        return baseTime;
-    }
+	/**
+	 * Gets the value of the baseTime property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getBaseTime() {
+		return baseTime;
+	}
 
-    /**
-     * Sets the value of the baseTime property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setBaseTime(DateTime value) {
-        this.baseTime = value;
-    }
+	/**
+	 * Sets the value of the baseTime property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setBaseTime(DateTime value) {
+		this.baseTime = value;
+	}
 
-    /**
-     * Gets the value of the sampleUnit property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSampleUnit() {
-        return sampleUnit;
-    }
+	/**
+	 * Gets the value of the sampleUnit property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSampleUnit() {
+		return sampleUnit;
+	}
 
-    /**
-     * Sets the value of the sampleUnit property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSampleUnit(String value) {
-        this.sampleUnit = value;
-    }
+	/**
+	 * Sets the value of the sampleUnit property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSampleUnit(String value) {
+		this.sampleUnit = value;
+	}
 
-    /**
-     * Gets the value of the sampleUnitCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getSampleUnitCode() {
-        return sampleUnitCode;
-    }
+	/**
+	 * Gets the value of the sampleUnitCode property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getSampleUnitCode() {
+		return sampleUnitCode;
+	}
 
-    /**
-     * Sets the value of the sampleUnitCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setSampleUnitCode(CodableValue value) {
-        this.sampleUnitCode = value;
-    }
+	/**
+	 * Sets the value of the sampleUnitCode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setSampleUnitCode(CodableValue value) {
+		this.sampleUnitCode = value;
+	}
 
-    /**
-     * Gets the value of the sample property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the sample property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSample().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Sample }
-     * 
-     * 
-     */
-    public List<Sample> getSample() {
-        if (sample == null) {
-            sample = new ArrayList<Sample>();
-        }
-        return this.sample;
-    }
+	/**
+	 * Gets the value of the sample property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the sample property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getSample().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Sample }
+	 * 
+	 * 
+	 */
+	public List<Sample> getSample() {
+		if (sample == null) {
+			sample = new ArrayList<Sample>();
+		}
+		return this.sample;
+	}
 
 }

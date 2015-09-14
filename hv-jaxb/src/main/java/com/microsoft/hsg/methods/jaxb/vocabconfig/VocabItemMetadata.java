@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocabconfig;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlType;
 import org.w3c.dom.Element;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import org.w3c.dom.Element;
  * </pre>
  * 
  * 
- * <p>Java class for VocabItemMetadata complex type.
+ * <p>
+ * Java class for VocabItemMetadata complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="VocabItemMetadata">
@@ -52,41 +53,39 @@ import org.w3c.dom.Element;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VocabItemMetadata", propOrder = {
-    "any"
-})
+@XmlType(name = "VocabItemMetadata", propOrder = { "any" })
 public class VocabItemMetadata {
 
-    @XmlAnyElement
-    protected List<Element> any;
+	@XmlAnyElement
+	protected List<Element> any;
 
-    /**
-     * Gets the value of the any property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the any property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAny().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Element }
-     * 
-     * 
-     */
-    public List<Element> getAny() {
-        if (any == null) {
-            any = new ArrayList<Element>();
-        }
-        return this.any;
-    }
+	/**
+	 * Gets the value of the any property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the any property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAny().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Element }
+	 * 
+	 * 
+	 */
+	public List<Element> getAny() {
+		if (any == null) {
+			any = new ArrayList<Element>();
+		}
+		return this.any;
+	}
 
 }

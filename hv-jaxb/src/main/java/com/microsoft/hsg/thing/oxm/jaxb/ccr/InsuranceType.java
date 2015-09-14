@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.util.ArrayList;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for InsuranceType complex type.
+ * <p>
+ * Java class for InsuranceType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="InsuranceType">
@@ -48,152 +49,138 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "InsuranceType", propOrder = {
-    "paymentProvider",
-    "subscriber",
-    "authorizations"
-})
-public class InsuranceType
-    extends CCRCodedDataObjectType
-{
+@XmlType(name = "InsuranceType", propOrder = { "paymentProvider", "subscriber", "authorizations" })
+public class InsuranceType extends CCRCodedDataObjectType {
 
-    @XmlElement(name = "PaymentProvider")
-    protected ActorReferenceType paymentProvider;
-    @XmlElement(name = "Subscriber")
-    protected ActorReferenceType subscriber;
-    @XmlElement(name = "Authorizations")
-    protected InsuranceType.Authorizations authorizations;
+	@XmlElement(name = "PaymentProvider")
+	protected ActorReferenceType paymentProvider;
+	@XmlElement(name = "Subscriber")
+	protected ActorReferenceType subscriber;
+	@XmlElement(name = "Authorizations")
+	protected InsuranceType.Authorizations authorizations;
 
-    /**
-     * Gets the value of the paymentProvider property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ActorReferenceType }
-     *     
-     */
-    public ActorReferenceType getPaymentProvider() {
-        return paymentProvider;
-    }
+	/**
+	 * Gets the value of the paymentProvider property.
+	 * 
+	 * @return possible object is {@link ActorReferenceType }
+	 * 
+	 */
+	public ActorReferenceType getPaymentProvider() {
+		return paymentProvider;
+	}
 
-    /**
-     * Sets the value of the paymentProvider property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ActorReferenceType }
-     *     
-     */
-    public void setPaymentProvider(ActorReferenceType value) {
-        this.paymentProvider = value;
-    }
+	/**
+	 * Sets the value of the paymentProvider property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ActorReferenceType }
+	 * 
+	 */
+	public void setPaymentProvider(ActorReferenceType value) {
+		this.paymentProvider = value;
+	}
 
-    /**
-     * Gets the value of the subscriber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ActorReferenceType }
-     *     
-     */
-    public ActorReferenceType getSubscriber() {
-        return subscriber;
-    }
+	/**
+	 * Gets the value of the subscriber property.
+	 * 
+	 * @return possible object is {@link ActorReferenceType }
+	 * 
+	 */
+	public ActorReferenceType getSubscriber() {
+		return subscriber;
+	}
 
-    /**
-     * Sets the value of the subscriber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ActorReferenceType }
-     *     
-     */
-    public void setSubscriber(ActorReferenceType value) {
-        this.subscriber = value;
-    }
+	/**
+	 * Sets the value of the subscriber property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ActorReferenceType }
+	 * 
+	 */
+	public void setSubscriber(ActorReferenceType value) {
+		this.subscriber = value;
+	}
 
-    /**
-     * Gets the value of the authorizations property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link InsuranceType.Authorizations }
-     *     
-     */
-    public InsuranceType.Authorizations getAuthorizations() {
-        return authorizations;
-    }
+	/**
+	 * Gets the value of the authorizations property.
+	 * 
+	 * @return possible object is {@link InsuranceType.Authorizations }
+	 * 
+	 */
+	public InsuranceType.Authorizations getAuthorizations() {
+		return authorizations;
+	}
 
-    /**
-     * Sets the value of the authorizations property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link InsuranceType.Authorizations }
-     *     
-     */
-    public void setAuthorizations(InsuranceType.Authorizations value) {
-        this.authorizations = value;
-    }
+	/**
+	 * Sets the value of the authorizations property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link InsuranceType.Authorizations }
+	 * 
+	 */
+	public void setAuthorizations(InsuranceType.Authorizations value) {
+		this.authorizations = value;
+	}
 
+	/**
+	 * <p>
+	 * Java class for anonymous complex type.
+	 * 
+	 * <p>
+	 * The following schema fragment specifies the expected content contained
+	 * within this class.
+	 * 
+	 * <pre>
+	 * &lt;complexType>
+	 *   &lt;complexContent>
+	 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+	 *       &lt;sequence>
+	 *         &lt;element name="Authorization" type="{urn:astm-org:CCR}AuthorizationType" maxOccurs="unbounded" minOccurs="0"/>
+	 *       &lt;/sequence>
+	 *     &lt;/restriction>
+	 *   &lt;/complexContent>
+	 * &lt;/complexType>
+	 * </pre>
+	 * 
+	 * 
+	 */
+	@XmlAccessorType(XmlAccessType.FIELD)
+	@XmlType(name = "", propOrder = { "authorization" })
+	public static class Authorizations {
 
-    /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="Authorization" type="{urn:astm-org:CCR}AuthorizationType" maxOccurs="unbounded" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "authorization"
-    })
-    public static class Authorizations {
+		@XmlElement(name = "Authorization")
+		protected List<AuthorizationType> authorization;
 
-        @XmlElement(name = "Authorization")
-        protected List<AuthorizationType> authorization;
+		/**
+		 * Gets the value of the authorization property.
+		 * 
+		 * <p>
+		 * This accessor method returns a reference to the live list, not a
+		 * snapshot. Therefore any modification you make to the returned list
+		 * will be present inside the JAXB object. This is why there is not a
+		 * <CODE>set</CODE> method for the authorization property.
+		 * 
+		 * <p>
+		 * For example, to add a new item, do as follows:
+		 * 
+		 * <pre>
+		 * getAuthorization().add(newItem);
+		 * </pre>
+		 * 
+		 * 
+		 * <p>
+		 * Objects of the following type(s) are allowed in the list
+		 * {@link AuthorizationType }
+		 * 
+		 * 
+		 */
+		public List<AuthorizationType> getAuthorization() {
+			if (authorization == null) {
+				authorization = new ArrayList<AuthorizationType>();
+			}
+			return this.authorization;
+		}
 
-        /**
-         * Gets the value of the authorization property.
-         * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the authorization property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getAuthorization().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link AuthorizationType }
-         * 
-         * 
-         */
-        public List<AuthorizationType> getAuthorization() {
-            if (authorization == null) {
-                authorization = new ArrayList<AuthorizationType>();
-            }
-            return this.authorization;
-        }
-
-    }
+	}
 
 }

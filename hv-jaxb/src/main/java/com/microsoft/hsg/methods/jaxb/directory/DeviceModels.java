@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for DeviceModels complex type.
+ * <p>
+ * Java class for DeviceModels complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="DeviceModels">
@@ -44,41 +45,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DeviceModels", propOrder = {
-    "model"
-})
+@XmlType(name = "DeviceModels", propOrder = { "model" })
 public class DeviceModels {
 
-    @XmlElement(required = true)
-    protected List<DeviceModel> model;
+	@XmlElement(required = true)
+	protected List<DeviceModel> model;
 
-    /**
-     * Gets the value of the model property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the model property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getModel().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link DeviceModel }
-     * 
-     * 
-     */
-    public List<DeviceModel> getModel() {
-        if (model == null) {
-            model = new ArrayList<DeviceModel>();
-        }
-        return this.model;
-    }
+	/**
+	 * Gets the value of the model property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the model property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getModel().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link DeviceModel }
+	 * 
+	 * 
+	 */
+	public List<DeviceModel> getModel() {
+		if (model == null) {
+			model = new ArrayList<DeviceModel>();
+		}
+		return this.model;
+	}
 
 }

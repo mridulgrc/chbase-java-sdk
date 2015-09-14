@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocab;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for VocabularyKey complex type.
+ * <p>
+ * Java class for VocabularyKey complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="VocabularyKey">
@@ -55,160 +56,138 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VocabularyKey", propOrder = {
-    "name",
-    "family",
-    "version",
-    "codeValue"
-})
-@XmlSeeAlso({
-    VocabularyKeyInfo.class
-})
+@XmlType(name = "VocabularyKey", propOrder = { "name", "family", "version", "codeValue" })
+@XmlSeeAlso({ VocabularyKeyInfo.class })
 public class VocabularyKey {
 
-    @XmlElement(required = true)
-    protected String name;
-    protected String family;
-    protected String version;
-    @XmlElement(name = "code-value")
-    protected String codeValue;
-    @XmlAttribute(namespace = "http://www.w3.org/XML/1998/namespace")
-    protected String lang;
+	@XmlElement(required = true)
+	protected String name;
+	protected String family;
+	protected String version;
+	@XmlElement(name = "code-value")
+	protected String codeValue;
+	@XmlAttribute(namespace = "http://www.w3.org/XML/1998/namespace")
+	protected String lang;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the family property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFamily() {
-        return family;
-    }
+	/**
+	 * Gets the value of the family property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getFamily() {
+		return family;
+	}
 
-    /**
-     * Sets the value of the family property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFamily(String value) {
-        this.family = value;
-    }
+	/**
+	 * Sets the value of the family property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setFamily(String value) {
+		this.family = value;
+	}
 
-    /**
-     * Gets the value of the version property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getVersion() {
-        return version;
-    }
+	/**
+	 * Gets the value of the version property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getVersion() {
+		return version;
+	}
 
-    /**
-     * Sets the value of the version property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setVersion(String value) {
-        this.version = value;
-    }
+	/**
+	 * Sets the value of the version property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setVersion(String value) {
+		this.version = value;
+	}
 
-    /**
-     * Gets the value of the codeValue property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCodeValue() {
-        return codeValue;
-    }
+	/**
+	 * Gets the value of the codeValue property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCodeValue() {
+		return codeValue;
+	}
 
-    /**
-     * Sets the value of the codeValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCodeValue(String value) {
-        this.codeValue = value;
-    }
+	/**
+	 * Sets the value of the codeValue property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCodeValue(String value) {
+		this.codeValue = value;
+	}
 
-    /**
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.vocab" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
-     *                         The language of the vocabulary code set. 
-     *                     &lt;/summary&gt;
-     * </pre>
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.vocab" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
-     *                         This is used to track the locale of the returning vocabulary. 
-     *                         When the vocabulary of requested locale doesn't exist in HealthVault
-     *                         platform, the platform will try to locate the vocabulary according 
-     *                         to the locale default logic. As a result, the locale of the returning 
-     *                         vocabulary may not be identical to the requesting locale.  
-     *                     &lt;/remarks&gt;
-     * </pre>
-     * 
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLang() {
-        return lang;
-    }
+	/**
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.vocab" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
+	 *                         The language of the vocabulary code set. 
+	 *                     &lt;/summary&gt;
+	 * </pre>
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.vocab" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
+	 *                         This is used to track the locale of the returning vocabulary. 
+	 *                         When the vocabulary of requested locale doesn't exist in HealthVault
+	 *                         platform, the platform will try to locate the vocabulary according 
+	 *                         to the locale default logic. As a result, the locale of the returning 
+	 *                         vocabulary may not be identical to the requesting locale.  
+	 *                     &lt;/remarks&gt;
+	 * </pre>
+	 * 
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLang() {
+		return lang;
+	}
 
-    /**
-     * Sets the value of the lang property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLang(String value) {
-        this.lang = value;
-    }
+	/**
+	 * Sets the value of the lang property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLang(String value) {
+		this.lang = value;
+	}
 
 }

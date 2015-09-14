@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:30 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.pregnancy;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -17,7 +16,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.LengthValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Name;
 import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
 
-
 /**
  * 
  * <pre>
@@ -27,9 +25,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
  * </pre>
  * 
  * 
- * <p>Java class for Baby complex type.
+ * <p>
+ * Java class for Baby complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Baby">
@@ -51,166 +52,141 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Baby", propOrder = {
-    "name",
-    "gender",
-    "weight",
-    "length",
-    "headCircumference",
-    "note"
-})
+@XmlType(name = "Baby", propOrder = { "name", "gender", "weight", "length", "headCircumference", "note" })
 public class Baby {
 
-    protected Name name;
-    protected CodableValue gender;
-    protected WeightValue weight;
-    protected LengthValue length;
-    @XmlElement(name = "head-circumference")
-    protected LengthValue headCircumference;
-    protected String note;
+	protected Name name;
+	protected CodableValue gender;
+	protected WeightValue weight;
+	protected LengthValue length;
+	@XmlElement(name = "head-circumference")
+	protected LengthValue headCircumference;
+	protected String note;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Name }
-     *     
-     */
-    public Name getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link Name }
+	 * 
+	 */
+	public Name getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Name }
-     *     
-     */
-    public void setName(Name value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Name }
+	 * 
+	 */
+	public void setName(Name value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the gender property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getGender() {
-        return gender;
-    }
+	/**
+	 * Gets the value of the gender property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getGender() {
+		return gender;
+	}
 
-    /**
-     * Sets the value of the gender property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setGender(CodableValue value) {
-        this.gender = value;
-    }
+	/**
+	 * Sets the value of the gender property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setGender(CodableValue value) {
+		this.gender = value;
+	}
 
-    /**
-     * Gets the value of the weight property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getWeight() {
-        return weight;
-    }
+	/**
+	 * Gets the value of the weight property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getWeight() {
+		return weight;
+	}
 
-    /**
-     * Sets the value of the weight property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setWeight(WeightValue value) {
-        this.weight = value;
-    }
+	/**
+	 * Sets the value of the weight property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setWeight(WeightValue value) {
+		this.weight = value;
+	}
 
-    /**
-     * Gets the value of the length property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link LengthValue }
-     *     
-     */
-    public LengthValue getLength() {
-        return length;
-    }
+	/**
+	 * Gets the value of the length property.
+	 * 
+	 * @return possible object is {@link LengthValue }
+	 * 
+	 */
+	public LengthValue getLength() {
+		return length;
+	}
 
-    /**
-     * Sets the value of the length property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link LengthValue }
-     *     
-     */
-    public void setLength(LengthValue value) {
-        this.length = value;
-    }
+	/**
+	 * Sets the value of the length property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link LengthValue }
+	 * 
+	 */
+	public void setLength(LengthValue value) {
+		this.length = value;
+	}
 
-    /**
-     * Gets the value of the headCircumference property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link LengthValue }
-     *     
-     */
-    public LengthValue getHeadCircumference() {
-        return headCircumference;
-    }
+	/**
+	 * Gets the value of the headCircumference property.
+	 * 
+	 * @return possible object is {@link LengthValue }
+	 * 
+	 */
+	public LengthValue getHeadCircumference() {
+		return headCircumference;
+	}
 
-    /**
-     * Sets the value of the headCircumference property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link LengthValue }
-     *     
-     */
-    public void setHeadCircumference(LengthValue value) {
-        this.headCircumference = value;
-    }
+	/**
+	 * Sets the value of the headCircumference property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link LengthValue }
+	 * 
+	 */
+	public void setHeadCircumference(LengthValue value) {
+		this.headCircumference = value;
+	}
 
-    /**
-     * Gets the value of the note property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNote() {
-        return note;
-    }
+	/**
+	 * Gets the value of the note property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getNote() {
+		return note;
+	}
 
-    /**
-     * Sets the value of the note property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNote(String value) {
-        this.note = value;
-    }
+	/**
+	 * Sets the value of the note property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setNote(String value) {
+		this.note = value;
+	}
 
 }

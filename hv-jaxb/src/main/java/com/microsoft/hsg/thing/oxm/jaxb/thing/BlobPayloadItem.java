@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.thing;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -26,9 +24,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for BlobPayloadItem complex type.
+ * <p>
+ * Java class for BlobPayloadItem complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="BlobPayloadItem">
@@ -52,160 +53,137 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "BlobPayloadItem", propOrder = {
-    "blobInfo",
-    "contentLength",
-    "base64Data",
-    "blobRefUrl",
-    "legacyContentEncoding",
-    "currentContentEncoding"
-})
+@XmlType(name = "BlobPayloadItem", propOrder = { "blobInfo", "contentLength", "base64Data", "blobRefUrl",
+		"legacyContentEncoding", "currentContentEncoding" })
 public class BlobPayloadItem {
 
-    @XmlElement(name = "blob-info", required = true)
-    protected BlobInfo blobInfo;
-    @XmlElement(name = "content-length")
-    protected Long contentLength;
-    @XmlElement(name = "base64data")
-    protected String base64Data;
-    @XmlElement(name = "blob-ref-url")
-    @XmlSchemaType(name = "anyURI")
-    protected String blobRefUrl;
-    @XmlElement(name = "legacy-content-encoding")
-    protected String legacyContentEncoding;
-    @XmlElement(name = "current-content-encoding")
-    protected String currentContentEncoding;
+	@XmlElement(name = "blob-info", required = true)
+	protected BlobInfo blobInfo;
+	@XmlElement(name = "content-length")
+	protected Long contentLength;
+	@XmlElement(name = "base64data")
+	protected String base64Data;
+	@XmlElement(name = "blob-ref-url")
+	@XmlSchemaType(name = "anyURI")
+	protected String blobRefUrl;
+	@XmlElement(name = "legacy-content-encoding")
+	protected String legacyContentEncoding;
+	@XmlElement(name = "current-content-encoding")
+	protected String currentContentEncoding;
 
-    /**
-     * Gets the value of the blobInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BlobInfo }
-     *     
-     */
-    public BlobInfo getBlobInfo() {
-        return blobInfo;
-    }
+	/**
+	 * Gets the value of the blobInfo property.
+	 * 
+	 * @return possible object is {@link BlobInfo }
+	 * 
+	 */
+	public BlobInfo getBlobInfo() {
+		return blobInfo;
+	}
 
-    /**
-     * Sets the value of the blobInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BlobInfo }
-     *     
-     */
-    public void setBlobInfo(BlobInfo value) {
-        this.blobInfo = value;
-    }
+	/**
+	 * Sets the value of the blobInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BlobInfo }
+	 * 
+	 */
+	public void setBlobInfo(BlobInfo value) {
+		this.blobInfo = value;
+	}
 
-    /**
-     * Gets the value of the contentLength property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
-     */
-    public Long getContentLength() {
-        return contentLength;
-    }
+	/**
+	 * Gets the value of the contentLength property.
+	 * 
+	 * @return possible object is {@link Long }
+	 * 
+	 */
+	public Long getContentLength() {
+		return contentLength;
+	}
 
-    /**
-     * Sets the value of the contentLength property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
-     */
-    public void setContentLength(Long value) {
-        this.contentLength = value;
-    }
+	/**
+	 * Sets the value of the contentLength property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Long }
+	 * 
+	 */
+	public void setContentLength(Long value) {
+		this.contentLength = value;
+	}
 
-    /**
-     * Gets the value of the base64Data property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getBase64Data() {
-        return base64Data;
-    }
+	/**
+	 * Gets the value of the base64Data property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getBase64Data() {
+		return base64Data;
+	}
 
-    /**
-     * Gets the value of the blobRefUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getBlobRefUrl() {
-        return blobRefUrl;
-    }
+	/**
+	 * Gets the value of the blobRefUrl property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getBlobRefUrl() {
+		return blobRefUrl;
+	}
 
-    /**
-     * Sets the value of the blobRefUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setBlobRefUrl(String value) {
-        this.blobRefUrl = value;
-    }
+	/**
+	 * Sets the value of the blobRefUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setBlobRefUrl(String value) {
+		this.blobRefUrl = value;
+	}
 
-    /**
-     * Gets the value of the legacyContentEncoding property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLegacyContentEncoding() {
-        return legacyContentEncoding;
-    }
+	/**
+	 * Gets the value of the legacyContentEncoding property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLegacyContentEncoding() {
+		return legacyContentEncoding;
+	}
 
-    /**
-     * Sets the value of the legacyContentEncoding property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLegacyContentEncoding(String value) {
-        this.legacyContentEncoding = value;
-    }
+	/**
+	 * Sets the value of the legacyContentEncoding property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLegacyContentEncoding(String value) {
+		this.legacyContentEncoding = value;
+	}
 
-    /**
-     * Gets the value of the currentContentEncoding property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCurrentContentEncoding() {
-        return currentContentEncoding;
-    }
+	/**
+	 * Gets the value of the currentContentEncoding property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCurrentContentEncoding() {
+		return currentContentEncoding;
+	}
 
-    /**
-     * Sets the value of the currentContentEncoding property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCurrentContentEncoding(String value) {
-        this.currentContentEncoding = value;
-    }
+	/**
+	 * Sets the value of the currentContentEncoding property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCurrentContentEncoding(String value) {
+		this.currentContentEncoding = value;
+	}
 
 }

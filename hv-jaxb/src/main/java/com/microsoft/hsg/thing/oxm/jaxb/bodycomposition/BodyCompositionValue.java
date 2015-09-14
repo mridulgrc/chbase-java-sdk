@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:39:01 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.bodycomposition;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
  * </pre>
  * 
  * 
- * <p>Java class for BodyCompositionValue complex type.
+ * <p>
+ * Java class for BodyCompositionValue complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="BodyCompositionValue">
@@ -52,63 +53,54 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "BodyCompositionValue", propOrder = {
-    "massValue",
-    "percentValue"
-})
+@XmlType(name = "BodyCompositionValue", propOrder = { "massValue", "percentValue" })
 public class BodyCompositionValue {
 
-    @XmlElement(name = "mass-value")
-    protected WeightValue massValue;
-    @XmlElement(name = "percent-value")
-    protected Double percentValue;
+	@XmlElement(name = "mass-value")
+	protected WeightValue massValue;
+	@XmlElement(name = "percent-value")
+	protected Double percentValue;
 
-    /**
-     * Gets the value of the massValue property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getMassValue() {
-        return massValue;
-    }
+	/**
+	 * Gets the value of the massValue property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getMassValue() {
+		return massValue;
+	}
 
-    /**
-     * Sets the value of the massValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setMassValue(WeightValue value) {
-        this.massValue = value;
-    }
+	/**
+	 * Sets the value of the massValue property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setMassValue(WeightValue value) {
+		this.massValue = value;
+	}
 
-    /**
-     * Gets the value of the percentValue property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getPercentValue() {
-        return percentValue;
-    }
+	/**
+	 * Gets the value of the percentValue property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getPercentValue() {
+		return percentValue;
+	}
 
-    /**
-     * Sets the value of the percentValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setPercentValue(Double value) {
-        this.percentValue = value;
-    }
+	/**
+	 * Sets the value of the percentValue property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setPercentValue(Double value) {
+		this.percentValue = value;
+	}
 
 }

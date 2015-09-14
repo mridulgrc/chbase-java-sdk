@@ -5,14 +5,12 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.binarycontent;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for BinaryContent complex type.
+ * <p>
+ * Java class for BinaryContent complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="BinaryContent">
@@ -58,198 +59,170 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "BinaryContent", propOrder = {
-    "contentId",
-    "cultureCode",
-    "fileName",
-    "fileExtension",
-    "contentType",
-    "contentEncoding",
-    "contentValue"
-})
+@XmlType(name = "BinaryContent", propOrder = { "contentId", "cultureCode", "fileName", "fileExtension", "contentType",
+		"contentEncoding", "contentValue" })
 public class BinaryContent {
 
-    @XmlElement(name = "content-id", required = true)
-    protected String contentId;
-    @XmlElement(name = "culture-code", required = true)
-    protected String cultureCode;
-    @XmlElement(name = "file-name")
-    protected String fileName;
-    @XmlElement(name = "file-extension")
-    protected String fileExtension;
-    @XmlElement(name = "content-type")
-    protected String contentType;
-    @XmlElement(name = "content-encoding")
-    protected String contentEncoding;
-    @XmlElement(name = "content-value", required = true)
-    protected String contentValue;
+	@XmlElement(name = "content-id", required = true)
+	protected String contentId;
+	@XmlElement(name = "culture-code", required = true)
+	protected String cultureCode;
+	@XmlElement(name = "file-name")
+	protected String fileName;
+	@XmlElement(name = "file-extension")
+	protected String fileExtension;
+	@XmlElement(name = "content-type")
+	protected String contentType;
+	@XmlElement(name = "content-encoding")
+	protected String contentEncoding;
+	@XmlElement(name = "content-value", required = true)
+	protected String contentValue;
 
-    /**
-     * Gets the value of the contentId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getContentId() {
-        return contentId;
-    }
+	/**
+	 * Gets the value of the contentId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getContentId() {
+		return contentId;
+	}
 
-    /**
-     * Sets the value of the contentId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setContentId(String value) {
-        this.contentId = value;
-    }
+	/**
+	 * Sets the value of the contentId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setContentId(String value) {
+		this.contentId = value;
+	}
 
-    /**
-     * Gets the value of the cultureCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCultureCode() {
-        return cultureCode;
-    }
+	/**
+	 * Gets the value of the cultureCode property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCultureCode() {
+		return cultureCode;
+	}
 
-    /**
-     * Sets the value of the cultureCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCultureCode(String value) {
-        this.cultureCode = value;
-    }
+	/**
+	 * Sets the value of the cultureCode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCultureCode(String value) {
+		this.cultureCode = value;
+	}
 
-    /**
-     * Gets the value of the fileName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFileName() {
-        return fileName;
-    }
+	/**
+	 * Gets the value of the fileName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getFileName() {
+		return fileName;
+	}
 
-    /**
-     * Sets the value of the fileName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFileName(String value) {
-        this.fileName = value;
-    }
+	/**
+	 * Sets the value of the fileName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setFileName(String value) {
+		this.fileName = value;
+	}
 
-    /**
-     * Gets the value of the fileExtension property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFileExtension() {
-        return fileExtension;
-    }
+	/**
+	 * Gets the value of the fileExtension property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getFileExtension() {
+		return fileExtension;
+	}
 
-    /**
-     * Sets the value of the fileExtension property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFileExtension(String value) {
-        this.fileExtension = value;
-    }
+	/**
+	 * Sets the value of the fileExtension property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setFileExtension(String value) {
+		this.fileExtension = value;
+	}
 
-    /**
-     * Gets the value of the contentType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getContentType() {
-        return contentType;
-    }
+	/**
+	 * Gets the value of the contentType property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getContentType() {
+		return contentType;
+	}
 
-    /**
-     * Sets the value of the contentType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setContentType(String value) {
-        this.contentType = value;
-    }
+	/**
+	 * Sets the value of the contentType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setContentType(String value) {
+		this.contentType = value;
+	}
 
-    /**
-     * Gets the value of the contentEncoding property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getContentEncoding() {
-        return contentEncoding;
-    }
+	/**
+	 * Gets the value of the contentEncoding property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getContentEncoding() {
+		return contentEncoding;
+	}
 
-    /**
-     * Sets the value of the contentEncoding property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setContentEncoding(String value) {
-        this.contentEncoding = value;
-    }
+	/**
+	 * Sets the value of the contentEncoding property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setContentEncoding(String value) {
+		this.contentEncoding = value;
+	}
 
-    /**
-     * Gets the value of the contentValue property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getContentValue() {
-        return contentValue;
-    }
+	/**
+	 * Gets the value of the contentValue property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getContentValue() {
+		return contentValue;
+	}
 
-    /**
-     * Sets the value of the contentValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setContentValue(String value) {
-        this.contentValue = value;
-    }
+	/**
+	 * Sets the value of the contentValue property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setContentValue(String value) {
+		this.contentValue = value;
+	}
 
 }

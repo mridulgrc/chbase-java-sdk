@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:02:29 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getupdatedrecordsforapplication2.response;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for UpdatedRecords complex type.
+ * <p>
+ * Java class for UpdatedRecords complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="UpdatedRecords">
@@ -44,41 +45,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "UpdatedRecords", propOrder = {
-    "updatedRecord"
-})
+@XmlType(name = "UpdatedRecords", propOrder = { "updatedRecord" })
 public class UpdatedRecords {
 
-    @XmlElement(name = "updated-record")
-    protected List<UpdatedRecord> updatedRecord;
+	@XmlElement(name = "updated-record")
+	protected List<UpdatedRecord> updatedRecord;
 
-    /**
-     * Gets the value of the updatedRecord property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the updatedRecord property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getUpdatedRecord().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link UpdatedRecord }
-     * 
-     * 
-     */
-    public List<UpdatedRecord> getUpdatedRecord() {
-        if (updatedRecord == null) {
-            updatedRecord = new ArrayList<UpdatedRecord>();
-        }
-        return this.updatedRecord;
-    }
+	/**
+	 * Gets the value of the updatedRecord property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the updatedRecord property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getUpdatedRecord().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link UpdatedRecord }
+	 * 
+	 * 
+	 */
+	public List<UpdatedRecord> getUpdatedRecord() {
+		if (updatedRecord == null) {
+			updatedRecord = new ArrayList<UpdatedRecord>();
+		}
+		return this.updatedRecord;
+	}
 
 }

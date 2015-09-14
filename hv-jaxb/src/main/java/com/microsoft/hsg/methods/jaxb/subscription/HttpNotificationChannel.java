@@ -5,7 +5,6 @@
 // Generated on: 2011.03.01 at 07:55:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.subscription;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for HttpNotificationChannel complex type.
+ * <p>
+ * Java class for HttpNotificationChannel complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="HttpNotificationChannel">
@@ -35,37 +36,32 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "HttpNotificationChannel", propOrder = {
-    "url"
-})
+@XmlType(name = "HttpNotificationChannel", propOrder = { "url" })
 public class HttpNotificationChannel {
 
-    @XmlElement(required = true)
-    @XmlSchemaType(name = "anyURI")
-    protected String url;
+	@XmlElement(required = true)
+	@XmlSchemaType(name = "anyURI")
+	protected String url;
 
-    /**
-     * Gets the value of the url property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUrl() {
-        return url;
-    }
+	/**
+	 * Gets the value of the url property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getUrl() {
+		return url;
+	}
 
-    /**
-     * Sets the value of the url property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUrl(String value) {
-        this.url = value;
-    }
+	/**
+	 * Sets the value of the url property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setUrl(String value) {
+		this.url = value;
+	}
 
 }

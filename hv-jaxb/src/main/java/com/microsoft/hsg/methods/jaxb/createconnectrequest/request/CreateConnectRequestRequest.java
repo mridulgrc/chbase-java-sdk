@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:11:18 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.createconnectrequest.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -58,150 +59,126 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "CreateConnectRequest",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.CreateConnectRequest")
+@JaxbRequest(methodName = "CreateConnectRequest", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.CreateConnectRequest")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "friendlyName",
-    "question",
-    "answer",
-    "externalId",
-    "callBackUrl"
-})
+@XmlType(name = "", propOrder = { "friendlyName", "question", "answer", "externalId", "callBackUrl" })
 @XmlRootElement(name = "info")
 public class CreateConnectRequestRequest {
 
-    @XmlElement(name = "friendly-name", required = true)
-    protected String friendlyName;
-    @XmlElement(required = true)
-    protected String question;
-    @XmlElement(required = true)
-    protected String answer;
-    @XmlElement(name = "external-id", required = true)
-    protected String externalId;
-    @XmlElement(name = "call-back-url")
-    protected String callBackUrl;
+	@XmlElement(name = "friendly-name", required = true)
+	protected String friendlyName;
+	@XmlElement(required = true)
+	protected String question;
+	@XmlElement(required = true)
+	protected String answer;
+	@XmlElement(name = "external-id", required = true)
+	protected String externalId;
+	@XmlElement(name = "call-back-url")
+	protected String callBackUrl;
 
-    /**
-     * Gets the value of the friendlyName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFriendlyName() {
-        return friendlyName;
-    }
+	/**
+	 * Gets the value of the friendlyName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getFriendlyName() {
+		return friendlyName;
+	}
 
-    /**
-     * Sets the value of the friendlyName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFriendlyName(String value) {
-        this.friendlyName = value;
-    }
+	/**
+	 * Sets the value of the friendlyName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setFriendlyName(String value) {
+		this.friendlyName = value;
+	}
 
-    /**
-     * Gets the value of the question property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getQuestion() {
-        return question;
-    }
+	/**
+	 * Gets the value of the question property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getQuestion() {
+		return question;
+	}
 
-    /**
-     * Sets the value of the question property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setQuestion(String value) {
-        this.question = value;
-    }
+	/**
+	 * Sets the value of the question property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setQuestion(String value) {
+		this.question = value;
+	}
 
-    /**
-     * Gets the value of the answer property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAnswer() {
-        return answer;
-    }
+	/**
+	 * Gets the value of the answer property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAnswer() {
+		return answer;
+	}
 
-    /**
-     * Sets the value of the answer property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAnswer(String value) {
-        this.answer = value;
-    }
+	/**
+	 * Sets the value of the answer property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAnswer(String value) {
+		this.answer = value;
+	}
 
-    /**
-     * Gets the value of the externalId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getExternalId() {
-        return externalId;
-    }
+	/**
+	 * Gets the value of the externalId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getExternalId() {
+		return externalId;
+	}
 
-    /**
-     * Sets the value of the externalId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setExternalId(String value) {
-        this.externalId = value;
-    }
+	/**
+	 * Sets the value of the externalId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setExternalId(String value) {
+		this.externalId = value;
+	}
 
-    /**
-     * Gets the value of the callBackUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCallBackUrl() {
-        return callBackUrl;
-    }
+	/**
+	 * Gets the value of the callBackUrl property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCallBackUrl() {
+		return callBackUrl;
+	}
 
-    /**
-     * Sets the value of the callBackUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCallBackUrl(String value) {
-        this.callBackUrl = value;
-    }
+	/**
+	 * Sets the value of the callBackUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCallBackUrl(String value) {
+		this.callBackUrl = value;
+	}
 
 }

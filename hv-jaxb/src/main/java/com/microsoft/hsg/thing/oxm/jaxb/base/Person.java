@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -35,9 +33,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for person complex type.
+ * <p>
+ * Java class for person complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="person">
@@ -59,167 +60,142 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "person", propOrder = {
-    "name",
-    "organization",
-    "professionalTraining",
-    "id",
-    "contact",
-    "type"
-})
+@XmlType(name = "person", propOrder = { "name", "organization", "professionalTraining", "id", "contact", "type" })
 @XmlRootElement(name = "person")
 public class Person {
-    @XmlElement(required = true)
-    protected Name name;
-    protected String organization;
-    @XmlElement(name = "professional-training")
-    protected String professionalTraining;
-    protected String id;
-    protected Contact contact;
-    protected CodableValue type;
+	@XmlElement(required = true)
+	protected Name name;
+	protected String organization;
+	@XmlElement(name = "professional-training")
+	protected String professionalTraining;
+	protected String id;
+	protected Contact contact;
+	protected CodableValue type;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Name }
-     *     
-     */
-    public Name getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link Name }
+	 * 
+	 */
+	public Name getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Name }
-     *     
-     */
-    public void setName(Name value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Name }
+	 * 
+	 */
+	public void setName(Name value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the organization property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOrganization() {
-        return organization;
-    }
+	/**
+	 * Gets the value of the organization property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getOrganization() {
+		return organization;
+	}
 
-    /**
-     * Sets the value of the organization property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOrganization(String value) {
-        this.organization = value;
-    }
+	/**
+	 * Sets the value of the organization property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setOrganization(String value) {
+		this.organization = value;
+	}
 
-    /**
-     * Gets the value of the professionalTraining property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getProfessionalTraining() {
-        return professionalTraining;
-    }
+	/**
+	 * Gets the value of the professionalTraining property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getProfessionalTraining() {
+		return professionalTraining;
+	}
 
-    /**
-     * Sets the value of the professionalTraining property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setProfessionalTraining(String value) {
-        this.professionalTraining = value;
-    }
+	/**
+	 * Sets the value of the professionalTraining property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setProfessionalTraining(String value) {
+		this.professionalTraining = value;
+	}
 
-    /**
-     * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getId() {
-        return id;
-    }
+	/**
+	 * Gets the value of the id property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getId() {
+		return id;
+	}
 
-    /**
-     * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setId(String value) {
-        this.id = value;
-    }
+	/**
+	 * Sets the value of the id property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setId(String value) {
+		this.id = value;
+	}
 
-    /**
-     * Gets the value of the contact property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Contact }
-     *     
-     */
-    public Contact getContact() {
-        return contact;
-    }
+	/**
+	 * Gets the value of the contact property.
+	 * 
+	 * @return possible object is {@link Contact }
+	 * 
+	 */
+	public Contact getContact() {
+		return contact;
+	}
 
-    /**
-     * Sets the value of the contact property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Contact }
-     *     
-     */
-    public void setContact(Contact value) {
-        this.contact = value;
-    }
+	/**
+	 * Sets the value of the contact property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Contact }
+	 * 
+	 */
+	public void setContact(Contact value) {
+		this.contact = value;
+	}
 
-    /**
-     * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getType() {
-        return type;
-    }
+	/**
+	 * Gets the value of the type property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getType() {
+		return type;
+	}
 
-    /**
-     * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setType(CodableValue value) {
-        this.type = value;
-    }
+	/**
+	 * Sets the value of the type property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setType(CodableValue value) {
+		this.type = value;
+	}
 
 }

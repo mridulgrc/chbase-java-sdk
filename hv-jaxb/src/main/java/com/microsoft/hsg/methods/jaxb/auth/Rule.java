@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import java.util.ArrayList;
@@ -19,7 +18,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificString1024;
 import com.microsoft.hsg.thing.oxm.jaxb.types.Permission;
 
-
 /**
  * 
  * <pre>
@@ -31,9 +29,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Permission;
  * </pre>
  * 
  * 
- * <p>Java class for Rule complex type.
+ * <p>
+ * Java class for Rule complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Rule">
@@ -57,242 +58,226 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Permission;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Rule", propOrder = {
-    "reason",
-    "displayFlags",
-    "permission",
-    "targetSet",
-    "exceptionSet"
-})
+@XmlType(name = "Rule", propOrder = { "reason", "displayFlags", "permission", "targetSet", "exceptionSet" })
 public class Rule {
 
-    protected List<CultureSpecificString1024> reason;
-    @XmlElement(name = "display-flags")
-    @XmlSchemaType(name = "unsignedInt")
-    protected Long displayFlags;
-    @XmlElement(required = true)
-    protected List<Permission> permission;
-    @XmlElement(name = "target-set")
-    protected List<Set> targetSet;
-    @XmlElement(name = "exception-set")
-    protected List<Set> exceptionSet;
-    @XmlAttribute(name = "is-incr")
-    protected Boolean isIncr;
-    @XmlAttribute(name = "is-optional")
-    protected Boolean isOptional;
-    @XmlAttribute
-    protected String name;
+	protected List<CultureSpecificString1024> reason;
+	@XmlElement(name = "display-flags")
+	@XmlSchemaType(name = "unsignedInt")
+	protected Long displayFlags;
+	@XmlElement(required = true)
+	protected List<Permission> permission;
+	@XmlElement(name = "target-set")
+	protected List<Set> targetSet;
+	@XmlElement(name = "exception-set")
+	protected List<Set> exceptionSet;
+	@XmlAttribute(name = "is-incr")
+	protected Boolean isIncr;
+	@XmlAttribute(name = "is-optional")
+	protected Boolean isOptional;
+	@XmlAttribute
+	protected String name;
 
-    /**
-     * Gets the value of the reason property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the reason property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getReason().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificString1024 }
-     * 
-     * 
-     */
-    public List<CultureSpecificString1024> getReason() {
-        if (reason == null) {
-            reason = new ArrayList<CultureSpecificString1024>();
-        }
-        return this.reason;
-    }
+	/**
+	 * Gets the value of the reason property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the reason property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getReason().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificString1024 }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificString1024> getReason() {
+		if (reason == null) {
+			reason = new ArrayList<CultureSpecificString1024>();
+		}
+		return this.reason;
+	}
 
-    /**
-     * Gets the value of the displayFlags property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
-     */
-    public Long getDisplayFlags() {
-        return displayFlags;
-    }
+	/**
+	 * Gets the value of the displayFlags property.
+	 * 
+	 * @return possible object is {@link Long }
+	 * 
+	 */
+	public Long getDisplayFlags() {
+		return displayFlags;
+	}
 
-    /**
-     * Sets the value of the displayFlags property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
-     */
-    public void setDisplayFlags(Long value) {
-        this.displayFlags = value;
-    }
+	/**
+	 * Sets the value of the displayFlags property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Long }
+	 * 
+	 */
+	public void setDisplayFlags(Long value) {
+		this.displayFlags = value;
+	}
 
-    /**
-     * Gets the value of the permission property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the permission property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getPermission().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Permission }
-     * 
-     * 
-     */
-    public List<Permission> getPermission() {
-        if (permission == null) {
-            permission = new ArrayList<Permission>();
-        }
-        return this.permission;
-    }
+	/**
+	 * Gets the value of the permission property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the permission property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getPermission().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link Permission }
+	 * 
+	 * 
+	 */
+	public List<Permission> getPermission() {
+		if (permission == null) {
+			permission = new ArrayList<Permission>();
+		}
+		return this.permission;
+	}
 
-    /**
-     * Gets the value of the targetSet property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the targetSet property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTargetSet().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Set }
-     * 
-     * 
-     */
-    public List<Set> getTargetSet() {
-        if (targetSet == null) {
-            targetSet = new ArrayList<Set>();
-        }
-        return this.targetSet;
-    }
+	/**
+	 * Gets the value of the targetSet property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the targetSet property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getTargetSet().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Set }
+	 * 
+	 * 
+	 */
+	public List<Set> getTargetSet() {
+		if (targetSet == null) {
+			targetSet = new ArrayList<Set>();
+		}
+		return this.targetSet;
+	}
 
-    /**
-     * Gets the value of the exceptionSet property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the exceptionSet property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getExceptionSet().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Set }
-     * 
-     * 
-     */
-    public List<Set> getExceptionSet() {
-        if (exceptionSet == null) {
-            exceptionSet = new ArrayList<Set>();
-        }
-        return this.exceptionSet;
-    }
+	/**
+	 * Gets the value of the exceptionSet property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the exceptionSet property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getExceptionSet().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Set }
+	 * 
+	 * 
+	 */
+	public List<Set> getExceptionSet() {
+		if (exceptionSet == null) {
+			exceptionSet = new ArrayList<Set>();
+		}
+		return this.exceptionSet;
+	}
 
-    /**
-     * Gets the value of the isIncr property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsIncr() {
-        return isIncr;
-    }
+	/**
+	 * Gets the value of the isIncr property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsIncr() {
+		return isIncr;
+	}
 
-    /**
-     * Sets the value of the isIncr property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsIncr(Boolean value) {
-        this.isIncr = value;
-    }
+	/**
+	 * Sets the value of the isIncr property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsIncr(Boolean value) {
+		this.isIncr = value;
+	}
 
-    /**
-     * Gets the value of the isOptional property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsOptional() {
-        return isOptional;
-    }
+	/**
+	 * Gets the value of the isOptional property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsOptional() {
+		return isOptional;
+	}
 
-    /**
-     * Sets the value of the isOptional property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsOptional(Boolean value) {
-        this.isOptional = value;
-    }
+	/**
+	 * Sets the value of the isOptional property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsOptional(Boolean value) {
+		this.isOptional = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
 }

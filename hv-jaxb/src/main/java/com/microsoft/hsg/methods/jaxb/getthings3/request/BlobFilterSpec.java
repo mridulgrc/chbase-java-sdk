@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:13:50 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthings3.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,11 +12,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for BlobFilterSpec complex type.
+ * <p>
+ * Java class for BlobFilterSpec complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="BlobFilterSpec">
@@ -34,36 +35,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "BlobFilterSpec", propOrder = {
-    "blobName"
-})
+@XmlType(name = "BlobFilterSpec", propOrder = { "blobName" })
 public class BlobFilterSpec {
 
-    @XmlElement(name = "blob-name", required = true)
-    protected String blobName;
+	@XmlElement(name = "blob-name", required = true)
+	protected String blobName;
 
-    /**
-     * Gets the value of the blobName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getBlobName() {
-        return blobName;
-    }
+	/**
+	 * Gets the value of the blobName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getBlobName() {
+		return blobName;
+	}
 
-    /**
-     * Sets the value of the blobName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setBlobName(String value) {
-        this.blobName = value;
-    }
+	/**
+	 * Sets the value of the blobName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setBlobName(String value) {
+		this.blobName = value;
+	}
 
 }

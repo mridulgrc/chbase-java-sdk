@@ -5,19 +5,21 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for Gender.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
+ * Java class for Gender.
+ * 
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
+ * <p>
+ * 
  * <pre>
  * &lt;simpleType name="Gender">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -32,45 +34,42 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum Gender {
 
+	/**
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * 
+	 */
+	@XmlEnumValue("m") M("m"),
 
-    /**
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * 
-     */
-    @XmlEnumValue("m")
-    M("m"),
+	/**
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * 
+	 */
+	@XmlEnumValue("f") F("f");
+	private final String value;
 
-    /**
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * 
-     */
-    @XmlEnumValue("f")
-    F("f");
-    private final String value;
+	Gender(String v) {
+		value = v;
+	}
 
-    Gender(String v) {
-        value = v;
-    }
+	public String value() {
+		return value;
+	}
 
-    public String value() {
-        return value;
-    }
-
-    public static Gender fromValue(String v) {
-        for (Gender c: Gender.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+	public static Gender fromValue(String v) {
+		for (Gender c : Gender.values()) {
+			if (c.value.equals(v)) {
+				return c;
+			}
+		}
+		throw new IllegalArgumentException(v);
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.thingtype;
 
 import java.math.BigInteger;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
  * <pre>
@@ -23,9 +21,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Column complex type.
+ * <p>
+ * Java class for Column complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Column">
@@ -54,244 +55,211 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Column", propOrder = {
-    "attributeName",
-    "header",
-    "headerString",
-    "dataType",
-    "headerWidth",
-    "headerWidthInt",
-    "defaultVisibility",
-    "attributeNameSorted",
-    "attributeNameSortedType"
-})
+@XmlType(name = "Column", propOrder = { "attributeName", "header", "headerString", "dataType", "headerWidth",
+		"headerWidthInt", "defaultVisibility", "attributeNameSorted", "attributeNameSortedType" })
 public class Column {
 
-    @XmlElement(name = "attribute-name", required = true)
-    protected String attributeName;
-    protected String header;
-    @XmlElement(name = "header-string")
-    protected String headerString;
-    @XmlElement(name = "data-type", required = true)
-    protected String dataType;
-    @XmlElement(name = "header-width")
-    protected String headerWidth;
-    @XmlElement(name = "header-width-int")
-    @XmlSchemaType(name = "nonNegativeInteger")
-    protected BigInteger headerWidthInt;
-    @XmlElement(name = "default-visibility")
-    protected boolean defaultVisibility;
-    @XmlElement(name = "attribute-name-sorted")
-    protected String attributeNameSorted;
-    @XmlElement(name = "attribute-name-sorted-type")
-    protected String attributeNameSortedType;
+	@XmlElement(name = "attribute-name", required = true)
+	protected String attributeName;
+	protected String header;
+	@XmlElement(name = "header-string")
+	protected String headerString;
+	@XmlElement(name = "data-type", required = true)
+	protected String dataType;
+	@XmlElement(name = "header-width")
+	protected String headerWidth;
+	@XmlElement(name = "header-width-int")
+	@XmlSchemaType(name = "nonNegativeInteger")
+	protected BigInteger headerWidthInt;
+	@XmlElement(name = "default-visibility")
+	protected boolean defaultVisibility;
+	@XmlElement(name = "attribute-name-sorted")
+	protected String attributeNameSorted;
+	@XmlElement(name = "attribute-name-sorted-type")
+	protected String attributeNameSortedType;
 
-    /**
-     * Gets the value of the attributeName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAttributeName() {
-        return attributeName;
-    }
+	/**
+	 * Gets the value of the attributeName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAttributeName() {
+		return attributeName;
+	}
 
-    /**
-     * Sets the value of the attributeName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAttributeName(String value) {
-        this.attributeName = value;
-    }
+	/**
+	 * Sets the value of the attributeName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAttributeName(String value) {
+		this.attributeName = value;
+	}
 
-    /**
-     * Gets the value of the header property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getHeader() {
-        return header;
-    }
+	/**
+	 * Gets the value of the header property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getHeader() {
+		return header;
+	}
 
-    /**
-     * Sets the value of the header property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setHeader(String value) {
-        this.header = value;
-    }
+	/**
+	 * Sets the value of the header property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setHeader(String value) {
+		this.header = value;
+	}
 
-    /**
-     * Gets the value of the headerString property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getHeaderString() {
-        return headerString;
-    }
+	/**
+	 * Gets the value of the headerString property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getHeaderString() {
+		return headerString;
+	}
 
-    /**
-     * Sets the value of the headerString property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setHeaderString(String value) {
-        this.headerString = value;
-    }
+	/**
+	 * Sets the value of the headerString property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setHeaderString(String value) {
+		this.headerString = value;
+	}
 
-    /**
-     * Gets the value of the dataType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDataType() {
-        return dataType;
-    }
+	/**
+	 * Gets the value of the dataType property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDataType() {
+		return dataType;
+	}
 
-    /**
-     * Sets the value of the dataType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDataType(String value) {
-        this.dataType = value;
-    }
+	/**
+	 * Sets the value of the dataType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDataType(String value) {
+		this.dataType = value;
+	}
 
-    /**
-     * Gets the value of the headerWidth property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getHeaderWidth() {
-        return headerWidth;
-    }
+	/**
+	 * Gets the value of the headerWidth property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getHeaderWidth() {
+		return headerWidth;
+	}
 
-    /**
-     * Sets the value of the headerWidth property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setHeaderWidth(String value) {
-        this.headerWidth = value;
-    }
+	/**
+	 * Sets the value of the headerWidth property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setHeaderWidth(String value) {
+		this.headerWidth = value;
+	}
 
-    /**
-     * Gets the value of the headerWidthInt property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getHeaderWidthInt() {
-        return headerWidthInt;
-    }
+	/**
+	 * Gets the value of the headerWidthInt property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getHeaderWidthInt() {
+		return headerWidthInt;
+	}
 
-    /**
-     * Sets the value of the headerWidthInt property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setHeaderWidthInt(BigInteger value) {
-        this.headerWidthInt = value;
-    }
+	/**
+	 * Sets the value of the headerWidthInt property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setHeaderWidthInt(BigInteger value) {
+		this.headerWidthInt = value;
+	}
 
-    /**
-     * Gets the value of the defaultVisibility property.
-     * 
-     */
-    public boolean isDefaultVisibility() {
-        return defaultVisibility;
-    }
+	/**
+	 * Gets the value of the defaultVisibility property.
+	 * 
+	 */
+	public boolean isDefaultVisibility() {
+		return defaultVisibility;
+	}
 
-    /**
-     * Sets the value of the defaultVisibility property.
-     * 
-     */
-    public void setDefaultVisibility(boolean value) {
-        this.defaultVisibility = value;
-    }
+	/**
+	 * Sets the value of the defaultVisibility property.
+	 * 
+	 */
+	public void setDefaultVisibility(boolean value) {
+		this.defaultVisibility = value;
+	}
 
-    /**
-     * Gets the value of the attributeNameSorted property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAttributeNameSorted() {
-        return attributeNameSorted;
-    }
+	/**
+	 * Gets the value of the attributeNameSorted property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAttributeNameSorted() {
+		return attributeNameSorted;
+	}
 
-    /**
-     * Sets the value of the attributeNameSorted property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAttributeNameSorted(String value) {
-        this.attributeNameSorted = value;
-    }
+	/**
+	 * Sets the value of the attributeNameSorted property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAttributeNameSorted(String value) {
+		this.attributeNameSorted = value;
+	}
 
-    /**
-     * Gets the value of the attributeNameSortedType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAttributeNameSortedType() {
-        return attributeNameSortedType;
-    }
+	/**
+	 * Gets the value of the attributeNameSortedType property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAttributeNameSortedType() {
+		return attributeNameSortedType;
+	}
 
-    /**
-     * Sets the value of the attributeNameSortedType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAttributeNameSortedType(String value) {
-        this.attributeNameSortedType = value;
-    }
+	/**
+	 * Sets the value of the attributeNameSortedType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAttributeNameSortedType(String value) {
+		this.attributeNameSortedType = value;
+	}
 
 }

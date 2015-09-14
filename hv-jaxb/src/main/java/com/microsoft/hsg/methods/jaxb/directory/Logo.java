@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificString255Nw;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificString255Nw;
  * </pre>
  * 
  * 
- * <p>Java class for Logo complex type.
+ * <p>
+ * Java class for Logo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Logo">
@@ -48,100 +49,95 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificString255Nw;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Logo", propOrder = {
-    "altText",
-    "image",
-    "imageContentType"
-})
+@XmlType(name = "Logo", propOrder = { "altText", "image", "imageContentType" })
 public class Logo {
 
-    @XmlElement(name = "alt-text", required = true)
-    protected List<CultureSpecificString255Nw> altText;
-    @XmlElement(required = true)
-    protected List<CultureSpecificScreenshotImage> image;
-    @XmlElement(name = "image-content-type", required = true)
-    protected String imageContentType;
+	@XmlElement(name = "alt-text", required = true)
+	protected List<CultureSpecificString255Nw> altText;
+	@XmlElement(required = true)
+	protected List<CultureSpecificScreenshotImage> image;
+	@XmlElement(name = "image-content-type", required = true)
+	protected String imageContentType;
 
-    /**
-     * Gets the value of the altText property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the altText property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAltText().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificString255Nw }
-     * 
-     * 
-     */
-    public List<CultureSpecificString255Nw> getAltText() {
-        if (altText == null) {
-            altText = new ArrayList<CultureSpecificString255Nw>();
-        }
-        return this.altText;
-    }
+	/**
+	 * Gets the value of the altText property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the altText property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAltText().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificString255Nw }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificString255Nw> getAltText() {
+		if (altText == null) {
+			altText = new ArrayList<CultureSpecificString255Nw>();
+		}
+		return this.altText;
+	}
 
-    /**
-     * Gets the value of the image property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the image property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getImage().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificScreenshotImage }
-     * 
-     * 
-     */
-    public List<CultureSpecificScreenshotImage> getImage() {
-        if (image == null) {
-            image = new ArrayList<CultureSpecificScreenshotImage>();
-        }
-        return this.image;
-    }
+	/**
+	 * Gets the value of the image property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the image property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getImage().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificScreenshotImage }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificScreenshotImage> getImage() {
+		if (image == null) {
+			image = new ArrayList<CultureSpecificScreenshotImage>();
+		}
+		return this.image;
+	}
 
-    /**
-     * Gets the value of the imageContentType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getImageContentType() {
-        return imageContentType;
-    }
+	/**
+	 * Gets the value of the imageContentType property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getImageContentType() {
+		return imageContentType;
+	}
 
-    /**
-     * Sets the value of the imageContentType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setImageContentType(String value) {
-        this.imageContentType = value;
-    }
+	/**
+	 * Sets the value of the imageContentType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setImageContentType(String value) {
+		this.imageContentType = value;
+	}
 
 }

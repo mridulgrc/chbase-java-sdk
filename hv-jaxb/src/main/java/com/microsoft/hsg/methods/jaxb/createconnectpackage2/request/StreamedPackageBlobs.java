@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:11:14 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.createconnectpackage2.request;
 
 import java.util.ArrayList;
@@ -16,11 +15,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for StreamedPackageBlobs complex type.
+ * <p>
+ * Java class for StreamedPackageBlobs complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="StreamedPackageBlobs">
@@ -37,42 +38,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "StreamedPackageBlobs", propOrder = {
-    "blobInPackageRefUrl"
-})
+@XmlType(name = "StreamedPackageBlobs", propOrder = { "blobInPackageRefUrl" })
 public class StreamedPackageBlobs {
 
-    @XmlElement(name = "blob-in-package-ref-url", required = true)
-    @XmlSchemaType(name = "anyURI")
-    protected List<String> blobInPackageRefUrl;
+	@XmlElement(name = "blob-in-package-ref-url", required = true)
+	@XmlSchemaType(name = "anyURI")
+	protected List<String> blobInPackageRefUrl;
 
-    /**
-     * Gets the value of the blobInPackageRefUrl property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the blobInPackageRefUrl property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getBlobInPackageRefUrl().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getBlobInPackageRefUrl() {
-        if (blobInPackageRefUrl == null) {
-            blobInPackageRefUrl = new ArrayList<String>();
-        }
-        return this.blobInPackageRefUrl;
-    }
+	/**
+	 * Gets the value of the blobInPackageRefUrl property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the blobInPackageRefUrl property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getBlobInPackageRefUrl().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getBlobInPackageRefUrl() {
+		if (blobInPackageRefUrl == null) {
+			blobInPackageRefUrl = new ArrayList<String>();
+		}
+		return this.blobInPackageRefUrl;
+	}
 
 }

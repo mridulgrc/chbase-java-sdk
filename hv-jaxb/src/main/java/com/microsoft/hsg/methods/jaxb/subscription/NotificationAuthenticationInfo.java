@@ -5,7 +5,6 @@
 // Generated on: 2011.03.01 at 07:55:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.subscription;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,11 +12,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for NotificationAuthenticationInfo complex type.
+ * <p>
+ * Java class for NotificationAuthenticationInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="NotificationAuthenticationInfo">
@@ -36,36 +37,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "NotificationAuthenticationInfo", propOrder = {
-    "hvEventingSharedKey"
-})
+@XmlType(name = "NotificationAuthenticationInfo", propOrder = { "hvEventingSharedKey" })
 public class NotificationAuthenticationInfo {
 
-    @XmlElement(name = "hv-eventing-shared-key")
-    protected HVEventingSharedKey hvEventingSharedKey;
+	@XmlElement(name = "hv-eventing-shared-key")
+	protected HVEventingSharedKey hvEventingSharedKey;
 
-    /**
-     * Gets the value of the hvEventingSharedKey property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link HVEventingSharedKey }
-     *     
-     */
-    public HVEventingSharedKey getHvEventingSharedKey() {
-        return hvEventingSharedKey;
-    }
+	/**
+	 * Gets the value of the hvEventingSharedKey property.
+	 * 
+	 * @return possible object is {@link HVEventingSharedKey }
+	 * 
+	 */
+	public HVEventingSharedKey getHvEventingSharedKey() {
+		return hvEventingSharedKey;
+	}
 
-    /**
-     * Sets the value of the hvEventingSharedKey property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link HVEventingSharedKey }
-     *     
-     */
-    public void setHvEventingSharedKey(HVEventingSharedKey value) {
-        this.hvEventingSharedKey = value;
-    }
+	/**
+	 * Sets the value of the hvEventingSharedKey property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link HVEventingSharedKey }
+	 * 
+	 */
+	public void setHvEventingSharedKey(HVEventingSharedKey value) {
+		this.hvEventingSharedKey = value;
+	}
 
 }

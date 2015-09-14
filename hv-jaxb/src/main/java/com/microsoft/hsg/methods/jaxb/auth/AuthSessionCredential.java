@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.HMACAlgorithm;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.HMACAlgorithm;
  * </pre>
  * 
  * 
- * <p>Java class for AuthSessionCredential complex type.
+ * <p>
+ * Java class for AuthSessionCredential complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AuthSessionCredential">
@@ -53,63 +54,54 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.HMACAlgorithm;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AuthSessionCredential", propOrder = {
-    "subCredential",
-    "sharedSecret"
-})
+@XmlType(name = "AuthSessionCredential", propOrder = { "subCredential", "sharedSecret" })
 public class AuthSessionCredential {
 
-    @XmlElement(name = "sub-credential", required = true)
-    protected AuthSessionSubCredential subCredential;
-    @XmlElement(name = "shared-secret", required = true)
-    protected HMACAlgorithm sharedSecret;
+	@XmlElement(name = "sub-credential", required = true)
+	protected AuthSessionSubCredential subCredential;
+	@XmlElement(name = "shared-secret", required = true)
+	protected HMACAlgorithm sharedSecret;
 
-    /**
-     * Gets the value of the subCredential property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AuthSessionSubCredential }
-     *     
-     */
-    public AuthSessionSubCredential getSubCredential() {
-        return subCredential;
-    }
+	/**
+	 * Gets the value of the subCredential property.
+	 * 
+	 * @return possible object is {@link AuthSessionSubCredential }
+	 * 
+	 */
+	public AuthSessionSubCredential getSubCredential() {
+		return subCredential;
+	}
 
-    /**
-     * Sets the value of the subCredential property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AuthSessionSubCredential }
-     *     
-     */
-    public void setSubCredential(AuthSessionSubCredential value) {
-        this.subCredential = value;
-    }
+	/**
+	 * Sets the value of the subCredential property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AuthSessionSubCredential }
+	 * 
+	 */
+	public void setSubCredential(AuthSessionSubCredential value) {
+		this.subCredential = value;
+	}
 
-    /**
-     * Gets the value of the sharedSecret property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link HMACAlgorithm }
-     *     
-     */
-    public HMACAlgorithm getSharedSecret() {
-        return sharedSecret;
-    }
+	/**
+	 * Gets the value of the sharedSecret property.
+	 * 
+	 * @return possible object is {@link HMACAlgorithm }
+	 * 
+	 */
+	public HMACAlgorithm getSharedSecret() {
+		return sharedSecret;
+	}
 
-    /**
-     * Sets the value of the sharedSecret property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link HMACAlgorithm }
-     *     
-     */
-    public void setSharedSecret(HMACAlgorithm value) {
-        this.sharedSecret = value;
-    }
+	/**
+	 * Sets the value of the sharedSecret property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link HMACAlgorithm }
+	 * 
+	 */
+	public void setSharedSecret(HMACAlgorithm value) {
+		this.sharedSecret = value;
+	}
 
 }

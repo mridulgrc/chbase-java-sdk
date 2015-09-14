@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:11:05 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.createauthenticatedsessiontoken2.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.Sig;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Sig;
  * </pre>
  * 
  * 
- * <p>Java class for AppServerCred complex type.
+ * <p>
+ * Java class for AppServerCred complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AppServerCred">
@@ -53,63 +54,54 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Sig;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AppServerCred", propOrder = {
-    "sig",
-    "content"
-})
+@XmlType(name = "AppServerCred", propOrder = { "sig", "content" })
 public class AppServerCred {
 
-    @XmlElement(required = true)
-    protected Sig sig;
-    @XmlElement(required = true)
-    protected AppServerCredInfo content;
+	@XmlElement(required = true)
+	protected Sig sig;
+	@XmlElement(required = true)
+	protected AppServerCredInfo content;
 
-    /**
-     * Gets the value of the sig property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Sig }
-     *     
-     */
-    public Sig getSig() {
-        return sig;
-    }
+	/**
+	 * Gets the value of the sig property.
+	 * 
+	 * @return possible object is {@link Sig }
+	 * 
+	 */
+	public Sig getSig() {
+		return sig;
+	}
 
-    /**
-     * Sets the value of the sig property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Sig }
-     *     
-     */
-    public void setSig(Sig value) {
-        this.sig = value;
-    }
+	/**
+	 * Sets the value of the sig property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Sig }
+	 * 
+	 */
+	public void setSig(Sig value) {
+		this.sig = value;
+	}
 
-    /**
-     * Gets the value of the content property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AppServerCredInfo }
-     *     
-     */
-    public AppServerCredInfo getContent() {
-        return content;
-    }
+	/**
+	 * Gets the value of the content property.
+	 * 
+	 * @return possible object is {@link AppServerCredInfo }
+	 * 
+	 */
+	public AppServerCredInfo getContent() {
+		return content;
+	}
 
-    /**
-     * Sets the value of the content property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AppServerCredInfo }
-     *     
-     */
-    public void setContent(AppServerCredInfo value) {
-        this.content = value;
-    }
+	/**
+	 * Sets the value of the content property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AppServerCredInfo }
+	 * 
+	 */
+	public void setContent(AppServerCredInfo value) {
+		this.content = value;
+	}
 
 }

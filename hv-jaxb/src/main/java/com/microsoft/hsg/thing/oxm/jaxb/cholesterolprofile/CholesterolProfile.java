@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:39:21 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.cholesterolprofile;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -57,142 +58,121 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "ldl",
-    "hdl",
-    "totalCholesterol",
-    "triglyceride"
-})
+@XmlType(name = "", propOrder = { "when", "ldl", "hdl", "totalCholesterol", "triglyceride" })
 @XmlRootElement(name = "cholesterol-profile")
 public class CholesterolProfile {
 
-    @XmlElement(required = true)
-    protected Date when;
-    protected Integer ldl;
-    protected Integer hdl;
-    @XmlElement(name = "total-cholesterol")
-    protected Integer totalCholesterol;
-    protected Integer triglyceride;
+	@XmlElement(required = true)
+	protected Date when;
+	protected Integer ldl;
+	protected Integer hdl;
+	@XmlElement(name = "total-cholesterol")
+	protected Integer totalCholesterol;
+	protected Integer triglyceride;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Date }
-     *     
-     */
-    public Date getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link Date }
+	 * 
+	 */
+	public Date getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Date }
-     *     
-     */
-    public void setWhen(Date value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Date }
+	 * 
+	 */
+	public void setWhen(Date value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the ldl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getLdl() {
-        return ldl;
-    }
+	/**
+	 * Gets the value of the ldl property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getLdl() {
+		return ldl;
+	}
 
-    /**
-     * Sets the value of the ldl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setLdl(Integer value) {
-        this.ldl = value;
-    }
+	/**
+	 * Sets the value of the ldl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setLdl(Integer value) {
+		this.ldl = value;
+	}
 
-    /**
-     * Gets the value of the hdl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getHdl() {
-        return hdl;
-    }
+	/**
+	 * Gets the value of the hdl property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getHdl() {
+		return hdl;
+	}
 
-    /**
-     * Sets the value of the hdl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setHdl(Integer value) {
-        this.hdl = value;
-    }
+	/**
+	 * Sets the value of the hdl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setHdl(Integer value) {
+		this.hdl = value;
+	}
 
-    /**
-     * Gets the value of the totalCholesterol property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getTotalCholesterol() {
-        return totalCholesterol;
-    }
+	/**
+	 * Gets the value of the totalCholesterol property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getTotalCholesterol() {
+		return totalCholesterol;
+	}
 
-    /**
-     * Sets the value of the totalCholesterol property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setTotalCholesterol(Integer value) {
-        this.totalCholesterol = value;
-    }
+	/**
+	 * Sets the value of the totalCholesterol property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setTotalCholesterol(Integer value) {
+		this.totalCholesterol = value;
+	}
 
-    /**
-     * Gets the value of the triglyceride property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getTriglyceride() {
-        return triglyceride;
-    }
+	/**
+	 * Gets the value of the triglyceride property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getTriglyceride() {
+		return triglyceride;
+	}
 
-    /**
-     * Sets the value of the triglyceride property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setTriglyceride(Integer value) {
-        this.triglyceride = value;
-    }
+	/**
+	 * Sets the value of the triglyceride property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setTriglyceride(Integer value) {
+		this.triglyceride = value;
+	}
 
 }

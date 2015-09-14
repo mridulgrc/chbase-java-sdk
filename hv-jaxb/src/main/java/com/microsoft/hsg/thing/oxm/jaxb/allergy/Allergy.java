@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:38:18 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.allergy;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -35,9 +33,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -61,224 +62,192 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "name",
-    "reaction",
-    "firstObserved",
-    "allergenType",
-    "allergenCode",
-    "treatmentProvider",
-    "treatment",
-    "isNegated"
-})
+@XmlType(name = "", propOrder = { "name", "reaction", "firstObserved", "allergenType", "allergenCode",
+		"treatmentProvider", "treatment", "isNegated" })
 @XmlRootElement(name = "allergy")
 public class Allergy {
 
-    @XmlElement(required = true)
-    protected CodableValue name;
-    protected CodableValue reaction;
-    @XmlElement(name = "first-observed")
-    protected ApproxDateTime firstObserved;
-    @XmlElement(name = "allergen-type")
-    protected CodableValue allergenType;
-    @XmlElement(name = "allergen-code")
-    protected CodableValue allergenCode;
-    @XmlElement(name = "treatment-provider")
-    protected Person treatmentProvider;
-    protected CodableValue treatment;
-    @XmlElement(name = "is-negated")
-    protected Boolean isNegated;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	protected CodableValue reaction;
+	@XmlElement(name = "first-observed")
+	protected ApproxDateTime firstObserved;
+	@XmlElement(name = "allergen-type")
+	protected CodableValue allergenType;
+	@XmlElement(name = "allergen-code")
+	protected CodableValue allergenCode;
+	@XmlElement(name = "treatment-provider")
+	protected Person treatmentProvider;
+	protected CodableValue treatment;
+	@XmlElement(name = "is-negated")
+	protected Boolean isNegated;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the reaction property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getReaction() {
-        return reaction;
-    }
+	/**
+	 * Gets the value of the reaction property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getReaction() {
+		return reaction;
+	}
 
-    /**
-     * Sets the value of the reaction property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setReaction(CodableValue value) {
-        this.reaction = value;
-    }
+	/**
+	 * Sets the value of the reaction property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setReaction(CodableValue value) {
+		this.reaction = value;
+	}
 
-    /**
-     * Gets the value of the firstObserved property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getFirstObserved() {
-        return firstObserved;
-    }
+	/**
+	 * Gets the value of the firstObserved property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getFirstObserved() {
+		return firstObserved;
+	}
 
-    /**
-     * Sets the value of the firstObserved property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setFirstObserved(ApproxDateTime value) {
-        this.firstObserved = value;
-    }
+	/**
+	 * Sets the value of the firstObserved property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setFirstObserved(ApproxDateTime value) {
+		this.firstObserved = value;
+	}
 
-    /**
-     * Gets the value of the allergenType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getAllergenType() {
-        return allergenType;
-    }
+	/**
+	 * Gets the value of the allergenType property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getAllergenType() {
+		return allergenType;
+	}
 
-    /**
-     * Sets the value of the allergenType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setAllergenType(CodableValue value) {
-        this.allergenType = value;
-    }
+	/**
+	 * Sets the value of the allergenType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setAllergenType(CodableValue value) {
+		this.allergenType = value;
+	}
 
-    /**
-     * Gets the value of the allergenCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getAllergenCode() {
-        return allergenCode;
-    }
+	/**
+	 * Gets the value of the allergenCode property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getAllergenCode() {
+		return allergenCode;
+	}
 
-    /**
-     * Sets the value of the allergenCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setAllergenCode(CodableValue value) {
-        this.allergenCode = value;
-    }
+	/**
+	 * Sets the value of the allergenCode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setAllergenCode(CodableValue value) {
+		this.allergenCode = value;
+	}
 
-    /**
-     * Gets the value of the treatmentProvider property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getTreatmentProvider() {
-        return treatmentProvider;
-    }
+	/**
+	 * Gets the value of the treatmentProvider property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getTreatmentProvider() {
+		return treatmentProvider;
+	}
 
-    /**
-     * Sets the value of the treatmentProvider property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setTreatmentProvider(Person value) {
-        this.treatmentProvider = value;
-    }
+	/**
+	 * Sets the value of the treatmentProvider property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setTreatmentProvider(Person value) {
+		this.treatmentProvider = value;
+	}
 
-    /**
-     * Gets the value of the treatment property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getTreatment() {
-        return treatment;
-    }
+	/**
+	 * Gets the value of the treatment property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getTreatment() {
+		return treatment;
+	}
 
-    /**
-     * Sets the value of the treatment property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setTreatment(CodableValue value) {
-        this.treatment = value;
-    }
+	/**
+	 * Sets the value of the treatment property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setTreatment(CodableValue value) {
+		this.treatment = value;
+	}
 
-    /**
-     * Gets the value of the isNegated property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsNegated() {
-        return isNegated;
-    }
+	/**
+	 * Gets the value of the isNegated property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsNegated() {
+		return isNegated;
+	}
 
-    /**
-     * Sets the value of the isNegated property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsNegated(Boolean value) {
-        this.isNegated = value;
-    }
+	/**
+	 * Sets the value of the isNegated property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsNegated(Boolean value) {
+		this.isNegated = value;
+	}
 
 }

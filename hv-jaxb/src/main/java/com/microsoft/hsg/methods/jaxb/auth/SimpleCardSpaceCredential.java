@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.CardSpaceCred;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.CardSpaceCred;
  * </pre>
  * 
  * 
- * <p>Java class for SimpleCardSpaceCredential complex type.
+ * <p>
+ * Java class for SimpleCardSpaceCredential complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="SimpleCardSpaceCredential">
@@ -51,36 +52,31 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.CardSpaceCred;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SimpleCardSpaceCredential", propOrder = {
-    "simpleCardspace"
-})
+@XmlType(name = "SimpleCardSpaceCredential", propOrder = { "simpleCardspace" })
 public class SimpleCardSpaceCredential {
 
-    @XmlElement(name = "simple-cardspace", required = true)
-    protected CardSpaceCred simpleCardspace;
+	@XmlElement(name = "simple-cardspace", required = true)
+	protected CardSpaceCred simpleCardspace;
 
-    /**
-     * Gets the value of the simpleCardspace property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CardSpaceCred }
-     *     
-     */
-    public CardSpaceCred getSimpleCardspace() {
-        return simpleCardspace;
-    }
+	/**
+	 * Gets the value of the simpleCardspace property.
+	 * 
+	 * @return possible object is {@link CardSpaceCred }
+	 * 
+	 */
+	public CardSpaceCred getSimpleCardspace() {
+		return simpleCardspace;
+	}
 
-    /**
-     * Sets the value of the simpleCardspace property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CardSpaceCred }
-     *     
-     */
-    public void setSimpleCardspace(CardSpaceCred value) {
-        this.simpleCardspace = value;
-    }
+	/**
+	 * Sets the value of the simpleCardspace property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CardSpaceCred }
+	 * 
+	 */
+	public void setSimpleCardspace(CardSpaceCred value) {
+		this.simpleCardspace = value;
+	}
 
 }

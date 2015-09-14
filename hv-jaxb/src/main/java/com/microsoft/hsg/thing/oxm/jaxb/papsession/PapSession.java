@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:03 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.papsession;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -29,9 +27,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -58,290 +59,252 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "durationMinutes",
-    "apneaHypopneaIndex",
-    "apneaIndex",
-    "hypopneaIndex",
-    "oxygenDesaturationIndex",
-    "pressure",
-    "leakRate",
-    "tidalVolume",
-    "minuteVentilation",
-    "respiratoryRate"
-})
+@XmlType(name = "", propOrder = { "when", "durationMinutes", "apneaHypopneaIndex", "apneaIndex", "hypopneaIndex",
+		"oxygenDesaturationIndex", "pressure", "leakRate", "tidalVolume", "minuteVentilation", "respiratoryRate" })
 @XmlRootElement(name = "pap-session")
 public class PapSession {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    @XmlElement(name = "duration-minutes")
-    protected double durationMinutes;
-    @XmlElement(name = "apnea-hypopnea-index")
-    protected double apneaHypopneaIndex;
-    @XmlElement(name = "apnea-index")
-    protected Double apneaIndex;
-    @XmlElement(name = "hypopnea-index")
-    protected Double hypopneaIndex;
-    @XmlElement(name = "oxygen-desaturation-index")
-    protected Double oxygenDesaturationIndex;
-    protected PapSessionPressure pressure;
-    @XmlElement(name = "leak-rate")
-    protected PapSessionLeakRate leakRate;
-    @XmlElement(name = "tidal-volume")
-    protected PapSessionTidalVolume tidalVolume;
-    @XmlElement(name = "minute-ventilation")
-    protected PapSessionMinuteVentilation minuteVentilation;
-    @XmlElement(name = "respiratory-rate")
-    protected PapSessionRespiratoryRate respiratoryRate;
+	@XmlElement(required = true)
+	protected DateTime when;
+	@XmlElement(name = "duration-minutes")
+	protected double durationMinutes;
+	@XmlElement(name = "apnea-hypopnea-index")
+	protected double apneaHypopneaIndex;
+	@XmlElement(name = "apnea-index")
+	protected Double apneaIndex;
+	@XmlElement(name = "hypopnea-index")
+	protected Double hypopneaIndex;
+	@XmlElement(name = "oxygen-desaturation-index")
+	protected Double oxygenDesaturationIndex;
+	protected PapSessionPressure pressure;
+	@XmlElement(name = "leak-rate")
+	protected PapSessionLeakRate leakRate;
+	@XmlElement(name = "tidal-volume")
+	protected PapSessionTidalVolume tidalVolume;
+	@XmlElement(name = "minute-ventilation")
+	protected PapSessionMinuteVentilation minuteVentilation;
+	@XmlElement(name = "respiratory-rate")
+	protected PapSessionRespiratoryRate respiratoryRate;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the durationMinutes property.
-     * 
-     */
-    public double getDurationMinutes() {
-        return durationMinutes;
-    }
+	/**
+	 * Gets the value of the durationMinutes property.
+	 * 
+	 */
+	public double getDurationMinutes() {
+		return durationMinutes;
+	}
 
-    /**
-     * Sets the value of the durationMinutes property.
-     * 
-     */
-    public void setDurationMinutes(double value) {
-        this.durationMinutes = value;
-    }
+	/**
+	 * Sets the value of the durationMinutes property.
+	 * 
+	 */
+	public void setDurationMinutes(double value) {
+		this.durationMinutes = value;
+	}
 
-    /**
-     * Gets the value of the apneaHypopneaIndex property.
-     * 
-     */
-    public double getApneaHypopneaIndex() {
-        return apneaHypopneaIndex;
-    }
+	/**
+	 * Gets the value of the apneaHypopneaIndex property.
+	 * 
+	 */
+	public double getApneaHypopneaIndex() {
+		return apneaHypopneaIndex;
+	}
 
-    /**
-     * Sets the value of the apneaHypopneaIndex property.
-     * 
-     */
-    public void setApneaHypopneaIndex(double value) {
-        this.apneaHypopneaIndex = value;
-    }
+	/**
+	 * Sets the value of the apneaHypopneaIndex property.
+	 * 
+	 */
+	public void setApneaHypopneaIndex(double value) {
+		this.apneaHypopneaIndex = value;
+	}
 
-    /**
-     * Gets the value of the apneaIndex property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getApneaIndex() {
-        return apneaIndex;
-    }
+	/**
+	 * Gets the value of the apneaIndex property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getApneaIndex() {
+		return apneaIndex;
+	}
 
-    /**
-     * Sets the value of the apneaIndex property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setApneaIndex(Double value) {
-        this.apneaIndex = value;
-    }
+	/**
+	 * Sets the value of the apneaIndex property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setApneaIndex(Double value) {
+		this.apneaIndex = value;
+	}
 
-    /**
-     * Gets the value of the hypopneaIndex property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getHypopneaIndex() {
-        return hypopneaIndex;
-    }
+	/**
+	 * Gets the value of the hypopneaIndex property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getHypopneaIndex() {
+		return hypopneaIndex;
+	}
 
-    /**
-     * Sets the value of the hypopneaIndex property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setHypopneaIndex(Double value) {
-        this.hypopneaIndex = value;
-    }
+	/**
+	 * Sets the value of the hypopneaIndex property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setHypopneaIndex(Double value) {
+		this.hypopneaIndex = value;
+	}
 
-    /**
-     * Gets the value of the oxygenDesaturationIndex property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getOxygenDesaturationIndex() {
-        return oxygenDesaturationIndex;
-    }
+	/**
+	 * Gets the value of the oxygenDesaturationIndex property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getOxygenDesaturationIndex() {
+		return oxygenDesaturationIndex;
+	}
 
-    /**
-     * Sets the value of the oxygenDesaturationIndex property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setOxygenDesaturationIndex(Double value) {
-        this.oxygenDesaturationIndex = value;
-    }
+	/**
+	 * Sets the value of the oxygenDesaturationIndex property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setOxygenDesaturationIndex(Double value) {
+		this.oxygenDesaturationIndex = value;
+	}
 
-    /**
-     * Gets the value of the pressure property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PapSessionPressure }
-     *     
-     */
-    public PapSessionPressure getPressure() {
-        return pressure;
-    }
+	/**
+	 * Gets the value of the pressure property.
+	 * 
+	 * @return possible object is {@link PapSessionPressure }
+	 * 
+	 */
+	public PapSessionPressure getPressure() {
+		return pressure;
+	}
 
-    /**
-     * Sets the value of the pressure property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PapSessionPressure }
-     *     
-     */
-    public void setPressure(PapSessionPressure value) {
-        this.pressure = value;
-    }
+	/**
+	 * Sets the value of the pressure property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link PapSessionPressure }
+	 * 
+	 */
+	public void setPressure(PapSessionPressure value) {
+		this.pressure = value;
+	}
 
-    /**
-     * Gets the value of the leakRate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PapSessionLeakRate }
-     *     
-     */
-    public PapSessionLeakRate getLeakRate() {
-        return leakRate;
-    }
+	/**
+	 * Gets the value of the leakRate property.
+	 * 
+	 * @return possible object is {@link PapSessionLeakRate }
+	 * 
+	 */
+	public PapSessionLeakRate getLeakRate() {
+		return leakRate;
+	}
 
-    /**
-     * Sets the value of the leakRate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PapSessionLeakRate }
-     *     
-     */
-    public void setLeakRate(PapSessionLeakRate value) {
-        this.leakRate = value;
-    }
+	/**
+	 * Sets the value of the leakRate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link PapSessionLeakRate }
+	 * 
+	 */
+	public void setLeakRate(PapSessionLeakRate value) {
+		this.leakRate = value;
+	}
 
-    /**
-     * Gets the value of the tidalVolume property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PapSessionTidalVolume }
-     *     
-     */
-    public PapSessionTidalVolume getTidalVolume() {
-        return tidalVolume;
-    }
+	/**
+	 * Gets the value of the tidalVolume property.
+	 * 
+	 * @return possible object is {@link PapSessionTidalVolume }
+	 * 
+	 */
+	public PapSessionTidalVolume getTidalVolume() {
+		return tidalVolume;
+	}
 
-    /**
-     * Sets the value of the tidalVolume property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PapSessionTidalVolume }
-     *     
-     */
-    public void setTidalVolume(PapSessionTidalVolume value) {
-        this.tidalVolume = value;
-    }
+	/**
+	 * Sets the value of the tidalVolume property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link PapSessionTidalVolume }
+	 * 
+	 */
+	public void setTidalVolume(PapSessionTidalVolume value) {
+		this.tidalVolume = value;
+	}
 
-    /**
-     * Gets the value of the minuteVentilation property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PapSessionMinuteVentilation }
-     *     
-     */
-    public PapSessionMinuteVentilation getMinuteVentilation() {
-        return minuteVentilation;
-    }
+	/**
+	 * Gets the value of the minuteVentilation property.
+	 * 
+	 * @return possible object is {@link PapSessionMinuteVentilation }
+	 * 
+	 */
+	public PapSessionMinuteVentilation getMinuteVentilation() {
+		return minuteVentilation;
+	}
 
-    /**
-     * Sets the value of the minuteVentilation property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PapSessionMinuteVentilation }
-     *     
-     */
-    public void setMinuteVentilation(PapSessionMinuteVentilation value) {
-        this.minuteVentilation = value;
-    }
+	/**
+	 * Sets the value of the minuteVentilation property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link PapSessionMinuteVentilation }
+	 * 
+	 */
+	public void setMinuteVentilation(PapSessionMinuteVentilation value) {
+		this.minuteVentilation = value;
+	}
 
-    /**
-     * Gets the value of the respiratoryRate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PapSessionRespiratoryRate }
-     *     
-     */
-    public PapSessionRespiratoryRate getRespiratoryRate() {
-        return respiratoryRate;
-    }
+	/**
+	 * Gets the value of the respiratoryRate property.
+	 * 
+	 * @return possible object is {@link PapSessionRespiratoryRate }
+	 * 
+	 */
+	public PapSessionRespiratoryRate getRespiratoryRate() {
+		return respiratoryRate;
+	}
 
-    /**
-     * Sets the value of the respiratoryRate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PapSessionRespiratoryRate }
-     *     
-     */
-    public void setRespiratoryRate(PapSessionRespiratoryRate value) {
-        this.respiratoryRate = value;
-    }
+	/**
+	 * Sets the value of the respiratoryRate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link PapSessionRespiratoryRate }
+	 * 
+	 */
+	public void setRespiratoryRate(PapSessionRespiratoryRate value) {
+		this.respiratoryRate = value;
+	}
 
 }

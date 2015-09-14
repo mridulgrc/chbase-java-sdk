@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.location;
 
 import java.util.ArrayList;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.Location;
 
-
 /**
  * 
  * <pre>
@@ -26,9 +24,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Location;
  * </pre>
  * 
  * 
- * <p>Java class for SupportedLocationList complex type.
+ * <p>
+ * Java class for SupportedLocationList complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="SupportedLocationList">
@@ -46,67 +47,62 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Location;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SupportedLocationList", propOrder = {
-    "location",
-    "allLocations"
-})
+@XmlType(name = "SupportedLocationList", propOrder = { "location", "allLocations" })
 public class SupportedLocationList {
 
-    protected List<Location> location;
-    @XmlElement(name = "all-locations")
-    protected Boolean allLocations;
+	protected List<Location> location;
+	@XmlElement(name = "all-locations")
+	protected Boolean allLocations;
 
-    /**
-     * Gets the value of the location property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the location property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getLocation().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Location }
-     * 
-     * 
-     */
-    public List<Location> getLocation() {
-        if (location == null) {
-            location = new ArrayList<Location>();
-        }
-        return this.location;
-    }
+	/**
+	 * Gets the value of the location property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the location property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getLocation().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Location
+	 * }
+	 * 
+	 * 
+	 */
+	public List<Location> getLocation() {
+		if (location == null) {
+			location = new ArrayList<Location>();
+		}
+		return this.location;
+	}
 
-    /**
-     * Gets the value of the allLocations property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isAllLocations() {
-        return allLocations;
-    }
+	/**
+	 * Gets the value of the allLocations property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isAllLocations() {
+		return allLocations;
+	}
 
-    /**
-     * Sets the value of the allLocations property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setAllLocations(Boolean value) {
-        this.allLocations = value;
-    }
+	/**
+	 * Sets the value of the allLocations property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setAllLocations(Boolean value) {
+		this.allLocations = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodedValue;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodedValue;
  * </pre>
  * 
  * 
- * <p>Java class for DirectoryDataProviderCategories complex type.
+ * <p>
+ * Java class for DirectoryDataProviderCategories complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="DirectoryDataProviderCategories">
@@ -51,41 +52,40 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodedValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DirectoryDataProviderCategories", propOrder = {
-    "dataProviderCategory"
-})
+@XmlType(name = "DirectoryDataProviderCategories", propOrder = { "dataProviderCategory" })
 public class DirectoryDataProviderCategories {
 
-    @XmlElement(name = "data-provider-category", required = true)
-    protected List<CodedValue> dataProviderCategory;
+	@XmlElement(name = "data-provider-category", required = true)
+	protected List<CodedValue> dataProviderCategory;
 
-    /**
-     * Gets the value of the dataProviderCategory property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dataProviderCategory property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDataProviderCategory().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodedValue }
-     * 
-     * 
-     */
-    public List<CodedValue> getDataProviderCategory() {
-        if (dataProviderCategory == null) {
-            dataProviderCategory = new ArrayList<CodedValue>();
-        }
-        return this.dataProviderCategory;
-    }
+	/**
+	 * Gets the value of the dataProviderCategory property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the dataProviderCategory property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getDataProviderCategory().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodedValue }
+	 * 
+	 * 
+	 */
+	public List<CodedValue> getDataProviderCategory() {
+		if (dataProviderCategory == null) {
+			dataProviderCategory = new ArrayList<CodedValue>();
+		}
+		return this.dataProviderCategory;
+	}
 
 }

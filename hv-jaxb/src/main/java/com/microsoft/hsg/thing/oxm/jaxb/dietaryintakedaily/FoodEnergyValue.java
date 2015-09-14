@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:20:05 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.dietaryintakedaily;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,11 +12,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.DisplayValue;
 
-
 /**
- * <p>Java class for food-energy-value complex type.
+ * <p>
+ * Java class for food-energy-value complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="food-energy-value">
@@ -35,53 +36,47 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.DisplayValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "food-energy-value", propOrder = {
-    "calories",
-    "display"
-})
+@XmlType(name = "food-energy-value", propOrder = { "calories", "display" })
 public class FoodEnergyValue {
 
-    protected double calories;
-    protected DisplayValue display;
+	protected double calories;
+	protected DisplayValue display;
 
-    /**
-     * Gets the value of the calories property.
-     * 
-     */
-    public double getCalories() {
-        return calories;
-    }
+	/**
+	 * Gets the value of the calories property.
+	 * 
+	 */
+	public double getCalories() {
+		return calories;
+	}
 
-    /**
-     * Sets the value of the calories property.
-     * 
-     */
-    public void setCalories(double value) {
-        this.calories = value;
-    }
+	/**
+	 * Sets the value of the calories property.
+	 * 
+	 */
+	public void setCalories(double value) {
+		this.calories = value;
+	}
 
-    /**
-     * Gets the value of the display property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public DisplayValue getDisplay() {
-        return display;
-    }
+	/**
+	 * Gets the value of the display property.
+	 * 
+	 * @return possible object is {@link DisplayValue }
+	 * 
+	 */
+	public DisplayValue getDisplay() {
+		return display;
+	}
 
-    /**
-     * Sets the value of the display property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public void setDisplay(DisplayValue value) {
-        this.display = value;
-    }
+	/**
+	 * Sets the value of the display property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DisplayValue }
+	 * 
+	 */
+	public void setDisplay(DisplayValue value) {
+		this.display = value;
+	}
 
 }

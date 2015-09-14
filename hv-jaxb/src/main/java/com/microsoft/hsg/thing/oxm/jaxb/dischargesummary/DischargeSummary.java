@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:39:58 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.dischargesummary;
 
 import java.util.ArrayList;
@@ -19,7 +18,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -71,474 +72,416 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "type",
-    "category",
-    "setting",
-    "specialty",
-    "text",
-    "primaryProvider",
-    "primaryProviderEndorsement",
-    "secondaryProvider",
-    "secondaryProviderEndorsement",
-    "dischargeDateTime",
-    "admittingDiagnosis",
-    "principalDiagnosis",
-    "additionalDiagnosis",
-    "principalProcedurePhysician",
-    "principalProcedure",
-    "additionalProcedure"
-})
+@XmlType(name = "", propOrder = { "when", "type", "category", "setting", "specialty", "text", "primaryProvider",
+		"primaryProviderEndorsement", "secondaryProvider", "secondaryProviderEndorsement", "dischargeDateTime",
+		"admittingDiagnosis", "principalDiagnosis", "additionalDiagnosis", "principalProcedurePhysician",
+		"principalProcedure", "additionalProcedure" })
 @XmlRootElement(name = "discharge-summary")
 public class DischargeSummary {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    protected CodableValue type;
-    protected CodableValue category;
-    protected CodableValue setting;
-    protected String specialty;
-    protected String text;
-    @XmlElement(name = "primary-provider")
-    protected Person primaryProvider;
-    @XmlElement(name = "primary-provider-endorsement")
-    protected DateTime primaryProviderEndorsement;
-    @XmlElement(name = "secondary-provider")
-    protected Person secondaryProvider;
-    @XmlElement(name = "secondary-provider-endorsement")
-    protected DateTime secondaryProviderEndorsement;
-    @XmlElement(name = "discharge-date-time")
-    protected ApproxDateTime dischargeDateTime;
-    @XmlElement(name = "admitting-diagnosis")
-    protected CodableValue admittingDiagnosis;
-    @XmlElement(name = "principal-diagnosis")
-    protected CodableValue principalDiagnosis;
-    @XmlElement(name = "additional-diagnosis")
-    protected List<CodableValue> additionalDiagnosis;
-    @XmlElement(name = "principal-procedure-physician")
-    protected Person principalProcedurePhysician;
-    @XmlElement(name = "principal-procedure")
-    protected CodableValue principalProcedure;
-    @XmlElement(name = "additional-procedure")
-    protected List<CodableValue> additionalProcedure;
+	@XmlElement(required = true)
+	protected DateTime when;
+	protected CodableValue type;
+	protected CodableValue category;
+	protected CodableValue setting;
+	protected String specialty;
+	protected String text;
+	@XmlElement(name = "primary-provider")
+	protected Person primaryProvider;
+	@XmlElement(name = "primary-provider-endorsement")
+	protected DateTime primaryProviderEndorsement;
+	@XmlElement(name = "secondary-provider")
+	protected Person secondaryProvider;
+	@XmlElement(name = "secondary-provider-endorsement")
+	protected DateTime secondaryProviderEndorsement;
+	@XmlElement(name = "discharge-date-time")
+	protected ApproxDateTime dischargeDateTime;
+	@XmlElement(name = "admitting-diagnosis")
+	protected CodableValue admittingDiagnosis;
+	@XmlElement(name = "principal-diagnosis")
+	protected CodableValue principalDiagnosis;
+	@XmlElement(name = "additional-diagnosis")
+	protected List<CodableValue> additionalDiagnosis;
+	@XmlElement(name = "principal-procedure-physician")
+	protected Person principalProcedurePhysician;
+	@XmlElement(name = "principal-procedure")
+	protected CodableValue principalProcedure;
+	@XmlElement(name = "additional-procedure")
+	protected List<CodableValue> additionalProcedure;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getType() {
-        return type;
-    }
+	/**
+	 * Gets the value of the type property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getType() {
+		return type;
+	}
 
-    /**
-     * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setType(CodableValue value) {
-        this.type = value;
-    }
+	/**
+	 * Sets the value of the type property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setType(CodableValue value) {
+		this.type = value;
+	}
 
-    /**
-     * Gets the value of the category property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getCategory() {
-        return category;
-    }
+	/**
+	 * Gets the value of the category property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getCategory() {
+		return category;
+	}
 
-    /**
-     * Sets the value of the category property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setCategory(CodableValue value) {
-        this.category = value;
-    }
+	/**
+	 * Sets the value of the category property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setCategory(CodableValue value) {
+		this.category = value;
+	}
 
-    /**
-     * Gets the value of the setting property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getSetting() {
-        return setting;
-    }
+	/**
+	 * Gets the value of the setting property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getSetting() {
+		return setting;
+	}
 
-    /**
-     * Sets the value of the setting property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setSetting(CodableValue value) {
-        this.setting = value;
-    }
+	/**
+	 * Sets the value of the setting property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setSetting(CodableValue value) {
+		this.setting = value;
+	}
 
-    /**
-     * Gets the value of the specialty property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSpecialty() {
-        return specialty;
-    }
+	/**
+	 * Gets the value of the specialty property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSpecialty() {
+		return specialty;
+	}
 
-    /**
-     * Sets the value of the specialty property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSpecialty(String value) {
-        this.specialty = value;
-    }
+	/**
+	 * Sets the value of the specialty property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSpecialty(String value) {
+		this.specialty = value;
+	}
 
-    /**
-     * Gets the value of the text property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getText() {
-        return text;
-    }
+	/**
+	 * Gets the value of the text property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getText() {
+		return text;
+	}
 
-    /**
-     * Sets the value of the text property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setText(String value) {
-        this.text = value;
-    }
+	/**
+	 * Sets the value of the text property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setText(String value) {
+		this.text = value;
+	}
 
-    /**
-     * Gets the value of the primaryProvider property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getPrimaryProvider() {
-        return primaryProvider;
-    }
+	/**
+	 * Gets the value of the primaryProvider property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getPrimaryProvider() {
+		return primaryProvider;
+	}
 
-    /**
-     * Sets the value of the primaryProvider property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setPrimaryProvider(Person value) {
-        this.primaryProvider = value;
-    }
+	/**
+	 * Sets the value of the primaryProvider property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setPrimaryProvider(Person value) {
+		this.primaryProvider = value;
+	}
 
-    /**
-     * Gets the value of the primaryProviderEndorsement property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getPrimaryProviderEndorsement() {
-        return primaryProviderEndorsement;
-    }
+	/**
+	 * Gets the value of the primaryProviderEndorsement property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getPrimaryProviderEndorsement() {
+		return primaryProviderEndorsement;
+	}
 
-    /**
-     * Sets the value of the primaryProviderEndorsement property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setPrimaryProviderEndorsement(DateTime value) {
-        this.primaryProviderEndorsement = value;
-    }
+	/**
+	 * Sets the value of the primaryProviderEndorsement property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setPrimaryProviderEndorsement(DateTime value) {
+		this.primaryProviderEndorsement = value;
+	}
 
-    /**
-     * Gets the value of the secondaryProvider property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getSecondaryProvider() {
-        return secondaryProvider;
-    }
+	/**
+	 * Gets the value of the secondaryProvider property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getSecondaryProvider() {
+		return secondaryProvider;
+	}
 
-    /**
-     * Sets the value of the secondaryProvider property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setSecondaryProvider(Person value) {
-        this.secondaryProvider = value;
-    }
+	/**
+	 * Sets the value of the secondaryProvider property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setSecondaryProvider(Person value) {
+		this.secondaryProvider = value;
+	}
 
-    /**
-     * Gets the value of the secondaryProviderEndorsement property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getSecondaryProviderEndorsement() {
-        return secondaryProviderEndorsement;
-    }
+	/**
+	 * Gets the value of the secondaryProviderEndorsement property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getSecondaryProviderEndorsement() {
+		return secondaryProviderEndorsement;
+	}
 
-    /**
-     * Sets the value of the secondaryProviderEndorsement property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setSecondaryProviderEndorsement(DateTime value) {
-        this.secondaryProviderEndorsement = value;
-    }
+	/**
+	 * Sets the value of the secondaryProviderEndorsement property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setSecondaryProviderEndorsement(DateTime value) {
+		this.secondaryProviderEndorsement = value;
+	}
 
-    /**
-     * Gets the value of the dischargeDateTime property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getDischargeDateTime() {
-        return dischargeDateTime;
-    }
+	/**
+	 * Gets the value of the dischargeDateTime property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getDischargeDateTime() {
+		return dischargeDateTime;
+	}
 
-    /**
-     * Sets the value of the dischargeDateTime property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setDischargeDateTime(ApproxDateTime value) {
-        this.dischargeDateTime = value;
-    }
+	/**
+	 * Sets the value of the dischargeDateTime property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setDischargeDateTime(ApproxDateTime value) {
+		this.dischargeDateTime = value;
+	}
 
-    /**
-     * Gets the value of the admittingDiagnosis property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getAdmittingDiagnosis() {
-        return admittingDiagnosis;
-    }
+	/**
+	 * Gets the value of the admittingDiagnosis property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getAdmittingDiagnosis() {
+		return admittingDiagnosis;
+	}
 
-    /**
-     * Sets the value of the admittingDiagnosis property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setAdmittingDiagnosis(CodableValue value) {
-        this.admittingDiagnosis = value;
-    }
+	/**
+	 * Sets the value of the admittingDiagnosis property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setAdmittingDiagnosis(CodableValue value) {
+		this.admittingDiagnosis = value;
+	}
 
-    /**
-     * Gets the value of the principalDiagnosis property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getPrincipalDiagnosis() {
-        return principalDiagnosis;
-    }
+	/**
+	 * Gets the value of the principalDiagnosis property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getPrincipalDiagnosis() {
+		return principalDiagnosis;
+	}
 
-    /**
-     * Sets the value of the principalDiagnosis property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setPrincipalDiagnosis(CodableValue value) {
-        this.principalDiagnosis = value;
-    }
+	/**
+	 * Sets the value of the principalDiagnosis property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setPrincipalDiagnosis(CodableValue value) {
+		this.principalDiagnosis = value;
+	}
 
-    /**
-     * Gets the value of the additionalDiagnosis property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the additionalDiagnosis property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAdditionalDiagnosis().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodableValue }
-     * 
-     * 
-     */
-    public List<CodableValue> getAdditionalDiagnosis() {
-        if (additionalDiagnosis == null) {
-            additionalDiagnosis = new ArrayList<CodableValue>();
-        }
-        return this.additionalDiagnosis;
-    }
+	/**
+	 * Gets the value of the additionalDiagnosis property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the additionalDiagnosis property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAdditionalDiagnosis().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodableValue }
+	 * 
+	 * 
+	 */
+	public List<CodableValue> getAdditionalDiagnosis() {
+		if (additionalDiagnosis == null) {
+			additionalDiagnosis = new ArrayList<CodableValue>();
+		}
+		return this.additionalDiagnosis;
+	}
 
-    /**
-     * Gets the value of the principalProcedurePhysician property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getPrincipalProcedurePhysician() {
-        return principalProcedurePhysician;
-    }
+	/**
+	 * Gets the value of the principalProcedurePhysician property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getPrincipalProcedurePhysician() {
+		return principalProcedurePhysician;
+	}
 
-    /**
-     * Sets the value of the principalProcedurePhysician property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setPrincipalProcedurePhysician(Person value) {
-        this.principalProcedurePhysician = value;
-    }
+	/**
+	 * Sets the value of the principalProcedurePhysician property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setPrincipalProcedurePhysician(Person value) {
+		this.principalProcedurePhysician = value;
+	}
 
-    /**
-     * Gets the value of the principalProcedure property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getPrincipalProcedure() {
-        return principalProcedure;
-    }
+	/**
+	 * Gets the value of the principalProcedure property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getPrincipalProcedure() {
+		return principalProcedure;
+	}
 
-    /**
-     * Sets the value of the principalProcedure property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setPrincipalProcedure(CodableValue value) {
-        this.principalProcedure = value;
-    }
+	/**
+	 * Sets the value of the principalProcedure property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setPrincipalProcedure(CodableValue value) {
+		this.principalProcedure = value;
+	}
 
-    /**
-     * Gets the value of the additionalProcedure property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the additionalProcedure property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAdditionalProcedure().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodableValue }
-     * 
-     * 
-     */
-    public List<CodableValue> getAdditionalProcedure() {
-        if (additionalProcedure == null) {
-            additionalProcedure = new ArrayList<CodableValue>();
-        }
-        return this.additionalProcedure;
-    }
+	/**
+	 * Gets the value of the additionalProcedure property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the additionalProcedure property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAdditionalProcedure().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodableValue }
+	 * 
+	 * 
+	 */
+	public List<CodableValue> getAdditionalProcedure() {
+		if (additionalProcedure == null) {
+			additionalProcedure = new ArrayList<CodableValue>();
+		}
+		return this.additionalProcedure;
+	}
 
 }

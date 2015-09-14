@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:14 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.exercise;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.LengthValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -41,9 +39,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -66,204 +67,183 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "activity",
-    "title",
-    "distance",
-    "duration",
-    "detail",
-    "segment"
-})
+@XmlType(name = "", propOrder = { "when", "activity", "title", "distance", "duration", "detail", "segment" })
 @XmlRootElement(name = "exercise")
 public class Exercise {
 
-    @XmlElement(required = true)
-    protected ApproxDateTime when;
-    @XmlElement(required = true)
-    protected CodableValue activity;
-    protected String title;
-    protected LengthValue distance;
-    protected Double duration;
-    protected List<StructuredNameValue> detail;
-    protected List<ExerciseSegment> segment;
+	@XmlElement(required = true)
+	protected ApproxDateTime when;
+	@XmlElement(required = true)
+	protected CodableValue activity;
+	protected String title;
+	protected LengthValue distance;
+	protected Double duration;
+	protected List<StructuredNameValue> detail;
+	protected List<ExerciseSegment> segment;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setWhen(ApproxDateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setWhen(ApproxDateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the activity property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getActivity() {
-        return activity;
-    }
+	/**
+	 * Gets the value of the activity property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getActivity() {
+		return activity;
+	}
 
-    /**
-     * Sets the value of the activity property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setActivity(CodableValue value) {
-        this.activity = value;
-    }
+	/**
+	 * Sets the value of the activity property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setActivity(CodableValue value) {
+		this.activity = value;
+	}
 
-    /**
-     * Gets the value of the title property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTitle() {
-        return title;
-    }
+	/**
+	 * Gets the value of the title property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTitle() {
+		return title;
+	}
 
-    /**
-     * Sets the value of the title property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTitle(String value) {
-        this.title = value;
-    }
+	/**
+	 * Sets the value of the title property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTitle(String value) {
+		this.title = value;
+	}
 
-    /**
-     * Gets the value of the distance property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link LengthValue }
-     *     
-     */
-    public LengthValue getDistance() {
-        return distance;
-    }
+	/**
+	 * Gets the value of the distance property.
+	 * 
+	 * @return possible object is {@link LengthValue }
+	 * 
+	 */
+	public LengthValue getDistance() {
+		return distance;
+	}
 
-    /**
-     * Sets the value of the distance property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link LengthValue }
-     *     
-     */
-    public void setDistance(LengthValue value) {
-        this.distance = value;
-    }
+	/**
+	 * Sets the value of the distance property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link LengthValue }
+	 * 
+	 */
+	public void setDistance(LengthValue value) {
+		this.distance = value;
+	}
 
-    /**
-     * Gets the value of the duration property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getDuration() {
-        return duration;
-    }
+	/**
+	 * Gets the value of the duration property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getDuration() {
+		return duration;
+	}
 
-    /**
-     * Sets the value of the duration property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setDuration(Double value) {
-        this.duration = value;
-    }
+	/**
+	 * Sets the value of the duration property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setDuration(Double value) {
+		this.duration = value;
+	}
 
-    /**
-     * Gets the value of the detail property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the detail property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDetail().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link StructuredNameValue }
-     * 
-     * 
-     */
-    public List<StructuredNameValue> getDetail() {
-        if (detail == null) {
-            detail = new ArrayList<StructuredNameValue>();
-        }
-        return this.detail;
-    }
+	/**
+	 * Gets the value of the detail property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the detail property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getDetail().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link StructuredNameValue }
+	 * 
+	 * 
+	 */
+	public List<StructuredNameValue> getDetail() {
+		if (detail == null) {
+			detail = new ArrayList<StructuredNameValue>();
+		}
+		return this.detail;
+	}
 
-    /**
-     * Gets the value of the segment property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the segment property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSegment().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ExerciseSegment }
-     * 
-     * 
-     */
-    public List<ExerciseSegment> getSegment() {
-        if (segment == null) {
-            segment = new ArrayList<ExerciseSegment>();
-        }
-        return this.segment;
-    }
+	/**
+	 * Gets the value of the segment property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the segment property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getSegment().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ExerciseSegment }
+	 * 
+	 * 
+	 */
+	public List<ExerciseSegment> getSegment() {
+		if (segment == null) {
+			segment = new ArrayList<ExerciseSegment>();
+		}
+		return this.segment;
+	}
 
 }

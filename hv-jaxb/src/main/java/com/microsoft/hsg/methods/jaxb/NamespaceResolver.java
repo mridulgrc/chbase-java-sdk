@@ -8,13 +8,12 @@ public class NamespaceResolver implements NamespaceContext {
 
 	private String prefix;
 	private String uri;
-	
-	public NamespaceResolver(String prefix, String uri)
-	{
+
+	public NamespaceResolver(String prefix, String uri) {
 		this.prefix = prefix;
 		this.uri = uri;
 	}
-	
+
 	public String getNamespaceURI(String prefix) {
 		return uri;
 	}

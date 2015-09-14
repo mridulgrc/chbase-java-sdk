@@ -5,7 +5,6 @@
 // Generated on: 2011.03.01 at 07:55:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.subscription;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for RecordItemChangedEventFilters complex type.
+ * <p>
+ * Java class for RecordItemChangedEventFilters complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="RecordItemChangedEventFilters">
@@ -44,41 +45,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RecordItemChangedEventFilters", propOrder = {
-    "filter"
-})
+@XmlType(name = "RecordItemChangedEventFilters", propOrder = { "filter" })
 public class RecordItemChangedEventFilters {
 
-    @XmlElement(required = true)
-    protected List<RecordItemChangedEventFilter> filter;
+	@XmlElement(required = true)
+	protected List<RecordItemChangedEventFilter> filter;
 
-    /**
-     * Gets the value of the filter property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the filter property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getFilter().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link RecordItemChangedEventFilter }
-     * 
-     * 
-     */
-    public List<RecordItemChangedEventFilter> getFilter() {
-        if (filter == null) {
-            filter = new ArrayList<RecordItemChangedEventFilter>();
-        }
-        return this.filter;
-    }
+	/**
+	 * Gets the value of the filter property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the filter property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getFilter().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link RecordItemChangedEventFilter }
+	 * 
+	 * 
+	 */
+	public List<RecordItemChangedEventFilter> getFilter() {
+		if (filter == null) {
+			filter = new ArrayList<RecordItemChangedEventFilter>();
+		}
+		return this.filter;
+	}
 
 }

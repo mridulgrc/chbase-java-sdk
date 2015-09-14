@@ -5,13 +5,11 @@
 // Generated on: 2011.02.07 at 01:38:03 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.aerobicprofile;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -31,9 +29,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for MaxVO2 complex type.
+ * <p>
+ * Java class for MaxVO2 complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="MaxVO2">
@@ -51,61 +52,52 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "MaxVO2", propOrder = {
-    "absolute",
-    "relative"
-})
+@XmlType(name = "MaxVO2", propOrder = { "absolute", "relative" })
 public class MaxVO2 {
 
-    protected Double absolute;
-    protected Double relative;
+	protected Double absolute;
+	protected Double relative;
 
-    /**
-     * Gets the value of the absolute property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getAbsolute() {
-        return absolute;
-    }
+	/**
+	 * Gets the value of the absolute property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getAbsolute() {
+		return absolute;
+	}
 
-    /**
-     * Sets the value of the absolute property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setAbsolute(Double value) {
-        this.absolute = value;
-    }
+	/**
+	 * Sets the value of the absolute property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setAbsolute(Double value) {
+		this.absolute = value;
+	}
 
-    /**
-     * Gets the value of the relative property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getRelative() {
-        return relative;
-    }
+	/**
+	 * Gets the value of the relative property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getRelative() {
+		return relative;
+	}
 
-    /**
-     * Sets the value of the relative property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setRelative(Double value) {
-        this.relative = value;
-    }
+	/**
+	 * Sets the value of the relative property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setRelative(Double value) {
+		this.relative = value;
+	}
 
 }

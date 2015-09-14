@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:39:32 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.contact;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -52,37 +53,34 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "contact"
-})
+@XmlType(name = "", propOrder = { "contact" })
 @XmlRootElement(name = "contact")
 public class Contact {
 
-    @XmlElement(required = true)
-    protected com.microsoft.hsg.thing.oxm.jaxb.base.Contact contact;
+	@XmlElement(required = true)
+	protected com.microsoft.hsg.thing.oxm.jaxb.base.Contact contact;
 
-    /**
-     * Gets the value of the contact property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link com.microsoft.hsg.thing.oxm.jaxb.base.Contact }
-     *     
-     */
-    public com.microsoft.hsg.thing.oxm.jaxb.base.Contact getContact() {
-        return contact;
-    }
+	/**
+	 * Gets the value of the contact property.
+	 * 
+	 * @return possible object is
+	 *         {@link com.microsoft.hsg.thing.oxm.jaxb.base.Contact }
+	 * 
+	 */
+	public com.microsoft.hsg.thing.oxm.jaxb.base.Contact getContact() {
+		return contact;
+	}
 
-    /**
-     * Sets the value of the contact property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link com.microsoft.hsg.thing.oxm.jaxb.base.Contact }
-     *     
-     */
-    public void setContact(com.microsoft.hsg.thing.oxm.jaxb.base.Contact value) {
-        this.contact = value;
-    }
+	/**
+	 * Sets the value of the contact property.
+	 * 
+	 * @param value
+	 *            allowed object is
+	 *            {@link com.microsoft.hsg.thing.oxm.jaxb.base.Contact }
+	 * 
+	 */
+	public void setContact(com.microsoft.hsg.thing.oxm.jaxb.base.Contact value) {
+		this.contact = value;
+	}
 
 }

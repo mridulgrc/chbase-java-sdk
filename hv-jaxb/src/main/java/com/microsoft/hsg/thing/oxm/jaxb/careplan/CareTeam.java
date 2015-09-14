@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:19:17 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.careplan;
 
 import java.util.ArrayList;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 
-
 /**
  * 
  * <pre>
@@ -26,9 +24,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
  * </pre>
  * 
  * 
- * <p>Java class for care-team complex type.
+ * <p>
+ * Java class for care-team complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="care-team">
@@ -45,41 +46,39 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "care-team", propOrder = {
-    "person"
-})
+@XmlType(name = "care-team", propOrder = { "person" })
 public class CareTeam {
 
-    @XmlElement(required = true)
-    protected List<Person> person;
+	@XmlElement(required = true)
+	protected List<Person> person;
 
-    /**
-     * Gets the value of the person property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the person property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getPerson().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Person }
-     * 
-     * 
-     */
-    public List<Person> getPerson() {
-        if (person == null) {
-            person = new ArrayList<Person>();
-        }
-        return this.person;
-    }
+	/**
+	 * Gets the value of the person property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the person property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getPerson().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Person }
+	 * 
+	 * 
+	 */
+	public List<Person> getPerson() {
+		if (person == null) {
+			person = new ArrayList<Person>();
+		}
+		return this.person;
+	}
 
 }

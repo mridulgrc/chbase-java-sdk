@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:38:33 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.appointment;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -17,7 +16,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.DurationValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -59,194 +60,165 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "duration",
-    "service",
-    "clinic",
-    "specialty",
-    "status",
-    "careClass"
-})
+@XmlType(name = "", propOrder = { "when", "duration", "service", "clinic", "specialty", "status", "careClass" })
 @XmlRootElement(name = "appointment")
 public class Appointment {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    protected DurationValue duration;
-    protected CodableValue service;
-    protected Person clinic;
-    protected CodableValue specialty;
-    protected CodableValue status;
-    @XmlElement(name = "care-class")
-    protected CodableValue careClass;
+	@XmlElement(required = true)
+	protected DateTime when;
+	protected DurationValue duration;
+	protected CodableValue service;
+	protected Person clinic;
+	protected CodableValue specialty;
+	protected CodableValue status;
+	@XmlElement(name = "care-class")
+	protected CodableValue careClass;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the duration property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DurationValue }
-     *     
-     */
-    public DurationValue getDuration() {
-        return duration;
-    }
+	/**
+	 * Gets the value of the duration property.
+	 * 
+	 * @return possible object is {@link DurationValue }
+	 * 
+	 */
+	public DurationValue getDuration() {
+		return duration;
+	}
 
-    /**
-     * Sets the value of the duration property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DurationValue }
-     *     
-     */
-    public void setDuration(DurationValue value) {
-        this.duration = value;
-    }
+	/**
+	 * Sets the value of the duration property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DurationValue }
+	 * 
+	 */
+	public void setDuration(DurationValue value) {
+		this.duration = value;
+	}
 
-    /**
-     * Gets the value of the service property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getService() {
-        return service;
-    }
+	/**
+	 * Gets the value of the service property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getService() {
+		return service;
+	}
 
-    /**
-     * Sets the value of the service property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setService(CodableValue value) {
-        this.service = value;
-    }
+	/**
+	 * Sets the value of the service property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setService(CodableValue value) {
+		this.service = value;
+	}
 
-    /**
-     * Gets the value of the clinic property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getClinic() {
-        return clinic;
-    }
+	/**
+	 * Gets the value of the clinic property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getClinic() {
+		return clinic;
+	}
 
-    /**
-     * Sets the value of the clinic property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setClinic(Person value) {
-        this.clinic = value;
-    }
+	/**
+	 * Sets the value of the clinic property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setClinic(Person value) {
+		this.clinic = value;
+	}
 
-    /**
-     * Gets the value of the specialty property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getSpecialty() {
-        return specialty;
-    }
+	/**
+	 * Gets the value of the specialty property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getSpecialty() {
+		return specialty;
+	}
 
-    /**
-     * Sets the value of the specialty property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setSpecialty(CodableValue value) {
-        this.specialty = value;
-    }
+	/**
+	 * Sets the value of the specialty property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setSpecialty(CodableValue value) {
+		this.specialty = value;
+	}
 
-    /**
-     * Gets the value of the status property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getStatus() {
-        return status;
-    }
+	/**
+	 * Gets the value of the status property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getStatus() {
+		return status;
+	}
 
-    /**
-     * Sets the value of the status property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setStatus(CodableValue value) {
-        this.status = value;
-    }
+	/**
+	 * Sets the value of the status property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setStatus(CodableValue value) {
+		this.status = value;
+	}
 
-    /**
-     * Gets the value of the careClass property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getCareClass() {
-        return careClass;
-    }
+	/**
+	 * Gets the value of the careClass property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getCareClass() {
+		return careClass;
+	}
 
-    /**
-     * Sets the value of the careClass property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setCareClass(CodableValue value) {
-        this.careClass = value;
-    }
+	/**
+	 * Sets the value of the careClass property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setCareClass(CodableValue value) {
+		this.careClass = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:41:51 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.medication;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -18,7 +17,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
 
-
 /**
  * 
  * <pre>
@@ -28,9 +26,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
  * </pre>
  * 
  * 
- * <p>Java class for Prescription complex type.
+ * <p>
+ * Java class for Prescription complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Prescription">
@@ -54,222 +55,190 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Prescription", propOrder = {
-    "prescribedBy",
-    "datePrescribed",
-    "amountPrescribed",
-    "substitution",
-    "refills",
-    "daysSupply",
-    "prescriptionExpiration",
-    "instructions"
-})
+@XmlType(name = "Prescription", propOrder = { "prescribedBy", "datePrescribed", "amountPrescribed", "substitution",
+		"refills", "daysSupply", "prescriptionExpiration", "instructions" })
 public class Prescription {
 
-    @XmlElement(name = "prescribed-by", required = true)
-    protected Person prescribedBy;
-    @XmlElement(name = "date-prescribed")
-    protected ApproxDateTime datePrescribed;
-    @XmlElement(name = "amount-prescribed")
-    protected GeneralMeasurement amountPrescribed;
-    protected CodableValue substitution;
-    protected Integer refills;
-    @XmlElement(name = "days-supply")
-    protected Integer daysSupply;
-    @XmlElement(name = "prescription-expiration")
-    protected Date prescriptionExpiration;
-    protected CodableValue instructions;
+	@XmlElement(name = "prescribed-by", required = true)
+	protected Person prescribedBy;
+	@XmlElement(name = "date-prescribed")
+	protected ApproxDateTime datePrescribed;
+	@XmlElement(name = "amount-prescribed")
+	protected GeneralMeasurement amountPrescribed;
+	protected CodableValue substitution;
+	protected Integer refills;
+	@XmlElement(name = "days-supply")
+	protected Integer daysSupply;
+	@XmlElement(name = "prescription-expiration")
+	protected Date prescriptionExpiration;
+	protected CodableValue instructions;
 
-    /**
-     * Gets the value of the prescribedBy property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getPrescribedBy() {
-        return prescribedBy;
-    }
+	/**
+	 * Gets the value of the prescribedBy property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getPrescribedBy() {
+		return prescribedBy;
+	}
 
-    /**
-     * Sets the value of the prescribedBy property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setPrescribedBy(Person value) {
-        this.prescribedBy = value;
-    }
+	/**
+	 * Sets the value of the prescribedBy property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setPrescribedBy(Person value) {
+		this.prescribedBy = value;
+	}
 
-    /**
-     * Gets the value of the datePrescribed property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getDatePrescribed() {
-        return datePrescribed;
-    }
+	/**
+	 * Gets the value of the datePrescribed property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getDatePrescribed() {
+		return datePrescribed;
+	}
 
-    /**
-     * Sets the value of the datePrescribed property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setDatePrescribed(ApproxDateTime value) {
-        this.datePrescribed = value;
-    }
+	/**
+	 * Sets the value of the datePrescribed property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setDatePrescribed(ApproxDateTime value) {
+		this.datePrescribed = value;
+	}
 
-    /**
-     * Gets the value of the amountPrescribed property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public GeneralMeasurement getAmountPrescribed() {
-        return amountPrescribed;
-    }
+	/**
+	 * Gets the value of the amountPrescribed property.
+	 * 
+	 * @return possible object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public GeneralMeasurement getAmountPrescribed() {
+		return amountPrescribed;
+	}
 
-    /**
-     * Sets the value of the amountPrescribed property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public void setAmountPrescribed(GeneralMeasurement value) {
-        this.amountPrescribed = value;
-    }
+	/**
+	 * Sets the value of the amountPrescribed property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public void setAmountPrescribed(GeneralMeasurement value) {
+		this.amountPrescribed = value;
+	}
 
-    /**
-     * Gets the value of the substitution property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getSubstitution() {
-        return substitution;
-    }
+	/**
+	 * Gets the value of the substitution property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getSubstitution() {
+		return substitution;
+	}
 
-    /**
-     * Sets the value of the substitution property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setSubstitution(CodableValue value) {
-        this.substitution = value;
-    }
+	/**
+	 * Sets the value of the substitution property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setSubstitution(CodableValue value) {
+		this.substitution = value;
+	}
 
-    /**
-     * Gets the value of the refills property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getRefills() {
-        return refills;
-    }
+	/**
+	 * Gets the value of the refills property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getRefills() {
+		return refills;
+	}
 
-    /**
-     * Sets the value of the refills property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setRefills(Integer value) {
-        this.refills = value;
-    }
+	/**
+	 * Sets the value of the refills property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setRefills(Integer value) {
+		this.refills = value;
+	}
 
-    /**
-     * Gets the value of the daysSupply property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getDaysSupply() {
-        return daysSupply;
-    }
+	/**
+	 * Gets the value of the daysSupply property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getDaysSupply() {
+		return daysSupply;
+	}
 
-    /**
-     * Sets the value of the daysSupply property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setDaysSupply(Integer value) {
-        this.daysSupply = value;
-    }
+	/**
+	 * Sets the value of the daysSupply property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setDaysSupply(Integer value) {
+		this.daysSupply = value;
+	}
 
-    /**
-     * Gets the value of the prescriptionExpiration property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Date }
-     *     
-     */
-    public Date getPrescriptionExpiration() {
-        return prescriptionExpiration;
-    }
+	/**
+	 * Gets the value of the prescriptionExpiration property.
+	 * 
+	 * @return possible object is {@link Date }
+	 * 
+	 */
+	public Date getPrescriptionExpiration() {
+		return prescriptionExpiration;
+	}
 
-    /**
-     * Sets the value of the prescriptionExpiration property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Date }
-     *     
-     */
-    public void setPrescriptionExpiration(Date value) {
-        this.prescriptionExpiration = value;
-    }
+	/**
+	 * Sets the value of the prescriptionExpiration property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Date }
+	 * 
+	 */
+	public void setPrescriptionExpiration(Date value) {
+		this.prescriptionExpiration = value;
+	}
 
-    /**
-     * Gets the value of the instructions property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getInstructions() {
-        return instructions;
-    }
+	/**
+	 * Gets the value of the instructions property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getInstructions() {
+		return instructions;
+	}
 
-    /**
-     * Sets the value of the instructions property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setInstructions(CodableValue value) {
-        this.instructions = value;
-    }
+	/**
+	 * Sets the value of the instructions property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setInstructions(CodableValue value) {
+		this.instructions = value;
+	}
 
 }

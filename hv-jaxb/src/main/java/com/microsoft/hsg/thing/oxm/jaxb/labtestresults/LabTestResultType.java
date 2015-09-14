@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:41:29 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.labtestresults;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for lab-test-result-type complex type.
+ * <p>
+ * Java class for lab-test-result-type complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="lab-test-result-type">
@@ -51,219 +52,187 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "lab-test-result-type", propOrder = {
-    "when",
-    "name",
-    "substance",
-    "collectionMethod",
-    "clinicalCode",
-    "value",
-    "status",
-    "note"
-})
+@XmlType(name = "lab-test-result-type", propOrder = { "when", "name", "substance", "collectionMethod", "clinicalCode",
+		"value", "status", "note" })
 public class LabTestResultType {
 
-    protected ApproxDateTime when;
-    protected String name;
-    protected CodableValue substance;
-    @XmlElement(name = "collection-method")
-    protected CodableValue collectionMethod;
-    @XmlElement(name = "clinical-code")
-    protected CodableValue clinicalCode;
-    protected LabTestResultValueType value;
-    protected CodableValue status;
-    protected String note;
+	protected ApproxDateTime when;
+	protected String name;
+	protected CodableValue substance;
+	@XmlElement(name = "collection-method")
+	protected CodableValue collectionMethod;
+	@XmlElement(name = "clinical-code")
+	protected CodableValue clinicalCode;
+	protected LabTestResultValueType value;
+	protected CodableValue status;
+	protected String note;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setWhen(ApproxDateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setWhen(ApproxDateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the substance property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getSubstance() {
-        return substance;
-    }
+	/**
+	 * Gets the value of the substance property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getSubstance() {
+		return substance;
+	}
 
-    /**
-     * Sets the value of the substance property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setSubstance(CodableValue value) {
-        this.substance = value;
-    }
+	/**
+	 * Sets the value of the substance property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setSubstance(CodableValue value) {
+		this.substance = value;
+	}
 
-    /**
-     * Gets the value of the collectionMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getCollectionMethod() {
-        return collectionMethod;
-    }
+	/**
+	 * Gets the value of the collectionMethod property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getCollectionMethod() {
+		return collectionMethod;
+	}
 
-    /**
-     * Sets the value of the collectionMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setCollectionMethod(CodableValue value) {
-        this.collectionMethod = value;
-    }
+	/**
+	 * Sets the value of the collectionMethod property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setCollectionMethod(CodableValue value) {
+		this.collectionMethod = value;
+	}
 
-    /**
-     * Gets the value of the clinicalCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getClinicalCode() {
-        return clinicalCode;
-    }
+	/**
+	 * Gets the value of the clinicalCode property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getClinicalCode() {
+		return clinicalCode;
+	}
 
-    /**
-     * Sets the value of the clinicalCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setClinicalCode(CodableValue value) {
-        this.clinicalCode = value;
-    }
+	/**
+	 * Sets the value of the clinicalCode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setClinicalCode(CodableValue value) {
+		this.clinicalCode = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link LabTestResultValueType }
-     *     
-     */
-    public LabTestResultValueType getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link LabTestResultValueType }
+	 * 
+	 */
+	public LabTestResultValueType getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link LabTestResultValueType }
-     *     
-     */
-    public void setValue(LabTestResultValueType value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link LabTestResultValueType }
+	 * 
+	 */
+	public void setValue(LabTestResultValueType value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the status property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getStatus() {
-        return status;
-    }
+	/**
+	 * Gets the value of the status property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getStatus() {
+		return status;
+	}
 
-    /**
-     * Sets the value of the status property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setStatus(CodableValue value) {
-        this.status = value;
-    }
+	/**
+	 * Sets the value of the status property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setStatus(CodableValue value) {
+		this.status = value;
+	}
 
-    /**
-     * Gets the value of the note property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNote() {
-        return note;
-    }
+	/**
+	 * Gets the value of the note property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getNote() {
+		return note;
+	}
 
-    /**
-     * Sets the value of the note property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNote(String value) {
-        this.note = value;
-    }
+	/**
+	 * Sets the value of the note property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setNote(String value) {
+		this.note = value;
+	}
 
 }

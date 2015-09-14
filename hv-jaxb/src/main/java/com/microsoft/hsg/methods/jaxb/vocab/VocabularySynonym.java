@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocab;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for vocabulary-synonym complex type.
+ * <p>
+ * Java class for vocabulary-synonym complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="vocabulary-synonym">
@@ -47,31 +48,28 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "vocabulary-synonym")
 public class VocabularySynonym {
 
-    @XmlAttribute(required = true)
-    protected String term;
+	@XmlAttribute(required = true)
+	protected String term;
 
-    /**
-     * Gets the value of the term property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTerm() {
-        return term;
-    }
+	/**
+	 * Gets the value of the term property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTerm() {
+		return term;
+	}
 
-    /**
-     * Sets the value of the term property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTerm(String value) {
-        this.term = value;
-    }
+	/**
+	 * Sets the value of the term property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTerm(String value) {
+		this.term = value;
+	}
 
 }

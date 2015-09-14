@@ -5,36 +5,45 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     A volume measurement.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     A volume measurement.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     A volume measurement consists of the value in liters (L), 
- *                     and an 
- *                     optional display value. The display value is used to store 
- *                     the volume measurement in the user's preference of volume 
- *                     units. This avoids rounding errors when converting between units.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     A volume measurement consists of the value in liters (L), 
+
+ *                     and an 
+
+ *                     optional display value. The display value is used to store 
+
+ *                     the volume measurement in the user's preference of volume 
+
+ *                     units. This avoids rounding errors when converting between units.
+
  *                 &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for volume-value complex type.
+ * <p>
+ * Java class for volume-value complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="volume-value">
@@ -52,53 +61,47 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "volume-value", propOrder = {
-    "liters",
-    "display"
-})
+@XmlType(name = "volume-value", propOrder = { "liters", "display" })
 public class VolumeValue {
 
-    protected double liters;
-    protected DisplayValue display;
+	protected double liters;
+	protected DisplayValue display;
 
-    /**
-     * Gets the value of the liters property.
-     * 
-     */
-    public double getLiters() {
-        return liters;
-    }
+	/**
+	 * Gets the value of the liters property.
+	 * 
+	 */
+	public double getLiters() {
+		return liters;
+	}
 
-    /**
-     * Sets the value of the liters property.
-     * 
-     */
-    public void setLiters(double value) {
-        this.liters = value;
-    }
+	/**
+	 * Sets the value of the liters property.
+	 * 
+	 */
+	public void setLiters(double value) {
+		this.liters = value;
+	}
 
-    /**
-     * Gets the value of the display property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public DisplayValue getDisplay() {
-        return display;
-    }
+	/**
+	 * Gets the value of the display property.
+	 * 
+	 * @return possible object is {@link DisplayValue }
+	 * 
+	 */
+	public DisplayValue getDisplay() {
+		return display;
+	}
 
-    /**
-     * Sets the value of the display property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public void setDisplay(DisplayValue value) {
-        this.display = value;
-    }
+	/**
+	 * Sets the value of the display property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DisplayValue }
+	 * 
+	 */
+	public void setDisplay(DisplayValue value) {
+		this.display = value;
+	}
 
 }

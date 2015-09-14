@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:21:09 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthingtype.response;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -55,42 +56,41 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "thingType"
-})
+@XmlType(name = "", propOrder = { "thingType" })
 @XmlRootElement(name = "info")
 public class GetThingTypeResponse {
 
-    @XmlElement(name = "thing-type")
-    protected List<ThingTypeInfo> thingType;
+	@XmlElement(name = "thing-type")
+	protected List<ThingTypeInfo> thingType;
 
-    /**
-     * Gets the value of the thingType property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the thingType property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getThingType().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ThingTypeInfo }
-     * 
-     * 
-     */
-    public List<ThingTypeInfo> getThingType() {
-        if (thingType == null) {
-            thingType = new ArrayList<ThingTypeInfo>();
-        }
-        return this.thingType;
-    }
+	/**
+	 * Gets the value of the thingType property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the thingType property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getThingType().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ThingTypeInfo }
+	 * 
+	 * 
+	 */
+	public List<ThingTypeInfo> getThingType() {
+		if (thingType == null) {
+			thingType = new ArrayList<ThingTypeInfo>();
+		}
+		return this.thingType;
+	}
 
 }

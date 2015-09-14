@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
-
 
 /**
  * 
@@ -48,9 +46,12 @@ import javax.xml.bind.annotation.XmlValue;
  * </pre>
  * 
  * 
- * <p>Java class for display-value complex type.
+ * <p>
+ * Java class for display-value complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="display-value">
@@ -67,106 +68,95 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "display-value", propOrder = {
-    "value"
-})
+@XmlType(name = "display-value", propOrder = { "value" })
 public class DisplayValue {
 
-    @XmlValue
-    protected double value;
-    @XmlAttribute(name = "units", required = true)
-    protected String units;
-    @XmlAttribute(name = "units-code")
-    protected String unitsCode;
-    @XmlAttribute(name = "text")
-    protected String text;
+	@XmlValue
+	protected double value;
+	@XmlAttribute(name = "units", required = true)
+	protected String units;
+	@XmlAttribute(name = "units-code")
+	protected String unitsCode;
+	@XmlAttribute(name = "text")
+	protected String text;
 
-    /**
-     * Gets the value of the value property.
-     * 
-     */
-    public double getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 */
+	public double getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     */
-    public void setValue(double value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 */
+	public void setValue(double value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the units property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUnits() {
-        return units;
-    }
+	/**
+	 * Gets the value of the units property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getUnits() {
+		return units;
+	}
 
-    /**
-     * Sets the value of the units property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUnits(String value) {
-        this.units = value;
-    }
+	/**
+	 * Sets the value of the units property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setUnits(String value) {
+		this.units = value;
+	}
 
-    /**
-     * Gets the value of the unitsCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUnitsCode() {
-        return unitsCode;
-    }
+	/**
+	 * Gets the value of the unitsCode property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getUnitsCode() {
+		return unitsCode;
+	}
 
-    /**
-     * Sets the value of the unitsCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUnitsCode(String value) {
-        this.unitsCode = value;
-    }
+	/**
+	 * Sets the value of the unitsCode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setUnitsCode(String value) {
+		this.unitsCode = value;
+	}
 
-    /**
-     * Gets the value of the text property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getText() {
-        return text;
-    }
+	/**
+	 * Gets the value of the text property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getText() {
+		return text;
+	}
 
-    /**
-     * Sets the value of the text property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setText(String value) {
-        this.text = value;
-    }
+	/**
+	 * Sets the value of the text property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setText(String value) {
+		this.text = value;
+	}
 
 }

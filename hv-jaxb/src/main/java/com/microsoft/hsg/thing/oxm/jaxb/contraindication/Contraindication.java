@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:37:54 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.contraindication;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -57,143 +58,122 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "substance",
-    "status",
-    "source",
-    "documenter",
-    "documentedDate"
-})
+@XmlType(name = "", propOrder = { "substance", "status", "source", "documenter", "documentedDate" })
 @XmlRootElement(name = "contraindication")
 public class Contraindication {
 
-    @XmlElement(required = true)
-    protected CodableValue substance;
-    @XmlElement(required = true)
-    protected CodableValue status;
-    protected CodableValue source;
-    protected Person documenter;
-    @XmlElement(name = "documented-date")
-    protected ApproxDateTime documentedDate;
+	@XmlElement(required = true)
+	protected CodableValue substance;
+	@XmlElement(required = true)
+	protected CodableValue status;
+	protected CodableValue source;
+	protected Person documenter;
+	@XmlElement(name = "documented-date")
+	protected ApproxDateTime documentedDate;
 
-    /**
-     * Gets the value of the substance property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getSubstance() {
-        return substance;
-    }
+	/**
+	 * Gets the value of the substance property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getSubstance() {
+		return substance;
+	}
 
-    /**
-     * Sets the value of the substance property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setSubstance(CodableValue value) {
-        this.substance = value;
-    }
+	/**
+	 * Sets the value of the substance property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setSubstance(CodableValue value) {
+		this.substance = value;
+	}
 
-    /**
-     * Gets the value of the status property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getStatus() {
-        return status;
-    }
+	/**
+	 * Gets the value of the status property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getStatus() {
+		return status;
+	}
 
-    /**
-     * Sets the value of the status property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setStatus(CodableValue value) {
-        this.status = value;
-    }
+	/**
+	 * Sets the value of the status property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setStatus(CodableValue value) {
+		this.status = value;
+	}
 
-    /**
-     * Gets the value of the source property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getSource() {
-        return source;
-    }
+	/**
+	 * Gets the value of the source property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getSource() {
+		return source;
+	}
 
-    /**
-     * Sets the value of the source property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setSource(CodableValue value) {
-        this.source = value;
-    }
+	/**
+	 * Sets the value of the source property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setSource(CodableValue value) {
+		this.source = value;
+	}
 
-    /**
-     * Gets the value of the documenter property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getDocumenter() {
-        return documenter;
-    }
+	/**
+	 * Gets the value of the documenter property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getDocumenter() {
+		return documenter;
+	}
 
-    /**
-     * Sets the value of the documenter property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setDocumenter(Person value) {
-        this.documenter = value;
-    }
+	/**
+	 * Sets the value of the documenter property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setDocumenter(Person value) {
+		this.documenter = value;
+	}
 
-    /**
-     * Gets the value of the documentedDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getDocumentedDate() {
-        return documentedDate;
-    }
+	/**
+	 * Gets the value of the documentedDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getDocumentedDate() {
+		return documentedDate;
+	}
 
-    /**
-     * Sets the value of the documentedDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setDocumentedDate(ApproxDateTime value) {
-        this.documentedDate = value;
-    }
+	/**
+	 * Sets the value of the documentedDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setDocumentedDate(ApproxDateTime value) {
+		this.documentedDate = value;
+	}
 
 }

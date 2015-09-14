@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:13:58 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getupdatedrecordsforapplication2.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-
 
 /**
  * 
@@ -38,9 +36,12 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -56,43 +57,35 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "GetUpdatedRecordsForApplication",
-		methodVersion = "2",
-		responseNS = "urn:com.microsoft.wc.methods.response.GetUpdatedRecordsForApplication2")
+@JaxbRequest(methodName = "GetUpdatedRecordsForApplication", methodVersion = "2", responseNS = "urn:com.microsoft.wc.methods.response.GetUpdatedRecordsForApplication2")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "updateDate"
-})
+@XmlType(name = "", propOrder = { "updateDate" })
 @XmlRootElement(name = "info")
 public class GetUpdatedRecordsForApplication2Request {
 
-    @XmlElement(name = "update-date")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar updateDate;
+	@XmlElement(name = "update-date")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar updateDate;
 
-    /**
-     * Gets the value of the updateDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getUpdateDate() {
-        return updateDate;
-    }
+	/**
+	 * Gets the value of the updateDate property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getUpdateDate() {
+		return updateDate;
+	}
 
-    /**
-     * Sets the value of the updateDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setUpdateDate(XMLGregorianCalendar value) {
-        this.updateDate = value;
-    }
+	/**
+	 * Sets the value of the updateDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setUpdateDate(XMLGregorianCalendar value) {
+		this.updateDate = value;
+	}
 
 }

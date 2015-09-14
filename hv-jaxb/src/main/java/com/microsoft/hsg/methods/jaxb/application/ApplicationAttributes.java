@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.application;
 
 import java.util.ArrayList;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for ApplicationAttributes complex type.
+ * <p>
+ * Java class for ApplicationAttributes complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ApplicationAttributes">
@@ -36,41 +37,39 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ApplicationAttributes", propOrder = {
-    "appAttribute"
-})
+@XmlType(name = "ApplicationAttributes", propOrder = { "appAttribute" })
 public class ApplicationAttributes {
 
-    @XmlElement(name = "app-attribute", required = true)
-    protected List<String> appAttribute;
+	@XmlElement(name = "app-attribute", required = true)
+	protected List<String> appAttribute;
 
-    /**
-     * Gets the value of the appAttribute property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the appAttribute property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAppAttribute().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getAppAttribute() {
-        if (appAttribute == null) {
-            appAttribute = new ArrayList<String>();
-        }
-        return this.appAttribute;
-    }
+	/**
+	 * Gets the value of the appAttribute property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the appAttribute property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAppAttribute().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getAppAttribute() {
+		if (appAttribute == null) {
+			appAttribute = new ArrayList<String>();
+		}
+		return this.appAttribute;
+	}
 
 }

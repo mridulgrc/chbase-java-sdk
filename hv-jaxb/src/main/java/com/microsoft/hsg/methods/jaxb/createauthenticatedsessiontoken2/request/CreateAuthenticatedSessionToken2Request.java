@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:11:05 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.createauthenticatedsessiontoken2.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -31,9 +29,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -50,37 +51,32 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "authInfo"
-})
+@XmlType(name = "", propOrder = { "authInfo" })
 @XmlRootElement(name = "info")
 public class CreateAuthenticatedSessionToken2Request {
 
-    @XmlElement(name = "auth-info", required = true)
-    protected AuthTokenInfo authInfo;
+	@XmlElement(name = "auth-info", required = true)
+	protected AuthTokenInfo authInfo;
 
-    /**
-     * Gets the value of the authInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AuthTokenInfo }
-     *     
-     */
-    public AuthTokenInfo getAuthInfo() {
-        return authInfo;
-    }
+	/**
+	 * Gets the value of the authInfo property.
+	 * 
+	 * @return possible object is {@link AuthTokenInfo }
+	 * 
+	 */
+	public AuthTokenInfo getAuthInfo() {
+		return authInfo;
+	}
 
-    /**
-     * Sets the value of the authInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AuthTokenInfo }
-     *     
-     */
-    public void setAuthInfo(AuthTokenInfo value) {
-        this.authInfo = value;
-    }
+	/**
+	 * Sets the value of the authInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AuthTokenInfo }
+	 * 
+	 */
+	public void setAuthInfo(AuthTokenInfo value) {
+		this.authInfo = value;
+	}
 
 }

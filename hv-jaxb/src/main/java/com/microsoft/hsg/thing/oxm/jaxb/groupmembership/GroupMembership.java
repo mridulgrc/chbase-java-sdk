@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:51 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.groupmembership;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.GroupMembershipType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
 
-
 /**
  * 
  * <pre>
@@ -27,9 +25,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -47,67 +48,62 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "membership",
-    "expires"
-})
+@XmlType(name = "", propOrder = { "membership", "expires" })
 @XmlRootElement(name = "group-membership")
 public class GroupMembership {
 
-    protected List<GroupMembershipType> membership;
-    protected DateTime expires;
+	protected List<GroupMembershipType> membership;
+	protected DateTime expires;
 
-    /**
-     * Gets the value of the membership property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the membership property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getMembership().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link GroupMembershipType }
-     * 
-     * 
-     */
-    public List<GroupMembershipType> getMembership() {
-        if (membership == null) {
-            membership = new ArrayList<GroupMembershipType>();
-        }
-        return this.membership;
-    }
+	/**
+	 * Gets the value of the membership property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the membership property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getMembership().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link GroupMembershipType }
+	 * 
+	 * 
+	 */
+	public List<GroupMembershipType> getMembership() {
+		if (membership == null) {
+			membership = new ArrayList<GroupMembershipType>();
+		}
+		return this.membership;
+	}
 
-    /**
-     * Gets the value of the expires property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getExpires() {
-        return expires;
-    }
+	/**
+	 * Gets the value of the expires property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getExpires() {
+		return expires;
+	}
 
-    /**
-     * Sets the value of the expires property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setExpires(DateTime value) {
-        this.expires = value;
-    }
+	/**
+	 * Sets the value of the expires property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setExpires(DateTime value) {
+		this.expires = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * </pre>
  * 
  * 
- * <p>Java class for OpenQueryInfo complex type.
+ * <p>
+ * Java class for OpenQueryInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="OpenQueryInfo">
@@ -56,164 +57,143 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "OpenQueryInfo", propOrder = {
-    "queryId",
-    "appName",
-    "dateCreated",
-    "expiresDate",
-    "pinRequired",
-    "note"
-})
+@XmlType(name = "OpenQueryInfo", propOrder = { "queryId", "appName", "dateCreated", "expiresDate", "pinRequired",
+		"note" })
 public class OpenQueryInfo {
 
-    @XmlElement(name = "query-id", required = true)
-    protected String queryId;
-    @XmlElement(name = "app-name", required = true)
-    protected String appName;
-    @XmlElement(name = "date-created", required = true)
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar dateCreated;
-    @XmlElement(name = "expires-date")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar expiresDate;
-    @XmlElement(name = "pin-required")
-    protected boolean pinRequired;
-    protected String note;
+	@XmlElement(name = "query-id", required = true)
+	protected String queryId;
+	@XmlElement(name = "app-name", required = true)
+	protected String appName;
+	@XmlElement(name = "date-created", required = true)
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar dateCreated;
+	@XmlElement(name = "expires-date")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar expiresDate;
+	@XmlElement(name = "pin-required")
+	protected boolean pinRequired;
+	protected String note;
 
-    /**
-     * Gets the value of the queryId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getQueryId() {
-        return queryId;
-    }
+	/**
+	 * Gets the value of the queryId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getQueryId() {
+		return queryId;
+	}
 
-    /**
-     * Sets the value of the queryId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setQueryId(String value) {
-        this.queryId = value;
-    }
+	/**
+	 * Sets the value of the queryId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setQueryId(String value) {
+		this.queryId = value;
+	}
 
-    /**
-     * Gets the value of the appName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAppName() {
-        return appName;
-    }
+	/**
+	 * Gets the value of the appName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAppName() {
+		return appName;
+	}
 
-    /**
-     * Sets the value of the appName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAppName(String value) {
-        this.appName = value;
-    }
+	/**
+	 * Sets the value of the appName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAppName(String value) {
+		this.appName = value;
+	}
 
-    /**
-     * Gets the value of the dateCreated property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDateCreated() {
-        return dateCreated;
-    }
+	/**
+	 * Gets the value of the dateCreated property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getDateCreated() {
+		return dateCreated;
+	}
 
-    /**
-     * Sets the value of the dateCreated property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDateCreated(XMLGregorianCalendar value) {
-        this.dateCreated = value;
-    }
+	/**
+	 * Sets the value of the dateCreated property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setDateCreated(XMLGregorianCalendar value) {
+		this.dateCreated = value;
+	}
 
-    /**
-     * Gets the value of the expiresDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getExpiresDate() {
-        return expiresDate;
-    }
+	/**
+	 * Gets the value of the expiresDate property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getExpiresDate() {
+		return expiresDate;
+	}
 
-    /**
-     * Sets the value of the expiresDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setExpiresDate(XMLGregorianCalendar value) {
-        this.expiresDate = value;
-    }
+	/**
+	 * Sets the value of the expiresDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setExpiresDate(XMLGregorianCalendar value) {
+		this.expiresDate = value;
+	}
 
-    /**
-     * Gets the value of the pinRequired property.
-     * 
-     */
-    public boolean isPinRequired() {
-        return pinRequired;
-    }
+	/**
+	 * Gets the value of the pinRequired property.
+	 * 
+	 */
+	public boolean isPinRequired() {
+		return pinRequired;
+	}
 
-    /**
-     * Sets the value of the pinRequired property.
-     * 
-     */
-    public void setPinRequired(boolean value) {
-        this.pinRequired = value;
-    }
+	/**
+	 * Sets the value of the pinRequired property.
+	 * 
+	 */
+	public void setPinRequired(boolean value) {
+		this.pinRequired = value;
+	}
 
-    /**
-     * Gets the value of the note property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNote() {
-        return note;
-    }
+	/**
+	 * Gets the value of the note property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getNote() {
+		return note;
+	}
 
-    /**
-     * Sets the value of the note property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNote(String value) {
-        this.note = value;
-    }
+	/**
+	 * Sets the value of the note property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setNote(String value) {
+		this.note = value;
+	}
 
 }

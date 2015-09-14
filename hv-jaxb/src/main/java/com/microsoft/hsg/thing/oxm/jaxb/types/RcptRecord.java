@@ -5,14 +5,12 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for RcptRecord complex type.
+ * <p>
+ * Java class for RcptRecord complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="RcptRecord">
@@ -58,23 +59,23 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "RcptRecord")
 public class RcptRecord {
 
-    @XmlAttribute(name = "validated", required = true)
-    protected boolean validated;
+	@XmlAttribute(name = "validated", required = true)
+	protected boolean validated;
 
-    /**
-     * Gets the value of the validated property.
-     * 
-     */
-    public boolean isValidated() {
-        return validated;
-    }
+	/**
+	 * Gets the value of the validated property.
+	 * 
+	 */
+	public boolean isValidated() {
+		return validated;
+	}
 
-    /**
-     * Sets the value of the validated property.
-     * 
-     */
-    public void setValidated(boolean value) {
-        this.validated = value;
-    }
+	/**
+	 * Sets the value of the validated property.
+	 * 
+	 */
+	public void setValidated(boolean value) {
+		this.validated = value;
+	}
 
 }

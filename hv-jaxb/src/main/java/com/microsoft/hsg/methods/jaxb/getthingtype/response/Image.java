@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:21:09 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthingtype.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
-
 
 /**
  * 
@@ -31,9 +29,12 @@ import javax.xml.bind.annotation.XmlValue;
  * </pre>
  * 
  * 
- * <p>Java class for Image complex type.
+ * <p>
+ * Java class for Image complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Image">
@@ -48,62 +49,54 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Image", propOrder = {
-    "value"
-})
+@XmlType(name = "Image", propOrder = { "value" })
 public class Image {
 
-    @XmlValue
-    protected String value;
-    @XmlAttribute(name = "mime-type", required = true)
-    protected String mimeType;
+	@XmlValue
+	protected String value;
+	@XmlAttribute(name = "mime-type", required = true)
+	protected String mimeType;
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the mimeType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getMimeType() {
-        return mimeType;
-    }
+	/**
+	 * Gets the value of the mimeType property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getMimeType() {
+		return mimeType;
+	}
 
-    /**
-     * Sets the value of the mimeType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setMimeType(String value) {
-        this.mimeType = value;
-    }
+	/**
+	 * Sets the value of the mimeType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setMimeType(String value) {
+		this.mimeType = value;
+	}
 
 }

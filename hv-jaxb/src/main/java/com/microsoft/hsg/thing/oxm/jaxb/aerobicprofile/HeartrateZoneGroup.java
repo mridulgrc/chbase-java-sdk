@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:18:07 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.aerobicprofile;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -38,9 +36,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for HeartrateZoneGroup complex type.
+ * <p>
+ * Java class for HeartrateZoneGroup complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="HeartrateZoneGroup">
@@ -58,67 +59,63 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "HeartrateZoneGroup", propOrder = {
-    "heartrateZone"
-})
+@XmlType(name = "HeartrateZoneGroup", propOrder = { "heartrateZone" })
 public class HeartrateZoneGroup {
 
-    @XmlElement(name = "heartrate-zone")
-    protected List<HeartrateZone> heartrateZone;
-    @XmlAttribute(name = "name")
-    protected String name;
+	@XmlElement(name = "heartrate-zone")
+	protected List<HeartrateZone> heartrateZone;
+	@XmlAttribute(name = "name")
+	protected String name;
 
-    /**
-     * Gets the value of the heartrateZone property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the heartrateZone property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getHeartrateZone().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link HeartrateZone }
-     * 
-     * 
-     */
-    public List<HeartrateZone> getHeartrateZone() {
-        if (heartrateZone == null) {
-            heartrateZone = new ArrayList<HeartrateZone>();
-        }
-        return this.heartrateZone;
-    }
+	/**
+	 * Gets the value of the heartrateZone property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the heartrateZone property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getHeartrateZone().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link HeartrateZone }
+	 * 
+	 * 
+	 */
+	public List<HeartrateZone> getHeartrateZone() {
+		if (heartrateZone == null) {
+			heartrateZone = new ArrayList<HeartrateZone>();
+		}
+		return this.heartrateZone;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
 }

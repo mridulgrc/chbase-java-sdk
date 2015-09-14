@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:13 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.peakflow;
 
 import java.util.ArrayList;
@@ -19,7 +18,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.FlowValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.VolumeValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -37,9 +35,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -60,147 +61,130 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "pef",
-    "fev1",
-    "fev6",
-    "measurementFlags"
-})
+@XmlType(name = "", propOrder = { "when", "pef", "fev1", "fev6", "measurementFlags" })
 @XmlRootElement(name = "peak-flow")
 public class PeakFlow {
 
-    @XmlElement(required = true)
-    protected ApproxDateTime when;
-    protected FlowValue pef;
-    protected VolumeValue fev1;
-    protected VolumeValue fev6;
-    @XmlElement(name = "measurement-flags")
-    protected List<CodableValue> measurementFlags;
+	@XmlElement(required = true)
+	protected ApproxDateTime when;
+	protected FlowValue pef;
+	protected VolumeValue fev1;
+	protected VolumeValue fev6;
+	@XmlElement(name = "measurement-flags")
+	protected List<CodableValue> measurementFlags;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setWhen(ApproxDateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setWhen(ApproxDateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the pef property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FlowValue }
-     *     
-     */
-    public FlowValue getPef() {
-        return pef;
-    }
+	/**
+	 * Gets the value of the pef property.
+	 * 
+	 * @return possible object is {@link FlowValue }
+	 * 
+	 */
+	public FlowValue getPef() {
+		return pef;
+	}
 
-    /**
-     * Sets the value of the pef property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FlowValue }
-     *     
-     */
-    public void setPef(FlowValue value) {
-        this.pef = value;
-    }
+	/**
+	 * Sets the value of the pef property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link FlowValue }
+	 * 
+	 */
+	public void setPef(FlowValue value) {
+		this.pef = value;
+	}
 
-    /**
-     * Gets the value of the fev1 property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VolumeValue }
-     *     
-     */
-    public VolumeValue getFev1() {
-        return fev1;
-    }
+	/**
+	 * Gets the value of the fev1 property.
+	 * 
+	 * @return possible object is {@link VolumeValue }
+	 * 
+	 */
+	public VolumeValue getFev1() {
+		return fev1;
+	}
 
-    /**
-     * Sets the value of the fev1 property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VolumeValue }
-     *     
-     */
-    public void setFev1(VolumeValue value) {
-        this.fev1 = value;
-    }
+	/**
+	 * Sets the value of the fev1 property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VolumeValue }
+	 * 
+	 */
+	public void setFev1(VolumeValue value) {
+		this.fev1 = value;
+	}
 
-    /**
-     * Gets the value of the fev6 property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VolumeValue }
-     *     
-     */
-    public VolumeValue getFev6() {
-        return fev6;
-    }
+	/**
+	 * Gets the value of the fev6 property.
+	 * 
+	 * @return possible object is {@link VolumeValue }
+	 * 
+	 */
+	public VolumeValue getFev6() {
+		return fev6;
+	}
 
-    /**
-     * Sets the value of the fev6 property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VolumeValue }
-     *     
-     */
-    public void setFev6(VolumeValue value) {
-        this.fev6 = value;
-    }
+	/**
+	 * Sets the value of the fev6 property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VolumeValue }
+	 * 
+	 */
+	public void setFev6(VolumeValue value) {
+		this.fev6 = value;
+	}
 
-    /**
-     * Gets the value of the measurementFlags property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the measurementFlags property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getMeasurementFlags().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodableValue }
-     * 
-     * 
-     */
-    public List<CodableValue> getMeasurementFlags() {
-        if (measurementFlags == null) {
-            measurementFlags = new ArrayList<CodableValue>();
-        }
-        return this.measurementFlags;
-    }
+	/**
+	 * Gets the value of the measurementFlags property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the measurementFlags property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getMeasurementFlags().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodableValue }
+	 * 
+	 * 
+	 */
+	public List<CodableValue> getMeasurementFlags() {
+		if (measurementFlags == null) {
+			measurementFlags = new ArrayList<CodableValue>();
+		}
+		return this.measurementFlags;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,30 +12,41 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     A pace measurement.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     A pace measurement.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     A pace measurement consists of the value in seconds per
- *                     100 meters, which is the base unit of measurement for 
- *                     pace, and an optional display value. The display value is 
- *                     used to store the pace in the user's preference of
- *                     units. This avoids rounding errors when
- *                     converting to and back from seconds per 100 meters.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     A pace measurement consists of the value in seconds per
+
+ *                     100 meters, which is the base unit of measurement for 
+
+ *                     pace, and an optional display value. The display value is 
+
+ *                     used to store the pace in the user's preference of
+
+ *                     units. This avoids rounding errors when
+
+ *                     converting to and back from seconds per 100 meters.
+
  *                 &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for pace-value complex type.
+ * <p>
+ * Java class for pace-value complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="pace-value">
@@ -54,54 +64,48 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "pace-value", propOrder = {
-    "secondsPerHundredMeters",
-    "display"
-})
+@XmlType(name = "pace-value", propOrder = { "secondsPerHundredMeters", "display" })
 public class PaceValue {
 
-    @XmlElement(name = "seconds-per-hundred-meters")
-    protected double secondsPerHundredMeters;
-    protected DisplayValue display;
+	@XmlElement(name = "seconds-per-hundred-meters")
+	protected double secondsPerHundredMeters;
+	protected DisplayValue display;
 
-    /**
-     * Gets the value of the secondsPerHundredMeters property.
-     * 
-     */
-    public double getSecondsPerHundredMeters() {
-        return secondsPerHundredMeters;
-    }
+	/**
+	 * Gets the value of the secondsPerHundredMeters property.
+	 * 
+	 */
+	public double getSecondsPerHundredMeters() {
+		return secondsPerHundredMeters;
+	}
 
-    /**
-     * Sets the value of the secondsPerHundredMeters property.
-     * 
-     */
-    public void setSecondsPerHundredMeters(double value) {
-        this.secondsPerHundredMeters = value;
-    }
+	/**
+	 * Sets the value of the secondsPerHundredMeters property.
+	 * 
+	 */
+	public void setSecondsPerHundredMeters(double value) {
+		this.secondsPerHundredMeters = value;
+	}
 
-    /**
-     * Gets the value of the display property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public DisplayValue getDisplay() {
-        return display;
-    }
+	/**
+	 * Gets the value of the display property.
+	 * 
+	 * @return possible object is {@link DisplayValue }
+	 * 
+	 */
+	public DisplayValue getDisplay() {
+		return display;
+	}
 
-    /**
-     * Sets the value of the display property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public void setDisplay(DisplayValue value) {
-        this.display = value;
-    }
+	/**
+	 * Sets the value of the display property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DisplayValue }
+	 * 
+	 */
+	public void setDisplay(DisplayValue value) {
+		this.display = value;
+	}
 
 }

@@ -5,14 +5,12 @@
 // Generated on: 2011.02.07 at 01:38:03 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.aerobicprofile;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -31,9 +29,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for ZoneBoundary complex type.
+ * <p>
+ * Java class for ZoneBoundary complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ZoneBoundary">
@@ -51,63 +52,54 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ZoneBoundary", propOrder = {
-    "absoluteHeartrate",
-    "percentMaxHeartrate"
-})
+@XmlType(name = "ZoneBoundary", propOrder = { "absoluteHeartrate", "percentMaxHeartrate" })
 public class ZoneBoundary {
 
-    @XmlElement(name = "absolute-heartrate")
-    protected Integer absoluteHeartrate;
-    @XmlElement(name = "percent-max-heartrate")
-    protected Double percentMaxHeartrate;
+	@XmlElement(name = "absolute-heartrate")
+	protected Integer absoluteHeartrate;
+	@XmlElement(name = "percent-max-heartrate")
+	protected Double percentMaxHeartrate;
 
-    /**
-     * Gets the value of the absoluteHeartrate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getAbsoluteHeartrate() {
-        return absoluteHeartrate;
-    }
+	/**
+	 * Gets the value of the absoluteHeartrate property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getAbsoluteHeartrate() {
+		return absoluteHeartrate;
+	}
 
-    /**
-     * Sets the value of the absoluteHeartrate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setAbsoluteHeartrate(Integer value) {
-        this.absoluteHeartrate = value;
-    }
+	/**
+	 * Sets the value of the absoluteHeartrate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setAbsoluteHeartrate(Integer value) {
+		this.absoluteHeartrate = value;
+	}
 
-    /**
-     * Gets the value of the percentMaxHeartrate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getPercentMaxHeartrate() {
-        return percentMaxHeartrate;
-    }
+	/**
+	 * Gets the value of the percentMaxHeartrate property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getPercentMaxHeartrate() {
+		return percentMaxHeartrate;
+	}
 
-    /**
-     * Sets the value of the percentMaxHeartrate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setPercentMaxHeartrate(Double value) {
-        this.percentMaxHeartrate = value;
-    }
+	/**
+	 * Sets the value of the percentMaxHeartrate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setPercentMaxHeartrate(Double value) {
+		this.percentMaxHeartrate = value;
+	}
 
 }

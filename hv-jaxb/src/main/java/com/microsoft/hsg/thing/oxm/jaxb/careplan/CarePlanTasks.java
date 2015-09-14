@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:19:17 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.careplan;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for care-plan-tasks complex type.
+ * <p>
+ * Java class for care-plan-tasks complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="care-plan-tasks">
@@ -44,41 +45,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "care-plan-tasks", propOrder = {
-    "task"
-})
+@XmlType(name = "care-plan-tasks", propOrder = { "task" })
 public class CarePlanTasks {
 
-    @XmlElement(required = true)
-    protected List<CarePlanTask> task;
+	@XmlElement(required = true)
+	protected List<CarePlanTask> task;
 
-    /**
-     * Gets the value of the task property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the task property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTask().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CarePlanTask }
-     * 
-     * 
-     */
-    public List<CarePlanTask> getTask() {
-        if (task == null) {
-            task = new ArrayList<CarePlanTask>();
-        }
-        return this.task;
-    }
+	/**
+	 * Gets the value of the task property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the task property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getTask().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CarePlanTask }
+	 * 
+	 * 
+	 */
+	public List<CarePlanTask> getTask() {
+		if (task == null) {
+			task = new ArrayList<CarePlanTask>();
+		}
+		return this.task;
+	}
 
 }

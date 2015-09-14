@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:21:23 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.healthgoal;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -60,229 +61,201 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "name",
-    "description",
-    "startDate",
-    "endDate",
-    "associatedTypeInfo",
-    "targetRange",
-    "goalAdditionalRanges",
-    "recurrence"
-})
+@XmlType(name = "", propOrder = { "name", "description", "startDate", "endDate", "associatedTypeInfo", "targetRange",
+		"goalAdditionalRanges", "recurrence" })
 @XmlRootElement(name = "health-goal")
 public class HealthGoal {
 
-    @XmlElement(required = true)
-    protected CodableValue name;
-    protected String description;
-    @XmlElement(name = "start-date")
-    protected ApproxDateTime startDate;
-    @XmlElement(name = "end-date")
-    protected ApproxDateTime endDate;
-    @XmlElement(name = "associated-type-info")
-    protected GoalAssociatedTypeInfo associatedTypeInfo;
-    @XmlElement(name = "target-range")
-    protected GoalRange targetRange;
-    @XmlElement(name = "goal-additional-ranges")
-    protected List<GoalRange> goalAdditionalRanges;
-    protected GoalRecurrence recurrence;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	protected String description;
+	@XmlElement(name = "start-date")
+	protected ApproxDateTime startDate;
+	@XmlElement(name = "end-date")
+	protected ApproxDateTime endDate;
+	@XmlElement(name = "associated-type-info")
+	protected GoalAssociatedTypeInfo associatedTypeInfo;
+	@XmlElement(name = "target-range")
+	protected GoalRange targetRange;
+	@XmlElement(name = "goal-additional-ranges")
+	protected List<GoalRange> goalAdditionalRanges;
+	protected GoalRecurrence recurrence;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the startDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getStartDate() {
-        return startDate;
-    }
+	/**
+	 * Gets the value of the startDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getStartDate() {
+		return startDate;
+	}
 
-    /**
-     * Sets the value of the startDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setStartDate(ApproxDateTime value) {
-        this.startDate = value;
-    }
+	/**
+	 * Sets the value of the startDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setStartDate(ApproxDateTime value) {
+		this.startDate = value;
+	}
 
-    /**
-     * Gets the value of the endDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getEndDate() {
-        return endDate;
-    }
+	/**
+	 * Gets the value of the endDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getEndDate() {
+		return endDate;
+	}
 
-    /**
-     * Sets the value of the endDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setEndDate(ApproxDateTime value) {
-        this.endDate = value;
-    }
+	/**
+	 * Sets the value of the endDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setEndDate(ApproxDateTime value) {
+		this.endDate = value;
+	}
 
-    /**
-     * Gets the value of the associatedTypeInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GoalAssociatedTypeInfo }
-     *     
-     */
-    public GoalAssociatedTypeInfo getAssociatedTypeInfo() {
-        return associatedTypeInfo;
-    }
+	/**
+	 * Gets the value of the associatedTypeInfo property.
+	 * 
+	 * @return possible object is {@link GoalAssociatedTypeInfo }
+	 * 
+	 */
+	public GoalAssociatedTypeInfo getAssociatedTypeInfo() {
+		return associatedTypeInfo;
+	}
 
-    /**
-     * Sets the value of the associatedTypeInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GoalAssociatedTypeInfo }
-     *     
-     */
-    public void setAssociatedTypeInfo(GoalAssociatedTypeInfo value) {
-        this.associatedTypeInfo = value;
-    }
+	/**
+	 * Sets the value of the associatedTypeInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GoalAssociatedTypeInfo }
+	 * 
+	 */
+	public void setAssociatedTypeInfo(GoalAssociatedTypeInfo value) {
+		this.associatedTypeInfo = value;
+	}
 
-    /**
-     * Gets the value of the targetRange property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GoalRange }
-     *     
-     */
-    public GoalRange getTargetRange() {
-        return targetRange;
-    }
+	/**
+	 * Gets the value of the targetRange property.
+	 * 
+	 * @return possible object is {@link GoalRange }
+	 * 
+	 */
+	public GoalRange getTargetRange() {
+		return targetRange;
+	}
 
-    /**
-     * Sets the value of the targetRange property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GoalRange }
-     *     
-     */
-    public void setTargetRange(GoalRange value) {
-        this.targetRange = value;
-    }
+	/**
+	 * Sets the value of the targetRange property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GoalRange }
+	 * 
+	 */
+	public void setTargetRange(GoalRange value) {
+		this.targetRange = value;
+	}
 
-    /**
-     * Gets the value of the goalAdditionalRanges property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the goalAdditionalRanges property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getGoalAdditionalRanges().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link GoalRange }
-     * 
-     * 
-     */
-    public List<GoalRange> getGoalAdditionalRanges() {
-        if (goalAdditionalRanges == null) {
-            goalAdditionalRanges = new ArrayList<GoalRange>();
-        }
-        return this.goalAdditionalRanges;
-    }
+	/**
+	 * Gets the value of the goalAdditionalRanges property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the goalAdditionalRanges property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getGoalAdditionalRanges().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link GoalRange
+	 * }
+	 * 
+	 * 
+	 */
+	public List<GoalRange> getGoalAdditionalRanges() {
+		if (goalAdditionalRanges == null) {
+			goalAdditionalRanges = new ArrayList<GoalRange>();
+		}
+		return this.goalAdditionalRanges;
+	}
 
-    /**
-     * Gets the value of the recurrence property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GoalRecurrence }
-     *     
-     */
-    public GoalRecurrence getRecurrence() {
-        return recurrence;
-    }
+	/**
+	 * Gets the value of the recurrence property.
+	 * 
+	 * @return possible object is {@link GoalRecurrence }
+	 * 
+	 */
+	public GoalRecurrence getRecurrence() {
+		return recurrence;
+	}
 
-    /**
-     * Sets the value of the recurrence property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GoalRecurrence }
-     *     
-     */
-    public void setRecurrence(GoalRecurrence value) {
-        this.recurrence = value;
-    }
+	/**
+	 * Sets the value of the recurrence property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GoalRecurrence }
+	 * 
+	 */
+	public void setRecurrence(GoalRecurrence value) {
+		this.recurrence = value;
+	}
 
 }

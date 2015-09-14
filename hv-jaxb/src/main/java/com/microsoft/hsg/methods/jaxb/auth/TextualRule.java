@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for TextualRule complex type.
+ * <p>
+ * Java class for TextualRule complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="TextualRule">
@@ -50,198 +51,170 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TextualRule", propOrder = {
-    "permission",
-    "targetThingTypes",
-    "targetSets",
-    "targetDates",
-    "exceptThingTypes",
-    "exceptSets",
-    "exceptDates"
-})
+@XmlType(name = "TextualRule", propOrder = { "permission", "targetThingTypes", "targetSets", "targetDates",
+		"exceptThingTypes", "exceptSets", "exceptDates" })
 public class TextualRule {
 
-    @XmlElement(required = true)
-    protected String permission;
-    @XmlElement(name = "target-thing-types")
-    protected String targetThingTypes;
-    @XmlElement(name = "target-sets")
-    protected String targetSets;
-    @XmlElement(name = "target-dates")
-    protected String targetDates;
-    @XmlElement(name = "except-thing-types")
-    protected String exceptThingTypes;
-    @XmlElement(name = "except-sets")
-    protected String exceptSets;
-    @XmlElement(name = "except-dates")
-    protected String exceptDates;
+	@XmlElement(required = true)
+	protected String permission;
+	@XmlElement(name = "target-thing-types")
+	protected String targetThingTypes;
+	@XmlElement(name = "target-sets")
+	protected String targetSets;
+	@XmlElement(name = "target-dates")
+	protected String targetDates;
+	@XmlElement(name = "except-thing-types")
+	protected String exceptThingTypes;
+	@XmlElement(name = "except-sets")
+	protected String exceptSets;
+	@XmlElement(name = "except-dates")
+	protected String exceptDates;
 
-    /**
-     * Gets the value of the permission property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPermission() {
-        return permission;
-    }
+	/**
+	 * Gets the value of the permission property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPermission() {
+		return permission;
+	}
 
-    /**
-     * Sets the value of the permission property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPermission(String value) {
-        this.permission = value;
-    }
+	/**
+	 * Sets the value of the permission property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPermission(String value) {
+		this.permission = value;
+	}
 
-    /**
-     * Gets the value of the targetThingTypes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTargetThingTypes() {
-        return targetThingTypes;
-    }
+	/**
+	 * Gets the value of the targetThingTypes property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTargetThingTypes() {
+		return targetThingTypes;
+	}
 
-    /**
-     * Sets the value of the targetThingTypes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTargetThingTypes(String value) {
-        this.targetThingTypes = value;
-    }
+	/**
+	 * Sets the value of the targetThingTypes property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTargetThingTypes(String value) {
+		this.targetThingTypes = value;
+	}
 
-    /**
-     * Gets the value of the targetSets property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTargetSets() {
-        return targetSets;
-    }
+	/**
+	 * Gets the value of the targetSets property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTargetSets() {
+		return targetSets;
+	}
 
-    /**
-     * Sets the value of the targetSets property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTargetSets(String value) {
-        this.targetSets = value;
-    }
+	/**
+	 * Sets the value of the targetSets property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTargetSets(String value) {
+		this.targetSets = value;
+	}
 
-    /**
-     * Gets the value of the targetDates property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTargetDates() {
-        return targetDates;
-    }
+	/**
+	 * Gets the value of the targetDates property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTargetDates() {
+		return targetDates;
+	}
 
-    /**
-     * Sets the value of the targetDates property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTargetDates(String value) {
-        this.targetDates = value;
-    }
+	/**
+	 * Sets the value of the targetDates property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTargetDates(String value) {
+		this.targetDates = value;
+	}
 
-    /**
-     * Gets the value of the exceptThingTypes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getExceptThingTypes() {
-        return exceptThingTypes;
-    }
+	/**
+	 * Gets the value of the exceptThingTypes property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getExceptThingTypes() {
+		return exceptThingTypes;
+	}
 
-    /**
-     * Sets the value of the exceptThingTypes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setExceptThingTypes(String value) {
-        this.exceptThingTypes = value;
-    }
+	/**
+	 * Sets the value of the exceptThingTypes property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setExceptThingTypes(String value) {
+		this.exceptThingTypes = value;
+	}
 
-    /**
-     * Gets the value of the exceptSets property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getExceptSets() {
-        return exceptSets;
-    }
+	/**
+	 * Gets the value of the exceptSets property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getExceptSets() {
+		return exceptSets;
+	}
 
-    /**
-     * Sets the value of the exceptSets property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setExceptSets(String value) {
-        this.exceptSets = value;
-    }
+	/**
+	 * Sets the value of the exceptSets property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setExceptSets(String value) {
+		this.exceptSets = value;
+	}
 
-    /**
-     * Gets the value of the exceptDates property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getExceptDates() {
-        return exceptDates;
-    }
+	/**
+	 * Gets the value of the exceptDates property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getExceptDates() {
+		return exceptDates;
+	}
 
-    /**
-     * Sets the value of the exceptDates property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setExceptDates(String value) {
-        this.exceptDates = value;
-    }
+	/**
+	 * Sets the value of the exceptDates property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setExceptDates(String value) {
+		this.exceptDates = value;
+	}
 
 }

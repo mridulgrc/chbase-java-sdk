@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:19:17 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.careplan;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
-
 
 /**
  * 
@@ -24,9 +22,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * </pre>
  * 
  * 
- * <p>Java class for goal-recurrence complex type.
+ * <p>
+ * Java class for goal-recurrence complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="goal-recurrence">
@@ -44,55 +45,49 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "goal-recurrence", propOrder = {
-    "interval",
-    "timesInInterval"
-})
+@XmlType(name = "goal-recurrence", propOrder = { "interval", "timesInInterval" })
 public class GoalRecurrence {
 
-    @XmlElement(required = true)
-    protected CodableValue interval;
-    @XmlElement(name = "times-in-interval")
-    protected int timesInInterval;
+	@XmlElement(required = true)
+	protected CodableValue interval;
+	@XmlElement(name = "times-in-interval")
+	protected int timesInInterval;
 
-    /**
-     * Gets the value of the interval property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getInterval() {
-        return interval;
-    }
+	/**
+	 * Gets the value of the interval property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getInterval() {
+		return interval;
+	}
 
-    /**
-     * Sets the value of the interval property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setInterval(CodableValue value) {
-        this.interval = value;
-    }
+	/**
+	 * Sets the value of the interval property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setInterval(CodableValue value) {
+		this.interval = value;
+	}
 
-    /**
-     * Gets the value of the timesInInterval property.
-     * 
-     */
-    public int getTimesInInterval() {
-        return timesInInterval;
-    }
+	/**
+	 * Gets the value of the timesInInterval property.
+	 * 
+	 */
+	public int getTimesInInterval() {
+		return timesInInterval;
+	}
 
-    /**
-     * Sets the value of the timesInInterval property.
-     * 
-     */
-    public void setTimesInInterval(int value) {
-        this.timesInInterval = value;
-    }
+	/**
+	 * Sets the value of the timesInInterval property.
+	 * 
+	 */
+	public void setTimesInInterval(int value) {
+		this.timesInInterval = value;
+	}
 
 }

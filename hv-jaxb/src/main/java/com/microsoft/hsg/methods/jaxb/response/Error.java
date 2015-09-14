@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Error complex type.
+ * <p>
+ * Java class for Error complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Error">
@@ -46,89 +47,76 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Error", propOrder = {
-    "message",
-    "context",
-    "errorInfo"
-})
+@XmlType(name = "Error", propOrder = { "message", "context", "errorInfo" })
 public class Error {
 
-    @XmlElement(required = true)
-    protected String message;
-    protected ErrorContext context;
-    @XmlElement(name = "error-info")
-    protected String errorInfo;
+	@XmlElement(required = true)
+	protected String message;
+	protected ErrorContext context;
+	@XmlElement(name = "error-info")
+	protected String errorInfo;
 
-    /**
-     * Gets the value of the message property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getMessage() {
-        return message;
-    }
+	/**
+	 * Gets the value of the message property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getMessage() {
+		return message;
+	}
 
-    /**
-     * Sets the value of the message property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setMessage(String value) {
-        this.message = value;
-    }
+	/**
+	 * Sets the value of the message property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setMessage(String value) {
+		this.message = value;
+	}
 
-    /**
-     * Gets the value of the context property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ErrorContext }
-     *     
-     */
-    public ErrorContext getContext() {
-        return context;
-    }
+	/**
+	 * Gets the value of the context property.
+	 * 
+	 * @return possible object is {@link ErrorContext }
+	 * 
+	 */
+	public ErrorContext getContext() {
+		return context;
+	}
 
-    /**
-     * Sets the value of the context property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ErrorContext }
-     *     
-     */
-    public void setContext(ErrorContext value) {
-        this.context = value;
-    }
+	/**
+	 * Sets the value of the context property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ErrorContext }
+	 * 
+	 */
+	public void setContext(ErrorContext value) {
+		this.context = value;
+	}
 
-    /**
-     * Gets the value of the errorInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getErrorInfo() {
-        return errorInfo;
-    }
+	/**
+	 * Gets the value of the errorInfo property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getErrorInfo() {
+		return errorInfo;
+	}
 
-    /**
-     * Sets the value of the errorInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setErrorInfo(String value) {
-        this.errorInfo = value;
-    }
+	/**
+	 * Sets the value of the errorInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setErrorInfo(String value) {
+		this.errorInfo = value;
+	}
 
 }

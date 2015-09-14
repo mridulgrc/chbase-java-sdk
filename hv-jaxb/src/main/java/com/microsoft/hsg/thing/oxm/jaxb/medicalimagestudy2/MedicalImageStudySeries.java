@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:22:05 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.medicalimagestudy2;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Organization;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
 
-
 /**
  * 
  * <pre>
@@ -28,9 +26,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for medical-image-study-series complex type.
+ * <p>
+ * Java class for medical-image-study-series complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="medical-image-study-series">
@@ -54,228 +55,200 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "medical-image-study-series", propOrder = {
-    "acquisitionDatetime",
-    "description",
-    "images",
-    "institutionName",
-    "modality",
-    "bodyPart",
-    "previewBlobName",
-    "seriesInstanceUid"
-})
+@XmlType(name = "medical-image-study-series", propOrder = { "acquisitionDatetime", "description", "images",
+		"institutionName", "modality", "bodyPart", "previewBlobName", "seriesInstanceUid" })
 public class MedicalImageStudySeries {
 
-    @XmlElement(name = "acquisition-datetime")
-    protected DateTime acquisitionDatetime;
-    protected String description;
-    @XmlElement(required = true)
-    protected List<MedicalImageStudySeriesImage> images;
-    @XmlElement(name = "institution-name")
-    protected Organization institutionName;
-    protected CodableValue modality;
-    @XmlElement(name = "body-part")
-    protected CodableValue bodyPart;
-    @XmlElement(name = "preview-blob-name")
-    protected String previewBlobName;
-    @XmlElement(name = "series-instance-uid")
-    protected String seriesInstanceUid;
+	@XmlElement(name = "acquisition-datetime")
+	protected DateTime acquisitionDatetime;
+	protected String description;
+	@XmlElement(required = true)
+	protected List<MedicalImageStudySeriesImage> images;
+	@XmlElement(name = "institution-name")
+	protected Organization institutionName;
+	protected CodableValue modality;
+	@XmlElement(name = "body-part")
+	protected CodableValue bodyPart;
+	@XmlElement(name = "preview-blob-name")
+	protected String previewBlobName;
+	@XmlElement(name = "series-instance-uid")
+	protected String seriesInstanceUid;
 
-    /**
-     * Gets the value of the acquisitionDatetime property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getAcquisitionDatetime() {
-        return acquisitionDatetime;
-    }
+	/**
+	 * Gets the value of the acquisitionDatetime property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getAcquisitionDatetime() {
+		return acquisitionDatetime;
+	}
 
-    /**
-     * Sets the value of the acquisitionDatetime property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setAcquisitionDatetime(DateTime value) {
-        this.acquisitionDatetime = value;
-    }
+	/**
+	 * Sets the value of the acquisitionDatetime property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setAcquisitionDatetime(DateTime value) {
+		this.acquisitionDatetime = value;
+	}
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the images property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the images property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getImages().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link MedicalImageStudySeriesImage }
-     * 
-     * 
-     */
-    public List<MedicalImageStudySeriesImage> getImages() {
-        if (images == null) {
-            images = new ArrayList<MedicalImageStudySeriesImage>();
-        }
-        return this.images;
-    }
+	/**
+	 * Gets the value of the images property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the images property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getImages().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link MedicalImageStudySeriesImage }
+	 * 
+	 * 
+	 */
+	public List<MedicalImageStudySeriesImage> getImages() {
+		if (images == null) {
+			images = new ArrayList<MedicalImageStudySeriesImage>();
+		}
+		return this.images;
+	}
 
-    /**
-     * Gets the value of the institutionName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Organization }
-     *     
-     */
-    public Organization getInstitutionName() {
-        return institutionName;
-    }
+	/**
+	 * Gets the value of the institutionName property.
+	 * 
+	 * @return possible object is {@link Organization }
+	 * 
+	 */
+	public Organization getInstitutionName() {
+		return institutionName;
+	}
 
-    /**
-     * Sets the value of the institutionName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Organization }
-     *     
-     */
-    public void setInstitutionName(Organization value) {
-        this.institutionName = value;
-    }
+	/**
+	 * Sets the value of the institutionName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Organization }
+	 * 
+	 */
+	public void setInstitutionName(Organization value) {
+		this.institutionName = value;
+	}
 
-    /**
-     * Gets the value of the modality property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getModality() {
-        return modality;
-    }
+	/**
+	 * Gets the value of the modality property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getModality() {
+		return modality;
+	}
 
-    /**
-     * Sets the value of the modality property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setModality(CodableValue value) {
-        this.modality = value;
-    }
+	/**
+	 * Sets the value of the modality property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setModality(CodableValue value) {
+		this.modality = value;
+	}
 
-    /**
-     * Gets the value of the bodyPart property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getBodyPart() {
-        return bodyPart;
-    }
+	/**
+	 * Gets the value of the bodyPart property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getBodyPart() {
+		return bodyPart;
+	}
 
-    /**
-     * Sets the value of the bodyPart property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setBodyPart(CodableValue value) {
-        this.bodyPart = value;
-    }
+	/**
+	 * Sets the value of the bodyPart property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setBodyPart(CodableValue value) {
+		this.bodyPart = value;
+	}
 
-    /**
-     * Gets the value of the previewBlobName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPreviewBlobName() {
-        return previewBlobName;
-    }
+	/**
+	 * Gets the value of the previewBlobName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPreviewBlobName() {
+		return previewBlobName;
+	}
 
-    /**
-     * Sets the value of the previewBlobName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPreviewBlobName(String value) {
-        this.previewBlobName = value;
-    }
+	/**
+	 * Sets the value of the previewBlobName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPreviewBlobName(String value) {
+		this.previewBlobName = value;
+	}
 
-    /**
-     * Gets the value of the seriesInstanceUid property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSeriesInstanceUid() {
-        return seriesInstanceUid;
-    }
+	/**
+	 * Gets the value of the seriesInstanceUid property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSeriesInstanceUid() {
+		return seriesInstanceUid;
+	}
 
-    /**
-     * Sets the value of the seriesInstanceUid property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSeriesInstanceUid(String value) {
-        this.seriesInstanceUid = value;
-    }
+	/**
+	 * Sets the value of the seriesInstanceUid property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSeriesInstanceUid(String value) {
+		this.seriesInstanceUid = value;
+	}
 
 }

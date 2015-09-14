@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:10:32 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.addapplication2.request;
 
 import java.util.ArrayList;
@@ -28,7 +27,6 @@ import com.microsoft.hsg.methods.jaxb.auth.AuthXml;
 import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificString255;
 import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificStringnz;
 
-
 /**
  * 
  * <pre>
@@ -48,9 +46,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificStringnz;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -85,569 +86,500 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificStringnz;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "AddApplication",
-		methodVersion = "2",
-		responseNS = "urn:com.microsoft.wc.methods.response.AddApplication2")
+@JaxbRequest(methodName = "AddApplication", methodVersion = "2", responseNS = "urn:com.microsoft.wc.methods.response.AddApplication2")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "name",
-    "publicKeys",
-    "personOnlineBaseAuth",
-    "personOfflineBaseAuth",
-    "methods",
-    "actionUrl",
-    "description",
-    "authReason",
-    "domainName",
-    "largeLogo",
-    "smallLogo",
-    "persistentTokens",
-    "appType",
-    "privacyStatement",
-    "termsOfUse",
-    "appAuthRequired",
-    "isPublished",
-    "dtcSuccessMessage",
-    "appAttributes",
-    "validIpPrefixes"
-})
+@XmlType(name = "", propOrder = { "name", "publicKeys", "personOnlineBaseAuth", "personOfflineBaseAuth", "methods",
+		"actionUrl", "description", "authReason", "domainName", "largeLogo", "smallLogo", "persistentTokens", "appType",
+		"privacyStatement", "termsOfUse", "appAuthRequired", "isPublished", "dtcSuccessMessage", "appAttributes",
+		"validIpPrefixes" })
 @XmlRootElement(name = "info")
 public class AddApplication2Request {
 
-    @XmlElement(required = true)
-    protected List<CultureSpecificString255> name;
-    @XmlElement(name = "public-keys", required = true)
-    protected PublicKeys publicKeys;
-    @XmlElement(name = "person-online-base-auth")
-    protected AuthXml personOnlineBaseAuth;
-    @XmlElement(name = "person-offline-base-auth", required = true)
-    protected AuthXml personOfflineBaseAuth;
-    protected String methods;
-    @XmlElement(name = "action-url")
-    protected String actionUrl;
-    @XmlElement(required = true)
-    protected List<CultureSpecificStringnz> description;
-    @XmlElement(name = "auth-reason", required = true)
-    protected List<CultureSpecificStringnz> authReason;
-    @XmlElement(name = "domain-name")
-    protected String domainName;
-    @XmlElement(name = "large-logo", required = true)
-    protected AppLargeLogoInfo largeLogo;
-    @XmlElement(name = "small-logo")
-    protected AppSmallLogoInfo smallLogo;
-    @XmlElement(name = "persistent-tokens")
-    protected AppPersistentTokens persistentTokens;
-    @XmlElement(name = "app-type")
-    protected String appType;
-    @XmlElement(name = "privacy-statement")
-    protected StatementInfo privacyStatement;
-    @XmlElement(name = "terms-of-use")
-    protected StatementInfo termsOfUse;
-    @XmlElement(name = "app-auth-required")
-    protected Boolean appAuthRequired;
-    @XmlElement(name = "is-published")
-    protected Boolean isPublished;
-    @XmlElement(name = "dtc-success-message")
-    protected StatementInfo dtcSuccessMessage;
-    @XmlElement(name = "app-attributes")
-    protected ApplicationAttributes appAttributes;
-    @XmlElement(name = "valid-ip-prefixes")
-    protected String validIpPrefixes;
+	@XmlElement(required = true)
+	protected List<CultureSpecificString255> name;
+	@XmlElement(name = "public-keys", required = true)
+	protected PublicKeys publicKeys;
+	@XmlElement(name = "person-online-base-auth")
+	protected AuthXml personOnlineBaseAuth;
+	@XmlElement(name = "person-offline-base-auth", required = true)
+	protected AuthXml personOfflineBaseAuth;
+	protected String methods;
+	@XmlElement(name = "action-url")
+	protected String actionUrl;
+	@XmlElement(required = true)
+	protected List<CultureSpecificStringnz> description;
+	@XmlElement(name = "auth-reason", required = true)
+	protected List<CultureSpecificStringnz> authReason;
+	@XmlElement(name = "domain-name")
+	protected String domainName;
+	@XmlElement(name = "large-logo", required = true)
+	protected AppLargeLogoInfo largeLogo;
+	@XmlElement(name = "small-logo")
+	protected AppSmallLogoInfo smallLogo;
+	@XmlElement(name = "persistent-tokens")
+	protected AppPersistentTokens persistentTokens;
+	@XmlElement(name = "app-type")
+	protected String appType;
+	@XmlElement(name = "privacy-statement")
+	protected StatementInfo privacyStatement;
+	@XmlElement(name = "terms-of-use")
+	protected StatementInfo termsOfUse;
+	@XmlElement(name = "app-auth-required")
+	protected Boolean appAuthRequired;
+	@XmlElement(name = "is-published")
+	protected Boolean isPublished;
+	@XmlElement(name = "dtc-success-message")
+	protected StatementInfo dtcSuccessMessage;
+	@XmlElement(name = "app-attributes")
+	protected ApplicationAttributes appAttributes;
+	@XmlElement(name = "valid-ip-prefixes")
+	protected String validIpPrefixes;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the name property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getName().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificString255 }
-     * 
-     * 
-     */
-    public List<CultureSpecificString255> getName() {
-        if (name == null) {
-            name = new ArrayList<CultureSpecificString255>();
-        }
-        return this.name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the name property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getName().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificString255 }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificString255> getName() {
+		if (name == null) {
+			name = new ArrayList<CultureSpecificString255>();
+		}
+		return this.name;
+	}
 
-    /**
-     * Gets the value of the publicKeys property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PublicKeys }
-     *     
-     */
-    public PublicKeys getPublicKeys() {
-        return publicKeys;
-    }
+	/**
+	 * Gets the value of the publicKeys property.
+	 * 
+	 * @return possible object is {@link PublicKeys }
+	 * 
+	 */
+	public PublicKeys getPublicKeys() {
+		return publicKeys;
+	}
 
-    /**
-     * Sets the value of the publicKeys property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PublicKeys }
-     *     
-     */
-    public void setPublicKeys(PublicKeys value) {
-        this.publicKeys = value;
-    }
+	/**
+	 * Sets the value of the publicKeys property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link PublicKeys }
+	 * 
+	 */
+	public void setPublicKeys(PublicKeys value) {
+		this.publicKeys = value;
+	}
 
-    /**
-     * Gets the value of the personOnlineBaseAuth property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AuthXml }
-     *     
-     */
-    public AuthXml getPersonOnlineBaseAuth() {
-        return personOnlineBaseAuth;
-    }
+	/**
+	 * Gets the value of the personOnlineBaseAuth property.
+	 * 
+	 * @return possible object is {@link AuthXml }
+	 * 
+	 */
+	public AuthXml getPersonOnlineBaseAuth() {
+		return personOnlineBaseAuth;
+	}
 
-    /**
-     * Sets the value of the personOnlineBaseAuth property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AuthXml }
-     *     
-     */
-    public void setPersonOnlineBaseAuth(AuthXml value) {
-        this.personOnlineBaseAuth = value;
-    }
+	/**
+	 * Sets the value of the personOnlineBaseAuth property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AuthXml }
+	 * 
+	 */
+	public void setPersonOnlineBaseAuth(AuthXml value) {
+		this.personOnlineBaseAuth = value;
+	}
 
-    /**
-     * Gets the value of the personOfflineBaseAuth property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AuthXml }
-     *     
-     */
-    public AuthXml getPersonOfflineBaseAuth() {
-        return personOfflineBaseAuth;
-    }
+	/**
+	 * Gets the value of the personOfflineBaseAuth property.
+	 * 
+	 * @return possible object is {@link AuthXml }
+	 * 
+	 */
+	public AuthXml getPersonOfflineBaseAuth() {
+		return personOfflineBaseAuth;
+	}
 
-    /**
-     * Sets the value of the personOfflineBaseAuth property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AuthXml }
-     *     
-     */
-    public void setPersonOfflineBaseAuth(AuthXml value) {
-        this.personOfflineBaseAuth = value;
-    }
+	/**
+	 * Sets the value of the personOfflineBaseAuth property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AuthXml }
+	 * 
+	 */
+	public void setPersonOfflineBaseAuth(AuthXml value) {
+		this.personOfflineBaseAuth = value;
+	}
 
-    /**
-     * Gets the value of the methods property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getMethods() {
-        return methods;
-    }
+	/**
+	 * Gets the value of the methods property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getMethods() {
+		return methods;
+	}
 
-    /**
-     * Sets the value of the methods property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setMethods(String value) {
-        this.methods = value;
-    }
+	/**
+	 * Sets the value of the methods property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setMethods(String value) {
+		this.methods = value;
+	}
 
-    /**
-     * Gets the value of the actionUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getActionUrl() {
-        return actionUrl;
-    }
+	/**
+	 * Gets the value of the actionUrl property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getActionUrl() {
+		return actionUrl;
+	}
 
-    /**
-     * Sets the value of the actionUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setActionUrl(String value) {
-        this.actionUrl = value;
-    }
+	/**
+	 * Sets the value of the actionUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setActionUrl(String value) {
+		this.actionUrl = value;
+	}
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the description property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDescription().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificStringnz }
-     * 
-     * 
-     */
-    public List<CultureSpecificStringnz> getDescription() {
-        if (description == null) {
-            description = new ArrayList<CultureSpecificStringnz>();
-        }
-        return this.description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the description property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getDescription().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificStringnz }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificStringnz> getDescription() {
+		if (description == null) {
+			description = new ArrayList<CultureSpecificStringnz>();
+		}
+		return this.description;
+	}
 
-    /**
-     * Gets the value of the authReason property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the authReason property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAuthReason().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificStringnz }
-     * 
-     * 
-     */
-    public List<CultureSpecificStringnz> getAuthReason() {
-        if (authReason == null) {
-            authReason = new ArrayList<CultureSpecificStringnz>();
-        }
-        return this.authReason;
-    }
+	/**
+	 * Gets the value of the authReason property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the authReason property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAuthReason().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificStringnz }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificStringnz> getAuthReason() {
+		if (authReason == null) {
+			authReason = new ArrayList<CultureSpecificStringnz>();
+		}
+		return this.authReason;
+	}
 
-    /**
-     * Gets the value of the domainName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDomainName() {
-        return domainName;
-    }
+	/**
+	 * Gets the value of the domainName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDomainName() {
+		return domainName;
+	}
 
-    /**
-     * Sets the value of the domainName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDomainName(String value) {
-        this.domainName = value;
-    }
+	/**
+	 * Sets the value of the domainName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDomainName(String value) {
+		this.domainName = value;
+	}
 
-    /**
-     * Gets the value of the largeLogo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AppLargeLogoInfo }
-     *     
-     */
-    public AppLargeLogoInfo getLargeLogo() {
-        return largeLogo;
-    }
+	/**
+	 * Gets the value of the largeLogo property.
+	 * 
+	 * @return possible object is {@link AppLargeLogoInfo }
+	 * 
+	 */
+	public AppLargeLogoInfo getLargeLogo() {
+		return largeLogo;
+	}
 
-    /**
-     * Sets the value of the largeLogo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AppLargeLogoInfo }
-     *     
-     */
-    public void setLargeLogo(AppLargeLogoInfo value) {
-        this.largeLogo = value;
-    }
+	/**
+	 * Sets the value of the largeLogo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AppLargeLogoInfo }
+	 * 
+	 */
+	public void setLargeLogo(AppLargeLogoInfo value) {
+		this.largeLogo = value;
+	}
 
-    /**
-     * Gets the value of the smallLogo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AppSmallLogoInfo }
-     *     
-     */
-    public AppSmallLogoInfo getSmallLogo() {
-        return smallLogo;
-    }
+	/**
+	 * Gets the value of the smallLogo property.
+	 * 
+	 * @return possible object is {@link AppSmallLogoInfo }
+	 * 
+	 */
+	public AppSmallLogoInfo getSmallLogo() {
+		return smallLogo;
+	}
 
-    /**
-     * Sets the value of the smallLogo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AppSmallLogoInfo }
-     *     
-     */
-    public void setSmallLogo(AppSmallLogoInfo value) {
-        this.smallLogo = value;
-    }
+	/**
+	 * Sets the value of the smallLogo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AppSmallLogoInfo }
+	 * 
+	 */
+	public void setSmallLogo(AppSmallLogoInfo value) {
+		this.smallLogo = value;
+	}
 
-    /**
-     * Gets the value of the persistentTokens property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AppPersistentTokens }
-     *     
-     */
-    public AppPersistentTokens getPersistentTokens() {
-        return persistentTokens;
-    }
+	/**
+	 * Gets the value of the persistentTokens property.
+	 * 
+	 * @return possible object is {@link AppPersistentTokens }
+	 * 
+	 */
+	public AppPersistentTokens getPersistentTokens() {
+		return persistentTokens;
+	}
 
-    /**
-     * Sets the value of the persistentTokens property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AppPersistentTokens }
-     *     
-     */
-    public void setPersistentTokens(AppPersistentTokens value) {
-        this.persistentTokens = value;
-    }
+	/**
+	 * Sets the value of the persistentTokens property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AppPersistentTokens }
+	 * 
+	 */
+	public void setPersistentTokens(AppPersistentTokens value) {
+		this.persistentTokens = value;
+	}
 
-    /**
-     * Gets the value of the appType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAppType() {
-        return appType;
-    }
+	/**
+	 * Gets the value of the appType property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAppType() {
+		return appType;
+	}
 
-    /**
-     * Sets the value of the appType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAppType(String value) {
-        this.appType = value;
-    }
+	/**
+	 * Sets the value of the appType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAppType(String value) {
+		this.appType = value;
+	}
 
-    /**
-     * Gets the value of the privacyStatement property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StatementInfo }
-     *     
-     */
-    public StatementInfo getPrivacyStatement() {
-        return privacyStatement;
-    }
+	/**
+	 * Gets the value of the privacyStatement property.
+	 * 
+	 * @return possible object is {@link StatementInfo }
+	 * 
+	 */
+	public StatementInfo getPrivacyStatement() {
+		return privacyStatement;
+	}
 
-    /**
-     * Sets the value of the privacyStatement property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StatementInfo }
-     *     
-     */
-    public void setPrivacyStatement(StatementInfo value) {
-        this.privacyStatement = value;
-    }
+	/**
+	 * Sets the value of the privacyStatement property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link StatementInfo }
+	 * 
+	 */
+	public void setPrivacyStatement(StatementInfo value) {
+		this.privacyStatement = value;
+	}
 
-    /**
-     * Gets the value of the termsOfUse property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StatementInfo }
-     *     
-     */
-    public StatementInfo getTermsOfUse() {
-        return termsOfUse;
-    }
+	/**
+	 * Gets the value of the termsOfUse property.
+	 * 
+	 * @return possible object is {@link StatementInfo }
+	 * 
+	 */
+	public StatementInfo getTermsOfUse() {
+		return termsOfUse;
+	}
 
-    /**
-     * Sets the value of the termsOfUse property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StatementInfo }
-     *     
-     */
-    public void setTermsOfUse(StatementInfo value) {
-        this.termsOfUse = value;
-    }
+	/**
+	 * Sets the value of the termsOfUse property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link StatementInfo }
+	 * 
+	 */
+	public void setTermsOfUse(StatementInfo value) {
+		this.termsOfUse = value;
+	}
 
-    /**
-     * Gets the value of the appAuthRequired property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isAppAuthRequired() {
-        return appAuthRequired;
-    }
+	/**
+	 * Gets the value of the appAuthRequired property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isAppAuthRequired() {
+		return appAuthRequired;
+	}
 
-    /**
-     * Sets the value of the appAuthRequired property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setAppAuthRequired(Boolean value) {
-        this.appAuthRequired = value;
-    }
+	/**
+	 * Sets the value of the appAuthRequired property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setAppAuthRequired(Boolean value) {
+		this.appAuthRequired = value;
+	}
 
-    /**
-     * Gets the value of the isPublished property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsPublished() {
-        return isPublished;
-    }
+	/**
+	 * Gets the value of the isPublished property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsPublished() {
+		return isPublished;
+	}
 
-    /**
-     * Sets the value of the isPublished property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsPublished(Boolean value) {
-        this.isPublished = value;
-    }
+	/**
+	 * Sets the value of the isPublished property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsPublished(Boolean value) {
+		this.isPublished = value;
+	}
 
-    /**
-     * Gets the value of the dtcSuccessMessage property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StatementInfo }
-     *     
-     */
-    public StatementInfo getDtcSuccessMessage() {
-        return dtcSuccessMessage;
-    }
+	/**
+	 * Gets the value of the dtcSuccessMessage property.
+	 * 
+	 * @return possible object is {@link StatementInfo }
+	 * 
+	 */
+	public StatementInfo getDtcSuccessMessage() {
+		return dtcSuccessMessage;
+	}
 
-    /**
-     * Sets the value of the dtcSuccessMessage property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StatementInfo }
-     *     
-     */
-    public void setDtcSuccessMessage(StatementInfo value) {
-        this.dtcSuccessMessage = value;
-    }
+	/**
+	 * Sets the value of the dtcSuccessMessage property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link StatementInfo }
+	 * 
+	 */
+	public void setDtcSuccessMessage(StatementInfo value) {
+		this.dtcSuccessMessage = value;
+	}
 
-    /**
-     * Gets the value of the appAttributes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApplicationAttributes }
-     *     
-     */
-    public ApplicationAttributes getAppAttributes() {
-        return appAttributes;
-    }
+	/**
+	 * Gets the value of the appAttributes property.
+	 * 
+	 * @return possible object is {@link ApplicationAttributes }
+	 * 
+	 */
+	public ApplicationAttributes getAppAttributes() {
+		return appAttributes;
+	}
 
-    /**
-     * Sets the value of the appAttributes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApplicationAttributes }
-     *     
-     */
-    public void setAppAttributes(ApplicationAttributes value) {
-        this.appAttributes = value;
-    }
+	/**
+	 * Sets the value of the appAttributes property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApplicationAttributes }
+	 * 
+	 */
+	public void setAppAttributes(ApplicationAttributes value) {
+		this.appAttributes = value;
+	}
 
-    /**
-     * Gets the value of the validIpPrefixes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValidIpPrefixes() {
-        return validIpPrefixes;
-    }
+	/**
+	 * Gets the value of the validIpPrefixes property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValidIpPrefixes() {
+		return validIpPrefixes;
+	}
 
-    /**
-     * Sets the value of the validIpPrefixes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValidIpPrefixes(String value) {
-        this.validIpPrefixes = value;
-    }
+	/**
+	 * Sets the value of the validIpPrefixes property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValidIpPrefixes(String value) {
+		this.validIpPrefixes = value;
+	}
 
 }

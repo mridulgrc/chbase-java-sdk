@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:38:41 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.asthmainhaler;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -38,9 +36,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -68,336 +69,291 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "drug",
-    "strength",
-    "purpose",
-    "startDate",
-    "stopDate",
-    "expirationDate",
-    "deviceId",
-    "initialDoses",
-    "minDailyDoses",
-    "maxDailyDoses",
-    "canAlert",
-    "alert"
-})
+@XmlType(name = "", propOrder = { "drug", "strength", "purpose", "startDate", "stopDate", "expirationDate", "deviceId",
+		"initialDoses", "minDailyDoses", "maxDailyDoses", "canAlert", "alert" })
 @XmlRootElement(name = "asthma-inhaler")
 public class AsthmaInhaler {
 
-    @XmlElement(required = true)
-    protected CodableValue drug;
-    protected CodableValue strength;
-    protected Purpose purpose;
-    @XmlElement(name = "start-date", required = true)
-    protected ApproxDateTime startDate;
-    @XmlElement(name = "stop-date")
-    protected ApproxDateTime stopDate;
-    @XmlElement(name = "expiration-date")
-    protected ApproxDateTime expirationDate;
-    @XmlElement(name = "device-id")
-    protected String deviceId;
-    @XmlElement(name = "initial-doses")
-    protected Integer initialDoses;
-    @XmlElement(name = "min-daily-doses")
-    protected Integer minDailyDoses;
-    @XmlElement(name = "max-daily-doses")
-    protected Integer maxDailyDoses;
-    @XmlElement(name = "can-alert")
-    protected Boolean canAlert;
-    protected List<Alert> alert;
+	@XmlElement(required = true)
+	protected CodableValue drug;
+	protected CodableValue strength;
+	protected Purpose purpose;
+	@XmlElement(name = "start-date", required = true)
+	protected ApproxDateTime startDate;
+	@XmlElement(name = "stop-date")
+	protected ApproxDateTime stopDate;
+	@XmlElement(name = "expiration-date")
+	protected ApproxDateTime expirationDate;
+	@XmlElement(name = "device-id")
+	protected String deviceId;
+	@XmlElement(name = "initial-doses")
+	protected Integer initialDoses;
+	@XmlElement(name = "min-daily-doses")
+	protected Integer minDailyDoses;
+	@XmlElement(name = "max-daily-doses")
+	protected Integer maxDailyDoses;
+	@XmlElement(name = "can-alert")
+	protected Boolean canAlert;
+	protected List<Alert> alert;
 
-    /**
-     * Gets the value of the drug property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getDrug() {
-        return drug;
-    }
+	/**
+	 * Gets the value of the drug property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getDrug() {
+		return drug;
+	}
 
-    /**
-     * Sets the value of the drug property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setDrug(CodableValue value) {
-        this.drug = value;
-    }
+	/**
+	 * Sets the value of the drug property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setDrug(CodableValue value) {
+		this.drug = value;
+	}
 
-    /**
-     * Gets the value of the strength property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getStrength() {
-        return strength;
-    }
+	/**
+	 * Gets the value of the strength property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getStrength() {
+		return strength;
+	}
 
-    /**
-     * Sets the value of the strength property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setStrength(CodableValue value) {
-        this.strength = value;
-    }
+	/**
+	 * Sets the value of the strength property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setStrength(CodableValue value) {
+		this.strength = value;
+	}
 
-    /**
-     * Gets the value of the purpose property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Purpose }
-     *     
-     */
-    public Purpose getPurpose() {
-        return purpose;
-    }
+	/**
+	 * Gets the value of the purpose property.
+	 * 
+	 * @return possible object is {@link Purpose }
+	 * 
+	 */
+	public Purpose getPurpose() {
+		return purpose;
+	}
 
-    /**
-     * Sets the value of the purpose property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Purpose }
-     *     
-     */
-    public void setPurpose(Purpose value) {
-        this.purpose = value;
-    }
+	/**
+	 * Sets the value of the purpose property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Purpose }
+	 * 
+	 */
+	public void setPurpose(Purpose value) {
+		this.purpose = value;
+	}
 
-    /**
-     * Gets the value of the startDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getStartDate() {
-        return startDate;
-    }
+	/**
+	 * Gets the value of the startDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getStartDate() {
+		return startDate;
+	}
 
-    /**
-     * Sets the value of the startDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setStartDate(ApproxDateTime value) {
-        this.startDate = value;
-    }
+	/**
+	 * Sets the value of the startDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setStartDate(ApproxDateTime value) {
+		this.startDate = value;
+	}
 
-    /**
-     * Gets the value of the stopDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getStopDate() {
-        return stopDate;
-    }
+	/**
+	 * Gets the value of the stopDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getStopDate() {
+		return stopDate;
+	}
 
-    /**
-     * Sets the value of the stopDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setStopDate(ApproxDateTime value) {
-        this.stopDate = value;
-    }
+	/**
+	 * Sets the value of the stopDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setStopDate(ApproxDateTime value) {
+		this.stopDate = value;
+	}
 
-    /**
-     * Gets the value of the expirationDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getExpirationDate() {
-        return expirationDate;
-    }
+	/**
+	 * Gets the value of the expirationDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getExpirationDate() {
+		return expirationDate;
+	}
 
-    /**
-     * Sets the value of the expirationDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setExpirationDate(ApproxDateTime value) {
-        this.expirationDate = value;
-    }
+	/**
+	 * Sets the value of the expirationDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setExpirationDate(ApproxDateTime value) {
+		this.expirationDate = value;
+	}
 
-    /**
-     * Gets the value of the deviceId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDeviceId() {
-        return deviceId;
-    }
+	/**
+	 * Gets the value of the deviceId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDeviceId() {
+		return deviceId;
+	}
 
-    /**
-     * Sets the value of the deviceId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDeviceId(String value) {
-        this.deviceId = value;
-    }
+	/**
+	 * Sets the value of the deviceId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDeviceId(String value) {
+		this.deviceId = value;
+	}
 
-    /**
-     * Gets the value of the initialDoses property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getInitialDoses() {
-        return initialDoses;
-    }
+	/**
+	 * Gets the value of the initialDoses property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getInitialDoses() {
+		return initialDoses;
+	}
 
-    /**
-     * Sets the value of the initialDoses property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setInitialDoses(Integer value) {
-        this.initialDoses = value;
-    }
+	/**
+	 * Sets the value of the initialDoses property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setInitialDoses(Integer value) {
+		this.initialDoses = value;
+	}
 
-    /**
-     * Gets the value of the minDailyDoses property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getMinDailyDoses() {
-        return minDailyDoses;
-    }
+	/**
+	 * Gets the value of the minDailyDoses property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getMinDailyDoses() {
+		return minDailyDoses;
+	}
 
-    /**
-     * Sets the value of the minDailyDoses property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setMinDailyDoses(Integer value) {
-        this.minDailyDoses = value;
-    }
+	/**
+	 * Sets the value of the minDailyDoses property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setMinDailyDoses(Integer value) {
+		this.minDailyDoses = value;
+	}
 
-    /**
-     * Gets the value of the maxDailyDoses property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getMaxDailyDoses() {
-        return maxDailyDoses;
-    }
+	/**
+	 * Gets the value of the maxDailyDoses property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getMaxDailyDoses() {
+		return maxDailyDoses;
+	}
 
-    /**
-     * Sets the value of the maxDailyDoses property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setMaxDailyDoses(Integer value) {
-        this.maxDailyDoses = value;
-    }
+	/**
+	 * Sets the value of the maxDailyDoses property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setMaxDailyDoses(Integer value) {
+		this.maxDailyDoses = value;
+	}
 
-    /**
-     * Gets the value of the canAlert property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isCanAlert() {
-        return canAlert;
-    }
+	/**
+	 * Gets the value of the canAlert property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isCanAlert() {
+		return canAlert;
+	}
 
-    /**
-     * Sets the value of the canAlert property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setCanAlert(Boolean value) {
-        this.canAlert = value;
-    }
+	/**
+	 * Sets the value of the canAlert property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setCanAlert(Boolean value) {
+		this.canAlert = value;
+	}
 
-    /**
-     * Gets the value of the alert property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the alert property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAlert().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Alert }
-     * 
-     * 
-     */
-    public List<Alert> getAlert() {
-        if (alert == null) {
-            alert = new ArrayList<Alert>();
-        }
-        return this.alert;
-    }
+	/**
+	 * Gets the value of the alert property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the alert property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAlert().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Alert }
+	 * 
+	 * 
+	 */
+	public List<Alert> getAlert() {
+		if (alert == null) {
+			alert = new ArrayList<Alert>();
+		}
+		return this.alert;
+	}
 
 }

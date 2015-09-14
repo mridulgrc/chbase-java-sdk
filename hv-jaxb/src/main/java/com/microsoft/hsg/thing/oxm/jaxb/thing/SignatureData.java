@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.thing;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for SignatureData complex type.
+ * <p>
+ * Java class for SignatureData complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="SignatureData">
@@ -46,90 +47,77 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SignatureData", propOrder = {
-    "hvSignatureMethod",
-    "blobSignatureInfo",
-    "algorithmTag"
-})
+@XmlType(name = "SignatureData", propOrder = { "hvSignatureMethod", "blobSignatureInfo", "algorithmTag" })
 public class SignatureData {
 
-    @XmlElement(name = "hv-signature-method", required = true)
-    protected HealthVaultThingSignatureMethod hvSignatureMethod;
-    @XmlElement(name = "blob-signature-info")
-    protected BlobSignatureInfo blobSignatureInfo;
-    @XmlElement(name = "algorithm-tag", required = true)
-    protected String algorithmTag;
+	@XmlElement(name = "hv-signature-method", required = true)
+	protected HealthVaultThingSignatureMethod hvSignatureMethod;
+	@XmlElement(name = "blob-signature-info")
+	protected BlobSignatureInfo blobSignatureInfo;
+	@XmlElement(name = "algorithm-tag", required = true)
+	protected String algorithmTag;
 
-    /**
-     * Gets the value of the hvSignatureMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link HealthVaultThingSignatureMethod }
-     *     
-     */
-    public HealthVaultThingSignatureMethod getHvSignatureMethod() {
-        return hvSignatureMethod;
-    }
+	/**
+	 * Gets the value of the hvSignatureMethod property.
+	 * 
+	 * @return possible object is {@link HealthVaultThingSignatureMethod }
+	 * 
+	 */
+	public HealthVaultThingSignatureMethod getHvSignatureMethod() {
+		return hvSignatureMethod;
+	}
 
-    /**
-     * Sets the value of the hvSignatureMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link HealthVaultThingSignatureMethod }
-     *     
-     */
-    public void setHvSignatureMethod(HealthVaultThingSignatureMethod value) {
-        this.hvSignatureMethod = value;
-    }
+	/**
+	 * Sets the value of the hvSignatureMethod property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link HealthVaultThingSignatureMethod }
+	 * 
+	 */
+	public void setHvSignatureMethod(HealthVaultThingSignatureMethod value) {
+		this.hvSignatureMethod = value;
+	}
 
-    /**
-     * Gets the value of the blobSignatureInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BlobSignatureInfo }
-     *     
-     */
-    public BlobSignatureInfo getBlobSignatureInfo() {
-        return blobSignatureInfo;
-    }
+	/**
+	 * Gets the value of the blobSignatureInfo property.
+	 * 
+	 * @return possible object is {@link BlobSignatureInfo }
+	 * 
+	 */
+	public BlobSignatureInfo getBlobSignatureInfo() {
+		return blobSignatureInfo;
+	}
 
-    /**
-     * Sets the value of the blobSignatureInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BlobSignatureInfo }
-     *     
-     */
-    public void setBlobSignatureInfo(BlobSignatureInfo value) {
-        this.blobSignatureInfo = value;
-    }
+	/**
+	 * Sets the value of the blobSignatureInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BlobSignatureInfo }
+	 * 
+	 */
+	public void setBlobSignatureInfo(BlobSignatureInfo value) {
+		this.blobSignatureInfo = value;
+	}
 
-    /**
-     * Gets the value of the algorithmTag property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAlgorithmTag() {
-        return algorithmTag;
-    }
+	/**
+	 * Gets the value of the algorithmTag property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAlgorithmTag() {
+		return algorithmTag;
+	}
 
-    /**
-     * Sets the value of the algorithmTag property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAlgorithmTag(String value) {
-        this.algorithmTag = value;
-    }
+	/**
+	 * Sets the value of the algorithmTag property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAlgorithmTag(String value) {
+		this.algorithmTag = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:14:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getvocabulary.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -54,42 +55,34 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "GetVocabulary",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.GetVocabulary")
+@JaxbRequest(methodName = "GetVocabulary", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.GetVocabulary")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "vocabularyParameters"
-})
+@XmlType(name = "", propOrder = { "vocabularyParameters" })
 @XmlRootElement(name = "info")
 public class GetVocabularyRequest {
 
-    @XmlElement(name = "vocabulary-parameters")
-    protected VocabularyParameters vocabularyParameters;
+	@XmlElement(name = "vocabulary-parameters")
+	protected VocabularyParameters vocabularyParameters;
 
-    /**
-     * Gets the value of the vocabularyParameters property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VocabularyParameters }
-     *     
-     */
-    public VocabularyParameters getVocabularyParameters() {
-        return vocabularyParameters;
-    }
+	/**
+	 * Gets the value of the vocabularyParameters property.
+	 * 
+	 * @return possible object is {@link VocabularyParameters }
+	 * 
+	 */
+	public VocabularyParameters getVocabularyParameters() {
+		return vocabularyParameters;
+	}
 
-    /**
-     * Sets the value of the vocabularyParameters property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VocabularyParameters }
-     *     
-     */
-    public void setVocabularyParameters(VocabularyParameters value) {
-        this.vocabularyParameters = value;
-    }
+	/**
+	 * Sets the value of the vocabularyParameters property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VocabularyParameters }
+	 * 
+	 */
+	public void setVocabularyParameters(VocabularyParameters value) {
+		this.vocabularyParameters = value;
+	}
 
 }

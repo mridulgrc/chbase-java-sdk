@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:02:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthingtype.response;
 
 import java.math.BigInteger;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Column complex type.
+ * <p>
+ * Java class for Column complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Column">
@@ -53,136 +54,121 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "Column")
 public class Column {
 
-    @XmlAttribute(name = "tag", required = true)
-    protected String tag;
-    @XmlAttribute(name = "label", required = true)
-    protected String label;
-    @XmlAttribute(name = "type", required = true)
-    protected String type;
-    @XmlAttribute(name = "width", required = true)
-    @XmlSchemaType(name = "positiveInteger")
-    protected BigInteger width;
-    @XmlAttribute(name = "visible")
-    protected Boolean visible;
+	@XmlAttribute(name = "tag", required = true)
+	protected String tag;
+	@XmlAttribute(name = "label", required = true)
+	protected String label;
+	@XmlAttribute(name = "type", required = true)
+	protected String type;
+	@XmlAttribute(name = "width", required = true)
+	@XmlSchemaType(name = "positiveInteger")
+	protected BigInteger width;
+	@XmlAttribute(name = "visible")
+	protected Boolean visible;
 
-    /**
-     * Gets the value of the tag property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTag() {
-        return tag;
-    }
+	/**
+	 * Gets the value of the tag property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTag() {
+		return tag;
+	}
 
-    /**
-     * Sets the value of the tag property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTag(String value) {
-        this.tag = value;
-    }
+	/**
+	 * Sets the value of the tag property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTag(String value) {
+		this.tag = value;
+	}
 
-    /**
-     * Gets the value of the label property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLabel() {
-        return label;
-    }
+	/**
+	 * Gets the value of the label property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLabel() {
+		return label;
+	}
 
-    /**
-     * Sets the value of the label property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLabel(String value) {
-        this.label = value;
-    }
+	/**
+	 * Sets the value of the label property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLabel(String value) {
+		this.label = value;
+	}
 
-    /**
-     * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getType() {
-        return type;
-    }
+	/**
+	 * Gets the value of the type property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getType() {
+		return type;
+	}
 
-    /**
-     * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setType(String value) {
-        this.type = value;
-    }
+	/**
+	 * Sets the value of the type property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setType(String value) {
+		this.type = value;
+	}
 
-    /**
-     * Gets the value of the width property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getWidth() {
-        return width;
-    }
+	/**
+	 * Gets the value of the width property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getWidth() {
+		return width;
+	}
 
-    /**
-     * Sets the value of the width property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setWidth(BigInteger value) {
-        this.width = value;
-    }
+	/**
+	 * Sets the value of the width property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setWidth(BigInteger value) {
+		this.width = value;
+	}
 
-    /**
-     * Gets the value of the visible property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isVisible() {
-        return visible;
-    }
+	/**
+	 * Gets the value of the visible property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isVisible() {
+		return visible;
+	}
 
-    /**
-     * Sets the value of the visible property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setVisible(Boolean value) {
-        this.visible = value;
-    }
+	/**
+	 * Sets the value of the visible property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setVisible(Boolean value) {
+		this.visible = value;
+	}
 
 }

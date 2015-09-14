@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:46:50 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.hba1x;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,25 +15,31 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:HbA1C="urn:com.microsoft.wc.thing.HbA1C" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types"&gt;
- *                         Defines a single HbA1C reading.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:HbA1C="urn:com.microsoft.wc.thing.HbA1C" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types"&gt;
+
+ *                         Defines a single HbA1C reading.
+
  *                     &lt;/summary&gt;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:HbA1C="urn:com.microsoft.wc.thing.HbA1C" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types"&gt;
- *                         HbA1c is a test that measures the amount of glycosylated hemoglobin in your blood.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:HbA1C="urn:com.microsoft.wc.thing.HbA1C" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types"&gt;
+
+ *                         HbA1c is a test that measures the amount of glycosylated hemoglobin in your blood.
+
  *                     &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -54,109 +59,95 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "value",
-    "hbA1CAssayMethod",
-    "deviceId"
-})
+@XmlType(name = "", propOrder = { "when", "value", "hbA1CAssayMethod", "deviceId" })
 @XmlRootElement(name = "HbA1C")
 public class HbA1C {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    protected double value;
-    @XmlElement(name = "HbA1C-assay-method")
-    protected CodableValue hbA1CAssayMethod;
-    @XmlElement(name = "device-id")
-    protected String deviceId;
+	@XmlElement(required = true)
+	protected DateTime when;
+	protected double value;
+	@XmlElement(name = "HbA1C-assay-method")
+	protected CodableValue hbA1CAssayMethod;
+	@XmlElement(name = "device-id")
+	protected String deviceId;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     */
-    public double getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 */
+	public double getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     */
-    public void setValue(double value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 */
+	public void setValue(double value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the hbA1CAssayMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getHbA1CAssayMethod() {
-        return hbA1CAssayMethod;
-    }
+	/**
+	 * Gets the value of the hbA1CAssayMethod property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getHbA1CAssayMethod() {
+		return hbA1CAssayMethod;
+	}
 
-    /**
-     * Sets the value of the hbA1CAssayMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setHbA1CAssayMethod(CodableValue value) {
-        this.hbA1CAssayMethod = value;
-    }
+	/**
+	 * Sets the value of the hbA1CAssayMethod property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setHbA1CAssayMethod(CodableValue value) {
+		this.hbA1CAssayMethod = value;
+	}
 
-    /**
-     * Gets the value of the deviceId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDeviceId() {
-        return deviceId;
-    }
+	/**
+	 * Gets the value of the deviceId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDeviceId() {
+		return deviceId;
+	}
 
-    /**
-     * Sets the value of the deviceId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDeviceId(String value) {
-        this.deviceId = value;
-    }
+	/**
+	 * Sets the value of the deviceId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDeviceId(String value) {
+		this.deviceId = value;
+	}
 
 }

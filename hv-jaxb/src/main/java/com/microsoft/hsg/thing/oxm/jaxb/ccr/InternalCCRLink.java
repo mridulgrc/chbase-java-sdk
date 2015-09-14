@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.util.ArrayList;
@@ -16,11 +15,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -46,122 +47,111 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "linkID",
-    "linkRelationship",
-    "source"
-})
+@XmlType(name = "", propOrder = { "linkID", "linkRelationship", "source" })
 @XmlRootElement(name = "InternalCCRLink")
 public class InternalCCRLink {
 
-    @XmlElement(name = "LinkID", required = true)
-    protected String linkID;
-    @XmlElement(name = "LinkRelationship")
-    protected List<String> linkRelationship;
-    @XmlElement(name = "Source")
-    protected InternalCCRLink.Source source;
+	@XmlElement(name = "LinkID", required = true)
+	protected String linkID;
+	@XmlElement(name = "LinkRelationship")
+	protected List<String> linkRelationship;
+	@XmlElement(name = "Source")
+	protected InternalCCRLink.Source source;
 
-    /**
-     * Gets the value of the linkID property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLinkID() {
-        return linkID;
-    }
+	/**
+	 * Gets the value of the linkID property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLinkID() {
+		return linkID;
+	}
 
-    /**
-     * Sets the value of the linkID property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLinkID(String value) {
-        this.linkID = value;
-    }
+	/**
+	 * Sets the value of the linkID property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLinkID(String value) {
+		this.linkID = value;
+	}
 
-    /**
-     * Gets the value of the linkRelationship property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the linkRelationship property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getLinkRelationship().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getLinkRelationship() {
-        if (linkRelationship == null) {
-            linkRelationship = new ArrayList<String>();
-        }
-        return this.linkRelationship;
-    }
+	/**
+	 * Gets the value of the linkRelationship property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the linkRelationship property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getLinkRelationship().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getLinkRelationship() {
+		if (linkRelationship == null) {
+			linkRelationship = new ArrayList<String>();
+		}
+		return this.linkRelationship;
+	}
 
-    /**
-     * Gets the value of the source property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link InternalCCRLink.Source }
-     *     
-     */
-    public InternalCCRLink.Source getSource() {
-        return source;
-    }
+	/**
+	 * Gets the value of the source property.
+	 * 
+	 * @return possible object is {@link InternalCCRLink.Source }
+	 * 
+	 */
+	public InternalCCRLink.Source getSource() {
+		return source;
+	}
 
-    /**
-     * Sets the value of the source property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link InternalCCRLink.Source }
-     *     
-     */
-    public void setSource(InternalCCRLink.Source value) {
-        this.source = value;
-    }
+	/**
+	 * Sets the value of the source property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link InternalCCRLink.Source }
+	 * 
+	 */
+	public void setSource(InternalCCRLink.Source value) {
+		this.source = value;
+	}
 
+	/**
+	 * <p>
+	 * Java class for anonymous complex type.
+	 * 
+	 * <p>
+	 * The following schema fragment specifies the expected content contained
+	 * within this class.
+	 * 
+	 * <pre>
+	 * &lt;complexType>
+	 *   &lt;complexContent>
+	 *     &lt;extension base="{urn:astm-org:CCR}SourceType">
+	 *     &lt;/extension>
+	 *   &lt;/complexContent>
+	 * &lt;/complexType>
+	 * </pre>
+	 * 
+	 * 
+	 */
+	@XmlAccessorType(XmlAccessType.FIELD)
+	@XmlType(name = "")
+	public static class Source extends SourceType {
 
-    /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;extension base="{urn:astm-org:CCR}SourceType">
-     *     &lt;/extension>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "")
-    public static class Source
-        extends SourceType
-    {
-
-
-    }
+	}
 
 }

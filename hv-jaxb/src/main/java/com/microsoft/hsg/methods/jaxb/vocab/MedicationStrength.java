@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocab;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
-
 
 /**
  * 
@@ -30,9 +28,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * </pre>
  * 
  * 
- * <p>Java class for medication-strength complex type.
+ * <p>
+ * Java class for medication-strength complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="medication-strength">
@@ -51,88 +52,75 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "medication-strength", propOrder = {
-    "displayText",
-    "value",
-    "unit"
-})
+@XmlType(name = "medication-strength", propOrder = { "displayText", "value", "unit" })
 public class MedicationStrength {
 
-    @XmlElement(name = "display-text", required = true)
-    protected String displayText;
-    protected String value;
-    protected CodableValue unit;
+	@XmlElement(name = "display-text", required = true)
+	protected String displayText;
+	protected String value;
+	protected CodableValue unit;
 
-    /**
-     * Gets the value of the displayText property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDisplayText() {
-        return displayText;
-    }
+	/**
+	 * Gets the value of the displayText property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDisplayText() {
+		return displayText;
+	}
 
-    /**
-     * Sets the value of the displayText property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDisplayText(String value) {
-        this.displayText = value;
-    }
+	/**
+	 * Sets the value of the displayText property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDisplayText(String value) {
+		this.displayText = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the unit property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getUnit() {
-        return unit;
-    }
+	/**
+	 * Gets the value of the unit property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getUnit() {
+		return unit;
+	}
 
-    /**
-     * Sets the value of the unit property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setUnit(CodableValue value) {
-        this.unit = value;
-    }
+	/**
+	 * Sets the value of the unit property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setUnit(CodableValue value) {
+		this.unit = value;
+	}
 
 }

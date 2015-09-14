@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:37:49 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.bloodglucose;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -17,7 +16,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.BloodGlucoseValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
 
-
 /**
  * 
  * <pre>
@@ -27,9 +25,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -52,198 +53,170 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "value",
-    "glucoseMeasurementType",
-    "outsideOperatingTemp",
-    "isControlTest",
-    "normalcy",
-    "measurementContext"
-})
+@XmlType(name = "", propOrder = { "when", "value", "glucoseMeasurementType", "outsideOperatingTemp", "isControlTest",
+		"normalcy", "measurementContext" })
 @XmlRootElement(name = "blood-glucose")
 public class BloodGlucose {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    @XmlElement(required = true)
-    protected BloodGlucoseValue value;
-    @XmlElement(name = "glucose-measurement-type", required = true)
-    protected CodableValue glucoseMeasurementType;
-    @XmlElement(name = "outside-operating-temp")
-    protected Boolean outsideOperatingTemp;
-    @XmlElement(name = "is-control-test")
-    protected Boolean isControlTest;
-    protected Integer normalcy;
-    @XmlElement(name = "measurement-context")
-    protected CodableValue measurementContext;
+	@XmlElement(required = true)
+	protected DateTime when;
+	@XmlElement(required = true)
+	protected BloodGlucoseValue value;
+	@XmlElement(name = "glucose-measurement-type", required = true)
+	protected CodableValue glucoseMeasurementType;
+	@XmlElement(name = "outside-operating-temp")
+	protected Boolean outsideOperatingTemp;
+	@XmlElement(name = "is-control-test")
+	protected Boolean isControlTest;
+	protected Integer normalcy;
+	@XmlElement(name = "measurement-context")
+	protected CodableValue measurementContext;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BloodGlucoseValue }
-     *     
-     */
-    public BloodGlucoseValue getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link BloodGlucoseValue }
+	 * 
+	 */
+	public BloodGlucoseValue getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BloodGlucoseValue }
-     *     
-     */
-    public void setValue(BloodGlucoseValue value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BloodGlucoseValue }
+	 * 
+	 */
+	public void setValue(BloodGlucoseValue value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the glucoseMeasurementType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getGlucoseMeasurementType() {
-        return glucoseMeasurementType;
-    }
+	/**
+	 * Gets the value of the glucoseMeasurementType property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getGlucoseMeasurementType() {
+		return glucoseMeasurementType;
+	}
 
-    /**
-     * Sets the value of the glucoseMeasurementType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setGlucoseMeasurementType(CodableValue value) {
-        this.glucoseMeasurementType = value;
-    }
+	/**
+	 * Sets the value of the glucoseMeasurementType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setGlucoseMeasurementType(CodableValue value) {
+		this.glucoseMeasurementType = value;
+	}
 
-    /**
-     * Gets the value of the outsideOperatingTemp property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isOutsideOperatingTemp() {
-        return outsideOperatingTemp;
-    }
+	/**
+	 * Gets the value of the outsideOperatingTemp property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isOutsideOperatingTemp() {
+		return outsideOperatingTemp;
+	}
 
-    /**
-     * Sets the value of the outsideOperatingTemp property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setOutsideOperatingTemp(Boolean value) {
-        this.outsideOperatingTemp = value;
-    }
+	/**
+	 * Sets the value of the outsideOperatingTemp property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setOutsideOperatingTemp(Boolean value) {
+		this.outsideOperatingTemp = value;
+	}
 
-    /**
-     * Gets the value of the isControlTest property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsControlTest() {
-        return isControlTest;
-    }
+	/**
+	 * Gets the value of the isControlTest property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsControlTest() {
+		return isControlTest;
+	}
 
-    /**
-     * Sets the value of the isControlTest property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsControlTest(Boolean value) {
-        this.isControlTest = value;
-    }
+	/**
+	 * Sets the value of the isControlTest property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsControlTest(Boolean value) {
+		this.isControlTest = value;
+	}
 
-    /**
-     * Gets the value of the normalcy property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getNormalcy() {
-        return normalcy;
-    }
+	/**
+	 * Gets the value of the normalcy property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getNormalcy() {
+		return normalcy;
+	}
 
-    /**
-     * Sets the value of the normalcy property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setNormalcy(Integer value) {
-        this.normalcy = value;
-    }
+	/**
+	 * Sets the value of the normalcy property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setNormalcy(Integer value) {
+		this.normalcy = value;
+	}
 
-    /**
-     * Gets the value of the measurementContext property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getMeasurementContext() {
-        return measurementContext;
-    }
+	/**
+	 * Gets the value of the measurementContext property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getMeasurementContext() {
+		return measurementContext;
+	}
 
-    /**
-     * Sets the value of the measurementContext property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setMeasurementContext(CodableValue value) {
-        this.measurementContext = value;
-    }
+	/**
+	 * Sets the value of the measurementContext property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setMeasurementContext(CodableValue value) {
+		this.measurementContext = value;
+	}
 
 }

@@ -5,13 +5,11 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.dates;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -24,9 +22,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for approx-date complex type.
+ * <p>
+ * Java class for approx-date complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="approx-date">
@@ -45,79 +46,69 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "approx-date", propOrder = {
-    "y",
-    "m",
-    "d"
-})
+@XmlType(name = "approx-date", propOrder = { "y", "m", "d" })
 public class ApproxDate {
 
-    protected int y;
-    protected Integer m;
-    protected Integer d;
+	protected int y;
+	protected Integer m;
+	protected Integer d;
 
-    /**
-     * Gets the value of the y property.
-     * 
-     */
-    public int getY() {
-        return y;
-    }
+	/**
+	 * Gets the value of the y property.
+	 * 
+	 */
+	public int getY() {
+		return y;
+	}
 
-    /**
-     * Sets the value of the y property.
-     * 
-     */
-    public void setY(int value) {
-        this.y = value;
-    }
+	/**
+	 * Sets the value of the y property.
+	 * 
+	 */
+	public void setY(int value) {
+		this.y = value;
+	}
 
-    /**
-     * Gets the value of the m property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getM() {
-        return m;
-    }
+	/**
+	 * Gets the value of the m property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getM() {
+		return m;
+	}
 
-    /**
-     * Sets the value of the m property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setM(Integer value) {
-        this.m = value;
-    }
+	/**
+	 * Sets the value of the m property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setM(Integer value) {
+		this.m = value;
+	}
 
-    /**
-     * Gets the value of the d property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getD() {
-        return d;
-    }
+	/**
+	 * Gets the value of the d property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getD() {
+		return d;
+	}
 
-    /**
-     * Sets the value of the d property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setD(Integer value) {
-        this.d = value;
-    }
+	/**
+	 * Sets the value of the d property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setD(Integer value) {
+		this.d = value;
+	}
 
 }

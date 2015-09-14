@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocabconfig;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -23,9 +21,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Vocab complex type.
+ * <p>
+ * Java class for Vocab complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Vocab">
@@ -54,357 +55,305 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Vocab", propOrder = {
-    "annotation",
-    "id",
-    "family",
-    "name",
-    "version",
-    "lang",
-    "official",
-    "desc",
-    "isCurrentVersion",
-    "isQueryable",
-    "isActive",
-    "flags",
-    "items"
-})
+@XmlType(name = "Vocab", propOrder = { "annotation", "id", "family", "name", "version", "lang", "official", "desc",
+		"isCurrentVersion", "isQueryable", "isActive", "flags", "items" })
 public class Vocab {
 
-    protected VocabAnnotation annotation;
-    @XmlElement(required = true)
-    protected String id;
-    @XmlElement(required = true)
-    protected String family;
-    @XmlElement(required = true)
-    protected String name;
-    @XmlElement(required = true)
-    protected String version;
-    @XmlElement(required = true)
-    protected String lang;
-    @XmlElement(required = true)
-    protected String official;
-    protected String desc;
-    @XmlElement(name = "is-current-version")
-    protected Boolean isCurrentVersion;
-    @XmlElement(name = "is-queryable")
-    protected Boolean isQueryable;
-    @XmlElement(name = "is-active")
-    protected Boolean isActive;
-    protected Long flags;
-    @XmlElement(required = true)
-    protected VocabItems items;
+	protected VocabAnnotation annotation;
+	@XmlElement(required = true)
+	protected String id;
+	@XmlElement(required = true)
+	protected String family;
+	@XmlElement(required = true)
+	protected String name;
+	@XmlElement(required = true)
+	protected String version;
+	@XmlElement(required = true)
+	protected String lang;
+	@XmlElement(required = true)
+	protected String official;
+	protected String desc;
+	@XmlElement(name = "is-current-version")
+	protected Boolean isCurrentVersion;
+	@XmlElement(name = "is-queryable")
+	protected Boolean isQueryable;
+	@XmlElement(name = "is-active")
+	protected Boolean isActive;
+	protected Long flags;
+	@XmlElement(required = true)
+	protected VocabItems items;
 
-    /**
-     * Gets the value of the annotation property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VocabAnnotation }
-     *     
-     */
-    public VocabAnnotation getAnnotation() {
-        return annotation;
-    }
+	/**
+	 * Gets the value of the annotation property.
+	 * 
+	 * @return possible object is {@link VocabAnnotation }
+	 * 
+	 */
+	public VocabAnnotation getAnnotation() {
+		return annotation;
+	}
 
-    /**
-     * Sets the value of the annotation property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VocabAnnotation }
-     *     
-     */
-    public void setAnnotation(VocabAnnotation value) {
-        this.annotation = value;
-    }
+	/**
+	 * Sets the value of the annotation property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VocabAnnotation }
+	 * 
+	 */
+	public void setAnnotation(VocabAnnotation value) {
+		this.annotation = value;
+	}
 
-    /**
-     * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getId() {
-        return id;
-    }
+	/**
+	 * Gets the value of the id property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getId() {
+		return id;
+	}
 
-    /**
-     * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setId(String value) {
-        this.id = value;
-    }
+	/**
+	 * Sets the value of the id property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setId(String value) {
+		this.id = value;
+	}
 
-    /**
-     * Gets the value of the family property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFamily() {
-        return family;
-    }
+	/**
+	 * Gets the value of the family property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getFamily() {
+		return family;
+	}
 
-    /**
-     * Sets the value of the family property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFamily(String value) {
-        this.family = value;
-    }
+	/**
+	 * Sets the value of the family property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setFamily(String value) {
+		this.family = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the version property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getVersion() {
-        return version;
-    }
+	/**
+	 * Gets the value of the version property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getVersion() {
+		return version;
+	}
 
-    /**
-     * Sets the value of the version property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setVersion(String value) {
-        this.version = value;
-    }
+	/**
+	 * Sets the value of the version property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setVersion(String value) {
+		this.version = value;
+	}
 
-    /**
-     * Gets the value of the lang property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLang() {
-        return lang;
-    }
+	/**
+	 * Gets the value of the lang property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLang() {
+		return lang;
+	}
 
-    /**
-     * Sets the value of the lang property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLang(String value) {
-        this.lang = value;
-    }
+	/**
+	 * Sets the value of the lang property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLang(String value) {
+		this.lang = value;
+	}
 
-    /**
-     * Gets the value of the official property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOfficial() {
-        return official;
-    }
+	/**
+	 * Gets the value of the official property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getOfficial() {
+		return official;
+	}
 
-    /**
-     * Sets the value of the official property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOfficial(String value) {
-        this.official = value;
-    }
+	/**
+	 * Sets the value of the official property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setOfficial(String value) {
+		this.official = value;
+	}
 
-    /**
-     * Gets the value of the desc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDesc() {
-        return desc;
-    }
+	/**
+	 * Gets the value of the desc property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDesc() {
+		return desc;
+	}
 
-    /**
-     * Sets the value of the desc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDesc(String value) {
-        this.desc = value;
-    }
+	/**
+	 * Sets the value of the desc property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDesc(String value) {
+		this.desc = value;
+	}
 
-    /**
-     * Gets the value of the isCurrentVersion property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsCurrentVersion() {
-        return isCurrentVersion;
-    }
+	/**
+	 * Gets the value of the isCurrentVersion property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsCurrentVersion() {
+		return isCurrentVersion;
+	}
 
-    /**
-     * Sets the value of the isCurrentVersion property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsCurrentVersion(Boolean value) {
-        this.isCurrentVersion = value;
-    }
+	/**
+	 * Sets the value of the isCurrentVersion property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsCurrentVersion(Boolean value) {
+		this.isCurrentVersion = value;
+	}
 
-    /**
-     * Gets the value of the isQueryable property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsQueryable() {
-        return isQueryable;
-    }
+	/**
+	 * Gets the value of the isQueryable property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsQueryable() {
+		return isQueryable;
+	}
 
-    /**
-     * Sets the value of the isQueryable property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsQueryable(Boolean value) {
-        this.isQueryable = value;
-    }
+	/**
+	 * Sets the value of the isQueryable property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsQueryable(Boolean value) {
+		this.isQueryable = value;
+	}
 
-    /**
-     * Gets the value of the isActive property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsActive() {
-        return isActive;
-    }
+	/**
+	 * Gets the value of the isActive property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsActive() {
+		return isActive;
+	}
 
-    /**
-     * Sets the value of the isActive property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsActive(Boolean value) {
-        this.isActive = value;
-    }
+	/**
+	 * Sets the value of the isActive property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsActive(Boolean value) {
+		this.isActive = value;
+	}
 
-    /**
-     * Gets the value of the flags property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
-     */
-    public Long getFlags() {
-        return flags;
-    }
+	/**
+	 * Gets the value of the flags property.
+	 * 
+	 * @return possible object is {@link Long }
+	 * 
+	 */
+	public Long getFlags() {
+		return flags;
+	}
 
-    /**
-     * Sets the value of the flags property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
-     */
-    public void setFlags(Long value) {
-        this.flags = value;
-    }
+	/**
+	 * Sets the value of the flags property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Long }
+	 * 
+	 */
+	public void setFlags(Long value) {
+		this.flags = value;
+	}
 
-    /**
-     * Gets the value of the items property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VocabItems }
-     *     
-     */
-    public VocabItems getItems() {
-        return items;
-    }
+	/**
+	 * Gets the value of the items property.
+	 * 
+	 * @return possible object is {@link VocabItems }
+	 * 
+	 */
+	public VocabItems getItems() {
+		return items;
+	}
 
-    /**
-     * Sets the value of the items property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VocabItems }
-     *     
-     */
-    public void setItems(VocabItems value) {
-        this.items = value;
-    }
+	/**
+	 * Sets the value of the items property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VocabItems }
+	 * 
+	 */
+	public void setItems(VocabItems value) {
+		this.items = value;
+	}
 
 }

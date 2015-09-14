@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.util.ArrayList;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for PersonNameType complex type.
+ * <p>
+ * Java class for PersonNameType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="PersonNameType">
@@ -41,201 +42,194 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "PersonNameType", propOrder = {
-    "given",
-    "middle",
-    "family",
-    "suffix",
-    "title",
-    "nickName"
-})
+@XmlType(name = "PersonNameType", propOrder = { "given", "middle", "family", "suffix", "title", "nickName" })
 public class PersonNameType {
 
-    @XmlElement(name = "Given")
-    protected List<String> given;
-    @XmlElement(name = "Middle")
-    protected List<String> middle;
-    @XmlElement(name = "Family")
-    protected List<String> family;
-    @XmlElement(name = "Suffix")
-    protected List<String> suffix;
-    @XmlElement(name = "Title")
-    protected List<String> title;
-    @XmlElement(name = "NickName")
-    protected List<Object> nickName;
+	@XmlElement(name = "Given")
+	protected List<String> given;
+	@XmlElement(name = "Middle")
+	protected List<String> middle;
+	@XmlElement(name = "Family")
+	protected List<String> family;
+	@XmlElement(name = "Suffix")
+	protected List<String> suffix;
+	@XmlElement(name = "Title")
+	protected List<String> title;
+	@XmlElement(name = "NickName")
+	protected List<Object> nickName;
 
-    /**
-     * Gets the value of the given property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the given property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getGiven().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getGiven() {
-        if (given == null) {
-            given = new ArrayList<String>();
-        }
-        return this.given;
-    }
+	/**
+	 * Gets the value of the given property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the given property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getGiven().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getGiven() {
+		if (given == null) {
+			given = new ArrayList<String>();
+		}
+		return this.given;
+	}
 
-    /**
-     * Gets the value of the middle property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the middle property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getMiddle().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getMiddle() {
-        if (middle == null) {
-            middle = new ArrayList<String>();
-        }
-        return this.middle;
-    }
+	/**
+	 * Gets the value of the middle property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the middle property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getMiddle().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getMiddle() {
+		if (middle == null) {
+			middle = new ArrayList<String>();
+		}
+		return this.middle;
+	}
 
-    /**
-     * Gets the value of the family property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the family property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getFamily().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getFamily() {
-        if (family == null) {
-            family = new ArrayList<String>();
-        }
-        return this.family;
-    }
+	/**
+	 * Gets the value of the family property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the family property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getFamily().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getFamily() {
+		if (family == null) {
+			family = new ArrayList<String>();
+		}
+		return this.family;
+	}
 
-    /**
-     * Gets the value of the suffix property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the suffix property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSuffix().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getSuffix() {
-        if (suffix == null) {
-            suffix = new ArrayList<String>();
-        }
-        return this.suffix;
-    }
+	/**
+	 * Gets the value of the suffix property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the suffix property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getSuffix().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getSuffix() {
+		if (suffix == null) {
+			suffix = new ArrayList<String>();
+		}
+		return this.suffix;
+	}
 
-    /**
-     * Gets the value of the title property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the title property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTitle().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getTitle() {
-        if (title == null) {
-            title = new ArrayList<String>();
-        }
-        return this.title;
-    }
+	/**
+	 * Gets the value of the title property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the title property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getTitle().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getTitle() {
+		if (title == null) {
+			title = new ArrayList<String>();
+		}
+		return this.title;
+	}
 
-    /**
-     * Gets the value of the nickName property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the nickName property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getNickName().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Object }
-     * 
-     * 
-     */
-    public List<Object> getNickName() {
-        if (nickName == null) {
-            nickName = new ArrayList<Object>();
-        }
-        return this.nickName;
-    }
+	/**
+	 * Gets the value of the nickName property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the nickName property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getNickName().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Object }
+	 * 
+	 * 
+	 */
+	public List<Object> getNickName() {
+		if (nickName == null) {
+			nickName = new ArrayList<Object>();
+		}
+		return this.nickName;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.thingtype;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
  * <pre>
@@ -22,9 +20,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for VocabReference complex type.
+ * <p>
+ * Java class for VocabReference complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="VocabReference">
@@ -41,39 +42,32 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VocabReference", propOrder = {
-    "stringTokenId"
-})
-@XmlSeeAlso({
-    ColumnData.class
-})
+@XmlType(name = "VocabReference", propOrder = { "stringTokenId" })
+@XmlSeeAlso({ ColumnData.class })
 public class VocabReference {
 
-    @XmlElement(name = "string-token-id", required = true)
-    protected String stringTokenId;
+	@XmlElement(name = "string-token-id", required = true)
+	protected String stringTokenId;
 
-    /**
-     * Gets the value of the stringTokenId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getStringTokenId() {
-        return stringTokenId;
-    }
+	/**
+	 * Gets the value of the stringTokenId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getStringTokenId() {
+		return stringTokenId;
+	}
 
-    /**
-     * Sets the value of the stringTokenId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setStringTokenId(String value) {
-        this.stringTokenId = value;
-    }
+	/**
+	 * Sets the value of the stringTokenId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setStringTokenId(String value) {
+		this.stringTokenId = value;
+	}
 
 }

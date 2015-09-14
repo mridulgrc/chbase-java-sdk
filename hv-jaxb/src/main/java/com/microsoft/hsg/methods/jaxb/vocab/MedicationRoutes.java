@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocab;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
-
 
 /**
  * 
@@ -30,9 +28,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * </pre>
  * 
  * 
- * <p>Java class for medication-routes complex type.
+ * <p>
+ * Java class for medication-routes complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="medication-routes">
@@ -49,41 +50,40 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "medication-routes", propOrder = {
-    "route"
-})
+@XmlType(name = "medication-routes", propOrder = { "route" })
 public class MedicationRoutes {
 
-    @XmlElement(required = true)
-    protected List<CodableValue> route;
+	@XmlElement(required = true)
+	protected List<CodableValue> route;
 
-    /**
-     * Gets the value of the route property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the route property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getRoute().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodableValue }
-     * 
-     * 
-     */
-    public List<CodableValue> getRoute() {
-        if (route == null) {
-            route = new ArrayList<CodableValue>();
-        }
-        return this.route;
-    }
+	/**
+	 * Gets the value of the route property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the route property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getRoute().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodableValue }
+	 * 
+	 * 
+	 */
+	public List<CodableValue> getRoute() {
+		if (route == null) {
+			route = new ArrayList<CodableValue>();
+		}
+		return this.route;
+	}
 
 }

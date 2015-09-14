@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:18:59 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getapplicationinfo2.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.methods.jaxb.application.AppWithLogos;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import com.microsoft.hsg.methods.jaxb.application.AppWithLogos;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -52,37 +53,32 @@ import com.microsoft.hsg.methods.jaxb.application.AppWithLogos;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "application"
-})
+@XmlType(name = "", propOrder = { "application" })
 @XmlRootElement(name = "info")
 public class GetApplicationInfo2Response {
 
-    @XmlElement(required = true)
-    protected AppWithLogos application;
+	@XmlElement(required = true)
+	protected AppWithLogos application;
 
-    /**
-     * Gets the value of the application property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AppWithLogos }
-     *     
-     */
-    public AppWithLogos getApplication() {
-        return application;
-    }
+	/**
+	 * Gets the value of the application property.
+	 * 
+	 * @return possible object is {@link AppWithLogos }
+	 * 
+	 */
+	public AppWithLogos getApplication() {
+		return application;
+	}
 
-    /**
-     * Sets the value of the application property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AppWithLogos }
-     *     
-     */
-    public void setApplication(AppWithLogos value) {
-        this.application = value;
-    }
+	/**
+	 * Sets the value of the application property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AppWithLogos }
+	 * 
+	 */
+	public void setApplication(AppWithLogos value) {
+		this.application = value;
+	}
 
 }

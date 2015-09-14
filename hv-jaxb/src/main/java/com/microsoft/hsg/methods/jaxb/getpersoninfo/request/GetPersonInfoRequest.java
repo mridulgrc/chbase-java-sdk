@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 09:49:50 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getpersoninfo.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -34,9 +33,12 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -53,69 +55,57 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "GetPersonInfo",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.GetPersonInfo")
+@JaxbRequest(methodName = "GetPersonInfo", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.GetPersonInfo")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "groupMembership",
-    "effectiveRecordPermissions"
-})
+@XmlType(name = "", propOrder = { "groupMembership", "effectiveRecordPermissions" })
 @XmlRootElement(name = "info")
 public class GetPersonInfoRequest {
 
-    @XmlElement(name = "group-membership")
-    protected Boolean groupMembership;
-    @XmlElement(name = "effective-record-permissions")
-    protected Boolean effectiveRecordPermissions;
+	@XmlElement(name = "group-membership")
+	protected Boolean groupMembership;
+	@XmlElement(name = "effective-record-permissions")
+	protected Boolean effectiveRecordPermissions;
 
-    /**
-     * Gets the value of the groupMembership property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isGroupMembership() {
-        return groupMembership;
-    }
+	/**
+	 * Gets the value of the groupMembership property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isGroupMembership() {
+		return groupMembership;
+	}
 
-    /**
-     * Sets the value of the groupMembership property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setGroupMembership(Boolean value) {
-        this.groupMembership = value;
-    }
+	/**
+	 * Sets the value of the groupMembership property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setGroupMembership(Boolean value) {
+		this.groupMembership = value;
+	}
 
-    /**
-     * Gets the value of the effectiveRecordPermissions property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isEffectiveRecordPermissions() {
-        return effectiveRecordPermissions;
-    }
+	/**
+	 * Gets the value of the effectiveRecordPermissions property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isEffectiveRecordPermissions() {
+		return effectiveRecordPermissions;
+	}
 
-    /**
-     * Sets the value of the effectiveRecordPermissions property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setEffectiveRecordPermissions(Boolean value) {
-        this.effectiveRecordPermissions = value;
-    }
+	/**
+	 * Sets the value of the effectiveRecordPermissions property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setEffectiveRecordPermissions(Boolean value) {
+		this.effectiveRecordPermissions = value;
+	}
 
 }

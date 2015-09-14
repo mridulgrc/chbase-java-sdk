@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -24,9 +22,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for MobilePlatform complex type.
+ * <p>
+ * Java class for MobilePlatform complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="MobilePlatform">
@@ -44,62 +45,54 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "MobilePlatform", propOrder = {
-    "appUrl"
-})
+@XmlType(name = "MobilePlatform", propOrder = { "appUrl" })
 public class MobilePlatform {
 
-    @XmlElement(name = "app-url", required = true)
-    protected AppUrl appUrl;
-    @XmlAttribute(name = "os", required = true)
-    protected String os;
+	@XmlElement(name = "app-url", required = true)
+	protected AppUrl appUrl;
+	@XmlAttribute(name = "os", required = true)
+	protected String os;
 
-    /**
-     * Gets the value of the appUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AppUrl }
-     *     
-     */
-    public AppUrl getAppUrl() {
-        return appUrl;
-    }
+	/**
+	 * Gets the value of the appUrl property.
+	 * 
+	 * @return possible object is {@link AppUrl }
+	 * 
+	 */
+	public AppUrl getAppUrl() {
+		return appUrl;
+	}
 
-    /**
-     * Sets the value of the appUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AppUrl }
-     *     
-     */
-    public void setAppUrl(AppUrl value) {
-        this.appUrl = value;
-    }
+	/**
+	 * Sets the value of the appUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AppUrl }
+	 * 
+	 */
+	public void setAppUrl(AppUrl value) {
+		this.appUrl = value;
+	}
 
-    /**
-     * Gets the value of the os property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOs() {
-        return os;
-    }
+	/**
+	 * Gets the value of the os property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getOs() {
+		return os;
+	}
 
-    /**
-     * Sets the value of the os property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOs(String value) {
-        this.os = value;
-    }
+	/**
+	 * Sets the value of the os property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setOs(String value) {
+		this.os = value;
+	}
 
 }

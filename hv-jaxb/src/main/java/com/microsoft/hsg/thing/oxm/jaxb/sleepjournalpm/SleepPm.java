@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:02 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.sleepjournalpm;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.Time;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Time;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -67,179 +68,171 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Time;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "caffeine",
-    "alcohol",
-    "nap",
-    "exercise",
-    "sleepiness"
-})
+@XmlType(name = "", propOrder = { "when", "caffeine", "alcohol", "nap", "exercise", "sleepiness" })
 @XmlRootElement(name = "sleep-pm")
 public class SleepPm {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    protected List<Time> caffeine;
-    protected List<Time> alcohol;
-    protected List<Activity> nap;
-    protected List<Activity> exercise;
-    protected int sleepiness;
+	@XmlElement(required = true)
+	protected DateTime when;
+	protected List<Time> caffeine;
+	protected List<Time> alcohol;
+	protected List<Activity> nap;
+	protected List<Activity> exercise;
+	protected int sleepiness;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the caffeine property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the caffeine property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCaffeine().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Time }
-     * 
-     * 
-     */
-    public List<Time> getCaffeine() {
-        if (caffeine == null) {
-            caffeine = new ArrayList<Time>();
-        }
-        return this.caffeine;
-    }
+	/**
+	 * Gets the value of the caffeine property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the caffeine property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getCaffeine().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Time }
+	 * 
+	 * 
+	 */
+	public List<Time> getCaffeine() {
+		if (caffeine == null) {
+			caffeine = new ArrayList<Time>();
+		}
+		return this.caffeine;
+	}
 
-    /**
-     * Gets the value of the alcohol property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the alcohol property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAlcohol().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Time }
-     * 
-     * 
-     */
-    public List<Time> getAlcohol() {
-        if (alcohol == null) {
-            alcohol = new ArrayList<Time>();
-        }
-        return this.alcohol;
-    }
+	/**
+	 * Gets the value of the alcohol property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the alcohol property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAlcohol().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Time }
+	 * 
+	 * 
+	 */
+	public List<Time> getAlcohol() {
+		if (alcohol == null) {
+			alcohol = new ArrayList<Time>();
+		}
+		return this.alcohol;
+	}
 
-    /**
-     * Gets the value of the nap property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the nap property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getNap().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Activity }
-     * 
-     * 
-     */
-    public List<Activity> getNap() {
-        if (nap == null) {
-            nap = new ArrayList<Activity>();
-        }
-        return this.nap;
-    }
+	/**
+	 * Gets the value of the nap property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the nap property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getNap().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Activity
+	 * }
+	 * 
+	 * 
+	 */
+	public List<Activity> getNap() {
+		if (nap == null) {
+			nap = new ArrayList<Activity>();
+		}
+		return this.nap;
+	}
 
-    /**
-     * Gets the value of the exercise property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the exercise property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getExercise().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Activity }
-     * 
-     * 
-     */
-    public List<Activity> getExercise() {
-        if (exercise == null) {
-            exercise = new ArrayList<Activity>();
-        }
-        return this.exercise;
-    }
+	/**
+	 * Gets the value of the exercise property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the exercise property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getExercise().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Activity
+	 * }
+	 * 
+	 * 
+	 */
+	public List<Activity> getExercise() {
+		if (exercise == null) {
+			exercise = new ArrayList<Activity>();
+		}
+		return this.exercise;
+	}
 
-    /**
-     * Gets the value of the sleepiness property.
-     * 
-     */
-    public int getSleepiness() {
-        return sleepiness;
-    }
+	/**
+	 * Gets the value of the sleepiness property.
+	 * 
+	 */
+	public int getSleepiness() {
+		return sleepiness;
+	}
 
-    /**
-     * Sets the value of the sleepiness property.
-     * 
-     */
-    public void setSleepiness(int value) {
-        this.sleepiness = value;
-    }
+	/**
+	 * Sets the value of the sleepiness property.
+	 * 
+	 */
+	public void setSleepiness(int value) {
+		this.sleepiness = value;
+	}
 
 }

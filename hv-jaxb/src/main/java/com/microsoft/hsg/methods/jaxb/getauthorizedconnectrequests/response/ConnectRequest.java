@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 09:59:46 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getauthorizedconnectrequests.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
-
 
 /**
  * 
@@ -26,9 +24,12 @@ import javax.xml.bind.annotation.XmlValue;
  * </pre>
  * 
  * 
- * <p>Java class for ConnectRequest complex type.
+ * <p>
+ * Java class for ConnectRequest complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ConnectRequest">
@@ -56,204 +57,181 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ConnectRequest", propOrder = {
-    "personId",
-    "recordId",
-    "appId",
-    "externalId"
-})
+@XmlType(name = "ConnectRequest", propOrder = { "personId", "recordId", "appId", "externalId" })
 public class ConnectRequest {
 
-    @XmlElement(name = "person-id", required = true)
-    protected String personId;
-    @XmlElement(name = "record-id", required = true)
-    protected ConnectRequest.RecordId recordId;
-    @XmlElement(name = "app-id", required = true)
-    protected String appId;
-    @XmlElement(name = "external-id", required = true)
-    protected String externalId;
+	@XmlElement(name = "person-id", required = true)
+	protected String personId;
+	@XmlElement(name = "record-id", required = true)
+	protected ConnectRequest.RecordId recordId;
+	@XmlElement(name = "app-id", required = true)
+	protected String appId;
+	@XmlElement(name = "external-id", required = true)
+	protected String externalId;
 
-    /**
-     * Gets the value of the personId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPersonId() {
-        return personId;
-    }
+	/**
+	 * Gets the value of the personId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPersonId() {
+		return personId;
+	}
 
-    /**
-     * Sets the value of the personId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPersonId(String value) {
-        this.personId = value;
-    }
+	/**
+	 * Sets the value of the personId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPersonId(String value) {
+		this.personId = value;
+	}
 
-    /**
-     * Gets the value of the recordId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ConnectRequest.RecordId }
-     *     
-     */
-    public ConnectRequest.RecordId getRecordId() {
-        return recordId;
-    }
+	/**
+	 * Gets the value of the recordId property.
+	 * 
+	 * @return possible object is {@link ConnectRequest.RecordId }
+	 * 
+	 */
+	public ConnectRequest.RecordId getRecordId() {
+		return recordId;
+	}
 
-    /**
-     * Sets the value of the recordId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ConnectRequest.RecordId }
-     *     
-     */
-    public void setRecordId(ConnectRequest.RecordId value) {
-        this.recordId = value;
-    }
+	/**
+	 * Sets the value of the recordId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ConnectRequest.RecordId }
+	 * 
+	 */
+	public void setRecordId(ConnectRequest.RecordId value) {
+		this.recordId = value;
+	}
 
-    /**
-     * Gets the value of the appId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAppId() {
-        return appId;
-    }
+	/**
+	 * Gets the value of the appId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAppId() {
+		return appId;
+	}
 
-    /**
-     * Sets the value of the appId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAppId(String value) {
-        this.appId = value;
-    }
+	/**
+	 * Sets the value of the appId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAppId(String value) {
+		this.appId = value;
+	}
 
-    /**
-     * Gets the value of the externalId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getExternalId() {
-        return externalId;
-    }
+	/**
+	 * Gets the value of the externalId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getExternalId() {
+		return externalId;
+	}
 
-    /**
-     * Sets the value of the externalId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setExternalId(String value) {
-        this.externalId = value;
-    }
+	/**
+	 * Sets the value of the externalId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setExternalId(String value) {
+		this.externalId = value;
+	}
 
+	/**
+	 * <p>
+	 * Java class for anonymous complex type.
+	 * 
+	 * <p>
+	 * The following schema fragment specifies the expected content contained
+	 * within this class.
+	 * 
+	 * <pre>
+	 * &lt;complexType>
+	 *   &lt;simpleContent>
+	 *     &lt;extension base="&lt;urn:com.microsoft.wc.types>guid">
+	 *       &lt;attribute name="app-specific-record-id" type="{http://www.w3.org/2001/XMLSchema}string" />
+	 *     &lt;/extension>
+	 *   &lt;/simpleContent>
+	 * &lt;/complexType>
+	 * </pre>
+	 * 
+	 * 
+	 */
+	@XmlAccessorType(XmlAccessType.FIELD)
+	@XmlType(name = "", propOrder = { "value" })
+	public static class RecordId {
 
-    /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;simpleContent>
-     *     &lt;extension base="&lt;urn:com.microsoft.wc.types>guid">
-     *       &lt;attribute name="app-specific-record-id" type="{http://www.w3.org/2001/XMLSchema}string" />
-     *     &lt;/extension>
-     *   &lt;/simpleContent>
-     * &lt;/complexType>
-     * </pre>
-     * 
-     * 
-     */
-    @XmlAccessorType(XmlAccessType.FIELD)
-    @XmlType(name = "", propOrder = {
-        "value"
-    })
-    public static class RecordId {
+		@XmlValue
+		protected String value;
+		@XmlAttribute(name = "app-specific-record-id")
+		protected String appSpecificRecordId;
 
-        @XmlValue
-        protected String value;
-        @XmlAttribute(name = "app-specific-record-id")
-        protected String appSpecificRecordId;
+		/**
+		 * 
+		 * <pre>
+		 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+		 * </pre>
+		 * 
+		 * <pre>
+		 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+		 * </pre>
+		 * 
+		 * 
+		 * @return possible object is {@link String }
+		 * 
+		 */
+		public String getValue() {
+			return value;
+		}
 
-        /**
-         * 
-         * <pre>
-         * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-         * </pre>
-         * 
-         * <pre>
-         * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-         * </pre>
-         * 
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getValue() {
-            return value;
-        }
+		/**
+		 * Sets the value of the value property.
+		 * 
+		 * @param value
+		 *            allowed object is {@link String }
+		 * 
+		 */
+		public void setValue(String value) {
+			this.value = value;
+		}
 
-        /**
-         * Sets the value of the value property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setValue(String value) {
-            this.value = value;
-        }
+		/**
+		 * Gets the value of the appSpecificRecordId property.
+		 * 
+		 * @return possible object is {@link String }
+		 * 
+		 */
+		public String getAppSpecificRecordId() {
+			return appSpecificRecordId;
+		}
 
-        /**
-         * Gets the value of the appSpecificRecordId property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
-         */
-        public String getAppSpecificRecordId() {
-            return appSpecificRecordId;
-        }
+		/**
+		 * Sets the value of the appSpecificRecordId property.
+		 * 
+		 * @param value
+		 *            allowed object is {@link String }
+		 * 
+		 */
+		public void setAppSpecificRecordId(String value) {
+			this.appSpecificRecordId = value;
+		}
 
-        /**
-         * Sets the value of the appSpecificRecordId property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
-         */
-        public void setAppSpecificRecordId(String value) {
-            this.appSpecificRecordId = value;
-        }
-
-    }
+	}
 
 }

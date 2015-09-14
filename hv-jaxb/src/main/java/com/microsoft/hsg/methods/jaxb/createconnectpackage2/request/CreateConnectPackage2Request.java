@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:11:14 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.createconnectpackage2.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
-
 
 /**
  * 
@@ -35,9 +33,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -59,172 +60,148 @@ import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "identityCode",
-    "friendlyName",
-    "question",
-    "externalId",
-    "_package",
-    "streamedPackageBlobs"
-})
+@XmlType(name = "", propOrder = { "identityCode", "friendlyName", "question", "externalId", "_package",
+		"streamedPackageBlobs" })
 @XmlRootElement(name = "info")
 public class CreateConnectPackage2Request {
 
-    @XmlElement(name = "identity-code")
-    protected String identityCode;
-    @XmlElement(name = "friendly-name", required = true)
-    protected String friendlyName;
-    @XmlElement(required = true)
-    protected String question;
-    @XmlElement(name = "external-id", required = true)
-    protected String externalId;
-    @XmlElement(name = "package", required = true)
-    protected Thing2 _package;
-    @XmlElement(name = "streamed-package-blobs")
-    protected StreamedPackageBlobs streamedPackageBlobs;
+	@XmlElement(name = "identity-code")
+	protected String identityCode;
+	@XmlElement(name = "friendly-name", required = true)
+	protected String friendlyName;
+	@XmlElement(required = true)
+	protected String question;
+	@XmlElement(name = "external-id", required = true)
+	protected String externalId;
+	@XmlElement(name = "package", required = true)
+	protected Thing2 _package;
+	@XmlElement(name = "streamed-package-blobs")
+	protected StreamedPackageBlobs streamedPackageBlobs;
 
-    /**
-     * Gets the value of the identityCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getIdentityCode() {
-        return identityCode;
-    }
+	/**
+	 * Gets the value of the identityCode property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getIdentityCode() {
+		return identityCode;
+	}
 
-    /**
-     * Sets the value of the identityCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setIdentityCode(String value) {
-        this.identityCode = value;
-    }
+	/**
+	 * Sets the value of the identityCode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setIdentityCode(String value) {
+		this.identityCode = value;
+	}
 
-    /**
-     * Gets the value of the friendlyName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFriendlyName() {
-        return friendlyName;
-    }
+	/**
+	 * Gets the value of the friendlyName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getFriendlyName() {
+		return friendlyName;
+	}
 
-    /**
-     * Sets the value of the friendlyName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFriendlyName(String value) {
-        this.friendlyName = value;
-    }
+	/**
+	 * Sets the value of the friendlyName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setFriendlyName(String value) {
+		this.friendlyName = value;
+	}
 
-    /**
-     * Gets the value of the question property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getQuestion() {
-        return question;
-    }
+	/**
+	 * Gets the value of the question property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getQuestion() {
+		return question;
+	}
 
-    /**
-     * Sets the value of the question property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setQuestion(String value) {
-        this.question = value;
-    }
+	/**
+	 * Sets the value of the question property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setQuestion(String value) {
+		this.question = value;
+	}
 
-    /**
-     * Gets the value of the externalId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getExternalId() {
-        return externalId;
-    }
+	/**
+	 * Gets the value of the externalId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getExternalId() {
+		return externalId;
+	}
 
-    /**
-     * Sets the value of the externalId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setExternalId(String value) {
-        this.externalId = value;
-    }
+	/**
+	 * Sets the value of the externalId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setExternalId(String value) {
+		this.externalId = value;
+	}
 
-    /**
-     * Gets the value of the package property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Thing2 }
-     *     
-     */
-    public Thing2 getPackage() {
-        return _package;
-    }
+	/**
+	 * Gets the value of the package property.
+	 * 
+	 * @return possible object is {@link Thing2 }
+	 * 
+	 */
+	public Thing2 getPackage() {
+		return _package;
+	}
 
-    /**
-     * Sets the value of the package property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Thing2 }
-     *     
-     */
-    public void setPackage(Thing2 value) {
-        this._package = value;
-    }
+	/**
+	 * Sets the value of the package property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Thing2 }
+	 * 
+	 */
+	public void setPackage(Thing2 value) {
+		this._package = value;
+	}
 
-    /**
-     * Gets the value of the streamedPackageBlobs property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StreamedPackageBlobs }
-     *     
-     */
-    public StreamedPackageBlobs getStreamedPackageBlobs() {
-        return streamedPackageBlobs;
-    }
+	/**
+	 * Gets the value of the streamedPackageBlobs property.
+	 * 
+	 * @return possible object is {@link StreamedPackageBlobs }
+	 * 
+	 */
+	public StreamedPackageBlobs getStreamedPackageBlobs() {
+		return streamedPackageBlobs;
+	}
 
-    /**
-     * Sets the value of the streamedPackageBlobs property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StreamedPackageBlobs }
-     *     
-     */
-    public void setStreamedPackageBlobs(StreamedPackageBlobs value) {
-        this.streamedPackageBlobs = value;
-    }
+	/**
+	 * Sets the value of the streamedPackageBlobs property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link StreamedPackageBlobs }
+	 * 
+	 */
+	public void setStreamedPackageBlobs(StreamedPackageBlobs value) {
+		this.streamedPackageBlobs = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.dates;
 
 import java.util.Calendar;
@@ -13,7 +12,6 @@ import java.util.Calendar;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -26,9 +24,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for date complex type.
+ * <p>
+ * Java class for date complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="date">
@@ -47,79 +48,75 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "date", propOrder = {
-    "y",
-    "m",
-    "d"
-})
+@XmlType(name = "date", propOrder = { "y", "m", "d" })
 public class Date {
 
-    protected int y;
-    protected int m;
-    protected int d;
+	protected int y;
+	protected int m;
+	protected int d;
 
-    /**
-     * Gets the value of the y property.
-     * 
-     */
-    public int getY() {
-        return y;
-    }
+	/**
+	 * Gets the value of the y property.
+	 * 
+	 */
+	public int getY() {
+		return y;
+	}
 
-    /**
-     * Sets the value of the y property.
-     * 
-     */
-    public void setY(int value) {
-        this.y = value;
-    }
+	/**
+	 * Sets the value of the y property.
+	 * 
+	 */
+	public void setY(int value) {
+		this.y = value;
+	}
 
-    /**
-     * Gets the value of the m property.
-     * 
-     */
-    public int getM() {
-        return m;
-    }
+	/**
+	 * Gets the value of the m property.
+	 * 
+	 */
+	public int getM() {
+		return m;
+	}
 
-    /**
-     * Sets the value of the m property.
-     * 
-     */
-    public void setM(int value) {
-        this.m = value;
-    }
+	/**
+	 * Sets the value of the m property.
+	 * 
+	 */
+	public void setM(int value) {
+		this.m = value;
+	}
 
-    /**
-     * Gets the value of the d property.
-     * 
-     */
-    public int getD() {
-        return d;
-    }
+	/**
+	 * Gets the value of the d property.
+	 * 
+	 */
+	public int getD() {
+		return d;
+	}
 
-    /**
-     * Sets the value of the d property.
-     * 
-     */
-    public void setD(int value) {
-        this.d = value;
-    }
-    
-    /**
-     * Generate Date instance from calendar.
-     * 
-     * @param cal the cal
-     * 
-     * @return the date
-     */
-    public static Date fromCalendar(Calendar cal)
-    {
-    	Date date = new Date();
-    	date.setD(cal.get(Calendar.DAY_OF_MONTH));
-    	date.setM(cal.get(Calendar.MONTH) + 1);
-    	date.setY(cal.get(Calendar.YEAR));
-    	
-    	return date;
-    }
+	/**
+	 * Sets the value of the d property.
+	 * 
+	 */
+	public void setD(int value) {
+		this.d = value;
+	}
+
+	/**
+	 * Generate Date instance from calendar.
+	 * 
+	 * @param cal
+	 *            the cal
+	 * 
+	 * @return the date
+	 */
+	public static Date fromCalendar(Calendar cal) {
+		Date date = new Date();
+		date.setD(cal.get(Calendar.DAY_OF_MONTH));
+		date.setM(cal.get(Calendar.MONTH) + 1);
+		date.setY(cal.get(Calendar.YEAR));
+
+		return date;
+	}
 }

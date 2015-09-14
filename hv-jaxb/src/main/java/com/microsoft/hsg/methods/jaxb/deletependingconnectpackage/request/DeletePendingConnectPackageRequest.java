@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:11:59 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.deletependingconnectpackage.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -57,69 +58,57 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "DeletePendingConnectPackage",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.DeletePendingConnectPackage")
+@JaxbRequest(methodName = "DeletePendingConnectPackage", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.DeletePendingConnectPackage")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "identityCode",
-    "externalId"
-})
+@XmlType(name = "", propOrder = { "identityCode", "externalId" })
 @XmlRootElement(name = "info")
 public class DeletePendingConnectPackageRequest {
 
-    @XmlElement(name = "identity-code")
-    protected String identityCode;
-    @XmlElement(name = "external-id")
-    protected String externalId;
+	@XmlElement(name = "identity-code")
+	protected String identityCode;
+	@XmlElement(name = "external-id")
+	protected String externalId;
 
-    /**
-     * Gets the value of the identityCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getIdentityCode() {
-        return identityCode;
-    }
+	/**
+	 * Gets the value of the identityCode property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getIdentityCode() {
+		return identityCode;
+	}
 
-    /**
-     * Sets the value of the identityCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setIdentityCode(String value) {
-        this.identityCode = value;
-    }
+	/**
+	 * Sets the value of the identityCode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setIdentityCode(String value) {
+		this.identityCode = value;
+	}
 
-    /**
-     * Gets the value of the externalId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getExternalId() {
-        return externalId;
-    }
+	/**
+	 * Gets the value of the externalId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getExternalId() {
+		return externalId;
+	}
 
-    /**
-     * Sets the value of the externalId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setExternalId(String value) {
-        this.externalId = value;
-    }
+	/**
+	 * Sets the value of the externalId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setExternalId(String value) {
+		this.externalId = value;
+	}
 
 }

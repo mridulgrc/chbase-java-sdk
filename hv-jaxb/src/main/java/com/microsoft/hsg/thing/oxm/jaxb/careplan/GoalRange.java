@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:19:17 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.careplan;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.GeneralMeasurement;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.GeneralMeasurement;
  * </pre>
  * 
  * 
- * <p>Java class for goal-range complex type.
+ * <p>
+ * Java class for goal-range complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="goal-range">
@@ -47,114 +48,97 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.GeneralMeasurement;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "goal-range", propOrder = {
-    "name",
-    "description",
-    "minimum",
-    "maximum"
-})
+@XmlType(name = "goal-range", propOrder = { "name", "description", "minimum", "maximum" })
 public class GoalRange {
 
-    @XmlElement(required = true)
-    protected CodableValue name;
-    protected String description;
-    protected GeneralMeasurement minimum;
-    protected GeneralMeasurement maximum;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	protected String description;
+	protected GeneralMeasurement minimum;
+	protected GeneralMeasurement maximum;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the minimum property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public GeneralMeasurement getMinimum() {
-        return minimum;
-    }
+	/**
+	 * Gets the value of the minimum property.
+	 * 
+	 * @return possible object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public GeneralMeasurement getMinimum() {
+		return minimum;
+	}
 
-    /**
-     * Sets the value of the minimum property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public void setMinimum(GeneralMeasurement value) {
-        this.minimum = value;
-    }
+	/**
+	 * Sets the value of the minimum property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public void setMinimum(GeneralMeasurement value) {
+		this.minimum = value;
+	}
 
-    /**
-     * Gets the value of the maximum property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public GeneralMeasurement getMaximum() {
-        return maximum;
-    }
+	/**
+	 * Gets the value of the maximum property.
+	 * 
+	 * @return possible object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public GeneralMeasurement getMaximum() {
+		return maximum;
+	}
 
-    /**
-     * Sets the value of the maximum property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public void setMaximum(GeneralMeasurement value) {
-        this.maximum = value;
-    }
+	/**
+	 * Sets the value of the maximum property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public void setMaximum(GeneralMeasurement value) {
+		this.maximum = value;
+	}
 
 }

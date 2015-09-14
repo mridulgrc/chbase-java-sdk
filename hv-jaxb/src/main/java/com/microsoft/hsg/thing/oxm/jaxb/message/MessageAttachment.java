@@ -5,14 +5,12 @@
 // Generated on: 2011.02.07 at 01:41:55 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.message;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -23,9 +21,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for message-attachment complex type.
+ * <p>
+ * Java class for message-attachment complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="message-attachment">
@@ -45,109 +46,95 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "message-attachment", propOrder = {
-    "name",
-    "blobName",
-    "inlineDisplay",
-    "contentId"
-})
+@XmlType(name = "message-attachment", propOrder = { "name", "blobName", "inlineDisplay", "contentId" })
 public class MessageAttachment {
 
-    @XmlElement(required = true)
-    protected String name;
-    @XmlElement(name = "blob-name", required = true)
-    protected String blobName;
-    @XmlElement(name = "inline-display")
-    protected boolean inlineDisplay;
-    @XmlElement(name = "content-id")
-    protected String contentId;
+	@XmlElement(required = true)
+	protected String name;
+	@XmlElement(name = "blob-name", required = true)
+	protected String blobName;
+	@XmlElement(name = "inline-display")
+	protected boolean inlineDisplay;
+	@XmlElement(name = "content-id")
+	protected String contentId;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the blobName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getBlobName() {
-        return blobName;
-    }
+	/**
+	 * Gets the value of the blobName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getBlobName() {
+		return blobName;
+	}
 
-    /**
-     * Sets the value of the blobName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setBlobName(String value) {
-        this.blobName = value;
-    }
+	/**
+	 * Sets the value of the blobName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setBlobName(String value) {
+		this.blobName = value;
+	}
 
-    /**
-     * Gets the value of the inlineDisplay property.
-     * 
-     */
-    public boolean isInlineDisplay() {
-        return inlineDisplay;
-    }
+	/**
+	 * Gets the value of the inlineDisplay property.
+	 * 
+	 */
+	public boolean isInlineDisplay() {
+		return inlineDisplay;
+	}
 
-    /**
-     * Sets the value of the inlineDisplay property.
-     * 
-     */
-    public void setInlineDisplay(boolean value) {
-        this.inlineDisplay = value;
-    }
+	/**
+	 * Sets the value of the inlineDisplay property.
+	 * 
+	 */
+	public void setInlineDisplay(boolean value) {
+		this.inlineDisplay = value;
+	}
 
-    /**
-     * Gets the value of the contentId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getContentId() {
-        return contentId;
-    }
+	/**
+	 * Gets the value of the contentId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getContentId() {
+		return contentId;
+	}
 
-    /**
-     * Sets the value of the contentId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setContentId(String value) {
-        this.contentId = value;
-    }
+	/**
+	 * Sets the value of the contentId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setContentId(String value) {
+		this.contentId = value;
+	}
 
 }

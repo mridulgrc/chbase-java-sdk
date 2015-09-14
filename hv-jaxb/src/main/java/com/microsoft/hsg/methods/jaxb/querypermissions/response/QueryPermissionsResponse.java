@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:03:33 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.querypermissions.response;
 
 import java.util.ArrayList;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.ThingTypePermission;
-
 
 /**
  * 
@@ -37,9 +35,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.ThingTypePermission;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -56,42 +57,41 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.ThingTypePermission;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "thingTypePermission"
-})
+@XmlType(name = "", propOrder = { "thingTypePermission" })
 @XmlRootElement(name = "info")
 public class QueryPermissionsResponse {
 
-    @XmlElement(name = "thing-type-permission")
-    protected List<ThingTypePermission> thingTypePermission;
+	@XmlElement(name = "thing-type-permission")
+	protected List<ThingTypePermission> thingTypePermission;
 
-    /**
-     * Gets the value of the thingTypePermission property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the thingTypePermission property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getThingTypePermission().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ThingTypePermission }
-     * 
-     * 
-     */
-    public List<ThingTypePermission> getThingTypePermission() {
-        if (thingTypePermission == null) {
-            thingTypePermission = new ArrayList<ThingTypePermission>();
-        }
-        return this.thingTypePermission;
-    }
+	/**
+	 * Gets the value of the thingTypePermission property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the thingTypePermission property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getThingTypePermission().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ThingTypePermission }
+	 * 
+	 * 
+	 */
+	public List<ThingTypePermission> getThingTypePermission() {
+		if (thingTypePermission == null) {
+			thingTypePermission = new ArrayList<ThingTypePermission>();
+		}
+		return this.thingTypePermission;
+	}
 
 }

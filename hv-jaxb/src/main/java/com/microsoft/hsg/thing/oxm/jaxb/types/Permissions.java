@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import java.util.ArrayList;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for Permissions complex type.
+ * <p>
+ * Java class for Permissions complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Permissions">
@@ -36,41 +37,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Permissions", propOrder = {
-    "permission"
-})
+@XmlType(name = "Permissions", propOrder = { "permission" })
 public class Permissions {
 
-    @XmlElement(required = true)
-    protected List<Permission> permission;
+	@XmlElement(required = true)
+	protected List<Permission> permission;
 
-    /**
-     * Gets the value of the permission property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the permission property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getPermission().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Permission }
-     * 
-     * 
-     */
-    public List<Permission> getPermission() {
-        if (permission == null) {
-            permission = new ArrayList<Permission>();
-        }
-        return this.permission;
-    }
+	/**
+	 * Gets the value of the permission property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the permission property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getPermission().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link Permission }
+	 * 
+	 * 
+	 */
+	public List<Permission> getPermission() {
+		if (permission == null) {
+			permission = new ArrayList<Permission>();
+		}
+		return this.permission;
+	}
 
 }

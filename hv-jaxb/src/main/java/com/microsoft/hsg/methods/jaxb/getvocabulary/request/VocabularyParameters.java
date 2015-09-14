@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:14:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getvocabulary.request;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.methods.jaxb.vocab.VocabularyKey;
-
 
 /**
  * 
@@ -30,9 +28,12 @@ import com.microsoft.hsg.methods.jaxb.vocab.VocabularyKey;
  * </pre>
  * 
  * 
- * <p>Java class for VocabularyParameters complex type.
+ * <p>
+ * Java class for VocabularyParameters complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="VocabularyParameters">
@@ -50,60 +51,58 @@ import com.microsoft.hsg.methods.jaxb.vocab.VocabularyKey;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VocabularyParameters", propOrder = {
-    "vocabularyKey",
-    "fixedCulture"
-})
+@XmlType(name = "VocabularyParameters", propOrder = { "vocabularyKey", "fixedCulture" })
 public class VocabularyParameters {
 
-    @XmlElement(name = "vocabulary-key", required = true)
-    protected List<VocabularyKey> vocabularyKey;
-    @XmlElement(name = "fixed-culture")
-    protected boolean fixedCulture;
+	@XmlElement(name = "vocabulary-key", required = true)
+	protected List<VocabularyKey> vocabularyKey;
+	@XmlElement(name = "fixed-culture")
+	protected boolean fixedCulture;
 
-    /**
-     * Gets the value of the vocabularyKey property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the vocabularyKey property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getVocabularyKey().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link VocabularyKey }
-     * 
-     * 
-     */
-    public List<VocabularyKey> getVocabularyKey() {
-        if (vocabularyKey == null) {
-            vocabularyKey = new ArrayList<VocabularyKey>();
-        }
-        return this.vocabularyKey;
-    }
+	/**
+	 * Gets the value of the vocabularyKey property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the vocabularyKey property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getVocabularyKey().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link VocabularyKey }
+	 * 
+	 * 
+	 */
+	public List<VocabularyKey> getVocabularyKey() {
+		if (vocabularyKey == null) {
+			vocabularyKey = new ArrayList<VocabularyKey>();
+		}
+		return this.vocabularyKey;
+	}
 
-    /**
-     * Gets the value of the fixedCulture property.
-     * 
-     */
-    public boolean isFixedCulture() {
-        return fixedCulture;
-    }
+	/**
+	 * Gets the value of the fixedCulture property.
+	 * 
+	 */
+	public boolean isFixedCulture() {
+		return fixedCulture;
+	}
 
-    /**
-     * Sets the value of the fixedCulture property.
-     * 
-     */
-    public void setFixedCulture(boolean value) {
-        this.fixedCulture = value;
-    }
+	/**
+	 * Sets the value of the fixedCulture property.
+	 * 
+	 */
+	public void setFixedCulture(boolean value) {
+		this.fixedCulture = value;
+	}
 
 }

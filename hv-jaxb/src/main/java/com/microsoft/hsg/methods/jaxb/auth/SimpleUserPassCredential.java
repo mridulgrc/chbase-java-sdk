@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -31,9 +29,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for SimpleUserPassCredential complex type.
+ * <p>
+ * Java class for SimpleUserPassCredential complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="SimpleUserPassCredential">
@@ -50,36 +51,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SimpleUserPassCredential", propOrder = {
-    "simpleUserpass"
-})
+@XmlType(name = "SimpleUserPassCredential", propOrder = { "simpleUserpass" })
 public class SimpleUserPassCredential {
 
-    @XmlElement(name = "simple-userpass", required = true)
-    protected UserPassCred simpleUserpass;
+	@XmlElement(name = "simple-userpass", required = true)
+	protected UserPassCred simpleUserpass;
 
-    /**
-     * Gets the value of the simpleUserpass property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UserPassCred }
-     *     
-     */
-    public UserPassCred getSimpleUserpass() {
-        return simpleUserpass;
-    }
+	/**
+	 * Gets the value of the simpleUserpass property.
+	 * 
+	 * @return possible object is {@link UserPassCred }
+	 * 
+	 */
+	public UserPassCred getSimpleUserpass() {
+		return simpleUserpass;
+	}
 
-    /**
-     * Sets the value of the simpleUserpass property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UserPassCred }
-     *     
-     */
-    public void setSimpleUserpass(UserPassCred value) {
-        this.simpleUserpass = value;
-    }
+	/**
+	 * Sets the value of the simpleUserpass property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link UserPassCred }
+	 * 
+	 */
+	public void setSimpleUserpass(UserPassCred value) {
+		this.simpleUserpass = value;
+	}
 
 }

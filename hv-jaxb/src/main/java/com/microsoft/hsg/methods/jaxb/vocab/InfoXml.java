@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocab;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlType;
 import org.w3c.dom.Element;
-
 
 /**
  * 
@@ -29,9 +27,12 @@ import org.w3c.dom.Element;
  * </pre>
  * 
  * 
- * <p>Java class for InfoXml complex type.
+ * <p>
+ * Java class for InfoXml complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="InfoXml">
@@ -48,36 +49,31 @@ import org.w3c.dom.Element;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "InfoXml", propOrder = {
-    "any"
-})
+@XmlType(name = "InfoXml", propOrder = { "any" })
 public class InfoXml {
 
-    @XmlAnyElement
-    protected Element any;
+	@XmlAnyElement
+	protected Element any;
 
-    /**
-     * Gets the value of the any property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Element }
-     *     
-     */
-    public Element getAny() {
-        return any;
-    }
+	/**
+	 * Gets the value of the any property.
+	 * 
+	 * @return possible object is {@link Element }
+	 * 
+	 */
+	public Element getAny() {
+		return any;
+	}
 
-    /**
-     * Sets the value of the any property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Element }
-     *     
-     */
-    public void setAny(Element value) {
-        this.any = value;
-    }
+	/**
+	 * Sets the value of the any property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Element }
+	 * 
+	 */
+	public void setAny(Element value) {
+		this.any = value;
+	}
 
 }

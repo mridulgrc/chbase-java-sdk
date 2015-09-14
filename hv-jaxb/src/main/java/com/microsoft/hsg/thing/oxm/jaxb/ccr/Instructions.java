@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.util.ArrayList;
@@ -16,11 +15,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -37,42 +38,41 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "instruction"
-})
+@XmlType(name = "", propOrder = { "instruction" })
 @XmlRootElement(name = "Instructions")
 public class Instructions {
 
-    @XmlElement(name = "Instruction", required = true)
-    protected List<CodedDescriptionType> instruction;
+	@XmlElement(name = "Instruction", required = true)
+	protected List<CodedDescriptionType> instruction;
 
-    /**
-     * Gets the value of the instruction property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the instruction property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getInstruction().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodedDescriptionType }
-     * 
-     * 
-     */
-    public List<CodedDescriptionType> getInstruction() {
-        if (instruction == null) {
-            instruction = new ArrayList<CodedDescriptionType>();
-        }
-        return this.instruction;
-    }
+	/**
+	 * Gets the value of the instruction property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the instruction property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getInstruction().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodedDescriptionType }
+	 * 
+	 * 
+	 */
+	public List<CodedDescriptionType> getInstruction() {
+		if (instruction == null) {
+			instruction = new ArrayList<CodedDescriptionType>();
+		}
+		return this.instruction;
+	}
 
 }

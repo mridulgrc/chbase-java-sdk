@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocab;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -29,9 +27,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for VocabularyCodeItem complex type.
+ * <p>
+ * Java class for VocabularyCodeItem complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="VocabularyCodeItem">
@@ -51,117 +52,100 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VocabularyCodeItem", propOrder = {
-    "codeValue",
-    "displayText",
-    "abbreviationText",
-    "infoXml"
-})
+@XmlType(name = "VocabularyCodeItem", propOrder = { "codeValue", "displayText", "abbreviationText", "infoXml" })
 public class VocabularyCodeItem {
 
-    @XmlElement(name = "code-value", required = true)
-    protected String codeValue;
-    @XmlElement(name = "display-text")
-    protected String displayText;
-    @XmlElement(name = "abbreviation-text")
-    protected String abbreviationText;
-    @XmlElement(name = "info-xml")
-    protected InfoXml infoXml;
+	@XmlElement(name = "code-value", required = true)
+	protected String codeValue;
+	@XmlElement(name = "display-text")
+	protected String displayText;
+	@XmlElement(name = "abbreviation-text")
+	protected String abbreviationText;
+	@XmlElement(name = "info-xml")
+	protected InfoXml infoXml;
 
-    /**
-     * Gets the value of the codeValue property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCodeValue() {
-        return codeValue;
-    }
+	/**
+	 * Gets the value of the codeValue property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCodeValue() {
+		return codeValue;
+	}
 
-    /**
-     * Sets the value of the codeValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCodeValue(String value) {
-        this.codeValue = value;
-    }
+	/**
+	 * Sets the value of the codeValue property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCodeValue(String value) {
+		this.codeValue = value;
+	}
 
-    /**
-     * Gets the value of the displayText property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDisplayText() {
-        return displayText;
-    }
+	/**
+	 * Gets the value of the displayText property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDisplayText() {
+		return displayText;
+	}
 
-    /**
-     * Sets the value of the displayText property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDisplayText(String value) {
-        this.displayText = value;
-    }
+	/**
+	 * Sets the value of the displayText property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDisplayText(String value) {
+		this.displayText = value;
+	}
 
-    /**
-     * Gets the value of the abbreviationText property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAbbreviationText() {
-        return abbreviationText;
-    }
+	/**
+	 * Gets the value of the abbreviationText property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAbbreviationText() {
+		return abbreviationText;
+	}
 
-    /**
-     * Sets the value of the abbreviationText property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAbbreviationText(String value) {
-        this.abbreviationText = value;
-    }
+	/**
+	 * Sets the value of the abbreviationText property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAbbreviationText(String value) {
+		this.abbreviationText = value;
+	}
 
-    /**
-     * Gets the value of the infoXml property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link InfoXml }
-     *     
-     */
-    public InfoXml getInfoXml() {
-        return infoXml;
-    }
+	/**
+	 * Gets the value of the infoXml property.
+	 * 
+	 * @return possible object is {@link InfoXml }
+	 * 
+	 */
+	public InfoXml getInfoXml() {
+		return infoXml;
+	}
 
-    /**
-     * Sets the value of the infoXml property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link InfoXml }
-     *     
-     */
-    public void setInfoXml(InfoXml value) {
-        this.infoXml = value;
-    }
+	/**
+	 * Sets the value of the infoXml property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link InfoXml }
+	 * 
+	 */
+	public void setInfoXml(InfoXml value) {
+		this.infoXml = value;
+	}
 
 }

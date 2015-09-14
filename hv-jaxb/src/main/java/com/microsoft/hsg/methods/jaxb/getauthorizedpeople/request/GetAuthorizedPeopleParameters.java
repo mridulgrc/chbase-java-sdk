@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:13:00 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getauthorizedpeople.request;
 
 import java.math.BigInteger;
@@ -16,11 +15,13 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-
 /**
- * <p>Java class for GetAuthorizedPeopleParameters complex type.
+ * <p>
+ * Java class for GetAuthorizedPeopleParameters complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="GetAuthorizedPeopleParameters">
@@ -39,92 +40,80 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "GetAuthorizedPeopleParameters", propOrder = {
-    "personIdCursor",
-    "authorizationsCreatedSince",
-    "numResults"
-})
+@XmlType(name = "GetAuthorizedPeopleParameters", propOrder = { "personIdCursor", "authorizationsCreatedSince",
+		"numResults" })
 public class GetAuthorizedPeopleParameters {
 
-    @XmlElement(name = "person-id-cursor")
-    protected String personIdCursor;
-    @XmlElement(name = "authorizations-created-since")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar authorizationsCreatedSince;
-    @XmlElement(name = "num-results")
-    @XmlSchemaType(name = "positiveInteger")
-    protected BigInteger numResults;
+	@XmlElement(name = "person-id-cursor")
+	protected String personIdCursor;
+	@XmlElement(name = "authorizations-created-since")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar authorizationsCreatedSince;
+	@XmlElement(name = "num-results")
+	@XmlSchemaType(name = "positiveInteger")
+	protected BigInteger numResults;
 
-    /**
-     * Gets the value of the personIdCursor property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPersonIdCursor() {
-        return personIdCursor;
-    }
+	/**
+	 * Gets the value of the personIdCursor property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPersonIdCursor() {
+		return personIdCursor;
+	}
 
-    /**
-     * Sets the value of the personIdCursor property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPersonIdCursor(String value) {
-        this.personIdCursor = value;
-    }
+	/**
+	 * Sets the value of the personIdCursor property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPersonIdCursor(String value) {
+		this.personIdCursor = value;
+	}
 
-    /**
-     * Gets the value of the authorizationsCreatedSince property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getAuthorizationsCreatedSince() {
-        return authorizationsCreatedSince;
-    }
+	/**
+	 * Gets the value of the authorizationsCreatedSince property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getAuthorizationsCreatedSince() {
+		return authorizationsCreatedSince;
+	}
 
-    /**
-     * Sets the value of the authorizationsCreatedSince property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setAuthorizationsCreatedSince(XMLGregorianCalendar value) {
-        this.authorizationsCreatedSince = value;
-    }
+	/**
+	 * Sets the value of the authorizationsCreatedSince property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setAuthorizationsCreatedSince(XMLGregorianCalendar value) {
+		this.authorizationsCreatedSince = value;
+	}
 
-    /**
-     * Gets the value of the numResults property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getNumResults() {
-        return numResults;
-    }
+	/**
+	 * Gets the value of the numResults property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getNumResults() {
+		return numResults;
+	}
 
-    /**
-     * Sets the value of the numResults property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setNumResults(BigInteger value) {
-        this.numResults = value;
-    }
+	/**
+	 * Sets the value of the numResults property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setNumResults(BigInteger value) {
+		this.numResults = value;
+	}
 
 }

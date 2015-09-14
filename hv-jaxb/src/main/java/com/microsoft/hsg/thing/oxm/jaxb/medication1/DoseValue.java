@@ -5,14 +5,12 @@
 // Generated on: 2011.02.07 at 01:41:48 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.medication1;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -31,9 +29,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for DoseValue complex type.
+ * <p>
+ * Java class for DoseValue complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="DoseValue">
@@ -53,116 +54,99 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DoseValue", propOrder = {
-    "description",
-    "exactDose",
-    "minDose",
-    "maxDose"
-})
+@XmlType(name = "DoseValue", propOrder = { "description", "exactDose", "minDose", "maxDose" })
 public class DoseValue {
 
-    protected String description;
-    @XmlElement(name = "exact-dose")
-    protected Double exactDose;
-    @XmlElement(name = "min-dose")
-    protected Double minDose;
-    @XmlElement(name = "max-dose")
-    protected Double maxDose;
+	protected String description;
+	@XmlElement(name = "exact-dose")
+	protected Double exactDose;
+	@XmlElement(name = "min-dose")
+	protected Double minDose;
+	@XmlElement(name = "max-dose")
+	protected Double maxDose;
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the exactDose property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getExactDose() {
-        return exactDose;
-    }
+	/**
+	 * Gets the value of the exactDose property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getExactDose() {
+		return exactDose;
+	}
 
-    /**
-     * Sets the value of the exactDose property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setExactDose(Double value) {
-        this.exactDose = value;
-    }
+	/**
+	 * Sets the value of the exactDose property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setExactDose(Double value) {
+		this.exactDose = value;
+	}
 
-    /**
-     * Gets the value of the minDose property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getMinDose() {
-        return minDose;
-    }
+	/**
+	 * Gets the value of the minDose property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getMinDose() {
+		return minDose;
+	}
 
-    /**
-     * Sets the value of the minDose property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setMinDose(Double value) {
-        this.minDose = value;
-    }
+	/**
+	 * Sets the value of the minDose property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setMinDose(Double value) {
+		this.minDose = value;
+	}
 
-    /**
-     * Gets the value of the maxDose property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getMaxDose() {
-        return maxDose;
-    }
+	/**
+	 * Gets the value of the maxDose property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getMaxDose() {
+		return maxDose;
+	}
 
-    /**
-     * Sets the value of the maxDose property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setMaxDose(Double value) {
-        this.maxDose = value;
-    }
+	/**
+	 * Sets the value of the maxDose property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setMaxDose(Double value) {
+		this.maxDose = value;
+	}
 
 }

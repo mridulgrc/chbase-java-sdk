@@ -5,14 +5,12 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for HMACFinalized complex type.
+ * <p>
+ * Java class for HMACFinalized complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="HMACFinalized">
@@ -53,36 +54,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "HMACFinalized", propOrder = {
-    "hmacData"
-})
+@XmlType(name = "HMACFinalized", propOrder = { "hmacData" })
 public class HMACFinalized {
 
-    @XmlElement(name = "hmac-data", required = true)
-    protected HMACFinalizedData hmacData;
+	@XmlElement(name = "hmac-data", required = true)
+	protected HMACFinalizedData hmacData;
 
-    /**
-     * Gets the value of the hmacData property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link HMACFinalizedData }
-     *     
-     */
-    public HMACFinalizedData getHmacData() {
-        return hmacData;
-    }
+	/**
+	 * Gets the value of the hmacData property.
+	 * 
+	 * @return possible object is {@link HMACFinalizedData }
+	 * 
+	 */
+	public HMACFinalizedData getHmacData() {
+		return hmacData;
+	}
 
-    /**
-     * Sets the value of the hmacData property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link HMACFinalizedData }
-     *     
-     */
-    public void setHmacData(HMACFinalizedData value) {
-        this.hmacData = value;
-    }
+	/**
+	 * Sets the value of the hmacData property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link HMACFinalizedData }
+	 * 
+	 */
+	public void setHmacData(HMACFinalizedData value) {
+		this.hmacData = value;
+	}
 
 }

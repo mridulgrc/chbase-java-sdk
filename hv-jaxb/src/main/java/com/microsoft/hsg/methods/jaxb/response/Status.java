@@ -5,13 +5,11 @@
 // Generated on: 2009.11.03 at 08:22:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -24,9 +22,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Status complex type.
+ * <p>
+ * Java class for Status complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Status">
@@ -44,53 +45,47 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Status", propOrder = {
-    "code",
-    "error"
-})
+@XmlType(name = "Status", propOrder = { "code", "error" })
 public class Status {
 
-    protected int code;
-    protected Error error;
+	protected int code;
+	protected Error error;
 
-    /**
-     * Gets the value of the code property.
-     * 
-     */
-    public int getCode() {
-        return code;
-    }
+	/**
+	 * Gets the value of the code property.
+	 * 
+	 */
+	public int getCode() {
+		return code;
+	}
 
-    /**
-     * Sets the value of the code property.
-     * 
-     */
-    public void setCode(int value) {
-        this.code = value;
-    }
+	/**
+	 * Sets the value of the code property.
+	 * 
+	 */
+	public void setCode(int value) {
+		this.code = value;
+	}
 
-    /**
-     * Gets the value of the error property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Error }
-     *     
-     */
-    public Error getError() {
-        return error;
-    }
+	/**
+	 * Gets the value of the error property.
+	 * 
+	 * @return possible object is {@link Error }
+	 * 
+	 */
+	public Error getError() {
+		return error;
+	}
 
-    /**
-     * Sets the value of the error property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Error }
-     *     
-     */
-    public void setError(Error value) {
-        this.error = value;
-    }
+	/**
+	 * Sets the value of the error property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Error }
+	 * 
+	 */
+	public void setError(Error value) {
+		this.error = value;
+	}
 
 }

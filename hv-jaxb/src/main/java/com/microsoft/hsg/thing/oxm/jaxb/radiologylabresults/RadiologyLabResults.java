@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:51 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.radiologylabresults;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -54,117 +55,100 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "title",
-    "anatomicSite",
-    "resultText"
-})
+@XmlType(name = "", propOrder = { "when", "title", "anatomicSite", "resultText" })
 @XmlRootElement(name = "radiology-lab-results")
 public class RadiologyLabResults {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    protected String title;
-    @XmlElement(name = "anatomic-site")
-    protected String anatomicSite;
-    @XmlElement(name = "result-text")
-    protected String resultText;
+	@XmlElement(required = true)
+	protected DateTime when;
+	protected String title;
+	@XmlElement(name = "anatomic-site")
+	protected String anatomicSite;
+	@XmlElement(name = "result-text")
+	protected String resultText;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the title property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTitle() {
-        return title;
-    }
+	/**
+	 * Gets the value of the title property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTitle() {
+		return title;
+	}
 
-    /**
-     * Sets the value of the title property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTitle(String value) {
-        this.title = value;
-    }
+	/**
+	 * Sets the value of the title property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTitle(String value) {
+		this.title = value;
+	}
 
-    /**
-     * Gets the value of the anatomicSite property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAnatomicSite() {
-        return anatomicSite;
-    }
+	/**
+	 * Gets the value of the anatomicSite property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAnatomicSite() {
+		return anatomicSite;
+	}
 
-    /**
-     * Sets the value of the anatomicSite property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAnatomicSite(String value) {
-        this.anatomicSite = value;
-    }
+	/**
+	 * Sets the value of the anatomicSite property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAnatomicSite(String value) {
+		this.anatomicSite = value;
+	}
 
-    /**
-     * Gets the value of the resultText property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getResultText() {
-        return resultText;
-    }
+	/**
+	 * Gets the value of the resultText property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getResultText() {
+		return resultText;
+	}
 
-    /**
-     * Sets the value of the resultText property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setResultText(String value) {
-        this.resultText = value;
-    }
+	/**
+	 * Sets the value of the resultText property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setResultText(String value) {
+		this.resultText = value;
+	}
 
 }

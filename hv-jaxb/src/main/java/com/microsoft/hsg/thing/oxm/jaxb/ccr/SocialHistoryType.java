@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,11 +12,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for SocialHistoryType complex type.
+ * <p>
+ * Java class for SocialHistoryType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="SocialHistoryType">
@@ -34,38 +35,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SocialHistoryType", propOrder = {
-    "episodes"
-})
-public class SocialHistoryType
-    extends CCRCodedDataObjectType
-{
+@XmlType(name = "SocialHistoryType", propOrder = { "episodes" })
+public class SocialHistoryType extends CCRCodedDataObjectType {
 
-    @XmlElement(name = "Episodes")
-    protected EpisodesType episodes;
+	@XmlElement(name = "Episodes")
+	protected EpisodesType episodes;
 
-    /**
-     * Gets the value of the episodes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EpisodesType }
-     *     
-     */
-    public EpisodesType getEpisodes() {
-        return episodes;
-    }
+	/**
+	 * Gets the value of the episodes property.
+	 * 
+	 * @return possible object is {@link EpisodesType }
+	 * 
+	 */
+	public EpisodesType getEpisodes() {
+		return episodes;
+	}
 
-    /**
-     * Sets the value of the episodes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EpisodesType }
-     *     
-     */
-    public void setEpisodes(EpisodesType value) {
-        this.episodes = value;
-    }
+	/**
+	 * Sets the value of the episodes property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link EpisodesType }
+	 * 
+	 */
+	public void setEpisodes(EpisodesType value) {
+		this.episodes = value;
+	}
 
 }

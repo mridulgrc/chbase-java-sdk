@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:41:44 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.medicationfill;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -17,7 +16,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Organization;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
-
 
 /**
  * 
@@ -37,9 +35,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -63,225 +64,193 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "name",
-    "dateFilled",
-    "daysSupply",
-    "nextRefillDate",
-    "refillsLeft",
-    "pharmacy",
-    "prescriptionNumber",
-    "lotNumber"
-})
+@XmlType(name = "", propOrder = { "name", "dateFilled", "daysSupply", "nextRefillDate", "refillsLeft", "pharmacy",
+		"prescriptionNumber", "lotNumber" })
 @XmlRootElement(name = "medication-fill")
 public class MedicationFill {
 
-    @XmlElement(required = true)
-    protected CodableValue name;
-    @XmlElement(name = "date-filled")
-    protected ApproxDateTime dateFilled;
-    @XmlElement(name = "days-supply")
-    protected Integer daysSupply;
-    @XmlElement(name = "next-refill-date")
-    protected Date nextRefillDate;
-    @XmlElement(name = "refills-left")
-    protected Integer refillsLeft;
-    protected Organization pharmacy;
-    @XmlElement(name = "prescription-number")
-    protected String prescriptionNumber;
-    @XmlElement(name = "lot-number")
-    protected String lotNumber;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	@XmlElement(name = "date-filled")
+	protected ApproxDateTime dateFilled;
+	@XmlElement(name = "days-supply")
+	protected Integer daysSupply;
+	@XmlElement(name = "next-refill-date")
+	protected Date nextRefillDate;
+	@XmlElement(name = "refills-left")
+	protected Integer refillsLeft;
+	protected Organization pharmacy;
+	@XmlElement(name = "prescription-number")
+	protected String prescriptionNumber;
+	@XmlElement(name = "lot-number")
+	protected String lotNumber;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the dateFilled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getDateFilled() {
-        return dateFilled;
-    }
+	/**
+	 * Gets the value of the dateFilled property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getDateFilled() {
+		return dateFilled;
+	}
 
-    /**
-     * Sets the value of the dateFilled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setDateFilled(ApproxDateTime value) {
-        this.dateFilled = value;
-    }
+	/**
+	 * Sets the value of the dateFilled property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setDateFilled(ApproxDateTime value) {
+		this.dateFilled = value;
+	}
 
-    /**
-     * Gets the value of the daysSupply property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getDaysSupply() {
-        return daysSupply;
-    }
+	/**
+	 * Gets the value of the daysSupply property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getDaysSupply() {
+		return daysSupply;
+	}
 
-    /**
-     * Sets the value of the daysSupply property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setDaysSupply(Integer value) {
-        this.daysSupply = value;
-    }
+	/**
+	 * Sets the value of the daysSupply property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setDaysSupply(Integer value) {
+		this.daysSupply = value;
+	}
 
-    /**
-     * Gets the value of the nextRefillDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Date }
-     *     
-     */
-    public Date getNextRefillDate() {
-        return nextRefillDate;
-    }
+	/**
+	 * Gets the value of the nextRefillDate property.
+	 * 
+	 * @return possible object is {@link Date }
+	 * 
+	 */
+	public Date getNextRefillDate() {
+		return nextRefillDate;
+	}
 
-    /**
-     * Sets the value of the nextRefillDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Date }
-     *     
-     */
-    public void setNextRefillDate(Date value) {
-        this.nextRefillDate = value;
-    }
+	/**
+	 * Sets the value of the nextRefillDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Date }
+	 * 
+	 */
+	public void setNextRefillDate(Date value) {
+		this.nextRefillDate = value;
+	}
 
-    /**
-     * Gets the value of the refillsLeft property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getRefillsLeft() {
-        return refillsLeft;
-    }
+	/**
+	 * Gets the value of the refillsLeft property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getRefillsLeft() {
+		return refillsLeft;
+	}
 
-    /**
-     * Sets the value of the refillsLeft property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setRefillsLeft(Integer value) {
-        this.refillsLeft = value;
-    }
+	/**
+	 * Sets the value of the refillsLeft property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setRefillsLeft(Integer value) {
+		this.refillsLeft = value;
+	}
 
-    /**
-     * Gets the value of the pharmacy property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Organization }
-     *     
-     */
-    public Organization getPharmacy() {
-        return pharmacy;
-    }
+	/**
+	 * Gets the value of the pharmacy property.
+	 * 
+	 * @return possible object is {@link Organization }
+	 * 
+	 */
+	public Organization getPharmacy() {
+		return pharmacy;
+	}
 
-    /**
-     * Sets the value of the pharmacy property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Organization }
-     *     
-     */
-    public void setPharmacy(Organization value) {
-        this.pharmacy = value;
-    }
+	/**
+	 * Sets the value of the pharmacy property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Organization }
+	 * 
+	 */
+	public void setPharmacy(Organization value) {
+		this.pharmacy = value;
+	}
 
-    /**
-     * Gets the value of the prescriptionNumber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPrescriptionNumber() {
-        return prescriptionNumber;
-    }
+	/**
+	 * Gets the value of the prescriptionNumber property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPrescriptionNumber() {
+		return prescriptionNumber;
+	}
 
-    /**
-     * Sets the value of the prescriptionNumber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPrescriptionNumber(String value) {
-        this.prescriptionNumber = value;
-    }
+	/**
+	 * Sets the value of the prescriptionNumber property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPrescriptionNumber(String value) {
+		this.prescriptionNumber = value;
+	}
 
-    /**
-     * Gets the value of the lotNumber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLotNumber() {
-        return lotNumber;
-    }
+	/**
+	 * Gets the value of the lotNumber property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLotNumber() {
+		return lotNumber;
+	}
 
-    /**
-     * Sets the value of the lotNumber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLotNumber(String value) {
-        this.lotNumber = value;
-    }
+	/**
+	 * Sets the value of the lotNumber property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLotNumber(String value) {
+		this.lotNumber = value;
+	}
 
 }

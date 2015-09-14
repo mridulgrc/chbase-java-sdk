@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:19:41 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getauthorizedpeople.response;
 
 import java.util.ArrayList;
@@ -16,11 +15,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.PersonInfo;
 
-
 /**
- * <p>Java class for GetAuthorizedPeopleResponse complex type.
+ * <p>
+ * Java class for GetAuthorizedPeopleResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="GetAuthorizedPeopleResponse">
@@ -38,60 +39,58 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.PersonInfo;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "GetAuthorizedPeopleResponse", propOrder = {
-    "personInfo",
-    "moreResults"
-})
+@XmlType(name = "GetAuthorizedPeopleResponse", propOrder = { "personInfo", "moreResults" })
 public class GetAuthorizedPeopleResponse {
 
-    @XmlElement(name = "person-info")
-    protected List<PersonInfo> personInfo;
-    @XmlElement(name = "more-results")
-    protected boolean moreResults;
+	@XmlElement(name = "person-info")
+	protected List<PersonInfo> personInfo;
+	@XmlElement(name = "more-results")
+	protected boolean moreResults;
 
-    /**
-     * Gets the value of the personInfo property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the personInfo property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getPersonInfo().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link PersonInfo }
-     * 
-     * 
-     */
-    public List<PersonInfo> getPersonInfo() {
-        if (personInfo == null) {
-            personInfo = new ArrayList<PersonInfo>();
-        }
-        return this.personInfo;
-    }
+	/**
+	 * Gets the value of the personInfo property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the personInfo property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getPersonInfo().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link PersonInfo }
+	 * 
+	 * 
+	 */
+	public List<PersonInfo> getPersonInfo() {
+		if (personInfo == null) {
+			personInfo = new ArrayList<PersonInfo>();
+		}
+		return this.personInfo;
+	}
 
-    /**
-     * Gets the value of the moreResults property.
-     * 
-     */
-    public boolean isMoreResults() {
-        return moreResults;
-    }
+	/**
+	 * Gets the value of the moreResults property.
+	 * 
+	 */
+	public boolean isMoreResults() {
+		return moreResults;
+	}
 
-    /**
-     * Sets the value of the moreResults property.
-     * 
-     */
-    public void setMoreResults(boolean value) {
-        this.moreResults = value;
-    }
+	/**
+	 * Sets the value of the moreResults property.
+	 * 
+	 */
+	public void setMoreResults(boolean value) {
+		this.moreResults = value;
+	}
 
 }

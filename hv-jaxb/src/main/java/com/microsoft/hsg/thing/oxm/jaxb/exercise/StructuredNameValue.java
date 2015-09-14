@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:14 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.exercise;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodedValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.StructuredMeasurement;
 
-
 /**
- * <p>Java class for StructuredNameValue complex type.
+ * <p>
+ * Java class for StructuredNameValue complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="StructuredNameValue">
@@ -37,63 +38,54 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.StructuredMeasurement;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "StructuredNameValue", propOrder = {
-    "name",
-    "value"
-})
+@XmlType(name = "StructuredNameValue", propOrder = { "name", "value" })
 public class StructuredNameValue {
 
-    @XmlElement(required = true)
-    protected CodedValue name;
-    @XmlElement(required = true)
-    protected StructuredMeasurement value;
+	@XmlElement(required = true)
+	protected CodedValue name;
+	@XmlElement(required = true)
+	protected StructuredMeasurement value;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedValue }
-     *     
-     */
-    public CodedValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodedValue }
+	 * 
+	 */
+	public CodedValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedValue }
-     *     
-     */
-    public void setName(CodedValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedValue }
+	 * 
+	 */
+	public void setName(CodedValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StructuredMeasurement }
-     *     
-     */
-    public StructuredMeasurement getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link StructuredMeasurement }
+	 * 
+	 */
+	public StructuredMeasurement getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StructuredMeasurement }
-     *     
-     */
-    public void setValue(StructuredMeasurement value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link StructuredMeasurement }
+	 * 
+	 */
+	public void setValue(StructuredMeasurement value) {
+		this.value = value;
+	}
 
 }

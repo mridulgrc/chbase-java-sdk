@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:44 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.geneticsnpresults;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Organization;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -48,9 +46,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -76,271 +77,234 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "genomeBuild",
-    "chromosome",
-    "numberingScheme",
-    "orderedBy",
-    "testProvider",
-    "laboratoryName",
-    "annotationVersion",
-    "dbSNPBuild0020",
-    "platform"
-})
+@XmlType(name = "", propOrder = { "when", "genomeBuild", "chromosome", "numberingScheme", "orderedBy", "testProvider",
+		"laboratoryName", "annotationVersion", "dbSNPBuild0020", "platform" })
 @XmlRootElement(name = "genetic-snp-results")
 public class GeneticSnpResults {
 
-    @XmlElement(required = true)
-    protected ApproxDateTime when;
-    @XmlElement(name = "genome-build", required = true)
-    protected String genomeBuild;
-    @XmlElement(required = true)
-    protected String chromosome;
-    @XmlElement(name = "numbering-scheme")
-    protected int numberingScheme;
-    @XmlElement(name = "ordered-by")
-    protected Organization orderedBy;
-    @XmlElement(name = "test-provider")
-    protected Organization testProvider;
-    @XmlElement(name = "laboratory-name")
-    protected Organization laboratoryName;
-    @XmlElement(name = "annotation-version")
-    protected String annotationVersion;
-    @XmlElement(name = "dbSNP-build ")
-    protected String dbSNPBuild0020;
-    protected String platform;
+	@XmlElement(required = true)
+	protected ApproxDateTime when;
+	@XmlElement(name = "genome-build", required = true)
+	protected String genomeBuild;
+	@XmlElement(required = true)
+	protected String chromosome;
+	@XmlElement(name = "numbering-scheme")
+	protected int numberingScheme;
+	@XmlElement(name = "ordered-by")
+	protected Organization orderedBy;
+	@XmlElement(name = "test-provider")
+	protected Organization testProvider;
+	@XmlElement(name = "laboratory-name")
+	protected Organization laboratoryName;
+	@XmlElement(name = "annotation-version")
+	protected String annotationVersion;
+	@XmlElement(name = "dbSNP-build ")
+	protected String dbSNPBuild0020;
+	protected String platform;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setWhen(ApproxDateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setWhen(ApproxDateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the genomeBuild property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getGenomeBuild() {
-        return genomeBuild;
-    }
+	/**
+	 * Gets the value of the genomeBuild property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getGenomeBuild() {
+		return genomeBuild;
+	}
 
-    /**
-     * Sets the value of the genomeBuild property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setGenomeBuild(String value) {
-        this.genomeBuild = value;
-    }
+	/**
+	 * Sets the value of the genomeBuild property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setGenomeBuild(String value) {
+		this.genomeBuild = value;
+	}
 
-    /**
-     * Gets the value of the chromosome property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getChromosome() {
-        return chromosome;
-    }
+	/**
+	 * Gets the value of the chromosome property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getChromosome() {
+		return chromosome;
+	}
 
-    /**
-     * Sets the value of the chromosome property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setChromosome(String value) {
-        this.chromosome = value;
-    }
+	/**
+	 * Sets the value of the chromosome property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setChromosome(String value) {
+		this.chromosome = value;
+	}
 
-    /**
-     * Gets the value of the numberingScheme property.
-     * 
-     */
-    public int getNumberingScheme() {
-        return numberingScheme;
-    }
+	/**
+	 * Gets the value of the numberingScheme property.
+	 * 
+	 */
+	public int getNumberingScheme() {
+		return numberingScheme;
+	}
 
-    /**
-     * Sets the value of the numberingScheme property.
-     * 
-     */
-    public void setNumberingScheme(int value) {
-        this.numberingScheme = value;
-    }
+	/**
+	 * Sets the value of the numberingScheme property.
+	 * 
+	 */
+	public void setNumberingScheme(int value) {
+		this.numberingScheme = value;
+	}
 
-    /**
-     * Gets the value of the orderedBy property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Organization }
-     *     
-     */
-    public Organization getOrderedBy() {
-        return orderedBy;
-    }
+	/**
+	 * Gets the value of the orderedBy property.
+	 * 
+	 * @return possible object is {@link Organization }
+	 * 
+	 */
+	public Organization getOrderedBy() {
+		return orderedBy;
+	}
 
-    /**
-     * Sets the value of the orderedBy property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Organization }
-     *     
-     */
-    public void setOrderedBy(Organization value) {
-        this.orderedBy = value;
-    }
+	/**
+	 * Sets the value of the orderedBy property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Organization }
+	 * 
+	 */
+	public void setOrderedBy(Organization value) {
+		this.orderedBy = value;
+	}
 
-    /**
-     * Gets the value of the testProvider property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Organization }
-     *     
-     */
-    public Organization getTestProvider() {
-        return testProvider;
-    }
+	/**
+	 * Gets the value of the testProvider property.
+	 * 
+	 * @return possible object is {@link Organization }
+	 * 
+	 */
+	public Organization getTestProvider() {
+		return testProvider;
+	}
 
-    /**
-     * Sets the value of the testProvider property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Organization }
-     *     
-     */
-    public void setTestProvider(Organization value) {
-        this.testProvider = value;
-    }
+	/**
+	 * Sets the value of the testProvider property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Organization }
+	 * 
+	 */
+	public void setTestProvider(Organization value) {
+		this.testProvider = value;
+	}
 
-    /**
-     * Gets the value of the laboratoryName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Organization }
-     *     
-     */
-    public Organization getLaboratoryName() {
-        return laboratoryName;
-    }
+	/**
+	 * Gets the value of the laboratoryName property.
+	 * 
+	 * @return possible object is {@link Organization }
+	 * 
+	 */
+	public Organization getLaboratoryName() {
+		return laboratoryName;
+	}
 
-    /**
-     * Sets the value of the laboratoryName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Organization }
-     *     
-     */
-    public void setLaboratoryName(Organization value) {
-        this.laboratoryName = value;
-    }
+	/**
+	 * Sets the value of the laboratoryName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Organization }
+	 * 
+	 */
+	public void setLaboratoryName(Organization value) {
+		this.laboratoryName = value;
+	}
 
-    /**
-     * Gets the value of the annotationVersion property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAnnotationVersion() {
-        return annotationVersion;
-    }
+	/**
+	 * Gets the value of the annotationVersion property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAnnotationVersion() {
+		return annotationVersion;
+	}
 
-    /**
-     * Sets the value of the annotationVersion property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAnnotationVersion(String value) {
-        this.annotationVersion = value;
-    }
+	/**
+	 * Sets the value of the annotationVersion property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAnnotationVersion(String value) {
+		this.annotationVersion = value;
+	}
 
-    /**
-     * Gets the value of the dbSNPBuild0020 property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDbSNPBuild_0020() {
-        return dbSNPBuild0020;
-    }
+	/**
+	 * Gets the value of the dbSNPBuild0020 property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDbSNPBuild_0020() {
+		return dbSNPBuild0020;
+	}
 
-    /**
-     * Sets the value of the dbSNPBuild0020 property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDbSNPBuild_0020(String value) {
-        this.dbSNPBuild0020 = value;
-    }
+	/**
+	 * Sets the value of the dbSNPBuild0020 property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDbSNPBuild_0020(String value) {
+		this.dbSNPBuild0020 = value;
+	}
 
-    /**
-     * Gets the value of the platform property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPlatform() {
-        return platform;
-    }
+	/**
+	 * Gets the value of the platform property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPlatform() {
+		return platform;
+	}
 
-    /**
-     * Sets the value of the platform property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPlatform(String value) {
-        this.platform = value;
-    }
+	/**
+	 * Sets the value of the platform property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPlatform(String value) {
+		this.platform = value;
+	}
 
 }

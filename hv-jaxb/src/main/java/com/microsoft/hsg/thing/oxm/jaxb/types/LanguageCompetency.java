@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
-
 
 /**
  * 
@@ -26,9 +24,12 @@ import javax.xml.bind.annotation.XmlValue;
  * </pre>
  * 
  * 
- * <p>Java class for LanguageCompetency complex type.
+ * <p>
+ * Java class for LanguageCompetency complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="LanguageCompetency">
@@ -43,70 +44,62 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "LanguageCompetency", propOrder = {
-    "value"
-})
+@XmlType(name = "LanguageCompetency", propOrder = { "value" })
 public class LanguageCompetency {
 
-    @XmlValue
-    protected Iso6391 value;
-    @XmlAttribute(name = "is-primary")
-    protected Boolean isPrimary;
+	@XmlValue
+	protected Iso6391 value;
+	@XmlAttribute(name = "is-primary")
+	protected Boolean isPrimary;
 
-    /**
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * 
-     * @return
-     *     possible object is
-     *     {@link Iso6391 }
-     *     
-     */
-    public Iso6391 getValue() {
-        return value;
-    }
+	/**
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * 
+	 * @return possible object is {@link Iso6391 }
+	 * 
+	 */
+	public Iso6391 getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Iso6391 }
-     *     
-     */
-    public void setValue(Iso6391 value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Iso6391 }
+	 * 
+	 */
+	public void setValue(Iso6391 value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the isPrimary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsPrimary() {
-        return isPrimary;
-    }
+	/**
+	 * Gets the value of the isPrimary property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsPrimary() {
+		return isPrimary;
+	}
 
-    /**
-     * Sets the value of the isPrimary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsPrimary(Boolean value) {
-        this.isPrimary = value;
-    }
+	/**
+	 * Sets the value of the isPrimary property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsPrimary(Boolean value) {
+		this.isPrimary = value;
+	}
 
 }

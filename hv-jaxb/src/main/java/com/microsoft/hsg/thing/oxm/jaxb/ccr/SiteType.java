@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.math.BigInteger;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for SiteType complex type.
+ * <p>
+ * Java class for SiteType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="SiteType">
@@ -36,65 +37,54 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SiteType", propOrder = {
-    "siteSequencePosition",
-    "multipleSiteModifier"
-})
-public class SiteType
-    extends CodedDescriptionType
-{
+@XmlType(name = "SiteType", propOrder = { "siteSequencePosition", "multipleSiteModifier" })
+public class SiteType extends CodedDescriptionType {
 
-    @XmlElement(name = "SiteSequencePosition")
-    protected BigInteger siteSequencePosition;
-    @XmlElement(name = "MultipleSiteModifier")
-    protected CodedDescriptionType multipleSiteModifier;
+	@XmlElement(name = "SiteSequencePosition")
+	protected BigInteger siteSequencePosition;
+	@XmlElement(name = "MultipleSiteModifier")
+	protected CodedDescriptionType multipleSiteModifier;
 
-    /**
-     * Gets the value of the siteSequencePosition property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getSiteSequencePosition() {
-        return siteSequencePosition;
-    }
+	/**
+	 * Gets the value of the siteSequencePosition property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getSiteSequencePosition() {
+		return siteSequencePosition;
+	}
 
-    /**
-     * Sets the value of the siteSequencePosition property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setSiteSequencePosition(BigInteger value) {
-        this.siteSequencePosition = value;
-    }
+	/**
+	 * Sets the value of the siteSequencePosition property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setSiteSequencePosition(BigInteger value) {
+		this.siteSequencePosition = value;
+	}
 
-    /**
-     * Gets the value of the multipleSiteModifier property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public CodedDescriptionType getMultipleSiteModifier() {
-        return multipleSiteModifier;
-    }
+	/**
+	 * Gets the value of the multipleSiteModifier property.
+	 * 
+	 * @return possible object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public CodedDescriptionType getMultipleSiteModifier() {
+		return multipleSiteModifier;
+	}
 
-    /**
-     * Sets the value of the multipleSiteModifier property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public void setMultipleSiteModifier(CodedDescriptionType value) {
-        this.multipleSiteModifier = value;
-    }
+	/**
+	 * Sets the value of the multipleSiteModifier property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public void setMultipleSiteModifier(CodedDescriptionType value) {
+		this.multipleSiteModifier = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:20:26 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getpersoninfo.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.PersonInfo;
-
 
 /**
  * 
@@ -35,9 +33,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.PersonInfo;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -54,37 +55,32 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.PersonInfo;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "personInfo"
-})
+@XmlType(name = "", propOrder = { "personInfo" })
 @XmlRootElement(name = "info")
 public class GetPersonInfoResponse {
 
-    @XmlElement(name = "person-info", required = true)
-    protected PersonInfo personInfo;
+	@XmlElement(name = "person-info", required = true)
+	protected PersonInfo personInfo;
 
-    /**
-     * Gets the value of the personInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PersonInfo }
-     *     
-     */
-    public PersonInfo getPersonInfo() {
-        return personInfo;
-    }
+	/**
+	 * Gets the value of the personInfo property.
+	 * 
+	 * @return possible object is {@link PersonInfo }
+	 * 
+	 */
+	public PersonInfo getPersonInfo() {
+		return personInfo;
+	}
 
-    /**
-     * Sets the value of the personInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PersonInfo }
-     *     
-     */
-    public void setPersonInfo(PersonInfo value) {
-        this.personInfo = value;
-    }
+	/**
+	 * Sets the value of the personInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link PersonInfo }
+	 * 
+	 */
+	public void setPersonInfo(PersonInfo value) {
+		this.personInfo = value;
+	}
 
 }

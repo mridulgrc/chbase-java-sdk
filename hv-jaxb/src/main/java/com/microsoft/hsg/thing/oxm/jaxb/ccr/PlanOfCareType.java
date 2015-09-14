@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.math.BigInteger;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for PlanOfCareType complex type.
+ * <p>
+ * Java class for PlanOfCareType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="PlanOfCareType">
@@ -37,92 +38,77 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "PlanOfCareType", propOrder = {
-    "goals",
-    "orderSequencePosition",
-    "multipleOrderModifier"
-})
-public class PlanOfCareType
-    extends InterventionType
-{
+@XmlType(name = "PlanOfCareType", propOrder = { "goals", "orderSequencePosition", "multipleOrderModifier" })
+public class PlanOfCareType extends InterventionType {
 
-    @XmlElement(name = "Goals")
-    protected Goals goals;
-    @XmlElement(name = "OrderSequencePosition")
-    protected BigInteger orderSequencePosition;
-    @XmlElement(name = "MultipleOrderModifier")
-    protected CodedDescriptionType multipleOrderModifier;
+	@XmlElement(name = "Goals")
+	protected Goals goals;
+	@XmlElement(name = "OrderSequencePosition")
+	protected BigInteger orderSequencePosition;
+	@XmlElement(name = "MultipleOrderModifier")
+	protected CodedDescriptionType multipleOrderModifier;
 
-    /**
-     * Gets the value of the goals property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Goals }
-     *     
-     */
-    public Goals getGoals() {
-        return goals;
-    }
+	/**
+	 * Gets the value of the goals property.
+	 * 
+	 * @return possible object is {@link Goals }
+	 * 
+	 */
+	public Goals getGoals() {
+		return goals;
+	}
 
-    /**
-     * Sets the value of the goals property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Goals }
-     *     
-     */
-    public void setGoals(Goals value) {
-        this.goals = value;
-    }
+	/**
+	 * Sets the value of the goals property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Goals }
+	 * 
+	 */
+	public void setGoals(Goals value) {
+		this.goals = value;
+	}
 
-    /**
-     * Gets the value of the orderSequencePosition property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getOrderSequencePosition() {
-        return orderSequencePosition;
-    }
+	/**
+	 * Gets the value of the orderSequencePosition property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getOrderSequencePosition() {
+		return orderSequencePosition;
+	}
 
-    /**
-     * Sets the value of the orderSequencePosition property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setOrderSequencePosition(BigInteger value) {
-        this.orderSequencePosition = value;
-    }
+	/**
+	 * Sets the value of the orderSequencePosition property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setOrderSequencePosition(BigInteger value) {
+		this.orderSequencePosition = value;
+	}
 
-    /**
-     * Gets the value of the multipleOrderModifier property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public CodedDescriptionType getMultipleOrderModifier() {
-        return multipleOrderModifier;
-    }
+	/**
+	 * Gets the value of the multipleOrderModifier property.
+	 * 
+	 * @return possible object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public CodedDescriptionType getMultipleOrderModifier() {
+		return multipleOrderModifier;
+	}
 
-    /**
-     * Sets the value of the multipleOrderModifier property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public void setMultipleOrderModifier(CodedDescriptionType value) {
-        this.multipleOrderModifier = value;
-    }
+	/**
+	 * Sets the value of the multipleOrderModifier property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public void setMultipleOrderModifier(CodedDescriptionType value) {
+		this.multipleOrderModifier = value;
+	}
 
 }

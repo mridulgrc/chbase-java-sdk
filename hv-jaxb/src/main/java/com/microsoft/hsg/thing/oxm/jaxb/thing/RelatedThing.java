@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.thing;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,30 +12,41 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
- *                     Defines a loose relationship between instances of things within a record.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
+
+ *                     Defines a loose relationship between instances of things within a record.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
- *                     This relationship is completely application defined and maintained.
- *                     HealthVault does nothing to ensure that related things exist
- *                     or have a relationship back to this thing.
- *                     An example usage for related-things are to use an annotation thing
- *                     instance to make medical annotations for another thing type or to relate
- *                     a file instance (like an MRI) to problem instance.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ds="" xmlns:this="urn:com.microsoft.wc.thing" xmlns:wc-auth="urn:com.microsoft.wc.auth" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
+
+ *                     This relationship is completely application defined and maintained.
+
+ *                     HealthVault does nothing to ensure that related things exist
+
+ *                     or have a relationship back to this thing.
+
+ *                     An example usage for related-things are to use an annotation thing
+
+ *                     instance to make medical annotations for another thing type or to relate
+
+ *                     a file instance (like an MRI) to problem instance.
+
  *                 &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for RelatedThing complex type.
+ * <p>
+ * Java class for RelatedThing complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="RelatedThing">
@@ -60,117 +70,100 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RelatedThing", propOrder = {
-    "thingId",
-    "versionStamp",
-    "clientThingId",
-    "relationshipType"
-})
+@XmlType(name = "RelatedThing", propOrder = { "thingId", "versionStamp", "clientThingId", "relationshipType" })
 public class RelatedThing {
 
-    @XmlElement(name = "thing-id")
-    protected String thingId;
-    @XmlElement(name = "version-stamp")
-    protected String versionStamp;
-    @XmlElement(name = "client-thing-id")
-    protected String clientThingId;
-    @XmlElement(name = "relationship-type")
-    protected String relationshipType;
+	@XmlElement(name = "thing-id")
+	protected String thingId;
+	@XmlElement(name = "version-stamp")
+	protected String versionStamp;
+	@XmlElement(name = "client-thing-id")
+	protected String clientThingId;
+	@XmlElement(name = "relationship-type")
+	protected String relationshipType;
 
-    /**
-     * Gets the value of the thingId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getThingId() {
-        return thingId;
-    }
+	/**
+	 * Gets the value of the thingId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getThingId() {
+		return thingId;
+	}
 
-    /**
-     * Sets the value of the thingId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setThingId(String value) {
-        this.thingId = value;
-    }
+	/**
+	 * Sets the value of the thingId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setThingId(String value) {
+		this.thingId = value;
+	}
 
-    /**
-     * Gets the value of the versionStamp property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getVersionStamp() {
-        return versionStamp;
-    }
+	/**
+	 * Gets the value of the versionStamp property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getVersionStamp() {
+		return versionStamp;
+	}
 
-    /**
-     * Sets the value of the versionStamp property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setVersionStamp(String value) {
-        this.versionStamp = value;
-    }
+	/**
+	 * Sets the value of the versionStamp property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setVersionStamp(String value) {
+		this.versionStamp = value;
+	}
 
-    /**
-     * Gets the value of the clientThingId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getClientThingId() {
-        return clientThingId;
-    }
+	/**
+	 * Gets the value of the clientThingId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getClientThingId() {
+		return clientThingId;
+	}
 
-    /**
-     * Sets the value of the clientThingId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setClientThingId(String value) {
-        this.clientThingId = value;
-    }
+	/**
+	 * Sets the value of the clientThingId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setClientThingId(String value) {
+		this.clientThingId = value;
+	}
 
-    /**
-     * Gets the value of the relationshipType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRelationshipType() {
-        return relationshipType;
-    }
+	/**
+	 * Gets the value of the relationshipType property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getRelationshipType() {
+		return relationshipType;
+	}
 
-    /**
-     * Sets the value of the relationshipType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRelationshipType(String value) {
-        this.relationshipType = value;
-    }
+	/**
+	 * Sets the value of the relationshipType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setRelationshipType(String value) {
+		this.relationshipType = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for EffectiveRecordPermission complex type.
+ * <p>
+ * Java class for EffectiveRecordPermission complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="EffectiveRecordPermission">
@@ -45,68 +46,63 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "EffectiveRecordPermission", propOrder = {
-    "recordId",
-    "thingTypePermission"
-})
+@XmlType(name = "EffectiveRecordPermission", propOrder = { "recordId", "thingTypePermission" })
 public class EffectiveRecordPermission {
 
-    @XmlElement(name = "record-id", required = true)
-    protected String recordId;
-    @XmlElement(name = "thing-type-permission")
-    protected List<ThingTypePermission> thingTypePermission;
+	@XmlElement(name = "record-id", required = true)
+	protected String recordId;
+	@XmlElement(name = "thing-type-permission")
+	protected List<ThingTypePermission> thingTypePermission;
 
-    /**
-     * Gets the value of the recordId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRecordId() {
-        return recordId;
-    }
+	/**
+	 * Gets the value of the recordId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getRecordId() {
+		return recordId;
+	}
 
-    /**
-     * Sets the value of the recordId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRecordId(String value) {
-        this.recordId = value;
-    }
+	/**
+	 * Sets the value of the recordId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setRecordId(String value) {
+		this.recordId = value;
+	}
 
-    /**
-     * Gets the value of the thingTypePermission property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the thingTypePermission property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getThingTypePermission().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ThingTypePermission }
-     * 
-     * 
-     */
-    public List<ThingTypePermission> getThingTypePermission() {
-        if (thingTypePermission == null) {
-            thingTypePermission = new ArrayList<ThingTypePermission>();
-        }
-        return this.thingTypePermission;
-    }
+	/**
+	 * Gets the value of the thingTypePermission property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the thingTypePermission property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getThingTypePermission().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ThingTypePermission }
+	 * 
+	 * 
+	 */
+	public List<ThingTypePermission> getThingTypePermission() {
+		if (thingTypePermission == null) {
+			thingTypePermission = new ArrayList<ThingTypePermission>();
+		}
+		return this.thingTypePermission;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:05 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.encounter;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -17,7 +16,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.DurationValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Organization;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -58,167 +59,142 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "type",
-    "reason",
-    "duration",
-    "consentGranted",
-    "facility"
-})
+@XmlType(name = "", propOrder = { "when", "type", "reason", "duration", "consentGranted", "facility" })
 @XmlRootElement(name = "encounter")
 public class Encounter {
 
-    protected DateTime when;
-    protected CodableValue type;
-    protected String reason;
-    protected DurationValue duration;
-    @XmlElement(name = "consent-granted")
-    protected Boolean consentGranted;
-    protected Organization facility;
+	protected DateTime when;
+	protected CodableValue type;
+	protected String reason;
+	protected DurationValue duration;
+	@XmlElement(name = "consent-granted")
+	protected Boolean consentGranted;
+	protected Organization facility;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getType() {
-        return type;
-    }
+	/**
+	 * Gets the value of the type property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getType() {
+		return type;
+	}
 
-    /**
-     * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setType(CodableValue value) {
-        this.type = value;
-    }
+	/**
+	 * Sets the value of the type property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setType(CodableValue value) {
+		this.type = value;
+	}
 
-    /**
-     * Gets the value of the reason property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getReason() {
-        return reason;
-    }
+	/**
+	 * Gets the value of the reason property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getReason() {
+		return reason;
+	}
 
-    /**
-     * Sets the value of the reason property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setReason(String value) {
-        this.reason = value;
-    }
+	/**
+	 * Sets the value of the reason property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setReason(String value) {
+		this.reason = value;
+	}
 
-    /**
-     * Gets the value of the duration property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DurationValue }
-     *     
-     */
-    public DurationValue getDuration() {
-        return duration;
-    }
+	/**
+	 * Gets the value of the duration property.
+	 * 
+	 * @return possible object is {@link DurationValue }
+	 * 
+	 */
+	public DurationValue getDuration() {
+		return duration;
+	}
 
-    /**
-     * Sets the value of the duration property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DurationValue }
-     *     
-     */
-    public void setDuration(DurationValue value) {
-        this.duration = value;
-    }
+	/**
+	 * Sets the value of the duration property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DurationValue }
+	 * 
+	 */
+	public void setDuration(DurationValue value) {
+		this.duration = value;
+	}
 
-    /**
-     * Gets the value of the consentGranted property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isConsentGranted() {
-        return consentGranted;
-    }
+	/**
+	 * Gets the value of the consentGranted property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isConsentGranted() {
+		return consentGranted;
+	}
 
-    /**
-     * Sets the value of the consentGranted property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setConsentGranted(Boolean value) {
-        this.consentGranted = value;
-    }
+	/**
+	 * Sets the value of the consentGranted property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setConsentGranted(Boolean value) {
+		this.consentGranted = value;
+	}
 
-    /**
-     * Gets the value of the facility property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Organization }
-     *     
-     */
-    public Organization getFacility() {
-        return facility;
-    }
+	/**
+	 * Gets the value of the facility property.
+	 * 
+	 * @return possible object is {@link Organization }
+	 * 
+	 */
+	public Organization getFacility() {
+		return facility;
+	}
 
-    /**
-     * Sets the value of the facility property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Organization }
-     *     
-     */
-    public void setFacility(Organization value) {
-        this.facility = value;
-    }
+	/**
+	 * Sets the value of the facility property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Organization }
+	 * 
+	 */
+	public void setFacility(Organization value) {
+		this.facility = value;
+	}
 
 }

@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -35,9 +33,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for FederatingCred complex type.
+ * <p>
+ * Java class for FederatingCred complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="FederatingCred">
@@ -54,36 +55,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "FederatingCred", propOrder = {
-    "federatingAuthToken"
-})
+@XmlType(name = "FederatingCred", propOrder = { "federatingAuthToken" })
 public class FederatingCred {
 
-    @XmlElement(name = "federating-auth-token", required = true)
-    protected String federatingAuthToken;
+	@XmlElement(name = "federating-auth-token", required = true)
+	protected String federatingAuthToken;
 
-    /**
-     * Gets the value of the federatingAuthToken property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFederatingAuthToken() {
-        return federatingAuthToken;
-    }
+	/**
+	 * Gets the value of the federatingAuthToken property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getFederatingAuthToken() {
+		return federatingAuthToken;
+	}
 
-    /**
-     * Sets the value of the federatingAuthToken property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFederatingAuthToken(String value) {
-        this.federatingAuthToken = value;
-    }
+	/**
+	 * Sets the value of the federatingAuthToken property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setFederatingAuthToken(String value) {
+		this.federatingAuthToken = value;
+	}
 
 }

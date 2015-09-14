@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:20 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.weightgoal;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Goal;
 import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
-
 
 /**
  * 
@@ -35,9 +33,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -57,115 +58,98 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "initial",
-    "minimum",
-    "maximum",
-    "goalInfo"
-})
+@XmlType(name = "", propOrder = { "initial", "minimum", "maximum", "goalInfo" })
 @XmlRootElement(name = "weight-goal")
 public class WeightGoal {
 
-    protected WeightValue initial;
-    protected WeightValue minimum;
-    protected WeightValue maximum;
-    @XmlElement(name = "goal-info")
-    protected Goal goalInfo;
+	protected WeightValue initial;
+	protected WeightValue minimum;
+	protected WeightValue maximum;
+	@XmlElement(name = "goal-info")
+	protected Goal goalInfo;
 
-    /**
-     * Gets the value of the initial property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getInitial() {
-        return initial;
-    }
+	/**
+	 * Gets the value of the initial property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getInitial() {
+		return initial;
+	}
 
-    /**
-     * Sets the value of the initial property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setInitial(WeightValue value) {
-        this.initial = value;
-    }
+	/**
+	 * Sets the value of the initial property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setInitial(WeightValue value) {
+		this.initial = value;
+	}
 
-    /**
-     * Gets the value of the minimum property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getMinimum() {
-        return minimum;
-    }
+	/**
+	 * Gets the value of the minimum property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getMinimum() {
+		return minimum;
+	}
 
-    /**
-     * Sets the value of the minimum property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setMinimum(WeightValue value) {
-        this.minimum = value;
-    }
+	/**
+	 * Sets the value of the minimum property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setMinimum(WeightValue value) {
+		this.minimum = value;
+	}
 
-    /**
-     * Gets the value of the maximum property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getMaximum() {
-        return maximum;
-    }
+	/**
+	 * Gets the value of the maximum property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getMaximum() {
+		return maximum;
+	}
 
-    /**
-     * Sets the value of the maximum property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setMaximum(WeightValue value) {
-        this.maximum = value;
-    }
+	/**
+	 * Sets the value of the maximum property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setMaximum(WeightValue value) {
+		this.maximum = value;
+	}
 
-    /**
-     * Gets the value of the goalInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Goal }
-     *     
-     */
-    public Goal getGoalInfo() {
-        return goalInfo;
-    }
+	/**
+	 * Gets the value of the goalInfo property.
+	 * 
+	 * @return possible object is {@link Goal }
+	 * 
+	 */
+	public Goal getGoalInfo() {
+		return goalInfo;
+	}
 
-    /**
-     * Sets the value of the goalInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Goal }
-     *     
-     */
-    public void setGoalInfo(Goal value) {
-        this.goalInfo = value;
-    }
+	/**
+	 * Sets the value of the goalInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Goal }
+	 * 
+	 */
+	public void setGoalInfo(Goal value) {
+		this.goalInfo = value;
+	}
 
 }

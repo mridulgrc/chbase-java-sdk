@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import java.util.ArrayList;
@@ -17,11 +16,13 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificString255Nw;
 import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificUrl;
 
-
 /**
- * <p>Java class for CompanyInformation complex type.
+ * <p>
+ * Java class for CompanyInformation complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="CompanyInformation">
@@ -40,100 +41,95 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificUrl;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "CompanyInformation", propOrder = {
-    "companyLogo",
-    "companyName",
-    "companyUrl"
-})
+@XmlType(name = "CompanyInformation", propOrder = { "companyLogo", "companyName", "companyUrl" })
 public class CompanyInformation {
 
-    @XmlElement(name = "company-logo")
-    protected Logo companyLogo;
-    @XmlElement(name = "company-name")
-    protected List<CultureSpecificString255Nw> companyName;
-    @XmlElement(name = "company-url")
-    protected List<CultureSpecificUrl> companyUrl;
+	@XmlElement(name = "company-logo")
+	protected Logo companyLogo;
+	@XmlElement(name = "company-name")
+	protected List<CultureSpecificString255Nw> companyName;
+	@XmlElement(name = "company-url")
+	protected List<CultureSpecificUrl> companyUrl;
 
-    /**
-     * Gets the value of the companyLogo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Logo }
-     *     
-     */
-    public Logo getCompanyLogo() {
-        return companyLogo;
-    }
+	/**
+	 * Gets the value of the companyLogo property.
+	 * 
+	 * @return possible object is {@link Logo }
+	 * 
+	 */
+	public Logo getCompanyLogo() {
+		return companyLogo;
+	}
 
-    /**
-     * Sets the value of the companyLogo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Logo }
-     *     
-     */
-    public void setCompanyLogo(Logo value) {
-        this.companyLogo = value;
-    }
+	/**
+	 * Sets the value of the companyLogo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Logo }
+	 * 
+	 */
+	public void setCompanyLogo(Logo value) {
+		this.companyLogo = value;
+	}
 
-    /**
-     * Gets the value of the companyName property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the companyName property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCompanyName().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificString255Nw }
-     * 
-     * 
-     */
-    public List<CultureSpecificString255Nw> getCompanyName() {
-        if (companyName == null) {
-            companyName = new ArrayList<CultureSpecificString255Nw>();
-        }
-        return this.companyName;
-    }
+	/**
+	 * Gets the value of the companyName property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the companyName property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getCompanyName().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificString255Nw }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificString255Nw> getCompanyName() {
+		if (companyName == null) {
+			companyName = new ArrayList<CultureSpecificString255Nw>();
+		}
+		return this.companyName;
+	}
 
-    /**
-     * Gets the value of the companyUrl property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the companyUrl property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCompanyUrl().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificUrl }
-     * 
-     * 
-     */
-    public List<CultureSpecificUrl> getCompanyUrl() {
-        if (companyUrl == null) {
-            companyUrl = new ArrayList<CultureSpecificUrl>();
-        }
-        return this.companyUrl;
-    }
+	/**
+	 * Gets the value of the companyUrl property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the companyUrl property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getCompanyUrl().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificUrl }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificUrl> getCompanyUrl() {
+		if (companyUrl == null) {
+			companyUrl = new ArrayList<CultureSpecificUrl>();
+		}
+		return this.companyUrl;
+	}
 
 }

@@ -5,14 +5,12 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -31,9 +29,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for AppServerCredInfo complex type.
+ * <p>
+ * Java class for AppServerCredInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AppServerCredInfo">
@@ -51,63 +52,54 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AppServerCredInfo", propOrder = {
-    "appId",
-    "sharedSecret"
-})
+@XmlType(name = "AppServerCredInfo", propOrder = { "appId", "sharedSecret" })
 public class AppServerCredInfo {
 
-    @XmlElement(name = "app-id", required = true)
-    protected String appId;
-    @XmlElement(name = "shared-secret", required = true)
-    protected HMACAlgorithm sharedSecret;
+	@XmlElement(name = "app-id", required = true)
+	protected String appId;
+	@XmlElement(name = "shared-secret", required = true)
+	protected HMACAlgorithm sharedSecret;
 
-    /**
-     * Gets the value of the appId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAppId() {
-        return appId;
-    }
+	/**
+	 * Gets the value of the appId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAppId() {
+		return appId;
+	}
 
-    /**
-     * Sets the value of the appId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAppId(String value) {
-        this.appId = value;
-    }
+	/**
+	 * Sets the value of the appId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAppId(String value) {
+		this.appId = value;
+	}
 
-    /**
-     * Gets the value of the sharedSecret property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link HMACAlgorithm }
-     *     
-     */
-    public HMACAlgorithm getSharedSecret() {
-        return sharedSecret;
-    }
+	/**
+	 * Gets the value of the sharedSecret property.
+	 * 
+	 * @return possible object is {@link HMACAlgorithm }
+	 * 
+	 */
+	public HMACAlgorithm getSharedSecret() {
+		return sharedSecret;
+	}
 
-    /**
-     * Sets the value of the sharedSecret property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link HMACAlgorithm }
-     *     
-     */
-    public void setSharedSecret(HMACAlgorithm value) {
-        this.sharedSecret = value;
-    }
+	/**
+	 * Sets the value of the sharedSecret property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link HMACAlgorithm }
+	 * 
+	 */
+	public void setSharedSecret(HMACAlgorithm value) {
+		this.sharedSecret = value;
+	}
 
 }

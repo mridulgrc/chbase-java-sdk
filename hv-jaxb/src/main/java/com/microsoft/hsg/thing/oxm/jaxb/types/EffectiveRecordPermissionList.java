@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -26,9 +24,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for EffectiveRecordPermissionList complex type.
+ * <p>
+ * Java class for EffectiveRecordPermissionList complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="EffectiveRecordPermissionList">
@@ -45,41 +46,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "EffectiveRecordPermissionList", propOrder = {
-    "effectiveRecordPermission"
-})
+@XmlType(name = "EffectiveRecordPermissionList", propOrder = { "effectiveRecordPermission" })
 public class EffectiveRecordPermissionList {
 
-    @XmlElement(name = "effective-record-permission", required = true)
-    protected List<EffectiveRecordPermission> effectiveRecordPermission;
+	@XmlElement(name = "effective-record-permission", required = true)
+	protected List<EffectiveRecordPermission> effectiveRecordPermission;
 
-    /**
-     * Gets the value of the effectiveRecordPermission property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the effectiveRecordPermission property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getEffectiveRecordPermission().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link EffectiveRecordPermission }
-     * 
-     * 
-     */
-    public List<EffectiveRecordPermission> getEffectiveRecordPermission() {
-        if (effectiveRecordPermission == null) {
-            effectiveRecordPermission = new ArrayList<EffectiveRecordPermission>();
-        }
-        return this.effectiveRecordPermission;
-    }
+	/**
+	 * Gets the value of the effectiveRecordPermission property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the effectiveRecordPermission property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getEffectiveRecordPermission().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link EffectiveRecordPermission }
+	 * 
+	 * 
+	 */
+	public List<EffectiveRecordPermission> getEffectiveRecordPermission() {
+		if (effectiveRecordPermission == null) {
+			effectiveRecordPermission = new ArrayList<EffectiveRecordPermission>();
+		}
+		return this.effectiveRecordPermission;
+	}
 
 }

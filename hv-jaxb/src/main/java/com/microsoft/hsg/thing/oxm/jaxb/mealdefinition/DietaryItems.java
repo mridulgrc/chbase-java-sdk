@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:22:02 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.mealdefinition;
 
 import java.util.ArrayList;
@@ -17,9 +16,12 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.dietaryintakedaily.DietaryIntake;
 
 /**
- * <p>Java class for DietaryItems complex type.
+ * <p>
+ * Java class for DietaryItems complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="DietaryItems">
@@ -36,41 +38,40 @@ import com.microsoft.hsg.thing.oxm.jaxb.dietaryintakedaily.DietaryIntake;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DietaryItems", propOrder = {
-    "dietaryItem"
-})
+@XmlType(name = "DietaryItems", propOrder = { "dietaryItem" })
 public class DietaryItems {
 
-    @XmlElement(name = "dietary-item", required = true)
-    protected List<DietaryIntake> dietaryItem;
+	@XmlElement(name = "dietary-item", required = true)
+	protected List<DietaryIntake> dietaryItem;
 
-    /**
-     * Gets the value of the dietaryItem property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dietaryItem property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDietaryItem().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link DietaryIntake }
-     * 
-     * 
-     */
-    public List<DietaryIntake> getDietaryItem() {
-        if (dietaryItem == null) {
-            dietaryItem = new ArrayList<DietaryIntake>();
-        }
-        return this.dietaryItem;
-    }
+	/**
+	 * Gets the value of the dietaryItem property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the dietaryItem property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getDietaryItem().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link DietaryIntake }
+	 * 
+	 * 
+	 */
+	public List<DietaryIntake> getDietaryItem() {
+		if (dietaryItem == null) {
+			dietaryItem = new ArrayList<DietaryIntake>();
+		}
+		return this.dietaryItem;
+	}
 
 }

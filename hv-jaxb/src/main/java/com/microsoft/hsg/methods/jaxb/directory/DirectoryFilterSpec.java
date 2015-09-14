@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 import com.microsoft.hsg.thing.oxm.jaxb.types.Guids;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Guids;
  * </pre>
  * 
  * 
- * <p>Java class for DirectoryFilterSpec complex type.
+ * <p>
+ * Java class for DirectoryFilterSpec complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="DirectoryFilterSpec">
@@ -53,64 +54,55 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Guids;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DirectoryFilterSpec", propOrder = {
-    "directoryItemIds",
-    "lastClientRefresh"
-})
+@XmlType(name = "DirectoryFilterSpec", propOrder = { "directoryItemIds", "lastClientRefresh" })
 public class DirectoryFilterSpec {
 
-    @XmlElement(name = "directory-item-ids")
-    protected Guids directoryItemIds;
-    @XmlElement(name = "last-client-refresh")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar lastClientRefresh;
+	@XmlElement(name = "directory-item-ids")
+	protected Guids directoryItemIds;
+	@XmlElement(name = "last-client-refresh")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar lastClientRefresh;
 
-    /**
-     * Gets the value of the directoryItemIds property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Guids }
-     *     
-     */
-    public Guids getDirectoryItemIds() {
-        return directoryItemIds;
-    }
+	/**
+	 * Gets the value of the directoryItemIds property.
+	 * 
+	 * @return possible object is {@link Guids }
+	 * 
+	 */
+	public Guids getDirectoryItemIds() {
+		return directoryItemIds;
+	}
 
-    /**
-     * Sets the value of the directoryItemIds property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Guids }
-     *     
-     */
-    public void setDirectoryItemIds(Guids value) {
-        this.directoryItemIds = value;
-    }
+	/**
+	 * Sets the value of the directoryItemIds property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Guids }
+	 * 
+	 */
+	public void setDirectoryItemIds(Guids value) {
+		this.directoryItemIds = value;
+	}
 
-    /**
-     * Gets the value of the lastClientRefresh property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getLastClientRefresh() {
-        return lastClientRefresh;
-    }
+	/**
+	 * Gets the value of the lastClientRefresh property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getLastClientRefresh() {
+		return lastClientRefresh;
+	}
 
-    /**
-     * Sets the value of the lastClientRefresh property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setLastClientRefresh(XMLGregorianCalendar value) {
-        this.lastClientRefresh = value;
-    }
+	/**
+	 * Sets the value of the lastClientRefresh property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setLastClientRefresh(XMLGregorianCalendar value) {
+		this.lastClientRefresh = value;
+	}
 
 }

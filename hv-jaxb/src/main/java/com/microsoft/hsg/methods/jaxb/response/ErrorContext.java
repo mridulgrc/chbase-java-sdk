@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.response;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for ErrorContext complex type.
+ * <p>
+ * Java class for ErrorContext complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ErrorContext">
@@ -48,95 +49,85 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ErrorContext", propOrder = {
-    "serverName",
-    "serverIp",
-    "exception"
-})
+@XmlType(name = "ErrorContext", propOrder = { "serverName", "serverIp", "exception" })
 public class ErrorContext {
 
-    @XmlElement(name = "server-name", required = true)
-    protected String serverName;
-    @XmlElement(name = "server-ip")
-    protected List<String> serverIp;
-    @XmlElement(required = true)
-    protected String exception;
+	@XmlElement(name = "server-name", required = true)
+	protected String serverName;
+	@XmlElement(name = "server-ip")
+	protected List<String> serverIp;
+	@XmlElement(required = true)
+	protected String exception;
 
-    /**
-     * Gets the value of the serverName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getServerName() {
-        return serverName;
-    }
+	/**
+	 * Gets the value of the serverName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getServerName() {
+		return serverName;
+	}
 
-    /**
-     * Sets the value of the serverName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setServerName(String value) {
-        this.serverName = value;
-    }
+	/**
+	 * Sets the value of the serverName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setServerName(String value) {
+		this.serverName = value;
+	}
 
-    /**
-     * Gets the value of the serverIp property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the serverIp property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getServerIp().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getServerIp() {
-        if (serverIp == null) {
-            serverIp = new ArrayList<String>();
-        }
-        return this.serverIp;
-    }
+	/**
+	 * Gets the value of the serverIp property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the serverIp property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getServerIp().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getServerIp() {
+		if (serverIp == null) {
+			serverIp = new ArrayList<String>();
+		}
+		return this.serverIp;
+	}
 
-    /**
-     * Gets the value of the exception property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getException() {
-        return exception;
-    }
+	/**
+	 * Gets the value of the exception property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getException() {
+		return exception;
+	}
 
-    /**
-     * Sets the value of the exception property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setException(String value) {
-        this.exception = value;
-    }
+	/**
+	 * Sets the value of the exception property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setException(String value) {
+		this.exception = value;
+	}
 
 }

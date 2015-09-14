@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:09 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.exercisesamples;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -56,110 +57,96 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "name",
-    "unit",
-    "samplingInterval"
-})
+@XmlType(name = "", propOrder = { "when", "name", "unit", "samplingInterval" })
 @XmlRootElement(name = "exercise-samples")
 public class ExerciseSamples {
 
-    @XmlElement(required = true)
-    protected ApproxDateTime when;
-    @XmlElement(required = true)
-    protected CodableValue name;
-    @XmlElement(required = true)
-    protected CodableValue unit;
-    @XmlElement(name = "sampling-interval")
-    protected double samplingInterval;
+	@XmlElement(required = true)
+	protected ApproxDateTime when;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	@XmlElement(required = true)
+	protected CodableValue unit;
+	@XmlElement(name = "sampling-interval")
+	protected double samplingInterval;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setWhen(ApproxDateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setWhen(ApproxDateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the unit property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getUnit() {
-        return unit;
-    }
+	/**
+	 * Gets the value of the unit property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getUnit() {
+		return unit;
+	}
 
-    /**
-     * Sets the value of the unit property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setUnit(CodableValue value) {
-        this.unit = value;
-    }
+	/**
+	 * Sets the value of the unit property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setUnit(CodableValue value) {
+		this.unit = value;
+	}
 
-    /**
-     * Gets the value of the samplingInterval property.
-     * 
-     */
-    public double getSamplingInterval() {
-        return samplingInterval;
-    }
+	/**
+	 * Gets the value of the samplingInterval property.
+	 * 
+	 */
+	public double getSamplingInterval() {
+		return samplingInterval;
+	}
 
-    /**
-     * Sets the value of the samplingInterval property.
-     * 
-     */
-    public void setSamplingInterval(double value) {
-        this.samplingInterval = value;
-    }
+	/**
+	 * Sets the value of the samplingInterval property.
+	 * 
+	 */
+	public void setSamplingInterval(double value) {
+		this.samplingInterval = value;
+	}
 
 }

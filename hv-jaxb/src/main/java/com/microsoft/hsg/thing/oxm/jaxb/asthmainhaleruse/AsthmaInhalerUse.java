@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:38:37 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.asthmainhaleruse;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -57,171 +58,146 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "drug",
-    "strength",
-    "doseCount",
-    "deviceId",
-    "dosePurpose"
-})
+@XmlType(name = "", propOrder = { "when", "drug", "strength", "doseCount", "deviceId", "dosePurpose" })
 @XmlRootElement(name = "asthma-inhaler-use")
 public class AsthmaInhalerUse {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    @XmlElement(required = true)
-    protected CodableValue drug;
-    protected CodableValue strength;
-    @XmlElement(name = "dose-count")
-    protected Integer doseCount;
-    @XmlElement(name = "device-id")
-    protected String deviceId;
-    @XmlElement(name = "dose-purpose")
-    protected CodableValue dosePurpose;
+	@XmlElement(required = true)
+	protected DateTime when;
+	@XmlElement(required = true)
+	protected CodableValue drug;
+	protected CodableValue strength;
+	@XmlElement(name = "dose-count")
+	protected Integer doseCount;
+	@XmlElement(name = "device-id")
+	protected String deviceId;
+	@XmlElement(name = "dose-purpose")
+	protected CodableValue dosePurpose;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the drug property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getDrug() {
-        return drug;
-    }
+	/**
+	 * Gets the value of the drug property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getDrug() {
+		return drug;
+	}
 
-    /**
-     * Sets the value of the drug property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setDrug(CodableValue value) {
-        this.drug = value;
-    }
+	/**
+	 * Sets the value of the drug property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setDrug(CodableValue value) {
+		this.drug = value;
+	}
 
-    /**
-     * Gets the value of the strength property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getStrength() {
-        return strength;
-    }
+	/**
+	 * Gets the value of the strength property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getStrength() {
+		return strength;
+	}
 
-    /**
-     * Sets the value of the strength property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setStrength(CodableValue value) {
-        this.strength = value;
-    }
+	/**
+	 * Sets the value of the strength property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setStrength(CodableValue value) {
+		this.strength = value;
+	}
 
-    /**
-     * Gets the value of the doseCount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getDoseCount() {
-        return doseCount;
-    }
+	/**
+	 * Gets the value of the doseCount property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getDoseCount() {
+		return doseCount;
+	}
 
-    /**
-     * Sets the value of the doseCount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setDoseCount(Integer value) {
-        this.doseCount = value;
-    }
+	/**
+	 * Sets the value of the doseCount property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setDoseCount(Integer value) {
+		this.doseCount = value;
+	}
 
-    /**
-     * Gets the value of the deviceId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDeviceId() {
-        return deviceId;
-    }
+	/**
+	 * Gets the value of the deviceId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDeviceId() {
+		return deviceId;
+	}
 
-    /**
-     * Sets the value of the deviceId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDeviceId(String value) {
-        this.deviceId = value;
-    }
+	/**
+	 * Sets the value of the deviceId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDeviceId(String value) {
+		this.deviceId = value;
+	}
 
-    /**
-     * Gets the value of the dosePurpose property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getDosePurpose() {
-        return dosePurpose;
-    }
+	/**
+	 * Gets the value of the dosePurpose property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getDosePurpose() {
+		return dosePurpose;
+	}
 
-    /**
-     * Sets the value of the dosePurpose property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setDosePurpose(CodableValue value) {
-        this.dosePurpose = value;
-    }
+	/**
+	 * Sets the value of the dosePurpose property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setDosePurpose(CodableValue value) {
+		this.dosePurpose = value;
+	}
 
 }

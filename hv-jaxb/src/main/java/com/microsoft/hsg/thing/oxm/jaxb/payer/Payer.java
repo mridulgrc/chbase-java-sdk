@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:07 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.payer;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -17,7 +16,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Contact;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
 
-
 /**
  * 
  * <pre>
@@ -28,9 +26,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -58,333 +59,285 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "planName",
-    "coverageType",
-    "carrierId",
-    "groupNum",
-    "planCode",
-    "subscriberId",
-    "personCode",
-    "subscriberName",
-    "subscriberDob",
-    "isPrimary",
-    "expirationDate",
-    "contact"
-})
+@XmlType(name = "", propOrder = { "planName", "coverageType", "carrierId", "groupNum", "planCode", "subscriberId",
+		"personCode", "subscriberName", "subscriberDob", "isPrimary", "expirationDate", "contact" })
 @XmlRootElement(name = "payer")
 public class Payer {
 
-    @XmlElement(name = "plan-name", required = true)
-    protected String planName;
-    @XmlElement(name = "coverage-type")
-    protected CodableValue coverageType;
-    @XmlElement(name = "carrier-id")
-    protected String carrierId;
-    @XmlElement(name = "group-num")
-    protected String groupNum;
-    @XmlElement(name = "plan-code")
-    protected String planCode;
-    @XmlElement(name = "subscriber-id")
-    protected String subscriberId;
-    @XmlElement(name = "person-code")
-    protected String personCode;
-    @XmlElement(name = "subscriber-name")
-    protected String subscriberName;
-    @XmlElement(name = "subscriber-dob")
-    protected DateTime subscriberDob;
-    @XmlElement(name = "is-primary")
-    protected Boolean isPrimary;
-    @XmlElement(name = "expiration-date")
-    protected DateTime expirationDate;
-    protected Contact contact;
+	@XmlElement(name = "plan-name", required = true)
+	protected String planName;
+	@XmlElement(name = "coverage-type")
+	protected CodableValue coverageType;
+	@XmlElement(name = "carrier-id")
+	protected String carrierId;
+	@XmlElement(name = "group-num")
+	protected String groupNum;
+	@XmlElement(name = "plan-code")
+	protected String planCode;
+	@XmlElement(name = "subscriber-id")
+	protected String subscriberId;
+	@XmlElement(name = "person-code")
+	protected String personCode;
+	@XmlElement(name = "subscriber-name")
+	protected String subscriberName;
+	@XmlElement(name = "subscriber-dob")
+	protected DateTime subscriberDob;
+	@XmlElement(name = "is-primary")
+	protected Boolean isPrimary;
+	@XmlElement(name = "expiration-date")
+	protected DateTime expirationDate;
+	protected Contact contact;
 
-    /**
-     * Gets the value of the planName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPlanName() {
-        return planName;
-    }
+	/**
+	 * Gets the value of the planName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPlanName() {
+		return planName;
+	}
 
-    /**
-     * Sets the value of the planName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPlanName(String value) {
-        this.planName = value;
-    }
+	/**
+	 * Sets the value of the planName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPlanName(String value) {
+		this.planName = value;
+	}
 
-    /**
-     * Gets the value of the coverageType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getCoverageType() {
-        return coverageType;
-    }
+	/**
+	 * Gets the value of the coverageType property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getCoverageType() {
+		return coverageType;
+	}
 
-    /**
-     * Sets the value of the coverageType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setCoverageType(CodableValue value) {
-        this.coverageType = value;
-    }
+	/**
+	 * Sets the value of the coverageType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setCoverageType(CodableValue value) {
+		this.coverageType = value;
+	}
 
-    /**
-     * Gets the value of the carrierId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCarrierId() {
-        return carrierId;
-    }
+	/**
+	 * Gets the value of the carrierId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCarrierId() {
+		return carrierId;
+	}
 
-    /**
-     * Sets the value of the carrierId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCarrierId(String value) {
-        this.carrierId = value;
-    }
+	/**
+	 * Sets the value of the carrierId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCarrierId(String value) {
+		this.carrierId = value;
+	}
 
-    /**
-     * Gets the value of the groupNum property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getGroupNum() {
-        return groupNum;
-    }
+	/**
+	 * Gets the value of the groupNum property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getGroupNum() {
+		return groupNum;
+	}
 
-    /**
-     * Sets the value of the groupNum property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setGroupNum(String value) {
-        this.groupNum = value;
-    }
+	/**
+	 * Sets the value of the groupNum property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setGroupNum(String value) {
+		this.groupNum = value;
+	}
 
-    /**
-     * Gets the value of the planCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPlanCode() {
-        return planCode;
-    }
+	/**
+	 * Gets the value of the planCode property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPlanCode() {
+		return planCode;
+	}
 
-    /**
-     * Sets the value of the planCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPlanCode(String value) {
-        this.planCode = value;
-    }
+	/**
+	 * Sets the value of the planCode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPlanCode(String value) {
+		this.planCode = value;
+	}
 
-    /**
-     * Gets the value of the subscriberId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSubscriberId() {
-        return subscriberId;
-    }
+	/**
+	 * Gets the value of the subscriberId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSubscriberId() {
+		return subscriberId;
+	}
 
-    /**
-     * Sets the value of the subscriberId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSubscriberId(String value) {
-        this.subscriberId = value;
-    }
+	/**
+	 * Sets the value of the subscriberId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSubscriberId(String value) {
+		this.subscriberId = value;
+	}
 
-    /**
-     * Gets the value of the personCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPersonCode() {
-        return personCode;
-    }
+	/**
+	 * Gets the value of the personCode property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPersonCode() {
+		return personCode;
+	}
 
-    /**
-     * Sets the value of the personCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPersonCode(String value) {
-        this.personCode = value;
-    }
+	/**
+	 * Sets the value of the personCode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPersonCode(String value) {
+		this.personCode = value;
+	}
 
-    /**
-     * Gets the value of the subscriberName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSubscriberName() {
-        return subscriberName;
-    }
+	/**
+	 * Gets the value of the subscriberName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSubscriberName() {
+		return subscriberName;
+	}
 
-    /**
-     * Sets the value of the subscriberName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSubscriberName(String value) {
-        this.subscriberName = value;
-    }
+	/**
+	 * Sets the value of the subscriberName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSubscriberName(String value) {
+		this.subscriberName = value;
+	}
 
-    /**
-     * Gets the value of the subscriberDob property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getSubscriberDob() {
-        return subscriberDob;
-    }
+	/**
+	 * Gets the value of the subscriberDob property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getSubscriberDob() {
+		return subscriberDob;
+	}
 
-    /**
-     * Sets the value of the subscriberDob property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setSubscriberDob(DateTime value) {
-        this.subscriberDob = value;
-    }
+	/**
+	 * Sets the value of the subscriberDob property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setSubscriberDob(DateTime value) {
+		this.subscriberDob = value;
+	}
 
-    /**
-     * Gets the value of the isPrimary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsPrimary() {
-        return isPrimary;
-    }
+	/**
+	 * Gets the value of the isPrimary property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsPrimary() {
+		return isPrimary;
+	}
 
-    /**
-     * Sets the value of the isPrimary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsPrimary(Boolean value) {
-        this.isPrimary = value;
-    }
+	/**
+	 * Sets the value of the isPrimary property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsPrimary(Boolean value) {
+		this.isPrimary = value;
+	}
 
-    /**
-     * Gets the value of the expirationDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getExpirationDate() {
-        return expirationDate;
-    }
+	/**
+	 * Gets the value of the expirationDate property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getExpirationDate() {
+		return expirationDate;
+	}
 
-    /**
-     * Sets the value of the expirationDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setExpirationDate(DateTime value) {
-        this.expirationDate = value;
-    }
+	/**
+	 * Sets the value of the expirationDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setExpirationDate(DateTime value) {
+		this.expirationDate = value;
+	}
 
-    /**
-     * Gets the value of the contact property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Contact }
-     *     
-     */
-    public Contact getContact() {
-        return contact;
-    }
+	/**
+	 * Gets the value of the contact property.
+	 * 
+	 * @return possible object is {@link Contact }
+	 * 
+	 */
+	public Contact getContact() {
+		return contact;
+	}
 
-    /**
-     * Sets the value of the contact property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Contact }
-     *     
-     */
-    public void setContact(Contact value) {
-        this.contact = value;
-    }
+	/**
+	 * Sets the value of the contact property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Contact }
+	 * 
+	 */
+	public void setContact(Contact value) {
+		this.contact = value;
+	}
 
 }

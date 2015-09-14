@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:19:17 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.careplan;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -17,7 +16,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
 
-
 /**
  * 
  * <pre>
@@ -27,9 +25,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -53,224 +54,192 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "name",
-    "startDate",
-    "endDate",
-    "status",
-    "careTeam",
-    "carePlanManager",
-    "tasks",
-    "goalGroups"
-})
+@XmlType(name = "", propOrder = { "name", "startDate", "endDate", "status", "careTeam", "carePlanManager", "tasks",
+		"goalGroups" })
 @XmlRootElement(name = "care-plan")
 public class CarePlan {
 
-    @XmlElement(required = true)
-    protected String name;
-    @XmlElement(name = "start-date")
-    protected ApproxDateTime startDate;
-    @XmlElement(name = "end-date")
-    protected ApproxDateTime endDate;
-    protected CodableValue status;
-    @XmlElement(name = "care-team")
-    protected CareTeam careTeam;
-    @XmlElement(name = "care-plan-manager")
-    protected Person carePlanManager;
-    protected CarePlanTasks tasks;
-    @XmlElement(name = "goal-groups")
-    protected CarePlanGoalGroups goalGroups;
+	@XmlElement(required = true)
+	protected String name;
+	@XmlElement(name = "start-date")
+	protected ApproxDateTime startDate;
+	@XmlElement(name = "end-date")
+	protected ApproxDateTime endDate;
+	protected CodableValue status;
+	@XmlElement(name = "care-team")
+	protected CareTeam careTeam;
+	@XmlElement(name = "care-plan-manager")
+	protected Person carePlanManager;
+	protected CarePlanTasks tasks;
+	@XmlElement(name = "goal-groups")
+	protected CarePlanGoalGroups goalGroups;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the startDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getStartDate() {
-        return startDate;
-    }
+	/**
+	 * Gets the value of the startDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getStartDate() {
+		return startDate;
+	}
 
-    /**
-     * Sets the value of the startDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setStartDate(ApproxDateTime value) {
-        this.startDate = value;
-    }
+	/**
+	 * Sets the value of the startDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setStartDate(ApproxDateTime value) {
+		this.startDate = value;
+	}
 
-    /**
-     * Gets the value of the endDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getEndDate() {
-        return endDate;
-    }
+	/**
+	 * Gets the value of the endDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getEndDate() {
+		return endDate;
+	}
 
-    /**
-     * Sets the value of the endDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setEndDate(ApproxDateTime value) {
-        this.endDate = value;
-    }
+	/**
+	 * Sets the value of the endDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setEndDate(ApproxDateTime value) {
+		this.endDate = value;
+	}
 
-    /**
-     * Gets the value of the status property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getStatus() {
-        return status;
-    }
+	/**
+	 * Gets the value of the status property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getStatus() {
+		return status;
+	}
 
-    /**
-     * Sets the value of the status property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setStatus(CodableValue value) {
-        this.status = value;
-    }
+	/**
+	 * Sets the value of the status property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setStatus(CodableValue value) {
+		this.status = value;
+	}
 
-    /**
-     * Gets the value of the careTeam property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CareTeam }
-     *     
-     */
-    public CareTeam getCareTeam() {
-        return careTeam;
-    }
+	/**
+	 * Gets the value of the careTeam property.
+	 * 
+	 * @return possible object is {@link CareTeam }
+	 * 
+	 */
+	public CareTeam getCareTeam() {
+		return careTeam;
+	}
 
-    /**
-     * Sets the value of the careTeam property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CareTeam }
-     *     
-     */
-    public void setCareTeam(CareTeam value) {
-        this.careTeam = value;
-    }
+	/**
+	 * Sets the value of the careTeam property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CareTeam }
+	 * 
+	 */
+	public void setCareTeam(CareTeam value) {
+		this.careTeam = value;
+	}
 
-    /**
-     * Gets the value of the carePlanManager property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getCarePlanManager() {
-        return carePlanManager;
-    }
+	/**
+	 * Gets the value of the carePlanManager property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getCarePlanManager() {
+		return carePlanManager;
+	}
 
-    /**
-     * Sets the value of the carePlanManager property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setCarePlanManager(Person value) {
-        this.carePlanManager = value;
-    }
+	/**
+	 * Sets the value of the carePlanManager property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setCarePlanManager(Person value) {
+		this.carePlanManager = value;
+	}
 
-    /**
-     * Gets the value of the tasks property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CarePlanTasks }
-     *     
-     */
-    public CarePlanTasks getTasks() {
-        return tasks;
-    }
+	/**
+	 * Gets the value of the tasks property.
+	 * 
+	 * @return possible object is {@link CarePlanTasks }
+	 * 
+	 */
+	public CarePlanTasks getTasks() {
+		return tasks;
+	}
 
-    /**
-     * Sets the value of the tasks property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CarePlanTasks }
-     *     
-     */
-    public void setTasks(CarePlanTasks value) {
-        this.tasks = value;
-    }
+	/**
+	 * Sets the value of the tasks property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CarePlanTasks }
+	 * 
+	 */
+	public void setTasks(CarePlanTasks value) {
+		this.tasks = value;
+	}
 
-    /**
-     * Gets the value of the goalGroups property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CarePlanGoalGroups }
-     *     
-     */
-    public CarePlanGoalGroups getGoalGroups() {
-        return goalGroups;
-    }
+	/**
+	 * Gets the value of the goalGroups property.
+	 * 
+	 * @return possible object is {@link CarePlanGoalGroups }
+	 * 
+	 */
+	public CarePlanGoalGroups getGoalGroups() {
+		return goalGroups;
+	}
 
-    /**
-     * Sets the value of the goalGroups property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CarePlanGoalGroups }
-     *     
-     */
-    public void setGoalGroups(CarePlanGoalGroups value) {
-        this.goalGroups = value;
-    }
+	/**
+	 * Sets the value of the goalGroups property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CarePlanGoalGroups }
+	 * 
+	 */
+	public void setGoalGroups(CarePlanGoalGroups value) {
+		this.goalGroups = value;
+	}
 
 }

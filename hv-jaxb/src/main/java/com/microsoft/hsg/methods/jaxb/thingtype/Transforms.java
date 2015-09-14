@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.thingtype;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
  * <pre>
@@ -23,9 +21,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Transforms complex type.
+ * <p>
+ * Java class for Transforms complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Transforms">
@@ -42,41 +43,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Transforms", propOrder = {
-    "xslt"
-})
+@XmlType(name = "Transforms", propOrder = { "xslt" })
 public class Transforms {
 
-    @XmlElement(required = true)
-    protected List<Transform> xslt;
+	@XmlElement(required = true)
+	protected List<Transform> xslt;
 
-    /**
-     * Gets the value of the xslt property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the xslt property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getXslt().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Transform }
-     * 
-     * 
-     */
-    public List<Transform> getXslt() {
-        if (xslt == null) {
-            xslt = new ArrayList<Transform>();
-        }
-        return this.xslt;
-    }
+	/**
+	 * Gets the value of the xslt property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the xslt property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getXslt().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Transform
+	 * }
+	 * 
+	 * 
+	 */
+	public List<Transform> getXslt() {
+		if (xslt == null) {
+			xslt = new ArrayList<Transform>();
+		}
+		return this.xslt;
+	}
 
 }

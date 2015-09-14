@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * </pre>
  * 
  * 
- * <p>Java class for DateRange complex type.
+ * <p>
+ * Java class for DateRange complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="DateRange">
@@ -47,65 +48,56 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DateRange", propOrder = {
-    "dateMin",
-    "dateMax"
-})
+@XmlType(name = "DateRange", propOrder = { "dateMin", "dateMax" })
 public class DateRange {
 
-    @XmlElement(name = "date-min")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar dateMin;
-    @XmlElement(name = "date-max")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar dateMax;
+	@XmlElement(name = "date-min")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar dateMin;
+	@XmlElement(name = "date-max")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar dateMax;
 
-    /**
-     * Gets the value of the dateMin property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDateMin() {
-        return dateMin;
-    }
+	/**
+	 * Gets the value of the dateMin property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getDateMin() {
+		return dateMin;
+	}
 
-    /**
-     * Sets the value of the dateMin property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDateMin(XMLGregorianCalendar value) {
-        this.dateMin = value;
-    }
+	/**
+	 * Sets the value of the dateMin property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setDateMin(XMLGregorianCalendar value) {
+		this.dateMin = value;
+	}
 
-    /**
-     * Gets the value of the dateMax property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDateMax() {
-        return dateMax;
-    }
+	/**
+	 * Gets the value of the dateMax property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getDateMax() {
+		return dateMax;
+	}
 
-    /**
-     * Sets the value of the dateMax property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDateMax(XMLGregorianCalendar value) {
-        this.dateMax = value;
-    }
+	/**
+	 * Sets the value of the dateMax property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setDateMax(XMLGregorianCalendar value) {
+		this.dateMax = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:39:51 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.dietaryintakedaily;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -56,302 +57,258 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Date;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "calories",
-    "totalFat",
-    "saturatedFat",
-    "transFat",
-    "protein",
-    "totalCarbohydrates",
-    "dietaryFiber",
-    "sugars",
-    "sodium",
-    "cholesterol"
-})
+@XmlType(name = "", propOrder = { "when", "calories", "totalFat", "saturatedFat", "transFat", "protein",
+		"totalCarbohydrates", "dietaryFiber", "sugars", "sodium", "cholesterol" })
 @XmlRootElement(name = "dietary-intake-daily")
 public class DietaryIntakeDaily {
 
-    @XmlElement(required = true)
-    protected Date when;
-    protected Integer calories;
-    @XmlElement(name = "total-fat")
-    protected WeightValue totalFat;
-    @XmlElement(name = "saturated-fat")
-    protected WeightValue saturatedFat;
-    @XmlElement(name = "trans-fat")
-    protected WeightValue transFat;
-    protected WeightValue protein;
-    @XmlElement(name = "total-carbohydrates")
-    protected WeightValue totalCarbohydrates;
-    @XmlElement(name = "dietary-fiber")
-    protected WeightValue dietaryFiber;
-    protected WeightValue sugars;
-    protected WeightValue sodium;
-    protected WeightValue cholesterol;
+	@XmlElement(required = true)
+	protected Date when;
+	protected Integer calories;
+	@XmlElement(name = "total-fat")
+	protected WeightValue totalFat;
+	@XmlElement(name = "saturated-fat")
+	protected WeightValue saturatedFat;
+	@XmlElement(name = "trans-fat")
+	protected WeightValue transFat;
+	protected WeightValue protein;
+	@XmlElement(name = "total-carbohydrates")
+	protected WeightValue totalCarbohydrates;
+	@XmlElement(name = "dietary-fiber")
+	protected WeightValue dietaryFiber;
+	protected WeightValue sugars;
+	protected WeightValue sodium;
+	protected WeightValue cholesterol;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Date }
-     *     
-     */
-    public Date getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link Date }
+	 * 
+	 */
+	public Date getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Date }
-     *     
-     */
-    public void setWhen(Date value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Date }
+	 * 
+	 */
+	public void setWhen(Date value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the calories property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getCalories() {
-        return calories;
-    }
+	/**
+	 * Gets the value of the calories property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getCalories() {
+		return calories;
+	}
 
-    /**
-     * Sets the value of the calories property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setCalories(Integer value) {
-        this.calories = value;
-    }
+	/**
+	 * Sets the value of the calories property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setCalories(Integer value) {
+		this.calories = value;
+	}
 
-    /**
-     * Gets the value of the totalFat property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getTotalFat() {
-        return totalFat;
-    }
+	/**
+	 * Gets the value of the totalFat property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getTotalFat() {
+		return totalFat;
+	}
 
-    /**
-     * Sets the value of the totalFat property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setTotalFat(WeightValue value) {
-        this.totalFat = value;
-    }
+	/**
+	 * Sets the value of the totalFat property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setTotalFat(WeightValue value) {
+		this.totalFat = value;
+	}
 
-    /**
-     * Gets the value of the saturatedFat property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getSaturatedFat() {
-        return saturatedFat;
-    }
+	/**
+	 * Gets the value of the saturatedFat property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getSaturatedFat() {
+		return saturatedFat;
+	}
 
-    /**
-     * Sets the value of the saturatedFat property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setSaturatedFat(WeightValue value) {
-        this.saturatedFat = value;
-    }
+	/**
+	 * Sets the value of the saturatedFat property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setSaturatedFat(WeightValue value) {
+		this.saturatedFat = value;
+	}
 
-    /**
-     * Gets the value of the transFat property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getTransFat() {
-        return transFat;
-    }
+	/**
+	 * Gets the value of the transFat property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getTransFat() {
+		return transFat;
+	}
 
-    /**
-     * Sets the value of the transFat property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setTransFat(WeightValue value) {
-        this.transFat = value;
-    }
+	/**
+	 * Sets the value of the transFat property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setTransFat(WeightValue value) {
+		this.transFat = value;
+	}
 
-    /**
-     * Gets the value of the protein property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getProtein() {
-        return protein;
-    }
+	/**
+	 * Gets the value of the protein property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getProtein() {
+		return protein;
+	}
 
-    /**
-     * Sets the value of the protein property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setProtein(WeightValue value) {
-        this.protein = value;
-    }
+	/**
+	 * Sets the value of the protein property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setProtein(WeightValue value) {
+		this.protein = value;
+	}
 
-    /**
-     * Gets the value of the totalCarbohydrates property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getTotalCarbohydrates() {
-        return totalCarbohydrates;
-    }
+	/**
+	 * Gets the value of the totalCarbohydrates property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getTotalCarbohydrates() {
+		return totalCarbohydrates;
+	}
 
-    /**
-     * Sets the value of the totalCarbohydrates property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setTotalCarbohydrates(WeightValue value) {
-        this.totalCarbohydrates = value;
-    }
+	/**
+	 * Sets the value of the totalCarbohydrates property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setTotalCarbohydrates(WeightValue value) {
+		this.totalCarbohydrates = value;
+	}
 
-    /**
-     * Gets the value of the dietaryFiber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getDietaryFiber() {
-        return dietaryFiber;
-    }
+	/**
+	 * Gets the value of the dietaryFiber property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getDietaryFiber() {
+		return dietaryFiber;
+	}
 
-    /**
-     * Sets the value of the dietaryFiber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setDietaryFiber(WeightValue value) {
-        this.dietaryFiber = value;
-    }
+	/**
+	 * Sets the value of the dietaryFiber property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setDietaryFiber(WeightValue value) {
+		this.dietaryFiber = value;
+	}
 
-    /**
-     * Gets the value of the sugars property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getSugars() {
-        return sugars;
-    }
+	/**
+	 * Gets the value of the sugars property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getSugars() {
+		return sugars;
+	}
 
-    /**
-     * Sets the value of the sugars property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setSugars(WeightValue value) {
-        this.sugars = value;
-    }
+	/**
+	 * Sets the value of the sugars property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setSugars(WeightValue value) {
+		this.sugars = value;
+	}
 
-    /**
-     * Gets the value of the sodium property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getSodium() {
-        return sodium;
-    }
+	/**
+	 * Gets the value of the sodium property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getSodium() {
+		return sodium;
+	}
 
-    /**
-     * Sets the value of the sodium property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setSodium(WeightValue value) {
-        this.sodium = value;
-    }
+	/**
+	 * Sets the value of the sodium property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setSodium(WeightValue value) {
+		this.sodium = value;
+	}
 
-    /**
-     * Gets the value of the cholesterol property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link WeightValue }
-     *     
-     */
-    public WeightValue getCholesterol() {
-        return cholesterol;
-    }
+	/**
+	 * Gets the value of the cholesterol property.
+	 * 
+	 * @return possible object is {@link WeightValue }
+	 * 
+	 */
+	public WeightValue getCholesterol() {
+		return cholesterol;
+	}
 
-    /**
-     * Sets the value of the cholesterol property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link WeightValue }
-     *     
-     */
-    public void setCholesterol(WeightValue value) {
-        this.cholesterol = value;
-    }
+	/**
+	 * Sets the value of the cholesterol property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link WeightValue }
+	 * 
+	 */
+	public void setCholesterol(WeightValue value) {
+		this.cholesterol = value;
+	}
 
 }

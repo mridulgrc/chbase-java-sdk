@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:06 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.spirometer;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.FlowValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -66,394 +67,344 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "fev1",
-    "pef",
-    "warning",
-    "problem",
-    "feVoverFVC",
-    "fef25To75",
-    "fef25To50",
-    "fif25To75",
-    "fif25To50",
-    "fet",
-    "svc",
-    "tv",
-    "mvv"
-})
+@XmlType(name = "", propOrder = { "when", "fev1", "pef", "warning", "problem", "feVoverFVC", "fef25To75", "fef25To50",
+		"fif25To75", "fif25To50", "fet", "svc", "tv", "mvv" })
 @XmlRootElement(name = "spirometer")
 public class Spirometer {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    protected FlowValue fev1;
-    protected FlowValue pef;
-    protected List<String> warning;
-    protected List<String> problem;
-    @XmlElement(name = "FEVoverFVC")
-    protected Double feVoverFVC;
-    @XmlElement(name = "FEF25to75")
-    protected Double fef25To75;
-    @XmlElement(name = "FEF25to50")
-    protected Double fef25To50;
-    @XmlElement(name = "FIF25to75")
-    protected Double fif25To75;
-    @XmlElement(name = "FIF25to50")
-    protected Double fif25To50;
-    @XmlElement(name = "FET")
-    protected Double fet;
-    @XmlElement(name = "SVC")
-    protected VolumeValue svc;
-    @XmlElement(name = "TV")
-    protected VolumeValue tv;
-    @XmlElement(name = "MVV")
-    protected FlowValue mvv;
+	@XmlElement(required = true)
+	protected DateTime when;
+	protected FlowValue fev1;
+	protected FlowValue pef;
+	protected List<String> warning;
+	protected List<String> problem;
+	@XmlElement(name = "FEVoverFVC")
+	protected Double feVoverFVC;
+	@XmlElement(name = "FEF25to75")
+	protected Double fef25To75;
+	@XmlElement(name = "FEF25to50")
+	protected Double fef25To50;
+	@XmlElement(name = "FIF25to75")
+	protected Double fif25To75;
+	@XmlElement(name = "FIF25to50")
+	protected Double fif25To50;
+	@XmlElement(name = "FET")
+	protected Double fet;
+	@XmlElement(name = "SVC")
+	protected VolumeValue svc;
+	@XmlElement(name = "TV")
+	protected VolumeValue tv;
+	@XmlElement(name = "MVV")
+	protected FlowValue mvv;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the fev1 property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FlowValue }
-     *     
-     */
-    public FlowValue getFev1() {
-        return fev1;
-    }
+	/**
+	 * Gets the value of the fev1 property.
+	 * 
+	 * @return possible object is {@link FlowValue }
+	 * 
+	 */
+	public FlowValue getFev1() {
+		return fev1;
+	}
 
-    /**
-     * Sets the value of the fev1 property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FlowValue }
-     *     
-     */
-    public void setFev1(FlowValue value) {
-        this.fev1 = value;
-    }
+	/**
+	 * Sets the value of the fev1 property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link FlowValue }
+	 * 
+	 */
+	public void setFev1(FlowValue value) {
+		this.fev1 = value;
+	}
 
-    /**
-     * Gets the value of the pef property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FlowValue }
-     *     
-     */
-    public FlowValue getPef() {
-        return pef;
-    }
+	/**
+	 * Gets the value of the pef property.
+	 * 
+	 * @return possible object is {@link FlowValue }
+	 * 
+	 */
+	public FlowValue getPef() {
+		return pef;
+	}
 
-    /**
-     * Sets the value of the pef property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FlowValue }
-     *     
-     */
-    public void setPef(FlowValue value) {
-        this.pef = value;
-    }
+	/**
+	 * Sets the value of the pef property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link FlowValue }
+	 * 
+	 */
+	public void setPef(FlowValue value) {
+		this.pef = value;
+	}
 
-    /**
-     * Gets the value of the warning property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the warning property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getWarning().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getWarning() {
-        if (warning == null) {
-            warning = new ArrayList<String>();
-        }
-        return this.warning;
-    }
+	/**
+	 * Gets the value of the warning property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the warning property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getWarning().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getWarning() {
+		if (warning == null) {
+			warning = new ArrayList<String>();
+		}
+		return this.warning;
+	}
 
-    /**
-     * Gets the value of the problem property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the problem property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getProblem().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getProblem() {
-        if (problem == null) {
-            problem = new ArrayList<String>();
-        }
-        return this.problem;
-    }
+	/**
+	 * Gets the value of the problem property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the problem property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getProblem().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getProblem() {
+		if (problem == null) {
+			problem = new ArrayList<String>();
+		}
+		return this.problem;
+	}
 
-    /**
-     * Gets the value of the feVoverFVC property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getFEVoverFVC() {
-        return feVoverFVC;
-    }
+	/**
+	 * Gets the value of the feVoverFVC property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getFEVoverFVC() {
+		return feVoverFVC;
+	}
 
-    /**
-     * Sets the value of the feVoverFVC property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setFEVoverFVC(Double value) {
-        this.feVoverFVC = value;
-    }
+	/**
+	 * Sets the value of the feVoverFVC property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setFEVoverFVC(Double value) {
+		this.feVoverFVC = value;
+	}
 
-    /**
-     * Gets the value of the fef25To75 property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getFEF25To75() {
-        return fef25To75;
-    }
+	/**
+	 * Gets the value of the fef25To75 property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getFEF25To75() {
+		return fef25To75;
+	}
 
-    /**
-     * Sets the value of the fef25To75 property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setFEF25To75(Double value) {
-        this.fef25To75 = value;
-    }
+	/**
+	 * Sets the value of the fef25To75 property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setFEF25To75(Double value) {
+		this.fef25To75 = value;
+	}
 
-    /**
-     * Gets the value of the fef25To50 property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getFEF25To50() {
-        return fef25To50;
-    }
+	/**
+	 * Gets the value of the fef25To50 property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getFEF25To50() {
+		return fef25To50;
+	}
 
-    /**
-     * Sets the value of the fef25To50 property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setFEF25To50(Double value) {
-        this.fef25To50 = value;
-    }
+	/**
+	 * Sets the value of the fef25To50 property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setFEF25To50(Double value) {
+		this.fef25To50 = value;
+	}
 
-    /**
-     * Gets the value of the fif25To75 property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getFIF25To75() {
-        return fif25To75;
-    }
+	/**
+	 * Gets the value of the fif25To75 property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getFIF25To75() {
+		return fif25To75;
+	}
 
-    /**
-     * Sets the value of the fif25To75 property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setFIF25To75(Double value) {
-        this.fif25To75 = value;
-    }
+	/**
+	 * Sets the value of the fif25To75 property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setFIF25To75(Double value) {
+		this.fif25To75 = value;
+	}
 
-    /**
-     * Gets the value of the fif25To50 property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getFIF25To50() {
-        return fif25To50;
-    }
+	/**
+	 * Gets the value of the fif25To50 property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getFIF25To50() {
+		return fif25To50;
+	}
 
-    /**
-     * Sets the value of the fif25To50 property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setFIF25To50(Double value) {
-        this.fif25To50 = value;
-    }
+	/**
+	 * Sets the value of the fif25To50 property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setFIF25To50(Double value) {
+		this.fif25To50 = value;
+	}
 
-    /**
-     * Gets the value of the fet property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getFET() {
-        return fet;
-    }
+	/**
+	 * Gets the value of the fet property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getFET() {
+		return fet;
+	}
 
-    /**
-     * Sets the value of the fet property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setFET(Double value) {
-        this.fet = value;
-    }
+	/**
+	 * Sets the value of the fet property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setFET(Double value) {
+		this.fet = value;
+	}
 
-    /**
-     * Gets the value of the svc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VolumeValue }
-     *     
-     */
-    public VolumeValue getSVC() {
-        return svc;
-    }
+	/**
+	 * Gets the value of the svc property.
+	 * 
+	 * @return possible object is {@link VolumeValue }
+	 * 
+	 */
+	public VolumeValue getSVC() {
+		return svc;
+	}
 
-    /**
-     * Sets the value of the svc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VolumeValue }
-     *     
-     */
-    public void setSVC(VolumeValue value) {
-        this.svc = value;
-    }
+	/**
+	 * Sets the value of the svc property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VolumeValue }
+	 * 
+	 */
+	public void setSVC(VolumeValue value) {
+		this.svc = value;
+	}
 
-    /**
-     * Gets the value of the tv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VolumeValue }
-     *     
-     */
-    public VolumeValue getTV() {
-        return tv;
-    }
+	/**
+	 * Gets the value of the tv property.
+	 * 
+	 * @return possible object is {@link VolumeValue }
+	 * 
+	 */
+	public VolumeValue getTV() {
+		return tv;
+	}
 
-    /**
-     * Sets the value of the tv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VolumeValue }
-     *     
-     */
-    public void setTV(VolumeValue value) {
-        this.tv = value;
-    }
+	/**
+	 * Sets the value of the tv property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VolumeValue }
+	 * 
+	 */
+	public void setTV(VolumeValue value) {
+		this.tv = value;
+	}
 
-    /**
-     * Gets the value of the mvv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FlowValue }
-     *     
-     */
-    public FlowValue getMVV() {
-        return mvv;
-    }
+	/**
+	 * Gets the value of the mvv property.
+	 * 
+	 * @return possible object is {@link FlowValue }
+	 * 
+	 */
+	public FlowValue getMVV() {
+		return mvv;
+	}
 
-    /**
-     * Sets the value of the mvv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FlowValue }
-     *     
-     */
-    public void setMVV(FlowValue value) {
-        this.mvv = value;
-    }
+	/**
+	 * Sets the value of the mvv property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link FlowValue }
+	 * 
+	 */
+	public void setMVV(FlowValue value) {
+		this.mvv = value;
+	}
 
 }

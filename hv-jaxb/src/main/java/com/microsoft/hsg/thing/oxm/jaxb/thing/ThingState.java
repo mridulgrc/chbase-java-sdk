@@ -5,19 +5,21 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.thing;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for ThingState.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
+ * Java class for ThingState.
+ * 
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
+ * <p>
+ * 
  * <pre>
  * &lt;simpleType name="ThingState">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -32,28 +34,25 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum ThingState {
 
-    @XmlEnumValue("Active")
-    ACTIVE("Active"),
-    @XmlEnumValue("Deleted")
-    DELETED("Deleted");
-    private final String value;
+	@XmlEnumValue("Active") ACTIVE("Active"), @XmlEnumValue("Deleted") DELETED("Deleted");
+	private final String value;
 
-    ThingState(String v) {
-        value = v;
-    }
+	ThingState(String v) {
+		value = v;
+	}
 
-    public String value() {
-        return value;
-    }
+	public String value() {
+		return value;
+	}
 
-    // TODO: add unknowns for enums
-    public static ThingState fromValue(String v) {
-        for (ThingState c: ThingState.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+	// TODO: add unknowns for enums
+	public static ThingState fromValue(String v) {
+		for (ThingState c : ThingState.values()) {
+			if (c.value.equals(v)) {
+				return c;
+			}
+		}
+		throw new IllegalArgumentException(v);
+	}
 
 }

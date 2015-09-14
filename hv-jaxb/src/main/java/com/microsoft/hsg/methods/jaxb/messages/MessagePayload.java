@@ -5,14 +5,12 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.messages;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for MessagePayload complex type.
+ * <p>
+ * Java class for MessagePayload complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="MessagePayload">
@@ -46,36 +47,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "MessagePayload", propOrder = {
-    "healthStatementMessage"
-})
+@XmlType(name = "MessagePayload", propOrder = { "healthStatementMessage" })
 public class MessagePayload {
 
-    @XmlElement(name = "HealthStatementMessage")
-    protected HealthStatementMessage healthStatementMessage;
+	@XmlElement(name = "HealthStatementMessage")
+	protected HealthStatementMessage healthStatementMessage;
 
-    /**
-     * Gets the value of the healthStatementMessage property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link HealthStatementMessage }
-     *     
-     */
-    public HealthStatementMessage getHealthStatementMessage() {
-        return healthStatementMessage;
-    }
+	/**
+	 * Gets the value of the healthStatementMessage property.
+	 * 
+	 * @return possible object is {@link HealthStatementMessage }
+	 * 
+	 */
+	public HealthStatementMessage getHealthStatementMessage() {
+		return healthStatementMessage;
+	}
 
-    /**
-     * Sets the value of the healthStatementMessage property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link HealthStatementMessage }
-     *     
-     */
-    public void setHealthStatementMessage(HealthStatementMessage value) {
-        this.healthStatementMessage = value;
-    }
+	/**
+	 * Sets the value of the healthStatementMessage property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link HealthStatementMessage }
+	 * 
+	 */
+	public void setHealthStatementMessage(HealthStatementMessage value) {
+		this.healthStatementMessage = value;
+	}
 
 }

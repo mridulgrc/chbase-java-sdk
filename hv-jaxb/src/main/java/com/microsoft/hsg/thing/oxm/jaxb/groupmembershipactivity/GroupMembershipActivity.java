@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:47 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.groupmembershipactivity;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodedValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
 
-
 /**
  * 
  * <pre>
@@ -26,9 +24,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -47,91 +48,78 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "activity",
-    "activityInfo"
-})
+@XmlType(name = "", propOrder = { "when", "activity", "activityInfo" })
 @XmlRootElement(name = "group-membership-activity")
 public class GroupMembershipActivity {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    @XmlElement(required = true)
-    protected CodedValue activity;
-    @XmlElement(name = "activity-info")
-    protected String activityInfo;
+	@XmlElement(required = true)
+	protected DateTime when;
+	@XmlElement(required = true)
+	protected CodedValue activity;
+	@XmlElement(name = "activity-info")
+	protected String activityInfo;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the activity property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedValue }
-     *     
-     */
-    public CodedValue getActivity() {
-        return activity;
-    }
+	/**
+	 * Gets the value of the activity property.
+	 * 
+	 * @return possible object is {@link CodedValue }
+	 * 
+	 */
+	public CodedValue getActivity() {
+		return activity;
+	}
 
-    /**
-     * Sets the value of the activity property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedValue }
-     *     
-     */
-    public void setActivity(CodedValue value) {
-        this.activity = value;
-    }
+	/**
+	 * Sets the value of the activity property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedValue }
+	 * 
+	 */
+	public void setActivity(CodedValue value) {
+		this.activity = value;
+	}
 
-    /**
-     * Gets the value of the activityInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getActivityInfo() {
-        return activityInfo;
-    }
+	/**
+	 * Gets the value of the activityInfo property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getActivityInfo() {
+		return activityInfo;
+	}
 
-    /**
-     * Sets the value of the activityInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setActivityInfo(String value) {
-        this.activityInfo = value;
-    }
+	/**
+	 * Sets the value of the activityInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setActivityInfo(String value) {
+		this.activityInfo = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:39:43 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.device;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -57,196 +58,168 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "deviceName",
-    "vendor",
-    "model",
-    "serialNumber",
-    "anatomicSite",
-    "description"
-})
+@XmlType(name = "", propOrder = { "when", "deviceName", "vendor", "model", "serialNumber", "anatomicSite",
+		"description" })
 @XmlRootElement(name = "device")
 public class Device {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    @XmlElement(name = "device-name")
-    protected String deviceName;
-    protected Person vendor;
-    protected String model;
-    @XmlElement(name = "serial-number")
-    protected String serialNumber;
-    @XmlElement(name = "anatomic-site")
-    protected String anatomicSite;
-    protected String description;
+	@XmlElement(required = true)
+	protected DateTime when;
+	@XmlElement(name = "device-name")
+	protected String deviceName;
+	protected Person vendor;
+	protected String model;
+	@XmlElement(name = "serial-number")
+	protected String serialNumber;
+	@XmlElement(name = "anatomic-site")
+	protected String anatomicSite;
+	protected String description;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the deviceName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDeviceName() {
-        return deviceName;
-    }
+	/**
+	 * Gets the value of the deviceName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDeviceName() {
+		return deviceName;
+	}
 
-    /**
-     * Sets the value of the deviceName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDeviceName(String value) {
-        this.deviceName = value;
-    }
+	/**
+	 * Sets the value of the deviceName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDeviceName(String value) {
+		this.deviceName = value;
+	}
 
-    /**
-     * Gets the value of the vendor property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getVendor() {
-        return vendor;
-    }
+	/**
+	 * Gets the value of the vendor property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getVendor() {
+		return vendor;
+	}
 
-    /**
-     * Sets the value of the vendor property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setVendor(Person value) {
-        this.vendor = value;
-    }
+	/**
+	 * Sets the value of the vendor property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setVendor(Person value) {
+		this.vendor = value;
+	}
 
-    /**
-     * Gets the value of the model property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getModel() {
-        return model;
-    }
+	/**
+	 * Gets the value of the model property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getModel() {
+		return model;
+	}
 
-    /**
-     * Sets the value of the model property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setModel(String value) {
-        this.model = value;
-    }
+	/**
+	 * Sets the value of the model property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setModel(String value) {
+		this.model = value;
+	}
 
-    /**
-     * Gets the value of the serialNumber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSerialNumber() {
-        return serialNumber;
-    }
+	/**
+	 * Gets the value of the serialNumber property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSerialNumber() {
+		return serialNumber;
+	}
 
-    /**
-     * Sets the value of the serialNumber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSerialNumber(String value) {
-        this.serialNumber = value;
-    }
+	/**
+	 * Sets the value of the serialNumber property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSerialNumber(String value) {
+		this.serialNumber = value;
+	}
 
-    /**
-     * Gets the value of the anatomicSite property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAnatomicSite() {
-        return anatomicSite;
-    }
+	/**
+	 * Gets the value of the anatomicSite property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAnatomicSite() {
+		return anatomicSite;
+	}
 
-    /**
-     * Sets the value of the anatomicSite property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAnatomicSite(String value) {
-        this.anatomicSite = value;
-    }
+	/**
+	 * Sets the value of the anatomicSite property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAnatomicSite(String value) {
+		this.anatomicSite = value;
+	}
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
 }

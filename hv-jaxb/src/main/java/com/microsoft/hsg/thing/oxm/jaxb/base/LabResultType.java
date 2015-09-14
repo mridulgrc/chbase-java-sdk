@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import java.util.ArrayList;
@@ -15,26 +14,33 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     A clinical value within a laboratory result.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     A clinical value within a laboratory result.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     This type is define a clinical value within a laboratory result,
- *                     including value, unit, reference and toxic ranges.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     This type is define a clinical value within a laboratory result,
+
+ *                     including value, unit, reference and toxic ranges.
+
  *                 &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for lab-result-type complex type.
+ * <p>
+ * Java class for lab-result-type complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="lab-result-type">
@@ -56,173 +62,152 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "lab-result-type", propOrder = {
-    "value",
-    "unit",
-    "referenceRange",
-    "toxicRange",
-    "textValue",
-    "flag"
-})
+@XmlType(name = "lab-result-type", propOrder = { "value", "unit", "referenceRange", "toxicRange", "textValue", "flag" })
 public class LabResultType {
 
-    protected Double value;
-    protected CodableValue unit;
-    @XmlElement(name = "reference-range")
-    protected DoubleRange referenceRange;
-    @XmlElement(name = "toxic-range")
-    protected DoubleRange toxicRange;
-    @XmlElement(name = "text-value")
-    protected String textValue;
-    protected List<CodableValue> flag;
+	protected Double value;
+	protected CodableValue unit;
+	@XmlElement(name = "reference-range")
+	protected DoubleRange referenceRange;
+	@XmlElement(name = "toxic-range")
+	protected DoubleRange toxicRange;
+	@XmlElement(name = "text-value")
+	protected String textValue;
+	protected List<CodableValue> flag;
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setValue(Double value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setValue(Double value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the unit property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getUnit() {
-        return unit;
-    }
+	/**
+	 * Gets the value of the unit property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getUnit() {
+		return unit;
+	}
 
-    /**
-     * Sets the value of the unit property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setUnit(CodableValue value) {
-        this.unit = value;
-    }
+	/**
+	 * Sets the value of the unit property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setUnit(CodableValue value) {
+		this.unit = value;
+	}
 
-    /**
-     * Gets the value of the referenceRange property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DoubleRange }
-     *     
-     */
-    public DoubleRange getReferenceRange() {
-        return referenceRange;
-    }
+	/**
+	 * Gets the value of the referenceRange property.
+	 * 
+	 * @return possible object is {@link DoubleRange }
+	 * 
+	 */
+	public DoubleRange getReferenceRange() {
+		return referenceRange;
+	}
 
-    /**
-     * Sets the value of the referenceRange property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DoubleRange }
-     *     
-     */
-    public void setReferenceRange(DoubleRange value) {
-        this.referenceRange = value;
-    }
+	/**
+	 * Sets the value of the referenceRange property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DoubleRange }
+	 * 
+	 */
+	public void setReferenceRange(DoubleRange value) {
+		this.referenceRange = value;
+	}
 
-    /**
-     * Gets the value of the toxicRange property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DoubleRange }
-     *     
-     */
-    public DoubleRange getToxicRange() {
-        return toxicRange;
-    }
+	/**
+	 * Gets the value of the toxicRange property.
+	 * 
+	 * @return possible object is {@link DoubleRange }
+	 * 
+	 */
+	public DoubleRange getToxicRange() {
+		return toxicRange;
+	}
 
-    /**
-     * Sets the value of the toxicRange property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DoubleRange }
-     *     
-     */
-    public void setToxicRange(DoubleRange value) {
-        this.toxicRange = value;
-    }
+	/**
+	 * Sets the value of the toxicRange property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DoubleRange }
+	 * 
+	 */
+	public void setToxicRange(DoubleRange value) {
+		this.toxicRange = value;
+	}
 
-    /**
-     * Gets the value of the textValue property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTextValue() {
-        return textValue;
-    }
+	/**
+	 * Gets the value of the textValue property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTextValue() {
+		return textValue;
+	}
 
-    /**
-     * Sets the value of the textValue property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTextValue(String value) {
-        this.textValue = value;
-    }
+	/**
+	 * Sets the value of the textValue property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTextValue(String value) {
+		this.textValue = value;
+	}
 
-    /**
-     * Gets the value of the flag property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the flag property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getFlag().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodableValue }
-     * 
-     * 
-     */
-    public List<CodableValue> getFlag() {
-        if (flag == null) {
-            flag = new ArrayList<CodableValue>();
-        }
-        return this.flag;
-    }
+	/**
+	 * Gets the value of the flag property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the flag property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getFlag().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodableValue }
+	 * 
+	 * 
+	 */
+	public List<CodableValue> getFlag() {
+		if (flag == null) {
+			flag = new ArrayList<CodableValue>();
+		}
+		return this.flag;
+	}
 
 }

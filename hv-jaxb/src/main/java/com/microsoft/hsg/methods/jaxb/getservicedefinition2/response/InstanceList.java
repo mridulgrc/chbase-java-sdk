@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:01:35 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getservicedefinition2.response;
 
 import java.util.ArrayList;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.Instance;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Instance;
  * </pre>
  * 
  * 
- * <p>Java class for InstanceList complex type.
+ * <p>
+ * Java class for InstanceList complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="InstanceList">
@@ -56,67 +57,63 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Instance;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "InstanceList", propOrder = {
-    "instance"
-})
+@XmlType(name = "InstanceList", propOrder = { "instance" })
 public class InstanceList {
 
-    @XmlElement(required = true)
-    protected List<Instance> instance;
-    @XmlAttribute(name = "current-instance-id")
-    protected String currentInstanceId;
+	@XmlElement(required = true)
+	protected List<Instance> instance;
+	@XmlAttribute(name = "current-instance-id")
+	protected String currentInstanceId;
 
-    /**
-     * Gets the value of the instance property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the instance property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getInstance().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Instance }
-     * 
-     * 
-     */
-    public List<Instance> getInstance() {
-        if (instance == null) {
-            instance = new ArrayList<Instance>();
-        }
-        return this.instance;
-    }
+	/**
+	 * Gets the value of the instance property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the instance property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getInstance().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Instance
+	 * }
+	 * 
+	 * 
+	 */
+	public List<Instance> getInstance() {
+		if (instance == null) {
+			instance = new ArrayList<Instance>();
+		}
+		return this.instance;
+	}
 
-    /**
-     * Gets the value of the currentInstanceId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCurrentInstanceId() {
-        return currentInstanceId;
-    }
+	/**
+	 * Gets the value of the currentInstanceId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCurrentInstanceId() {
+		return currentInstanceId;
+	}
 
-    /**
-     * Sets the value of the currentInstanceId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCurrentInstanceId(String value) {
-        this.currentInstanceId = value;
-    }
+	/**
+	 * Sets the value of the currentInstanceId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCurrentInstanceId(String value) {
+		this.currentInstanceId = value;
+	}
 
 }

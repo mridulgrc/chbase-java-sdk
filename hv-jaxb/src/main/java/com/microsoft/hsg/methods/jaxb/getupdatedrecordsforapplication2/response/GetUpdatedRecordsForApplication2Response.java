@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:02:29 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getupdatedrecordsforapplication2.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -53,37 +54,32 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "updatedRecords"
-})
+@XmlType(name = "", propOrder = { "updatedRecords" })
 @XmlRootElement(name = "info")
 public class GetUpdatedRecordsForApplication2Response {
 
-    @XmlElement(name = "updated-records", required = true)
-    protected UpdatedRecords updatedRecords;
+	@XmlElement(name = "updated-records", required = true)
+	protected UpdatedRecords updatedRecords;
 
-    /**
-     * Gets the value of the updatedRecords property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UpdatedRecords }
-     *     
-     */
-    public UpdatedRecords getUpdatedRecords() {
-        return updatedRecords;
-    }
+	/**
+	 * Gets the value of the updatedRecords property.
+	 * 
+	 * @return possible object is {@link UpdatedRecords }
+	 * 
+	 */
+	public UpdatedRecords getUpdatedRecords() {
+		return updatedRecords;
+	}
 
-    /**
-     * Sets the value of the updatedRecords property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UpdatedRecords }
-     *     
-     */
-    public void setUpdatedRecords(UpdatedRecords value) {
-        this.updatedRecords = value;
-    }
+	/**
+	 * Sets the value of the updatedRecords property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link UpdatedRecords }
+	 * 
+	 */
+	public void setUpdatedRecords(UpdatedRecords value) {
+		this.updatedRecords = value;
+	}
 
 }

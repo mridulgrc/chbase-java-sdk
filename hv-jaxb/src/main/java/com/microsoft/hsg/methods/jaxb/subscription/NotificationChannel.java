@@ -5,7 +5,6 @@
 // Generated on: 2011.03.01 at 07:55:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.subscription;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,11 +12,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for NotificationChannel complex type.
+ * <p>
+ * Java class for NotificationChannel complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="NotificationChannel">
@@ -36,36 +37,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "NotificationChannel", propOrder = {
-    "httpNotificationChannel"
-})
+@XmlType(name = "NotificationChannel", propOrder = { "httpNotificationChannel" })
 public class NotificationChannel {
 
-    @XmlElement(name = "http-notification-channel")
-    protected HttpNotificationChannel httpNotificationChannel;
+	@XmlElement(name = "http-notification-channel")
+	protected HttpNotificationChannel httpNotificationChannel;
 
-    /**
-     * Gets the value of the httpNotificationChannel property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link HttpNotificationChannel }
-     *     
-     */
-    public HttpNotificationChannel getHttpNotificationChannel() {
-        return httpNotificationChannel;
-    }
+	/**
+	 * Gets the value of the httpNotificationChannel property.
+	 * 
+	 * @return possible object is {@link HttpNotificationChannel }
+	 * 
+	 */
+	public HttpNotificationChannel getHttpNotificationChannel() {
+		return httpNotificationChannel;
+	}
 
-    /**
-     * Sets the value of the httpNotificationChannel property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link HttpNotificationChannel }
-     *     
-     */
-    public void setHttpNotificationChannel(HttpNotificationChannel value) {
-        this.httpNotificationChannel = value;
-    }
+	/**
+	 * Sets the value of the httpNotificationChannel property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link HttpNotificationChannel }
+	 * 
+	 */
+	public void setHttpNotificationChannel(HttpNotificationChannel value) {
+		this.httpNotificationChannel = value;
+	}
 
 }

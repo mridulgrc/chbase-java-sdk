@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:17:49 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.geteventsubscriptions.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-
 
 /**
  * 
@@ -36,17 +34,17 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "GetEventSubscriptions",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.GetEventSubscriptions")
+@JaxbRequest(methodName = "GetEventSubscriptions", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.GetEventSubscriptions")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "")
 @XmlRootElement(name = "info")

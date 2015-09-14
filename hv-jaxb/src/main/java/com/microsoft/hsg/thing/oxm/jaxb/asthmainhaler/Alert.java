@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:38:41 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.asthmainhaler;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.Time;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Time;
  * </pre>
  * 
  * 
- * <p>Java class for alert complex type.
+ * <p>
+ * Java class for alert complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="alert">
@@ -53,73 +54,70 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.Time;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "alert", propOrder = {
-    "dow",
-    "time"
-})
+@XmlType(name = "alert", propOrder = { "dow", "time" })
 public class Alert {
 
-    @XmlElement(type = Integer.class)
-    protected List<Integer> dow;
-    @XmlElement(required = true)
-    protected List<Time> time;
+	@XmlElement(type = Integer.class)
+	protected List<Integer> dow;
+	@XmlElement(required = true)
+	protected List<Time> time;
 
-    /**
-     * Gets the value of the dow property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dow property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDow().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Integer }
-     * 
-     * 
-     */
-    public List<Integer> getDow() {
-        if (dow == null) {
-            dow = new ArrayList<Integer>();
-        }
-        return this.dow;
-    }
+	/**
+	 * Gets the value of the dow property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the dow property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getDow().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Integer }
+	 * 
+	 * 
+	 */
+	public List<Integer> getDow() {
+		if (dow == null) {
+			dow = new ArrayList<Integer>();
+		}
+		return this.dow;
+	}
 
-    /**
-     * Gets the value of the time property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the time property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTime().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Time }
-     * 
-     * 
-     */
-    public List<Time> getTime() {
-        if (time == null) {
-            time = new ArrayList<Time>();
-        }
-        return this.time;
-    }
+	/**
+	 * Gets the value of the time property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the time property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getTime().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Time }
+	 * 
+	 * 
+	 */
+	public List<Time> getTime() {
+		if (time == null) {
+			time = new ArrayList<Time>();
+		}
+		return this.time;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:20:05 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.dietaryintakedaily;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.GeneralMeasurement;
 
-
 /**
- * <p>Java class for nutrition-fact complex type.
+ * <p>
+ * Java class for nutrition-fact complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="nutrition-fact">
@@ -37,62 +38,53 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.GeneralMeasurement;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "nutrition-fact", propOrder = {
-    "name",
-    "fact"
-})
+@XmlType(name = "nutrition-fact", propOrder = { "name", "fact" })
 public class NutritionFact {
 
-    @XmlElement(required = true)
-    protected CodableValue name;
-    protected GeneralMeasurement fact;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	protected GeneralMeasurement fact;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the fact property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public GeneralMeasurement getFact() {
-        return fact;
-    }
+	/**
+	 * Gets the value of the fact property.
+	 * 
+	 * @return possible object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public GeneralMeasurement getFact() {
+		return fact;
+	}
 
-    /**
-     * Sets the value of the fact property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public void setFact(GeneralMeasurement value) {
-        this.fact = value;
-    }
+	/**
+	 * Sets the value of the fact property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public void setFact(GeneralMeasurement value) {
+		this.fact = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.application;
 
 import java.math.BigInteger;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for AppPersistentTokens complex type.
+ * <p>
+ * Java class for AppPersistentTokens complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AppPersistentTokens">
@@ -37,55 +38,49 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AppPersistentTokens", propOrder = {
-    "enabled",
-    "tokenTtlSeconds"
-})
+@XmlType(name = "AppPersistentTokens", propOrder = { "enabled", "tokenTtlSeconds" })
 public class AppPersistentTokens {
 
-    protected boolean enabled;
-    @XmlElement(name = "token-ttl-seconds")
-    @XmlSchemaType(name = "positiveInteger")
-    protected BigInteger tokenTtlSeconds;
+	protected boolean enabled;
+	@XmlElement(name = "token-ttl-seconds")
+	@XmlSchemaType(name = "positiveInteger")
+	protected BigInteger tokenTtlSeconds;
 
-    /**
-     * Gets the value of the enabled property.
-     * 
-     */
-    public boolean isEnabled() {
-        return enabled;
-    }
+	/**
+	 * Gets the value of the enabled property.
+	 * 
+	 */
+	public boolean isEnabled() {
+		return enabled;
+	}
 
-    /**
-     * Sets the value of the enabled property.
-     * 
-     */
-    public void setEnabled(boolean value) {
-        this.enabled = value;
-    }
+	/**
+	 * Sets the value of the enabled property.
+	 * 
+	 */
+	public void setEnabled(boolean value) {
+		this.enabled = value;
+	}
 
-    /**
-     * Gets the value of the tokenTtlSeconds property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getTokenTtlSeconds() {
-        return tokenTtlSeconds;
-    }
+	/**
+	 * Gets the value of the tokenTtlSeconds property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getTokenTtlSeconds() {
+		return tokenTtlSeconds;
+	}
 
-    /**
-     * Sets the value of the tokenTtlSeconds property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setTokenTtlSeconds(BigInteger value) {
-        this.tokenTtlSeconds = value;
-    }
+	/**
+	 * Sets the value of the tokenTtlSeconds property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setTokenTtlSeconds(BigInteger value) {
+		this.tokenTtlSeconds = value;
+	}
 
 }

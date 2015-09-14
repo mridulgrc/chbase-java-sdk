@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:02:29 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getupdatedrecordsforapplication2.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * </pre>
  * 
  * 
- * <p>Java class for UpdatedRecord complex type.
+ * <p>
+ * Java class for UpdatedRecord complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="UpdatedRecord">
@@ -48,91 +49,78 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "UpdatedRecord", propOrder = {
-    "recordId",
-    "updateDate",
-    "personId"
-})
+@XmlType(name = "UpdatedRecord", propOrder = { "recordId", "updateDate", "personId" })
 public class UpdatedRecord {
 
-    @XmlElement(name = "record-id", required = true)
-    protected String recordId;
-    @XmlElement(name = "update-date", required = true)
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar updateDate;
-    @XmlElement(name = "person-id", required = true)
-    protected String personId;
+	@XmlElement(name = "record-id", required = true)
+	protected String recordId;
+	@XmlElement(name = "update-date", required = true)
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar updateDate;
+	@XmlElement(name = "person-id", required = true)
+	protected String personId;
 
-    /**
-     * Gets the value of the recordId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRecordId() {
-        return recordId;
-    }
+	/**
+	 * Gets the value of the recordId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getRecordId() {
+		return recordId;
+	}
 
-    /**
-     * Sets the value of the recordId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRecordId(String value) {
-        this.recordId = value;
-    }
+	/**
+	 * Sets the value of the recordId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setRecordId(String value) {
+		this.recordId = value;
+	}
 
-    /**
-     * Gets the value of the updateDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getUpdateDate() {
-        return updateDate;
-    }
+	/**
+	 * Gets the value of the updateDate property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getUpdateDate() {
+		return updateDate;
+	}
 
-    /**
-     * Sets the value of the updateDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setUpdateDate(XMLGregorianCalendar value) {
-        this.updateDate = value;
-    }
+	/**
+	 * Sets the value of the updateDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setUpdateDate(XMLGregorianCalendar value) {
+		this.updateDate = value;
+	}
 
-    /**
-     * Gets the value of the personId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPersonId() {
-        return personId;
-    }
+	/**
+	 * Gets the value of the personId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPersonId() {
+		return personId;
+	}
 
-    /**
-     * Sets the value of the personId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPersonId(String value) {
-        this.personId = value;
-    }
+	/**
+	 * Sets the value of the personId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPersonId(String value) {
+		this.personId = value;
+	}
 
 }

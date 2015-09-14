@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import java.util.ArrayList;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificUrl;
 
-
 /**
  * 
  * <pre>
@@ -26,9 +24,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificUrl;
  * </pre>
  * 
  * 
- * <p>Java class for DriverPackage complex type.
+ * <p>
+ * Java class for DriverPackage complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="DriverPackage">
@@ -49,154 +50,142 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificUrl;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DriverPackage", propOrder = {
-    "platforms",
-    "driverPackageUrl",
-    "defaultArguments",
-    "instructionsUrl",
-    "validationCode"
-})
+@XmlType(name = "DriverPackage", propOrder = { "platforms", "driverPackageUrl", "defaultArguments", "instructionsUrl",
+		"validationCode" })
 public class DriverPackage {
 
-    @XmlElement(required = true)
-    protected Platforms platforms;
-    @XmlElement(name = "driver-package-url", required = true)
-    protected List<CultureSpecificUrl> driverPackageUrl;
-    @XmlElement(name = "default-arguments")
-    protected String defaultArguments;
-    @XmlElement(name = "instructions-url")
-    protected List<CultureSpecificUrl> instructionsUrl;
-    @XmlElement(name = "validation-code")
-    protected String validationCode;
+	@XmlElement(required = true)
+	protected Platforms platforms;
+	@XmlElement(name = "driver-package-url", required = true)
+	protected List<CultureSpecificUrl> driverPackageUrl;
+	@XmlElement(name = "default-arguments")
+	protected String defaultArguments;
+	@XmlElement(name = "instructions-url")
+	protected List<CultureSpecificUrl> instructionsUrl;
+	@XmlElement(name = "validation-code")
+	protected String validationCode;
 
-    /**
-     * Gets the value of the platforms property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Platforms }
-     *     
-     */
-    public Platforms getPlatforms() {
-        return platforms;
-    }
+	/**
+	 * Gets the value of the platforms property.
+	 * 
+	 * @return possible object is {@link Platforms }
+	 * 
+	 */
+	public Platforms getPlatforms() {
+		return platforms;
+	}
 
-    /**
-     * Sets the value of the platforms property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Platforms }
-     *     
-     */
-    public void setPlatforms(Platforms value) {
-        this.platforms = value;
-    }
+	/**
+	 * Sets the value of the platforms property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Platforms }
+	 * 
+	 */
+	public void setPlatforms(Platforms value) {
+		this.platforms = value;
+	}
 
-    /**
-     * Gets the value of the driverPackageUrl property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the driverPackageUrl property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDriverPackageUrl().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificUrl }
-     * 
-     * 
-     */
-    public List<CultureSpecificUrl> getDriverPackageUrl() {
-        if (driverPackageUrl == null) {
-            driverPackageUrl = new ArrayList<CultureSpecificUrl>();
-        }
-        return this.driverPackageUrl;
-    }
+	/**
+	 * Gets the value of the driverPackageUrl property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the driverPackageUrl property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getDriverPackageUrl().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificUrl }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificUrl> getDriverPackageUrl() {
+		if (driverPackageUrl == null) {
+			driverPackageUrl = new ArrayList<CultureSpecificUrl>();
+		}
+		return this.driverPackageUrl;
+	}
 
-    /**
-     * Gets the value of the defaultArguments property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDefaultArguments() {
-        return defaultArguments;
-    }
+	/**
+	 * Gets the value of the defaultArguments property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDefaultArguments() {
+		return defaultArguments;
+	}
 
-    /**
-     * Sets the value of the defaultArguments property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDefaultArguments(String value) {
-        this.defaultArguments = value;
-    }
+	/**
+	 * Sets the value of the defaultArguments property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDefaultArguments(String value) {
+		this.defaultArguments = value;
+	}
 
-    /**
-     * Gets the value of the instructionsUrl property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the instructionsUrl property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getInstructionsUrl().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificUrl }
-     * 
-     * 
-     */
-    public List<CultureSpecificUrl> getInstructionsUrl() {
-        if (instructionsUrl == null) {
-            instructionsUrl = new ArrayList<CultureSpecificUrl>();
-        }
-        return this.instructionsUrl;
-    }
+	/**
+	 * Gets the value of the instructionsUrl property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the instructionsUrl property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getInstructionsUrl().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificUrl }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificUrl> getInstructionsUrl() {
+		if (instructionsUrl == null) {
+			instructionsUrl = new ArrayList<CultureSpecificUrl>();
+		}
+		return this.instructionsUrl;
+	}
 
-    /**
-     * Gets the value of the validationCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValidationCode() {
-        return validationCode;
-    }
+	/**
+	 * Gets the value of the validationCode property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValidationCode() {
+		return validationCode;
+	}
 
-    /**
-     * Sets the value of the validationCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValidationCode(String value) {
-        this.validationCode = value;
-    }
+	/**
+	 * Sets the value of the validationCode property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValidationCode(String value) {
+		this.validationCode = value;
+	}
 
 }

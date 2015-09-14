@@ -5,14 +5,12 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for HashFinalized complex type.
+ * <p>
+ * Java class for HashFinalized complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="HashFinalized">
@@ -53,36 +54,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "HashFinalized", propOrder = {
-    "hashData"
-})
+@XmlType(name = "HashFinalized", propOrder = { "hashData" })
 public class HashFinalized {
 
-    @XmlElement(name = "hash-data", required = true)
-    protected HashFinalizedData hashData;
+	@XmlElement(name = "hash-data", required = true)
+	protected HashFinalizedData hashData;
 
-    /**
-     * Gets the value of the hashData property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link HashFinalizedData }
-     *     
-     */
-    public HashFinalizedData getHashData() {
-        return hashData;
-    }
+	/**
+	 * Gets the value of the hashData property.
+	 * 
+	 * @return possible object is {@link HashFinalizedData }
+	 * 
+	 */
+	public HashFinalizedData getHashData() {
+		return hashData;
+	}
 
-    /**
-     * Sets the value of the hashData property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link HashFinalizedData }
-     *     
-     */
-    public void setHashData(HashFinalizedData value) {
-        this.hashData = value;
-    }
+	/**
+	 * Sets the value of the hashData property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link HashFinalizedData }
+	 * 
+	 */
+	public void setHashData(HashFinalizedData value) {
+		this.hashData = value;
+	}
 
 }

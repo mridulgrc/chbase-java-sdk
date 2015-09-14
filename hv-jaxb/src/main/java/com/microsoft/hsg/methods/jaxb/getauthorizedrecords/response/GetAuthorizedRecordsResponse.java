@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:19:57 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getauthorizedrecords.response;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.Record;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Record;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -55,41 +56,39 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Record;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "record"
-})
+@XmlType(name = "", propOrder = { "record" })
 @XmlRootElement(name = "info")
 public class GetAuthorizedRecordsResponse {
 
-    protected List<Record> record;
+	protected List<Record> record;
 
-    /**
-     * Gets the value of the record property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the record property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getRecord().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Record }
-     * 
-     * 
-     */
-    public List<Record> getRecord() {
-        if (record == null) {
-            record = new ArrayList<Record>();
-        }
-        return this.record;
-    }
+	/**
+	 * Gets the value of the record property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the record property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getRecord().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Record }
+	 * 
+	 * 
+	 */
+	public List<Record> getRecord() {
+		if (record == null) {
+			record = new ArrayList<Record>();
+		}
+		return this.record;
+	}
 
 }

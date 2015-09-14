@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,11 +12,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for ProblemType complex type.
+ * <p>
+ * Java class for ProblemType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ProblemType">
@@ -36,92 +37,77 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ProblemType", propOrder = {
-    "episodes",
-    "healthStatus",
-    "patientKnowledge"
-})
-public class ProblemType
-    extends CCRCodedDataObjectType
-{
+@XmlType(name = "ProblemType", propOrder = { "episodes", "healthStatus", "patientKnowledge" })
+public class ProblemType extends CCRCodedDataObjectType {
 
-    @XmlElement(name = "Episodes")
-    protected EpisodesType episodes;
-    @XmlElement(name = "HealthStatus")
-    protected CurrentHealthStatusType healthStatus;
-    @XmlElement(name = "PatientKnowledge")
-    protected PatientKnowledgeType patientKnowledge;
+	@XmlElement(name = "Episodes")
+	protected EpisodesType episodes;
+	@XmlElement(name = "HealthStatus")
+	protected CurrentHealthStatusType healthStatus;
+	@XmlElement(name = "PatientKnowledge")
+	protected PatientKnowledgeType patientKnowledge;
 
-    /**
-     * Gets the value of the episodes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EpisodesType }
-     *     
-     */
-    public EpisodesType getEpisodes() {
-        return episodes;
-    }
+	/**
+	 * Gets the value of the episodes property.
+	 * 
+	 * @return possible object is {@link EpisodesType }
+	 * 
+	 */
+	public EpisodesType getEpisodes() {
+		return episodes;
+	}
 
-    /**
-     * Sets the value of the episodes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EpisodesType }
-     *     
-     */
-    public void setEpisodes(EpisodesType value) {
-        this.episodes = value;
-    }
+	/**
+	 * Sets the value of the episodes property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link EpisodesType }
+	 * 
+	 */
+	public void setEpisodes(EpisodesType value) {
+		this.episodes = value;
+	}
 
-    /**
-     * Gets the value of the healthStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CurrentHealthStatusType }
-     *     
-     */
-    public CurrentHealthStatusType getHealthStatus() {
-        return healthStatus;
-    }
+	/**
+	 * Gets the value of the healthStatus property.
+	 * 
+	 * @return possible object is {@link CurrentHealthStatusType }
+	 * 
+	 */
+	public CurrentHealthStatusType getHealthStatus() {
+		return healthStatus;
+	}
 
-    /**
-     * Sets the value of the healthStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CurrentHealthStatusType }
-     *     
-     */
-    public void setHealthStatus(CurrentHealthStatusType value) {
-        this.healthStatus = value;
-    }
+	/**
+	 * Sets the value of the healthStatus property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CurrentHealthStatusType }
+	 * 
+	 */
+	public void setHealthStatus(CurrentHealthStatusType value) {
+		this.healthStatus = value;
+	}
 
-    /**
-     * Gets the value of the patientKnowledge property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PatientKnowledgeType }
-     *     
-     */
-    public PatientKnowledgeType getPatientKnowledge() {
-        return patientKnowledge;
-    }
+	/**
+	 * Gets the value of the patientKnowledge property.
+	 * 
+	 * @return possible object is {@link PatientKnowledgeType }
+	 * 
+	 */
+	public PatientKnowledgeType getPatientKnowledge() {
+		return patientKnowledge;
+	}
 
-    /**
-     * Sets the value of the patientKnowledge property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PatientKnowledgeType }
-     *     
-     */
-    public void setPatientKnowledge(PatientKnowledgeType value) {
-        this.patientKnowledge = value;
-    }
+	/**
+	 * Sets the value of the patientKnowledge property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link PatientKnowledgeType }
+	 * 
+	 */
+	public void setPatientKnowledge(PatientKnowledgeType value) {
+		this.patientKnowledge = value;
+	}
 
 }

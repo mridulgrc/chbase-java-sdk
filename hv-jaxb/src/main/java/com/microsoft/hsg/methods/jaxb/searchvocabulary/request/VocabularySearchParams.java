@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:16:00 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.searchvocabulary.request;
 
 import java.math.BigInteger;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for VocabularySearchParams complex type.
+ * <p>
+ * Java class for VocabularySearchParams complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="VocabularySearchParams">
@@ -56,64 +57,55 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VocabularySearchParams", propOrder = {
-    "searchString",
-    "maxResults"
-})
+@XmlType(name = "VocabularySearchParams", propOrder = { "searchString", "maxResults" })
 public class VocabularySearchParams {
 
-    @XmlElement(name = "search-string", required = true)
-    protected VocabularySearchString searchString;
-    @XmlElement(name = "max-results")
-    @XmlSchemaType(name = "positiveInteger")
-    protected BigInteger maxResults;
+	@XmlElement(name = "search-string", required = true)
+	protected VocabularySearchString searchString;
+	@XmlElement(name = "max-results")
+	@XmlSchemaType(name = "positiveInteger")
+	protected BigInteger maxResults;
 
-    /**
-     * Gets the value of the searchString property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VocabularySearchString }
-     *     
-     */
-    public VocabularySearchString getSearchString() {
-        return searchString;
-    }
+	/**
+	 * Gets the value of the searchString property.
+	 * 
+	 * @return possible object is {@link VocabularySearchString }
+	 * 
+	 */
+	public VocabularySearchString getSearchString() {
+		return searchString;
+	}
 
-    /**
-     * Sets the value of the searchString property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VocabularySearchString }
-     *     
-     */
-    public void setSearchString(VocabularySearchString value) {
-        this.searchString = value;
-    }
+	/**
+	 * Sets the value of the searchString property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VocabularySearchString }
+	 * 
+	 */
+	public void setSearchString(VocabularySearchString value) {
+		this.searchString = value;
+	}
 
-    /**
-     * Gets the value of the maxResults property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getMaxResults() {
-        return maxResults;
-    }
+	/**
+	 * Gets the value of the maxResults property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getMaxResults() {
+		return maxResults;
+	}
 
-    /**
-     * Sets the value of the maxResults property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setMaxResults(BigInteger value) {
-        this.maxResults = value;
-    }
+	/**
+	 * Sets the value of the maxResults property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setMaxResults(BigInteger value) {
+		this.maxResults = value;
+	}
 
 }

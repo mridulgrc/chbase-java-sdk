@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.util.ArrayList;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for PatientKnowledgeType complex type.
+ * <p>
+ * Java class for PatientKnowledgeType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="PatientKnowledgeType">
@@ -38,223 +39,214 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "PatientKnowledgeType", propOrder = {
-    "patientAware",
-    "description",
-    "source",
-    "internalCCRLink",
-    "referenceID",
-    "commentID",
-    "signature"
-})
+@XmlType(name = "PatientKnowledgeType", propOrder = { "patientAware", "description", "source", "internalCCRLink",
+		"referenceID", "commentID", "signature" })
 public class PatientKnowledgeType {
 
-    @XmlElement(name = "PatientAware", required = true)
-    protected String patientAware;
-    @XmlElement(name = "Description")
-    protected CodedDescriptionType description;
-    @XmlElement(name = "Source", required = true)
-    protected List<SourceType> source;
-    @XmlElement(name = "InternalCCRLink")
-    protected List<InternalCCRLink> internalCCRLink;
-    @XmlElement(name = "ReferenceID")
-    protected List<String> referenceID;
-    @XmlElement(name = "CommentID")
-    protected List<String> commentID;
-    @XmlElement(name = "Signature")
-    protected List<com.microsoft.hsg.thing.oxm.jaxb.ccr.CCRCodedDataObjectType.Signature> signature;
+	@XmlElement(name = "PatientAware", required = true)
+	protected String patientAware;
+	@XmlElement(name = "Description")
+	protected CodedDescriptionType description;
+	@XmlElement(name = "Source", required = true)
+	protected List<SourceType> source;
+	@XmlElement(name = "InternalCCRLink")
+	protected List<InternalCCRLink> internalCCRLink;
+	@XmlElement(name = "ReferenceID")
+	protected List<String> referenceID;
+	@XmlElement(name = "CommentID")
+	protected List<String> commentID;
+	@XmlElement(name = "Signature")
+	protected List<com.microsoft.hsg.thing.oxm.jaxb.ccr.CCRCodedDataObjectType.Signature> signature;
 
-    /**
-     * Gets the value of the patientAware property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPatientAware() {
-        return patientAware;
-    }
+	/**
+	 * Gets the value of the patientAware property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPatientAware() {
+		return patientAware;
+	}
 
-    /**
-     * Sets the value of the patientAware property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPatientAware(String value) {
-        this.patientAware = value;
-    }
+	/**
+	 * Sets the value of the patientAware property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPatientAware(String value) {
+		this.patientAware = value;
+	}
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public CodedDescriptionType getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public CodedDescriptionType getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public void setDescription(CodedDescriptionType value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public void setDescription(CodedDescriptionType value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the source property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the source property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSource().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link SourceType }
-     * 
-     * 
-     */
-    public List<SourceType> getSource() {
-        if (source == null) {
-            source = new ArrayList<SourceType>();
-        }
-        return this.source;
-    }
+	/**
+	 * Gets the value of the source property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the source property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getSource().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link SourceType }
+	 * 
+	 * 
+	 */
+	public List<SourceType> getSource() {
+		if (source == null) {
+			source = new ArrayList<SourceType>();
+		}
+		return this.source;
+	}
 
-    /**
-     * Gets the value of the internalCCRLink property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the internalCCRLink property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getInternalCCRLink().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link InternalCCRLink }
-     * 
-     * 
-     */
-    public List<InternalCCRLink> getInternalCCRLink() {
-        if (internalCCRLink == null) {
-            internalCCRLink = new ArrayList<InternalCCRLink>();
-        }
-        return this.internalCCRLink;
-    }
+	/**
+	 * Gets the value of the internalCCRLink property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the internalCCRLink property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getInternalCCRLink().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link InternalCCRLink }
+	 * 
+	 * 
+	 */
+	public List<InternalCCRLink> getInternalCCRLink() {
+		if (internalCCRLink == null) {
+			internalCCRLink = new ArrayList<InternalCCRLink>();
+		}
+		return this.internalCCRLink;
+	}
 
-    /**
-     * Gets the value of the referenceID property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the referenceID property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getReferenceID().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getReferenceID() {
-        if (referenceID == null) {
-            referenceID = new ArrayList<String>();
-        }
-        return this.referenceID;
-    }
+	/**
+	 * Gets the value of the referenceID property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the referenceID property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getReferenceID().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getReferenceID() {
+		if (referenceID == null) {
+			referenceID = new ArrayList<String>();
+		}
+		return this.referenceID;
+	}
 
-    /**
-     * Gets the value of the commentID property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the commentID property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCommentID().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getCommentID() {
-        if (commentID == null) {
-            commentID = new ArrayList<String>();
-        }
-        return this.commentID;
-    }
+	/**
+	 * Gets the value of the commentID property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the commentID property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getCommentID().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getCommentID() {
+		if (commentID == null) {
+			commentID = new ArrayList<String>();
+		}
+		return this.commentID;
+	}
 
-    /**
-     * Gets the value of the signature property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the signature property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSignature().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link com.microsoft.hsg.thing.oxm.jaxb.ccr.CCRCodedDataObjectType.Signature }
-     * 
-     * 
-     */
-    public List<com.microsoft.hsg.thing.oxm.jaxb.ccr.CCRCodedDataObjectType.Signature> getSignature() {
-        if (signature == null) {
-            signature = new ArrayList<com.microsoft.hsg.thing.oxm.jaxb.ccr.CCRCodedDataObjectType.Signature>();
-        }
-        return this.signature;
-    }
+	/**
+	 * Gets the value of the signature property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the signature property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getSignature().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link com.microsoft.hsg.thing.oxm.jaxb.ccr.CCRCodedDataObjectType.Signature
+	 * }
+	 * 
+	 * 
+	 */
+	public List<com.microsoft.hsg.thing.oxm.jaxb.ccr.CCRCodedDataObjectType.Signature> getSignature() {
+		if (signature == null) {
+			signature = new ArrayList<com.microsoft.hsg.thing.oxm.jaxb.ccr.CCRCodedDataObjectType.Signature>();
+		}
+		return this.signature;
+	}
 
 }

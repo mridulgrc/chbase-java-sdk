@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import java.util.ArrayList;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for CultureSpecificExtensionItems complex type.
+ * <p>
+ * Java class for CultureSpecificExtensionItems complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="CultureSpecificExtensionItems">
@@ -36,41 +37,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "CultureSpecificExtensionItems", propOrder = {
-    "extensionItem"
-})
+@XmlType(name = "CultureSpecificExtensionItems", propOrder = { "extensionItem" })
 public class CultureSpecificExtensionItems {
 
-    @XmlElement(name = "extension-item", required = true)
-    protected List<CultureSpecificExtensionItem> extensionItem;
+	@XmlElement(name = "extension-item", required = true)
+	protected List<CultureSpecificExtensionItem> extensionItem;
 
-    /**
-     * Gets the value of the extensionItem property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the extensionItem property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getExtensionItem().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificExtensionItem }
-     * 
-     * 
-     */
-    public List<CultureSpecificExtensionItem> getExtensionItem() {
-        if (extensionItem == null) {
-            extensionItem = new ArrayList<CultureSpecificExtensionItem>();
-        }
-        return this.extensionItem;
-    }
+	/**
+	 * Gets the value of the extensionItem property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the extensionItem property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getExtensionItem().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificExtensionItem }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificExtensionItem> getExtensionItem() {
+		if (extensionItem == null) {
+			extensionItem = new ArrayList<CultureSpecificExtensionItem>();
+		}
+		return this.extensionItem;
+	}
 
 }

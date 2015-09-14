@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:21 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.familyhistorycondition;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Condition;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.Condition;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -52,37 +53,32 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.Condition;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "condition"
-})
+@XmlType(name = "", propOrder = { "condition" })
 @XmlRootElement(name = "family-history-condition")
 public class FamilyHistoryCondition {
 
-    @XmlElement(required = true)
-    protected Condition condition;
+	@XmlElement(required = true)
+	protected Condition condition;
 
-    /**
-     * Gets the value of the condition property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Condition }
-     *     
-     */
-    public Condition getCondition() {
-        return condition;
-    }
+	/**
+	 * Gets the value of the condition property.
+	 * 
+	 * @return possible object is {@link Condition }
+	 * 
+	 */
+	public Condition getCondition() {
+		return condition;
+	}
 
-    /**
-     * Sets the value of the condition property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Condition }
-     *     
-     */
-    public void setCondition(Condition value) {
-        this.condition = value;
-    }
+	/**
+	 * Sets the value of the condition property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Condition }
+	 * 
+	 */
+	public void setCondition(Condition value) {
+		this.condition = value;
+	}
 
 }

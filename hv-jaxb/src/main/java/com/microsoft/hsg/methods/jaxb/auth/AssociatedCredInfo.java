@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -24,9 +22,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for AssociatedCredInfo complex type.
+ * <p>
+ * Java class for AssociatedCredInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AssociatedCredInfo">
@@ -50,170 +51,146 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AssociatedCredInfo", propOrder = {
-    "credential",
-    "simpleUserpass",
-    "simplePassport",
-    "simpleOpenid",
-    "credentialMetadata",
-    "credentialName"
-})
+@XmlType(name = "AssociatedCredInfo", propOrder = { "credential", "simpleUserpass", "simplePassport", "simpleOpenid",
+		"credentialMetadata", "credentialName" })
 public class AssociatedCredInfo {
 
-    protected SimpleCardSpaceCredential credential;
-    @XmlElement(name = "simple-userpass")
-    protected UserPassCred simpleUserpass;
-    @XmlElement(name = "simple-passport")
-    protected SimplePassportCredential simplePassport;
-    @XmlElement(name = "simple-openid")
-    protected SimpleOpenIdCredential simpleOpenid;
-    @XmlElement(name = "credential-metadata")
-    protected String credentialMetadata;
-    @XmlElement(name = "credential-name")
-    protected String credentialName;
+	protected SimpleCardSpaceCredential credential;
+	@XmlElement(name = "simple-userpass")
+	protected UserPassCred simpleUserpass;
+	@XmlElement(name = "simple-passport")
+	protected SimplePassportCredential simplePassport;
+	@XmlElement(name = "simple-openid")
+	protected SimpleOpenIdCredential simpleOpenid;
+	@XmlElement(name = "credential-metadata")
+	protected String credentialMetadata;
+	@XmlElement(name = "credential-name")
+	protected String credentialName;
 
-    /**
-     * Gets the value of the credential property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SimpleCardSpaceCredential }
-     *     
-     */
-    public SimpleCardSpaceCredential getCredential() {
-        return credential;
-    }
+	/**
+	 * Gets the value of the credential property.
+	 * 
+	 * @return possible object is {@link SimpleCardSpaceCredential }
+	 * 
+	 */
+	public SimpleCardSpaceCredential getCredential() {
+		return credential;
+	}
 
-    /**
-     * Sets the value of the credential property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SimpleCardSpaceCredential }
-     *     
-     */
-    public void setCredential(SimpleCardSpaceCredential value) {
-        this.credential = value;
-    }
+	/**
+	 * Sets the value of the credential property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link SimpleCardSpaceCredential }
+	 * 
+	 */
+	public void setCredential(SimpleCardSpaceCredential value) {
+		this.credential = value;
+	}
 
-    /**
-     * Gets the value of the simpleUserpass property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UserPassCred }
-     *     
-     */
-    public UserPassCred getSimpleUserpass() {
-        return simpleUserpass;
-    }
+	/**
+	 * Gets the value of the simpleUserpass property.
+	 * 
+	 * @return possible object is {@link UserPassCred }
+	 * 
+	 */
+	public UserPassCred getSimpleUserpass() {
+		return simpleUserpass;
+	}
 
-    /**
-     * Sets the value of the simpleUserpass property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UserPassCred }
-     *     
-     */
-    public void setSimpleUserpass(UserPassCred value) {
-        this.simpleUserpass = value;
-    }
+	/**
+	 * Sets the value of the simpleUserpass property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link UserPassCred }
+	 * 
+	 */
+	public void setSimpleUserpass(UserPassCred value) {
+		this.simpleUserpass = value;
+	}
 
-    /**
-     * Gets the value of the simplePassport property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SimplePassportCredential }
-     *     
-     */
-    public SimplePassportCredential getSimplePassport() {
-        return simplePassport;
-    }
+	/**
+	 * Gets the value of the simplePassport property.
+	 * 
+	 * @return possible object is {@link SimplePassportCredential }
+	 * 
+	 */
+	public SimplePassportCredential getSimplePassport() {
+		return simplePassport;
+	}
 
-    /**
-     * Sets the value of the simplePassport property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SimplePassportCredential }
-     *     
-     */
-    public void setSimplePassport(SimplePassportCredential value) {
-        this.simplePassport = value;
-    }
+	/**
+	 * Sets the value of the simplePassport property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link SimplePassportCredential }
+	 * 
+	 */
+	public void setSimplePassport(SimplePassportCredential value) {
+		this.simplePassport = value;
+	}
 
-    /**
-     * Gets the value of the simpleOpenid property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SimpleOpenIdCredential }
-     *     
-     */
-    public SimpleOpenIdCredential getSimpleOpenid() {
-        return simpleOpenid;
-    }
+	/**
+	 * Gets the value of the simpleOpenid property.
+	 * 
+	 * @return possible object is {@link SimpleOpenIdCredential }
+	 * 
+	 */
+	public SimpleOpenIdCredential getSimpleOpenid() {
+		return simpleOpenid;
+	}
 
-    /**
-     * Sets the value of the simpleOpenid property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SimpleOpenIdCredential }
-     *     
-     */
-    public void setSimpleOpenid(SimpleOpenIdCredential value) {
-        this.simpleOpenid = value;
-    }
+	/**
+	 * Sets the value of the simpleOpenid property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link SimpleOpenIdCredential }
+	 * 
+	 */
+	public void setSimpleOpenid(SimpleOpenIdCredential value) {
+		this.simpleOpenid = value;
+	}
 
-    /**
-     * Gets the value of the credentialMetadata property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCredentialMetadata() {
-        return credentialMetadata;
-    }
+	/**
+	 * Gets the value of the credentialMetadata property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCredentialMetadata() {
+		return credentialMetadata;
+	}
 
-    /**
-     * Sets the value of the credentialMetadata property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCredentialMetadata(String value) {
-        this.credentialMetadata = value;
-    }
+	/**
+	 * Sets the value of the credentialMetadata property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCredentialMetadata(String value) {
+		this.credentialMetadata = value;
+	}
 
-    /**
-     * Gets the value of the credentialName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCredentialName() {
-        return credentialName;
-    }
+	/**
+	 * Gets the value of the credentialName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCredentialName() {
+		return credentialName;
+	}
 
-    /**
-     * Sets the value of the credentialName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCredentialName(String value) {
-        this.credentialName = value;
-    }
+	/**
+	 * Sets the value of the credentialName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCredentialName(String value) {
+		this.credentialName = value;
+	}
 
 }

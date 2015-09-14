@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:35 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.problem;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.DurationValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -39,9 +37,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -67,125 +68,116 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "diagnosis",
-    "duration",
-    "importance"
-})
+@XmlType(name = "", propOrder = { "when", "diagnosis", "duration", "importance" })
 @XmlRootElement(name = "problem")
 public class Problem {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    protected List<CodableValue> diagnosis;
-    protected List<DurationValue> duration;
-    protected Integer importance;
+	@XmlElement(required = true)
+	protected DateTime when;
+	protected List<CodableValue> diagnosis;
+	protected List<DurationValue> duration;
+	protected Integer importance;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the diagnosis property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the diagnosis property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDiagnosis().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodableValue }
-     * 
-     * 
-     */
-    public List<CodableValue> getDiagnosis() {
-        if (diagnosis == null) {
-            diagnosis = new ArrayList<CodableValue>();
-        }
-        return this.diagnosis;
-    }
+	/**
+	 * Gets the value of the diagnosis property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the diagnosis property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getDiagnosis().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodableValue }
+	 * 
+	 * 
+	 */
+	public List<CodableValue> getDiagnosis() {
+		if (diagnosis == null) {
+			diagnosis = new ArrayList<CodableValue>();
+		}
+		return this.diagnosis;
+	}
 
-    /**
-     * Gets the value of the duration property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the duration property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDuration().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link DurationValue }
-     * 
-     * 
-     */
-    public List<DurationValue> getDuration() {
-        if (duration == null) {
-            duration = new ArrayList<DurationValue>();
-        }
-        return this.duration;
-    }
+	/**
+	 * Gets the value of the duration property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the duration property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getDuration().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link DurationValue }
+	 * 
+	 * 
+	 */
+	public List<DurationValue> getDuration() {
+		if (duration == null) {
+			duration = new ArrayList<DurationValue>();
+		}
+		return this.duration;
+	}
 
-    /**
-     * Gets the value of the importance property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getImportance() {
-        return importance;
-    }
+	/**
+	 * Gets the value of the importance property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getImportance() {
+		return importance;
+	}
 
-    /**
-     * Sets the value of the importance property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setImportance(Integer value) {
-        this.importance = value;
-    }
+	/**
+	 * Sets the value of the importance property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setImportance(Integer value) {
+		this.importance = value;
+	}
 
 }

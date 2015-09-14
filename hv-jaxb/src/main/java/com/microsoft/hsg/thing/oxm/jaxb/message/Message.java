@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:41:55 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.message;
 
 import java.math.BigInteger;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -43,9 +41,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -68,207 +69,186 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "headers",
-    "size",
-    "summary",
-    "htmlBlobName",
-    "textBlobName",
-    "attachments"
-})
+@XmlType(name = "", propOrder = { "when", "headers", "size", "summary", "htmlBlobName", "textBlobName", "attachments" })
 @XmlRootElement(name = "message")
 public class Message {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    protected List<MessageHeaderItem> headers;
-    @XmlElement(required = true)
-    @XmlSchemaType(name = "positiveInteger")
-    protected BigInteger size;
-    protected String summary;
-    @XmlElement(name = "html-blob-name")
-    protected String htmlBlobName;
-    @XmlElement(name = "text-blob-name")
-    protected String textBlobName;
-    protected List<MessageAttachment> attachments;
+	@XmlElement(required = true)
+	protected DateTime when;
+	protected List<MessageHeaderItem> headers;
+	@XmlElement(required = true)
+	@XmlSchemaType(name = "positiveInteger")
+	protected BigInteger size;
+	protected String summary;
+	@XmlElement(name = "html-blob-name")
+	protected String htmlBlobName;
+	@XmlElement(name = "text-blob-name")
+	protected String textBlobName;
+	protected List<MessageAttachment> attachments;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the headers property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the headers property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getHeaders().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link MessageHeaderItem }
-     * 
-     * 
-     */
-    public List<MessageHeaderItem> getHeaders() {
-        if (headers == null) {
-            headers = new ArrayList<MessageHeaderItem>();
-        }
-        return this.headers;
-    }
+	/**
+	 * Gets the value of the headers property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the headers property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getHeaders().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link MessageHeaderItem }
+	 * 
+	 * 
+	 */
+	public List<MessageHeaderItem> getHeaders() {
+		if (headers == null) {
+			headers = new ArrayList<MessageHeaderItem>();
+		}
+		return this.headers;
+	}
 
-    /**
-     * Gets the value of the size property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getSize() {
-        return size;
-    }
+	/**
+	 * Gets the value of the size property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getSize() {
+		return size;
+	}
 
-    /**
-     * Sets the value of the size property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setSize(BigInteger value) {
-        this.size = value;
-    }
+	/**
+	 * Sets the value of the size property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setSize(BigInteger value) {
+		this.size = value;
+	}
 
-    /**
-     * Gets the value of the summary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSummary() {
-        return summary;
-    }
+	/**
+	 * Gets the value of the summary property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSummary() {
+		return summary;
+	}
 
-    /**
-     * Sets the value of the summary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSummary(String value) {
-        this.summary = value;
-    }
+	/**
+	 * Sets the value of the summary property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSummary(String value) {
+		this.summary = value;
+	}
 
-    /**
-     * Gets the value of the htmlBlobName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getHtmlBlobName() {
-        return htmlBlobName;
-    }
+	/**
+	 * Gets the value of the htmlBlobName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getHtmlBlobName() {
+		return htmlBlobName;
+	}
 
-    /**
-     * Sets the value of the htmlBlobName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setHtmlBlobName(String value) {
-        this.htmlBlobName = value;
-    }
+	/**
+	 * Sets the value of the htmlBlobName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setHtmlBlobName(String value) {
+		this.htmlBlobName = value;
+	}
 
-    /**
-     * Gets the value of the textBlobName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTextBlobName() {
-        return textBlobName;
-    }
+	/**
+	 * Gets the value of the textBlobName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTextBlobName() {
+		return textBlobName;
+	}
 
-    /**
-     * Sets the value of the textBlobName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTextBlobName(String value) {
-        this.textBlobName = value;
-    }
+	/**
+	 * Sets the value of the textBlobName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTextBlobName(String value) {
+		this.textBlobName = value;
+	}
 
-    /**
-     * Gets the value of the attachments property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the attachments property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAttachments().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link MessageAttachment }
-     * 
-     * 
-     */
-    public List<MessageAttachment> getAttachments() {
-        if (attachments == null) {
-            attachments = new ArrayList<MessageAttachment>();
-        }
-        return this.attachments;
-    }
+	/**
+	 * Gets the value of the attachments property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the attachments property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAttachments().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link MessageAttachment }
+	 * 
+	 * 
+	 */
+	public List<MessageAttachment> getAttachments() {
+		if (attachments == null) {
+			attachments = new ArrayList<MessageAttachment>();
+		}
+		return this.attachments;
+	}
 
 }

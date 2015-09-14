@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:19:37 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getauthorizedconnectrequests.response;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-
 /**
  * 
  * <pre>
@@ -29,9 +27,12 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -49,70 +50,65 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "resumeKey",
-    "connectRequest"
-})
+@XmlType(name = "", propOrder = { "resumeKey", "connectRequest" })
 @XmlRootElement(name = "info")
 public class GetAuthorizedConnectRequestsResponse {
 
-    @XmlElement(name = "resume-key")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar resumeKey;
-    @XmlElement(name = "connect-request")
-    protected List<ConnectRequest> connectRequest;
+	@XmlElement(name = "resume-key")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar resumeKey;
+	@XmlElement(name = "connect-request")
+	protected List<ConnectRequest> connectRequest;
 
-    /**
-     * Gets the value of the resumeKey property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getResumeKey() {
-        return resumeKey;
-    }
+	/**
+	 * Gets the value of the resumeKey property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getResumeKey() {
+		return resumeKey;
+	}
 
-    /**
-     * Sets the value of the resumeKey property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setResumeKey(XMLGregorianCalendar value) {
-        this.resumeKey = value;
-    }
+	/**
+	 * Sets the value of the resumeKey property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setResumeKey(XMLGregorianCalendar value) {
+		this.resumeKey = value;
+	}
 
-    /**
-     * Gets the value of the connectRequest property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the connectRequest property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getConnectRequest().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ConnectRequest }
-     * 
-     * 
-     */
-    public List<ConnectRequest> getConnectRequest() {
-        if (connectRequest == null) {
-            connectRequest = new ArrayList<ConnectRequest>();
-        }
-        return this.connectRequest;
-    }
+	/**
+	 * Gets the value of the connectRequest property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the connectRequest property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getConnectRequest().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ConnectRequest }
+	 * 
+	 * 
+	 */
+	public List<ConnectRequest> getConnectRequest() {
+		if (connectRequest == null) {
+			connectRequest = new ArrayList<ConnectRequest>();
+		}
+		return this.connectRequest;
+	}
 
 }

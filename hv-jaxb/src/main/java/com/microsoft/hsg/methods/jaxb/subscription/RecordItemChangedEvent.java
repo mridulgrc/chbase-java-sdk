@@ -5,14 +5,12 @@
 // Generated on: 2011.03.01 at 07:55:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.subscription;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for RecordItemChangedEvent complex type.
+ * <p>
+ * Java class for RecordItemChangedEvent complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="RecordItemChangedEvent">
@@ -53,36 +54,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RecordItemChangedEvent", propOrder = {
-    "filters"
-})
+@XmlType(name = "RecordItemChangedEvent", propOrder = { "filters" })
 public class RecordItemChangedEvent {
 
-    @XmlElement(required = true)
-    protected RecordItemChangedEventFilters filters;
+	@XmlElement(required = true)
+	protected RecordItemChangedEventFilters filters;
 
-    /**
-     * Gets the value of the filters property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RecordItemChangedEventFilters }
-     *     
-     */
-    public RecordItemChangedEventFilters getFilters() {
-        return filters;
-    }
+	/**
+	 * Gets the value of the filters property.
+	 * 
+	 * @return possible object is {@link RecordItemChangedEventFilters }
+	 * 
+	 */
+	public RecordItemChangedEventFilters getFilters() {
+		return filters;
+	}
 
-    /**
-     * Sets the value of the filters property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RecordItemChangedEventFilters }
-     *     
-     */
-    public void setFilters(RecordItemChangedEventFilters value) {
-        this.filters = value;
-    }
+	/**
+	 * Sets the value of the filters property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link RecordItemChangedEventFilters }
+	 * 
+	 */
+	public void setFilters(RecordItemChangedEventFilters value) {
+		this.filters = value;
+	}
 
 }

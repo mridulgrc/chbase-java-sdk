@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.util.ArrayList;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for SignatureType complex type.
+ * <p>
+ * Java class for SignatureType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="SignatureType">
@@ -41,176 +42,155 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SignatureType", propOrder = {
-    "signatureObjectID",
-    "exactDateTime",
-    "type",
-    "iDs",
-    "source",
-    "signature"
-})
+@XmlType(name = "SignatureType", propOrder = { "signatureObjectID", "exactDateTime", "type", "iDs", "source",
+		"signature" })
 public class SignatureType {
 
-    @XmlElement(name = "SignatureObjectID", required = true)
-    protected String signatureObjectID;
-    @XmlElement(name = "ExactDateTime")
-    protected String exactDateTime;
-    @XmlElement(name = "Type")
-    protected CodedDescriptionType type;
-    @XmlElement(name = "IDs")
-    protected List<IDType> iDs;
-    @XmlElement(name = "Source")
-    protected ActorReferenceType source;
-    @XmlElement(name = "Signature", required = true)
-    protected Object signature;
+	@XmlElement(name = "SignatureObjectID", required = true)
+	protected String signatureObjectID;
+	@XmlElement(name = "ExactDateTime")
+	protected String exactDateTime;
+	@XmlElement(name = "Type")
+	protected CodedDescriptionType type;
+	@XmlElement(name = "IDs")
+	protected List<IDType> iDs;
+	@XmlElement(name = "Source")
+	protected ActorReferenceType source;
+	@XmlElement(name = "Signature", required = true)
+	protected Object signature;
 
-    /**
-     * Gets the value of the signatureObjectID property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSignatureObjectID() {
-        return signatureObjectID;
-    }
+	/**
+	 * Gets the value of the signatureObjectID property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSignatureObjectID() {
+		return signatureObjectID;
+	}
 
-    /**
-     * Sets the value of the signatureObjectID property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSignatureObjectID(String value) {
-        this.signatureObjectID = value;
-    }
+	/**
+	 * Sets the value of the signatureObjectID property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSignatureObjectID(String value) {
+		this.signatureObjectID = value;
+	}
 
-    /**
-     * Gets the value of the exactDateTime property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getExactDateTime() {
-        return exactDateTime;
-    }
+	/**
+	 * Gets the value of the exactDateTime property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getExactDateTime() {
+		return exactDateTime;
+	}
 
-    /**
-     * Sets the value of the exactDateTime property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setExactDateTime(String value) {
-        this.exactDateTime = value;
-    }
+	/**
+	 * Sets the value of the exactDateTime property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setExactDateTime(String value) {
+		this.exactDateTime = value;
+	}
 
-    /**
-     * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public CodedDescriptionType getType() {
-        return type;
-    }
+	/**
+	 * Gets the value of the type property.
+	 * 
+	 * @return possible object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public CodedDescriptionType getType() {
+		return type;
+	}
 
-    /**
-     * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public void setType(CodedDescriptionType value) {
-        this.type = value;
-    }
+	/**
+	 * Sets the value of the type property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public void setType(CodedDescriptionType value) {
+		this.type = value;
+	}
 
-    /**
-     * Gets the value of the iDs property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the iDs property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getIDs().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link IDType }
-     * 
-     * 
-     */
-    public List<IDType> getIDs() {
-        if (iDs == null) {
-            iDs = new ArrayList<IDType>();
-        }
-        return this.iDs;
-    }
+	/**
+	 * Gets the value of the iDs property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the iDs property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getIDs().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link IDType }
+	 * 
+	 * 
+	 */
+	public List<IDType> getIDs() {
+		if (iDs == null) {
+			iDs = new ArrayList<IDType>();
+		}
+		return this.iDs;
+	}
 
-    /**
-     * Gets the value of the source property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ActorReferenceType }
-     *     
-     */
-    public ActorReferenceType getSource() {
-        return source;
-    }
+	/**
+	 * Gets the value of the source property.
+	 * 
+	 * @return possible object is {@link ActorReferenceType }
+	 * 
+	 */
+	public ActorReferenceType getSource() {
+		return source;
+	}
 
-    /**
-     * Sets the value of the source property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ActorReferenceType }
-     *     
-     */
-    public void setSource(ActorReferenceType value) {
-        this.source = value;
-    }
+	/**
+	 * Sets the value of the source property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ActorReferenceType }
+	 * 
+	 */
+	public void setSource(ActorReferenceType value) {
+		this.source = value;
+	}
 
-    /**
-     * Gets the value of the signature property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Object }
-     *     
-     */
-    public Object getSignature() {
-        return signature;
-    }
+	/**
+	 * Gets the value of the signature property.
+	 * 
+	 * @return possible object is {@link Object }
+	 * 
+	 */
+	public Object getSignature() {
+		return signature;
+	}
 
-    /**
-     * Sets the value of the signature property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Object }
-     *     
-     */
-    public void setSignature(Object value) {
-        this.signature = value;
-    }
+	/**
+	 * Sets the value of the signature property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Object }
+	 * 
+	 */
+	public void setSignature(Object value) {
+		this.signature = value;
+	}
 
 }

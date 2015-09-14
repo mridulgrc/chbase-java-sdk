@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.math.BigInteger;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for QuantityType complex type.
+ * <p>
+ * Java class for QuantityType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="QuantityType">
@@ -36,65 +37,54 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "QuantityType", propOrder = {
-    "quantitySequencePosition",
-    "variableQuantityModifier"
-})
-public class QuantityType
-    extends MeasureType
-{
+@XmlType(name = "QuantityType", propOrder = { "quantitySequencePosition", "variableQuantityModifier" })
+public class QuantityType extends MeasureType {
 
-    @XmlElement(name = "QuantitySequencePosition")
-    protected BigInteger quantitySequencePosition;
-    @XmlElement(name = "VariableQuantityModifier")
-    protected CodedDescriptionType variableQuantityModifier;
+	@XmlElement(name = "QuantitySequencePosition")
+	protected BigInteger quantitySequencePosition;
+	@XmlElement(name = "VariableQuantityModifier")
+	protected CodedDescriptionType variableQuantityModifier;
 
-    /**
-     * Gets the value of the quantitySequencePosition property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getQuantitySequencePosition() {
-        return quantitySequencePosition;
-    }
+	/**
+	 * Gets the value of the quantitySequencePosition property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getQuantitySequencePosition() {
+		return quantitySequencePosition;
+	}
 
-    /**
-     * Sets the value of the quantitySequencePosition property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setQuantitySequencePosition(BigInteger value) {
-        this.quantitySequencePosition = value;
-    }
+	/**
+	 * Sets the value of the quantitySequencePosition property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setQuantitySequencePosition(BigInteger value) {
+		this.quantitySequencePosition = value;
+	}
 
-    /**
-     * Gets the value of the variableQuantityModifier property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public CodedDescriptionType getVariableQuantityModifier() {
-        return variableQuantityModifier;
-    }
+	/**
+	 * Gets the value of the variableQuantityModifier property.
+	 * 
+	 * @return possible object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public CodedDescriptionType getVariableQuantityModifier() {
+		return variableQuantityModifier;
+	}
 
-    /**
-     * Sets the value of the variableQuantityModifier property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public void setVariableQuantityModifier(CodedDescriptionType value) {
-        this.variableQuantityModifier = value;
-    }
+	/**
+	 * Sets the value of the variableQuantityModifier property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public void setVariableQuantityModifier(CodedDescriptionType value) {
+		this.variableQuantityModifier = value;
+	}
 
 }

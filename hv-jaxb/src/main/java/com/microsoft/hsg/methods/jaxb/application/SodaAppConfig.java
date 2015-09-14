@@ -5,14 +5,12 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.application;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -28,9 +26,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for SodaAppConfig complex type.
+ * <p>
+ * Java class for SodaAppConfig complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="SodaAppConfig">
@@ -50,117 +51,100 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SodaAppConfig", propOrder = {
-    "id",
-    "parentId",
-    "name",
-    "publicKeys"
-})
+@XmlType(name = "SodaAppConfig", propOrder = { "id", "parentId", "name", "publicKeys" })
 public class SodaAppConfig {
 
-    @XmlElement(required = true)
-    protected String id;
-    @XmlElement(name = "parent-id", required = true)
-    protected String parentId;
-    @XmlElement(required = true)
-    protected String name;
-    @XmlElement(name = "public-keys", required = true)
-    protected PublicKeys publicKeys;
+	@XmlElement(required = true)
+	protected String id;
+	@XmlElement(name = "parent-id", required = true)
+	protected String parentId;
+	@XmlElement(required = true)
+	protected String name;
+	@XmlElement(name = "public-keys", required = true)
+	protected PublicKeys publicKeys;
 
-    /**
-     * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getId() {
-        return id;
-    }
+	/**
+	 * Gets the value of the id property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getId() {
+		return id;
+	}
 
-    /**
-     * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setId(String value) {
-        this.id = value;
-    }
+	/**
+	 * Sets the value of the id property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setId(String value) {
+		this.id = value;
+	}
 
-    /**
-     * Gets the value of the parentId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getParentId() {
-        return parentId;
-    }
+	/**
+	 * Gets the value of the parentId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getParentId() {
+		return parentId;
+	}
 
-    /**
-     * Sets the value of the parentId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setParentId(String value) {
-        this.parentId = value;
-    }
+	/**
+	 * Sets the value of the parentId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setParentId(String value) {
+		this.parentId = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the publicKeys property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PublicKeys }
-     *     
-     */
-    public PublicKeys getPublicKeys() {
-        return publicKeys;
-    }
+	/**
+	 * Gets the value of the publicKeys property.
+	 * 
+	 * @return possible object is {@link PublicKeys }
+	 * 
+	 */
+	public PublicKeys getPublicKeys() {
+		return publicKeys;
+	}
 
-    /**
-     * Sets the value of the publicKeys property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PublicKeys }
-     *     
-     */
-    public void setPublicKeys(PublicKeys value) {
-        this.publicKeys = value;
-    }
+	/**
+	 * Sets the value of the publicKeys property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link PublicKeys }
+	 * 
+	 */
+	public void setPublicKeys(PublicKeys value) {
+		this.publicKeys = value;
+	}
 
 }

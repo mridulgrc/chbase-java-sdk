@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:19:17 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.careplan;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
-
 
 /**
  * 
@@ -31,9 +29,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * </pre>
  * 
  * 
- * <p>Java class for care-plan-task-recurrence complex type.
+ * <p>
+ * Java class for care-plan-task-recurrence complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="care-plan-task-recurrence">
@@ -54,89 +55,76 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "care-plan-task-recurrence", propOrder = {
-    "icalRecurrence",
-    "interval",
-    "timesInInterval"
-})
+@XmlType(name = "care-plan-task-recurrence", propOrder = { "icalRecurrence", "interval", "timesInInterval" })
 public class CarePlanTaskRecurrence {
 
-    @XmlElement(name = "ical-recurrence")
-    protected String icalRecurrence;
-    protected CodableValue interval;
-    @XmlElement(name = "times-in-interval")
-    protected Integer timesInInterval;
+	@XmlElement(name = "ical-recurrence")
+	protected String icalRecurrence;
+	protected CodableValue interval;
+	@XmlElement(name = "times-in-interval")
+	protected Integer timesInInterval;
 
-    /**
-     * Gets the value of the icalRecurrence property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getIcalRecurrence() {
-        return icalRecurrence;
-    }
+	/**
+	 * Gets the value of the icalRecurrence property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getIcalRecurrence() {
+		return icalRecurrence;
+	}
 
-    /**
-     * Sets the value of the icalRecurrence property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setIcalRecurrence(String value) {
-        this.icalRecurrence = value;
-    }
+	/**
+	 * Sets the value of the icalRecurrence property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setIcalRecurrence(String value) {
+		this.icalRecurrence = value;
+	}
 
-    /**
-     * Gets the value of the interval property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getInterval() {
-        return interval;
-    }
+	/**
+	 * Gets the value of the interval property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getInterval() {
+		return interval;
+	}
 
-    /**
-     * Sets the value of the interval property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setInterval(CodableValue value) {
-        this.interval = value;
-    }
+	/**
+	 * Sets the value of the interval property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setInterval(CodableValue value) {
+		this.interval = value;
+	}
 
-    /**
-     * Gets the value of the timesInInterval property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getTimesInInterval() {
-        return timesInInterval;
-    }
+	/**
+	 * Gets the value of the timesInInterval property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getTimesInInterval() {
+		return timesInInterval;
+	}
 
-    /**
-     * Sets the value of the timesInInterval property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setTimesInInterval(Integer value) {
-        this.timesInInterval = value;
-    }
+	/**
+	 * Sets the value of the timesInInterval property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setTimesInInterval(Integer value) {
+		this.timesInInterval = value;
+	}
 
 }

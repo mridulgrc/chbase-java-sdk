@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:41:51 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.medication;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.GeneralMeasurement;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -65,300 +66,256 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "name",
-    "genericName",
-    "dose",
-    "strength",
-    "frequency",
-    "route",
-    "indication",
-    "dateStarted",
-    "dateDiscontinued",
-    "prescribed",
-    "prescription"
-})
+@XmlType(name = "", propOrder = { "name", "genericName", "dose", "strength", "frequency", "route", "indication",
+		"dateStarted", "dateDiscontinued", "prescribed", "prescription" })
 @XmlRootElement(name = "medication")
 public class Medication {
 
-    @XmlElement(required = true)
-    protected CodableValue name;
-    @XmlElement(name = "generic-name")
-    protected CodableValue genericName;
-    protected GeneralMeasurement dose;
-    protected GeneralMeasurement strength;
-    protected GeneralMeasurement frequency;
-    protected CodableValue route;
-    protected CodableValue indication;
-    @XmlElement(name = "date-started")
-    protected ApproxDateTime dateStarted;
-    @XmlElement(name = "date-discontinued")
-    protected ApproxDateTime dateDiscontinued;
-    protected CodableValue prescribed;
-    protected Prescription prescription;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	@XmlElement(name = "generic-name")
+	protected CodableValue genericName;
+	protected GeneralMeasurement dose;
+	protected GeneralMeasurement strength;
+	protected GeneralMeasurement frequency;
+	protected CodableValue route;
+	protected CodableValue indication;
+	@XmlElement(name = "date-started")
+	protected ApproxDateTime dateStarted;
+	@XmlElement(name = "date-discontinued")
+	protected ApproxDateTime dateDiscontinued;
+	protected CodableValue prescribed;
+	protected Prescription prescription;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the genericName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getGenericName() {
-        return genericName;
-    }
+	/**
+	 * Gets the value of the genericName property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getGenericName() {
+		return genericName;
+	}
 
-    /**
-     * Sets the value of the genericName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setGenericName(CodableValue value) {
-        this.genericName = value;
-    }
+	/**
+	 * Sets the value of the genericName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setGenericName(CodableValue value) {
+		this.genericName = value;
+	}
 
-    /**
-     * Gets the value of the dose property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public GeneralMeasurement getDose() {
-        return dose;
-    }
+	/**
+	 * Gets the value of the dose property.
+	 * 
+	 * @return possible object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public GeneralMeasurement getDose() {
+		return dose;
+	}
 
-    /**
-     * Sets the value of the dose property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public void setDose(GeneralMeasurement value) {
-        this.dose = value;
-    }
+	/**
+	 * Sets the value of the dose property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public void setDose(GeneralMeasurement value) {
+		this.dose = value;
+	}
 
-    /**
-     * Gets the value of the strength property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public GeneralMeasurement getStrength() {
-        return strength;
-    }
+	/**
+	 * Gets the value of the strength property.
+	 * 
+	 * @return possible object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public GeneralMeasurement getStrength() {
+		return strength;
+	}
 
-    /**
-     * Sets the value of the strength property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public void setStrength(GeneralMeasurement value) {
-        this.strength = value;
-    }
+	/**
+	 * Sets the value of the strength property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public void setStrength(GeneralMeasurement value) {
+		this.strength = value;
+	}
 
-    /**
-     * Gets the value of the frequency property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public GeneralMeasurement getFrequency() {
-        return frequency;
-    }
+	/**
+	 * Gets the value of the frequency property.
+	 * 
+	 * @return possible object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public GeneralMeasurement getFrequency() {
+		return frequency;
+	}
 
-    /**
-     * Sets the value of the frequency property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GeneralMeasurement }
-     *     
-     */
-    public void setFrequency(GeneralMeasurement value) {
-        this.frequency = value;
-    }
+	/**
+	 * Sets the value of the frequency property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GeneralMeasurement }
+	 * 
+	 */
+	public void setFrequency(GeneralMeasurement value) {
+		this.frequency = value;
+	}
 
-    /**
-     * Gets the value of the route property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getRoute() {
-        return route;
-    }
+	/**
+	 * Gets the value of the route property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getRoute() {
+		return route;
+	}
 
-    /**
-     * Sets the value of the route property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setRoute(CodableValue value) {
-        this.route = value;
-    }
+	/**
+	 * Sets the value of the route property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setRoute(CodableValue value) {
+		this.route = value;
+	}
 
-    /**
-     * Gets the value of the indication property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getIndication() {
-        return indication;
-    }
+	/**
+	 * Gets the value of the indication property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getIndication() {
+		return indication;
+	}
 
-    /**
-     * Sets the value of the indication property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setIndication(CodableValue value) {
-        this.indication = value;
-    }
+	/**
+	 * Sets the value of the indication property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setIndication(CodableValue value) {
+		this.indication = value;
+	}
 
-    /**
-     * Gets the value of the dateStarted property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getDateStarted() {
-        return dateStarted;
-    }
+	/**
+	 * Gets the value of the dateStarted property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getDateStarted() {
+		return dateStarted;
+	}
 
-    /**
-     * Sets the value of the dateStarted property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setDateStarted(ApproxDateTime value) {
-        this.dateStarted = value;
-    }
+	/**
+	 * Sets the value of the dateStarted property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setDateStarted(ApproxDateTime value) {
+		this.dateStarted = value;
+	}
 
-    /**
-     * Gets the value of the dateDiscontinued property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getDateDiscontinued() {
-        return dateDiscontinued;
-    }
+	/**
+	 * Gets the value of the dateDiscontinued property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getDateDiscontinued() {
+		return dateDiscontinued;
+	}
 
-    /**
-     * Sets the value of the dateDiscontinued property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setDateDiscontinued(ApproxDateTime value) {
-        this.dateDiscontinued = value;
-    }
+	/**
+	 * Sets the value of the dateDiscontinued property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setDateDiscontinued(ApproxDateTime value) {
+		this.dateDiscontinued = value;
+	}
 
-    /**
-     * Gets the value of the prescribed property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getPrescribed() {
-        return prescribed;
-    }
+	/**
+	 * Gets the value of the prescribed property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getPrescribed() {
+		return prescribed;
+	}
 
-    /**
-     * Sets the value of the prescribed property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setPrescribed(CodableValue value) {
-        this.prescribed = value;
-    }
+	/**
+	 * Sets the value of the prescribed property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setPrescribed(CodableValue value) {
+		this.prescribed = value;
+	}
 
-    /**
-     * Gets the value of the prescription property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Prescription }
-     *     
-     */
-    public Prescription getPrescription() {
-        return prescription;
-    }
+	/**
+	 * Gets the value of the prescription property.
+	 * 
+	 * @return possible object is {@link Prescription }
+	 * 
+	 */
+	public Prescription getPrescription() {
+		return prescription;
+	}
 
-    /**
-     * Sets the value of the prescription property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Prescription }
-     *     
-     */
-    public void setPrescription(Prescription value) {
-        this.prescription = value;
-    }
+	/**
+	 * Sets the value of the prescription property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Prescription }
+	 * 
+	 */
+	public void setPrescription(Prescription value) {
+		this.prescription = value;
+	}
 
 }

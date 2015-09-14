@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:32 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.familyhistory3;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,7 +15,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDate;
 
-
 /**
  * 
  * <pre>
@@ -26,9 +24,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDate;
  * </pre>
  * 
  * 
- * <p>Java class for FamilyHistoryRelative complex type.
+ * <p>
+ * Java class for FamilyHistoryRelative complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="FamilyHistoryRelative">
@@ -49,144 +50,124 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDate;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "FamilyHistoryRelative", propOrder = {
-    "relationship",
-    "relativeName",
-    "dateOfBirth",
-    "dateOfDeath",
-    "regionOfOrigin"
-})
+@XmlType(name = "FamilyHistoryRelative", propOrder = { "relationship", "relativeName", "dateOfBirth", "dateOfDeath",
+		"regionOfOrigin" })
 public class FamilyHistoryRelative {
 
-    @XmlElement(required = true)
-    protected CodableValue relationship;
-    @XmlElement(name = "relative-name")
-    protected Person relativeName;
-    @XmlElement(name = "date-of-birth")
-    protected ApproxDate dateOfBirth;
-    @XmlElement(name = "date-of-death")
-    protected ApproxDate dateOfDeath;
-    @XmlElement(name = "region-of-origin")
-    protected CodableValue regionOfOrigin;
+	@XmlElement(required = true)
+	protected CodableValue relationship;
+	@XmlElement(name = "relative-name")
+	protected Person relativeName;
+	@XmlElement(name = "date-of-birth")
+	protected ApproxDate dateOfBirth;
+	@XmlElement(name = "date-of-death")
+	protected ApproxDate dateOfDeath;
+	@XmlElement(name = "region-of-origin")
+	protected CodableValue regionOfOrigin;
 
-    /**
-     * Gets the value of the relationship property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getRelationship() {
-        return relationship;
-    }
+	/**
+	 * Gets the value of the relationship property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getRelationship() {
+		return relationship;
+	}
 
-    /**
-     * Sets the value of the relationship property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setRelationship(CodableValue value) {
-        this.relationship = value;
-    }
+	/**
+	 * Sets the value of the relationship property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setRelationship(CodableValue value) {
+		this.relationship = value;
+	}
 
-    /**
-     * Gets the value of the relativeName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getRelativeName() {
-        return relativeName;
-    }
+	/**
+	 * Gets the value of the relativeName property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getRelativeName() {
+		return relativeName;
+	}
 
-    /**
-     * Sets the value of the relativeName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setRelativeName(Person value) {
-        this.relativeName = value;
-    }
+	/**
+	 * Sets the value of the relativeName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setRelativeName(Person value) {
+		this.relativeName = value;
+	}
 
-    /**
-     * Gets the value of the dateOfBirth property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public ApproxDate getDateOfBirth() {
-        return dateOfBirth;
-    }
+	/**
+	 * Gets the value of the dateOfBirth property.
+	 * 
+	 * @return possible object is {@link ApproxDate }
+	 * 
+	 */
+	public ApproxDate getDateOfBirth() {
+		return dateOfBirth;
+	}
 
-    /**
-     * Sets the value of the dateOfBirth property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public void setDateOfBirth(ApproxDate value) {
-        this.dateOfBirth = value;
-    }
+	/**
+	 * Sets the value of the dateOfBirth property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDate }
+	 * 
+	 */
+	public void setDateOfBirth(ApproxDate value) {
+		this.dateOfBirth = value;
+	}
 
-    /**
-     * Gets the value of the dateOfDeath property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public ApproxDate getDateOfDeath() {
-        return dateOfDeath;
-    }
+	/**
+	 * Gets the value of the dateOfDeath property.
+	 * 
+	 * @return possible object is {@link ApproxDate }
+	 * 
+	 */
+	public ApproxDate getDateOfDeath() {
+		return dateOfDeath;
+	}
 
-    /**
-     * Sets the value of the dateOfDeath property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public void setDateOfDeath(ApproxDate value) {
-        this.dateOfDeath = value;
-    }
+	/**
+	 * Sets the value of the dateOfDeath property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDate }
+	 * 
+	 */
+	public void setDateOfDeath(ApproxDate value) {
+		this.dateOfDeath = value;
+	}
 
-    /**
-     * Gets the value of the regionOfOrigin property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getRegionOfOrigin() {
-        return regionOfOrigin;
-    }
+	/**
+	 * Gets the value of the regionOfOrigin property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getRegionOfOrigin() {
+		return regionOfOrigin;
+	}
 
-    /**
-     * Sets the value of the regionOfOrigin property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setRegionOfOrigin(CodableValue value) {
-        this.regionOfOrigin = value;
-    }
+	/**
+	 * Sets the value of the regionOfOrigin property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setRegionOfOrigin(CodableValue value) {
+		this.regionOfOrigin = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.util.ArrayList;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for FunctionType complex type.
+ * <p>
+ * Java class for FunctionType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="FunctionType">
@@ -37,75 +38,72 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "FunctionType", propOrder = {
-    "problem",
-    "test"
-})
-public class FunctionType
-    extends CCRCodedDataObjectType
-{
+@XmlType(name = "FunctionType", propOrder = { "problem", "test" })
+public class FunctionType extends CCRCodedDataObjectType {
 
-    @XmlElement(name = "Problem")
-    protected List<ProblemType> problem;
-    @XmlElement(name = "Test")
-    protected List<ResultType> test;
+	@XmlElement(name = "Problem")
+	protected List<ProblemType> problem;
+	@XmlElement(name = "Test")
+	protected List<ResultType> test;
 
-    /**
-     * Gets the value of the problem property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the problem property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getProblem().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ProblemType }
-     * 
-     * 
-     */
-    public List<ProblemType> getProblem() {
-        if (problem == null) {
-            problem = new ArrayList<ProblemType>();
-        }
-        return this.problem;
-    }
+	/**
+	 * Gets the value of the problem property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the problem property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getProblem().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ProblemType }
+	 * 
+	 * 
+	 */
+	public List<ProblemType> getProblem() {
+		if (problem == null) {
+			problem = new ArrayList<ProblemType>();
+		}
+		return this.problem;
+	}
 
-    /**
-     * Gets the value of the test property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the test property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTest().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ResultType }
-     * 
-     * 
-     */
-    public List<ResultType> getTest() {
-        if (test == null) {
-            test = new ArrayList<ResultType>();
-        }
-        return this.test;
-    }
+	/**
+	 * Gets the value of the test property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the test property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getTest().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ResultType }
+	 * 
+	 * 
+	 */
+	public List<ResultType> getTest() {
+		if (test == null) {
+			test = new ArrayList<ResultType>();
+		}
+		return this.test;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:13:00 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getauthorizedpeople.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-
 
 /**
  * 
@@ -36,9 +34,12 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -54,42 +55,34 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "GetAuthorizedPeople",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.GetAuthorizedPeople")
+@JaxbRequest(methodName = "GetAuthorizedPeople", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.GetAuthorizedPeople")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "parameters"
-})
+@XmlType(name = "", propOrder = { "parameters" })
 @XmlRootElement(name = "info")
 public class GetAuthorizedPeopleRequest {
 
-    @XmlElement(required = true)
-    protected GetAuthorizedPeopleParameters parameters;
+	@XmlElement(required = true)
+	protected GetAuthorizedPeopleParameters parameters;
 
-    /**
-     * Gets the value of the parameters property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link GetAuthorizedPeopleParameters }
-     *     
-     */
-    public GetAuthorizedPeopleParameters getParameters() {
-        return parameters;
-    }
+	/**
+	 * Gets the value of the parameters property.
+	 * 
+	 * @return possible object is {@link GetAuthorizedPeopleParameters }
+	 * 
+	 */
+	public GetAuthorizedPeopleParameters getParameters() {
+		return parameters;
+	}
 
-    /**
-     * Sets the value of the parameters property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link GetAuthorizedPeopleParameters }
-     *     
-     */
-    public void setParameters(GetAuthorizedPeopleParameters value) {
-        this.parameters = value;
-    }
+	/**
+	 * Sets the value of the parameters property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link GetAuthorizedPeopleParameters }
+	 * 
+	 */
+	public void setParameters(GetAuthorizedPeopleParameters value) {
+		this.parameters = value;
+	}
 
 }

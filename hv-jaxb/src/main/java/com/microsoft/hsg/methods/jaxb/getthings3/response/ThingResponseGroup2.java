@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:02:05 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthings3.response;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.UnprocessedThingKeyInfo;
-
 
 /**
  * 
@@ -38,9 +36,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.thing.UnprocessedThingKeyInfo;
  * </pre>
  * 
  * 
- * <p>Java class for ThingResponseGroup2 complex type.
+ * <p>
+ * Java class for ThingResponseGroup2 complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ThingResponseGroup2">
@@ -60,124 +61,115 @@ import com.microsoft.hsg.thing.oxm.jaxb.thing.UnprocessedThingKeyInfo;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ThingResponseGroup2", propOrder = {
-    "thing",
-    "unprocessedThingKeyInfo",
-    "filtered"
-})
+@XmlType(name = "ThingResponseGroup2", propOrder = { "thing", "unprocessedThingKeyInfo", "filtered" })
 public class ThingResponseGroup2 {
 
-    protected List<Thing2> thing;
-    @XmlElement(name = "unprocessed-thing-key-info")
-    protected List<UnprocessedThingKeyInfo> unprocessedThingKeyInfo;
-    protected Boolean filtered;
-    @XmlAttribute(name = "name")
-    protected String name;
+	protected List<Thing2> thing;
+	@XmlElement(name = "unprocessed-thing-key-info")
+	protected List<UnprocessedThingKeyInfo> unprocessedThingKeyInfo;
+	protected Boolean filtered;
+	@XmlAttribute(name = "name")
+	protected String name;
 
-    /**
-     * Gets the value of the thing property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the thing property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getThing().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Thing2 }
-     * 
-     * 
-     */
-    public List<Thing2> getThing() {
-        if (thing == null) {
-            thing = new ArrayList<Thing2>();
-        }
-        return this.thing;
-    }
+	/**
+	 * Gets the value of the thing property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the thing property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getThing().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Thing2 }
+	 * 
+	 * 
+	 */
+	public List<Thing2> getThing() {
+		if (thing == null) {
+			thing = new ArrayList<Thing2>();
+		}
+		return this.thing;
+	}
 
-    /**
-     * Gets the value of the unprocessedThingKeyInfo property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the unprocessedThingKeyInfo property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getUnprocessedThingKeyInfo().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link UnprocessedThingKeyInfo }
-     * 
-     * 
-     */
-    public List<UnprocessedThingKeyInfo> getUnprocessedThingKeyInfo() {
-        if (unprocessedThingKeyInfo == null) {
-            unprocessedThingKeyInfo = new ArrayList<UnprocessedThingKeyInfo>();
-        }
-        return this.unprocessedThingKeyInfo;
-    }
+	/**
+	 * Gets the value of the unprocessedThingKeyInfo property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the unprocessedThingKeyInfo property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getUnprocessedThingKeyInfo().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link UnprocessedThingKeyInfo }
+	 * 
+	 * 
+	 */
+	public List<UnprocessedThingKeyInfo> getUnprocessedThingKeyInfo() {
+		if (unprocessedThingKeyInfo == null) {
+			unprocessedThingKeyInfo = new ArrayList<UnprocessedThingKeyInfo>();
+		}
+		return this.unprocessedThingKeyInfo;
+	}
 
-    /**
-     * Gets the value of the filtered property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isFiltered() {
-        return filtered;
-    }
+	/**
+	 * Gets the value of the filtered property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isFiltered() {
+		return filtered;
+	}
 
-    /**
-     * Sets the value of the filtered property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setFiltered(Boolean value) {
-        this.filtered = value;
-    }
+	/**
+	 * Sets the value of the filtered property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setFiltered(Boolean value) {
+		this.filtered = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
 }

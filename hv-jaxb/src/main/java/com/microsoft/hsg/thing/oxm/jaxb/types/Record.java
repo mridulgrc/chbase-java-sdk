@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
 import javax.xml.datatype.XMLGregorianCalendar;
-
 
 /**
  * 
@@ -40,9 +38,12 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * </pre>
  * 
  * 
- * <p>Java class for Record complex type.
+ * <p>
+ * Java class for Record complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Record">
@@ -73,481 +74,428 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Record", propOrder = {
-    "value"
-})
+@XmlType(name = "Record", propOrder = { "value" })
 public class Record {
 
-    @XmlValue
-    protected String value;
-    @XmlAttribute(name = "id", required = true)
-    protected String id;
-    @XmlAttribute(name = "record-custodian")
-    protected Boolean recordCustodian;
-    @XmlAttribute(name = "rel-type", required = true)
-    protected int relType;
-    @XmlAttribute(name = "rel-name")
-    protected String relName;
-    @XmlAttribute(name = "auth-expires")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar authExpires;
-    @XmlAttribute(name = "auth-expired")
-    protected Boolean authExpired;
-    @XmlAttribute(name = "display-name")
-    protected String displayName;
-    @XmlAttribute(name = "state")
-    protected RecordState state;
-    @XmlAttribute(name = "date-created")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar dateCreated;
-    @XmlAttribute(name = "max-size-bytes")
-    protected Long maxSizeBytes;
-    @XmlAttribute(name = "size-bytes")
-    protected Long sizeBytes;
-    @XmlAttribute(name = "app-record-auth-action")
-    protected String appRecordAuthAction;
-    @XmlAttribute(name = "auto-reconcile-documents")
-    protected Boolean autoReconcileDocuments;
-    @XmlAttribute(name = "app-specific-record-id")
-    protected String appSpecificRecordId;
-    @XmlAttribute(name = "location-country")
-    protected String locationCountry;
-    @XmlAttribute(name = "location-state-province")
-    protected String locationStateProvince;
-    @XmlAttribute(name = "date-updated")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar dateUpdated;
+	@XmlValue
+	protected String value;
+	@XmlAttribute(name = "id", required = true)
+	protected String id;
+	@XmlAttribute(name = "record-custodian")
+	protected Boolean recordCustodian;
+	@XmlAttribute(name = "rel-type", required = true)
+	protected int relType;
+	@XmlAttribute(name = "rel-name")
+	protected String relName;
+	@XmlAttribute(name = "auth-expires")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar authExpires;
+	@XmlAttribute(name = "auth-expired")
+	protected Boolean authExpired;
+	@XmlAttribute(name = "display-name")
+	protected String displayName;
+	@XmlAttribute(name = "state")
+	protected RecordState state;
+	@XmlAttribute(name = "date-created")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar dateCreated;
+	@XmlAttribute(name = "max-size-bytes")
+	protected Long maxSizeBytes;
+	@XmlAttribute(name = "size-bytes")
+	protected Long sizeBytes;
+	@XmlAttribute(name = "app-record-auth-action")
+	protected String appRecordAuthAction;
+	@XmlAttribute(name = "auto-reconcile-documents")
+	protected Boolean autoReconcileDocuments;
+	@XmlAttribute(name = "app-specific-record-id")
+	protected String appSpecificRecordId;
+	@XmlAttribute(name = "location-country")
+	protected String locationCountry;
+	@XmlAttribute(name = "location-state-province")
+	protected String locationStateProvince;
+	@XmlAttribute(name = "date-updated")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar dateUpdated;
 
-    /**
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+	/**
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getId() {
-        return id;
-    }
+	/**
+	 * Gets the value of the id property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getId() {
+		return id;
+	}
 
-    /**
-     * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setId(String value) {
-        this.id = value;
-    }
+	/**
+	 * Sets the value of the id property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setId(String value) {
+		this.id = value;
+	}
 
-    /**
-     * Gets the value of the recordCustodian property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isRecordCustodian() {
-        return recordCustodian;
-    }
+	/**
+	 * Gets the value of the recordCustodian property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isRecordCustodian() {
+		return recordCustodian;
+	}
 
-    /**
-     * Sets the value of the recordCustodian property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setRecordCustodian(Boolean value) {
-        this.recordCustodian = value;
-    }
+	/**
+	 * Sets the value of the recordCustodian property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setRecordCustodian(Boolean value) {
+		this.recordCustodian = value;
+	}
 
-    /**
-     * Gets the value of the relType property.
-     * 
-     */
-    public int getRelType() {
-        return relType;
-    }
+	/**
+	 * Gets the value of the relType property.
+	 * 
+	 */
+	public int getRelType() {
+		return relType;
+	}
 
-    /**
-     * Sets the value of the relType property.
-     * 
-     */
-    public void setRelType(int value) {
-        this.relType = value;
-    }
+	/**
+	 * Sets the value of the relType property.
+	 * 
+	 */
+	public void setRelType(int value) {
+		this.relType = value;
+	}
 
-    /**
-     * Gets the value of the relName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRelName() {
-        return relName;
-    }
+	/**
+	 * Gets the value of the relName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getRelName() {
+		return relName;
+	}
 
-    /**
-     * Sets the value of the relName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRelName(String value) {
-        this.relName = value;
-    }
+	/**
+	 * Sets the value of the relName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setRelName(String value) {
+		this.relName = value;
+	}
 
-    /**
-     * Gets the value of the authExpires property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getAuthExpires() {
-        return authExpires;
-    }
+	/**
+	 * Gets the value of the authExpires property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getAuthExpires() {
+		return authExpires;
+	}
 
-    /**
-     * Sets the value of the authExpires property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setAuthExpires(XMLGregorianCalendar value) {
-        this.authExpires = value;
-    }
+	/**
+	 * Sets the value of the authExpires property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setAuthExpires(XMLGregorianCalendar value) {
+		this.authExpires = value;
+	}
 
-    /**
-     * Gets the value of the authExpired property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isAuthExpired() {
-        return authExpired;
-    }
+	/**
+	 * Gets the value of the authExpired property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isAuthExpired() {
+		return authExpired;
+	}
 
-    /**
-     * Sets the value of the authExpired property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setAuthExpired(Boolean value) {
-        this.authExpired = value;
-    }
+	/**
+	 * Sets the value of the authExpired property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setAuthExpired(Boolean value) {
+		this.authExpired = value;
+	}
 
-    /**
-     * Gets the value of the displayName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDisplayName() {
-        return displayName;
-    }
+	/**
+	 * Gets the value of the displayName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDisplayName() {
+		return displayName;
+	}
 
-    /**
-     * Sets the value of the displayName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDisplayName(String value) {
-        this.displayName = value;
-    }
+	/**
+	 * Sets the value of the displayName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDisplayName(String value) {
+		this.displayName = value;
+	}
 
-    /**
-     * Gets the value of the state property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RecordState }
-     *     
-     */
-    public RecordState getState() {
-        return state;
-    }
+	/**
+	 * Gets the value of the state property.
+	 * 
+	 * @return possible object is {@link RecordState }
+	 * 
+	 */
+	public RecordState getState() {
+		return state;
+	}
 
-    /**
-     * Sets the value of the state property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RecordState }
-     *     
-     */
-    public void setState(RecordState value) {
-        this.state = value;
-    }
+	/**
+	 * Sets the value of the state property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link RecordState }
+	 * 
+	 */
+	public void setState(RecordState value) {
+		this.state = value;
+	}
 
-    /**
-     * Gets the value of the dateCreated property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDateCreated() {
-        return dateCreated;
-    }
+	/**
+	 * Gets the value of the dateCreated property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getDateCreated() {
+		return dateCreated;
+	}
 
-    /**
-     * Sets the value of the dateCreated property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDateCreated(XMLGregorianCalendar value) {
-        this.dateCreated = value;
-    }
+	/**
+	 * Sets the value of the dateCreated property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setDateCreated(XMLGregorianCalendar value) {
+		this.dateCreated = value;
+	}
 
-    /**
-     * Gets the value of the maxSizeBytes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
-     */
-    public Long getMaxSizeBytes() {
-        return maxSizeBytes;
-    }
+	/**
+	 * Gets the value of the maxSizeBytes property.
+	 * 
+	 * @return possible object is {@link Long }
+	 * 
+	 */
+	public Long getMaxSizeBytes() {
+		return maxSizeBytes;
+	}
 
-    /**
-     * Sets the value of the maxSizeBytes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
-     */
-    public void setMaxSizeBytes(Long value) {
-        this.maxSizeBytes = value;
-    }
+	/**
+	 * Sets the value of the maxSizeBytes property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Long }
+	 * 
+	 */
+	public void setMaxSizeBytes(Long value) {
+		this.maxSizeBytes = value;
+	}
 
-    /**
-     * Gets the value of the sizeBytes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
-     */
-    public Long getSizeBytes() {
-        return sizeBytes;
-    }
+	/**
+	 * Gets the value of the sizeBytes property.
+	 * 
+	 * @return possible object is {@link Long }
+	 * 
+	 */
+	public Long getSizeBytes() {
+		return sizeBytes;
+	}
 
-    /**
-     * Sets the value of the sizeBytes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
-     */
-    public void setSizeBytes(Long value) {
-        this.sizeBytes = value;
-    }
+	/**
+	 * Sets the value of the sizeBytes property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Long }
+	 * 
+	 */
+	public void setSizeBytes(Long value) {
+		this.sizeBytes = value;
+	}
 
-    /**
-     * Gets the value of the appRecordAuthAction property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAppRecordAuthAction() {
-        return appRecordAuthAction;
-    }
+	/**
+	 * Gets the value of the appRecordAuthAction property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAppRecordAuthAction() {
+		return appRecordAuthAction;
+	}
 
-    /**
-     * Sets the value of the appRecordAuthAction property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAppRecordAuthAction(String value) {
-        this.appRecordAuthAction = value;
-    }
+	/**
+	 * Sets the value of the appRecordAuthAction property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAppRecordAuthAction(String value) {
+		this.appRecordAuthAction = value;
+	}
 
-    /**
-     * Gets the value of the autoReconcileDocuments property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isAutoReconcileDocuments() {
-        return autoReconcileDocuments;
-    }
+	/**
+	 * Gets the value of the autoReconcileDocuments property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isAutoReconcileDocuments() {
+		return autoReconcileDocuments;
+	}
 
-    /**
-     * Sets the value of the autoReconcileDocuments property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setAutoReconcileDocuments(Boolean value) {
-        this.autoReconcileDocuments = value;
-    }
+	/**
+	 * Sets the value of the autoReconcileDocuments property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setAutoReconcileDocuments(Boolean value) {
+		this.autoReconcileDocuments = value;
+	}
 
-    /**
-     * Gets the value of the appSpecificRecordId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAppSpecificRecordId() {
-        return appSpecificRecordId;
-    }
+	/**
+	 * Gets the value of the appSpecificRecordId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAppSpecificRecordId() {
+		return appSpecificRecordId;
+	}
 
-    /**
-     * Sets the value of the appSpecificRecordId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAppSpecificRecordId(String value) {
-        this.appSpecificRecordId = value;
-    }
+	/**
+	 * Sets the value of the appSpecificRecordId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAppSpecificRecordId(String value) {
+		this.appSpecificRecordId = value;
+	}
 
-    /**
-     * Gets the value of the locationCountry property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLocationCountry() {
-        return locationCountry;
-    }
+	/**
+	 * Gets the value of the locationCountry property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLocationCountry() {
+		return locationCountry;
+	}
 
-    /**
-     * Sets the value of the locationCountry property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLocationCountry(String value) {
-        this.locationCountry = value;
-    }
+	/**
+	 * Sets the value of the locationCountry property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLocationCountry(String value) {
+		this.locationCountry = value;
+	}
 
-    /**
-     * Gets the value of the locationStateProvince property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLocationStateProvince() {
-        return locationStateProvince;
-    }
+	/**
+	 * Gets the value of the locationStateProvince property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLocationStateProvince() {
+		return locationStateProvince;
+	}
 
-    /**
-     * Sets the value of the locationStateProvince property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLocationStateProvince(String value) {
-        this.locationStateProvince = value;
-    }
+	/**
+	 * Sets the value of the locationStateProvince property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLocationStateProvince(String value) {
+		this.locationStateProvince = value;
+	}
 
-    /**
-     * Gets the value of the dateUpdated property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDateUpdated() {
-        return dateUpdated;
-    }
+	/**
+	 * Gets the value of the dateUpdated property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getDateUpdated() {
+		return dateUpdated;
+	}
 
-    /**
-     * Sets the value of the dateUpdated property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDateUpdated(XMLGregorianCalendar value) {
-        this.dateUpdated = value;
-    }
+	/**
+	 * Sets the value of the dateUpdated property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setDateUpdated(XMLGregorianCalendar value) {
+		this.dateUpdated = value;
+	}
 
 }

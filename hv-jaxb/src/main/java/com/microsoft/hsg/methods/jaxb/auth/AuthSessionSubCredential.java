@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for AuthSessionSubCredential complex type.
+ * <p>
+ * Java class for AuthSessionSubCredential complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AuthSessionSubCredential">
@@ -51,36 +52,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AuthSessionSubCredential", propOrder = {
-    "simplePassport"
-})
+@XmlType(name = "AuthSessionSubCredential", propOrder = { "simplePassport" })
 public class AuthSessionSubCredential {
 
-    @XmlElement(name = "simple-passport")
-    protected SimplePassportCredential simplePassport;
+	@XmlElement(name = "simple-passport")
+	protected SimplePassportCredential simplePassport;
 
-    /**
-     * Gets the value of the simplePassport property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SimplePassportCredential }
-     *     
-     */
-    public SimplePassportCredential getSimplePassport() {
-        return simplePassport;
-    }
+	/**
+	 * Gets the value of the simplePassport property.
+	 * 
+	 * @return possible object is {@link SimplePassportCredential }
+	 * 
+	 */
+	public SimplePassportCredential getSimplePassport() {
+		return simplePassport;
+	}
 
-    /**
-     * Sets the value of the simplePassport property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SimplePassportCredential }
-     *     
-     */
-    public void setSimplePassport(SimplePassportCredential value) {
-        this.simplePassport = value;
-    }
+	/**
+	 * Sets the value of the simplePassport property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link SimplePassportCredential }
+	 * 
+	 */
+	public void setSimplePassport(SimplePassportCredential value) {
+		this.simplePassport = value;
+	}
 
 }

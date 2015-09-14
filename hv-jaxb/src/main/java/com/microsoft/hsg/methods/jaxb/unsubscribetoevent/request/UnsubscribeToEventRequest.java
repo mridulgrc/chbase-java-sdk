@@ -5,7 +5,6 @@
 // Generated on: 2011.03.01 at 07:53:24 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.unsubscribetoevent.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,11 +15,13 @@ import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
 
-
 /**
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -36,42 +37,34 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "UnsubscribeToEvent",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.UnsubscribeToEvent")
+@JaxbRequest(methodName = "UnsubscribeToEvent", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.UnsubscribeToEvent")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "subscriptionId"
-})
+@XmlType(name = "", propOrder = { "subscriptionId" })
 @XmlRootElement(name = "info")
 public class UnsubscribeToEventRequest {
 
-    @XmlElement(name = "subscription-id", required = true)
-    protected String subscriptionId;
+	@XmlElement(name = "subscription-id", required = true)
+	protected String subscriptionId;
 
-    /**
-     * Gets the value of the subscriptionId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSubscriptionId() {
-        return subscriptionId;
-    }
+	/**
+	 * Gets the value of the subscriptionId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSubscriptionId() {
+		return subscriptionId;
+	}
 
-    /**
-     * Sets the value of the subscriptionId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSubscriptionId(String value) {
-        this.subscriptionId = value;
-    }
+	/**
+	 * Sets the value of the subscriptionId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSubscriptionId(String value) {
+		this.subscriptionId = value;
+	}
 
 }

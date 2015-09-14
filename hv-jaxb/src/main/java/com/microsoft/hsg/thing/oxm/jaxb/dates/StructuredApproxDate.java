@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.dates;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * </pre>
  * 
  * 
- * <p>Java class for StructuredApproxDate complex type.
+ * <p>
+ * Java class for StructuredApproxDate complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="StructuredApproxDate">
@@ -48,105 +49,91 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "StructuredApproxDate", propOrder = {
-    "date",
-    "time",
-    "tz"
-})
+@XmlType(name = "StructuredApproxDate", propOrder = { "date", "time", "tz" })
 public class StructuredApproxDate {
 
-    @XmlElement(required = true)
-    protected ApproxDate date;
-    protected Time time;
-    protected CodableValue tz;
+	@XmlElement(required = true)
+	protected ApproxDate date;
+	protected Time time;
+	protected CodableValue tz;
 
-    /**
-     * Instantiates a new structured approx date.
-     */
-    public StructuredApproxDate()
-    {
-    }
-    
-    /**
-     * Instantiates a new structured approx date.
-     * 
-     * @param date the date
-     */
-    public StructuredApproxDate(ApproxDate date)
-    {
-    	this.date = date;
-    }
-    
-    /**
-     * Gets the value of the date property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public ApproxDate getDate() {
-        return date;
-    }
+	/**
+	 * Instantiates a new structured approx date.
+	 */
+	public StructuredApproxDate() {
+	}
 
-    /**
-     * Sets the value of the date property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public void setDate(ApproxDate value) {
-        this.date = value;
-    }
+	/**
+	 * Instantiates a new structured approx date.
+	 * 
+	 * @param date
+	 *            the date
+	 */
+	public StructuredApproxDate(ApproxDate date) {
+		this.date = date;
+	}
 
-    /**
-     * Gets the value of the time property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Time }
-     *     
-     */
-    public Time getTime() {
-        return time;
-    }
+	/**
+	 * Gets the value of the date property.
+	 * 
+	 * @return possible object is {@link ApproxDate }
+	 * 
+	 */
+	public ApproxDate getDate() {
+		return date;
+	}
 
-    /**
-     * Sets the value of the time property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Time }
-     *     
-     */
-    public void setTime(Time value) {
-        this.time = value;
-    }
+	/**
+	 * Sets the value of the date property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDate }
+	 * 
+	 */
+	public void setDate(ApproxDate value) {
+		this.date = value;
+	}
 
-    /**
-     * Gets the value of the tz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getTz() {
-        return tz;
-    }
+	/**
+	 * Gets the value of the time property.
+	 * 
+	 * @return possible object is {@link Time }
+	 * 
+	 */
+	public Time getTime() {
+		return time;
+	}
 
-    /**
-     * Sets the value of the tz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setTz(CodableValue value) {
-        this.tz = value;
-    }
+	/**
+	 * Sets the value of the time property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Time }
+	 * 
+	 */
+	public void setTime(Time value) {
+		this.time = value;
+	}
+
+	/**
+	 * Gets the value of the tz property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getTz() {
+		return tz;
+	}
+
+	/**
+	 * Sets the value of the tz property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setTz(CodableValue value) {
+		this.tz = value;
+	}
 
 }

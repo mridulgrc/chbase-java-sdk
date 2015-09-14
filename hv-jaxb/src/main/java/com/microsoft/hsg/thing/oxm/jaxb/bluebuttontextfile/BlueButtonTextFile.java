@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:18:53 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.bluebuttontextfile;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 
-
 /**
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -37,64 +38,55 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "name",
-    "sourceFormat"
-})
+@XmlType(name = "", propOrder = { "name", "sourceFormat" })
 @XmlRootElement(name = "blue-button-text-file")
 public class BlueButtonTextFile {
 
-    @XmlElement(required = true)
-    protected String name;
-    @XmlElement(name = "source-format")
-    protected CodableValue sourceFormat;
+	@XmlElement(required = true)
+	protected String name;
+	@XmlElement(name = "source-format")
+	protected CodableValue sourceFormat;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the sourceFormat property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getSourceFormat() {
-        return sourceFormat;
-    }
+	/**
+	 * Gets the value of the sourceFormat property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getSourceFormat() {
+		return sourceFormat;
+	}
 
-    /**
-     * Sets the value of the sourceFormat property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setSourceFormat(CodableValue value) {
-        this.sourceFormat = value;
-    }
+	/**
+	 * Sets the value of the sourceFormat property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setSourceFormat(CodableValue value) {
+		this.sourceFormat = value;
+	}
 
 }

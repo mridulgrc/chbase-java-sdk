@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:38:56 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.bloodoxygensaturation;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
 
-
 /**
  * 
  * <pre>
@@ -26,9 +24,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -48,109 +49,95 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "when",
-    "value",
-    "measurementMethod",
-    "measurementFlags"
-})
+@XmlType(name = "", propOrder = { "when", "value", "measurementMethod", "measurementFlags" })
 @XmlRootElement(name = "blood-oxygen-saturation")
 public class BloodOxygenSaturation {
 
-    @XmlElement(required = true)
-    protected DateTime when;
-    protected double value;
-    @XmlElement(name = "measurement-method")
-    protected CodableValue measurementMethod;
-    @XmlElement(name = "measurement-flags")
-    protected CodableValue measurementFlags;
+	@XmlElement(required = true)
+	protected DateTime when;
+	protected double value;
+	@XmlElement(name = "measurement-method")
+	protected CodableValue measurementMethod;
+	@XmlElement(name = "measurement-flags")
+	protected CodableValue measurementFlags;
 
-    /**
-     * Gets the value of the when property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getWhen() {
-        return when;
-    }
+	/**
+	 * Gets the value of the when property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getWhen() {
+		return when;
+	}
 
-    /**
-     * Sets the value of the when property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setWhen(DateTime value) {
-        this.when = value;
-    }
+	/**
+	 * Sets the value of the when property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setWhen(DateTime value) {
+		this.when = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     */
-    public double getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 */
+	public double getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     */
-    public void setValue(double value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 */
+	public void setValue(double value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the measurementMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getMeasurementMethod() {
-        return measurementMethod;
-    }
+	/**
+	 * Gets the value of the measurementMethod property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getMeasurementMethod() {
+		return measurementMethod;
+	}
 
-    /**
-     * Sets the value of the measurementMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setMeasurementMethod(CodableValue value) {
-        this.measurementMethod = value;
-    }
+	/**
+	 * Sets the value of the measurementMethod property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setMeasurementMethod(CodableValue value) {
+		this.measurementMethod = value;
+	}
 
-    /**
-     * Gets the value of the measurementFlags property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getMeasurementFlags() {
-        return measurementFlags;
-    }
+	/**
+	 * Gets the value of the measurementFlags property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getMeasurementFlags() {
+		return measurementFlags;
+	}
 
-    /**
-     * Sets the value of the measurementFlags property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setMeasurementFlags(CodableValue value) {
-        this.measurementFlags = value;
-    }
+	/**
+	 * Sets the value of the measurementFlags property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setMeasurementFlags(CodableValue value) {
+		this.measurementFlags = value;
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.thing;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -27,9 +25,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for BlobPayload complex type.
+ * <p>
+ * Java class for BlobPayload complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="BlobPayload">
@@ -46,41 +47,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "BlobPayload", propOrder = {
-    "blob"
-})
+@XmlType(name = "BlobPayload", propOrder = { "blob" })
 public class BlobPayload {
 
-    @XmlElement(required = true)
-    protected List<BlobPayloadItem> blob;
+	@XmlElement(required = true)
+	protected List<BlobPayloadItem> blob;
 
-    /**
-     * Gets the value of the blob property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the blob property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getBlob().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link BlobPayloadItem }
-     * 
-     * 
-     */
-    public List<BlobPayloadItem> getBlob() {
-        if (blob == null) {
-            blob = new ArrayList<BlobPayloadItem>();
-        }
-        return this.blob;
-    }
+	/**
+	 * Gets the value of the blob property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the blob property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getBlob().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link BlobPayloadItem }
+	 * 
+	 * 
+	 */
+	public List<BlobPayloadItem> getBlob() {
+		if (blob == null) {
+			blob = new ArrayList<BlobPayloadItem>();
+		}
+		return this.blob;
+	}
 
 }

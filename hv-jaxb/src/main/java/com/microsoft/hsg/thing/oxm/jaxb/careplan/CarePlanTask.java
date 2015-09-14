@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:19:17 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.careplan;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for care-plan-task complex type.
+ * <p>
+ * Java class for care-plan-task complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="care-plan-task">
@@ -52,250 +53,214 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "care-plan-task", propOrder = {
-    "name",
-    "description",
-    "startDate",
-    "endDate",
-    "targetCompletionDate",
-    "sequenceNumber",
-    "associatedTypeInfo",
-    "recurrence",
-    "referenceId"
-})
+@XmlType(name = "care-plan-task", propOrder = { "name", "description", "startDate", "endDate", "targetCompletionDate",
+		"sequenceNumber", "associatedTypeInfo", "recurrence", "referenceId" })
 public class CarePlanTask {
 
-    @XmlElement(required = true)
-    protected CodableValue name;
-    protected String description;
-    @XmlElement(name = "start-date")
-    protected ApproxDateTime startDate;
-    @XmlElement(name = "end-date")
-    protected ApproxDateTime endDate;
-    @XmlElement(name = "target-completion-date")
-    protected ApproxDateTime targetCompletionDate;
-    @XmlElement(name = "sequence-number")
-    protected Integer sequenceNumber;
-    @XmlElement(name = "associated-type-info")
-    protected AssociatedTypeInfo associatedTypeInfo;
-    protected CarePlanTaskRecurrence recurrence;
-    @XmlElement(name = "reference-id")
-    protected String referenceId;
+	@XmlElement(required = true)
+	protected CodableValue name;
+	protected String description;
+	@XmlElement(name = "start-date")
+	protected ApproxDateTime startDate;
+	@XmlElement(name = "end-date")
+	protected ApproxDateTime endDate;
+	@XmlElement(name = "target-completion-date")
+	protected ApproxDateTime targetCompletionDate;
+	@XmlElement(name = "sequence-number")
+	protected Integer sequenceNumber;
+	@XmlElement(name = "associated-type-info")
+	protected AssociatedTypeInfo associatedTypeInfo;
+	protected CarePlanTaskRecurrence recurrence;
+	@XmlElement(name = "reference-id")
+	protected String referenceId;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setName(CodableValue value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setName(CodableValue value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the startDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getStartDate() {
-        return startDate;
-    }
+	/**
+	 * Gets the value of the startDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getStartDate() {
+		return startDate;
+	}
 
-    /**
-     * Sets the value of the startDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setStartDate(ApproxDateTime value) {
-        this.startDate = value;
-    }
+	/**
+	 * Sets the value of the startDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setStartDate(ApproxDateTime value) {
+		this.startDate = value;
+	}
 
-    /**
-     * Gets the value of the endDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getEndDate() {
-        return endDate;
-    }
+	/**
+	 * Gets the value of the endDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getEndDate() {
+		return endDate;
+	}
 
-    /**
-     * Sets the value of the endDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setEndDate(ApproxDateTime value) {
-        this.endDate = value;
-    }
+	/**
+	 * Sets the value of the endDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setEndDate(ApproxDateTime value) {
+		this.endDate = value;
+	}
 
-    /**
-     * Gets the value of the targetCompletionDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getTargetCompletionDate() {
-        return targetCompletionDate;
-    }
+	/**
+	 * Gets the value of the targetCompletionDate property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getTargetCompletionDate() {
+		return targetCompletionDate;
+	}
 
-    /**
-     * Sets the value of the targetCompletionDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setTargetCompletionDate(ApproxDateTime value) {
-        this.targetCompletionDate = value;
-    }
+	/**
+	 * Sets the value of the targetCompletionDate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setTargetCompletionDate(ApproxDateTime value) {
+		this.targetCompletionDate = value;
+	}
 
-    /**
-     * Gets the value of the sequenceNumber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getSequenceNumber() {
-        return sequenceNumber;
-    }
+	/**
+	 * Gets the value of the sequenceNumber property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getSequenceNumber() {
+		return sequenceNumber;
+	}
 
-    /**
-     * Sets the value of the sequenceNumber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setSequenceNumber(Integer value) {
-        this.sequenceNumber = value;
-    }
+	/**
+	 * Sets the value of the sequenceNumber property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setSequenceNumber(Integer value) {
+		this.sequenceNumber = value;
+	}
 
-    /**
-     * Gets the value of the associatedTypeInfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AssociatedTypeInfo }
-     *     
-     */
-    public AssociatedTypeInfo getAssociatedTypeInfo() {
-        return associatedTypeInfo;
-    }
+	/**
+	 * Gets the value of the associatedTypeInfo property.
+	 * 
+	 * @return possible object is {@link AssociatedTypeInfo }
+	 * 
+	 */
+	public AssociatedTypeInfo getAssociatedTypeInfo() {
+		return associatedTypeInfo;
+	}
 
-    /**
-     * Sets the value of the associatedTypeInfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AssociatedTypeInfo }
-     *     
-     */
-    public void setAssociatedTypeInfo(AssociatedTypeInfo value) {
-        this.associatedTypeInfo = value;
-    }
+	/**
+	 * Sets the value of the associatedTypeInfo property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AssociatedTypeInfo }
+	 * 
+	 */
+	public void setAssociatedTypeInfo(AssociatedTypeInfo value) {
+		this.associatedTypeInfo = value;
+	}
 
-    /**
-     * Gets the value of the recurrence property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CarePlanTaskRecurrence }
-     *     
-     */
-    public CarePlanTaskRecurrence getRecurrence() {
-        return recurrence;
-    }
+	/**
+	 * Gets the value of the recurrence property.
+	 * 
+	 * @return possible object is {@link CarePlanTaskRecurrence }
+	 * 
+	 */
+	public CarePlanTaskRecurrence getRecurrence() {
+		return recurrence;
+	}
 
-    /**
-     * Sets the value of the recurrence property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CarePlanTaskRecurrence }
-     *     
-     */
-    public void setRecurrence(CarePlanTaskRecurrence value) {
-        this.recurrence = value;
-    }
+	/**
+	 * Sets the value of the recurrence property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CarePlanTaskRecurrence }
+	 * 
+	 */
+	public void setRecurrence(CarePlanTaskRecurrence value) {
+		this.recurrence = value;
+	}
 
-    /**
-     * Gets the value of the referenceId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getReferenceId() {
-        return referenceId;
-    }
+	/**
+	 * Gets the value of the referenceId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getReferenceId() {
+		return referenceId;
+	}
 
-    /**
-     * Sets the value of the referenceId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setReferenceId(String value) {
-        this.referenceId = value;
-    }
+	/**
+	 * Sets the value of the referenceId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setReferenceId(String value) {
+		this.referenceId = value;
+	}
 
 }

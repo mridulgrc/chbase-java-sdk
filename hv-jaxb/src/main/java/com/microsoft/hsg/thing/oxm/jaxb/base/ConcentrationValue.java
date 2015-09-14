@@ -5,13 +5,11 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for concentration-value complex type.
+ * <p>
+ * Java class for concentration-value complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="concentration-value">
@@ -54,53 +55,47 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "concentration-value", propOrder = {
-    "mmolPerL",
-    "display"
-})
+@XmlType(name = "concentration-value", propOrder = { "mmolPerL", "display" })
 public class ConcentrationValue {
 
-    protected double mmolPerL;
-    protected DisplayValue display;
+	protected double mmolPerL;
+	protected DisplayValue display;
 
-    /**
-     * Gets the value of the mmolPerL property.
-     * 
-     */
-    public double getMmolPerL() {
-        return mmolPerL;
-    }
+	/**
+	 * Gets the value of the mmolPerL property.
+	 * 
+	 */
+	public double getMmolPerL() {
+		return mmolPerL;
+	}
 
-    /**
-     * Sets the value of the mmolPerL property.
-     * 
-     */
-    public void setMmolPerL(double value) {
-        this.mmolPerL = value;
-    }
+	/**
+	 * Sets the value of the mmolPerL property.
+	 * 
+	 */
+	public void setMmolPerL(double value) {
+		this.mmolPerL = value;
+	}
 
-    /**
-     * Gets the value of the display property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public DisplayValue getDisplay() {
-        return display;
-    }
+	/**
+	 * Gets the value of the display property.
+	 * 
+	 * @return possible object is {@link DisplayValue }
+	 * 
+	 */
+	public DisplayValue getDisplay() {
+		return display;
+	}
 
-    /**
-     * Sets the value of the display property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public void setDisplay(DisplayValue value) {
-        this.display = value;
-    }
+	/**
+	 * Sets the value of the display property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DisplayValue }
+	 * 
+	 */
+	public void setDisplay(DisplayValue value) {
+		this.display = value;
+	}
 
 }

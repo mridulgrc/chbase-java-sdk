@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:16:00 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.searchvocabulary.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
 import com.microsoft.hsg.methods.jaxb.vocab.VocabularyKey;
-
 
 /**
  * 
@@ -32,9 +30,12 @@ import com.microsoft.hsg.methods.jaxb.vocab.VocabularyKey;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -51,69 +52,57 @@ import com.microsoft.hsg.methods.jaxb.vocab.VocabularyKey;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "SearchVocabulary",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.SearchVocabulary")
+@JaxbRequest(methodName = "SearchVocabulary", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.SearchVocabulary")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "vocabularyKey",
-    "textSearchParameters"
-})
+@XmlType(name = "", propOrder = { "vocabularyKey", "textSearchParameters" })
 @XmlRootElement(name = "info")
 public class SearchVocabularyRequest {
 
-    @XmlElement(name = "vocabulary-key")
-    protected VocabularyKey vocabularyKey;
-    @XmlElement(name = "text-search-parameters", required = true)
-    protected VocabularySearchParams textSearchParameters;
+	@XmlElement(name = "vocabulary-key")
+	protected VocabularyKey vocabularyKey;
+	@XmlElement(name = "text-search-parameters", required = true)
+	protected VocabularySearchParams textSearchParameters;
 
-    /**
-     * Gets the value of the vocabularyKey property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VocabularyKey }
-     *     
-     */
-    public VocabularyKey getVocabularyKey() {
-        return vocabularyKey;
-    }
+	/**
+	 * Gets the value of the vocabularyKey property.
+	 * 
+	 * @return possible object is {@link VocabularyKey }
+	 * 
+	 */
+	public VocabularyKey getVocabularyKey() {
+		return vocabularyKey;
+	}
 
-    /**
-     * Sets the value of the vocabularyKey property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VocabularyKey }
-     *     
-     */
-    public void setVocabularyKey(VocabularyKey value) {
-        this.vocabularyKey = value;
-    }
+	/**
+	 * Sets the value of the vocabularyKey property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VocabularyKey }
+	 * 
+	 */
+	public void setVocabularyKey(VocabularyKey value) {
+		this.vocabularyKey = value;
+	}
 
-    /**
-     * Gets the value of the textSearchParameters property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VocabularySearchParams }
-     *     
-     */
-    public VocabularySearchParams getTextSearchParameters() {
-        return textSearchParameters;
-    }
+	/**
+	 * Gets the value of the textSearchParameters property.
+	 * 
+	 * @return possible object is {@link VocabularySearchParams }
+	 * 
+	 */
+	public VocabularySearchParams getTextSearchParameters() {
+		return textSearchParameters;
+	}
 
-    /**
-     * Sets the value of the textSearchParameters property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VocabularySearchParams }
-     *     
-     */
-    public void setTextSearchParameters(VocabularySearchParams value) {
-        this.textSearchParameters = value;
-    }
+	/**
+	 * Sets the value of the textSearchParameters property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link VocabularySearchParams }
+	 * 
+	 */
+	public void setTextSearchParameters(VocabularySearchParams value) {
+		this.textSearchParameters = value;
+	}
 
 }

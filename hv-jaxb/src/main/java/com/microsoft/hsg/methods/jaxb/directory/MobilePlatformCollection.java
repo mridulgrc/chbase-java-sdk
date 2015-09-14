@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import java.util.ArrayList;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for MobilePlatformCollection complex type.
+ * <p>
+ * Java class for MobilePlatformCollection complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="MobilePlatformCollection">
@@ -36,41 +37,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "MobilePlatformCollection", propOrder = {
-    "mobilePlatform"
-})
+@XmlType(name = "MobilePlatformCollection", propOrder = { "mobilePlatform" })
 public class MobilePlatformCollection {
 
-    @XmlElement(name = "mobile-platform")
-    protected List<MobilePlatform> mobilePlatform;
+	@XmlElement(name = "mobile-platform")
+	protected List<MobilePlatform> mobilePlatform;
 
-    /**
-     * Gets the value of the mobilePlatform property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the mobilePlatform property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getMobilePlatform().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link MobilePlatform }
-     * 
-     * 
-     */
-    public List<MobilePlatform> getMobilePlatform() {
-        if (mobilePlatform == null) {
-            mobilePlatform = new ArrayList<MobilePlatform>();
-        }
-        return this.mobilePlatform;
-    }
+	/**
+	 * Gets the value of the mobilePlatform property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the mobilePlatform property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getMobilePlatform().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link MobilePlatform }
+	 * 
+	 * 
+	 */
+	public List<MobilePlatform> getMobilePlatform() {
+		if (mobilePlatform == null) {
+			mobilePlatform = new ArrayList<MobilePlatform>();
+		}
+		return this.mobilePlatform;
+	}
 
 }

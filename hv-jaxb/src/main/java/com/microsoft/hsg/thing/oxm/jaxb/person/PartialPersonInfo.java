@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.person;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 import com.microsoft.hsg.thing.oxm.jaxb.types.AppSettings;
-
 
 /**
  * 
@@ -28,9 +26,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.AppSettings;
  * </pre>
  * 
  * 
- * <p>Java class for PartialPersonInfo complex type.
+ * <p>
+ * Java class for PartialPersonInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="PartialPersonInfo">
@@ -53,191 +54,166 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.AppSettings;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "PartialPersonInfo", propOrder = {
-    "personId",
-    "name",
-    "contactEmail",
-    "contactEmailValidated",
-    "contactValidationToken",
-    "dateCreated",
-    "appSettings"
-})
+@XmlType(name = "PartialPersonInfo", propOrder = { "personId", "name", "contactEmail", "contactEmailValidated",
+		"contactValidationToken", "dateCreated", "appSettings" })
 public class PartialPersonInfo {
 
-    @XmlElement(name = "person-id", required = true)
-    protected String personId;
-    @XmlElement(required = true)
-    protected String name;
-    @XmlElement(name = "contact-email", required = true)
-    protected String contactEmail;
-    @XmlElement(name = "contact-email-validated")
-    protected boolean contactEmailValidated;
-    @XmlElement(name = "contact-validation-token")
-    protected String contactValidationToken;
-    @XmlElement(name = "date-created", required = true)
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar dateCreated;
-    @XmlElement(name = "app-settings")
-    protected AppSettings appSettings;
+	@XmlElement(name = "person-id", required = true)
+	protected String personId;
+	@XmlElement(required = true)
+	protected String name;
+	@XmlElement(name = "contact-email", required = true)
+	protected String contactEmail;
+	@XmlElement(name = "contact-email-validated")
+	protected boolean contactEmailValidated;
+	@XmlElement(name = "contact-validation-token")
+	protected String contactValidationToken;
+	@XmlElement(name = "date-created", required = true)
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar dateCreated;
+	@XmlElement(name = "app-settings")
+	protected AppSettings appSettings;
 
-    /**
-     * Gets the value of the personId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPersonId() {
-        return personId;
-    }
+	/**
+	 * Gets the value of the personId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPersonId() {
+		return personId;
+	}
 
-    /**
-     * Sets the value of the personId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPersonId(String value) {
-        this.personId = value;
-    }
+	/**
+	 * Sets the value of the personId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPersonId(String value) {
+		this.personId = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the contactEmail property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getContactEmail() {
-        return contactEmail;
-    }
+	/**
+	 * Gets the value of the contactEmail property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getContactEmail() {
+		return contactEmail;
+	}
 
-    /**
-     * Sets the value of the contactEmail property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setContactEmail(String value) {
-        this.contactEmail = value;
-    }
+	/**
+	 * Sets the value of the contactEmail property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setContactEmail(String value) {
+		this.contactEmail = value;
+	}
 
-    /**
-     * Gets the value of the contactEmailValidated property.
-     * 
-     */
-    public boolean isContactEmailValidated() {
-        return contactEmailValidated;
-    }
+	/**
+	 * Gets the value of the contactEmailValidated property.
+	 * 
+	 */
+	public boolean isContactEmailValidated() {
+		return contactEmailValidated;
+	}
 
-    /**
-     * Sets the value of the contactEmailValidated property.
-     * 
-     */
-    public void setContactEmailValidated(boolean value) {
-        this.contactEmailValidated = value;
-    }
+	/**
+	 * Sets the value of the contactEmailValidated property.
+	 * 
+	 */
+	public void setContactEmailValidated(boolean value) {
+		this.contactEmailValidated = value;
+	}
 
-    /**
-     * Gets the value of the contactValidationToken property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getContactValidationToken() {
-        return contactValidationToken;
-    }
+	/**
+	 * Gets the value of the contactValidationToken property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getContactValidationToken() {
+		return contactValidationToken;
+	}
 
-    /**
-     * Sets the value of the contactValidationToken property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setContactValidationToken(String value) {
-        this.contactValidationToken = value;
-    }
+	/**
+	 * Sets the value of the contactValidationToken property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setContactValidationToken(String value) {
+		this.contactValidationToken = value;
+	}
 
-    /**
-     * Gets the value of the dateCreated property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDateCreated() {
-        return dateCreated;
-    }
+	/**
+	 * Gets the value of the dateCreated property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getDateCreated() {
+		return dateCreated;
+	}
 
-    /**
-     * Sets the value of the dateCreated property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDateCreated(XMLGregorianCalendar value) {
-        this.dateCreated = value;
-    }
+	/**
+	 * Sets the value of the dateCreated property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setDateCreated(XMLGregorianCalendar value) {
+		this.dateCreated = value;
+	}
 
-    /**
-     * Gets the value of the appSettings property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AppSettings }
-     *     
-     */
-    public AppSettings getAppSettings() {
-        return appSettings;
-    }
+	/**
+	 * Gets the value of the appSettings property.
+	 * 
+	 * @return possible object is {@link AppSettings }
+	 * 
+	 */
+	public AppSettings getAppSettings() {
+		return appSettings;
+	}
 
-    /**
-     * Sets the value of the appSettings property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AppSettings }
-     *     
-     */
-    public void setAppSettings(AppSettings value) {
-        this.appSettings = value;
-    }
+	/**
+	 * Sets the value of the appSettings property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AppSettings }
+	 * 
+	 */
+	public void setAppSettings(AppSettings value) {
+		this.appSettings = value;
+	}
 
 }

@@ -5,13 +5,11 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.dates;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -24,9 +22,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for approx-date-time complex type.
+ * <p>
+ * Java class for approx-date-time complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="approx-date-time">
@@ -44,87 +45,80 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "approx-date-time", propOrder = {
-    "structured",
-    "descriptive"
-})
+@XmlType(name = "approx-date-time", propOrder = { "structured", "descriptive" })
 public class ApproxDateTime {
 
-    protected StructuredApproxDate structured;
-    protected String descriptive;
-    
-    /**
-     * Instantiates a new approx date time.
-     */
-    public ApproxDateTime() {
-    }
-    
-    /**
-     * Instantiates a new approx date time.
-     * 
-     * @param descriptive the descriptive
-     */
-    public ApproxDateTime(String descriptive)
-    {
-    	this.descriptive = descriptive;
-    }
-    
-    /**
-     * Instantiates a new approx date time.
-     * 
-     * @param structured the structured
-     * @param descriptive the descriptive
-     */
-    public ApproxDateTime(StructuredApproxDate structured) {
-    	this.structured = structured;
-    }
+	protected StructuredApproxDate structured;
+	protected String descriptive;
 
-    /**
-     * Gets the value of the structured property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StructuredApproxDate }
-     *     
-     */
-    public StructuredApproxDate getStructured() {
-        return structured;
-    }
+	/**
+	 * Instantiates a new approx date time.
+	 */
+	public ApproxDateTime() {
+	}
 
-    /**
-     * Sets the value of the structured property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StructuredApproxDate }
-     *     
-     */
-    public void setStructured(StructuredApproxDate value) {
-        this.structured = value;
-    }
+	/**
+	 * Instantiates a new approx date time.
+	 * 
+	 * @param descriptive
+	 *            the descriptive
+	 */
+	public ApproxDateTime(String descriptive) {
+		this.descriptive = descriptive;
+	}
 
-    /**
-     * Gets the value of the descriptive property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescriptive() {
-        return descriptive;
-    }
+	/**
+	 * Instantiates a new approx date time.
+	 * 
+	 * @param structured
+	 *            the structured
+	 * @param descriptive
+	 *            the descriptive
+	 */
+	public ApproxDateTime(StructuredApproxDate structured) {
+		this.structured = structured;
+	}
 
-    /**
-     * Sets the value of the descriptive property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescriptive(String value) {
-        this.descriptive = value;
-    }
+	/**
+	 * Gets the value of the structured property.
+	 * 
+	 * @return possible object is {@link StructuredApproxDate }
+	 * 
+	 */
+	public StructuredApproxDate getStructured() {
+		return structured;
+	}
+
+	/**
+	 * Sets the value of the structured property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link StructuredApproxDate }
+	 * 
+	 */
+	public void setStructured(StructuredApproxDate value) {
+		this.structured = value;
+	}
+
+	/**
+	 * Gets the value of the descriptive property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescriptive() {
+		return descriptive;
+	}
+
+	/**
+	 * Sets the value of the descriptive property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescriptive(String value) {
+		this.descriptive = value;
+	}
 
 }

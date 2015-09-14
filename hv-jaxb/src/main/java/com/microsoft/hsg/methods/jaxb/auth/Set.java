@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import java.util.ArrayList;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.DateRange;
-
 
 /**
  * 
@@ -28,9 +26,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.DateRange;
  * </pre>
  * 
  * 
- * <p>Java class for Set complex type.
+ * <p>
+ * Java class for Set complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Set">
@@ -48,73 +49,71 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.DateRange;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Set", propOrder = {
-    "dateRange",
-    "typeId"
-})
+@XmlType(name = "Set", propOrder = { "dateRange", "typeId" })
 public class Set {
 
-    @XmlElement(name = "date-range")
-    protected List<DateRange> dateRange;
-    @XmlElement(name = "type-id")
-    protected List<String> typeId;
+	@XmlElement(name = "date-range")
+	protected List<DateRange> dateRange;
+	@XmlElement(name = "type-id")
+	protected List<String> typeId;
 
-    /**
-     * Gets the value of the dateRange property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the dateRange property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getDateRange().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link DateRange }
-     * 
-     * 
-     */
-    public List<DateRange> getDateRange() {
-        if (dateRange == null) {
-            dateRange = new ArrayList<DateRange>();
-        }
-        return this.dateRange;
-    }
+	/**
+	 * Gets the value of the dateRange property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the dateRange property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getDateRange().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link DateRange
+	 * }
+	 * 
+	 * 
+	 */
+	public List<DateRange> getDateRange() {
+		if (dateRange == null) {
+			dateRange = new ArrayList<DateRange>();
+		}
+		return this.dateRange;
+	}
 
-    /**
-     * Gets the value of the typeId property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the typeId property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTypeId().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getTypeId() {
-        if (typeId == null) {
-            typeId = new ArrayList<String>();
-        }
-        return this.typeId;
-    }
+	/**
+	 * Gets the value of the typeId property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the typeId property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getTypeId().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getTypeId() {
+		if (typeId == null) {
+			typeId = new ArrayList<String>();
+		}
+		return this.typeId;
+	}
 
 }

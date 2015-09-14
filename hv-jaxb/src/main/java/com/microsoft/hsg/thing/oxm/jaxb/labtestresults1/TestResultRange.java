@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:41:25 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.labtestresults1;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.DoubleRange;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.DoubleRange;
  * </pre>
  * 
  * 
- * <p>Java class for test-result-range complex type.
+ * <p>
+ * Java class for test-result-range complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="test-result-range">
@@ -45,63 +46,54 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.DoubleRange;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "test-result-range", propOrder = {
-    "type",
-    "range"
-})
+@XmlType(name = "test-result-range", propOrder = { "type", "range" })
 public class TestResultRange {
 
-    @XmlElement(required = true)
-    protected CodableValue type;
-    @XmlElement(required = true)
-    protected DoubleRange range;
+	@XmlElement(required = true)
+	protected CodableValue type;
+	@XmlElement(required = true)
+	protected DoubleRange range;
 
-    /**
-     * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getType() {
-        return type;
-    }
+	/**
+	 * Gets the value of the type property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getType() {
+		return type;
+	}
 
-    /**
-     * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setType(CodableValue value) {
-        this.type = value;
-    }
+	/**
+	 * Sets the value of the type property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setType(CodableValue value) {
+		this.type = value;
+	}
 
-    /**
-     * Gets the value of the range property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DoubleRange }
-     *     
-     */
-    public DoubleRange getRange() {
-        return range;
-    }
+	/**
+	 * Gets the value of the range property.
+	 * 
+	 * @return possible object is {@link DoubleRange }
+	 * 
+	 */
+	public DoubleRange getRange() {
+		return range;
+	}
 
-    /**
-     * Sets the value of the range property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DoubleRange }
-     *     
-     */
-    public void setRange(DoubleRange value) {
-        this.range = value;
-    }
+	/**
+	 * Sets the value of the range property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DoubleRange }
+	 * 
+	 */
+	public void setRange(DoubleRange value) {
+		this.range = value;
+	}
 
 }

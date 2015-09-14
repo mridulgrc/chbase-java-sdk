@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -36,64 +37,55 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "description",
-    "actor"
-})
+@XmlType(name = "", propOrder = { "description", "actor" })
 @XmlRootElement(name = "Location")
 public class Location {
 
-    @XmlElement(name = "Description")
-    protected CodedDescriptionType description;
-    @XmlElement(name = "Actor")
-    protected ActorReferenceType actor;
+	@XmlElement(name = "Description")
+	protected CodedDescriptionType description;
+	@XmlElement(name = "Actor")
+	protected ActorReferenceType actor;
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public CodedDescriptionType getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public CodedDescriptionType getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public void setDescription(CodedDescriptionType value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public void setDescription(CodedDescriptionType value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the actor property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ActorReferenceType }
-     *     
-     */
-    public ActorReferenceType getActor() {
-        return actor;
-    }
+	/**
+	 * Gets the value of the actor property.
+	 * 
+	 * @return possible object is {@link ActorReferenceType }
+	 * 
+	 */
+	public ActorReferenceType getActor() {
+		return actor;
+	}
 
-    /**
-     * Sets the value of the actor property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ActorReferenceType }
-     *     
-     */
-    public void setActor(ActorReferenceType value) {
-        this.actor = value;
-    }
+	/**
+	 * Sets the value of the actor property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ActorReferenceType }
+	 * 
+	 */
+	public void setActor(ActorReferenceType value) {
+		this.actor = value;
+	}
 
 }

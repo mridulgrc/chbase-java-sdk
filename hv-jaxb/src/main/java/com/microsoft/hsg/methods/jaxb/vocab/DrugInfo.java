@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocab;
 
 import java.util.ArrayList;
@@ -13,7 +12,6 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -26,9 +24,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for drug-info complex type.
+ * <p>
+ * Java class for drug-info complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="drug-info">
@@ -46,66 +47,61 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "drug-info", propOrder = {
-    "strength",
-    "routes"
-})
+@XmlType(name = "drug-info", propOrder = { "strength", "routes" })
 public class DrugInfo {
 
-    protected List<MedicationStrength> strength;
-    protected MedicationRoutes routes;
+	protected List<MedicationStrength> strength;
+	protected MedicationRoutes routes;
 
-    /**
-     * Gets the value of the strength property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the strength property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getStrength().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link MedicationStrength }
-     * 
-     * 
-     */
-    public List<MedicationStrength> getStrength() {
-        if (strength == null) {
-            strength = new ArrayList<MedicationStrength>();
-        }
-        return this.strength;
-    }
+	/**
+	 * Gets the value of the strength property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the strength property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getStrength().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link MedicationStrength }
+	 * 
+	 * 
+	 */
+	public List<MedicationStrength> getStrength() {
+		if (strength == null) {
+			strength = new ArrayList<MedicationStrength>();
+		}
+		return this.strength;
+	}
 
-    /**
-     * Gets the value of the routes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link MedicationRoutes }
-     *     
-     */
-    public MedicationRoutes getRoutes() {
-        return routes;
-    }
+	/**
+	 * Gets the value of the routes property.
+	 * 
+	 * @return possible object is {@link MedicationRoutes }
+	 * 
+	 */
+	public MedicationRoutes getRoutes() {
+		return routes;
+	}
 
-    /**
-     * Sets the value of the routes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link MedicationRoutes }
-     *     
-     */
-    public void setRoutes(MedicationRoutes value) {
-        this.routes = value;
-    }
+	/**
+	 * Sets the value of the routes property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link MedicationRoutes }
+	 * 
+	 */
+	public void setRoutes(MedicationRoutes value) {
+		this.routes = value;
+	}
 
 }

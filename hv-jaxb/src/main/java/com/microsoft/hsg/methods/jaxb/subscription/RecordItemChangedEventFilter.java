@@ -5,14 +5,12 @@
 // Generated on: 2011.03.01 at 07:55:07 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.subscription;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -23,9 +21,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for RecordItemChangedEventFilter complex type.
+ * <p>
+ * Java class for RecordItemChangedEventFilter complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="RecordItemChangedEventFilter">
@@ -42,36 +43,31 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RecordItemChangedEventFilter", propOrder = {
-    "typeIds"
-})
+@XmlType(name = "RecordItemChangedEventFilter", propOrder = { "typeIds" })
 public class RecordItemChangedEventFilter {
 
-    @XmlElement(name = "type-ids", required = true)
-    protected TypeIds typeIds;
+	@XmlElement(name = "type-ids", required = true)
+	protected TypeIds typeIds;
 
-    /**
-     * Gets the value of the typeIds property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TypeIds }
-     *     
-     */
-    public TypeIds getTypeIds() {
-        return typeIds;
-    }
+	/**
+	 * Gets the value of the typeIds property.
+	 * 
+	 * @return possible object is {@link TypeIds }
+	 * 
+	 */
+	public TypeIds getTypeIds() {
+		return typeIds;
+	}
 
-    /**
-     * Sets the value of the typeIds property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TypeIds }
-     *     
-     */
-    public void setTypeIds(TypeIds value) {
-        this.typeIds = value;
-    }
+	/**
+	 * Sets the value of the typeIds property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link TypeIds }
+	 * 
+	 */
+	public void setTypeIds(TypeIds value) {
+		this.typeIds = value;
+	}
 
 }

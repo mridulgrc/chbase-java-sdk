@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.math.BigInteger;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for PositionType complex type.
+ * <p>
+ * Java class for PositionType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="PositionType">
@@ -36,65 +37,54 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "PositionType", propOrder = {
-    "positionSequencePosition",
-    "multiplePositionModifier"
-})
-public class PositionType
-    extends CodedDescriptionType
-{
+@XmlType(name = "PositionType", propOrder = { "positionSequencePosition", "multiplePositionModifier" })
+public class PositionType extends CodedDescriptionType {
 
-    @XmlElement(name = "PositionSequencePosition")
-    protected BigInteger positionSequencePosition;
-    @XmlElement(name = "MultiplePositionModifier")
-    protected CodedDescriptionType multiplePositionModifier;
+	@XmlElement(name = "PositionSequencePosition")
+	protected BigInteger positionSequencePosition;
+	@XmlElement(name = "MultiplePositionModifier")
+	protected CodedDescriptionType multiplePositionModifier;
 
-    /**
-     * Gets the value of the positionSequencePosition property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getPositionSequencePosition() {
-        return positionSequencePosition;
-    }
+	/**
+	 * Gets the value of the positionSequencePosition property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getPositionSequencePosition() {
+		return positionSequencePosition;
+	}
 
-    /**
-     * Sets the value of the positionSequencePosition property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setPositionSequencePosition(BigInteger value) {
-        this.positionSequencePosition = value;
-    }
+	/**
+	 * Sets the value of the positionSequencePosition property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setPositionSequencePosition(BigInteger value) {
+		this.positionSequencePosition = value;
+	}
 
-    /**
-     * Gets the value of the multiplePositionModifier property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public CodedDescriptionType getMultiplePositionModifier() {
-        return multiplePositionModifier;
-    }
+	/**
+	 * Gets the value of the multiplePositionModifier property.
+	 * 
+	 * @return possible object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public CodedDescriptionType getMultiplePositionModifier() {
+		return multiplePositionModifier;
+	}
 
-    /**
-     * Sets the value of the multiplePositionModifier property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public void setMultiplePositionModifier(CodedDescriptionType value) {
-        this.multiplePositionModifier = value;
-    }
+	/**
+	 * Sets the value of the multiplePositionModifier property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public void setMultiplePositionModifier(CodedDescriptionType value) {
+		this.multiplePositionModifier = value;
+	}
 
 }

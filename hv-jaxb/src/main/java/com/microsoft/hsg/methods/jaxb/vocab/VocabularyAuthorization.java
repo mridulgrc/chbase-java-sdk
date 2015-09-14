@@ -5,14 +5,12 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.vocab;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -24,9 +22,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for VocabularyAuthorization complex type.
+ * <p>
+ * Java class for VocabularyAuthorization complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="VocabularyAuthorization">
@@ -44,62 +45,53 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "VocabularyAuthorization", propOrder = {
-    "family",
-    "name"
-})
+@XmlType(name = "VocabularyAuthorization", propOrder = { "family", "name" })
 public class VocabularyAuthorization {
 
-    @XmlElement(required = true)
-    protected String family;
-    protected String name;
+	@XmlElement(required = true)
+	protected String family;
+	protected String name;
 
-    /**
-     * Gets the value of the family property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFamily() {
-        return family;
-    }
+	/**
+	 * Gets the value of the family property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getFamily() {
+		return family;
+	}
 
-    /**
-     * Sets the value of the family property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFamily(String value) {
-        this.family = value;
-    }
+	/**
+	 * Sets the value of the family property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setFamily(String value) {
+		this.family = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
 }

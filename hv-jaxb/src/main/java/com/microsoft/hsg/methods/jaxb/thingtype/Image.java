@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.thingtype;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -21,9 +19,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Image complex type.
+ * <p>
+ * Java class for Image complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Image">
@@ -42,90 +43,77 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Image", propOrder = {
-    "imageId",
-    "mimeType",
-    "fileExtension"
-})
+@XmlType(name = "Image", propOrder = { "imageId", "mimeType", "fileExtension" })
 public class Image {
 
-    @XmlElement(name = "image-id", required = true)
-    protected String imageId;
-    @XmlElement(name = "mime-type", required = true)
-    protected String mimeType;
-    @XmlElement(name = "file-extension")
-    protected String fileExtension;
+	@XmlElement(name = "image-id", required = true)
+	protected String imageId;
+	@XmlElement(name = "mime-type", required = true)
+	protected String mimeType;
+	@XmlElement(name = "file-extension")
+	protected String fileExtension;
 
-    /**
-     * Gets the value of the imageId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getImageId() {
-        return imageId;
-    }
+	/**
+	 * Gets the value of the imageId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getImageId() {
+		return imageId;
+	}
 
-    /**
-     * Sets the value of the imageId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setImageId(String value) {
-        this.imageId = value;
-    }
+	/**
+	 * Sets the value of the imageId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setImageId(String value) {
+		this.imageId = value;
+	}
 
-    /**
-     * Gets the value of the mimeType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getMimeType() {
-        return mimeType;
-    }
+	/**
+	 * Gets the value of the mimeType property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getMimeType() {
+		return mimeType;
+	}
 
-    /**
-     * Sets the value of the mimeType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setMimeType(String value) {
-        this.mimeType = value;
-    }
+	/**
+	 * Sets the value of the mimeType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setMimeType(String value) {
+		this.mimeType = value;
+	}
 
-    /**
-     * Gets the value of the fileExtension property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFileExtension() {
-        return fileExtension;
-    }
+	/**
+	 * Gets the value of the fileExtension property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getFileExtension() {
+		return fileExtension;
+	}
 
-    /**
-     * Sets the value of the fileExtension property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFileExtension(String value) {
-        this.fileExtension = value;
-    }
+	/**
+	 * Sets the value of the fileExtension property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setFileExtension(String value) {
+		this.fileExtension = value;
+	}
 
 }

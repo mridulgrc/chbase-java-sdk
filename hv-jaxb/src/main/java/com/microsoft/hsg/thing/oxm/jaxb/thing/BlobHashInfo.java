@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.thing;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
-
 
 /**
  * 
@@ -26,9 +24,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
  * </pre>
  * 
  * 
- * <p>Java class for BlobHashInfo complex type.
+ * <p>
+ * Java class for BlobHashInfo complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="BlobHashInfo">
@@ -47,89 +48,76 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "BlobHashInfo", propOrder = {
-    "algorithm",
-    "params",
-    "hash"
-})
+@XmlType(name = "BlobHashInfo", propOrder = { "algorithm", "params", "hash" })
 public class BlobHashInfo {
 
-    @XmlElement(required = true)
-    protected String algorithm;
-    protected BlobHashAlgorithmParameters params;
-    @XmlElement(required = true)
-    protected String hash;
+	@XmlElement(required = true)
+	protected String algorithm;
+	protected BlobHashAlgorithmParameters params;
+	@XmlElement(required = true)
+	protected String hash;
 
-    /**
-     * Gets the value of the algorithm property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAlgorithm() {
-        return algorithm;
-    }
+	/**
+	 * Gets the value of the algorithm property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAlgorithm() {
+		return algorithm;
+	}
 
-    /**
-     * Sets the value of the algorithm property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAlgorithm(String value) {
-        this.algorithm = value;
-    }
+	/**
+	 * Sets the value of the algorithm property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAlgorithm(String value) {
+		this.algorithm = value;
+	}
 
-    /**
-     * Gets the value of the params property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BlobHashAlgorithmParameters }
-     *     
-     */
-    public BlobHashAlgorithmParameters getParams() {
-        return params;
-    }
+	/**
+	 * Gets the value of the params property.
+	 * 
+	 * @return possible object is {@link BlobHashAlgorithmParameters }
+	 * 
+	 */
+	public BlobHashAlgorithmParameters getParams() {
+		return params;
+	}
 
-    /**
-     * Sets the value of the params property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BlobHashAlgorithmParameters }
-     *     
-     */
-    public void setParams(BlobHashAlgorithmParameters value) {
-        this.params = value;
-    }
+	/**
+	 * Sets the value of the params property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BlobHashAlgorithmParameters }
+	 * 
+	 */
+	public void setParams(BlobHashAlgorithmParameters value) {
+		this.params = value;
+	}
 
-    /**
-     * Gets the value of the hash property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getHash() {
-        return hash;
-    }
+	/**
+	 * Gets the value of the hash property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getHash() {
+		return hash;
+	}
 
-    /**
-     * Sets the value of the hash property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setHash(String value) {
-        this.hash = value;
-    }
+	/**
+	 * Sets the value of the hash property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setHash(String value) {
+		this.hash = value;
+	}
 
 }

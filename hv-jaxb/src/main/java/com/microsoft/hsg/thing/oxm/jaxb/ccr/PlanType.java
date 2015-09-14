@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.util.ArrayList;
@@ -15,11 +14,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for PlanType complex type.
+ * <p>
+ * Java class for PlanType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="PlanType">
@@ -36,43 +37,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "PlanType", propOrder = {
-    "orderRequest"
-})
-public class PlanType
-    extends CCRCodedDataObjectType
-{
+@XmlType(name = "PlanType", propOrder = { "orderRequest" })
+public class PlanType extends CCRCodedDataObjectType {
 
-    @XmlElement(name = "OrderRequest", required = true)
-    protected List<PlanOfCareType> orderRequest;
+	@XmlElement(name = "OrderRequest", required = true)
+	protected List<PlanOfCareType> orderRequest;
 
-    /**
-     * Gets the value of the orderRequest property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the orderRequest property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getOrderRequest().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link PlanOfCareType }
-     * 
-     * 
-     */
-    public List<PlanOfCareType> getOrderRequest() {
-        if (orderRequest == null) {
-            orderRequest = new ArrayList<PlanOfCareType>();
-        }
-        return this.orderRequest;
-    }
+	/**
+	 * Gets the value of the orderRequest property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the orderRequest property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getOrderRequest().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link PlanOfCareType }
+	 * 
+	 * 
+	 */
+	public List<PlanOfCareType> getOrderRequest() {
+		if (orderRequest == null) {
+			orderRequest = new ArrayList<PlanOfCareType>();
+		}
+		return this.orderRequest;
+	}
 
 }

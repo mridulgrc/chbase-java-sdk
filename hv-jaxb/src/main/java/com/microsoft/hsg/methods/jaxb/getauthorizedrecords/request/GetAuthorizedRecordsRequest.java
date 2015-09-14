@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:13:08 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getauthorizedrecords.request;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-
 
 /**
  * 
@@ -38,9 +36,12 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -56,47 +57,42 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "GetAuthorizedRecords",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.GetAuthorizedRecords")
+@JaxbRequest(methodName = "GetAuthorizedRecords", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.GetAuthorizedRecords")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "id"
-})
+@XmlType(name = "", propOrder = { "id" })
 @XmlRootElement(name = "info")
 public class GetAuthorizedRecordsRequest {
 
-    @XmlElement(required = true)
-    protected List<String> id;
+	@XmlElement(required = true)
+	protected List<String> id;
 
-    /**
-     * Gets the value of the id property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the id property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getId().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getId() {
-        if (id == null) {
-            id = new ArrayList<String>();
-        }
-        return this.id;
-    }
+	/**
+	 * Gets the value of the id property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the id property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getId().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getId() {
+		if (id == null) {
+			id = new ArrayList<String>();
+		}
+		return this.id;
+	}
 
 }

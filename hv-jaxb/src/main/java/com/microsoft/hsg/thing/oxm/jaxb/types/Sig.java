@@ -5,7 +5,6 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
-
 
 /**
  * 
@@ -34,9 +32,12 @@ import javax.xml.bind.annotation.XmlValue;
  * </pre>
  * 
  * 
- * <p>Java class for Sig complex type.
+ * <p>
+ * Java class for Sig complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Sig">
@@ -53,122 +54,108 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Sig", propOrder = {
-    "value"
-})
+@XmlType(name = "Sig", propOrder = { "value" })
 public class Sig {
 
-    @XmlValue
-    protected String value;
-    @XmlAttribute(name = "digestMethod", required = true)
-    protected String digestMethod;
-    @XmlAttribute(name = "sigMethod", required = true)
-    protected String sigMethod;
-    @XmlAttribute(name = "thumbprint", required = true)
-    protected String thumbprint;
+	@XmlValue
+	protected String value;
+	@XmlAttribute(name = "digestMethod", required = true)
+	protected String digestMethod;
+	@XmlAttribute(name = "sigMethod", required = true)
+	protected String sigMethod;
+	@XmlAttribute(name = "thumbprint", required = true)
+	protected String thumbprint;
 
-    /**
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
-     * </pre>
-     * 
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+	/**
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * <pre>
+	 * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:this="urn:com.microsoft.wc.types"/&gt;
+	 * </pre>
+	 * 
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the digestMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDigestMethod() {
-        return digestMethod;
-    }
+	/**
+	 * Gets the value of the digestMethod property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDigestMethod() {
+		return digestMethod;
+	}
 
-    /**
-     * Sets the value of the digestMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDigestMethod(String value) {
-        this.digestMethod = value;
-    }
+	/**
+	 * Sets the value of the digestMethod property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDigestMethod(String value) {
+		this.digestMethod = value;
+	}
 
-    /**
-     * Gets the value of the sigMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSigMethod() {
-        return sigMethod;
-    }
+	/**
+	 * Gets the value of the sigMethod property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSigMethod() {
+		return sigMethod;
+	}
 
-    /**
-     * Sets the value of the sigMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSigMethod(String value) {
-        this.sigMethod = value;
-    }
+	/**
+	 * Sets the value of the sigMethod property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSigMethod(String value) {
+		this.sigMethod = value;
+	}
 
-    /**
-     * Gets the value of the thumbprint property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getThumbprint() {
-        return thumbprint;
-    }
+	/**
+	 * Gets the value of the thumbprint property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getThumbprint() {
+		return thumbprint;
+	}
 
-    /**
-     * Sets the value of the thumbprint property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setThumbprint(String value) {
-        this.thumbprint = value;
-    }
+	/**
+	 * Sets the value of the thumbprint property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setThumbprint(String value) {
+		this.thumbprint = value;
+	}
 
 }

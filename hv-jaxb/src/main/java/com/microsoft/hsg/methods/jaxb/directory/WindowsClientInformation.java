@@ -5,14 +5,12 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.directory;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -23,9 +21,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for WindowsClientInformation complex type.
+ * <p>
+ * Java class for WindowsClientInformation complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="WindowsClientInformation">
@@ -47,171 +48,147 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "WindowsClientInformation", propOrder = {
-    "deviceClass",
-    "hardwareId",
-    "installedHardwareIds",
-    "autoDetectId",
-    "driverPackageArguments",
-    "driverPackages"
-})
+@XmlType(name = "WindowsClientInformation", propOrder = { "deviceClass", "hardwareId", "installedHardwareIds",
+		"autoDetectId", "driverPackageArguments", "driverPackages" })
 public class WindowsClientInformation {
 
-    @XmlElement(name = "device-class")
-    protected String deviceClass;
-    @XmlElement(name = "hardware-id", required = true)
-    protected String hardwareId;
-    @XmlElement(name = "installed-hardware-ids", required = true)
-    protected InstalledHardwareIds installedHardwareIds;
-    @XmlElement(name = "auto-detect-id")
-    protected String autoDetectId;
-    @XmlElement(name = "driver-package-arguments")
-    protected String driverPackageArguments;
-    @XmlElement(name = "driver-packages", required = true)
-    protected DriverPackages driverPackages;
+	@XmlElement(name = "device-class")
+	protected String deviceClass;
+	@XmlElement(name = "hardware-id", required = true)
+	protected String hardwareId;
+	@XmlElement(name = "installed-hardware-ids", required = true)
+	protected InstalledHardwareIds installedHardwareIds;
+	@XmlElement(name = "auto-detect-id")
+	protected String autoDetectId;
+	@XmlElement(name = "driver-package-arguments")
+	protected String driverPackageArguments;
+	@XmlElement(name = "driver-packages", required = true)
+	protected DriverPackages driverPackages;
 
-    /**
-     * Gets the value of the deviceClass property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDeviceClass() {
-        return deviceClass;
-    }
+	/**
+	 * Gets the value of the deviceClass property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDeviceClass() {
+		return deviceClass;
+	}
 
-    /**
-     * Sets the value of the deviceClass property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDeviceClass(String value) {
-        this.deviceClass = value;
-    }
+	/**
+	 * Sets the value of the deviceClass property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDeviceClass(String value) {
+		this.deviceClass = value;
+	}
 
-    /**
-     * Gets the value of the hardwareId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getHardwareId() {
-        return hardwareId;
-    }
+	/**
+	 * Gets the value of the hardwareId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getHardwareId() {
+		return hardwareId;
+	}
 
-    /**
-     * Sets the value of the hardwareId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setHardwareId(String value) {
-        this.hardwareId = value;
-    }
+	/**
+	 * Sets the value of the hardwareId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setHardwareId(String value) {
+		this.hardwareId = value;
+	}
 
-    /**
-     * Gets the value of the installedHardwareIds property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link InstalledHardwareIds }
-     *     
-     */
-    public InstalledHardwareIds getInstalledHardwareIds() {
-        return installedHardwareIds;
-    }
+	/**
+	 * Gets the value of the installedHardwareIds property.
+	 * 
+	 * @return possible object is {@link InstalledHardwareIds }
+	 * 
+	 */
+	public InstalledHardwareIds getInstalledHardwareIds() {
+		return installedHardwareIds;
+	}
 
-    /**
-     * Sets the value of the installedHardwareIds property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link InstalledHardwareIds }
-     *     
-     */
-    public void setInstalledHardwareIds(InstalledHardwareIds value) {
-        this.installedHardwareIds = value;
-    }
+	/**
+	 * Sets the value of the installedHardwareIds property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link InstalledHardwareIds }
+	 * 
+	 */
+	public void setInstalledHardwareIds(InstalledHardwareIds value) {
+		this.installedHardwareIds = value;
+	}
 
-    /**
-     * Gets the value of the autoDetectId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAutoDetectId() {
-        return autoDetectId;
-    }
+	/**
+	 * Gets the value of the autoDetectId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAutoDetectId() {
+		return autoDetectId;
+	}
 
-    /**
-     * Sets the value of the autoDetectId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAutoDetectId(String value) {
-        this.autoDetectId = value;
-    }
+	/**
+	 * Sets the value of the autoDetectId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAutoDetectId(String value) {
+		this.autoDetectId = value;
+	}
 
-    /**
-     * Gets the value of the driverPackageArguments property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDriverPackageArguments() {
-        return driverPackageArguments;
-    }
+	/**
+	 * Gets the value of the driverPackageArguments property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDriverPackageArguments() {
+		return driverPackageArguments;
+	}
 
-    /**
-     * Sets the value of the driverPackageArguments property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDriverPackageArguments(String value) {
-        this.driverPackageArguments = value;
-    }
+	/**
+	 * Sets the value of the driverPackageArguments property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDriverPackageArguments(String value) {
+		this.driverPackageArguments = value;
+	}
 
-    /**
-     * Gets the value of the driverPackages property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DriverPackages }
-     *     
-     */
-    public DriverPackages getDriverPackages() {
-        return driverPackages;
-    }
+	/**
+	 * Gets the value of the driverPackages property.
+	 * 
+	 * @return possible object is {@link DriverPackages }
+	 * 
+	 */
+	public DriverPackages getDriverPackages() {
+		return driverPackages;
+	}
 
-    /**
-     * Sets the value of the driverPackages property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DriverPackages }
-     *     
-     */
-    public void setDriverPackages(DriverPackages value) {
-        this.driverPackages = value;
-    }
+	/**
+	 * Sets the value of the driverPackages property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DriverPackages }
+	 * 
+	 */
+	public void setDriverPackages(DriverPackages value) {
+		this.driverPackages = value;
+	}
 
 }

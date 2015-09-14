@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for TextualPermissions complex type.
+ * <p>
+ * Java class for TextualPermissions complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="TextualPermissions">
@@ -45,63 +46,54 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TextualPermissions", propOrder = {
-    "textualPermissionsType",
-    "textualRule"
-})
+@XmlType(name = "TextualPermissions", propOrder = { "textualPermissionsType", "textualRule" })
 public class TextualPermissions {
 
-    @XmlElement(name = "textual-permissions-type", required = true)
-    protected TextualPermissionsType textualPermissionsType;
-    @XmlElement(name = "textual-rule", required = true)
-    protected TextualRule textualRule;
+	@XmlElement(name = "textual-permissions-type", required = true)
+	protected TextualPermissionsType textualPermissionsType;
+	@XmlElement(name = "textual-rule", required = true)
+	protected TextualRule textualRule;
 
-    /**
-     * Gets the value of the textualPermissionsType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TextualPermissionsType }
-     *     
-     */
-    public TextualPermissionsType getTextualPermissionsType() {
-        return textualPermissionsType;
-    }
+	/**
+	 * Gets the value of the textualPermissionsType property.
+	 * 
+	 * @return possible object is {@link TextualPermissionsType }
+	 * 
+	 */
+	public TextualPermissionsType getTextualPermissionsType() {
+		return textualPermissionsType;
+	}
 
-    /**
-     * Sets the value of the textualPermissionsType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TextualPermissionsType }
-     *     
-     */
-    public void setTextualPermissionsType(TextualPermissionsType value) {
-        this.textualPermissionsType = value;
-    }
+	/**
+	 * Sets the value of the textualPermissionsType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link TextualPermissionsType }
+	 * 
+	 */
+	public void setTextualPermissionsType(TextualPermissionsType value) {
+		this.textualPermissionsType = value;
+	}
 
-    /**
-     * Gets the value of the textualRule property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TextualRule }
-     *     
-     */
-    public TextualRule getTextualRule() {
-        return textualRule;
-    }
+	/**
+	 * Gets the value of the textualRule property.
+	 * 
+	 * @return possible object is {@link TextualRule }
+	 * 
+	 */
+	public TextualRule getTextualRule() {
+		return textualRule;
+	}
 
-    /**
-     * Sets the value of the textualRule property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TextualRule }
-     *     
-     */
-    public void setTextualRule(TextualRule value) {
-        this.textualRule = value;
-    }
+	/**
+	 * Sets the value of the textualRule property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link TextualRule }
+	 * 
+	 */
+	public void setTextualRule(TextualRule value) {
+		this.textualRule = value;
+	}
 
 }

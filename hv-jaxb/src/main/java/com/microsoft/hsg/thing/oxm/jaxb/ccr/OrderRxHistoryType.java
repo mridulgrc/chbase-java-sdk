@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.util.ArrayList;
@@ -17,11 +16,13 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlElementRefs;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for OrderRxHistoryType complex type.
+ * <p>
+ * Java class for OrderRxHistoryType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="OrderRxHistoryType">
@@ -51,81 +52,76 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "OrderRxHistoryType", propOrder = {
-    "rest"
-})
-public class OrderRxHistoryType
-    extends CCRCodedDataObjectType
-{
+@XmlType(name = "OrderRxHistoryType", propOrder = { "rest" })
+public class OrderRxHistoryType extends CCRCodedDataObjectType {
 
-    @XmlElementRefs({
-        @XmlElementRef(name = "FulfillmentMethod", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "Quantity", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "ProductName", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "SeriesNumber", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "BrandName", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "Concentration", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "Form", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "Provider", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "IDs", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "Location", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "Strength", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "Reaction", namespace = "urn:astm-org:CCR", type = Reaction.class),
-        @XmlElementRef(name = "LabelInstructions", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
-        @XmlElementRef(name = "Manufacturer", namespace = "urn:astm-org:CCR", type = JAXBElement.class)
-    })
-    protected List<Object> rest;
+	@XmlElementRefs({
+			@XmlElementRef(name = "FulfillmentMethod", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "Quantity", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "ProductName", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "SeriesNumber", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "BrandName", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "Concentration", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "Form", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "Provider", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "IDs", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "Location", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "Strength", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "Reaction", namespace = "urn:astm-org:CCR", type = Reaction.class),
+			@XmlElementRef(name = "LabelInstructions", namespace = "urn:astm-org:CCR", type = JAXBElement.class),
+			@XmlElementRef(name = "Manufacturer", namespace = "urn:astm-org:CCR", type = JAXBElement.class) })
+	protected List<Object> rest;
 
-    /**
-     * Gets the rest of the content model. 
-     * 
-     * <p>
-     * You are getting this "catch-all" property because of the following reason: 
-     * The field name "IDs" is used by two different parts of a schema. See: 
-     * line 1000 of file:/Users/robmay/dev/hvsdk.2/hvsdk/xsd/ccr.xsd
-     * line 265 of file:/Users/robmay/dev/hvsdk.2/hvsdk/xsd/ccr.xsd
-     * <p>
-     * To get rid of this property, apply a property customization to one 
-     * of both of the following declarations to change their names: 
-     * Gets the value of the rest property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the rest property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getRest().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link CodedDescriptionType }{@code >}
-     * {@link JAXBElement }{@code <}{@link MeasureType }{@code >}
-     * {@link JAXBElement }{@code <}{@link CodedDescriptionType }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link MeasureType }{@code >}
-     * {@link JAXBElement }{@code <}{@link CodedDescriptionType }{@code >}
-     * {@link JAXBElement }{@code <}{@link ActorReferenceType }{@code >}
-     * {@link JAXBElement }{@code <}{@link IDType }{@code >}
-     * {@link JAXBElement }{@code <}{@link ActorReferenceType }{@code >}
-     * {@link JAXBElement }{@code <}{@link MeasureType }{@code >}
-     * {@link Reaction }
-     * {@link JAXBElement }{@code <}{@link InstructionType }{@code >}
-     * {@link JAXBElement }{@code <}{@link ActorReferenceType }{@code >}
-     * 
-     * 
-     */
-    public List<Object> getRest() {
-        if (rest == null) {
-            rest = new ArrayList<Object>();
-        }
-        return this.rest;
-    }
+	/**
+	 * Gets the rest of the content model.
+	 * 
+	 * <p>
+	 * You are getting this "catch-all" property because of the following
+	 * reason: The field name "IDs" is used by two different parts of a schema.
+	 * See: line 1000 of file:/Users/robmay/dev/hvsdk.2/hvsdk/xsd/ccr.xsd line
+	 * 265 of file:/Users/robmay/dev/hvsdk.2/hvsdk/xsd/ccr.xsd
+	 * <p>
+	 * To get rid of this property, apply a property customization to one of
+	 * both of the following declarations to change their names: Gets the value
+	 * of the rest property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the rest property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getRest().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link JAXBElement }{@code <}{@link CodedDescriptionType }{@code >}
+	 * {@link JAXBElement }{@code <}{@link MeasureType }{@code >}
+	 * {@link JAXBElement }{@code <}{@link CodedDescriptionType }{@code >}
+	 * {@link JAXBElement }{@code <}{@link String }{@code >} {@link JAXBElement
+	 * }{@code <}{@link String }{@code >} {@link JAXBElement }{@code <}
+	 * {@link MeasureType }{@code >} {@link JAXBElement }{@code <}
+	 * {@link CodedDescriptionType }{@code >} {@link JAXBElement }{@code <}
+	 * {@link ActorReferenceType }{@code >} {@link JAXBElement }{@code <}
+	 * {@link IDType }{@code >} {@link JAXBElement }{@code <}
+	 * {@link ActorReferenceType }{@code >} {@link JAXBElement }{@code <}
+	 * {@link MeasureType }{@code >} {@link Reaction } {@link JAXBElement }
+	 * {@code <}{@link InstructionType }{@code >} {@link JAXBElement }{@code <}
+	 * {@link ActorReferenceType }{@code >}
+	 * 
+	 * 
+	 */
+	public List<Object> getRest() {
+		if (rest == null) {
+			rest = new ArrayList<Object>();
+		}
+		return this.rest;
+	}
 
 }

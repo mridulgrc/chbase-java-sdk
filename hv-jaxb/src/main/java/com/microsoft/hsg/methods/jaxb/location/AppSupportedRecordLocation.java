@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.location;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.types.CultureSpecificString;
 import com.microsoft.hsg.thing.oxm.jaxb.types.Location;
 
-
 /**
  * 
  * <pre>
@@ -27,9 +25,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Location;
  * </pre>
  * 
  * 
- * <p>Java class for AppSupportedRecordLocation complex type.
+ * <p>
+ * Java class for AppSupportedRecordLocation complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="AppSupportedRecordLocation">
@@ -51,121 +52,108 @@ import com.microsoft.hsg.thing.oxm.jaxb.types.Location;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AppSupportedRecordLocation", propOrder = {
-    "appId",
-    "location",
-    "allLocations",
-    "warningMsg"
-})
+@XmlType(name = "AppSupportedRecordLocation", propOrder = { "appId", "location", "allLocations", "warningMsg" })
 public class AppSupportedRecordLocation {
 
-    @XmlElement(name = "app-id", required = true)
-    protected String appId;
-    protected Location location;
-    @XmlElement(name = "all-locations")
-    protected Boolean allLocations;
-    @XmlElement(name = "warning-msg")
-    protected List<CultureSpecificString> warningMsg;
+	@XmlElement(name = "app-id", required = true)
+	protected String appId;
+	protected Location location;
+	@XmlElement(name = "all-locations")
+	protected Boolean allLocations;
+	@XmlElement(name = "warning-msg")
+	protected List<CultureSpecificString> warningMsg;
 
-    /**
-     * Gets the value of the appId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAppId() {
-        return appId;
-    }
+	/**
+	 * Gets the value of the appId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getAppId() {
+		return appId;
+	}
 
-    /**
-     * Sets the value of the appId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAppId(String value) {
-        this.appId = value;
-    }
+	/**
+	 * Sets the value of the appId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setAppId(String value) {
+		this.appId = value;
+	}
 
-    /**
-     * Gets the value of the location property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Location }
-     *     
-     */
-    public Location getLocation() {
-        return location;
-    }
+	/**
+	 * Gets the value of the location property.
+	 * 
+	 * @return possible object is {@link Location }
+	 * 
+	 */
+	public Location getLocation() {
+		return location;
+	}
 
-    /**
-     * Sets the value of the location property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Location }
-     *     
-     */
-    public void setLocation(Location value) {
-        this.location = value;
-    }
+	/**
+	 * Sets the value of the location property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Location }
+	 * 
+	 */
+	public void setLocation(Location value) {
+		this.location = value;
+	}
 
-    /**
-     * Gets the value of the allLocations property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isAllLocations() {
-        return allLocations;
-    }
+	/**
+	 * Gets the value of the allLocations property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isAllLocations() {
+		return allLocations;
+	}
 
-    /**
-     * Sets the value of the allLocations property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setAllLocations(Boolean value) {
-        this.allLocations = value;
-    }
+	/**
+	 * Sets the value of the allLocations property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setAllLocations(Boolean value) {
+		this.allLocations = value;
+	}
 
-    /**
-     * Gets the value of the warningMsg property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the warningMsg property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getWarningMsg().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CultureSpecificString }
-     * 
-     * 
-     */
-    public List<CultureSpecificString> getWarningMsg() {
-        if (warningMsg == null) {
-            warningMsg = new ArrayList<CultureSpecificString>();
-        }
-        return this.warningMsg;
-    }
+	/**
+	 * Gets the value of the warningMsg property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the warningMsg property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getWarningMsg().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CultureSpecificString }
+	 * 
+	 * 
+	 */
+	public List<CultureSpecificString> getWarningMsg() {
+		if (warningMsg == null) {
+			warningMsg = new ArrayList<CultureSpecificString>();
+		}
+		return this.warningMsg;
+	}
 
 }

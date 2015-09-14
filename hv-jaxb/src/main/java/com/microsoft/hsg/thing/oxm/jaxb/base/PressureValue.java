@@ -5,13 +5,11 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -35,9 +33,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for pressure-value complex type.
+ * <p>
+ * Java class for pressure-value complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="pressure-value">
@@ -55,53 +56,47 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "pressure-value", propOrder = {
-    "pascals",
-    "display"
-})
+@XmlType(name = "pressure-value", propOrder = { "pascals", "display" })
 public class PressureValue {
 
-    protected double pascals;
-    protected DisplayValue display;
+	protected double pascals;
+	protected DisplayValue display;
 
-    /**
-     * Gets the value of the pascals property.
-     * 
-     */
-    public double getPascals() {
-        return pascals;
-    }
+	/**
+	 * Gets the value of the pascals property.
+	 * 
+	 */
+	public double getPascals() {
+		return pascals;
+	}
 
-    /**
-     * Sets the value of the pascals property.
-     * 
-     */
-    public void setPascals(double value) {
-        this.pascals = value;
-    }
+	/**
+	 * Sets the value of the pascals property.
+	 * 
+	 */
+	public void setPascals(double value) {
+		this.pascals = value;
+	}
 
-    /**
-     * Gets the value of the display property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public DisplayValue getDisplay() {
-        return display;
-    }
+	/**
+	 * Gets the value of the display property.
+	 * 
+	 * @return possible object is {@link DisplayValue }
+	 * 
+	 */
+	public DisplayValue getDisplay() {
+		return display;
+	}
 
-    /**
-     * Sets the value of the display property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public void setDisplay(DisplayValue value) {
-        this.display = value;
-    }
+	/**
+	 * Sets the value of the display property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DisplayValue }
+	 * 
+	 */
+	public void setDisplay(DisplayValue value) {
+		this.display = value;
+	}
 
 }

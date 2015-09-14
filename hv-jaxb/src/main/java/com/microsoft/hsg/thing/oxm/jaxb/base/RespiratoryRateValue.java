@@ -5,14 +5,12 @@
 // Generated on: 2011.02.07 at 01:43:24 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -37,9 +35,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for respiratory-rate-value complex type.
+ * <p>
+ * Java class for respiratory-rate-value complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="respiratory-rate-value">
@@ -57,54 +58,48 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "respiratory-rate-value", propOrder = {
-    "breathsPerMinute",
-    "display"
-})
+@XmlType(name = "respiratory-rate-value", propOrder = { "breathsPerMinute", "display" })
 public class RespiratoryRateValue {
 
-    @XmlElement(name = "breaths-per-minute")
-    protected double breathsPerMinute;
-    protected DisplayValue display;
+	@XmlElement(name = "breaths-per-minute")
+	protected double breathsPerMinute;
+	protected DisplayValue display;
 
-    /**
-     * Gets the value of the breathsPerMinute property.
-     * 
-     */
-    public double getBreathsPerMinute() {
-        return breathsPerMinute;
-    }
+	/**
+	 * Gets the value of the breathsPerMinute property.
+	 * 
+	 */
+	public double getBreathsPerMinute() {
+		return breathsPerMinute;
+	}
 
-    /**
-     * Sets the value of the breathsPerMinute property.
-     * 
-     */
-    public void setBreathsPerMinute(double value) {
-        this.breathsPerMinute = value;
-    }
+	/**
+	 * Sets the value of the breathsPerMinute property.
+	 * 
+	 */
+	public void setBreathsPerMinute(double value) {
+		this.breathsPerMinute = value;
+	}
 
-    /**
-     * Gets the value of the display property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public DisplayValue getDisplay() {
-        return display;
-    }
+	/**
+	 * Gets the value of the display property.
+	 * 
+	 * @return possible object is {@link DisplayValue }
+	 * 
+	 */
+	public DisplayValue getDisplay() {
+		return display;
+	}
 
-    /**
-     * Sets the value of the display property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DisplayValue }
-     *     
-     */
-    public void setDisplay(DisplayValue value) {
-        this.display = value;
-    }
+	/**
+	 * Sets the value of the display property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DisplayValue }
+	 * 
+	 */
+	public void setDisplay(DisplayValue value) {
+		this.display = value;
+	}
 
 }

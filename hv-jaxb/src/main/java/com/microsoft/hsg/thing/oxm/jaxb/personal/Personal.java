@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:26 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.personal;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -17,7 +16,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Name;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
-
 
 /**
  * 
@@ -41,9 +39,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -73,383 +74,328 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "name",
-    "birthdate",
-    "bloodType",
-    "ethnicity",
-    "ssn",
-    "maritalStatus",
-    "employmentStatus",
-    "isDeceased",
-    "dateOfDeath",
-    "religion",
-    "isVeteran",
-    "highestEducationLevel",
-    "isDisabled",
-    "organDonor"
-})
+@XmlType(name = "", propOrder = { "name", "birthdate", "bloodType", "ethnicity", "ssn", "maritalStatus",
+		"employmentStatus", "isDeceased", "dateOfDeath", "religion", "isVeteran", "highestEducationLevel", "isDisabled",
+		"organDonor" })
 @XmlRootElement(name = "personal")
 public class Personal {
 
-    protected Name name;
-    protected DateTime birthdate;
-    @XmlElement(name = "blood-type")
-    protected CodableValue bloodType;
-    protected CodableValue ethnicity;
-    protected String ssn;
-    @XmlElement(name = "marital-status")
-    protected CodableValue maritalStatus;
-    @XmlElement(name = "employment-status")
-    protected String employmentStatus;
-    @XmlElement(name = "is-deceased")
-    protected Boolean isDeceased;
-    @XmlElement(name = "date-of-death")
-    protected ApproxDateTime dateOfDeath;
-    protected CodableValue religion;
-    @XmlElement(name = "is-veteran")
-    protected Boolean isVeteran;
-    @XmlElement(name = "highest-education-level")
-    protected CodableValue highestEducationLevel;
-    @XmlElement(name = "is-disabled")
-    protected Boolean isDisabled;
-    @XmlElement(name = "organ-donor")
-    protected String organDonor;
+	protected Name name;
+	protected DateTime birthdate;
+	@XmlElement(name = "blood-type")
+	protected CodableValue bloodType;
+	protected CodableValue ethnicity;
+	protected String ssn;
+	@XmlElement(name = "marital-status")
+	protected CodableValue maritalStatus;
+	@XmlElement(name = "employment-status")
+	protected String employmentStatus;
+	@XmlElement(name = "is-deceased")
+	protected Boolean isDeceased;
+	@XmlElement(name = "date-of-death")
+	protected ApproxDateTime dateOfDeath;
+	protected CodableValue religion;
+	@XmlElement(name = "is-veteran")
+	protected Boolean isVeteran;
+	@XmlElement(name = "highest-education-level")
+	protected CodableValue highestEducationLevel;
+	@XmlElement(name = "is-disabled")
+	protected Boolean isDisabled;
+	@XmlElement(name = "organ-donor")
+	protected String organDonor;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Name }
-     *     
-     */
-    public Name getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link Name }
+	 * 
+	 */
+	public Name getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Name }
-     *     
-     */
-    public void setName(Name value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Name }
+	 * 
+	 */
+	public void setName(Name value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the birthdate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DateTime }
-     *     
-     */
-    public DateTime getBirthdate() {
-        return birthdate;
-    }
+	/**
+	 * Gets the value of the birthdate property.
+	 * 
+	 * @return possible object is {@link DateTime }
+	 * 
+	 */
+	public DateTime getBirthdate() {
+		return birthdate;
+	}
 
-    /**
-     * Sets the value of the birthdate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DateTime }
-     *     
-     */
-    public void setBirthdate(DateTime value) {
-        this.birthdate = value;
-    }
+	/**
+	 * Sets the value of the birthdate property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link DateTime }
+	 * 
+	 */
+	public void setBirthdate(DateTime value) {
+		this.birthdate = value;
+	}
 
-    /**
-     * Gets the value of the bloodType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getBloodType() {
-        return bloodType;
-    }
+	/**
+	 * Gets the value of the bloodType property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getBloodType() {
+		return bloodType;
+	}
 
-    /**
-     * Sets the value of the bloodType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setBloodType(CodableValue value) {
-        this.bloodType = value;
-    }
+	/**
+	 * Sets the value of the bloodType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setBloodType(CodableValue value) {
+		this.bloodType = value;
+	}
 
-    /**
-     * Gets the value of the ethnicity property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getEthnicity() {
-        return ethnicity;
-    }
+	/**
+	 * Gets the value of the ethnicity property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getEthnicity() {
+		return ethnicity;
+	}
 
-    /**
-     * Sets the value of the ethnicity property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setEthnicity(CodableValue value) {
-        this.ethnicity = value;
-    }
+	/**
+	 * Sets the value of the ethnicity property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setEthnicity(CodableValue value) {
+		this.ethnicity = value;
+	}
 
-    /**
-     * Gets the value of the ssn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSsn() {
-        return ssn;
-    }
+	/**
+	 * Gets the value of the ssn property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getSsn() {
+		return ssn;
+	}
 
-    /**
-     * Sets the value of the ssn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSsn(String value) {
-        this.ssn = value;
-    }
+	/**
+	 * Sets the value of the ssn property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setSsn(String value) {
+		this.ssn = value;
+	}
 
-    /**
-     * Gets the value of the maritalStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getMaritalStatus() {
-        return maritalStatus;
-    }
+	/**
+	 * Gets the value of the maritalStatus property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getMaritalStatus() {
+		return maritalStatus;
+	}
 
-    /**
-     * Sets the value of the maritalStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setMaritalStatus(CodableValue value) {
-        this.maritalStatus = value;
-    }
+	/**
+	 * Sets the value of the maritalStatus property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setMaritalStatus(CodableValue value) {
+		this.maritalStatus = value;
+	}
 
-    /**
-     * Gets the value of the employmentStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getEmploymentStatus() {
-        return employmentStatus;
-    }
+	/**
+	 * Gets the value of the employmentStatus property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getEmploymentStatus() {
+		return employmentStatus;
+	}
 
-    /**
-     * Sets the value of the employmentStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setEmploymentStatus(String value) {
-        this.employmentStatus = value;
-    }
+	/**
+	 * Sets the value of the employmentStatus property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setEmploymentStatus(String value) {
+		this.employmentStatus = value;
+	}
 
-    /**
-     * Gets the value of the isDeceased property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsDeceased() {
-        return isDeceased;
-    }
+	/**
+	 * Gets the value of the isDeceased property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsDeceased() {
+		return isDeceased;
+	}
 
-    /**
-     * Sets the value of the isDeceased property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsDeceased(Boolean value) {
-        this.isDeceased = value;
-    }
+	/**
+	 * Sets the value of the isDeceased property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsDeceased(Boolean value) {
+		this.isDeceased = value;
+	}
 
-    /**
-     * Gets the value of the dateOfDeath property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getDateOfDeath() {
-        return dateOfDeath;
-    }
+	/**
+	 * Gets the value of the dateOfDeath property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getDateOfDeath() {
+		return dateOfDeath;
+	}
 
-    /**
-     * Sets the value of the dateOfDeath property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setDateOfDeath(ApproxDateTime value) {
-        this.dateOfDeath = value;
-    }
+	/**
+	 * Sets the value of the dateOfDeath property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setDateOfDeath(ApproxDateTime value) {
+		this.dateOfDeath = value;
+	}
 
-    /**
-     * Gets the value of the religion property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getReligion() {
-        return religion;
-    }
+	/**
+	 * Gets the value of the religion property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getReligion() {
+		return religion;
+	}
 
-    /**
-     * Sets the value of the religion property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setReligion(CodableValue value) {
-        this.religion = value;
-    }
+	/**
+	 * Sets the value of the religion property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setReligion(CodableValue value) {
+		this.religion = value;
+	}
 
-    /**
-     * Gets the value of the isVeteran property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsVeteran() {
-        return isVeteran;
-    }
+	/**
+	 * Gets the value of the isVeteran property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsVeteran() {
+		return isVeteran;
+	}
 
-    /**
-     * Sets the value of the isVeteran property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsVeteran(Boolean value) {
-        this.isVeteran = value;
-    }
+	/**
+	 * Sets the value of the isVeteran property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsVeteran(Boolean value) {
+		this.isVeteran = value;
+	}
 
-    /**
-     * Gets the value of the highestEducationLevel property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getHighestEducationLevel() {
-        return highestEducationLevel;
-    }
+	/**
+	 * Gets the value of the highestEducationLevel property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getHighestEducationLevel() {
+		return highestEducationLevel;
+	}
 
-    /**
-     * Sets the value of the highestEducationLevel property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setHighestEducationLevel(CodableValue value) {
-        this.highestEducationLevel = value;
-    }
+	/**
+	 * Sets the value of the highestEducationLevel property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setHighestEducationLevel(CodableValue value) {
+		this.highestEducationLevel = value;
+	}
 
-    /**
-     * Gets the value of the isDisabled property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsDisabled() {
-        return isDisabled;
-    }
+	/**
+	 * Gets the value of the isDisabled property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsDisabled() {
+		return isDisabled;
+	}
 
-    /**
-     * Sets the value of the isDisabled property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsDisabled(Boolean value) {
-        this.isDisabled = value;
-    }
+	/**
+	 * Sets the value of the isDisabled property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsDisabled(Boolean value) {
+		this.isDisabled = value;
+	}
 
-    /**
-     * Gets the value of the organDonor property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOrganDonor() {
-        return organDonor;
-    }
+	/**
+	 * Gets the value of the organDonor property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getOrganDonor() {
+		return organDonor;
+	}
 
-    /**
-     * Sets the value of the organDonor property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOrganDonor(String value) {
-        this.organDonor = value;
-    }
+	/**
+	 * Sets the value of the organDonor property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setOrganDonor(String value) {
+		this.organDonor = value;
+	}
 
 }

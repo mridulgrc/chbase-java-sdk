@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,19 +12,23 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     Defines a spoken language.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     Defines a spoken language.
+
  *                 &lt;/summary&gt;
  * </pre>
  * 
  * 
- * <p>Java class for language complex type.
+ * <p>
+ * Java class for language complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="language">
@@ -43,62 +46,53 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "language", propOrder = {
-    "language",
-    "isPrimary"
-})
+@XmlType(name = "language", propOrder = { "language", "isPrimary" })
 public class Language {
 
-    protected CodableValue language;
-    @XmlElement(name = "is-primary")
-    protected Boolean isPrimary;
+	protected CodableValue language;
+	@XmlElement(name = "is-primary")
+	protected Boolean isPrimary;
 
-    /**
-     * Gets the value of the language property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getLanguage() {
-        return language;
-    }
+	/**
+	 * Gets the value of the language property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getLanguage() {
+		return language;
+	}
 
-    /**
-     * Sets the value of the language property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setLanguage(CodableValue value) {
-        this.language = value;
-    }
+	/**
+	 * Sets the value of the language property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setLanguage(CodableValue value) {
+		this.language = value;
+	}
 
-    /**
-     * Gets the value of the isPrimary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isIsPrimary() {
-        return isPrimary;
-    }
+	/**
+	 * Gets the value of the isPrimary property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isIsPrimary() {
+		return isPrimary;
+	}
 
-    /**
-     * Sets the value of the isPrimary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setIsPrimary(Boolean value) {
-        this.isPrimary = value;
-    }
+	/**
+	 * Sets the value of the isPrimary property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setIsPrimary(Boolean value) {
+		this.isPrimary = value;
+	}
 
 }

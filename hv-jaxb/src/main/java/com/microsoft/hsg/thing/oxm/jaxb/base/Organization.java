@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.base;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -21,15 +19,20 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * <pre>
- * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
- *                     An entity such as a hospital, a pharmacy, or a doctor's office.
+ * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:t="urn:com.microsoft.wc.thing.types" xmlns:wct="urn:com.microsoft.wc.types"&gt;
+
+ *                     An entity such as a hospital, a pharmacy, or a doctor's office.
+
  *                 &lt;/remarks&gt;
  * </pre>
  * 
  * 
- * <p>Java class for Organization complex type.
+ * <p>
+ * Java class for Organization complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Organization">
@@ -49,114 +52,97 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Organization", propOrder = {
-    "name",
-    "contact",
-    "type",
-    "website"
-})
+@XmlType(name = "Organization", propOrder = { "name", "contact", "type", "website" })
 public class Organization {
 
-    @XmlElement(required = true)
-    protected String name;
-    protected Contact contact;
-    protected CodableValue type;
-    protected String website;
+	@XmlElement(required = true)
+	protected String name;
+	protected Contact contact;
+	protected CodableValue type;
+	protected String website;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the contact property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Contact }
-     *     
-     */
-    public Contact getContact() {
-        return contact;
-    }
+	/**
+	 * Gets the value of the contact property.
+	 * 
+	 * @return possible object is {@link Contact }
+	 * 
+	 */
+	public Contact getContact() {
+		return contact;
+	}
 
-    /**
-     * Sets the value of the contact property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Contact }
-     *     
-     */
-    public void setContact(Contact value) {
-        this.contact = value;
-    }
+	/**
+	 * Sets the value of the contact property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Contact }
+	 * 
+	 */
+	public void setContact(Contact value) {
+		this.contact = value;
+	}
 
-    /**
-     * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getType() {
-        return type;
-    }
+	/**
+	 * Gets the value of the type property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getType() {
+		return type;
+	}
 
-    /**
-     * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setType(CodableValue value) {
-        this.type = value;
-    }
+	/**
+	 * Sets the value of the type property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setType(CodableValue value) {
+		this.type = value;
+	}
 
-    /**
-     * Gets the value of the website property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getWebsite() {
-        return website;
-    }
+	/**
+	 * Gets the value of the website property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getWebsite() {
+		return website;
+	}
 
-    /**
-     * Sets the value of the website property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setWebsite(String value) {
-        this.website = value;
-    }
+	/**
+	 * Sets the value of the website property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setWebsite(String value) {
+		this.website = value;
+	}
 
 }

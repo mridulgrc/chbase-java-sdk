@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.math.BigInteger;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for InstructionType complex type.
+ * <p>
+ * Java class for InstructionType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="InstructionType">
@@ -36,64 +37,53 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "InstructionType", propOrder = {
-    "instructionSequencePosition",
-    "multipleInstructionModifier"
-})
-public class InstructionType
-    extends CodedDescriptionType
-{
+@XmlType(name = "InstructionType", propOrder = { "instructionSequencePosition", "multipleInstructionModifier" })
+public class InstructionType extends CodedDescriptionType {
 
-    protected BigInteger instructionSequencePosition;
-    @XmlElement(name = "MultipleInstructionModifier")
-    protected CodedDescriptionType multipleInstructionModifier;
+	protected BigInteger instructionSequencePosition;
+	@XmlElement(name = "MultipleInstructionModifier")
+	protected CodedDescriptionType multipleInstructionModifier;
 
-    /**
-     * Gets the value of the instructionSequencePosition property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getInstructionSequencePosition() {
-        return instructionSequencePosition;
-    }
+	/**
+	 * Gets the value of the instructionSequencePosition property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getInstructionSequencePosition() {
+		return instructionSequencePosition;
+	}
 
-    /**
-     * Sets the value of the instructionSequencePosition property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setInstructionSequencePosition(BigInteger value) {
-        this.instructionSequencePosition = value;
-    }
+	/**
+	 * Sets the value of the instructionSequencePosition property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setInstructionSequencePosition(BigInteger value) {
+		this.instructionSequencePosition = value;
+	}
 
-    /**
-     * Gets the value of the multipleInstructionModifier property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public CodedDescriptionType getMultipleInstructionModifier() {
-        return multipleInstructionModifier;
-    }
+	/**
+	 * Gets the value of the multipleInstructionModifier property.
+	 * 
+	 * @return possible object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public CodedDescriptionType getMultipleInstructionModifier() {
+		return multipleInstructionModifier;
+	}
 
-    /**
-     * Sets the value of the multipleInstructionModifier property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public void setMultipleInstructionModifier(CodedDescriptionType value) {
-        this.multipleInstructionModifier = value;
-    }
+	/**
+	 * Sets the value of the multipleInstructionModifier property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public void setMultipleInstructionModifier(CodedDescriptionType value) {
+		this.multipleInstructionModifier = value;
+	}
 
 }

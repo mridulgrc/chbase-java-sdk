@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.thingtype;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -21,9 +19,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Transform complex type.
+ * <p>
+ * Java class for Transform complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Transform">
@@ -44,144 +45,123 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Transform", propOrder = {
-    "transformId",
-    "transformTag",
-    "transformIncludes",
-    "locVocabs",
-    "locVars"
-})
+@XmlType(name = "Transform", propOrder = { "transformId", "transformTag", "transformIncludes", "locVocabs", "locVars" })
 public class Transform {
 
-    @XmlElement(name = "transform-id", required = true)
-    protected String transformId;
-    @XmlElement(name = "transform-tag", required = true)
-    protected String transformTag;
-    @XmlElement(name = "transform-includes")
-    protected String transformIncludes;
-    @XmlElement(name = "loc-vocabs")
-    protected String locVocabs;
-    @XmlElement(name = "loc-vars")
-    protected String locVars;
+	@XmlElement(name = "transform-id", required = true)
+	protected String transformId;
+	@XmlElement(name = "transform-tag", required = true)
+	protected String transformTag;
+	@XmlElement(name = "transform-includes")
+	protected String transformIncludes;
+	@XmlElement(name = "loc-vocabs")
+	protected String locVocabs;
+	@XmlElement(name = "loc-vars")
+	protected String locVars;
 
-    /**
-     * Gets the value of the transformId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTransformId() {
-        return transformId;
-    }
+	/**
+	 * Gets the value of the transformId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTransformId() {
+		return transformId;
+	}
 
-    /**
-     * Sets the value of the transformId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTransformId(String value) {
-        this.transformId = value;
-    }
+	/**
+	 * Sets the value of the transformId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTransformId(String value) {
+		this.transformId = value;
+	}
 
-    /**
-     * Gets the value of the transformTag property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTransformTag() {
-        return transformTag;
-    }
+	/**
+	 * Gets the value of the transformTag property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTransformTag() {
+		return transformTag;
+	}
 
-    /**
-     * Sets the value of the transformTag property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTransformTag(String value) {
-        this.transformTag = value;
-    }
+	/**
+	 * Sets the value of the transformTag property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTransformTag(String value) {
+		this.transformTag = value;
+	}
 
-    /**
-     * Gets the value of the transformIncludes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTransformIncludes() {
-        return transformIncludes;
-    }
+	/**
+	 * Gets the value of the transformIncludes property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTransformIncludes() {
+		return transformIncludes;
+	}
 
-    /**
-     * Sets the value of the transformIncludes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTransformIncludes(String value) {
-        this.transformIncludes = value;
-    }
+	/**
+	 * Sets the value of the transformIncludes property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTransformIncludes(String value) {
+		this.transformIncludes = value;
+	}
 
-    /**
-     * Gets the value of the locVocabs property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLocVocabs() {
-        return locVocabs;
-    }
+	/**
+	 * Gets the value of the locVocabs property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLocVocabs() {
+		return locVocabs;
+	}
 
-    /**
-     * Sets the value of the locVocabs property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLocVocabs(String value) {
-        this.locVocabs = value;
-    }
+	/**
+	 * Sets the value of the locVocabs property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLocVocabs(String value) {
+		this.locVocabs = value;
+	}
 
-    /**
-     * Gets the value of the locVars property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getLocVars() {
-        return locVars;
-    }
+	/**
+	 * Gets the value of the locVars property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getLocVars() {
+		return locVars;
+	}
 
-    /**
-     * Sets the value of the locVars property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setLocVars(String value) {
-        this.locVars = value;
-    }
+	/**
+	 * Sets the value of the locVars property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setLocVars(String value) {
+		this.locVars = value;
+	}
 
 }

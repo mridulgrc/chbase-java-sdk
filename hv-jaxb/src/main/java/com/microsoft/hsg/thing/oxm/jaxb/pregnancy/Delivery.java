@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:42:30 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.pregnancy;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Organization;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
 
-
 /**
  * 
  * <pre>
@@ -28,9 +26,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * </pre>
  * 
  * 
- * <p>Java class for Delivery complex type.
+ * <p>
+ * Java class for Delivery complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Delivery">
@@ -55,256 +56,228 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDateTime;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Delivery", propOrder = {
-    "location",
-    "timeOfDelivery",
-    "laborDuration",
-    "complications",
-    "anesthesia",
-    "deliveryMethod",
-    "outcome",
-    "baby",
-    "note"
-})
+@XmlType(name = "Delivery", propOrder = { "location", "timeOfDelivery", "laborDuration", "complications", "anesthesia",
+		"deliveryMethod", "outcome", "baby", "note" })
 public class Delivery {
 
-    protected Organization location;
-    @XmlElement(name = "time-of-delivery")
-    protected ApproxDateTime timeOfDelivery;
-    @XmlElement(name = "labor-duration")
-    protected Double laborDuration;
-    protected List<CodableValue> complications;
-    protected List<CodableValue> anesthesia;
-    @XmlElement(name = "delivery-method")
-    protected CodableValue deliveryMethod;
-    protected CodableValue outcome;
-    protected Baby baby;
-    protected String note;
+	protected Organization location;
+	@XmlElement(name = "time-of-delivery")
+	protected ApproxDateTime timeOfDelivery;
+	@XmlElement(name = "labor-duration")
+	protected Double laborDuration;
+	protected List<CodableValue> complications;
+	protected List<CodableValue> anesthesia;
+	@XmlElement(name = "delivery-method")
+	protected CodableValue deliveryMethod;
+	protected CodableValue outcome;
+	protected Baby baby;
+	protected String note;
 
-    /**
-     * Gets the value of the location property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Organization }
-     *     
-     */
-    public Organization getLocation() {
-        return location;
-    }
+	/**
+	 * Gets the value of the location property.
+	 * 
+	 * @return possible object is {@link Organization }
+	 * 
+	 */
+	public Organization getLocation() {
+		return location;
+	}
 
-    /**
-     * Sets the value of the location property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Organization }
-     *     
-     */
-    public void setLocation(Organization value) {
-        this.location = value;
-    }
+	/**
+	 * Sets the value of the location property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Organization }
+	 * 
+	 */
+	public void setLocation(Organization value) {
+		this.location = value;
+	}
 
-    /**
-     * Gets the value of the timeOfDelivery property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public ApproxDateTime getTimeOfDelivery() {
-        return timeOfDelivery;
-    }
+	/**
+	 * Gets the value of the timeOfDelivery property.
+	 * 
+	 * @return possible object is {@link ApproxDateTime }
+	 * 
+	 */
+	public ApproxDateTime getTimeOfDelivery() {
+		return timeOfDelivery;
+	}
 
-    /**
-     * Sets the value of the timeOfDelivery property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDateTime }
-     *     
-     */
-    public void setTimeOfDelivery(ApproxDateTime value) {
-        this.timeOfDelivery = value;
-    }
+	/**
+	 * Sets the value of the timeOfDelivery property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDateTime }
+	 * 
+	 */
+	public void setTimeOfDelivery(ApproxDateTime value) {
+		this.timeOfDelivery = value;
+	}
 
-    /**
-     * Gets the value of the laborDuration property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
-     */
-    public Double getLaborDuration() {
-        return laborDuration;
-    }
+	/**
+	 * Gets the value of the laborDuration property.
+	 * 
+	 * @return possible object is {@link Double }
+	 * 
+	 */
+	public Double getLaborDuration() {
+		return laborDuration;
+	}
 
-    /**
-     * Sets the value of the laborDuration property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
-     */
-    public void setLaborDuration(Double value) {
-        this.laborDuration = value;
-    }
+	/**
+	 * Sets the value of the laborDuration property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Double }
+	 * 
+	 */
+	public void setLaborDuration(Double value) {
+		this.laborDuration = value;
+	}
 
-    /**
-     * Gets the value of the complications property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the complications property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getComplications().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodableValue }
-     * 
-     * 
-     */
-    public List<CodableValue> getComplications() {
-        if (complications == null) {
-            complications = new ArrayList<CodableValue>();
-        }
-        return this.complications;
-    }
+	/**
+	 * Gets the value of the complications property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the complications property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getComplications().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodableValue }
+	 * 
+	 * 
+	 */
+	public List<CodableValue> getComplications() {
+		if (complications == null) {
+			complications = new ArrayList<CodableValue>();
+		}
+		return this.complications;
+	}
 
-    /**
-     * Gets the value of the anesthesia property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the anesthesia property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAnesthesia().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodableValue }
-     * 
-     * 
-     */
-    public List<CodableValue> getAnesthesia() {
-        if (anesthesia == null) {
-            anesthesia = new ArrayList<CodableValue>();
-        }
-        return this.anesthesia;
-    }
+	/**
+	 * Gets the value of the anesthesia property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the anesthesia property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getAnesthesia().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link CodableValue }
+	 * 
+	 * 
+	 */
+	public List<CodableValue> getAnesthesia() {
+		if (anesthesia == null) {
+			anesthesia = new ArrayList<CodableValue>();
+		}
+		return this.anesthesia;
+	}
 
-    /**
-     * Gets the value of the deliveryMethod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getDeliveryMethod() {
-        return deliveryMethod;
-    }
+	/**
+	 * Gets the value of the deliveryMethod property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getDeliveryMethod() {
+		return deliveryMethod;
+	}
 
-    /**
-     * Sets the value of the deliveryMethod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setDeliveryMethod(CodableValue value) {
-        this.deliveryMethod = value;
-    }
+	/**
+	 * Sets the value of the deliveryMethod property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setDeliveryMethod(CodableValue value) {
+		this.deliveryMethod = value;
+	}
 
-    /**
-     * Gets the value of the outcome property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getOutcome() {
-        return outcome;
-    }
+	/**
+	 * Gets the value of the outcome property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getOutcome() {
+		return outcome;
+	}
 
-    /**
-     * Sets the value of the outcome property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setOutcome(CodableValue value) {
-        this.outcome = value;
-    }
+	/**
+	 * Sets the value of the outcome property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setOutcome(CodableValue value) {
+		this.outcome = value;
+	}
 
-    /**
-     * Gets the value of the baby property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Baby }
-     *     
-     */
-    public Baby getBaby() {
-        return baby;
-    }
+	/**
+	 * Gets the value of the baby property.
+	 * 
+	 * @return possible object is {@link Baby }
+	 * 
+	 */
+	public Baby getBaby() {
+		return baby;
+	}
 
-    /**
-     * Sets the value of the baby property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Baby }
-     *     
-     */
-    public void setBaby(Baby value) {
-        this.baby = value;
-    }
+	/**
+	 * Sets the value of the baby property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Baby }
+	 * 
+	 */
+	public void setBaby(Baby value) {
+		this.baby = value;
+	}
 
-    /**
-     * Gets the value of the note property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNote() {
-        return note;
-    }
+	/**
+	 * Gets the value of the note property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getNote() {
+		return note;
+	}
 
-    /**
-     * Sets the value of the note property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNote(String value) {
-        this.note = value;
-    }
+	/**
+	 * Sets the value of the note property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setNote(String value) {
+		this.note = value;
+	}
 
 }

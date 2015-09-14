@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:13:20 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getpeopleforrecord.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,14 +15,9 @@ import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
 
-
-@JaxbRequest(
-		methodName = "GetPeopleForRecord",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.GetPeopleForRecord")
+@JaxbRequest(methodName = "GetPeopleForRecord", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.GetPeopleForRecord")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-})
+@XmlType(name = "", propOrder = {})
 @XmlRootElement(name = "info")
 public class GetPeopleForRecordRequest {
 

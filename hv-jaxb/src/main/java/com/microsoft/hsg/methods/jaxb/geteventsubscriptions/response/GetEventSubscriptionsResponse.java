@@ -5,7 +5,6 @@
 // Generated on: 2011.03.01 at 07:51:55 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.geteventsubscriptions.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.methods.jaxb.subscription.Subscriptions;
 
-
 /**
  * 
  * <pre>
@@ -23,9 +21,12 @@ import com.microsoft.hsg.methods.jaxb.subscription.Subscriptions;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -42,37 +43,32 @@ import com.microsoft.hsg.methods.jaxb.subscription.Subscriptions;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "subscriptions"
-})
+@XmlType(name = "", propOrder = { "subscriptions" })
 @XmlRootElement(name = "info")
 public class GetEventSubscriptionsResponse {
 
-    @XmlElement(required = true)
-    protected Subscriptions subscriptions;
+	@XmlElement(required = true)
+	protected Subscriptions subscriptions;
 
-    /**
-     * Gets the value of the subscriptions property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Subscriptions }
-     *     
-     */
-    public Subscriptions getSubscriptions() {
-        return subscriptions;
-    }
+	/**
+	 * Gets the value of the subscriptions property.
+	 * 
+	 * @return possible object is {@link Subscriptions }
+	 * 
+	 */
+	public Subscriptions getSubscriptions() {
+		return subscriptions;
+	}
 
-    /**
-     * Sets the value of the subscriptions property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Subscriptions }
-     *     
-     */
-    public void setSubscriptions(Subscriptions value) {
-        this.subscriptions = value;
-    }
+	/**
+	 * Sets the value of the subscriptions property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Subscriptions }
+	 * 
+	 */
+	public void setSubscriptions(Subscriptions value) {
+		this.subscriptions = value;
+	}
 
 }

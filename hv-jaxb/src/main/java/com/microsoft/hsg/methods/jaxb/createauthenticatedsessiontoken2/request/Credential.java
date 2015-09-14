@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:11:05 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.createauthenticatedsessiontoken2.request;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.methods.jaxb.auth.UserPassAuthSessionCred;
-
 
 /**
  * 
@@ -33,9 +31,12 @@ import com.microsoft.hsg.methods.jaxb.auth.UserPassAuthSessionCred;
  * </pre>
  * 
  * 
- * <p>Java class for Credential complex type.
+ * <p>
+ * Java class for Credential complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Credential">
@@ -53,61 +54,52 @@ import com.microsoft.hsg.methods.jaxb.auth.UserPassAuthSessionCred;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Credential", propOrder = {
-    "appserver2",
-    "userpassauthsession"
-})
+@XmlType(name = "Credential", propOrder = { "appserver2", "userpassauthsession" })
 public class Credential {
 
-    protected AppServerCred appserver2;
-    protected UserPassAuthSessionCred userpassauthsession;
+	protected AppServerCred appserver2;
+	protected UserPassAuthSessionCred userpassauthsession;
 
-    /**
-     * Gets the value of the appserver2 property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AppServerCred }
-     *     
-     */
-    public AppServerCred getAppserver2() {
-        return appserver2;
-    }
+	/**
+	 * Gets the value of the appserver2 property.
+	 * 
+	 * @return possible object is {@link AppServerCred }
+	 * 
+	 */
+	public AppServerCred getAppserver2() {
+		return appserver2;
+	}
 
-    /**
-     * Sets the value of the appserver2 property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AppServerCred }
-     *     
-     */
-    public void setAppserver2(AppServerCred value) {
-        this.appserver2 = value;
-    }
+	/**
+	 * Sets the value of the appserver2 property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AppServerCred }
+	 * 
+	 */
+	public void setAppserver2(AppServerCred value) {
+		this.appserver2 = value;
+	}
 
-    /**
-     * Gets the value of the userpassauthsession property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UserPassAuthSessionCred }
-     *     
-     */
-    public UserPassAuthSessionCred getUserpassauthsession() {
-        return userpassauthsession;
-    }
+	/**
+	 * Gets the value of the userpassauthsession property.
+	 * 
+	 * @return possible object is {@link UserPassAuthSessionCred }
+	 * 
+	 */
+	public UserPassAuthSessionCred getUserpassauthsession() {
+		return userpassauthsession;
+	}
 
-    /**
-     * Sets the value of the userpassauthsession property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UserPassAuthSessionCred }
-     *     
-     */
-    public void setUserpassauthsession(UserPassAuthSessionCred value) {
-        this.userpassauthsession = value;
-    }
+	/**
+	 * Sets the value of the userpassauthsession property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link UserPassAuthSessionCred }
+	 * 
+	 */
+	public void setUserpassauthsession(UserPassAuthSessionCred value) {
+		this.userpassauthsession = value;
+	}
 
 }

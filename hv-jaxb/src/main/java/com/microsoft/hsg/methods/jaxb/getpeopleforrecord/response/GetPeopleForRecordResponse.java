@@ -5,7 +5,6 @@
 // Generated on: 2015.09.11 at 04:22:28 PM IST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getpeopleforrecord.response;
 
 import java.util.ArrayList;
@@ -16,10 +15,9 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
  * 
- *                     
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wc-record="urn:com.microsoft.wc.record" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
  *                         The element that contains the method
@@ -27,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *                     &lt;/summary&gt;
  * </pre>
  * 
- *                     
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;remarks xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wc-record="urn:com.microsoft.wc.record" xmlns:wc-types="urn:com.microsoft.wc.types"&gt;
  *                         All responses contain the info element to return data
@@ -37,11 +35,14 @@ import javax.xml.bind.annotation.XmlType;
  *                     &lt;/remarks&gt;
  * </pre>
  * 
- *                 
  * 
- * <p>Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * Java class for anonymous complex type.
+ * 
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -59,74 +60,73 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "activePersonAuthorization",
-    "nonActiveAuthorization"
-})
+@XmlType(name = "", propOrder = { "activePersonAuthorization", "nonActiveAuthorization" })
 @XmlRootElement(name = "info")
 public class GetPeopleForRecordResponse {
 
-    @XmlElement(name = "active-person-authorization", required = true)
-    protected List<ActivePersonAuthorizationNoIds> activePersonAuthorization;
-    @XmlElement(name = "non-active-authorization")
-    protected List<NonActiveAuthorizationNoIds> nonActiveAuthorization;
+	@XmlElement(name = "active-person-authorization", required = true)
+	protected List<ActivePersonAuthorizationNoIds> activePersonAuthorization;
+	@XmlElement(name = "non-active-authorization")
+	protected List<NonActiveAuthorizationNoIds> nonActiveAuthorization;
 
-    /**
-     * Gets the value of the activePersonAuthorization property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the activePersonAuthorization property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getActivePersonAuthorization().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ActivePersonAuthorizationNoIds }
-     * 
-     * 
-     */
-    public List<ActivePersonAuthorizationNoIds> getActivePersonAuthorization() {
-        if (activePersonAuthorization == null) {
-            activePersonAuthorization = new ArrayList<ActivePersonAuthorizationNoIds>();
-        }
-        return this.activePersonAuthorization;
-    }
+	/**
+	 * Gets the value of the activePersonAuthorization property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the activePersonAuthorization property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getActivePersonAuthorization().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ActivePersonAuthorizationNoIds }
+	 * 
+	 * 
+	 */
+	public List<ActivePersonAuthorizationNoIds> getActivePersonAuthorization() {
+		if (activePersonAuthorization == null) {
+			activePersonAuthorization = new ArrayList<ActivePersonAuthorizationNoIds>();
+		}
+		return this.activePersonAuthorization;
+	}
 
-    /**
-     * Gets the value of the nonActiveAuthorization property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the nonActiveAuthorization property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getNonActiveAuthorization().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link NonActiveAuthorizationNoIds }
-     * 
-     * 
-     */
-    public List<NonActiveAuthorizationNoIds> getNonActiveAuthorization() {
-        if (nonActiveAuthorization == null) {
-            nonActiveAuthorization = new ArrayList<NonActiveAuthorizationNoIds>();
-        }
-        return this.nonActiveAuthorization;
-    }
+	/**
+	 * Gets the value of the nonActiveAuthorization property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the nonActiveAuthorization property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getNonActiveAuthorization().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link NonActiveAuthorizationNoIds }
+	 * 
+	 * 
+	 */
+	public List<NonActiveAuthorizationNoIds> getNonActiveAuthorization() {
+		if (nonActiveAuthorization == null) {
+			nonActiveAuthorization = new ArrayList<NonActiveAuthorizationNoIds>();
+		}
+		return this.nonActiveAuthorization;
+	}
 
 }

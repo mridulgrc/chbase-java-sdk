@@ -5,14 +5,12 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.person;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for PersonInfoPrivileged complex type.
+ * <p>
+ * Java class for PersonInfoPrivileged complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="PersonInfoPrivileged">
@@ -44,28 +45,26 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "PersonInfoPrivileged", propOrder = {
-    "isNewsletterSubscriber"
-})
+@XmlType(name = "PersonInfoPrivileged", propOrder = { "isNewsletterSubscriber" })
 public class PersonInfoPrivileged {
 
-    @XmlElement(name = "is-newsletter-subscriber")
-    protected boolean isNewsletterSubscriber;
+	@XmlElement(name = "is-newsletter-subscriber")
+	protected boolean isNewsletterSubscriber;
 
-    /**
-     * Gets the value of the isNewsletterSubscriber property.
-     * 
-     */
-    public boolean isIsNewsletterSubscriber() {
-        return isNewsletterSubscriber;
-    }
+	/**
+	 * Gets the value of the isNewsletterSubscriber property.
+	 * 
+	 */
+	public boolean isIsNewsletterSubscriber() {
+		return isNewsletterSubscriber;
+	}
 
-    /**
-     * Sets the value of the isNewsletterSubscriber property.
-     * 
-     */
-    public void setIsNewsletterSubscriber(boolean value) {
-        this.isNewsletterSubscriber = value;
-    }
+	/**
+	 * Sets the value of the isNewsletterSubscriber property.
+	 * 
+	 */
+	public void setIsNewsletterSubscriber(boolean value) {
+		this.isNewsletterSubscriber = value;
+	}
 
 }

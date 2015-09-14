@@ -5,7 +5,6 @@
 // Generated on: 2011.02.07 at 01:40:25 AM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.familyhistoryperson;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,7 +15,6 @@ import javax.xml.bind.annotation.XmlType;
 import com.microsoft.hsg.thing.oxm.jaxb.base.CodableValue;
 import com.microsoft.hsg.thing.oxm.jaxb.base.Person;
 import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDate;
-
 
 /**
  * 
@@ -35,9 +33,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDate;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -57,117 +58,100 @@ import com.microsoft.hsg.thing.oxm.jaxb.dates.ApproxDate;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "relativeName",
-    "relationship",
-    "dateOfBirth",
-    "dateOfDeath"
-})
+@XmlType(name = "", propOrder = { "relativeName", "relationship", "dateOfBirth", "dateOfDeath" })
 @XmlRootElement(name = "family-history-person")
 public class FamilyHistoryPerson {
 
-    @XmlElement(name = "relative-name", required = true)
-    protected Person relativeName;
-    protected CodableValue relationship;
-    @XmlElement(name = "date-of-birth")
-    protected ApproxDate dateOfBirth;
-    @XmlElement(name = "date-of-death")
-    protected ApproxDate dateOfDeath;
+	@XmlElement(name = "relative-name", required = true)
+	protected Person relativeName;
+	protected CodableValue relationship;
+	@XmlElement(name = "date-of-birth")
+	protected ApproxDate dateOfBirth;
+	@XmlElement(name = "date-of-death")
+	protected ApproxDate dateOfDeath;
 
-    /**
-     * Gets the value of the relativeName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Person }
-     *     
-     */
-    public Person getRelativeName() {
-        return relativeName;
-    }
+	/**
+	 * Gets the value of the relativeName property.
+	 * 
+	 * @return possible object is {@link Person }
+	 * 
+	 */
+	public Person getRelativeName() {
+		return relativeName;
+	}
 
-    /**
-     * Sets the value of the relativeName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Person }
-     *     
-     */
-    public void setRelativeName(Person value) {
-        this.relativeName = value;
-    }
+	/**
+	 * Sets the value of the relativeName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Person }
+	 * 
+	 */
+	public void setRelativeName(Person value) {
+		this.relativeName = value;
+	}
 
-    /**
-     * Gets the value of the relationship property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodableValue }
-     *     
-     */
-    public CodableValue getRelationship() {
-        return relationship;
-    }
+	/**
+	 * Gets the value of the relationship property.
+	 * 
+	 * @return possible object is {@link CodableValue }
+	 * 
+	 */
+	public CodableValue getRelationship() {
+		return relationship;
+	}
 
-    /**
-     * Sets the value of the relationship property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodableValue }
-     *     
-     */
-    public void setRelationship(CodableValue value) {
-        this.relationship = value;
-    }
+	/**
+	 * Sets the value of the relationship property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodableValue }
+	 * 
+	 */
+	public void setRelationship(CodableValue value) {
+		this.relationship = value;
+	}
 
-    /**
-     * Gets the value of the dateOfBirth property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public ApproxDate getDateOfBirth() {
-        return dateOfBirth;
-    }
+	/**
+	 * Gets the value of the dateOfBirth property.
+	 * 
+	 * @return possible object is {@link ApproxDate }
+	 * 
+	 */
+	public ApproxDate getDateOfBirth() {
+		return dateOfBirth;
+	}
 
-    /**
-     * Sets the value of the dateOfBirth property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public void setDateOfBirth(ApproxDate value) {
-        this.dateOfBirth = value;
-    }
+	/**
+	 * Sets the value of the dateOfBirth property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDate }
+	 * 
+	 */
+	public void setDateOfBirth(ApproxDate value) {
+		this.dateOfBirth = value;
+	}
 
-    /**
-     * Gets the value of the dateOfDeath property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public ApproxDate getDateOfDeath() {
-        return dateOfDeath;
-    }
+	/**
+	 * Gets the value of the dateOfDeath property.
+	 * 
+	 * @return possible object is {@link ApproxDate }
+	 * 
+	 */
+	public ApproxDate getDateOfDeath() {
+		return dateOfDeath;
+	}
 
-    /**
-     * Sets the value of the dateOfDeath property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ApproxDate }
-     *     
-     */
-    public void setDateOfDeath(ApproxDate value) {
-        this.dateOfDeath = value;
-    }
+	/**
+	 * Sets the value of the dateOfDeath property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link ApproxDate }
+	 * 
+	 */
+	public void setDateOfDeath(ApproxDate value) {
+		this.dateOfDeath = value;
+	}
 
 }

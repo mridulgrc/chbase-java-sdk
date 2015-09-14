@@ -5,13 +5,11 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.auth;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -24,9 +22,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Auth complex type.
+ * <p>
+ * Java class for Auth complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Auth">
@@ -43,35 +44,30 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Auth", propOrder = {
-    "rules"
-})
+@XmlType(name = "Auth", propOrder = { "rules" })
 public class Auth {
 
-    protected Rules rules;
+	protected Rules rules;
 
-    /**
-     * Gets the value of the rules property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Rules }
-     *     
-     */
-    public Rules getRules() {
-        return rules;
-    }
+	/**
+	 * Gets the value of the rules property.
+	 * 
+	 * @return possible object is {@link Rules }
+	 * 
+	 */
+	public Rules getRules() {
+		return rules;
+	}
 
-    /**
-     * Sets the value of the rules property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Rules }
-     *     
-     */
-    public void setRules(Rules value) {
-        this.rules = value;
-    }
+	/**
+	 * Sets the value of the rules property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Rules }
+	 * 
+	 */
+	public void setRules(Rules value) {
+		this.rules = value;
+	}
 
 }

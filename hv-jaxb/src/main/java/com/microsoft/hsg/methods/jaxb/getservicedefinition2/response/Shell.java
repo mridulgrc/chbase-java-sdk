@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:20:44 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getservicedefinition2.response;
 
 import java.util.ArrayList;
@@ -14,7 +13,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -25,9 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Shell complex type.
+ * <p>
+ * Java class for Shell complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Shell">
@@ -46,95 +47,86 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Shell", propOrder = {
-    "url",
-    "redirectUrl",
-    "redirectToken"
-})
+@XmlType(name = "Shell", propOrder = { "url", "redirectUrl", "redirectToken" })
 public class Shell {
 
-    @XmlElement(required = true)
-    protected String url;
-    @XmlElement(name = "redirect-url", required = true)
-    protected String redirectUrl;
-    @XmlElement(name = "redirect-token")
-    protected List<ShellRedirectToken> redirectToken;
+	@XmlElement(required = true)
+	protected String url;
+	@XmlElement(name = "redirect-url", required = true)
+	protected String redirectUrl;
+	@XmlElement(name = "redirect-token")
+	protected List<ShellRedirectToken> redirectToken;
 
-    /**
-     * Gets the value of the url property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUrl() {
-        return url;
-    }
+	/**
+	 * Gets the value of the url property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getUrl() {
+		return url;
+	}
 
-    /**
-     * Sets the value of the url property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUrl(String value) {
-        this.url = value;
-    }
+	/**
+	 * Sets the value of the url property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setUrl(String value) {
+		this.url = value;
+	}
 
-    /**
-     * Gets the value of the redirectUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRedirectUrl() {
-        return redirectUrl;
-    }
+	/**
+	 * Gets the value of the redirectUrl property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getRedirectUrl() {
+		return redirectUrl;
+	}
 
-    /**
-     * Sets the value of the redirectUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRedirectUrl(String value) {
-        this.redirectUrl = value;
-    }
+	/**
+	 * Sets the value of the redirectUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setRedirectUrl(String value) {
+		this.redirectUrl = value;
+	}
 
-    /**
-     * Gets the value of the redirectToken property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the redirectToken property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getRedirectToken().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ShellRedirectToken }
-     * 
-     * 
-     */
-    public List<ShellRedirectToken> getRedirectToken() {
-        if (redirectToken == null) {
-            redirectToken = new ArrayList<ShellRedirectToken>();
-        }
-        return this.redirectToken;
-    }
+	/**
+	 * Gets the value of the redirectToken property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the redirectToken property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getRedirectToken().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ShellRedirectToken }
+	 * 
+	 * 
+	 */
+	public List<ShellRedirectToken> getRedirectToken() {
+		if (redirectToken == null) {
+			redirectToken = new ArrayList<ShellRedirectToken>();
+		}
+		return this.redirectToken;
+	}
 
 }

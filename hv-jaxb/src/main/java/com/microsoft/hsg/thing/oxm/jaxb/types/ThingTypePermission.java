@@ -5,14 +5,12 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -29,9 +27,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for ThingTypePermission complex type.
+ * <p>
+ * Java class for ThingTypePermission complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ThingTypePermission">
@@ -50,90 +51,78 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ThingTypePermission", propOrder = {
-    "thingTypeId",
-    "onlineAccessPermissions",
-    "offlineAccessPermissions"
-})
+@XmlType(name = "ThingTypePermission", propOrder = { "thingTypeId", "onlineAccessPermissions",
+		"offlineAccessPermissions" })
 public class ThingTypePermission {
 
-    @XmlElement(name = "thing-type-id", required = true)
-    protected String thingTypeId;
-    @XmlElement(name = "online-access-permissions")
-    protected Permissions onlineAccessPermissions;
-    @XmlElement(name = "offline-access-permissions")
-    protected Permissions offlineAccessPermissions;
+	@XmlElement(name = "thing-type-id", required = true)
+	protected String thingTypeId;
+	@XmlElement(name = "online-access-permissions")
+	protected Permissions onlineAccessPermissions;
+	@XmlElement(name = "offline-access-permissions")
+	protected Permissions offlineAccessPermissions;
 
-    /**
-     * Gets the value of the thingTypeId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getThingTypeId() {
-        return thingTypeId;
-    }
+	/**
+	 * Gets the value of the thingTypeId property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getThingTypeId() {
+		return thingTypeId;
+	}
 
-    /**
-     * Sets the value of the thingTypeId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setThingTypeId(String value) {
-        this.thingTypeId = value;
-    }
+	/**
+	 * Sets the value of the thingTypeId property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setThingTypeId(String value) {
+		this.thingTypeId = value;
+	}
 
-    /**
-     * Gets the value of the onlineAccessPermissions property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Permissions }
-     *     
-     */
-    public Permissions getOnlineAccessPermissions() {
-        return onlineAccessPermissions;
-    }
+	/**
+	 * Gets the value of the onlineAccessPermissions property.
+	 * 
+	 * @return possible object is {@link Permissions }
+	 * 
+	 */
+	public Permissions getOnlineAccessPermissions() {
+		return onlineAccessPermissions;
+	}
 
-    /**
-     * Sets the value of the onlineAccessPermissions property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Permissions }
-     *     
-     */
-    public void setOnlineAccessPermissions(Permissions value) {
-        this.onlineAccessPermissions = value;
-    }
+	/**
+	 * Sets the value of the onlineAccessPermissions property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Permissions }
+	 * 
+	 */
+	public void setOnlineAccessPermissions(Permissions value) {
+		this.onlineAccessPermissions = value;
+	}
 
-    /**
-     * Gets the value of the offlineAccessPermissions property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Permissions }
-     *     
-     */
-    public Permissions getOfflineAccessPermissions() {
-        return offlineAccessPermissions;
-    }
+	/**
+	 * Gets the value of the offlineAccessPermissions property.
+	 * 
+	 * @return possible object is {@link Permissions }
+	 * 
+	 */
+	public Permissions getOfflineAccessPermissions() {
+		return offlineAccessPermissions;
+	}
 
-    /**
-     * Sets the value of the offlineAccessPermissions property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Permissions }
-     *     
-     */
-    public void setOfflineAccessPermissions(Permissions value) {
-        this.offlineAccessPermissions = value;
-    }
+	/**
+	 * Sets the value of the offlineAccessPermissions property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Permissions }
+	 * 
+	 */
+	public void setOfflineAccessPermissions(Permissions value) {
+		this.offlineAccessPermissions = value;
+	}
 
 }

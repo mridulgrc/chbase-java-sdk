@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.util.ArrayList;
@@ -16,11 +15,13 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -37,42 +38,41 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "procedure"
-})
+@XmlType(name = "", propOrder = { "procedure" })
 @XmlRootElement(name = "Procedures")
 public class Procedures {
 
-    @XmlElement(name = "Procedure", required = true)
-    protected List<ProcedureType> procedure;
+	@XmlElement(name = "Procedure", required = true)
+	protected List<ProcedureType> procedure;
 
-    /**
-     * Gets the value of the procedure property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the procedure property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getProcedure().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link ProcedureType }
-     * 
-     * 
-     */
-    public List<ProcedureType> getProcedure() {
-        if (procedure == null) {
-            procedure = new ArrayList<ProcedureType>();
-        }
-        return this.procedure;
-    }
+	/**
+	 * Gets the value of the procedure property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the procedure property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getProcedure().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list
+	 * {@link ProcedureType }
+	 * 
+	 * 
+	 */
+	public List<ProcedureType> getProcedure() {
+		if (procedure == null) {
+			procedure = new ArrayList<ProcedureType>();
+		}
+		return this.procedure;
+	}
 
 }

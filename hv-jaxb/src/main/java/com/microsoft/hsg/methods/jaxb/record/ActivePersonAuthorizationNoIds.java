@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.record;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 import com.microsoft.hsg.methods.jaxb.auth.AuthXml;
-
 
 /**
  * 
@@ -28,9 +26,12 @@ import com.microsoft.hsg.methods.jaxb.auth.AuthXml;
  * </pre>
  * 
  * 
- * <p>Java class for ActivePersonAuthorizationNoIds complex type.
+ * <p>
+ * Java class for ActivePersonAuthorizationNoIds complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="ActivePersonAuthorizationNoIds">
@@ -58,320 +59,279 @@ import com.microsoft.hsg.methods.jaxb.auth.AuthXml;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ActivePersonAuthorizationNoIds", propOrder = {
-    "name",
-    "recordCustodian",
-    "isGroup",
-    "contactEmail",
-    "contactEmailValidated",
-    "recordDisplayName",
-    "dateAuthExpires",
-    "authXml",
-    "relType",
-    "dateAuthCreated",
-    "dateAuthUpdated",
-    "canAccessAudit"
-})
+@XmlType(name = "ActivePersonAuthorizationNoIds", propOrder = { "name", "recordCustodian", "isGroup", "contactEmail",
+		"contactEmailValidated", "recordDisplayName", "dateAuthExpires", "authXml", "relType", "dateAuthCreated",
+		"dateAuthUpdated", "canAccessAudit" })
 public class ActivePersonAuthorizationNoIds {
 
-    @XmlElement(required = true)
-    protected String name;
-    @XmlElement(name = "record-custodian")
-    protected boolean recordCustodian;
-    @XmlElement(name = "is-group")
-    protected boolean isGroup;
-    @XmlElement(name = "contact-email", required = true)
-    protected String contactEmail;
-    @XmlElement(name = "contact-email-validated")
-    protected Boolean contactEmailValidated;
-    @XmlElement(name = "record-display-name")
-    protected String recordDisplayName;
-    @XmlElement(name = "date-auth-expires")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar dateAuthExpires;
-    @XmlElement(name = "auth-xml")
-    protected AuthXml authXml;
-    @XmlElement(name = "rel-type")
-    protected Integer relType;
-    @XmlElement(name = "date-auth-created")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar dateAuthCreated;
-    @XmlElement(name = "date-auth-updated")
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar dateAuthUpdated;
-    @XmlElement(name = "can-access-audit")
-    protected Boolean canAccessAudit;
+	@XmlElement(required = true)
+	protected String name;
+	@XmlElement(name = "record-custodian")
+	protected boolean recordCustodian;
+	@XmlElement(name = "is-group")
+	protected boolean isGroup;
+	@XmlElement(name = "contact-email", required = true)
+	protected String contactEmail;
+	@XmlElement(name = "contact-email-validated")
+	protected Boolean contactEmailValidated;
+	@XmlElement(name = "record-display-name")
+	protected String recordDisplayName;
+	@XmlElement(name = "date-auth-expires")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar dateAuthExpires;
+	@XmlElement(name = "auth-xml")
+	protected AuthXml authXml;
+	@XmlElement(name = "rel-type")
+	protected Integer relType;
+	@XmlElement(name = "date-auth-created")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar dateAuthCreated;
+	@XmlElement(name = "date-auth-updated")
+	@XmlSchemaType(name = "dateTime")
+	protected XMLGregorianCalendar dateAuthUpdated;
+	@XmlElement(name = "can-access-audit")
+	protected Boolean canAccessAudit;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the recordCustodian property.
-     * 
-     */
-    public boolean isRecordCustodian() {
-        return recordCustodian;
-    }
+	/**
+	 * Gets the value of the recordCustodian property.
+	 * 
+	 */
+	public boolean isRecordCustodian() {
+		return recordCustodian;
+	}
 
-    /**
-     * Sets the value of the recordCustodian property.
-     * 
-     */
-    public void setRecordCustodian(boolean value) {
-        this.recordCustodian = value;
-    }
+	/**
+	 * Sets the value of the recordCustodian property.
+	 * 
+	 */
+	public void setRecordCustodian(boolean value) {
+		this.recordCustodian = value;
+	}
 
-    /**
-     * Gets the value of the isGroup property.
-     * 
-     */
-    public boolean isIsGroup() {
-        return isGroup;
-    }
+	/**
+	 * Gets the value of the isGroup property.
+	 * 
+	 */
+	public boolean isIsGroup() {
+		return isGroup;
+	}
 
-    /**
-     * Sets the value of the isGroup property.
-     * 
-     */
-    public void setIsGroup(boolean value) {
-        this.isGroup = value;
-    }
+	/**
+	 * Sets the value of the isGroup property.
+	 * 
+	 */
+	public void setIsGroup(boolean value) {
+		this.isGroup = value;
+	}
 
-    /**
-     * Gets the value of the contactEmail property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getContactEmail() {
-        return contactEmail;
-    }
+	/**
+	 * Gets the value of the contactEmail property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getContactEmail() {
+		return contactEmail;
+	}
 
-    /**
-     * Sets the value of the contactEmail property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setContactEmail(String value) {
-        this.contactEmail = value;
-    }
+	/**
+	 * Sets the value of the contactEmail property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setContactEmail(String value) {
+		this.contactEmail = value;
+	}
 
-    /**
-     * Gets the value of the contactEmailValidated property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isContactEmailValidated() {
-        return contactEmailValidated;
-    }
+	/**
+	 * Gets the value of the contactEmailValidated property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isContactEmailValidated() {
+		return contactEmailValidated;
+	}
 
-    /**
-     * Sets the value of the contactEmailValidated property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setContactEmailValidated(Boolean value) {
-        this.contactEmailValidated = value;
-    }
+	/**
+	 * Sets the value of the contactEmailValidated property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setContactEmailValidated(Boolean value) {
+		this.contactEmailValidated = value;
+	}
 
-    /**
-     * Gets the value of the recordDisplayName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRecordDisplayName() {
-        return recordDisplayName;
-    }
+	/**
+	 * Gets the value of the recordDisplayName property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getRecordDisplayName() {
+		return recordDisplayName;
+	}
 
-    /**
-     * Sets the value of the recordDisplayName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRecordDisplayName(String value) {
-        this.recordDisplayName = value;
-    }
+	/**
+	 * Sets the value of the recordDisplayName property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setRecordDisplayName(String value) {
+		this.recordDisplayName = value;
+	}
 
-    /**
-     * Gets the value of the dateAuthExpires property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDateAuthExpires() {
-        return dateAuthExpires;
-    }
+	/**
+	 * Gets the value of the dateAuthExpires property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getDateAuthExpires() {
+		return dateAuthExpires;
+	}
 
-    /**
-     * Sets the value of the dateAuthExpires property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDateAuthExpires(XMLGregorianCalendar value) {
-        this.dateAuthExpires = value;
-    }
+	/**
+	 * Sets the value of the dateAuthExpires property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setDateAuthExpires(XMLGregorianCalendar value) {
+		this.dateAuthExpires = value;
+	}
 
-    /**
-     * Gets the value of the authXml property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AuthXml }
-     *     
-     */
-    public AuthXml getAuthXml() {
-        return authXml;
-    }
+	/**
+	 * Gets the value of the authXml property.
+	 * 
+	 * @return possible object is {@link AuthXml }
+	 * 
+	 */
+	public AuthXml getAuthXml() {
+		return authXml;
+	}
 
-    /**
-     * Sets the value of the authXml property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AuthXml }
-     *     
-     */
-    public void setAuthXml(AuthXml value) {
-        this.authXml = value;
-    }
+	/**
+	 * Sets the value of the authXml property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link AuthXml }
+	 * 
+	 */
+	public void setAuthXml(AuthXml value) {
+		this.authXml = value;
+	}
 
-    /**
-     * Gets the value of the relType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getRelType() {
-        return relType;
-    }
+	/**
+	 * Gets the value of the relType property.
+	 * 
+	 * @return possible object is {@link Integer }
+	 * 
+	 */
+	public Integer getRelType() {
+		return relType;
+	}
 
-    /**
-     * Sets the value of the relType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setRelType(Integer value) {
-        this.relType = value;
-    }
+	/**
+	 * Sets the value of the relType property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Integer }
+	 * 
+	 */
+	public void setRelType(Integer value) {
+		this.relType = value;
+	}
 
-    /**
-     * Gets the value of the dateAuthCreated property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDateAuthCreated() {
-        return dateAuthCreated;
-    }
+	/**
+	 * Gets the value of the dateAuthCreated property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getDateAuthCreated() {
+		return dateAuthCreated;
+	}
 
-    /**
-     * Sets the value of the dateAuthCreated property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDateAuthCreated(XMLGregorianCalendar value) {
-        this.dateAuthCreated = value;
-    }
+	/**
+	 * Sets the value of the dateAuthCreated property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setDateAuthCreated(XMLGregorianCalendar value) {
+		this.dateAuthCreated = value;
+	}
 
-    /**
-     * Gets the value of the dateAuthUpdated property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDateAuthUpdated() {
-        return dateAuthUpdated;
-    }
+	/**
+	 * Gets the value of the dateAuthUpdated property.
+	 * 
+	 * @return possible object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public XMLGregorianCalendar getDateAuthUpdated() {
+		return dateAuthUpdated;
+	}
 
-    /**
-     * Sets the value of the dateAuthUpdated property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDateAuthUpdated(XMLGregorianCalendar value) {
-        this.dateAuthUpdated = value;
-    }
+	/**
+	 * Sets the value of the dateAuthUpdated property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link XMLGregorianCalendar }
+	 * 
+	 */
+	public void setDateAuthUpdated(XMLGregorianCalendar value) {
+		this.dateAuthUpdated = value;
+	}
 
-    /**
-     * Gets the value of the canAccessAudit property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
-     */
-    public Boolean isCanAccessAudit() {
-        return canAccessAudit;
-    }
+	/**
+	 * Gets the value of the canAccessAudit property.
+	 * 
+	 * @return possible object is {@link Boolean }
+	 * 
+	 */
+	public Boolean isCanAccessAudit() {
+		return canAccessAudit;
+	}
 
-    /**
-     * Sets the value of the canAccessAudit property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
-     */
-    public void setCanAccessAudit(Boolean value) {
-        this.canAccessAudit = value;
-    }
+	/**
+	 * Sets the value of the canAccessAudit property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link Boolean }
+	 * 
+	 */
+	public void setCanAccessAudit(Boolean value) {
+		this.canAccessAudit = value;
+	}
 
 }

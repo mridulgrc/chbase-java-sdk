@@ -5,14 +5,12 @@
 // Generated on: 2013.05.07 at 02:23:59 PM PDT 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.types;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
 
 /**
  * 
@@ -39,9 +37,12 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  * 
- * <p>Java class for Instance complex type.
+ * <p>
+ * Java class for Instance complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="Instance">
@@ -62,144 +63,123 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Instance", propOrder = {
-    "id",
-    "name",
-    "description",
-    "platformUrl",
-    "shellUrl"
-})
+@XmlType(name = "Instance", propOrder = { "id", "name", "description", "platformUrl", "shellUrl" })
 public class Instance {
 
-    @XmlElement(required = true)
-    protected String id;
-    @XmlElement(required = true)
-    protected String name;
-    @XmlElement(required = true)
-    protected String description;
-    @XmlElement(name = "platform-url", required = true)
-    protected String platformUrl;
-    @XmlElement(name = "shell-url", required = true)
-    protected String shellUrl;
+	@XmlElement(required = true)
+	protected String id;
+	@XmlElement(required = true)
+	protected String name;
+	@XmlElement(required = true)
+	protected String description;
+	@XmlElement(name = "platform-url", required = true)
+	protected String platformUrl;
+	@XmlElement(name = "shell-url", required = true)
+	protected String shellUrl;
 
-    /**
-     * Gets the value of the id property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getId() {
-        return id;
-    }
+	/**
+	 * Gets the value of the id property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getId() {
+		return id;
+	}
 
-    /**
-     * Sets the value of the id property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setId(String value) {
-        this.id = value;
-    }
+	/**
+	 * Sets the value of the id property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setId(String value) {
+		this.id = value;
+	}
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getName() {
-        return name;
-    }
+	/**
+	 * Gets the value of the name property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
+	/**
+	 * Sets the value of the name property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setName(String value) {
+		this.name = value;
+	}
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the platformUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPlatformUrl() {
-        return platformUrl;
-    }
+	/**
+	 * Gets the value of the platformUrl property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getPlatformUrl() {
+		return platformUrl;
+	}
 
-    /**
-     * Sets the value of the platformUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPlatformUrl(String value) {
-        this.platformUrl = value;
-    }
+	/**
+	 * Sets the value of the platformUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setPlatformUrl(String value) {
+		this.platformUrl = value;
+	}
 
-    /**
-     * Gets the value of the shellUrl property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getShellUrl() {
-        return shellUrl;
-    }
+	/**
+	 * Gets the value of the shellUrl property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getShellUrl() {
+		return shellUrl;
+	}
 
-    /**
-     * Sets the value of the shellUrl property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setShellUrl(String value) {
-        this.shellUrl = value;
-    }
+	/**
+	 * Sets the value of the shellUrl property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setShellUrl(String value) {
+		this.shellUrl = value;
+	}
 
 }

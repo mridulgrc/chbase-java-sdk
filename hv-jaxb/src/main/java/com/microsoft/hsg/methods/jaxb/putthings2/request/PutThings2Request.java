@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:14:32 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.putthings2.request;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
 import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
-
 
 /**
  * 
@@ -39,9 +37,12 @@ import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -57,47 +58,42 @@ import com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "PutThings",
-		methodVersion = "2",
-		responseNS = "urn:com.microsoft.wc.methods.response.PutThings")
+@JaxbRequest(methodName = "PutThings", methodVersion = "2", responseNS = "urn:com.microsoft.wc.methods.response.PutThings")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "thing"
-})
+@XmlType(name = "", propOrder = { "thing" })
 @XmlRootElement(name = "info")
 public class PutThings2Request {
 
-    @XmlElement(required = true)
-    protected List<Thing2> thing;
+	@XmlElement(required = true)
+	protected List<Thing2> thing;
 
-    /**
-     * Gets the value of the thing property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the thing property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getThing().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Thing2 }
-     * 
-     * 
-     */
-    public List<Thing2> getThing() {
-        if (thing == null) {
-            thing = new ArrayList<Thing2>();
-        }
-        return this.thing;
-    }
+	/**
+	 * Gets the value of the thing property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the thing property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getThing().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link Thing2 }
+	 * 
+	 * 
+	 */
+	public List<Thing2> getThing() {
+		if (thing == null) {
+			thing = new ArrayList<Thing2>();
+		}
+		return this.thing;
+	}
 
 }

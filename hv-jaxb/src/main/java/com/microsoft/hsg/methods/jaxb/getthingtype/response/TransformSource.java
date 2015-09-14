@@ -5,7 +5,6 @@
 // Generated on: 2013.05.14 at 10:02:11 PM PDT 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.getthingtype.response;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -13,7 +12,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
-
 
 /**
  * 
@@ -31,9 +29,12 @@ import javax.xml.bind.annotation.XmlValue;
  * </pre>
  * 
  * 
- * <p>Java class for TransformSource complex type.
+ * <p>
+ * Java class for TransformSource complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="TransformSource">
@@ -48,62 +49,54 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TransformSource", propOrder = {
-    "value"
-})
+@XmlType(name = "TransformSource", propOrder = { "value" })
 public class TransformSource {
 
-    @XmlValue
-    protected String value;
-    @XmlAttribute(name = "tag", required = true)
-    protected String tag;
+	@XmlValue
+	protected String value;
+	@XmlAttribute(name = "tag", required = true)
+	protected String tag;
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the tag property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTag() {
-        return tag;
-    }
+	/**
+	 * Gets the value of the tag property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getTag() {
+		return tag;
+	}
 
-    /**
-     * Sets the value of the tag property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTag(String value) {
-        this.tag = value;
-    }
+	/**
+	 * Sets the value of the tag property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setTag(String value) {
+		this.tag = value;
+	}
 
 }

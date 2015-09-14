@@ -5,19 +5,21 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.thing;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for HealthVaultThingSignatureMethod.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
+ * Java class for HealthVaultThingSignatureMethod.
+ * 
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
+ * <p>
+ * 
  * <pre>
  * &lt;simpleType name="HealthVaultThingSignatureMethod">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -32,27 +34,25 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum HealthVaultThingSignatureMethod {
 
-    @XmlEnumValue("HVSignatureMethod1")
-    HV_SIGNATURE_METHOD_1("HVSignatureMethod1"),
-    @XmlEnumValue("HVSignatureMethod2")
-    HV_SIGNATURE_METHOD_2("HVSignatureMethod2");
-    private final String value;
+	@XmlEnumValue("HVSignatureMethod1") HV_SIGNATURE_METHOD_1(
+			"HVSignatureMethod1"), @XmlEnumValue("HVSignatureMethod2") HV_SIGNATURE_METHOD_2("HVSignatureMethod2");
+	private final String value;
 
-    HealthVaultThingSignatureMethod(String v) {
-        value = v;
-    }
+	HealthVaultThingSignatureMethod(String v) {
+		value = v;
+	}
 
-    public String value() {
-        return value;
-    }
+	public String value() {
+		return value;
+	}
 
-    public static HealthVaultThingSignatureMethod fromValue(String v) {
-        for (HealthVaultThingSignatureMethod c: HealthVaultThingSignatureMethod.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+	public static HealthVaultThingSignatureMethod fromValue(String v) {
+		for (HealthVaultThingSignatureMethod c : HealthVaultThingSignatureMethod.values()) {
+			if (c.value.equals(v)) {
+				return c;
+			}
+		}
+		throw new IllegalArgumentException(v);
+	}
 
 }

@@ -5,7 +5,6 @@
 // Generated on: 2009.11.09 at 11:38:44 PM PST 
 //
 
-
 package com.microsoft.hsg.thing.oxm.jaxb.ccr;
 
 import java.math.BigInteger;
@@ -16,11 +15,13 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for RateType complex type.
+ * <p>
+ * Java class for RateType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="RateType">
@@ -40,176 +41,158 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RateType", propOrder = {
-    "description",
-    "value",
-    "units",
-    "code",
-    "rateSequencePosition",
-    "variableRateModifier"
-})
+@XmlType(name = "RateType", propOrder = { "description", "value", "units", "code", "rateSequencePosition",
+		"variableRateModifier" })
 public class RateType {
 
-    @XmlElement(name = "Description")
-    protected CodedDescriptionType description;
-    @XmlElement(name = "Value")
-    protected String value;
-    @XmlElement(name = "Units")
-    protected com.microsoft.hsg.thing.oxm.jaxb.ccr.NormalType.Units units;
-    @XmlElement(name = "Code")
-    protected List<CodeType> code;
-    @XmlElement(name = "RateSequencePosition")
-    protected BigInteger rateSequencePosition;
-    @XmlElement(name = "VariableRateModifier")
-    protected CodedDescriptionType variableRateModifier;
+	@XmlElement(name = "Description")
+	protected CodedDescriptionType description;
+	@XmlElement(name = "Value")
+	protected String value;
+	@XmlElement(name = "Units")
+	protected com.microsoft.hsg.thing.oxm.jaxb.ccr.NormalType.Units units;
+	@XmlElement(name = "Code")
+	protected List<CodeType> code;
+	@XmlElement(name = "RateSequencePosition")
+	protected BigInteger rateSequencePosition;
+	@XmlElement(name = "VariableRateModifier")
+	protected CodedDescriptionType variableRateModifier;
 
-    /**
-     * Gets the value of the description property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public CodedDescriptionType getDescription() {
-        return description;
-    }
+	/**
+	 * Gets the value of the description property.
+	 * 
+	 * @return possible object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public CodedDescriptionType getDescription() {
+		return description;
+	}
 
-    /**
-     * Sets the value of the description property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public void setDescription(CodedDescriptionType value) {
-        this.description = value;
-    }
+	/**
+	 * Sets the value of the description property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public void setDescription(CodedDescriptionType value) {
+		this.description = value;
+	}
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+	/**
+	 * Gets the value of the value property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getValue() {
+		return value;
+	}
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+	/**
+	 * Sets the value of the value property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
 
-    /**
-     * Gets the value of the units property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link com.microsoft.hsg.thing.oxm.jaxb.ccr.NormalType.Units }
-     *     
-     */
-    public com.microsoft.hsg.thing.oxm.jaxb.ccr.NormalType.Units getUnits() {
-        return units;
-    }
+	/**
+	 * Gets the value of the units property.
+	 * 
+	 * @return possible object is
+	 *         {@link com.microsoft.hsg.thing.oxm.jaxb.ccr.NormalType.Units }
+	 * 
+	 */
+	public com.microsoft.hsg.thing.oxm.jaxb.ccr.NormalType.Units getUnits() {
+		return units;
+	}
 
-    /**
-     * Sets the value of the units property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link com.microsoft.hsg.thing.oxm.jaxb.ccr.NormalType.Units }
-     *     
-     */
-    public void setUnits(com.microsoft.hsg.thing.oxm.jaxb.ccr.NormalType.Units value) {
-        this.units = value;
-    }
+	/**
+	 * Sets the value of the units property.
+	 * 
+	 * @param value
+	 *            allowed object is
+	 *            {@link com.microsoft.hsg.thing.oxm.jaxb.ccr.NormalType.Units }
+	 * 
+	 */
+	public void setUnits(com.microsoft.hsg.thing.oxm.jaxb.ccr.NormalType.Units value) {
+		this.units = value;
+	}
 
-    /**
-     * Gets the value of the code property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the code property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCode().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CodeType }
-     * 
-     * 
-     */
-    public List<CodeType> getCode() {
-        if (code == null) {
-            code = new ArrayList<CodeType>();
-        }
-        return this.code;
-    }
+	/**
+	 * Gets the value of the code property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the code property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getCode().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link CodeType
+	 * }
+	 * 
+	 * 
+	 */
+	public List<CodeType> getCode() {
+		if (code == null) {
+			code = new ArrayList<CodeType>();
+		}
+		return this.code;
+	}
 
-    /**
-     * Gets the value of the rateSequencePosition property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getRateSequencePosition() {
-        return rateSequencePosition;
-    }
+	/**
+	 * Gets the value of the rateSequencePosition property.
+	 * 
+	 * @return possible object is {@link BigInteger }
+	 * 
+	 */
+	public BigInteger getRateSequencePosition() {
+		return rateSequencePosition;
+	}
 
-    /**
-     * Sets the value of the rateSequencePosition property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setRateSequencePosition(BigInteger value) {
-        this.rateSequencePosition = value;
-    }
+	/**
+	 * Sets the value of the rateSequencePosition property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link BigInteger }
+	 * 
+	 */
+	public void setRateSequencePosition(BigInteger value) {
+		this.rateSequencePosition = value;
+	}
 
-    /**
-     * Gets the value of the variableRateModifier property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public CodedDescriptionType getVariableRateModifier() {
-        return variableRateModifier;
-    }
+	/**
+	 * Gets the value of the variableRateModifier property.
+	 * 
+	 * @return possible object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public CodedDescriptionType getVariableRateModifier() {
+		return variableRateModifier;
+	}
 
-    /**
-     * Sets the value of the variableRateModifier property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodedDescriptionType }
-     *     
-     */
-    public void setVariableRateModifier(CodedDescriptionType value) {
-        this.variableRateModifier = value;
-    }
+	/**
+	 * Sets the value of the variableRateModifier property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link CodedDescriptionType }
+	 * 
+	 */
+	public void setVariableRateModifier(CodedDescriptionType value) {
+		this.variableRateModifier = value;
+	}
 
 }

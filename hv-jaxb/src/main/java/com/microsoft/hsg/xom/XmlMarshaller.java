@@ -17,21 +17,26 @@ public interface XmlMarshaller {
 	/**
 	 * Unmarshal.
 	 * 
-	 * @param thingNode the thing node
+	 * @param thingNode
+	 *            the thing node
 	 * 
 	 * @return the thing
 	 * 
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	public Object unmarshal(Node thingNode) throws Exception;
-	
+
 	/**
 	 * Marshal.
 	 * 
-	 * @param thing the thing
-	 * @param writer the writer
+	 * @param thing
+	 *            the thing
+	 * @param writer
+	 *            the writer
 	 * 
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *             the exception
 	 */
 	public void marshal(Object obj, Writer writer) throws Exception;
 }

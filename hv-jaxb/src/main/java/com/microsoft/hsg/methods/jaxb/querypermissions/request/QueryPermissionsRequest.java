@@ -5,7 +5,6 @@
 // Generated on: 2009.11.03 at 08:14:50 PM PST 
 //
 
-
 package com.microsoft.hsg.methods.jaxb.querypermissions.request;
 
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.microsoft.hsg.methods.jaxb.JaxbRequest;
-
 
 /**
  * 
@@ -39,9 +37,12 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * </pre>
  * 
  * 
- * <p>Java class for anonymous complex type.
+ * <p>
+ * Java class for anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -57,47 +58,42 @@ import com.microsoft.hsg.methods.jaxb.JaxbRequest;
  * 
  * 
  */
-@JaxbRequest(
-		methodName = "QueryPermissions",
-		methodVersion = "1",
-		responseNS = "urn:com.microsoft.wc.methods.response.QueryPermissions")
+@JaxbRequest(methodName = "QueryPermissions", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.QueryPermissions")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "thingTypeId"
-})
+@XmlType(name = "", propOrder = { "thingTypeId" })
 @XmlRootElement(name = "info")
 public class QueryPermissionsRequest {
 
-    @XmlElement(name = "thing-type-id", required = true)
-    protected List<String> thingTypeId;
+	@XmlElement(name = "thing-type-id", required = true)
+	protected List<String> thingTypeId;
 
-    /**
-     * Gets the value of the thingTypeId property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the thingTypeId property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getThingTypeId().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link String }
-     * 
-     * 
-     */
-    public List<String> getThingTypeId() {
-        if (thingTypeId == null) {
-            thingTypeId = new ArrayList<String>();
-        }
-        return this.thingTypeId;
-    }
+	/**
+	 * Gets the value of the thingTypeId property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a
+	 * snapshot. Therefore any modification you make to the returned list will
+	 * be present inside the JAXB object. This is why there is not a
+	 * <CODE>set</CODE> method for the thingTypeId property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getThingTypeId().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link String }
+	 * 
+	 * 
+	 */
+	public List<String> getThingTypeId() {
+		if (thingTypeId == null) {
+			thingTypeId = new ArrayList<String>();
+		}
+		return this.thingTypeId;
+	}
 
 }
