@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
 
 import com.microsoft.hsg.ConnectionFactory;
 import com.microsoft.hsg.methods.jaxb.SimpleRequestTemplate;
-import com.microsoft.hsg.methods.jaxb.getupdatedrecordsforapplication.request.GetUpdatedRecordsForApplicationRequest;
-import com.microsoft.hsg.methods.jaxb.getupdatedrecordsforapplication.response.GetUpdatedRecordsForApplicationResponse;
+import com.microsoft.hsg.methods.jaxb.getupdatedrecordsforapplication2.request.GetUpdatedRecordsForApplication2Request;
+import com.microsoft.hsg.methods.jaxb.getupdatedrecordsforapplication2.response.GetUpdatedRecordsForApplication2Response;
 
 @RunWith(JMock.class)
 public class GetUpdatedRecordsForApplicationTest {
@@ -37,9 +37,9 @@ public class GetUpdatedRecordsForApplicationTest {
     	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
     			ConnectionFactory.getConnection());
     	
-    	GetUpdatedRecordsForApplicationResponse response = 
-    		(GetUpdatedRecordsForApplicationResponse)requestTemplate.makeRequest(
-    			new GetUpdatedRecordsForApplicationRequest());
+    	GetUpdatedRecordsForApplication2Response response = 
+    		(GetUpdatedRecordsForApplication2Response)requestTemplate.makeRequest(
+    			new GetUpdatedRecordsForApplication2Request());
     	
     	Assert.assertNotNull(response);
     }

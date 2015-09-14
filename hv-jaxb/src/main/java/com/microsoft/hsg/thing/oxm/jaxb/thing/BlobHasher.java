@@ -7,7 +7,7 @@ import java.util.Arrays;
 import org.apache.commons.codec.binary.Base64;
 
 import com.microsoft.hsg.ApplicationConfig;
-import com.microsoft.hsg.methods.jaxb.setapplicationsettings.request.AppSettings;
+
 
 public class BlobHasher {
 
