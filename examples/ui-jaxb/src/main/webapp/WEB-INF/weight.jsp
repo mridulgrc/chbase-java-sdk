@@ -1,17 +1,17 @@
 <jsp:useBean id="weights" type="java.util.List" scope="request" />
-<%@ page import="com.microsoft.*,
-	com.microsoft.hsg.thing.oxm.jaxb.base.DisplayValue,
-	com.microsoft.hsg.thing.oxm.jaxb.base.WeightValue,
-	com.microsoft.hsg.thing.oxm.jaxb.dates.Date,
-	com.microsoft.hsg.thing.oxm.jaxb.dates.DateTime,
-	com.microsoft.hsg.thing.oxm.jaxb.thing.Thing2,
-	com.microsoft.hsg.thing.oxm.jaxb.thing.ThingType,
-	com.microsoft.hsg.thing.oxm.jaxb.thing.DataXml,
+<%@ page import="com.chbase.*,
+	com.chbase.thing.oxm.jaxb.base.DisplayValue,
+	com.chbase.thing.oxm.jaxb.base.WeightValue,
+	com.chbase.thing.oxm.jaxb.dates.Date,
+	com.chbase.thing.oxm.jaxb.dates.DateTime,
+	com.chbase.thing.oxm.jaxb.thing.Thing2,
+	com.chbase.thing.oxm.jaxb.thing.ThingType,
+	com.chbase.thing.oxm.jaxb.thing.DataXml,
 	javax.xml.bind.JAXBContext,
 	javax.xml.bind.Marshaller,
 	javax.xml.bind.Unmarshaller,
-	com.microsoft.hsg.oxm.jaxb.JaxbContextFactory,
-	com.microsoft.hsg.thing.oxm.jaxb.weight.Weight" %>
+	com.chbase.oxm.jaxb.JaxbContextFactory,
+	com.chbase.thing.oxm.jaxb.weight.Weight" %>
 <%@ page import="java.util.*" %>
 <html>
 <body>

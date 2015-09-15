@@ -1,4 +1,4 @@
-<%@ page import="com.microsoft.*" %>
+<%@ page import="com.chbase.*" %>
 <%@ page import="java.util.*" %>
 <html>
 <body>

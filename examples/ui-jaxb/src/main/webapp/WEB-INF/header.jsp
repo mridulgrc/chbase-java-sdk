@@ -1,5 +1,5 @@
-<%@ page import="com.microsoft.hsg.applications.*" %>
-<%@ page import="com.microsoft.hsg.*" %>
+<%@ page import="com.chbase.applications.*" %>
+<%@ page import="com.chbase.*" %>
 <table cellspacing="10">
    <tr>
       <td><a href="<%= request.getContextPath() %>/things/home">Home</a></td>

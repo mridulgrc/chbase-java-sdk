@@ -6,7 +6,7 @@
   <display-name>jwildcat</display-name>
     <servlet>
       <servlet-name>controller</servlet-name>
-      <servlet-class>com.microsoft.hsg.applications.Controller</servlet-class>
+      <servlet-class>com.chbase.applications.Controller</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -16,7 +16,7 @@
     
     <servlet>
       <servlet-name>hv-action</servlet-name>
-      <servlet-class>com.microsoft.hsg.applications.HealthVaultActionPage</servlet-class>
+      <servlet-class>com.chbase.applications.HealthVaultActionPage</servlet-class>
     </servlet>
 
     <servlet-mapping>
