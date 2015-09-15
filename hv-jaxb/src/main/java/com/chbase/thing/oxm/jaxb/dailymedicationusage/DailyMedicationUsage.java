@@ -60,6 +60,7 @@ import com.chbase.thing.oxm.jaxb.dates.Date;
 		"singleDoseDescription" })
 @XmlRootElement(name = "daily-medication-usage")
 public class DailyMedicationUsage {
+	public static String typeId = "A9A76456-0357-493e-B840-598BBB9483FD";
 
 	@XmlElement(required = true)
 	protected Date when;

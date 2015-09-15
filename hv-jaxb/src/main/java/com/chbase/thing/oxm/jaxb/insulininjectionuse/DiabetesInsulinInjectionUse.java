@@ -62,6 +62,8 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlRootElement(name = "diabetes-insulin-injection-use")
 public class DiabetesInsulinInjectionUse {
 
+	public static String typeId = "184166BE-8ADB-4D9C-8162-C403040E31AD";
+
 	@XmlElement(required = true)
 	protected DateTime when;
 	@XmlElement(required = true)

@@ -30,112 +30,99 @@ import com.chbase.methods.jaxb.updateeventsubscription.request.UpdateEventSubscr
 @RunWith(JMock.class)
 public class EventSubscriptionsTest {
 
-	private Mockery context = new JUnit4Mockery() {{
-        setImposteriser(ClassImposteriser.INSTANCE);
-    }};
-	
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
+
 	@Test
-    public void GetEventSubscriptions() throws Exception
-    {
-    	Subscription subscription = CreateSubscription();
-    	subscription.getRecordItemChangedEvent()
-    		.getFilters()
-    		.getFilter()
-    		.get(0)
-    		.getTypeIds()
-    		.getTypeId()
-    		.add("52bf9104-2c5e-4f1f-a66d-552ebcc53df7");
-    	
-    	UpdateSubscription(subscription);
-  
-    	Subscriptions subscriptions = GetSubscriptions();
-    	for (Subscription sub : subscriptions.getSubscription()) {
-    		RemoveSubscription(sub.getCommon().getId());
-    	}
-    }
-	
+	public void GetEventSubscriptions() throws Exception {
+		Subscription subscription = CreateSubscription();
+		subscription.getRecordItemChangedEvent().getFilters().getFilter().get(0).getTypeIds().getTypeId()
+				.add("52bf9104-2c5e-4f1f-a66d-552ebcc53df7");
+
+		UpdateSubscription(subscription);
+
+		Subscriptions subscriptions = GetSubscriptions();
+		for (Subscription sub : subscriptions.getSubscription()) {
+			RemoveSubscription(sub.getCommon().getId());
+		}
+	}
+
 	private void RemoveSubscription(String id) throws Exception {
-		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-		
+		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(ConnectionFactory.getConnection());
+
 		UnsubscribeToEventRequest request = new UnsubscribeToEventRequest();
 		request.setSubscriptionId(id);
-		
+
 		requestTemplate.makeRequest(request);
 	}
-	
+
 	private Subscriptions GetSubscriptions() throws Exception {
-		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-		
+		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(ConnectionFactory.getConnection());
+
 		GetEventSubscriptionsRequest request = new GetEventSubscriptionsRequest();
-		
-		GetEventSubscriptionsResponse response = 
-			(GetEventSubscriptionsResponse)requestTemplate.makeRequest(
-	    		request);
-		
+
+		GetEventSubscriptionsResponse response = (GetEventSubscriptionsResponse) requestTemplate.makeRequest(request);
+
 		return response.getSubscriptions();
 	}
-	
-	private void UpdateSubscription(Subscription subscription) 
-	throws Exception {
-		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-		
+
+	private void UpdateSubscription(Subscription subscription) throws Exception {
+		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(ConnectionFactory.getConnection());
+
 		UpdateEventSubscriptionRequest request = new UpdateEventSubscriptionRequest();
 		request.setSubscription(subscription);
-		
+
 		requestTemplate.makeRequest(request);
 	}
-	
+
 	private Subscription CreateSubscription() throws Exception {
-		
-		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	
-    	HVEventingSharedKey sharedKey = new HVEventingSharedKey();
-    	sharedKey.setNotificationKey("MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNA==");
-    	sharedKey.setNotificationKeyVersionId("1");
-    	
-    	NotificationAuthenticationInfo authInfo =
-    		new NotificationAuthenticationInfo();
-    	authInfo.setHvEventingSharedKey(sharedKey);
-    	
-    	HttpNotificationChannel httpChannel = new HttpNotificationChannel();
-    	httpChannel.setUrl("https://nobody.contoso.com/notif");
-    	
-    	NotificationChannel notificationChannel = new NotificationChannel();
-    	notificationChannel.setHttpNotificationChannel(httpChannel);
-    	
-    	Common common = new Common();
-    	common.setNotificationAuthenticationInfo(authInfo);
-    	common.setNotificationChannel(notificationChannel);
-    	
-    	TypeIds typeIds = new TypeIds();
-    	typeIds.getTypeId().add("3b3e6b16-eb69-483c-8d7e-dfe116ae6092");
-    	
-    	RecordItemChangedEventFilter filter = new RecordItemChangedEventFilter();
-    	filter.setTypeIds(typeIds);
-    	
-    	RecordItemChangedEventFilters filters = new RecordItemChangedEventFilters();
-    	filters.getFilter().add(filter);
-    	
-    	RecordItemChangedEvent event = new RecordItemChangedEvent();
-    	event.setFilters(filters);
-    	
-    	Subscription subscription = new Subscription();
-    	subscription.setCommon(common);
-    	subscription.setRecordItemChangedEvent(event);
-    	
-    	SubscribeToEventRequest request = new SubscribeToEventRequest();
-    	request.setSubscription(subscription);
-    	
-    	SubscribeToEventResponse response = 
-    		(SubscribeToEventResponse)requestTemplate.makeRequest(
-    			request);
-    	
-    	subscription.getCommon().setId(response.getSubscriptionId());
-    	
-    	return subscription;
-	}	
+
+		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(ConnectionFactory.getConnection());
+
+		HVEventingSharedKey sharedKey = new HVEventingSharedKey();
+		sharedKey.setNotificationKey(
+				"MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNA==");
+		sharedKey.setNotificationKeyVersionId("1");
+
+		NotificationAuthenticationInfo authInfo = new NotificationAuthenticationInfo();
+		authInfo.setHvEventingSharedKey(sharedKey);
+
+		HttpNotificationChannel httpChannel = new HttpNotificationChannel();
+		httpChannel.setUrl("https://nobody.contoso.com/notif");
+
+		NotificationChannel notificationChannel = new NotificationChannel();
+		notificationChannel.setHttpNotificationChannel(httpChannel);
+
+		Common common = new Common();
+		common.setNotificationAuthenticationInfo(authInfo);
+		common.setNotificationChannel(notificationChannel);
+
+		TypeIds typeIds = new TypeIds();
+		typeIds.getTypeId().add("3b3e6b16-eb69-483c-8d7e-dfe116ae6092");
+
+		RecordItemChangedEventFilter filter = new RecordItemChangedEventFilter();
+		filter.setTypeIds(typeIds);
+
+		RecordItemChangedEventFilters filters = new RecordItemChangedEventFilters();
+		filters.getFilter().add(filter);
+
+		RecordItemChangedEvent event = new RecordItemChangedEvent();
+		event.setFilters(filters);
+
+		Subscription subscription = new Subscription();
+		subscription.setCommon(common);
+		subscription.setRecordItemChangedEvent(event);
+
+		SubscribeToEventRequest request = new SubscribeToEventRequest();
+		request.setSubscription(subscription);
+
+		SubscribeToEventResponse response = (SubscribeToEventResponse) requestTemplate.makeRequest(request);
+
+		subscription.getCommon().setId(response.getSubscriptionId());
+
+		return subscription;
+	}
 }

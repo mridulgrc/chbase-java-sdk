@@ -55,6 +55,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 @XmlType(name = "", propOrder = { "when", "name", "anatomicLocation", "primaryProvider", "secondaryProvider" })
 @XmlRootElement(name = "procedure")
 public class Procedure {
+	public static String typeId = "df4db479-a1ba-42a2-8714-2b083b88150f";
 
 	protected ApproxDateTime when;
 	@XmlElement(required = true)

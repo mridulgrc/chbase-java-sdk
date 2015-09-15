@@ -61,6 +61,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "when", "content", "author", "classification", "index", "version" })
 @XmlRootElement(name = "annotation")
 public class Annotation {
+	public static String typeId = "7AB3E662-CC5B-4BE2-BF38-78F8AAD5B161";
 
 	@XmlElement(required = true)
 	protected DateTime when;

@@ -16,28 +16,27 @@ import com.chbase.methods.jaxb.getpersoninfo.response.GetPersonInfoResponse;
 
 @RunWith(JMock.class)
 public class GetPersonInfoTest {
-	
 
-	private Mockery context = new JUnit4Mockery() {{
-        setImposteriser(ClassImposteriser.INSTANCE);
-    }};
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
 
 	/**
-     * Create the test case
-     *
-     */
-    public GetPersonInfoTest()
-    {
-    }
-    
-    @Test
-    public void GetPersonInfo() throws Exception
-    {
-    	SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
-    	
-    	GetPersonInfoResponse response = 
-    		(GetPersonInfoResponse)requestTemplate.makeRequest(new GetPersonInfoRequest());
-    	
-    	Assert.assertNotNull(response);
-    }
+	 * Create the test case
+	 *
+	 */
+	public GetPersonInfoTest() {
+	}
+
+	@Test
+	public void GetPersonInfo() throws Exception {
+		SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
+
+		GetPersonInfoResponse response = (GetPersonInfoResponse) requestTemplate
+				.makeRequest(new GetPersonInfoRequest());
+
+		Assert.assertNotNull(response);
+	}
 }

@@ -59,6 +59,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 @XmlType(name = "", propOrder = { "when", "name", "calories" })
 @XmlRootElement(name = "calorie-guideline")
 public class CalorieGuideline {
+	public static String typeId = "d3170d30-a41b-4bde-a116-87698c8a001a";
 
 	@XmlElement(required = true)
 	protected ApproxDateTime when;

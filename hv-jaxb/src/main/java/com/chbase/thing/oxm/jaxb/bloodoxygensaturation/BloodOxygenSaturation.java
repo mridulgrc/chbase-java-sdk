@@ -53,6 +53,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "when", "value", "measurementMethod", "measurementFlags" })
 @XmlRootElement(name = "blood-oxygen-saturation")
 public class BloodOxygenSaturation {
+	public static String typeId = "3a54f95f-03d8-4f62-815f-f691fc94a500";
 
 	@XmlElement(required = true)
 	protected DateTime when;

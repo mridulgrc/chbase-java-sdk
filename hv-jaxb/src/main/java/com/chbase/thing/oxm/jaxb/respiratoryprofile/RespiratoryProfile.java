@@ -62,6 +62,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 		"expiratoryFlowYellowZoneUpperBoundary" })
 @XmlRootElement(name = "respiratory-profile")
 public class RespiratoryProfile {
+	public static String typeId = "5fd15cb7-b717-4b1c-89e0-1dbcf7f815dd";
 
 	@XmlElement(required = true)
 	protected DateTime when;

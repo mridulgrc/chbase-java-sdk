@@ -92,6 +92,7 @@ import com.chbase.thing.oxm.jaxb.base.Language;
 		"language" })
 @XmlRootElement(name = "basic")
 public class Basic {
+	public static String typeId = "3b3e6b16-eb69-483c-8d7e-dfe116ae6092";
 
 	protected String gender;
 	protected Integer birthyear;

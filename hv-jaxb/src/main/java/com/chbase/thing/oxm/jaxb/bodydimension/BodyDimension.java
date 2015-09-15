@@ -59,6 +59,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 @XmlType(name = "", propOrder = { "when", "measurementName", "value" })
 @XmlRootElement(name = "body-dimension")
 public class BodyDimension {
+	public static String typeId = "dd710b31-2b6f-45bd-9552-253562b9a7c1";
 
 	@XmlElement(required = true)
 	protected ApproxDateTime when;

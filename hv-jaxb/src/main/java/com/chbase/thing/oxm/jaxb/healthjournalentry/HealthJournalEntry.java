@@ -52,6 +52,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 @XmlType(name = "", propOrder = { "when", "content", "category" })
 @XmlRootElement(name = "health-journal-entry")
 public class HealthJournalEntry {
+	public static String typeId = "21d75546-8717-4deb-8b17-a57f48917790";
 
 	@XmlElement(required = true)
 	protected ApproxDateTime when;

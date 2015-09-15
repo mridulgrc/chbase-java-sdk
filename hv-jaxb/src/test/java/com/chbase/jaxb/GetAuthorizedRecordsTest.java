@@ -14,31 +14,29 @@ import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.getauthorizedrecords.request.GetAuthorizedRecordsRequest;
 import com.chbase.methods.jaxb.getauthorizedrecords.response.GetAuthorizedRecordsResponse;
 
-
 @RunWith(JMock.class)
 public class GetAuthorizedRecordsTest {
 
-
-	private Mockery context = new JUnit4Mockery() {{
-		setImposteriser(ClassImposteriser.INSTANCE);
-	}};
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
 
 	/**
 	 * Create the test case
 	 *
 	 */
-	public GetAuthorizedRecordsTest()
-	{
+	public GetAuthorizedRecordsTest() {
 	}
 
 	@Test
-	public void TestGetAuthorizedRecords() throws Exception
-	{
+	public void TestGetAuthorizedRecords() throws Exception {
 		SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
 
 		GetAuthorizedRecordsRequest req = new GetAuthorizedRecordsRequest();
 		req.getId().add(ApplicationConfig.Test_PersonID);
-		GetAuthorizedRecordsResponse resp = (GetAuthorizedRecordsResponse)requestTemplate.makeRequest(req);
+		GetAuthorizedRecordsResponse resp = (GetAuthorizedRecordsResponse) requestTemplate.makeRequest(req);
 		Assert.assertNotNull(resp);
 	}
 }

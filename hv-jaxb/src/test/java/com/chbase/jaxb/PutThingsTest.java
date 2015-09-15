@@ -29,27 +29,26 @@ import com.chbase.thing.oxm.jaxb.weight.Weight;
 @RunWith(JMock.class)
 public class PutThingsTest {
 
-
-	private Mockery context = new JUnit4Mockery() {{
-		setImposteriser(ClassImposteriser.INSTANCE);
-	}};
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
 
 	/**
 	 * Create the test case
 	 *
 	 */
-	public PutThingsTest()
-	{
+	public PutThingsTest() {
 	}
 
-	private Thing2 GetThing() throws Exception
-	{
+	private Thing2 GetThing() throws Exception {
 		long weightValueInKg = 80;
 
 		DisplayValue dv = new DisplayValue();
 		dv.setUnits("lb");
 		dv.setUnitsCode("lb");
-		dv.setValue(weightValueInKg/2.2);
+		dv.setValue(weightValueInKg / 2.2);
 
 		WeightValue wv = new WeightValue();
 		wv.setKg(weightValueInKg);
@@ -65,48 +64,43 @@ public class PutThingsTest {
 	}
 
 	@Test
-	public void PutThing() throws Exception
-	{
+	public void PutThing() throws Exception {
 		SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
 
 		PutThings2Request request = new PutThings2Request();
 		request.getThing().add(GetThing());
 
-		PutThings2Response response = (PutThings2Response)requestTemplate.makeRequest(request);
+		PutThings2Response response = (PutThings2Response) requestTemplate.makeRequest(request);
 
 		Assert.assertNotNull(response);
 	}
-	
+
 	@Test
-	public void PutThingWithBlob() throws Exception
-	{
+	public void PutThingWithBlob() throws Exception {
 		SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
 		Thing2 thing = GetThing();
-		
+
 		ClassLoader classloader = Thread.currentThread().getContextClassLoader();
 		InputStream is = classloader.getResourceAsStream("largeimage.jpg");
-		
+
 		Request request = new Request();
 		request.setOfflineUserId(ApplicationConfig.Test_PersonID);
 		request.setRecordId(ApplicationConfig.Test_RecordID);
-		
+
 		thing.addBlob("", is, "image/jpg", request);
-		
+
 		is.close();
 
 		PutThings2Request pt_request = new PutThings2Request();
-		pt_request .getThing().add(thing);
+		pt_request.getThing().add(thing);
 
-		PutThings2Response response = (PutThings2Response)requestTemplate.makeRequest(pt_request);
+		PutThings2Response response = (PutThings2Response) requestTemplate.makeRequest(pt_request);
 
 		Assert.assertNotNull(response);
 	}
 
-
-
 	@Test
-	public void PutAnnotationThing() throws Exception
-	{
+	public void PutAnnotationThing() throws Exception {
 		SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
 
 		Annotation note = new Annotation();
@@ -119,6 +113,6 @@ public class PutThingsTest {
 		PutThings2Request request = new PutThings2Request();
 		request.getThing().add(thing);
 
-		PutThings2Response response = (PutThings2Response)requestTemplate.makeRequest(request);
+		PutThings2Response response = (PutThings2Response) requestTemplate.makeRequest(request);
 	}
 }

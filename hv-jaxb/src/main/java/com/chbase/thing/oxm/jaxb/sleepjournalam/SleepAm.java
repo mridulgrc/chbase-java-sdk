@@ -76,6 +76,7 @@ import com.chbase.thing.oxm.jaxb.dates.Time;
 		"medications", "wakeState" })
 @XmlRootElement(name = "sleep-am")
 public class SleepAm {
+	public static String typeId = "11C52484-7F1A-11DB-AEAC-87D355D89593";
 
 	@XmlElement(required = true)
 	protected DateTime when;

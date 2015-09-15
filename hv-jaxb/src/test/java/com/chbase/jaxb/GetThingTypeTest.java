@@ -17,35 +17,32 @@ import com.chbase.methods.jaxb.getthingtype.response.GetThingTypeResponse;
 
 @RunWith(JMock.class)
 public class GetThingTypeTest {
-	
 
-	private Mockery context = new JUnit4Mockery() {{
-        setImposteriser(ClassImposteriser.INSTANCE);
-    }};
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
 
 	/**
-     * Create the test case
-     *
-     */
-    public GetThingTypeTest()
-    {
-    }
-    
-    @Test
-    public void GetThingType() throws Exception
-    {
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	
-    	GetThingTypeRequest requestInfo = new GetThingTypeRequest();
-    	requestInfo.getId().add("5C5F1223-F63C-4464-870C-3E36BA471DEF");
-    	requestInfo.getSection().add(ThingTypeSectionSpec.XSD);
-    	requestInfo.getSection().add(ThingTypeSectionSpec.VERSIONS);
-    	requestInfo.getSection().add(ThingTypeSectionSpec.TRANSFORMS);
-    	
-    	GetThingTypeResponse response = 
-    		(GetThingTypeResponse)requestTemplate.makeRequest(requestInfo);
-    	
-    	Assert.assertNotNull(response);
-    }
+	 * Create the test case
+	 *
+	 */
+	public GetThingTypeTest() {
+	}
+
+	@Test
+	public void GetThingType() throws Exception {
+		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(ConnectionFactory.getConnection());
+
+		GetThingTypeRequest requestInfo = new GetThingTypeRequest();
+		requestInfo.getId().add("5C5F1223-F63C-4464-870C-3E36BA471DEF");
+		requestInfo.getSection().add(ThingTypeSectionSpec.XSD);
+		requestInfo.getSection().add(ThingTypeSectionSpec.VERSIONS);
+		requestInfo.getSection().add(ThingTypeSectionSpec.TRANSFORMS);
+
+		GetThingTypeResponse response = (GetThingTypeResponse) requestTemplate.makeRequest(requestInfo);
+
+		Assert.assertNotNull(response);
+	}
 }

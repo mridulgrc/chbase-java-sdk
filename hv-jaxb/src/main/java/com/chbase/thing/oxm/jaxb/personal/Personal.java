@@ -80,6 +80,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 		"organDonor" })
 @XmlRootElement(name = "personal")
 public class Personal {
+	public static String typeId = "92ba621e-66b3-4a01-bd73-74844aed4f5b";
 
 	protected Name name;
 	protected DateTime birthdate;

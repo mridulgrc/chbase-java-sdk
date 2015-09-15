@@ -54,6 +54,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "when", "value", "measurementMethod", "measurementConditions", "measurementFlags" })
 @XmlRootElement(name = "heart-rate")
 public class HeartRate {
+	public static String typeId = "b81eb4a6-6eac-4292-ae93-3872d6870994";
 
 	@XmlElement(required = true)
 	protected DateTime when;

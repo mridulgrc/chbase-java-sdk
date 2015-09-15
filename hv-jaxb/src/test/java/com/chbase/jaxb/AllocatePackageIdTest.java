@@ -16,31 +16,28 @@ import com.chbase.methods.jaxb.allocatepackageid.response.AllocatePackageIdRespo
 
 @RunWith(JMock.class)
 public class AllocatePackageIdTest {
-	
 
-	private Mockery context = new JUnit4Mockery() {{
-        setImposteriser(ClassImposteriser.INSTANCE);
-    }};
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
 
 	/**
-     * Create the test case
-     *
-     */
-    public AllocatePackageIdTest()
-    {
-    }
-    
-    @Ignore
-    @Test
-    public void AllocatePackageId() throws Exception
-    {
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	
-    	AllocatePackageIdResponse response = 
-    		(AllocatePackageIdResponse)requestTemplate.makeRequest(
-    			new AllocatePackageIdRequest());
-    	
-    	Assert.assertNotNull(response);
-    }
+	 * Create the test case
+	 *
+	 */
+	public AllocatePackageIdTest() {
+	}
+
+	@Ignore
+	@Test
+	public void AllocatePackageId() throws Exception {
+		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(ConnectionFactory.getConnection());
+
+		AllocatePackageIdResponse response = (AllocatePackageIdResponse) requestTemplate
+				.makeRequest(new AllocatePackageIdRequest());
+
+		Assert.assertNotNull(response);
+	}
 }

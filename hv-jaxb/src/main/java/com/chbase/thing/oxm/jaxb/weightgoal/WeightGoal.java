@@ -62,6 +62,7 @@ import com.chbase.thing.oxm.jaxb.base.WeightValue;
 @XmlType(name = "", propOrder = { "initial", "minimum", "maximum", "goalInfo" })
 @XmlRootElement(name = "weight-goal")
 public class WeightGoal {
+	public static String typeId = "b7925180-d69e-48fa-ae1d-cb3748ca170e";
 
 	protected WeightValue initial;
 	protected WeightValue minimum;

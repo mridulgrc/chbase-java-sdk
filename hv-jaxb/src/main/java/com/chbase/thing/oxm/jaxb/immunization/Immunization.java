@@ -55,6 +55,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 		"expirationDate", "sequence", "anatomicSurface", "adverseEvent", "consent" })
 @XmlRootElement(name = "immunization")
 public class Immunization {
+	public static String typeId = "cd3587b5-b6e1-4565-ab3b-1c3ad45eb04f";
 
 	@XmlElement(required = true)
 	protected CodableValue name;

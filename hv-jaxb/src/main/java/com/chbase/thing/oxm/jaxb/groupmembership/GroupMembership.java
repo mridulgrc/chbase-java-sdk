@@ -52,6 +52,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "membership", "expires" })
 @XmlRootElement(name = "group-membership")
 public class GroupMembership {
+	public static String typeId = "66ac44c7-1d60-4e95-bb5b-d21490e91057";
 
 	protected List<GroupMembershipType> membership;
 	protected DateTime expires;

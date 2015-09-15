@@ -45,6 +45,7 @@ import javax.xml.bind.annotation.XmlType;
 		"applicationDataUrl" })
 @XmlRootElement(name = "application-data-reference")
 public class ApplicationDataReference {
+	public static String typeId = "9ad2a94f-c6a4-4d78-8b50-75b65be0e250";
 
 	@XmlElement(required = true)
 	protected String name;

@@ -53,6 +53,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "when", "systolic", "diastolic", "pulse", "irregularHeartbeat" })
 @XmlRootElement(name = "blood-pressure")
 public class BloodPressure {
+	public static String typeId = "ca3c57f4-f4c1-4e15-be67-0a3caf5414ed";
 
 	@XmlElement(required = true)
 	protected DateTime when;

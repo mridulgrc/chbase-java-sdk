@@ -53,5 +53,6 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "")
 @XmlRootElement(name = "personal-image")
 public class PersonalImage {
+	public static String typeId = "a5294488-f865-4ce3-92fa-187cd3b58930";
 
 }

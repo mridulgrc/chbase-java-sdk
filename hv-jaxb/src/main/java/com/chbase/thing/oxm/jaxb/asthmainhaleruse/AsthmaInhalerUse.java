@@ -62,6 +62,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "when", "drug", "strength", "doseCount", "deviceId", "dosePurpose" })
 @XmlRootElement(name = "asthma-inhaler-use")
 public class AsthmaInhalerUse {
+	public static String typeId = "03efe378-976a-42f8-ae1e-507c497a8c6d";
 
 	@XmlElement(required = true)
 	protected DateTime when;

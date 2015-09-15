@@ -64,6 +64,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 		"heartrateZoneGroup" })
 @XmlRootElement(name = "aerobic-profile")
 public class AerobicProfile {
+	public static String typeId = "7b2ea78c-4b78-4f75-a6a7-5396fe38b09a";
 
 	@XmlElement(required = true)
 	protected DateTime when;

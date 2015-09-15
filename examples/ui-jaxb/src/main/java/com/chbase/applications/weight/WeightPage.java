@@ -38,6 +38,7 @@ import com.chbase.methods.jaxb.putthings2.request.PutThings2Request;
 import com.chbase.thing.oxm.jaxb.base.DisplayValue;
 import com.chbase.thing.oxm.jaxb.base.WeightValue;
 import com.chbase.thing.oxm.jaxb.dates.DateTime;
+import com.chbase.thing.oxm.jaxb.status.Status;
 import com.chbase.thing.oxm.jaxb.thing.Thing2;
 import com.chbase.thing.oxm.jaxb.weight.Weight;
 
@@ -114,6 +115,7 @@ public class WeightPage implements RequestHandler {
 
 				OnlineRequestTemplate requestTemplate = new OnlineRequestTemplate();
 				Object obj = requestTemplate.makeRequest(ptRequest);
+				
 
 			}
 		}

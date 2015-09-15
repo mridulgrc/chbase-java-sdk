@@ -66,6 +66,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "formatAppid", "formatTag", "when", "summary", "any" })
 @XmlRootElement(name = "app-specific")
 public class AppSpecific {
+	public static String typeId = "a5033c9d-08cf-4204-9bd3-cb412ce39fc0";
 
 	@XmlElement(name = "format-appid", required = true)
 	protected String formatAppid;

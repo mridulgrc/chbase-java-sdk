@@ -67,6 +67,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 		"hasPersonStrokeHistory" })
 @XmlRootElement(name = "cardiac-profile")
 public class CardiacProfile {
+	public static String typeId = "adaf49ad-8e10-49f8-9783-174819e97051";
 
 	@XmlElement(required = true)
 	protected DateTime when;

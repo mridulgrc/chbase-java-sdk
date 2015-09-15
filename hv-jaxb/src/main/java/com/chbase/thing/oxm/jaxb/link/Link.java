@@ -40,6 +40,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = { "url", "title" })
 @XmlRootElement(name = "link")
 public class Link {
+	public static String typeId = "d4b48e6b-50fa-4ba8-ac73-7d64a68dc328";
 
 	@XmlElement(required = true)
 	protected String url;

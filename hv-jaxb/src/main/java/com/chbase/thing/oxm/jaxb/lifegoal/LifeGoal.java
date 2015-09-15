@@ -58,6 +58,7 @@ import com.chbase.thing.oxm.jaxb.base.Goal;
 @XmlType(name = "", propOrder = { "description", "goalInfo" })
 @XmlRootElement(name = "life-goal")
 public class LifeGoal {
+	public static String typeId = "609319bf-35cc-40a4-b9d7-1b329679baaa";
 
 	@XmlElement(required = true)
 	protected String description;

@@ -60,6 +60,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "when", "maxHbA1C", "targetGlucoseZoneGroup" })
 @XmlRootElement(name = "diabetic-profile")
 public class DiabeticProfile {
+	public static String typeId = "80CF4080-AD3F-4BB5-A0B5-907C22F73017";
 
 	@XmlElement(required = true)
 	protected DateTime when;

@@ -57,6 +57,7 @@ import com.chbase.thing.oxm.jaxb.base.AerobicSession;
 @XmlType(name = "", propOrder = { "session", "recurrence" })
 @XmlRootElement(name = "aerobic-weekly")
 public class AerobicWeekly {
+	public static String typeId = "e4501363-fb95-4a11-bb60-da64e98048b5";
 
 	@XmlElement(required = true)
 	protected AerobicSession session;

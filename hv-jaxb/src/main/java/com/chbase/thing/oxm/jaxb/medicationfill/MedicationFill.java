@@ -69,6 +69,7 @@ import com.chbase.thing.oxm.jaxb.dates.Date;
 		"prescriptionNumber", "lotNumber" })
 @XmlRootElement(name = "medication-fill")
 public class MedicationFill {
+	public static String typeId = "167ecf6b-bb54-43f9-a473-507b334907e0";
 
 	@XmlElement(required = true)
 	protected CodableValue name;

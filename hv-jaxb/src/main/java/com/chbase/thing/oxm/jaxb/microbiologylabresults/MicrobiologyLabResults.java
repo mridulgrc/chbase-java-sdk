@@ -67,6 +67,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 		"sensitivityInterpretation", "specimenType", "organismName", "organismComment" })
 @XmlRootElement(name = "microbiology-lab-results")
 public class MicrobiologyLabResults {
+	public static String typeId = "B8FCB138-F8E6-436A-A15D-E3A2D6916094";
 
 	@XmlElement(required = true)
 	protected DateTime when;

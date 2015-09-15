@@ -59,6 +59,7 @@ import com.chbase.thing.oxm.jaxb.dates.Date;
 		"delivery" })
 @XmlRootElement(name = "pregnancy")
 public class Pregnancy {
+	public static String typeId = "46d485cf-2b84-429d-9159-83152ba801f4";
 
 	@XmlElement(name = "due-date")
 	protected ApproxDate dueDate;

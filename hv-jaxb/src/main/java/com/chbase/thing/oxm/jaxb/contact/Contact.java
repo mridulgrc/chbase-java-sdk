@@ -56,6 +56,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = { "contact" })
 @XmlRootElement(name = "contact")
 public class Contact {
+	public static String typeId = "162dd12d-9859-4a66-b75f-96760d67072b";
 
 	@XmlElement(required = true)
 	protected com.chbase.thing.oxm.jaxb.base.Contact contact;
@@ -63,8 +64,8 @@ public class Contact {
 	/**
 	 * Gets the value of the contact property.
 	 * 
-	 * @return possible object is
-	 *         {@link com.chbase.thing.oxm.jaxb.base.Contact }
+	 * @return possible object is {@link com.chbase.thing.oxm.jaxb.base.Contact
+	 *         }
 	 * 
 	 */
 	public com.chbase.thing.oxm.jaxb.base.Contact getContact() {

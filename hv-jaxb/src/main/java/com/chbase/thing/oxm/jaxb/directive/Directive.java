@@ -82,6 +82,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 		"discontinuationNurseEndorsement" })
 @XmlRootElement(name = "directive")
 public class Directive {
+	public static String typeId = "822a5e5a-14f1-4d06-b92f-8f3f1b05218f";
 
 	@XmlElement(name = "start-date", required = true)
 	protected ApproxDateTime startDate;

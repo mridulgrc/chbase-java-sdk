@@ -62,6 +62,7 @@ import com.chbase.thing.oxm.jaxb.dates.Date;
 		"totalCarbohydrates", "dietaryFiber", "sugars", "sodium", "cholesterol" })
 @XmlRootElement(name = "dietary-intake-daily")
 public class DietaryIntakeDaily {
+	public static String typeId = "9c29c6b9-f40e-44ff-b24e-fba6f3074638";
 
 	@XmlElement(required = true)
 	protected Date when;

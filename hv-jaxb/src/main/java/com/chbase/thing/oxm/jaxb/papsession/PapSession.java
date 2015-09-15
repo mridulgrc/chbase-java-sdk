@@ -64,6 +64,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 		"oxygenDesaturationIndex", "pressure", "leakRate", "tidalVolume", "minuteVentilation", "respiratoryRate" })
 @XmlRootElement(name = "pap-session")
 public class PapSession {
+	public static String typeId = "9085CAD9-E866-4564-8A91-7AD8685D204D";
 
 	@XmlElement(required = true)
 	protected DateTime when;

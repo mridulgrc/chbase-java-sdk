@@ -16,30 +16,28 @@ import com.chbase.methods.jaxb.getpeopleforrecord.response.GetPeopleForRecordRes
 import com.chbase.methods.jaxb.querypermissions.request.QueryPermissionsRequest;
 import com.chbase.methods.jaxb.querypermissions.response.QueryPermissionsResponse;
 
-
 @RunWith(JMock.class)
 public class GetPeopleForRecordTest {
 
-
-	private Mockery context = new JUnit4Mockery() {{
-		setImposteriser(ClassImposteriser.INSTANCE);
-	}};
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
 
 	/**
 	 * Create the test case
 	 *
 	 */
-	public GetPeopleForRecordTest()
-	{
+	public GetPeopleForRecordTest() {
 	}
 
 	@Test
-	public void TestGetPeopleForRecord() throws Exception
-	{
+	public void TestGetPeopleForRecord() throws Exception {
 		SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
-		
+
 		GetPeopleForRecordRequest req = new GetPeopleForRecordRequest();
-		GetPeopleForRecordResponse res =(GetPeopleForRecordResponse)requestTemplate.makeRequest(req); 
+		GetPeopleForRecordResponse res = (GetPeopleForRecordResponse) requestTemplate.makeRequest(req);
 
 		Assert.assertNotNull(res);
 	}

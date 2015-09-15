@@ -71,6 +71,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 		"dateStarted", "dateDiscontinued", "prescribed", "prescription" })
 @XmlRootElement(name = "medication")
 public class Medication {
+	public static String typeId = "30cafccc-047d-4288-94ef-643571f7919d";
 
 	@XmlElement(required = true)
 	protected CodableValue name;

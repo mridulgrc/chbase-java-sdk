@@ -62,6 +62,7 @@ import com.chbase.thing.oxm.jaxb.base.InsulinInjectionValue;
 @XmlType(name = "", propOrder = { "type", "amount", "deviceId" })
 @XmlRootElement(name = "insulin-injection")
 public class InsulinInjection {
+	public static String typeId = "3B3C053B-B1FE-4E11-9E22-D4B480DE74E8";
 
 	@XmlElement(required = true)
 	protected CodableValue type;

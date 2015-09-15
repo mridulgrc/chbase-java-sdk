@@ -66,6 +66,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 		"goalAdditionalRanges", "recurrence" })
 @XmlRootElement(name = "health-goal")
 public class HealthGoal {
+	public static String typeId = "dad8bb47-9ad0-4f09-a020-0ff051d1d0f7";
 
 	@XmlElement(required = true)
 	protected CodableValue name;

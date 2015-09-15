@@ -62,6 +62,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 @XmlType(name = "", propOrder = { "substance", "status", "source", "documenter", "documentedDate" })
 @XmlRootElement(name = "contraindication")
 public class Contraindication {
+	public static String typeId = "046d0ad7-6d7f-4bfd-afd4-4192ca2e913d";
 
 	@XmlElement(required = true)
 	protected CodableValue substance;

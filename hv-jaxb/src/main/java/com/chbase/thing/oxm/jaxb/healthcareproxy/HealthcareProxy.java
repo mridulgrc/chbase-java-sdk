@@ -61,6 +61,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "when", "proxy", "alternate", "primaryWitness", "secondaryWitness", "content" })
 @XmlRootElement(name = "healthcare-proxy")
 public class HealthcareProxy {
+	public static String typeId = "7EA47715-CBA4-47F0-99D2-EB0A9FB4A85C";
 
 	@XmlElement(required = true)
 	protected DateTime when;

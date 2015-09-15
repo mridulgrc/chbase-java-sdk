@@ -58,6 +58,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 		"normalcy", "measurementContext" })
 @XmlRootElement(name = "blood-glucose")
 public class BloodGlucose {
+	public static String typeId = "879e7c04-4e8a-4707-9ad3-b054df467ce4";
 
 	@XmlElement(required = true)
 	protected DateTime when;

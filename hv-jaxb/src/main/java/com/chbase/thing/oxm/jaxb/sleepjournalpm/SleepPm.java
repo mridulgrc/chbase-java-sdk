@@ -72,6 +72,7 @@ import com.chbase.thing.oxm.jaxb.dates.Time;
 @XmlType(name = "", propOrder = { "when", "caffeine", "alcohol", "nap", "exercise", "sleepiness" })
 @XmlRootElement(name = "sleep-pm")
 public class SleepPm {
+	public static String typeId = "031F5706-7F1A-11DB-AD56-7BD355D89593";
 
 	@XmlElement(required = true)
 	protected DateTime when;

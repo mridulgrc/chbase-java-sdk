@@ -73,6 +73,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "when", "headers", "size", "summary", "htmlBlobName", "textBlobName", "attachments" })
 @XmlRootElement(name = "message")
 public class Message {
+	public static String typeId = "72dc49e1-1486-4634-b651-ef560ed051e5";
 
 	@XmlElement(required = true)
 	protected DateTime when;

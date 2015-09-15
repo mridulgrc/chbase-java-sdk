@@ -21,35 +21,32 @@ import com.chbase.methods.jaxb.getauthorizedconnectrequests.response.GetAuthoriz
 
 @RunWith(JMock.class)
 public class GetAuthorizedConnectRequests {
-	
 
-	private Mockery context = new JUnit4Mockery() {{
-        setImposteriser(ClassImposteriser.INSTANCE);
-    }};
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
 
 	/**
-     * Create the test case
-     *
-     */
-    public GetAuthorizedConnectRequests()
-    {
-    }
-    
-    @Test
-    public void TestGetAuthorizedConnectRequests() throws Exception
-    {
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	
-    	GetAuthorizedConnectRequestsRequest request = new GetAuthorizedConnectRequestsRequest();
-    	GregorianCalendar cal  = new GregorianCalendar();
-    	cal.add(Calendar.YEAR, -1);
-    	request.setAuthorizedConnectRequestsSince(
-    		DatatypeFactory.newInstance().newXMLGregorianCalendar(cal));
-    	
-    	GetAuthorizedConnectRequestsResponse response = 
-    		(GetAuthorizedConnectRequestsResponse)requestTemplate.makeRequest(request);
-    	
-    	Assert.assertNotNull(response);
-    }
+	 * Create the test case
+	 *
+	 */
+	public GetAuthorizedConnectRequests() {
+	}
+
+	@Test
+	public void TestGetAuthorizedConnectRequests() throws Exception {
+		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(ConnectionFactory.getConnection());
+
+		GetAuthorizedConnectRequestsRequest request = new GetAuthorizedConnectRequestsRequest();
+		GregorianCalendar cal = new GregorianCalendar();
+		cal.add(Calendar.YEAR, -1);
+		request.setAuthorizedConnectRequestsSince(DatatypeFactory.newInstance().newXMLGregorianCalendar(cal));
+
+		GetAuthorizedConnectRequestsResponse response = (GetAuthorizedConnectRequestsResponse) requestTemplate
+				.makeRequest(request);
+
+		Assert.assertNotNull(response);
+	}
 }

@@ -57,6 +57,7 @@ import com.chbase.thing.oxm.jaxb.base.CodableValue;
 @XmlType(name = "", propOrder = { "description", "status" })
 @XmlRootElement(name = "concern")
 public class Concern {
+	public static String typeId = "aea2e8f2-11dd-4a7d-ab43-1d58764ebc19";
 
 	@XmlElement(required = true)
 	protected CodableValue description;

@@ -16,30 +16,27 @@ import com.chbase.methods.jaxb.getservicedefinition2.response.GetServiceDefiniti
 
 @RunWith(JMock.class)
 public class GetServiceDefinitionTest {
-	
 
-	private Mockery context = new JUnit4Mockery() {{
-        setImposteriser(ClassImposteriser.INSTANCE);
-    }};
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
 
 	/**
-     * Create the test case
-     *
-     */
-    public GetServiceDefinitionTest()
-    {
-    }
-    
-    @Test
-    public void GetServiceDefinition() throws Exception
-    {
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	
-    	GetServiceDefinition2Response response = 
-    		(GetServiceDefinition2Response)requestTemplate.makeRequest(
-    			new GetServiceDefinition2Request());
-    	
-    	Assert.assertNotNull(response);
-    }
+	 * Create the test case
+	 *
+	 */
+	public GetServiceDefinitionTest() {
+	}
+
+	@Test
+	public void GetServiceDefinition() throws Exception {
+		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(ConnectionFactory.getConnection());
+
+		GetServiceDefinition2Response response = (GetServiceDefinition2Response) requestTemplate
+				.makeRequest(new GetServiceDefinition2Request());
+
+		Assert.assertNotNull(response);
+	}
 }

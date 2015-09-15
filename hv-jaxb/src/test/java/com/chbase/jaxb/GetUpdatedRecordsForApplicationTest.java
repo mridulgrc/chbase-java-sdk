@@ -16,31 +16,28 @@ import com.chbase.methods.jaxb.getupdatedrecordsforapplication2.response.GetUpda
 
 @RunWith(JMock.class)
 public class GetUpdatedRecordsForApplicationTest {
-	
 
-	private Mockery context = new JUnit4Mockery() {{
-        setImposteriser(ClassImposteriser.INSTANCE);
-    }};
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
 
 	/**
-     * Create the test case
-     *
-     */
-    public GetUpdatedRecordsForApplicationTest()
-    {
-    }
-    
-    @Test
-    @Ignore
-    public void GetUpdatedRecords() throws Exception
-    {
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	
-    	GetUpdatedRecordsForApplication2Response response = 
-    		(GetUpdatedRecordsForApplication2Response)requestTemplate.makeRequest(
-    			new GetUpdatedRecordsForApplication2Request());
-    	
-    	Assert.assertNotNull(response);
-    }
+	 * Create the test case
+	 *
+	 */
+	public GetUpdatedRecordsForApplicationTest() {
+	}
+
+	@Test
+	@Ignore
+	public void GetUpdatedRecords() throws Exception {
+		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(ConnectionFactory.getConnection());
+
+		GetUpdatedRecordsForApplication2Response response = (GetUpdatedRecordsForApplication2Response) requestTemplate
+				.makeRequest(new GetUpdatedRecordsForApplication2Request());
+
+		Assert.assertNotNull(response);
+	}
 }

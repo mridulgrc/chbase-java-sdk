@@ -17,33 +17,31 @@ import com.chbase.methods.jaxb.getauthorizedpeople.response.GetAuthorizedPeopleR
 
 @RunWith(JMock.class)
 public class GetAuthorizedPeopleTest {
-	
 
-	private Mockery context = new JUnit4Mockery() {{
-        setImposteriser(ClassImposteriser.INSTANCE);
-    }};
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
 
 	/**
-     * Create the test case
-     *
-     */
-    public GetAuthorizedPeopleTest()
-    {
-    }
-    
-    @Test
-    public void GetAuthorizedPeople() throws Exception
-    {
-    	SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(
-    			ConnectionFactory.getConnection());
-    	
-    	GetAuthorizedPeopleRequest request = new GetAuthorizedPeopleRequest();
-    	GetAuthorizedPeopleParameters params = new GetAuthorizedPeopleParameters();
-    	request.setParameters(params);
-    	
-    	GetAuthorizedPeopleResponseWrapper response = 
-    		(GetAuthorizedPeopleResponseWrapper)requestTemplate.makeRequest(request);
-    	
-    	Assert.assertNotNull(response);
-    }
+	 * Create the test case
+	 *
+	 */
+	public GetAuthorizedPeopleTest() {
+	}
+
+	@Test
+	public void GetAuthorizedPeople() throws Exception {
+		SimpleRequestTemplate requestTemplate = new SimpleRequestTemplate(ConnectionFactory.getConnection());
+
+		GetAuthorizedPeopleRequest request = new GetAuthorizedPeopleRequest();
+		GetAuthorizedPeopleParameters params = new GetAuthorizedPeopleParameters();
+		request.setParameters(params);
+
+		GetAuthorizedPeopleResponseWrapper response = (GetAuthorizedPeopleResponseWrapper) requestTemplate
+				.makeRequest(request);
+
+		Assert.assertNotNull(response);
+	}
 }

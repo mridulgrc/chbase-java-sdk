@@ -16,27 +16,25 @@ import com.chbase.methods.jaxb.querypermissions.request.QueryPermissionsRequest;
 import com.chbase.methods.jaxb.querypermissions.response.QueryPermissionsResponse;
 import com.chbase.methods.jaxb.removeapplicationrecordauthorization.request.RemoveApplicationRecordAuthorizationRequest;
 
-
 @RunWith(JMock.class)
 public class RemoveAppAuthTest {
 
-
-	private Mockery context = new JUnit4Mockery() {{
-		setImposteriser(ClassImposteriser.INSTANCE);
-	}};
+	private Mockery context = new JUnit4Mockery() {
+		{
+			setImposteriser(ClassImposteriser.INSTANCE);
+		}
+	};
 
 	/**
 	 * Create the test case
 	 *
 	 */
-	public RemoveAppAuthTest()
-	{
+	public RemoveAppAuthTest() {
 	}
 
 	@Test
 	@Ignore
-	public void TestRemoveAppAuth() throws Exception
-	{
+	public void TestRemoveAppAuth() throws Exception {
 		SimpleRequestTemplate requestTemplate = TestHelpers.GetRequestTemplate();
 
 		RemoveApplicationRecordAuthorizationRequest remove_auth_req = new RemoveApplicationRecordAuthorizationRequest();

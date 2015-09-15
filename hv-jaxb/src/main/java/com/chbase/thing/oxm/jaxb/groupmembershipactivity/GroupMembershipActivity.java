@@ -52,6 +52,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "when", "activity", "activityInfo" })
 @XmlRootElement(name = "group-membership-activity")
 public class GroupMembershipActivity {
+	public static String typeId = "e75fa095-31ed-4b30-b5f7-463963b5e734";
 
 	@XmlElement(required = true)
 	protected DateTime when;

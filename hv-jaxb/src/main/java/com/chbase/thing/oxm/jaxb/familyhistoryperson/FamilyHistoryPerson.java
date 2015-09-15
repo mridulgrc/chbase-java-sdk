@@ -62,6 +62,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDate;
 @XmlType(name = "", propOrder = { "relativeName", "relationship", "dateOfBirth", "dateOfDeath" })
 @XmlRootElement(name = "family-history-person")
 public class FamilyHistoryPerson {
+	public static String typeId = "cc23422c-4fba-4a23-b52a-c01d6cd53fdf";
 
 	@XmlElement(name = "relative-name", required = true)
 	protected Person relativeName;

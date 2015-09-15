@@ -67,6 +67,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 		"claimType", "claimId", "submittedBy", "provider", "currency", "claimTotals", "services" })
 @XmlRootElement(name = "explanation-of-benefits")
 public class ExplanationOfBenefits {
+	public static String typeId = "356fbba9-e0c9-4f4f-b0d9-4594f2490d2f";
 
 	@XmlElement(name = "date-submitted", required = true)
 	protected DateTime dateSubmitted;

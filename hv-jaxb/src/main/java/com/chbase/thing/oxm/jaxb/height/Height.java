@@ -51,6 +51,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "when", "value" })
 @XmlRootElement(name = "height")
 public class Height {
+	public static String typeId = "40750a6a-89b2-455c-bd8d-b420a4cb500b";
 
 	@XmlElement(required = true)
 	protected DateTime when;

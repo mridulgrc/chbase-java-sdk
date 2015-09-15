@@ -67,6 +67,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 		"treatmentProvider", "treatment", "isNegated" })
 @XmlRootElement(name = "allergy")
 public class Allergy {
+	public static String typeId = "52bf9104-2c5e-4f1f-a66d-552ebcc53df7";
 
 	@XmlElement(required = true)
 	protected CodableValue name;

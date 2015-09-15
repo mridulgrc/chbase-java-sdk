@@ -65,6 +65,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 @XmlType(name = "", propOrder = { "when", "pef", "fev1", "fev6", "measurementFlags" })
 @XmlRootElement(name = "peak-flow")
 public class PeakFlow {
+	public static String typeId = "5d8419af-90f0-4875-a370-0f881c18f6b3";
 
 	@XmlElement(required = true)
 	protected ApproxDateTime when;

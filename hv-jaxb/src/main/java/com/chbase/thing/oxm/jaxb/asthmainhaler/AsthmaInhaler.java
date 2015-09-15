@@ -74,6 +74,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 		"initialDoses", "minDailyDoses", "maxDailyDoses", "canAlert", "alert" })
 @XmlRootElement(name = "asthma-inhaler")
 public class AsthmaInhaler {
+	public static String typeId = "ff9ce191-2096-47d8-9300-5469a9883746";
 
 	@XmlElement(required = true)
 	protected CodableValue drug;

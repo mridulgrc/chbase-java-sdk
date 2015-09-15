@@ -60,6 +60,7 @@ import com.chbase.thing.oxm.jaxb.base.CodableValue;
 @XmlType(name = "", propOrder = { "statusType", "text" })
 @XmlRootElement(name = "status")
 public class Status {
+	public static String typeId = "d33a32b2-00de-43b8-9f2a-c4c7e9f580ec";
 
 	@XmlElement(name = "status-type", required = true)
 	protected CodableValue statusType;

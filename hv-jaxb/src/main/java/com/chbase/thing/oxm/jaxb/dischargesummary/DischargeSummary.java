@@ -79,6 +79,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 		"principalProcedure", "additionalProcedure" })
 @XmlRootElement(name = "discharge-summary")
 public class DischargeSummary {
+	public static String typeId = "02EF57A2-A620-425A-8E92-A301542CCA54";
 
 	@XmlElement(required = true)
 	protected DateTime when;

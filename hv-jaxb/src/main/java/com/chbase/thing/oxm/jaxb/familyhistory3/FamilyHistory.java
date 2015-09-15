@@ -43,6 +43,7 @@ import com.chbase.thing.oxm.jaxb.base.Condition;
 @XmlType(name = "", propOrder = { "condition", "relative" })
 @XmlRootElement(name = "family-history")
 public class FamilyHistory {
+	public static String typeId = "4a04fcc8-19c1-4d59-a8c7-2031a03f21de";
 
 	protected List<Condition> condition;
 	protected FamilyHistoryRelative relative;

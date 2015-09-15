@@ -54,6 +54,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 @XmlType(name = "", propOrder = { "when", "labGroup", "orderedBy" })
 @XmlRootElement(name = "lab-test-results")
 public class LabTestResults {
+	public static String typeId = "5800eab5-a8c2-482a-a4d6-f1db25ae08c3";
 
 	protected ApproxDateTime when;
 	@XmlElement(name = "lab-group", required = true)

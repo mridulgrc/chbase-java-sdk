@@ -62,6 +62,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 @XmlType(name = "", propOrder = { "when", "event", "category" })
 @XmlRootElement(name = "health-event")
 public class HealthEvent {
+	public static String typeId = "1572af76-1653-4c39-9683-9f9ca6584ba3";
 
 	@XmlElement(required = true)
 	protected ApproxDateTime when;

@@ -57,6 +57,7 @@ import com.chbase.thing.oxm.jaxb.base.Condition;
 @XmlType(name = "", propOrder = { "condition" })
 @XmlRootElement(name = "family-history-condition")
 public class FamilyHistoryCondition {
+	public static String typeId = "6705549b-0e3d-474e-bfa7-8197ddd6786a";
 
 	@XmlElement(required = true)
 	protected Condition condition;

@@ -63,6 +63,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "person", propOrder = { "name", "organization", "professionalTraining", "id", "contact", "type" })
 @XmlRootElement(name = "person")
 public class Person {
+	public static String typeId = "25c94a9f-9d3d-4576-96dc-6791178a8143";
 	@XmlElement(required = true)
 	protected Name name;
 	protected String organization;

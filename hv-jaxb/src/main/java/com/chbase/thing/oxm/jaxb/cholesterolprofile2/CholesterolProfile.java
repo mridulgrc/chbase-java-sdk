@@ -54,6 +54,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 @XmlType(name = "", propOrder = { "when", "ldl", "hdl", "totalCholesterol", "triglyceride" })
 @XmlRootElement(name = "cholesterol-profile")
 public class CholesterolProfile {
+	public static String typeId = "98f76958-e34f-459b-a760-83c1699add38";
 
 	@XmlElement(required = true)
 	protected DateTime when;

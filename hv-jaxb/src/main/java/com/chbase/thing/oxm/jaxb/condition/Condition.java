@@ -61,6 +61,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 @XmlType(name = "", propOrder = { "name", "onsetDate", "status", "stopDate", "stopReason" })
 @XmlRootElement(name = "condition")
 public class Condition {
+	public static String typeId = "7ea7a1f9-880b-4bd4-b593-f5660f20eda8";
 
 	@XmlElement(required = true)
 	protected CodableValue name;

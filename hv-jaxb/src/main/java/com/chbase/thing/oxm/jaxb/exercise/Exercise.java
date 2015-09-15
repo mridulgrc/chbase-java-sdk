@@ -71,6 +71,7 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 @XmlType(name = "", propOrder = { "when", "activity", "title", "distance", "duration", "detail", "segment" })
 @XmlRootElement(name = "exercise")
 public class Exercise {
+	public static String typeId = "85a21ddb-db20-4c65-8d30-33c899ccf612";
 
 	@XmlElement(required = true)
 	protected ApproxDateTime when;

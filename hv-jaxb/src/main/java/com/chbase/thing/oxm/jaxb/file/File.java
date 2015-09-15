@@ -45,6 +45,7 @@ import com.chbase.thing.oxm.jaxb.base.CodableValue;
 @XmlType(name = "", propOrder = { "name", "size", "contentType" })
 @XmlRootElement(name = "file")
 public class File {
+	public static String typeId = "bd0403c5-4ae2-4b0e-a8db-1888678e4528";
 
 	@XmlElement(required = true)
 	protected String name;

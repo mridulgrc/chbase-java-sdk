@@ -64,6 +64,7 @@ import com.chbase.thing.oxm.jaxb.dates.DateTime;
 		"personCode", "subscriberName", "subscriberDob", "isPrimary", "expirationDate", "contact" })
 @XmlRootElement(name = "payer")
 public class Payer {
+	public static String typeId = "9366440c-ec81-4b89-b231-308a4c4d70ed";
 
 	@XmlElement(name = "plan-name", required = true)
 	protected String planName;
