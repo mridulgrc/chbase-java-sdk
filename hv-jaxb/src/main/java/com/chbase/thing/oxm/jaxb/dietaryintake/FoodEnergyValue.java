@@ -5,7 +5,7 @@
 // Generated on: 2013.05.07 at 02:20:05 PM PDT 
 //
 
-package com.chbase.thing.oxm.jaxb.dietaryintakedaily;
+package com.chbase.thing.oxm.jaxb.dietaryintake;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

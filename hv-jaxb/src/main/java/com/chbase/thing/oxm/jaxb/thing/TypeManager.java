@@ -9,7 +9,7 @@ public class TypeManager {
 
 	private static final String PACKAGE_PREFIX = "com.chbase.thing.oxm.jaxb.";
 
-	private static String[][] types = { { "227F55FB-1001-4D4E-9F6A-8D893E07B451", "hba1x.HbA1C" },
+	private static String[][] types = { { "62160199-B80F-4905-A55A-AC4BA825CEAE", "hba1x.HbA1C" },
 			{ "7b2ea78c-4b78-4f75-a6a7-5396fe38b09a", "aerobicprofile.AerobicProfile" },
 			{ "e4501363-fb95-4a11-bb60-da64e98048b5", "aerobicweekly.AerobicWeekly" },
 			{ "d65ad514-c492-4b59-bd05-f3f6cb43ceb3", "allergicepisode.AllergicEpisode" },
@@ -38,11 +38,12 @@ public class TypeManager {
 			{ "A9A76456-0357-493e-B840-598BBB9483FD", "dailymedicationusage.DailyMedicationUsage" },
 			{ "EF9CF8D5-6C0B-4292-997F-4047240BC7BE", "device.Device" },
 			{ "80CF4080-AD3F-4BB5-A0B5-907C22F73017", "diabeticprofile.DiabeticProfile" },
-			{ "9c29c6b9-f40e-44ff-b24e-fba6f3074638", "dietaryintakedaily.DietaryIntakeDaily" },
+			{ "9c29c6b9-f40e-44ff-b24e-fba6f3074638", "dietaryintake.DietaryIntakeDaily" },
+			{ "089646a6-7e25-4495-ad15-3e28d4c1a71d", "dietaryintake.DietaryIntake" },
 			{ "822a5e5a-14f1-4d06-b92f-8f3f1b05218f", "directive.Directive" },
 			{ "02EF57A2-A620-425A-8E92-A301542CCA54", "dischargesummary.DischargeSummary" },
 			{ "4b7971d6-e427-427d-bf2c-2fbcf76606b3", "emotion.Emotion" },
-			{ "3D4BDF01-1B3E-4AFC-B41C-BD3E641A6DA7", "encounter.Encounter" },
+			{ "464083CC-13DE-4F3E-A189-DA8E47D5651B", "encounter.Encounter" },
 			{ "85a21ddb-db20-4c65-8d30-33c899ccf612", "exercise.Exercise" },
 			{ "356fbba9-e0c9-4f4f-b0d9-4594f2490d2f", "explanationofbenefits.ExplanationOfBenefits" },
 			{ "6705549b-0e3d-474e-bfa7-8197ddd6786a", "familyhistorycondition.FamilyHistoryCondition" },

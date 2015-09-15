@@ -8,4 +8,4 @@
 //
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "")
-package com.chbase.thing.oxm.jaxb.dietaryintakedaily;
+package com.chbase.thing.oxm.jaxb.dietaryintake;
