@@ -28,7 +28,8 @@ public class TypeManager {
 			{ "ca3c57f4-f4c1-4e15-be67-0a3caf5414ed", "bp.BloodPressure" },
 			{ "d3170d30-a41b-4bde-a116-87698c8a001a", "calorieguideline.CalorieGuideline" },
 			{ "adaf49ad-8e10-49f8-9783-174819e97051", "cardiacprofile.CardiacProfile" },
-			{ "9c48a2b8-952c-4f5a-935d-f3292326bf54", "ccd" }, { "1ed1cba6-9530-44a3-b7b5-e8219690ebcf", "cda" },
+			{ "9c48a2b8-952c-4f5a-935d-f3292326bf54", "ccd" }, 
+			{ "1ed1cba6-9530-44a3-b7b5-e8219690ebcf", "cda" },
 			{ "98f76958-e34f-459b-a760-83c1699add38", "cholesterolprofile2.CholesterolProfile" },
 			{ "9f4e0fcd-10d7-416d-855a-90514ce2016b", "comment.Comment" },
 			{ "aea2e8f2-11dd-4a7d-ab43-1d58764ebc19", "concern.Concern" },
@@ -70,6 +71,7 @@ public class TypeManager {
 			{ "72dc49e1-1486-4634-b651-ef560ed051e5", "message.Message" },
 			{ "B8FCB138-F8E6-436A-A15D-E3A2D6916094", "microbiologylabresults.MicrobiologyLabResults" },
 			{ "9085CAD9-E866-4564-8A91-7AD8685D204D", "papsession.PapSession" },
+			{ "C9287326-BB43-4194-858C-8B60768F000F", "passwordprotectedpackage.PasswordProtectedPackage" },
 			{ "9366440c-ec81-4b89-b231-308a4c4d70ed", "payer.Payer" },
 			{ "5d8419af-90f0-4875-a370-0f881c18f6b3", "peakflow.PeakFlow" },
 			{ "25c94a9f-9d3d-4576-96dc-6791178a8143", "base.Person" },
@@ -110,7 +112,7 @@ public class TypeManager {
 
 	public static Class getClassForType(String type) {
 
-		return typeToClassMap.get(type);
+		return typeToClassMap.get(type.toLowerCase());
 	}
 
 }
