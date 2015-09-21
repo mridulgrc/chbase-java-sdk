@@ -411,6 +411,24 @@ public class Thing2 {
 		thingType.setValue(TypeManager.getTypeForClass(data.getClass()));
 		setTypeId(thingType);
 	}
+	public void removeBlob(String key) throws Exception{
+		Boolean delete_success = false;
+		if (this.blobPayload != null) {
+			List<BlobPayloadItem> items = this.blobPayload.getBlob();
+			for (Iterator<BlobPayloadItem> i = items.iterator(); i.hasNext();) {
+				BlobPayloadItem current_item = i.next();
+				if (current_item.blobInfo.name.equals(key)) {
+					items.remove(current_item);
+					delete_success=true;
+					break;
+				}
+			}
+		}
+		if(!delete_success)
+		{
+			throw new Exception("Blob with specified key not found");
+		}
+	}
 
 	public void addBlob(String key, InputStream blob_data, String contentType, Request request) throws Exception {
 		if (this.blobPayload != null) {
