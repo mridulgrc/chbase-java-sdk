@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.microsoft.hsg</groupId>
+	<groupId>com.chbase</groupId>
 	<artifactId>ui-sdk</artifactId>
 	<packaging>war</packaging>
 	<version>1.6</version>
@@ -26,8 +26,8 @@
 		</license>
 	</licenses>
     <parent>
-        <groupId>com.microsoft.hsg</groupId>
-        <artifactId>hv-examples</artifactId>
+        <groupId>com.chbase</groupId>
+        <artifactId>chbase-examples</artifactId>
         <version>1.6</version>
     </parent>
 	<dependencies>
@@ -88,8 +88,8 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.microsoft.hsg</groupId>
-			<artifactId>hv-sdk</artifactId>
+			<groupId>com.chbase</groupId>
+			<artifactId>chbase-sdk</artifactId>
 			<version>1.6</version>
 		</dependency>
 	</dependencies>

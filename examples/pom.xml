@@ -3,9 +3,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.microsoft.hsg</groupId>
+  <groupId>com.chbase</groupId>
   <version>1.6</version>
-  <artifactId>hv-examples</artifactId>
+  <artifactId>chbase-examples</artifactId>
   <packaging>pom</packaging>
   <modules>
     <module>ui-jaxb</module>
