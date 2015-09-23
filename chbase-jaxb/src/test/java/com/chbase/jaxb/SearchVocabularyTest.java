@@ -1,7 +1,5 @@
 package com.chbase.jaxb;
 
-import junit.framework.Assert;
-
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
@@ -17,6 +15,8 @@ import com.chbase.methods.jaxb.searchvocabulary.request.VocabularySearchParams;
 import com.chbase.methods.jaxb.searchvocabulary.request.VocabularySearchString;
 import com.chbase.methods.jaxb.searchvocabulary.response.SearchVocabularyResponse;
 import com.chbase.methods.jaxb.vocab.VocabularyKey;
+
+import junit.framework.Assert;
 
 @RunWith(JMock.class)
 public class SearchVocabularyTest {

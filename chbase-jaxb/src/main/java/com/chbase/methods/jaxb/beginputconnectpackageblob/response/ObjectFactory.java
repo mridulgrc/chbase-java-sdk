@@ -9,6 +9,8 @@ package com.chbase.methods.jaxb.beginputconnectpackageblob.response;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
+import com.chbase.methods.jaxb.getpeopleforrecord.request.GetPeopleForRecordRequest;
+
 /**
  * This object contains factory methods for each Java content interface and Java
  * element interface generated in the

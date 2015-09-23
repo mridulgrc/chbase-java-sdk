@@ -1,31 +1,18 @@
 package com.chbase.applications.weight;
 
-import java.io.IOException;
-import java.math.BigInteger;
 import java.util.Calendar;
-import java.util.List;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.chbase.applications.OfflineRequestTemplate;
-import com.chbase.applications.OnlineRequestTemplate;
 import com.chbase.applications.RequestHandler;
-import com.chbase.methods.jaxb.getthings3.request.GetThings3Request;
-import com.chbase.methods.jaxb.getthings3.request.ThingFilterSpec;
-import com.chbase.methods.jaxb.getthings3.request.ThingFormatSpec2;
-import com.chbase.methods.jaxb.getthings3.request.ThingRequestGroup2;
-import com.chbase.methods.jaxb.getthings3.request.ThingSectionSpec2;
-import com.chbase.methods.jaxb.getthings3.response.GetThings3Response;
 import com.chbase.methods.jaxb.putthings2.request.PutThings2Request;
 import com.chbase.thing.oxm.jaxb.base.DisplayValue;
 import com.chbase.thing.oxm.jaxb.base.LengthValue;
-import com.chbase.thing.oxm.jaxb.base.WeightValue;
 import com.chbase.thing.oxm.jaxb.dates.DateTime;
 import com.chbase.thing.oxm.jaxb.height.Height;
 import com.chbase.thing.oxm.jaxb.thing.Thing2;
-import com.chbase.thing.oxm.jaxb.weight.Weight;
 
 public class HeightPage implements RequestHandler {
 	/** The Constant WEIGHT_INPUT. */

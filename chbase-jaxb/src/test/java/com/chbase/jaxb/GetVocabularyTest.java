@@ -1,7 +1,5 @@
 package com.chbase.jaxb;
 
-import junit.framework.Assert;
-
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
@@ -16,6 +14,8 @@ import com.chbase.methods.jaxb.getvocabulary.request.GetVocabularyRequest;
 import com.chbase.methods.jaxb.getvocabulary.request.VocabularyParameters;
 import com.chbase.methods.jaxb.getvocabulary.response.GetVocabularyResponse;
 import com.chbase.methods.jaxb.vocab.VocabularyKey;
+
+import junit.framework.Assert;
 
 @RunWith(JMock.class)
 public class GetVocabularyTest {

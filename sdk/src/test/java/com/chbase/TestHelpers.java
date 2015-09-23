@@ -1,7 +1,5 @@
 package com.chbase;
 
-import com.chbase.ApplicationConfig;
-import com.chbase.ConnectionFactory;
 import com.chbase.request.SimpleRequestTemplate;
 
 

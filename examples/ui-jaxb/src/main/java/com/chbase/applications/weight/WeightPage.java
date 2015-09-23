@@ -15,7 +15,6 @@ testme * Copyright 2011 Microsoft Corp.
  */
 package com.chbase.applications.weight;
 
-import java.io.Console;
 import java.io.IOException;
 import java.math.BigInteger;
 import java.util.Calendar;
@@ -27,8 +26,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.chbase.applications.OnlineRequestTemplate;
 import com.chbase.applications.RequestHandler;
-import com.chbase.methods.jaxb.getauthorizedrecords.request.GetAuthorizedRecordsRequest;
-import com.chbase.methods.jaxb.getauthorizedrecords.response.GetAuthorizedRecordsResponse;
 import com.chbase.methods.jaxb.getthings3.request.GetThings3Request;
 import com.chbase.methods.jaxb.getthings3.request.ThingFilterSpec;
 import com.chbase.methods.jaxb.getthings3.request.ThingFormatSpec2;
@@ -39,9 +36,7 @@ import com.chbase.methods.jaxb.putthings2.request.PutThings2Request;
 import com.chbase.thing.oxm.jaxb.base.DisplayValue;
 import com.chbase.thing.oxm.jaxb.base.WeightValue;
 import com.chbase.thing.oxm.jaxb.dates.DateTime;
-import com.chbase.thing.oxm.jaxb.status.Status;
 import com.chbase.thing.oxm.jaxb.thing.Thing2;
-import com.chbase.thing.oxm.jaxb.thing.TypeManager;
 import com.chbase.thing.oxm.jaxb.weight.Weight;
 
 /**

@@ -2,16 +2,9 @@ package com.chbase.thing.oxm.jaxb.thing;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.math.BigInteger;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.net.URL;
-
-import com.chbase.ApplicationConfig;
-import com.chbase.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
 
 public class BlobStreamer {
 	private String blobRefUrl = null;

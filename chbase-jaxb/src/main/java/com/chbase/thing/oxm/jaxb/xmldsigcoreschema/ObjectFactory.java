@@ -8,6 +8,7 @@
 package com.chbase.thing.oxm.jaxb.xmldsigcoreschema;
 
 import java.math.BigInteger;
+
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;

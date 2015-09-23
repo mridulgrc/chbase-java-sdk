@@ -10,7 +10,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.chbase.ConnectionFactory;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.putthings2.request.PutThings2Request;
 import com.chbase.methods.jaxb.putthings2.response.PutThings2Response;

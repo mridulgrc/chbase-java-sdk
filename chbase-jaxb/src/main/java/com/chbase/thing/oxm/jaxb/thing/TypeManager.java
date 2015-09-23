@@ -3,8 +3,6 @@ package com.chbase.thing.oxm.jaxb.thing;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.xml.bind.annotation.XmlTransient;
-
 public class TypeManager {
 
 	private static final String PACKAGE_PREFIX = "com.chbase.thing.oxm.jaxb.";
@@ -28,8 +26,8 @@ public class TypeManager {
 			{ "ca3c57f4-f4c1-4e15-be67-0a3caf5414ed", "bp.BloodPressure" },
 			{ "d3170d30-a41b-4bde-a116-87698c8a001a", "calorieguideline.CalorieGuideline" },
 			{ "adaf49ad-8e10-49f8-9783-174819e97051", "cardiacprofile.CardiacProfile" },
-			{ "9c48a2b8-952c-4f5a-935d-f3292326bf54", "ccd" }, 
-			{ "1ed1cba6-9530-44a3-b7b5-e8219690ebcf", "cda" },
+			{ "9c48a2b8-952c-4f5a-935d-f3292326bf54", "ccd.POCDMT000040ClinicalDocument" }, 
+			{ "1ed1cba6-9530-44a3-b7b5-e8219690ebcf", "cda.POCDMT000040ClinicalDocument" },
 			{ "98f76958-e34f-459b-a760-83c1699add38", "cholesterolprofile2.CholesterolProfile" },
 			{ "9f4e0fcd-10d7-416d-855a-90514ce2016b", "comment.Comment" },
 			{ "aea2e8f2-11dd-4a7d-ab43-1d58764ebc19", "concern.Concern" },

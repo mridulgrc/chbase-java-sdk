@@ -8,13 +8,12 @@
 package com.chbase.thing.oxm.jaxb.thing;
 
 import java.io.InputStream;
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.print.DocFlavor.STRING;
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -28,10 +27,8 @@ import javax.xml.transform.dom.DOMResult;
 
 import org.w3c.dom.Document;
 
-import com.chbase.ApplicationConfig;
 import com.chbase.Request;
 import com.chbase.oxm.jaxb.JaxbContextFactory;
-import com.chbase.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
 
 /**
  * 
@@ -366,22 +363,19 @@ public class Thing2 {
 		this.signatureInfo = value;
 	}
 
-	/**
-	 * @return
-	 * @throws Exception
-	 */
-	// TODO: refine exception paradigm
 	public Object getData() {
+		JAXBElement thing = null;
 		if (data == null && getDataXml().size() > 0) {
 			try {
-				JAXBContext jc = JaxbContextFactory.getContext(getClassForTypeId(typeId.value).getPackage().getName());
+				Class itemclass = getClassForTypeId(typeId.value);
+				JAXBContext jc = JaxbContextFactory.getContext(itemclass.getPackage().getName());
 				Unmarshaller u = jc.createUnmarshaller();
-				data = u.unmarshal(getDataXml().get(0).getAny());
+				thing = u.unmarshal(getDataXml().get(0).getAny(),itemclass);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
-		return data;
+		return thing.getValue();
 	}
 
 	private Class getClassForTypeId(String typeId) {

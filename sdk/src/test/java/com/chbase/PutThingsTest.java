@@ -16,7 +16,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
-import com.chbase.Request;
 import com.chbase.request.RequestMarshaller;
 import com.chbase.request.SimpleRequestTemplate;
 

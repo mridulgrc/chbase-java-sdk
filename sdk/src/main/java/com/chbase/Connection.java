@@ -18,12 +18,9 @@ package com.chbase;
 import java.security.MessageDigest;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.GregorianCalendar;
-import java.util.TimeZone;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
-import javax.xml.datatype.DatatypeFactory;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.log4j.Logger;

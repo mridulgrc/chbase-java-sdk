@@ -1,7 +1,5 @@
 package com.chbase.jaxb;
 
-import junit.framework.Assert;
-
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
@@ -14,6 +12,8 @@ import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.getthingtype.request.GetThingTypeRequest;
 import com.chbase.methods.jaxb.getthingtype.request.ThingTypeSectionSpec;
 import com.chbase.methods.jaxb.getthingtype.response.GetThingTypeResponse;
+
+import junit.framework.Assert;
 
 @RunWith(JMock.class)
 public class GetThingTypeTest {

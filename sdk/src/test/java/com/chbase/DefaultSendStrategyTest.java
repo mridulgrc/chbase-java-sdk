@@ -23,11 +23,6 @@ import org.jmock.lib.legacy.ClassImposteriser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.chbase.Connection;
-import com.chbase.DefaultSendStrategy;
-import com.chbase.HVApplicationSessionExpiredException;
-import com.chbase.Sender;
-
 /**
  * Unit test for simple App.
  */

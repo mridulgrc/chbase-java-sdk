@@ -15,7 +15,6 @@
  */
 package com.chbase.applications.weight;
 
-import java.awt.Button;
 import java.util.List;
 
 import org.apache.wicket.PageParameters;
@@ -29,7 +28,6 @@ import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.model.CompoundPropertyModel;
-import org.apache.wicket.model.Model;
 import org.apache.wicket.util.value.ValueMap;
 
 import com.chbase.ConnectionFactory;

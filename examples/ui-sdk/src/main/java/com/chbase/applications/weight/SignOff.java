@@ -15,8 +15,6 @@
  */
 package com.chbase.applications.weight;
 
-import javax.servlet.http.Cookie;
-
 import org.apache.wicket.markup.html.WebPage;
 
 public class SignOff extends WebPage

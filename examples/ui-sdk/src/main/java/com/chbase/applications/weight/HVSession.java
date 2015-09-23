@@ -16,7 +16,6 @@
 package com.chbase.applications.weight;
 
 import org.apache.wicket.Request;
-import org.apache.wicket.Response;
 import org.apache.wicket.protocol.http.WebSession;
 
 public class HVSession extends WebSession

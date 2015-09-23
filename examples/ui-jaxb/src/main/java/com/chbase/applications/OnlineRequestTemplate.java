@@ -15,14 +15,9 @@
  */
 package com.chbase.applications;
 
-import java.io.InputStream;
-
 import com.chbase.ApplicationConfig;
 import com.chbase.Connection;
 import com.chbase.ConnectionFactory;
-import com.chbase.HVAccessor;
-import com.chbase.HVException;
-import com.chbase.methods.jaxb.JaxbRequest;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
 
 /**

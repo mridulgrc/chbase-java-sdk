@@ -1,7 +1,5 @@
 package com.chbase.jaxb;
 
-import junit.framework.Assert;
-
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
@@ -9,12 +7,11 @@ import org.jmock.lib.legacy.ClassImposteriser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.chbase.ConnectionFactory;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.getpeopleforrecord.request.GetPeopleForRecordRequest;
 import com.chbase.methods.jaxb.getpeopleforrecord.response.GetPeopleForRecordResponse;
-import com.chbase.methods.jaxb.querypermissions.request.QueryPermissionsRequest;
-import com.chbase.methods.jaxb.querypermissions.response.QueryPermissionsResponse;
+
+import junit.framework.Assert;
 
 @RunWith(JMock.class)
 public class GetPeopleForRecordTest {

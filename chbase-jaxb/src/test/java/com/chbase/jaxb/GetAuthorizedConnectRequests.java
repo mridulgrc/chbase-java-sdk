@@ -5,8 +5,6 @@ import java.util.GregorianCalendar;
 
 import javax.xml.datatype.DatatypeFactory;
 
-import junit.framework.Assert;
-
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
@@ -18,6 +16,8 @@ import com.chbase.ConnectionFactory;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.getauthorizedconnectrequests.request.GetAuthorizedConnectRequestsRequest;
 import com.chbase.methods.jaxb.getauthorizedconnectrequests.response.GetAuthorizedConnectRequestsResponse;
+
+import junit.framework.Assert;
 
 @RunWith(JMock.class)
 public class GetAuthorizedConnectRequests {

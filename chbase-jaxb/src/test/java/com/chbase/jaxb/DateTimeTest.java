@@ -2,8 +2,6 @@ package com.chbase.jaxb;
 
 import java.util.Calendar;
 
-import junit.framework.Assert;
-
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
@@ -12,6 +10,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import com.chbase.thing.oxm.jaxb.dates.DateTime;
+
+import junit.framework.Assert;
 
 @RunWith(JMock.class)
 public class DateTimeTest {

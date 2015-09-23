@@ -2,13 +2,10 @@ package com.chbase.jaxb;
 
 import java.util.Random;
 
-import junit.framework.Assert;
-
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
 import org.jmock.lib.legacy.ClassImposteriser;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -16,9 +13,10 @@ import com.chbase.ConnectionFactory;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.createconnectrequest.request.CreateConnectRequestRequest;
 import com.chbase.methods.jaxb.createconnectrequest.response.CreateConnectRequestResponse;
-import com.chbase.methods.jaxb.deletependingconnectpackage.request.DeletePendingConnectPackageRequest;
 import com.chbase.methods.jaxb.deletependingconnectrequest.request.DeletePendingConnectRequestRequest;
 import com.chbase.methods.jaxb.updateexternalid.request.UpdateExternalIdRequest;
+
+import junit.framework.Assert;
 
 @RunWith(JMock.class)
 public class ConnectRequestTest {

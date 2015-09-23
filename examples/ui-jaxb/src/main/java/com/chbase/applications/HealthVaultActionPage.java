@@ -19,7 +19,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URLDecoder;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -38,7 +37,6 @@ import com.chbase.ConnectionFactory;
 import com.chbase.HVAccessor;
 import com.chbase.HVException;
 import com.chbase.Request;
-import com.chbase.applications.Constants;
 
 /**
  * Handle all redirects from HealthVault.

@@ -15,8 +15,9 @@
  */
 package com.chbase.applications.weight;
 
-import junit.framework.TestCase;
 import org.apache.wicket.util.tester.WicketTester;
+
+import junit.framework.TestCase;
 
 /**
  * Simple test using the WicketTester

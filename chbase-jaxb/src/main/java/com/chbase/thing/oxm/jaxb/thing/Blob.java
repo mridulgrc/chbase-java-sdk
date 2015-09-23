@@ -1,13 +1,7 @@
 package com.chbase.thing.oxm.jaxb.thing;
 
-import java.io.FileInputStream;
 import java.io.InputStream;
-import java.math.BigInteger;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
 
-import com.chbase.ApplicationConfig;
 import com.chbase.Connection;
 import com.chbase.ConnectionFactory;
 import com.chbase.Request;
@@ -15,7 +9,6 @@ import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.beginputblob.request.BeginPutBlobRequest;
 import com.chbase.methods.jaxb.beginputblob.response.BeginPutBlobResponse;
 import com.chbase.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
-import com.chbase.thing.oxm.jaxb.types.PersonInfo;
 
 public class Blob {
 	private BeginPutBlobResponse beginPutBlobParams = null;

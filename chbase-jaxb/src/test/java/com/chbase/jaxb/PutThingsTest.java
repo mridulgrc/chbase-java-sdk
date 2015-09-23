@@ -3,8 +3,6 @@ package com.chbase.jaxb;
 import java.io.InputStream;
 import java.util.Calendar;
 
-import junit.framework.Assert;
-
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
@@ -13,8 +11,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import com.chbase.ApplicationConfig;
-import com.chbase.Connection;
-import com.chbase.ConnectionFactory;
 import com.chbase.Request;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.putthings2.request.PutThings2Request;
@@ -25,6 +21,8 @@ import com.chbase.thing.oxm.jaxb.base.WeightValue;
 import com.chbase.thing.oxm.jaxb.dates.DateTime;
 import com.chbase.thing.oxm.jaxb.thing.Thing2;
 import com.chbase.thing.oxm.jaxb.weight.Weight;
+
+import junit.framework.Assert;
 
 @RunWith(JMock.class)
 public class PutThingsTest {

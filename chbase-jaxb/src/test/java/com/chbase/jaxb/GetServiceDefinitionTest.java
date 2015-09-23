@@ -1,7 +1,5 @@
 package com.chbase.jaxb;
 
-import junit.framework.Assert;
-
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
@@ -13,6 +11,8 @@ import com.chbase.ConnectionFactory;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.getservicedefinition2.request.GetServiceDefinition2Request;
 import com.chbase.methods.jaxb.getservicedefinition2.response.GetServiceDefinition2Response;
+
+import junit.framework.Assert;
 
 @RunWith(JMock.class)
 public class GetServiceDefinitionTest {

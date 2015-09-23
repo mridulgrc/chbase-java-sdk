@@ -7,20 +7,13 @@
 
 package com.chbase.methods.jaxb.beginputblob.request;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 import com.chbase.methods.jaxb.JaxbRequest;
-import com.chbase.methods.jaxb.getthings3.request.ThingRequestGroup2;
-import com.chbase.thing.oxm.jaxb.types.BlobHashAlgorithmParameters;
 
 /**
  * <p>

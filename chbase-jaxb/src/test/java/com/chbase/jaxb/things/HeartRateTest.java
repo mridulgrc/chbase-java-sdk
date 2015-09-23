@@ -1,16 +1,11 @@
 package com.chbase.jaxb.things;
 
-import java.io.StringReader;
 import java.math.BigInteger;
 import java.util.Calendar;
-
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Unmarshaller;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import com.chbase.ConnectionFactory;
 import com.chbase.jaxb.TestHelpers;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.getthings3.request.GetThings3Request;

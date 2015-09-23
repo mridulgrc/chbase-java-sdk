@@ -5,7 +5,6 @@ import java.math.BigInteger;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.chbase.ConnectionFactory;
 import com.chbase.jaxb.TestHelpers;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.getthings3.request.GetThings3Request;

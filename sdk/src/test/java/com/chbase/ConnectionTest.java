@@ -23,9 +23,6 @@ import org.jmock.lib.legacy.ClassImposteriser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.chbase.Authenticator;
-import com.chbase.Connection;
-
 @RunWith(JMock.class)
 public class ConnectionTest {
 	

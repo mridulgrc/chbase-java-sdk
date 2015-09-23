@@ -8,6 +8,7 @@
 package com.chbase.methods.jaxb.getauthorizedpeople.request;
 
 import java.math.BigInteger;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;

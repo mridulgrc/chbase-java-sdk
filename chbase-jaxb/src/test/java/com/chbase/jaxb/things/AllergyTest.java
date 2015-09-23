@@ -9,7 +9,6 @@ import javax.xml.bind.Unmarshaller;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.chbase.ConnectionFactory;
 import com.chbase.jaxb.TestHelpers;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.getthings3.request.GetThings3Request;
@@ -31,7 +30,6 @@ import com.chbase.thing.oxm.jaxb.dates.ApproxDateTime;
 import com.chbase.thing.oxm.jaxb.dates.StructuredApproxDate;
 import com.chbase.thing.oxm.jaxb.thing.Thing2;
 import com.chbase.thing.oxm.jaxb.thing.TypeManager;
-import com.chbase.thing.oxm.jaxb.weight.Weight;
 
 public class AllergyTest {
 

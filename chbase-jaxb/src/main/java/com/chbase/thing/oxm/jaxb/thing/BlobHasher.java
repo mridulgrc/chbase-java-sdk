@@ -2,7 +2,6 @@ package com.chbase.thing.oxm.jaxb.thing;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
-import java.util.Arrays;
 
 import org.apache.commons.codec.binary.Base64;
 

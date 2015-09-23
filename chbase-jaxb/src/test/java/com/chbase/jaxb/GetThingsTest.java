@@ -2,8 +2,6 @@ package com.chbase.jaxb;
 
 import java.math.BigInteger;
 
-import junit.framework.Assert;
-
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
@@ -12,7 +10,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.chbase.ConnectionFactory;
 import com.chbase.Request;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
 import com.chbase.methods.jaxb.getthings3.request.GetThings3Request;
@@ -24,6 +21,8 @@ import com.chbase.methods.jaxb.getthings3.response.GetThings3Response;
 import com.chbase.thing.oxm.jaxb.basicV2.Basic;
 import com.chbase.thing.oxm.jaxb.thing.Thing2;
 import com.chbase.thing.oxm.jaxb.weight.Weight;
+
+import junit.framework.Assert;
 
 @RunWith(JMock.class)
 public class GetThingsTest {
