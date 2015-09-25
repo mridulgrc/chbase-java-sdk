@@ -27,7 +27,6 @@ String instance = (personInfo == null ? "" : HVInstanceResolver.getInstanceResol
    
       <td><%= "Person : " + personName %></td>
       <td><%= "Record : " + recordName %></td>
-      <td><%= "HV Instance : " + instance %></td>
    </tr>
    <tr>
    
