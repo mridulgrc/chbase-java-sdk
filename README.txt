@@ -1,4 +1,4 @@
-This project comprises an SDK to access HealthVault and some sample ui's
+This project comprises an SDK to access CHBase and some sample ui's
 allowing a user to view and add weight measurements.  
 
 Building:
@@ -32,7 +32,7 @@ Running the Sample:
     and install it in your servlet container. 
 
 Private Key:
-    Healthvault uses public/private key infrastructure to verify the 
+    CHBase uses public/private key infrastructure to verify the 
     application.  It does not validate the public key certificate chain so 
     there is no need to obtain keys from a trusted CA.  The healthvault java 
     sdk uses the JSSE keystore to obtain the application's private key.  The 
@@ -48,7 +48,7 @@ Private Key:
 
     The instructions for how to generate a public/private key pair are 
     described in the documentation for the 
-    com.microsoft.hsg.DefaultPrivateKeyStore class:
+    com.chbase.DefaultPrivateKeyStore class:
 
     keytool -genkeypair -keyalg RSA -keysize 1024 -keystore keystore -alias java-wildcat -validity 9999
 
@@ -65,16 +65,13 @@ Private Key:
 
     keytool -export -alias java-wildcat -keystore keystore > my-pub.cer
 
-    Send the my-pub.cer file to the HealthVault team and we’ll take care of 
-    the rest.
-
 Making SDK Requests:
     The application is responsible for marshaling and unmarshaling the <info> 
     section in each HV Request.  You can find detailed schemas for each 
     method here:  http://developer.healthvault.com/methods/methods.aspx.
 
 SSL:
-    HealthVault requires requests be sent over SSL. Our site's certificates are
+    CHBase requires requests be sent over SSL. Our site's certificates are
     signed with GTE CyberTrust Global Root as the trusted root certificate 
     authority. This public key is shipped with Sun’s java runtime in a file 
     located at java.home/lib/security/cacerts. The alias for this key is 
