@@ -5,7 +5,7 @@
   <artifactId>chbase-jaxb</artifactId>
   <packaging>jar</packaging>
   <version>1.6</version>
-  <name>hv-jaxb-support</name>
+  <name>chbase-jaxb-support</name>
   <url>http://maven.apache.org</url>
   <parent>
     <groupId>com.chbase</groupId>
