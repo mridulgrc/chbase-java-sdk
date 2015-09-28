@@ -68,7 +68,7 @@ Private Key:
 Making SDK Requests:
     The application is responsible for marshaling and unmarshaling the <info> 
     section in each HV Request.  You can find detailed schemas for each 
-    method here:  http://developer.healthvault.com/methods/methods.aspx.
+    method here:  http://developer.chbase.mt.grcdemo.com/method.
 
 SSL:
     CHBase requires requests be sent over SSL. Our site's certificates are
