@@ -12,6 +12,7 @@
     <module>chbase-jaxb</module>
     <module>examples/ui-jaxb</module>
     <module>examples/ui-sdk</module>
+    <module>examples/height-offline-sample</module>
   </modules>
 
   <build>
