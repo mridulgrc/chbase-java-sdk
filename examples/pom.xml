@@ -10,6 +10,7 @@
   <modules>
     <module>ui-jaxb</module>
     <module>ui-sdk</module>
+    <module>height-offline-sample</module>
   </modules>
 </project>
 

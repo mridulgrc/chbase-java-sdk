@@ -27,7 +27,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.chbase.HVAccessDeniedException;
-import com.chbase.applications.weight.WeightPage;
+import com.chbase.applications.height.HeightPage;
 
 /**
  * The Class Controller. This controller receives requests for all pages
@@ -39,7 +39,7 @@ public class Controller extends HttpServlet {
 	private static Map pageMap;
 	static {
 		pageMap = new HashMap();
-		pageMap.put("/weight", WeightPage.class);
+		pageMap.put("/height", HeightPage.class);
 		pageMap.put("/signout", UnsecuredSimpleActions.class);
 		pageMap.put("/new", UnsecuredSimpleActions.class);
 		pageMap.put("/create", UnsecuredSimpleActions.class);
