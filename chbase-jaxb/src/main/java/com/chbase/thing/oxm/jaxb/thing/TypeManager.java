@@ -49,8 +49,6 @@ public class TypeManager {
 			{ "cc23422c-4fba-4a23-b52a-c01d6cd53fdf", "familyhistoryperson.FamilyHistoryPerson" },
 			{ "4a04fcc8-19c1-4d59-a8c7-2031a03f21de", "familyhistory3.FamilyHistory" },
 			{ "bd0403c5-4ae2-4b0e-a8db-1888678e4528", "file.File" },
-			{ "e75fa095-31ed-4b30-b5f7-463963b5e734", "groupmembershipactivity.GroupMembershipActivity" },
-			{ "66ac44c7-1d60-4e95-bb5b-d21490e91057", "groupmembership.GroupMembership" },
 			{ "58fd8ac4-6c47-41a3-94b2-478401f0e26c", "healthassessment.HealthAssessment" },
 			{ "7EA47715-CBA4-47F0-99D2-EB0A9FB4A85C", "healthcareproxy.HealthcareProxy" },
 			{ "1572af76-1653-4c39-9683-9f9ca6584ba3", "healthevent.HealthEvent" },
