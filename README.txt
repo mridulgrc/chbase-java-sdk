@@ -36,7 +36,7 @@ Running the Sample:
 Private Key:
     CHBase uses public/private key infrastructure to verify the 
     application.  It does not validate the public key certificate chain so 
-    there is no need to obtain keys from a trusted CA.  The healthvault java 
+    there is no need to obtain keys from a trusted CA.  The CHBase java 
     sdk uses the JSSE keystore to obtain the application's private key.  The 
     keystore file is loaded from the classpath and is shipped with the name 
     "/keystore".  The following entries in hv-application configure its use:
@@ -75,7 +75,7 @@ Making SDK Requests:
 SSL:
     CHBase requires requests be sent over SSL. Our site's certificates are
     signed with GTE CyberTrust Global Root as the trusted root certificate 
-    authority. This public key is shipped with Sun’s java runtime in a file 
+    authority. This public key is shipped with Sunâ€™s java runtime in a file 
     located at java.home/lib/security/cacerts. The alias for this key is 
     "gtecybertrustglobalca".  Depending on your JRE or environment, this
     public key may not be installed in your trusted store.  This is a known
@@ -85,5 +85,5 @@ SSL:
 
     keytool -keystore cacerts -exportcert -alias gtecybertrustglobalca > gte.crt
 
-    This public key should then be imported into WebSphere’s trusted store.
+    This public key should then be imported into WebSphereâ€™s trusted store.
 
