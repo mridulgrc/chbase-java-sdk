@@ -1,4 +1,4 @@
-This project comprises an SDK to access HealthVault and a sample ui 
+This project comprises an SDK to access CHBase and a sample ui 
 allowing a user to view and add weight measurements.  
 
 Building:
@@ -75,26 +75,11 @@ Private Key:
 
     keytool -export -alias java-wildcat -keystore keystore > my-pub.cer
 
-    Send the my-pub.cer file to the HealthVault team and we’ll take care of 
+    Send the my-pub.cer file to the CHBase team and we’ll take care of 
     the rest.
 
 Making SDK Requests:
     The application is responsible for marshaling and unmarshaling the <info> 
     section in each HV Request.  You can find detailed schemas for each 
     method here:  http://developer.healthvault.com/methods/methods.aspx.
-
-SSL:
-    HealthVault requires requests be sent over SSL. Our site's certificates are
-    signed with GTE CyberTrust Global Root as the trusted root certificate 
-    authority. This public key is shipped with Sun’s java runtime in a file 
-    located at java.home/lib/security/cacerts. The alias for this key is 
-    "gtecybertrustglobalca".  Depending on your JRE or environment, this
-    public key may not be installed in your trusted store.  This is a known
-    issue with WebSphere.
-
-    To export the key from the cacerts file:
-
-    keytool -keystore cacerts -exportcert -alias gtecybertrustglobalca > gte.crt
-
-    This public key should then be imported into WebSphere’s trusted store.
 

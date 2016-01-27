@@ -71,19 +71,3 @@ Making SDK Requests:
     The application is responsible for marshaling and unmarshaling the <info> 
     section in each HV Request.  You can find detailed schemas for each 
     method here:  http://developer.chbase.mt.grcdemo.com/method.
-
-SSL:
-    CHBase requires requests be sent over SSL. Our site's certificates are
-    signed with GTE CyberTrust Global Root as the trusted root certificate 
-    authority. This public key is shipped with Sun’s java runtime in a file 
-    located at java.home/lib/security/cacerts. The alias for this key is 
-    "gtecybertrustglobalca".  Depending on your JRE or environment, this
-    public key may not be installed in your trusted store.  This is a known
-    issue with WebSphere.
-
-    To export the key from the cacerts file:
-
-    keytool -keystore cacerts -exportcert -alias gtecybertrustglobalca > gte.crt
-
-    This public key should then be imported into WebSphere’s trusted store.
-
