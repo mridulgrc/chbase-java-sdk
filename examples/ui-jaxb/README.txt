@@ -1,4 +1,4 @@
-This project comprises an SDK to access HealthVault and a sample ui 
+This project comprises an SDK to access CHBase and a sample ui 
 allowing a user to view and add weight measurements.  
 
 Building:
@@ -42,9 +42,9 @@ Running the Sample:
     and install it in your servlet container. 
 
 Private Key:
-    Healthvault uses public/private key infrastructure to verify the 
+    CHBase uses public/private key infrastructure to verify the 
     application.  It does not validate the public key certificate chain so 
-    there is no need to obtain keys from a trusted CA.  The healthvault java 
+    there is no need to obtain keys from a trusted CA.  The CHBase java 
     sdk uses the JSSE keystore to obtain the application's private key.  The 
     keystore file is loaded from the classpath and is shipped with the name 
     "/keystore".  The following entries in hv-application configure its use:
@@ -75,7 +75,7 @@ Private Key:
 
     keytool -export -alias java-wildcat -keystore keystore > my-pub.cer
 
-    Send the my-pub.cer file to the HealthVault team and we’ll take care of 
+    Send the my-pub.cer file to the CHBase team and weâ€™ll take care of 
     the rest.
 
 Making SDK Requests:
@@ -84,9 +84,9 @@ Making SDK Requests:
     method here:  http://developer.healthvault.com/methods/methods.aspx.
 
 SSL:
-    HealthVault requires requests be sent over SSL. Our site's certificates are
+    CHBase requires requests be sent over SSL. Our site's certificates are
     signed with GTE CyberTrust Global Root as the trusted root certificate 
-    authority. This public key is shipped with Sun’s java runtime in a file 
+    authority. This public key is shipped with Sunâ€™s java runtime in a file 
     located at java.home/lib/security/cacerts. The alias for this key is 
     "gtecybertrustglobalca".  Depending on your JRE or environment, this
     public key may not be installed in your trusted store.  This is a known
@@ -96,5 +96,5 @@ SSL:
 
     keytool -keystore cacerts -exportcert -alias gtecybertrustglobalca > gte.crt
 
-    This public key should then be imported into WebSphere’s trusted store.
+    This public key should then be imported into WebSphereâ€™s trusted store.
 
