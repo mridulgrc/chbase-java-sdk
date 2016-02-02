@@ -70,4 +70,4 @@ Private Key:
 Making SDK Requests:
     The application is responsible for marshaling and unmarshaling the <info> 
     section in each HV Request.  You can find detailed schemas for each 
-    method here:  http://developer.chbase.com/method.
+    method here:  https://developer.chbase.com/Methods.
