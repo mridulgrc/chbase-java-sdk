@@ -1,4 +1,5 @@
-This project is derived from the HealthVault Java SDK (https://healthvaultjavalib.codeplex.com/)
+This project is derived from the HealthVault Java SDK (https://healthvaultjavalib.codeplex.com/). In addition to supporting CHBase, this SDK supports the latest version of HealthVault, including its Methods and Datatypes and is actively maintained.
+
 
 This project comprises an SDK to access CHBase and some sample ui's
 allowing a user to view and add weight measurements.  
