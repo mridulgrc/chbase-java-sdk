@@ -79,13 +79,13 @@ public class PutThingsTest {
 		Thing2 thing = GetThing();
 
 		ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-		InputStream is = classloader.getResourceAsStream("largeimage.jpg");
+		InputStream is = classloader.getResourceAsStream("file.txt");
 
 		Request request = new Request();
 		request.setOfflineUserId(ApplicationConfig.Test_PersonID);
 		request.setRecordId(ApplicationConfig.Test_RecordID);
 
-		thing.addBlob("", is, "image/jpg", request);
+		thing.addBlob("", is, "text/plain", request);
 
 		is.close();
 
