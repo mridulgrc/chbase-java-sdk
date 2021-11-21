@@ -22,7 +22,9 @@ import java.io.InputStream;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathFactory;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import org.xml.sax.InputSource;
 
 /**
@@ -32,7 +34,7 @@ import org.xml.sax.InputSource;
 public class DefaultResponseStrategy
 implements ResponseStrategy
 {
-	static Logger logger = Logger.getLogger(ResponseStrategy.class);
+	static Logger logger = LogManager.getLogger(ResponseStrategy.class);
 
 
 	/**
@@ -62,9 +64,7 @@ implements ResponseStrategy
 			byte[] message = baos.toByteArray();
 			ByteArrayInputStream bais = new ByteArrayInputStream(message);
 			
-			if (logger.isDebugEnabled()) {
-				logger.debug(new String(message));
-			}
+			logger.info(new String(message));
 			
 			XPath xpath = XPathFactory.newInstance().newXPath();
 	        String exp = "/response/status/code";

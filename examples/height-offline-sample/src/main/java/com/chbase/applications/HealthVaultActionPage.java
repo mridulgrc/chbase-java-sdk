@@ -28,7 +28,9 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathFactory;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import org.w3c.dom.Node;
 import org.xml.sax.InputSource;
 
@@ -42,7 +44,7 @@ import com.chbase.Request;
  * Handle all redirects from HealthVault.
  */
 public class HealthVaultActionPage extends HttpServlet {
-	Logger logger = Logger.getLogger("HealthVaultActionPage");
+	Logger logger = LogManager.getLogger("HealthVaultActionPage");
 
 	/** the constant request parameter fields */
 	public static final String APP_TARGET = "target";

@@ -23,8 +23,8 @@ import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
 import org.apache.commons.codec.binary.Base64;
-import org.apache.log4j.Logger;
-
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 /**
  * The connection serves as the main pipe to HealthVault.  It
  * formats requests into a HealthVault envelope ensuring any
@@ -39,7 +39,7 @@ public class Connection
     private Transport transport;
     private Authenticator authenticator;
 
-    private static Logger logger = Logger.getLogger(Connection.class);
+    private static Logger logger = LogManager.getLogger(Connection.class.getName());
     /**
      * Gets the app id.
      * 
@@ -96,7 +96,8 @@ public class Connection
 	 */
 	public void setSharedSecret(byte[] sharedSecret) {
 		this.sharedSecret = sharedSecret;
-	}	
+	}
+	
 	/**
 	 * Gets the transport.
 	 * 
@@ -184,10 +185,7 @@ public class Connection
 
     private void makeRequest(String request, ResponseHandler responseHandler) 
     {
-    	if (logger.isDebugEnabled()) {
-    		logger.debug(request);
-    	}
-    	
+    	logger.info(request);
     	transport.doRequest(request, responseHandler);
     }
 
