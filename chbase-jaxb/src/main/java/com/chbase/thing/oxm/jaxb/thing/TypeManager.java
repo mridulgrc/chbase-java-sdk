@@ -84,7 +84,8 @@ public class TypeManager {
 			{ "d33a32b2-00de-43b8-9f2a-c4c7e9f580ec", "status.Status" },
 			{ "73822612-C15F-4B49-9E65-6AF369E55C65", "vitalsigns.VitalSigns" },
 			{ "b7925180-d69e-48fa-ae1d-cb3748ca170e", "weightgoal.WeightGoal" },
-			{ "3d34d87e-7fc1-4153-800f-f56592cb0d17", "weight.Weight" } };
+			{ "3d34d87e-7fc1-4153-800f-f56592cb0d17", "weight.Weight" },
+			{ "B861CB93-9CD3-408A-9C65-E5F58E4E2C30", "referral.Referral" } };
 
 	private static Map<String, Class> typeToClassMap = new HashMap<String, Class>();
 	private static Map<Class, String> classToTypeMap = new HashMap<Class, String>();
