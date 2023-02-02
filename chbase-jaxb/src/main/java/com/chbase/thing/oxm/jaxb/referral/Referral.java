@@ -49,7 +49,7 @@ import com.chbase.thing.oxm.jaxb.base.Task;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="when" type="{urn:com.microsoft.wc.thing.dates}date-time" minOccurs="0" maxOccurs="1"/>
+ *         &lt;element name="when" type="{urn:com.microsoft.wc.dates}date-time" minOccurs="0" maxOccurs="1"/>
  *         &lt;element name="type" type="{urn:com.microsoft.wc.thing.types}codable-value" minOccurs="0" maxOccurs="1"/>
  *         &lt;element name="reason" type="{urn:com.microsoft.wc.thing.types}codable-value" minOccurs="1" maxOccurs="1"/>
  *         &lt;element name="referred-by" type="{urn:com.microsoft.wc.thing.types}person" minOccurs="0" maxOccurs="1"/>
@@ -97,7 +97,7 @@ public class Referral {
 	 * 
 	 */
 	public void setWhen(DateTime value) {
-		this.when = when;
+		this.when = value;
 	}
 
 	/**
