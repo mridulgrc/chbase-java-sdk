@@ -27,5 +27,6 @@ public class HomePage extends WebPage {
 	public HomePage(final PageParameters parameters) {
 		add(new BookmarkablePageLink("signoff", SignOff.class));
 		add(new BookmarkablePageLink("weightLink", WeightPage.class));
+		add(new BookmarkablePageLink("referralLink", ReferralPage.class));
     }
 }

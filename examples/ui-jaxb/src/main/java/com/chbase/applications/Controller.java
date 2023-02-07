@@ -27,6 +27,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.chbase.HVAccessDeniedException;
+import com.chbase.applications.referral.ReferralPage;
 import com.chbase.applications.weight.WeightPage;
 
 /**
@@ -49,6 +50,7 @@ public class Controller extends HttpServlet {
 		pageMap.put("/privacy", UnsecuredSimpleActions.class);
 		pageMap.put("/service", UnsecuredSimpleActions.class);
 		pageMap.put("/home", SecuredSimpleActions.class);
+		pageMap.put("/referral", ReferralPage.class);
 	}
 	
 	
